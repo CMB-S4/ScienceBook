@@ -1,7 +1,8 @@
-%%%%%% CMB-S4 Neutrinos Chapter  %%%%%%%%%%%%%%%%
+%%%%%% CMB-S4 Inflation Chapter  %%%%%%%%%%%%%%%%
  
 \chapter{Inflation Physics from the Cosmic Microwave Background}
 \renewcommand*\thesection{\arabic{section}}
+
 
 \def\gtrsim{\raise-.75ex\hbox{$\buildrel>\over\sim$}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -10,10 +11,100 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Introduction}
+The study of the polarization of the cosmic microwave background will bring additional information about both the gravitational and matter sectors of the primordial universe.  CMB-S4 can push the constraint on $r$ (the ratio of power in tensor modes to power in scalar modes) nearly two orders of magnitude below the current bound. A detection of primordial gravitational waves in the range accessible to this instrument would:
+\begin{itemize}
+\item  Rule out the only currently developed competitor to inflation (ekpyrotic scenario)
+ \item Reveal a new scale of particle physics far above those accessible with terrestrial particle colliders. 
+ \item Identify the energy scale of inflation. 
+\item  Provide strong evidence for that gravity is quantized, at least at the linear level.
+\item	 Provide strong evidence that the complete theory of quantum gravity must accommodate a Planckian field range for the inflaton
+\item  Constrain the mass of the graviton 
+\end{itemize}
+In the absence of a detection, each factor of 10 improvement in the constraint will reach new and significant thresholds, ruling out major classes of inflation models. In addition, a detailed map of CMB polarization will improve constraints of the matter content of inflation models, including the scalar power spectrum, non-Gaussianity, isocurvature modes...
+ 
+Recent reviews \cite{Kamionkowski:2015yta}.
 
-Here is an intro.
+\section{Implications of a detection of primordial gravitational waves with CMB-S4}
 
-%\bibliography{cmbs4}
+{\bf To add:}
+\begin{itemize}
+\item The basic equations (ie, the metric and scalar/tensor power)
+\item Explain why ekpyrotic is ruled out, references
+\item Discuss that this is linearized quantum gravity
+\item comment on massive gravity (references) and constraining graviton mass \cite{Bessada:2009qw,Dubovsky:2009xk,Bessada:2009np} (others refs?)
+\end{itemize}
+
+\subsection{A new scale of particle physics}
+Basic equations, address potential caveats that the new scale is also exactly the scale of inflation:
+
+\begin{itemize}
+\item Models that also generate a significant amplitude of gravitational waves from particle sources are also constrained by signatures in the scalar fluctuations (especially non-Gaussianity). \cite{Mirbabayi:2014jqa, Ozsoy:2014sba} find that at most $\sim x\%$ or so (get the exact number) could be from sources other than the de Sitter quantum fluctuations. New proposed scenarios where all could be  \cite{Namba:2015gja}. How much room is there? Do improved constraints on NG, etc, remove this window?
+\item Should we address these papers at all: 1410.8845, rebutted in 1508.01527, re-rebutted in 1510.06759, (different author) 1510.07956?
+\end{itemize}
+
+\subsection{Large $r$, inflaton field range, symmetries}
+Although the spectrum of tensor fluctuations depends only on the Hubble parameter during inflation, the scalar power depends also depends on the evolution of the homogeneous field sourcing inflation. This means that the tensor-to-scalar ratio, $r$, is related to the inflaton field range in Planck units \cite{Lyth:1996im}
+\begin{equation}
+\frac{\Delta\Phi}{M_p}=\int_0^{\mathcal{N}_{\rm end}}d\mathcal{N}\,\left(\frac{r}{8}\right)^{1/2}
+\end{equation}
+where $\mathcal{N}$ is the total number of e-folds needed to put the largest observed scales in causal contact during inflation. The tensor to scalar ratio, $r$ is in general not a constant during inflation. It is perhaps useful to define an effective number of e-folds
+\begin{equation}
+\mathcal{N}_{\rm eff}=\int_0^{\mathcal{N}_{\rm end}}d\mathcal{N}\,\left(\frac{r}{r_{\rm CMB}}\right)^{1/2}
+\end{equation}
+where $r_{\rm CMB}$ is the value of the tensor-to-scalar ratio at large scales ($k=0.05$ $Mpc^{-1}$). Then the relationship between field range and the tensor-to-scalar ratio becomes algebraic:
+\begin{equation}
+\frac{\Delta\Phi}{M_p}=\left(\frac{r_{\rm CMB}}{8}\right)^{1/2}\mathcal{N}_{\rm eff}
+\end{equation}
+Since $r$ is just the ratio of tensor and scalar power, we can write $d\ln r/d\mathcal{N}=n_T-(n_s-1)$. For canonical single-field inflation we can use the consistency relation between $r$ and $n_T$ to write $d\ln r/d\mathcal{N}=-(n_s-1)+\frac{r}{8}$.
+
+The total number of e-folds needed to put the largest scales in causal contact depends on the reheating temperature. Furthermore, there is model-dependence in how parameters vary during inflation.\\
+
+{\bf Some example model to illustrate further...probably need a plot}.
+
+Can $\epsilon$ vary non-monotonically in such a way that $r$ is large but field range was sub-Planckian? There are several papers claiming this, for example \cite{BenDayan:2009kvHotchkiss:2011gzm, Chatterjee:2014hna}. Raphael suggested some (all?) had a numerical error...We should comment.
+
+So, upshot is that small field models have $\Delta\Phi/M_p\ll 1$, and so $r$ unobservable with CMB-S4. Large field models, where $\Delta\Phi/M_p\gtrsim\mathcal{O}(1)$ are detectable with this instrument. As effective field theories, large field inflation is perfectly reasonable \cite{Linde:2005ht, Kaloper:2011jz, Csaki:2014bua,Kaplan:2015fuy,Choi:2015fiu} (that is, the approximate shift symmetry ensures that quantum corrections from the inflaton and graviton will not spoil the potential even over a super-Planckian range). However, it is still an important question whether or not large field inflation can be obtained from a UV complete theory. String theory is the best developed candidate for the theory of quantum gravity, and there have been several proposals for large-field inflation \cite{Silverstein:2008sg, McAllister:2008hb, Berg:2009tg, Palti:2014kza,McAllister:2014mpa, Marchesano:2014mla, Blumenhagen:2015xpa}. While these constructions are very promising, there is also interesting current discussion of whether at least some apparent means to achieve large field inflation (via multiple axions) may be incompatible with basic principles of quantum gravity \cite{delaFuente:2014aca,Bachlechner:2015qja,Heidenreich:2015wga,Kooner:2015rza}. A detection of $r$, with a robust conclusion that it is from quantum fluctuations, would provide the only data point for the foreseeable future that weighs in on quantum gravity.
+
+\subsection{Other probes allowed by a detection}
+If the amplitude of gravitational waves is large enough, it becomes more reasonable to hope we might measure some other things
+ \begin{itemize}
+\item how large is large enough that we could hope to say something about $n_T$, in conjunction with futuristic direct GW detection?
+\item any scenarios, even wild where, ie, $\langle\zeta\zeta h\rangle$ or other correlators could be large and somehow accessible?
+ \end{itemize}
+
+\section{Constraining the amplitude of primordial gravitational waves} 
+\subsection{What we learn from the $r<0.01$}
+- models that live here have field ranges that are super-Planckian
+
+
+
+\subsection{What we learn from the constraint $r<0.001$}
+
+models that live here: Starobinsky and friends
+
+
+\section{Improved constraints on the particle content of the primordial universe}
+\begin{itemize}
+\item Scalar power spectrum: running, wiggles
+\item non-Gaussianity (three point function, four point function)
+{\bf text from Joel Meyers, so far just copied from wiki except tex-ified} \\
+The present best constraints on local non-Gaussianity come from the Planck 2015 analysis and give $f_{\rm NL} = 0.8 \pm 5.0$ (68\% CL) [Planck2015 - 1502.01592]. A noise-free cosmic variance limited CMB experiment is expected to produce constraints on $f_{\rm NL}$ with 1$\sigma$ error bars of about 3 [astro-ph/0005036]. Therefore the best that can be expected of CMB Stage-IV is slightly less than a factor of two improvement on the current best limits.
+
+A detection of local non-Gaussianity would have far reaching theoretical implications, since any significant detection of local $f_{\rm NL}$ would rule out all models of single clock inflation [astro-ph/0407059]. In the absence of a detection, however, it is important to ask what can be learned from improved constraints on $f_{\rm NL}$. Though not firm, nor entirely robustly defined, it can be argued that a natural theoretical threshold where qualitatively new general conclusions about the physics of the early universe can be drawn would come from constraints on $f_{\rm NL}<\mathcal{O}(1)$, see for example [1412.4671] for a fuller discussion. In order to achieve this level of constraint, it seems necessary to move beyond the cosmic microwave background to study other data sets, such as large scale structure. Despite the fact that CMB Stage-IV is not expected to reach this threshold, it is worth asking what can be gleaned from an improved constraint on $f_{\rm NL}$ from the CMB.
+
+There do exist some well motivated models for the origin of fluctuations in the early universe which predict local non-Gaussianity at a level where CMB Stage-IV could either hint toward, or slightly disfavor at around the level of 2$\sigma$. These models include the simplest modulated reheating scenario [astro-ph/0306006] and ekpyrotic cosmology [0906.0530], both of which predict $f_{\rm NL}\sim5$.
+
+In the modulated reheating scenario, the field which drives inflation $\Phi$ decays to the particles of the standard model with a rate $\gamma$ which is determined by the value of a second field $\sigma$ which remains light throughout inflation. The quantum fluctuations in $\sigma$ result in a spatially modulated reheating surface resulting in the curvature perturbations that we observe in the CMB and large scale structure. The process by which the fluctuations in the light field are converted into curvature fluctuations naturally results in local non-Gaussianity given by $f_{\rm NL} = 5(1-\Gamma \Gamma^{\prime\prime}/\Gamma^{\prime2})$, where this formula holds in the case that $\Phi$ oscillates about a quadratic minimum after inflation and the fluctuations in $\Phi$ make a negligible contribution to the observed power spectrum.
+
+This can be contrasted with the simplest curvaton scenario, where a field ? which remains light during inflation comes to dominate the energy density of the universe after the field which drives inflation $\Phi$ decays. The fluctuations in the energy density of ? then determine the curvature perturbations that are observed today. The local non-Gaussianity in this simple model is predicted to be $f_{\rm NL} = -5/4$ [hep-ph/0110002], which is unfortunately a few times smaller than the expected error bar from CMB Stage-IV.
+
+Absent a significant detection of local non-Gaussianity (which is unlikely given the current constraints from Planck), CMB Stage-IV can provide useful constraints or tantalizing hints about particular models of the early universe, though it will unfortunately be unable to reach the level of constraint at which broader conclusions can be drawn. 
+\item isocurvature
+\end{itemize}
+
+\section{Improved constraints on spatial curvature, anomalies, birefringence, \dots}
+
+\bibliography{./cmbs4, temp_inf}
 
 %%
 %% Populate the .bib file with entries from SPIRES Bibtex (preferred)
