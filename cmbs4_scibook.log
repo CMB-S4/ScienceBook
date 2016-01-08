@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  7 JAN 2016 17:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  7 JAN 2016 18:28
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -497,28 +497,28 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 134.
+(hyperref)                removing `math shift' on input line 133.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\ell' on input line 134.
+(hyperref)                removing `\ell' on input line 133.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 134.
+(hyperref)                removing `math shift' on input line 133.
 
 [6] <Intro/Fig-FlowChart1_v1.pdf, id=308, 794.97pt x 614.295pt>
 File: Intro/Fig-FlowChart1_v1.pdf Graphic file (type pdf)
 
 <use Intro/Fig-FlowChart1_v1.pdf>
-Package pdftex.def Info: Intro/Fig-FlowChart1_v1.pdf used on input line 157.
+Package pdftex.def Info: Intro/Fig-FlowChart1_v1.pdf used on input line 152.
 (pdftex.def)             Requested size: 446.2658pt x 344.84645pt.
 
-<Intro/Fig-FlowChart2_v1.pdf, id=309, 1027.84pt x 770.88pt>
+<Intro/Fig-FlowChart2_v1.pdf, id=310, 1027.84pt x 770.88pt>
 File: Intro/Fig-FlowChart2_v1.pdf Graphic file (type pdf)
 
 <use Intro/Fig-FlowChart2_v1.pdf>
-Package pdftex.def Info: Intro/Fig-FlowChart2_v1.pdf used on input line 166.
+Package pdftex.def Info: Intro/Fig-FlowChart2_v1.pdf used on input line 161.
 (pdftex.def)             Requested size: 469.75499pt x 416.78656pt.
 ) (./Inflation/inflation_cmbs4.tex [7]
 [8 <./Intro/Fig-FlowChart1_v1.pdf>] [9 <./Intro/Fig-FlowChart2_v1.pdf>]
@@ -938,10 +938,10 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2014/texm
 f-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on cmbs4_scibook.pdf (29 pages, 1410585 bytes).
+Output written on cmbs4_scibook.pdf (29 pages, 1410063 bytes).
 PDF statistics:
- 928 PDF objects out of 1000 (max. 8388607)
- 783 compressed objects within 8 object streams
+ 929 PDF objects out of 1000 (max. 8388607)
+ 784 compressed objects within 8 object streams
  131 named destinations out of 1000 (max. 500000)
  518 words of extra memory for PDF output out of 10000 (max. 10000000)
 
