@@ -1,60 +1,68 @@
-\BOOKMARK [1][-]{section.0.1}{Brief History and Current Status of CMB measurements}{}% 1
-\BOOKMARK [1][-]{section.0.2}{Science reach of CMB-S4}{}% 2
-\BOOKMARK [1][-]{section.0.3}{From science goals to CMB-S4 design}{}% 3
-\BOOKMARK [2][-]{subsection.0.3.1}{Conceptual design of CMB-S4}{section.0.3}% 4
-\BOOKMARK [3][-]{subsubsection.0.3.1.1}{Sensitivity and detector count}{subsection.0.3.1}% 5
-\BOOKMARK [3][-]{subsubsection.0.3.1.2}{Inflationary B-modes: low \040sensitivity, foregrounds and atmospheric noise mitigation}{subsection.0.3.1}% 6
-\BOOKMARK [3][-]{subsubsection.0.3.1.3}{Neutrinos and dark energy: high \040sensitivity}{subsection.0.3.1}% 7
-\BOOKMARK [2][-]{subsection.0.3.2}{Refining the CMB-S4 science case and key performance parameters}{section.0.3}% 8
-\BOOKMARK [1][-]{section.0.4}{The Road from Stage 3 to Stage 4}{}% 9
-\BOOKMARK [0][-]{chapter.1}{Inflation Physics from the Cosmic Microwave Background}{}% 10
-\BOOKMARK [1][-]{section.1.1}{Introduction}{chapter.1}% 11
-\BOOKMARK [1][-]{section.1.2}{Implications of a detection of primordial gravitational waves with CMB-S4}{chapter.1}% 12
-\BOOKMARK [2][-]{subsection.1.2.1}{A new scale of particle physics}{section.1.2}% 13
-\BOOKMARK [2][-]{subsection.1.2.2}{Large r, inflaton field range, symmetries}{section.1.2}% 14
-\BOOKMARK [2][-]{subsection.1.2.3}{Other probes allowed by a detection}{section.1.2}% 15
-\BOOKMARK [1][-]{section.1.3}{Constraining the amplitude of primordial gravitational waves}{chapter.1}% 16
-\BOOKMARK [2][-]{subsection.1.3.1}{What we learn from the r<0.01}{section.1.3}% 17
-\BOOKMARK [2][-]{subsection.1.3.2}{What we learn from the constraint r<0.001}{section.1.3}% 18
-\BOOKMARK [1][-]{section.1.4}{Improved constraints on the particle content of the primordial universe}{chapter.1}% 19
-\BOOKMARK [1][-]{section.1.5}{Improved constraints on spatial curvature, anomalies, birefringence, \203}{chapter.1}% 20
-\BOOKMARK [0][-]{chapter.2}{Neutrino Physics from the Cosmic Microwave Background}{}% 21
-\BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 22
-\BOOKMARK [1][-]{section.2.2}{Neutrino Mass}{chapter.2}% 23
-\BOOKMARK [2][-]{subsection.2.2.1}{Theory Review}{section.2.2}% 24
-\BOOKMARK [2][-]{subsection.2.2.2}{Observational Signatures and Target}{section.2.2}% 25
-\BOOKMARK [3][-]{subsubsection.2.2.2.1}{CMB Power Spectra \(TT, EE, Lensing Potential\)}{subsection.2.2.2}% 26
-\BOOKMARK [3][-]{subsubsection.2.2.2.2}{SZ Cluster Abundance}{subsection.2.2.2}% 27
-\BOOKMARK [3][-]{subsubsection.2.2.2.3}{Cross-correlations with External Datasets}{subsection.2.2.2}% 28
-\BOOKMARK [2][-]{subsection.2.2.3}{Forecasts}{section.2.2}% 29
-\BOOKMARK [2][-]{subsection.2.2.4}{Relation to Lab Experiments}{section.2.2}% 30
-\BOOKMARK [1][-]{section.2.3}{Effective Number of Neutrinos}{chapter.2}% 31
-\BOOKMARK [2][-]{subsection.2.3.1}{Theory Review}{section.2.3}% 32
-\BOOKMARK [2][-]{subsection.2.3.2}{Observational Signatures and Target}{section.2.3}% 33
-\BOOKMARK [2][-]{subsection.2.3.3}{Forecasts}{section.2.3}% 34
-\BOOKMARK [2][-]{subsection.2.3.4}{Thermal History and Big Bang Nucleosynthesis}{section.2.3}% 35
-\BOOKMARK [1][-]{section.2.4}{Other Targets}{chapter.2}% 36
-\BOOKMARK [2][-]{subsection.2.4.1}{Axion-like Particles}{section.2.4}% 37
-\BOOKMARK [2][-]{subsection.2.4.2}{Decaying Massive Particles}{section.2.4}% 38
-\BOOKMARK [0][-]{chapter.3}{Dark Energy / Gravity / Dark Matter}{}% 39
-\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 40
-\BOOKMARK [0][-]{chapter.4}{CMB Lensing}{}% 41
-\BOOKMARK [1][-]{section.4.1}{Introduction to CMB Lensing}{chapter.4}% 42
-\BOOKMARK [1][-]{section.4.2}{Measuring Neutrino Masses with the Lensing Auto Spectrum}{chapter.4}% 43
-\BOOKMARK [2][-]{subsection.4.2.1}{Bias Subtraction}{section.4.2}% 44
-\BOOKMARK [1][-]{section.4.3}{Delensing}{chapter.4}% 45
-\BOOKMARK [2][-]{subsection.4.3.1}{Neff from Delensing E-modes}{section.4.3}% 46
-\BOOKMARK [2][-]{subsection.4.3.2}{Primary Gravity Waves from Delensing B-modes}{section.4.3}% 47
-\BOOKMARK [2][-]{subsection.4.3.3}{Method}{section.4.3}% 48
-\BOOKMARK [1][-]{section.4.4}{Halo Lensing}{chapter.4}% 49
-\BOOKMARK [2][-]{subsection.4.4.1}{Modified Estimator}{section.4.4}% 50
-\BOOKMARK [2][-]{subsection.4.4.2}{Forecasts}{section.4.4}% 51
-\BOOKMARK [1][-]{section.4.5}{Cross-correlations}{chapter.4}% 52
-\BOOKMARK [2][-]{subsection.4.5.1}{CMB Lens x Optical Lens}{section.4.5}% 53
-\BOOKMARK [2][-]{subsection.4.5.2}{CMB Lens x Galaxy Redshift Survey}{section.4.5}% 54
-\BOOKMARK [1][-]{section.4.6}{Systematic Effects and Mitigation}{chapter.4}% 55
-\BOOKMARK [2][-]{subsection.4.6.1}{Astrophysical Foregrounds}{section.4.6}% 56
-\BOOKMARK [2][-]{subsection.4.6.2}{Instrumental Effects}{section.4.6}% 57
-\BOOKMARK [1][-]{section.4.7}{Instrument, Survey, and Simulation Requirements}{chapter.4}% 58
-\BOOKMARK [0][-]{chapter.5}{Simulations and Analysis}{}% 59
-\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 60
+\BOOKMARK [1][-]{section.0.1}{Brief History and Current Status of CMB measurements}{}
+\BOOKMARK [1][-]{section.0.2}{Science reach of CMB-S4}{}
+\BOOKMARK [1][-]{section.0.3}{From science goals to CMB-S4 design}{}
+\BOOKMARK [2][-]{subsection.0.3.1}{Conceptual design of CMB-S4}{section.0.3}
+\BOOKMARK [3][-]{subsubsection.0.3.1.1}{Sensitivity and detector count}{subsection.0.3.1}
+\BOOKMARK [3][-]{subsubsection.0.3.1.2}{Inflationary B-modes: low \040sensitivity, foregrounds and atmospheric noise mitigation}{subsection.0.3.1}
+\BOOKMARK [3][-]{subsubsection.0.3.1.3}{Neutrinos and dark energy: high \040sensitivity}{subsection.0.3.1}
+\BOOKMARK [2][-]{subsection.0.3.2}{Refining the CMB-S4 science case and key performance parameters}{section.0.3}
+\BOOKMARK [1][-]{section.0.4}{The Road from Stage 3 to Stage 4}{}
+\BOOKMARK [0][-]{chapter.1}{Inflation Physics from the Cosmic Microwave Background}{}
+\BOOKMARK [1][-]{section.1.1}{Introduction}{chapter.1}
+\BOOKMARK [1][-]{section.1.2}{Implications of a detection of primordial gravitational waves with CMB-S4}{chapter.1}
+\BOOKMARK [2][-]{subsection.1.2.1}{A new scale of particle physics}{section.1.2}
+\BOOKMARK [2][-]{subsection.1.2.2}{Large r, inflaton field range, symmetries}{section.1.2}
+\BOOKMARK [2][-]{subsection.1.2.3}{Other probes allowed by a detection}{section.1.2}
+\BOOKMARK [1][-]{section.1.3}{Constraining the amplitude of primordial gravitational waves}{chapter.1}
+\BOOKMARK [2][-]{subsection.1.3.1}{What we learn from the r<0.01}{section.1.3}
+\BOOKMARK [2][-]{subsection.1.3.2}{What we learn from the constraint r<0.001}{section.1.3}
+\BOOKMARK [1][-]{section.1.4}{Improved constraints on the particle content of the primordial universe}{chapter.1}
+\BOOKMARK [1][-]{section.1.5}{Improved constraints on spatial curvature, anomalies, birefringence, \203}{chapter.1}
+\BOOKMARK [0][-]{chapter.2}{Neutrino Physics from the Cosmic Microwave Background}{}
+\BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}
+\BOOKMARK [1][-]{section.2.2}{Neutrino Mass}{chapter.2}
+\BOOKMARK [2][-]{subsection.2.2.1}{Theory Review}{section.2.2}
+\BOOKMARK [2][-]{subsection.2.2.2}{Observational Signatures and Target}{section.2.2}
+\BOOKMARK [3][-]{subsubsection.2.2.2.1}{CMB Power Spectra \(TT, EE, Lensing Potential\)}{subsection.2.2.2}
+\BOOKMARK [3][-]{subsubsection.2.2.2.2}{SZ Cluster Abundance}{subsection.2.2.2}
+\BOOKMARK [3][-]{subsubsection.2.2.2.3}{Cross-correlations with External Datasets}{subsection.2.2.2}
+\BOOKMARK [2][-]{subsection.2.2.3}{Forecasts}{section.2.2}
+\BOOKMARK [2][-]{subsection.2.2.4}{Relation to Lab Experiments}{section.2.2}
+\BOOKMARK [1][-]{section.2.3}{Effective Number of Neutrinos}{chapter.2}
+\BOOKMARK [2][-]{subsection.2.3.1}{Theory Review}{section.2.3}
+\BOOKMARK [2][-]{subsection.2.3.2}{Observational Signatures and Target}{section.2.3}
+\BOOKMARK [2][-]{subsection.2.3.3}{Forecasts}{section.2.3}
+\BOOKMARK [2][-]{subsection.2.3.4}{Thermal History and Big Bang Nucleosynthesis}{section.2.3}
+\BOOKMARK [1][-]{section.2.4}{Other Targets}{chapter.2}
+\BOOKMARK [2][-]{subsection.2.4.1}{Axion-like Particles}{section.2.4}
+\BOOKMARK [2][-]{subsection.2.4.2}{Decaying Massive Particles}{section.2.4}
+\BOOKMARK [0][-]{chapter.3}{Dark Energy / Gravity / Dark Matter}{}
+\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}
+\BOOKMARK [0][-]{chapter.4}{CMB Lensing}{}
+\BOOKMARK [1][-]{section.4.1}{Introduction to CMB Lensing}{chapter.4}
+\BOOKMARK [1][-]{section.4.2}{Measuring Neutrino Masses with the Lensing Auto Spectrum}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.2.1}{Bias Subtraction}{section.4.2}
+\BOOKMARK [1][-]{section.4.3}{Delensing}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.3.1}{Neff from Delensing E-modes}{section.4.3}
+\BOOKMARK [2][-]{subsection.4.3.2}{Primary Gravity Waves from Delensing B-modes}{section.4.3}
+\BOOKMARK [2][-]{subsection.4.3.3}{Method}{section.4.3}
+\BOOKMARK [1][-]{section.4.4}{Halo Lensing}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.4.1}{Modified Estimator}{section.4.4}
+\BOOKMARK [2][-]{subsection.4.4.2}{Forecasts}{section.4.4}
+\BOOKMARK [1][-]{section.4.5}{Cross-correlations}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.5.1}{CMB Lens x Optical Lens}{section.4.5}
+\BOOKMARK [2][-]{subsection.4.5.2}{CMB Lens x Galaxy Redshift Survey}{section.4.5}
+\BOOKMARK [1][-]{section.4.6}{Systematic Effects and Mitigation}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.6.1}{Astrophysical Foregrounds}{section.4.6}
+\BOOKMARK [2][-]{subsection.4.6.2}{Instrumental Effects}{section.4.6}
+\BOOKMARK [1][-]{section.4.7}{Instrument, Survey, and Simulation Requirements}{chapter.4}
+\BOOKMARK [0][-]{chapter.5}{Simulations and Data Analysis}{}
+\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}
+\BOOKMARK [2][-]{subsection.5.1.1}{Data Analysis}{section.5.1}
+\BOOKMARK [2][-]{subsection.5.1.2}{Simulation}{section.5.1}
+\BOOKMARK [2][-]{subsection.5.1.3}{Coupling Simulation and Data Analysis}{section.5.1}
+\BOOKMARK [1][-]{section.5.2}{Forecasting}{chapter.5}
+\BOOKMARK [1][-]{section.5.3}{Sky Modeling}{chapter.5}
+\BOOKMARK [1][-]{section.5.4}{Time-Ordered Data Processing}{chapter.5}
+\BOOKMARK [1][-]{section.5.5}{Component Separation}{chapter.5}
+\BOOKMARK [1][-]{section.5.6}{Statistics and Parameters}{chapter.5}
