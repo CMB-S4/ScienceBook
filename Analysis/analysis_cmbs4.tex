@@ -1,6 +1,6 @@
-%%%%%% CMB-S4 Neutrinos Chapter  %%%%%%%%%%%%%%%%
+%%%%%% CMB-S4 Simulations and Data Analysis Chapter  %%%%%%%%%%%%%%%%
  
-\chapter{Simulations and Analysis}
+\chapter{Simulations and Data Analysis}
 \renewcommand*\thesection{\arabic{section}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -10,7 +10,148 @@
 
 \section{Introduction}
 
-Here is an intro.
+Overview of simulations and data analysis elements motivating the subsequent division into 5 blocks.
+
+\subsection{Data Analysis}
+
+A sequence of S/N enhancing data compressions via domain transformations - time samples (red) to sky pixels (blue) to map multipoles (green) to physical parameters (yellow).
+
+An iterative process, with each domain exposing different systematic effects to be mitigated.
+
+A full analysis requires propogating not just the data but also their covariance between domains. The size of the full pixel covariance now precludes exact methods except in certain special cases.
+
+\begin{figure}[htbp]
+\hspace*{3in}\includegraphics[width=0.5\textwidth]{da}
+\caption{The CMB data analysis pipeline}
+\label{default}
+
+\end{figure}
+
+\newpage
+
+\subsection{Simulation}
+
+Needed for 
+\begin{itemize}
+\item Mission design and development (both instrument and observation)
+\item Validation and verification of analysis tools
+\item Absent a full covariance matrix, Monte Carlo based uncertainty quantification and debiasing.
+\end{itemize}
+
+From top to bottom, there is an inevitable trade-off between the computational cost of generating the simulation and its realism and accuracy.
+
+\begin{figure}[htbp]
+\includegraphics[width=0.5\textwidth]{sim}
+\caption{The CMB simulation pipeline}
+\label{default}
+
+\end{figure}
+
+\newpage
+
+\subsection{Coupling Simulation and Data Analysis}
+
+The overall simulation and data analysis pipeline runs both as a top-down data reduction and a wrap-around refinement of mission and sky characterization and modeling.
+
+It can be subdivided into 5 blocks based on the challenges faced and expertise required to address them.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=1\textwidth]{simda}
+\caption{The full CMB simulation/data analysis pipeline}
+\label{default}
+
+\end{figure}
+
+\newpage
+
+\section{Forecasting}
+
+Key challenges: 
+\begin{itemize}
+\item capturing sufficient complexity in multipole-domain sky and mission models.
+\end{itemize}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=1\textwidth]{fc}
+\caption{The forecasting pipeline}
+\label{default}
+
+\end{figure}
+
+\newpage
+
+\section{Sky Modeling}
+
+Key challenges: 
+\begin{itemize} 
+\item reliability of models based on noisy, bandpassed, beam-convolved observations, including Planck
+\item self-consistency of CMB secondaries and extra-Galactic foregrounds
+\item usability/software engineering
+\end{itemize} 
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=1\textwidth]{sm}
+\caption{The sky modeling pipeline}
+\label{default}
+
+\end{figure}
+
+\newpage
+
+\section{Time-Ordered Data Processing}
+
+Key challenges:
+\begin{itemize}
+\item computational tractability due to data volume and complexity of next-generation supercomputers
+\item mitigating raw data systematics and developing sufficient mission and data models
+\end{itemize}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=1\textwidth]{tod}
+\caption{The time-ordered data processing pipeline}
+\label{default}
+
+\end{figure}
+
+\newpage
+
+\section{Component Separation}
+
+Key challenges:
+\begin{itemize}
+\item validation - are we using the right algorithms for the (as yet unknown) real foregrounds
+\item verification - are these algorithms right given our (as yet flawed) simulations
+\end{itemize}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=1\textwidth]{cs}
+\caption{The component separation pipeline}
+\label{default}
+
+\end{figure}
+
+\newpage
+
+\section{Statistics and Parameters}
+
+Key challenges:
+\begin{itemize}
+\item are our approximations to the full data covariance sufficient?
+\end{itemize}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=1\textwidth]{sp}
+\caption{The statistics and parameters pipeline}
+\label{default}
+
+\end{figure}
+
 
 %\bibliography{cmbs4}
 
