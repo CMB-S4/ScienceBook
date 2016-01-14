@@ -3,7 +3,6 @@
 \chapter{Inflation Physics from the Cosmic Microwave Background}
 \renewcommand*\thesection{\arabic{section}}
 
-
 \def\gtrsim{\raise-.75ex\hbox{$\buildrel>\over\sim$}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -11,7 +10,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Introduction}
-The study of the polarization of the cosmic microwave background will bring additional information about both the gravitational and matter sectors of the primordial universe.  CMB-S4 can push the constraint on $r$ (the ratio of power in tensor modes to power in scalar modes) nearly two orders of magnitude below the current bound. A detection of primordial gravitational waves in the range accessible to this instrument would:
+The study of the polarization of the cosmic microwave background will bring additional information about both the gravitational and matter sectors of the primordial universe. However, for primordial gravitational waves there are clear theoretical thresholds that can be reached with this next generation instrument. We will use the tensor-to-scalar ratio as the primary inflationary science driver for the design.
+
+CMB-S4 can push the constraint on $r$ (the ratio of power in tensor modes to power in scalar modes) nearly two orders of magnitude below the current bound.  A detection of primordial gravitational waves in the range accessible to this instrument would:
 \begin{itemize}
 \item  Rule out the only currently developed competitor to inflation (ekpyrotic scenario)
  \item Reveal a new scale of particle physics far above those accessible with terrestrial particle colliders. 
@@ -20,22 +21,45 @@ The study of the polarization of the cosmic microwave background will bring addi
 \item	 Provide strong evidence that the complete theory of quantum gravity must accommodate a Planckian field range for the inflaton
 \item  Constrain the mass of the graviton 
 \end{itemize}
-In the absence of a detection, each factor of 10 improvement in the constraint will reach new and significant thresholds, ruling out major classes of inflation models. In addition, a detailed map of CMB polarization will improve constraints of the matter content of inflation models, including the scalar power spectrum, non-Gaussianity, isocurvature modes...
+In the absence of a detection, each factor of 10 improvement in the constraint will reach new and significant thresholds, ruling out major classes of inflation models. 
+
+In Section \ref{sec:detection} we review in detail what a detection of primordial gravitational waves would mean. Section \ref{sec:upperLimits} explains why, in the absence of a detection, a robust upper limit of $r<0.001$ is the interesting number to push for. Section \ref{sec:needs} lays out what is required to achieve that goal. The final two sections describe the significant gains CMB S4 will allow in constraining other aspects of the primordial universe, both standard and more speculative. These include characterizing the scalar power spectrum, constraining curvature, non-Gaussianity, and isocurvature modes, further probes of CMB `anomalies' and test/constraints of cosmic strings, mass of the graviton, cosmic birefringence, parity violation....?
  
 Recent reviews \cite{Kamionkowski:2015yta}.
 
 \section{Implications of a detection of primordial gravitational waves with CMB-S4}
+\label{sec:detection}
+The overall evolution of the universe at either early or late times can be well modeled by a Friedmann-Robertson-LeMaitre-Walker metric which is spatially homogeneous and isotropic but possibly evolving in time: $g_{\mu\nu}=-dt^2+a^2(t)[\frac{dr^2}{1-kr^2}+r^2d\Omega^2]$ where $k=\pm1$ allows for open/closed universes and the time evolution is specified by the scale factor, $a(t)$. For much of the rest of the discussion we will for simplicity assume spatial flatness ($k=0$), although we will return to constraints on the curvature in Section xxx. The Hubble parameter, $H=\dot{a}/a$, gives the rate of expansion of the universe. 
 
-{\bf To add:}
-\begin{itemize}
-\item The basic equations (ie, the metric and scalar/tensor power)
-\item Explain why ekpyrotic is ruled out, references
-\item Discuss that this is linearized quantum gravity
-\item comment on massive gravity (references) and constraining graviton mass \cite{Bessada:2009qw,Dubovsky:2009xk,Bessada:2009np} (others refs?)
-\end{itemize}
+Arguably the most significant discrepancy between the predictions of a generic hot big bang model and our observed sky is the horizon problem: the measured average CMB temperature and the statistics of the measured anisotropies are the same over regions that share no causal history. Models for the primordial universe attempt to give a causal (and ideally also a `natural') explanation for the observed homogeneity in scales greater than a couple degrees by postulating an early era where the co-moving Hubble radius, $(aH)^{-1}$ is decreasing with time. Inflation puts large scales in causal contact by an era of accelerated expansion, $\ddot{a}>0$, with nearly (but not exactly) constant Hubble parameter. The matter field that sources this expansion should have equation of state $w\approx -1$, which is minimally provided by a single scalar field whose energy density is predominately determined by its potential.
+
+The remarkable feature of inflation is that once an evolving scalar field is invoked to source the background accelerated expansion, quantum fluctuations during inflation inevitably generate post-inflationary metric perturbations. The perturbed metric can be described in the ADM formalism by
+\begin{eqnarray}
+ds^2&=&-N^2dt^2 +h_{ij}(dx^i+N^idt)(dx^j+N^jdt)\nonumber\\
+h_{ij}&=&a^2(t)[e^{2\zeta}\delta_{ij}+\gamma_{ij}]
+\end{eqnarray}
+Here the equations of motion for $N$ (the lapse) and $N^i$ (the shift) are the Hamiltonian and momentum constraints, while $\zeta$ ($=-\mathcal{R}$ of {\it Planck convention}) and $\gamma_{ij}$ contain the dynamical scalar and tensor degrees of freedom. (In scenarios with matter sources other than a scalar field there may also be vector perturbations. These are generally irrelevant unless they are being actively sourced by, eg, cosmic strings in the post-inflationary universe. 
+
+The link between the CMB and other tracers of primordial inhomogeneities and the primordial era is a statistical representation of the metric fluctuations after inflation and reheating. Observations today constrain these parameters at early times, which we can compare to calculations from any theory for the primordial era (and reheating). To an excellent approximation, the observed scalar fluctuations are statistically homogeneous, isotropic, and Gaussian so they are well characterized by a power spectrum that is only a function of wavenumber $|\vec{k}|$. Assuming that the same is true for any tensor fluctuations (as is predicted by inflation), we characterize the amplitude and scale dependence of fluctuations by
+
+\begin{eqnarray}
+\langle\zeta(\vec{k})\zeta(\vec{k}^{\prime})\rangle&=&(2\pi)^3\delta^3(\vec{k}+\vec{k}^{\prime})\frac{2\pi^2}{k^3}\mathcal{P}_{\zeta}(k)\nonumber\\
+\mathcal{P}_{\zeta}(k)&\equiv& A_s\left(\frac{k}{k_*}\right)^{n_s-1+\frac{1}{2}(dn_s/d\,\ln k)\ln(k/k_*)+\dots}\nonumber\\
+\langle\gamma_s(\vec{k})\gamma_{s^{\prime}}(\vec{k}^{\prime})\rangle&=&(2\pi)^3\delta_{ss^{\prime}}\delta^3(\vec{k}+\vec{k}^{\prime})\frac{2\pi^2}{k^3}\frac{1}{2}\mathcal{P}_{t}(k)\nonumber\\
+\mathcal{P}_{t}(k)&\equiv& A_t \left(\frac{k}{k_*}\right)^{n_t+\frac{1}{2}(dn_t/d\,\ln k)\ln(k/k_*)+\dots}
+\end{eqnarray}
+
+where the factor of $1/2$ in the second to last line accounts for the fact that the measured power includes (presumably equal) contributions from each of the two graviton polarizations. 
+The tensor-to-scalar ratio, $r$ is the relative power in the two types of fluctuations at a chosen pivot scale $k_*$ accessible by the CMB:
+\begin{equation}
+r=\frac{P_T(k_*)}{P_{\zeta}(k_*)}
+\end{equation}
+ 
 
 \subsection{A new scale of particle physics}
 Basic equations, address potential caveats that the new scale is also exactly the scale of inflation:
+
+
 
 \begin{itemize}
 \item Models that also generate a significant amplitude of gravitational waves from particle sources are also constrained by signatures in the scalar fluctuations (especially non-Gaussianity). \cite{Mirbabayi:2014jqa, Ozsoy:2014sba} find that at most $\sim x\%$ or so (get the exact number) could be from sources other than the de Sitter quantum fluctuations. New proposed scenarios where all could be  \cite{Namba:2015gja}. How much room is there? Do improved constraints on NG, etc, remove this window?
@@ -73,6 +97,7 @@ If the amplitude of gravitational waves is large enough, it becomes more reasona
  \end{itemize}
 
 \section{Constraining the amplitude of primordial gravitational waves} 
+\label{sec:upperLimits}
 \subsection{What we learn from the $r<0.01$}
 - models that live here have field ranges that are super-Planckian
 
@@ -82,8 +107,12 @@ If the amplitude of gravitational waves is large enough, it becomes more reasona
 
 models that live here: Starobinsky and friends
 
+\section{CMB data products and simulations required to achieve goals for PGW}
+\label{sec:needs}
 
 \section{Improved constraints on the particle content of the primordial universe}
+\label{sec:scalar}
+
 \begin{itemize}
 \item Scalar power spectrum: running, wiggles
 \item non-Gaussianity (three point function, four point function)
@@ -102,8 +131,10 @@ Absent a significant detection of local non-Gaussianity (which is unlikely given
 \item isocurvature
 \end{itemize}
 
-\section{Improved constraints on spatial curvature, anomalies, birefringence, \dots}
 
+
+\section{Improved constraints on spatial curvature, anomalies, birefringence, \dots}
+\label{sec:speculative}
 \bibliography{./cmbs4, temp_inf}
 
 %%
