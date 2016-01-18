@@ -65,93 +65,25 @@ It can be subdivided into 5 blocks based on the challenges faced and expertise r
 
 \newpage
 
-\section{Forecasting}
-
-Key challenges: 
-\begin{itemize}
-\item capturing sufficient complexity in multipole-domain sky and mission models.
-\end{itemize}
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=1\textwidth]{Analysis/fc}
-\caption{The forecasting pipeline}
-\label{default}
-
-\end{figure}
+\input Analysis/forecasting.tex
 
 \newpage
 
-\section{Sky Modeling}
-
-Key challenges: 
-\begin{itemize} 
-\item reliability of models based on noisy, bandpassed, beam-convolved observations, including Planck
-\item self-consistency of CMB secondaries and extra-Galactic foregrounds
-\item usability/software engineering
-\end{itemize} 
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=1\textwidth]{Analysis/sm}
-\caption{The sky modeling pipeline}
-\label{default}
-
-\end{figure}
+\input Analysis/sky_modeling.tex
 
 \newpage
 
-\section{Time-Ordered Data Processing}
-
-Key challenges:
-\begin{itemize}
-\item computational tractability due to data volume and complexity of next-generation supercomputers
-\item mitigating raw data systematics and developing sufficient mission and data models
-\end{itemize}
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=1\textwidth]{Analysis/tod}
-\caption{The time-ordered data processing pipeline}
-\label{default}
-
-\end{figure}
+\input Analysis/tod_processing.tex
 
 \newpage
 
-\section{Component Separation}
-
-Key challenges:
-\begin{itemize}
-\item validation - are we using the right algorithms for the (as yet unknown) real foregrounds
-\item verification - are these algorithms right given our (as yet flawed) simulations
-\end{itemize}
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=1\textwidth]{Analysis/cs}
-\caption{The component separation pipeline}
-\label{default}
-
-\end{figure}
+\input Analysis/component_separation.tex
 
 \newpage
 
-\section{Statistics and Parameters}
+\input Analysis/statistics_parameters.tex
 
-Key challenges:
-\begin{itemize}
-\item are our approximations to the full data covariance sufficient?
-\end{itemize}
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=1\textwidth]{Analysis/sp}
-\caption{The statistics and parameters pipeline}
-\label{default}
-
-\end{figure}
-
+\newpage
 
 %\bibliography{cmbs4}
 
