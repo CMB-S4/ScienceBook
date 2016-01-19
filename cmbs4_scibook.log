@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  19 JAN 2016 00:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  19 JAN 2016 00:37
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -392,6 +392,9 @@ LaTeX Warning: Label `Kooner:2015rza' multiply defined.
 
 
 LaTeX Warning: Label `fig:expt_progress' multiply defined.
+
+
+LaTeX Warning: Label `fig:science_timeline' multiply defined.
 
 
 LaTeX Warning: Label `default' multiply defined.
@@ -915,11 +918,11 @@ l.185 \bibitem{Kooner:2015rza}
 Chapter 5.
 File: Intro/expt_progress.pdf Graphic file (type pdf)
 <use Intro/expt_progress.pdf>
-Package pdftex.def Info: Intro/expt_progress.pdf used on input line 18.
+Package pdftex.def Info: Intro/expt_progress.pdf used on input line 17.
 (pdftex.def)             Requested size: 281.85585pt x 221.94067pt.
 File: Intro/Fig-FlowChart1_v1.pdf Graphic file (type pdf)
  <use Intro/Fig-FlowChart1_v1.pdf>
-Package pdftex.def Info: Intro/Fig-FlowChart1_v1.pdf used on input line 31.
+Package pdftex.def Info: Intro/Fig-FlowChart1_v1.pdf used on input line 30.
 (pdftex.def)             Requested size: 446.2658pt x 344.84645pt.
  [31
 
@@ -1002,7 +1005,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 106.
 Here is how much of TeX's memory you used:
  6401 strings out of 493117
  93189 string characters out of 6135433
- 177382 words of memory out of 5000000
+ 177383 words of memory out of 5000000
  9536 multiletter control sequences out of 15000+600000
  20354 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1029,7 +1032,7 @@ f-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2014/texmf-di
 st/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on cmbs4_scibook.pdf (42 pages, 1553625 bytes).
+Output written on cmbs4_scibook.pdf (42 pages, 1553612 bytes).
 PDF statistics:
  1249 PDF objects out of 1440 (max. 8388607)
  1054 compressed objects within 11 object streams
