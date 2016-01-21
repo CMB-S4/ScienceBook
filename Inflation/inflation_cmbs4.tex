@@ -16,12 +16,16 @@ CMB-S4 can push the constraint on $r$ (the ratio of power in tensor modes to pow
 \begin{itemize}
 \item  Rule out the only currently developed competitor to inflation (ekpyrotic scenario)
  \item Reveal a new scale of particle physics far above those accessible with terrestrial particle colliders. 
- \item Identify the energy scale of inflation. 
 \item  Provide strong evidence for that gravity is quantized, at least at the linear level.
 \item	 Provide strong evidence that the complete theory of quantum gravity must accommodate a Planckian field range for the inflaton
 \item  Constrain the mass of the graviton 
 \end{itemize}
-In the absence of a detection, each factor of 10 improvement in the constraint will reach new and significant thresholds, ruling out major classes of inflation models. 
+With complementary observations of the statistics of the scalar fluctuations (showing conclusively that the detected signal is dominated by vacuum fluctuations) a detection will also
+\begin{itemize}
+ \item Identify the energy scale of inflation. 
+ \item Provide strong evidence that the complete theory of quantum gravity must accommodate a Planckian field range for the inflaton
+\end{itemize}
+In the absence of a detection, each factor of 10 improvement beyond the current constraint will reach new and significant thresholds, ruling out major classes of inflation models. 
 
 In Section \ref{sec:detection} we review in detail what a detection of primordial gravitational waves would mean. Section \ref{sec:upperLimits} explains why, in the absence of a detection, a robust upper limit of $r<0.001$ is the interesting number to push for. Section \ref{sec:needs} lays out what is required to achieve that goal. The final two sections describe the significant gains CMB S4 will allow in constraining other aspects of the primordial universe, both standard and more speculative. These include characterizing the scalar power spectrum, constraining curvature, non-Gaussianity, and isocurvature modes, further probes of CMB `anomalies' and test/constraints of cosmic strings, mass of the graviton, cosmic birefringence, parity violation....?
  
@@ -29,7 +33,7 @@ Recent reviews \cite{Kamionkowski:2015yta}.
 
 \section{Implications of a detection of primordial gravitational waves with CMB-S4}
 \label{sec:detection}
-The overall evolution of the universe at either early or late times can be well modeled by a Friedmann-Robertson-LeMaitre-Walker metric which is spatially homogeneous and isotropic but possibly evolving in time: $g_{\mu\nu}=-dt^2+a^2(t)[\frac{dr^2}{1-kr^2}+r^2d\Omega^2]$ where $k=\pm1$ allows for open/closed universes and the time evolution is specified by the scale factor, $a(t)$. For much of the rest of the discussion we will for simplicity assume spatial flatness ($k=0$), although we will return to constraints on the curvature in Section xxx. The Hubble parameter, $H=\dot{a}/a$, gives the rate of expansion of the universe. 
+The overall evolution of the universe at either early or late times can be well modeled by a Friedmann-Robertson-LeMaitre-Walker metric which is spatially homogeneous and isotropic but possibly evolving in time: $g_{\mu\nu}=-dt^2+a^2(t)[\frac{dr^2}{1-kr^2}+r^2d\Omega^2]$ where $k=\pm1$ allows for curvature and the time evolution is specified by the scale factor, $a(t)$. For much of the rest of the discussion we will for simplicity assume spatial flatness ($k=0$), although we will return to constraints on the curvature in Section xxx. The Hubble parameter, $H=\dot{a}/a$, gives the rate of expansion of the universe. 
 
 Arguably the most significant discrepancy between the predictions of a generic hot big bang model and our observed sky is the horizon problem: the measured average CMB temperature and the statistics of the measured anisotropies are the same over regions that share no causal history. Models for the primordial universe attempt to give a causal (and ideally also a `natural') explanation for the observed homogeneity in scales greater than a couple degrees by postulating an early era where the co-moving Hubble radius, $(aH)^{-1}$ is decreasing with time. Inflation puts large scales in causal contact by an era of accelerated expansion, $\ddot{a}>0$, with nearly (but not exactly) constant Hubble parameter. The matter field that sources this expansion should have equation of state $w\approx -1$, which is minimally provided by a single scalar field whose energy density is predominately determined by its potential.
 
@@ -49,7 +53,7 @@ The link between the CMB and other tracers of primordial inhomogeneities and the
 \mathcal{P}_{t}(k)&\equiv& A_t \left(\frac{k}{k_*}\right)^{n_t+\frac{1}{2}(dn_t/d\,\ln k)\ln(k/k_*)+\dots}
 \end{eqnarray}
 
-where the factor of $1/2$ in the second to last line accounts for the fact that the measured power includes (presumably equal) contributions from each of the two graviton polarizations. 
+where the factor of $1/2$ in the second to last line accounts for the fact that the measured power includes contributions from each of the two graviton polarizations. 
 The tensor-to-scalar ratio, $r$ is the relative power in the two types of fluctuations at a chosen pivot scale $k_*$ accessible by the CMB:
 \begin{equation}
 r=\frac{P_T(k_*)}{P_{\zeta}(k_*)}
@@ -57,6 +61,7 @@ r=\frac{P_T(k_*)}{P_{\zeta}(k_*)}
  
 
 \subsection{A new scale of particle physics}
+\label{sec:scale-of-inflation}
 Basic equations, address potential caveats that the new scale is also exactly the scale of inflation:
 
 
@@ -67,27 +72,28 @@ Basic equations, address potential caveats that the new scale is also exactly th
 \end{itemize}
 
 \subsection{Large $r$, inflaton field range, symmetries}
-Although the spectrum of tensor fluctuations depends only on the Hubble parameter during inflation, the scalar power depends also depends on the evolution of the homogeneous field sourcing inflation. This means that the tensor-to-scalar ratio, $r$, is related to the inflaton field range in Planck units \cite{Lyth:1996im}
+The spectrum of tensor fluctuations depends only on the Hubble ($H$) parameter during inflation, while the scalar power depends on both $H$ and the evolution of the homogeneous field sourcing inflation. This means that the tensor-to-scalar ratio, $r$, can be related to the inflaton field range in Planck units \cite{Lyth:1996im}
 \begin{equation}
+\label{eq:Lyth}
 \frac{\Delta\Phi}{M_p}=\int_0^{\mathcal{N}_{\rm end}}d\mathcal{N}\,\left(\frac{r}{8}\right)^{1/2}
 \end{equation}
-where $\mathcal{N}$ is the total number of e-folds needed to put the largest observed scales in causal contact during inflation. The tensor to scalar ratio, $r$ is in general not a constant during inflation. It is perhaps useful to define an effective number of e-folds
+where $\mathcal{N}$ is the total number of e-folds needed to put the largest observed scales in causal contact during inflation.
+
+Remarkably, the distance the inflaton moves in field space may be used to infer some properties of quantum gravity from the amplitude of primordial gravitational waves. As bottom-up effective theories, Lagrangians describing inflation need only be valid up to some scale $\Lambda_{\rm UV}$ where $H<\Lambda_{\rm UV}\lesssim M_P$. Scenarios with $\Delta\Phi\sim\mathcal{O}(\Lambda_{\rm UV})$ and $\Lambda_{\rm UV}\approx M_p$ (``large field inflation") can be constructed if the inflaton interactions are invariant under a shift symmetry, $\Phi\rightarrow\Phi+c$. The symmetry must be weakly broken to allow for slow-roll inflation but is nonetheless sufficient to ensure that quantum corrections from the inflaton and graviton will not introduce large corrections to the inflationary Lagrangian \cite{Linde:2005ht, Kaloper:2011jz, Csaki:2014bua,Kaplan:2015fuy,Choi:2015fiu}. However, it is non-trivial to arrive at large-field inflation from the top-down, beginning with a theory valid up to energies well above those needed for inflation. Generically, fields that are heavy enough to be integrated out in constructing the effective theory of inflation ( $m>\Lambda_{\rm UV}$) will introduce corrections to the potential that will limit the field range to $\Delta\Phi\ll\Lambda_{\rm UV}$ (``small-field inflation"). Beyond extrapolating our understanding of effective field theory from energies that are tested experimentally this difficulty is also well studied in string theory, which provides a scale $\Lambda_{\rm UV}=\Lambda_{\rm string}\lesssim M_p$. As the best developed candidate for the theory of quantum gravity, string theory is a useful framework for exploring mechanisms that may allow large-field inflation to be realized even in the presence of heavy degrees of freedom. Several promising constructions have been proposed \cite{Silverstein:2008sg, McAllister:2008hb, Berg:2009tg, Palti:2014kza,McAllister:2014mpa, Marchesano:2014mla, Blumenhagen:2015xpa}. However, there is also interesting current discussion of whether at least some apparent means to achieve large field inflation (via multiple axions) may be incompatible with basic principles of quantum gravity \cite{delaFuente:2014aca,Bachlechner:2015qja,Heidenreich:2015wga,Kooner:2015rza}. 
+
+Equation (\ref{eq:Lyth}) can be used to determine a useful theoretical threshold for $r$ that would allow the most robust conclusion about the field range of the inflaton. Give the possibility that $\Lambda_{\rm UV}$ may be slightly below $M_p$, and the desire for true parametric control of corrections rather than accidental cancellations, we will define small-field inflation as requiring $\frac{\Delta\Phi}{M_p}\ll1$ (in contrast to perhaps half the literature where the line is drawn at $\frac{\Delta\Phi}{M_p}=1$). The total number of e-folds needed to put the largest scales in causal contact depends on the reheating temperature, but since the integrand in Eq.(\ref{eq:Lyth}) is always positive, we can use constraints on the $\approx 7$ e-folds constrained by current CMB observations to provide a conservative bound. The evolution of $r$ during inflation is model dependent, but as a simple starting point consider canonical single-field slow-roll inflation where the consistency relation between $r$ and $n_T$ to write $d\ln r/d\mathcal{N}=-(n_s-1)-\frac{r}{8}$. The variation of this quantity is second-order in slow-roll parameters, so as a first pass we may take it to be constant and use the {\it Planck} satellite constraints assuming constant $n_s$ (and allowing a $3\sigma$ interval) to find
 \begin{equation}
-\mathcal{N}_{\rm eff}=\int_0^{\mathcal{N}_{\rm end}}d\mathcal{N}\,\left(\frac{r}{r_{\rm CMB}}\right)^{1/2}
+\frac{\Delta\Phi}{M_p}\ll1\Rightarrow r\lesssim0.002.
 \end{equation}
-where $r_{\rm CMB}$ is the value of the tensor-to-scalar ratio at large scales ($k=0.05$ $Mpc^{-1}$). Then the relationship between field range and the tensor-to-scalar ratio becomes algebraic:
+Allowing the spectral index to run, we may use the second-order consistency relation $d\ln r/d\mathcal{N}=-\frac{r}{8}(n_s-1+\frac{r}{8})$ and {\it Planck} constraints to find 
 \begin{equation}
-\frac{\Delta\Phi}{M_p}=\left(\frac{r_{\rm CMB}}{8}\right)^{1/2}\mathcal{N}_{\rm eff}
+\frac{\Delta\Phi}{M_p}\ll1\Rightarrow r\lesssim0.0015.
 \end{equation}
-Since $r$ is just the ratio of tensor and scalar power, we can write $d\ln r/d\mathcal{N}=n_T-(n_s-1)$. For canonical single-field inflation we can use the consistency relation between $r$ and $n_T$ to write $d\ln r/d\mathcal{N}=-(n_s-1)+\frac{r}{8}$.
+One might try to construct scenarios where the evolution of the tensor-to-scalar ratio violates slow-roll sufficiently to allow inflation scenarios with $\frac{\Delta\Phi}{M_p}\ll1$ to generate $r\sim\mathcal{O}(0.01)$ or higher \cite{BenDayan:2009kvHotchkiss:2011gzm, Chatterjee:2014hna}. These attempts are under considerable pressure from {\it Planck observations}....{\bf I'd like to add, if it's true, a demonstration of the stronger statement that it's not possible?}
 
-The total number of e-folds needed to put the largest scales in causal contact depends on the reheating temperature. Furthermore, there is model-dependence in how parameters vary during inflation.\\
+In summary, a conclusive detection with a CMB S4 instrument would provide strong evidence that the theory of quantum gravity must accommodate a shift symmetry for the inflaton. As discussed in Section \ref{sec:scale-of-inflation}, there may be some room for small-field inflation to generate a signal from non-vacuum fluctuations. Whether or not future constraints on non-Gaussianity completely close that window, the {\it absence} of a detection with CMB S4 will robustly rule out large-field inflation. 
 
-{\bf Some example model to illustrate further...probably need a plot}.
-
-Can $\epsilon$ vary non-monotonically in such a way that $r$ is large but field range was sub-Planckian? There are several papers claiming this, for example \cite{BenDayan:2009kvHotchkiss:2011gzm, Chatterjee:2014hna}. Raphael suggested some (all?) had a numerical error...We should comment.
-
-So, upshot is that small field models have $\Delta\Phi/M_p\ll 1$, and so $r$ unobservable with CMB-S4. Large field models, where $\Delta\Phi/M_p\gtrsim\mathcal{O}(1)$ are detectable with this instrument. As effective field theories, large field inflation is perfectly reasonable \cite{Linde:2005ht, Kaloper:2011jz, Csaki:2014bua,Kaplan:2015fuy,Choi:2015fiu} (that is, the approximate shift symmetry ensures that quantum corrections from the inflaton and graviton will not spoil the potential even over a super-Planckian range). However, it is still an important question whether or not large field inflation can be obtained from a UV complete theory. String theory is the best developed candidate for the theory of quantum gravity, and there have been several proposals for large-field inflation \cite{Silverstein:2008sg, McAllister:2008hb, Berg:2009tg, Palti:2014kza,McAllister:2014mpa, Marchesano:2014mla, Blumenhagen:2015xpa}. While these constructions are very promising, there is also interesting current discussion of whether at least some apparent means to achieve large field inflation (via multiple axions) may be incompatible with basic principles of quantum gravity \cite{delaFuente:2014aca,Bachlechner:2015qja,Heidenreich:2015wga,Kooner:2015rza}. A detection of $r$, with a robust conclusion that it is from quantum fluctuations, would provide the only data point for the foreseeable future that weighs in on quantum gravity.
+{\it A detection of $r$, together with high confidence that the gravitational waves are sourced from vacuum fluctuations alone, would provide the only data point for the foreseeable future that weighs in on quantum gravity.}
 
 \subsection{Other probes allowed by a detection}
 If the amplitude of gravitational waves is large enough, it becomes more reasonable to hope we might measure some other things
