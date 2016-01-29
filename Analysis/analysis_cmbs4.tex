@@ -59,7 +59,7 @@ Simulations of a CMB mission's data play a number of critical roles; specificall
 \item Monte Carlo based uncertainty quantification and debiasing, particularly when the full data covariance matrix is computationally intractable.
 \end{itemize}
 
-As shown in Figure \ref{fig_sim}, given models of both the mission (instrument and observation) and the sky (CMB and foregrounds) we can generate a simulation of the mission data in any of its domains. However, there is an inevitable trade-off between on the one hand how representative the simulation is of the real data, and on the other the complexity of the input models and the computational cost of generating the simulation. The choice of the simulation data domain will then be determined by the balance between the requirements and the constraints for the particular task at hand.
+As shown in Figure \ref{fig_sim}, given a mission model (instrument and observation) and a sky model (CMB and foregrounds) we can generate a simulation of the mission data in any of its domains. However, there is an inevitable trade-off between on the one hand how representative the simulation is of the real data, and on the other the complexity of the input models and the computational cost of generating the simulation. The choice of the simulation data domain will then be determined by the balance between the requirements and the constraints for the particular task at hand.
 
 \begin{figure}[htbp]
 \includegraphics[width=0.575\textwidth]{Analysis/sim}
@@ -67,7 +67,7 @@ As shown in Figure \ref{fig_sim}, given models of both the mission (instrument a
 \label{fig_sim}
 \end{figure}
 
-Note that the generation of the input mission and sky models are far from trivial tasks, and are themselves informed by the mission characterization and science exploitation branches of the data analysis respectively.
+Note that the generation of the input mission and sky models are themselves far from trivial tasks, with the sky model in particular requiring its own dedicated (mission-independent) simulation capability. Furthermore both of these models are informed by the data analysis pipeline (through the mission characterization and science exploitation branches respectively) creating an iterative loop between simulation and analysis.
 
 \newpage
 
