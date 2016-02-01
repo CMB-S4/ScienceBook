@@ -12,13 +12,9 @@
 
 Extracting science from a CMB dataset is a complex, iterative process requiring expertise in both physical and computational sciences. In this chapter we start by outlining the nominal data analysis pipeline and describing how this is complicated by various real-world issues ranging from instrument systematics to computational tractability. We then discuss the motivations for and corresponding structure of the simulation pipeline. Next we couple these into an overall simulation and data analysis (SimDA) pipeline, and motivate the division of this into 5 SimDA blocks based on the challenges they pose and the expertise required to meet these. Finally we consider each of these blocks in turn, sketching their current state of the art and noting the prospects for addressing their challenges in the context of the CMB-S4 mission.
 
-\newpage
-
 \subsection{Data Analysis}
 
-\begin{figure}[htbp]
-\begin{minipage}[h]{0.6\linewidth}
-The reduction of a CMB data set nominally proceeds in a sequence of steps.
+As illustrated in Figure \ref{fig_da}\footnote{In all the pipeline figures in this chapter, ovals represent data objects, solid rectangles processes, and dashed squares science domains.}, the reduction of a CMB data set nominally proceeds in a sequence of steps.
 \begin{description}
 \item[ Pre-processing:] The raw time-ordered detector data are calibrated and gross time-domain systematics are either removed (typically by template subtraction or filtering) or flagged. The goal here is to make the real data match a model that will underpin all subsequent analyses.
 \item[Map-making:] Estimates of the intensity and the Stokes q- and u-polarizations of the sky signal are extracted from the cleaned time-ordered data at each observing frequency based on their spatial stationarity, and typically using some degree of knowledge of the noise properties. Typically maps are made both using all of the data at a given frequency and splitting the data by time interval, detector subsets, etc to identify and residual systematic effects.
@@ -26,29 +22,16 @@ The reduction of a CMB data set nominally proceeds in a sequence of steps.
 \item[Power spectrum estimation:] The six auto- and cross-angular power spectra of the CMB intensity and E- and B-mode polarizations are estimated from the autocorrelation of the CMB maps or the cross-correlation of the frequency maps, and corrected for E- to B-mode lensing.
 \item[Parameter estimation:] The best-fit parameters for any cosmological model are derived by comparing the theoretical CMB power spectra they would induce with the data and their uncertainties.
 \end{description}
-\end{minipage}
-\begin{minipage}[h]{0.4\linewidth}
-\begin{center}
-\includegraphics[width=0.45\textwidth]{Analysis/nda}
-\caption{The nominal CMB data analysis pipeline.}
-\label{fig_nda}
-\end{center}
-\end{minipage}
-\end{figure}
 
-This reduction essentially consists of a series of changes of basis for the data, from time samples (red ovals in Figure \ref{fig_nda} and beyond) to map pixels (blue) to spectral multipoles (green) to cosmological parameters (yellow), with each basis-change reducing the data volume, increasing the signal-to-noise, and exposing a different class of systematic effects for mitigation. Note however that the data set can only remain a sufficient statistic for the cosmological parameters if we also propagate its full covariance matrix between the various bases. 
+This reduction essentially consists of a series of changes of basis for the data, from time samples (red) to map pixels (blue) to spectral multipoles (green) to cosmological parameters (yellow), with each basis-change reducing the data volume, increasing the signal-to-noise, and exposing a different class of systematic effects for mitigation. Note however that the data set can only remain a sufficient statistic for the cosmological parameters if we also propagate its full covariance matrix between the various bases. 
 
-Beyond this nominal data reduction pipeline, the full analysis pipeline also includes additional mission characterization and science exploitation branches (Figure \ref{fig_da}). For the former, the time-ordered data are extensively used to build a model of the mission itself, comprising both the instrument and the observation. This can include such processes as determining beam properties from planet crossings; estimating noise properties (including cross-correlations) from calibrated, signal-subtracted, time-ordered data; and reconstructing the telescope pointing solution from ancilliary time-domain data such as star-trackers. The resulting mission model then feeds back into all of the ensuing data reduction and interpretation. For the latter, given sufficient observing frequencies we can not simply perform foreground removal, but rather component separation, where the individual foreground components are isolated based on their different (possibly spatially varying) spectral dependencies; such component maps then provide important inputs to astronomy and astrophysics. Similarly a wide range of analyses of the CMB maps, power spectra and parameters collectively inform our understanding of cosmology and fundamental physics, including measurements of the energy scale of inflation and the sum of neutrino masses from the power spectra and of cosmological non-Gaussianity from the higher-order statistics of the CMB maps.
+Beyond this basic data reduction, the analysis pipeline also includes additional mission characterization and science exploitation branches. For the former, the time-ordered data are extensively used to build a model of the mission itself, comprising both the instrument and the observation. This can include such processes as determining beam properties from planet crossings; estimating noise properties (including cross-correlations) from calibrated, signal-subtracted, time-ordered data; and reconstructing the telescope pointing solution from ancilliary time-domain data such as star-trackers. The resulting mission model then feeds back into all of the ensuing data reduction and interpretation. For the latter, given sufficient observing frequencies we can not simply perform foreground removal, but rather component separation, where the individual foreground components are isolated based on their different (possibly spatially varying) spectral dependencies; such component maps then provide important inputs to astronomy and astrophysics. Similarly a wide range of analyses of the CMB maps, power spectra and parameters collectively inform our understanding of cosmology and fundamental physics, including measurements of the energy scale of inflation and the sum of neutrino masses from the power spectra and of cosmological non-Gaussianity from the higher-order statistics of the CMB maps.
 
-\begin{figure}[htbp]
-\begin{center}
+\begin{figure}[tbp]
 \hspace*{2.6in}\includegraphics[width=0.6\textwidth]{Analysis/da}
-\caption{The full CMB data analysis pipeline}
+\caption{The CMB data analysis pipeline}
 \label{fig_da}
-\end{center}
 \end{figure}
-
-\newpage
 
 \subsection{Simulation}
 
