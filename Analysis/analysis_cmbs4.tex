@@ -17,7 +17,7 @@ Extracting science from a CMB dataset is a complex, iterative process requiring 
 As illustrated in Figure \ref{fig_da}, the reduction of a CMB data set nominally proceeds in a sequence of steps\footnote{In all pipeline figures in this chapter, ovals represent data objects, rectangles processes, and dashed squares science domains.}.
 \begin{description}
 \item[ Pre-processing:] The raw time-ordered detector data are calibrated and gross time-domain systematics are either removed (typically by template subtraction or filtering) or flagged. The goal here is to make the real data match a model that will underpin all subsequent analyses.
-\item[Map-making:] Estimates of the intensity and the Stokes q- and u-polarizations of the sky signal are extracted from the cleaned time-ordered data at each observing frequency based on their spatial stationarity, and typically using some degree of knowledge of the noise properties.
+\item[Map-making:] At each observing frequency, estimates of the intensity I and the Stokes Q- and U-polarizations of the sky signal are extracted from the cleaned time-ordered data based on their spatial stationarity, typically using some degree of knowledge of the instrument's noise properties.
 \item[Component separation:] The CMB is separated from the various foreground sky components using the set of frequency maps and relying on its unique spectral invariance (in CMB units).
 \item[Power spectrum estimation:] The six auto- and cross-angular power spectra of the CMB intensity and E- and B-mode polarizations are estimated from the autocorrelation of the CMB maps or the cross-correlation of the frequency maps, and corrected for E- to B-mode lensing.
 \item[Parameter estimation:] The best-fit parameters for any cosmological model are derived by comparing the theoretical CMB power spectra that they would induce with the data and their uncertainties.
@@ -25,7 +25,7 @@ As illustrated in Figure \ref{fig_da}, the reduction of a CMB data set nominally
 This reduction essentially consists of a series of changes of basis for the data, from time samples (red ovals) to map pixels (blue) to spectral multipoles (green) to cosmological parameters (yellow), with each basis-change reducing the data volume, increasing the signal-to-noise, and exposing a different class of systematic effects for mitigation.
 
 \begin{figure}[htbp]
-\hspace*{2.6in}\includegraphics[width=0.6\textwidth]{Analysis/da}
+\hspace*{2.75in}\includegraphics[width=0.575\textwidth]{Analysis/da}
 \caption{The CMB data analysis pipeline}
 \label{fig_da}
 \end{figure}
@@ -43,7 +43,7 @@ Simulations of a CMB mission's data play a number of critical roles; specificall
 \item Monte Carlo based uncertainty quantification and debiasing, particularly when the full data covariance matrix is computationally intractable.
 \end{itemize}
 
-As shown in Figure \ref{fig_sim}, given a mission model (both instrument and observation) and a sky model (both CMB and foregrounds) we can generate a simulation of the mission data in any of its domains. However, there is an inevitable trade-off between on the one hand how representative the simulation is of real data and on the other the complexity of the input models and computational cost of generating the simulation. The choice of the simulation data domain will then be determined by the balance between the requirements and the constraints for the particular task at hand.
+As shown in Figure \ref{fig_sim}, given a mission model (both instrument and observation) and a sky model (both CMB and foregrounds) we can generate a simulation of the mission data in any of its domains. However, there is an inevitable trade-off between how representative the simulation is of real data and the complexity of the input models and computational cost of generating the simulation. The choice of the simulation data domain will then be determined by the balance between the realism requirements and the complexity/cost constraints for the particular task at hand.
 
 \begin{figure}[htbp]
 \includegraphics[width=0.575\textwidth]{Analysis/sim}
@@ -51,11 +51,11 @@ As shown in Figure \ref{fig_sim}, given a mission model (both instrument and obs
 \label{fig_sim}
 \end{figure}
 
-Note that the generation of the input mission and sky models are themselves far from trivial tasks, with the sky model in particular requiring its own dedicated (mission-independent) simulation capability. Furthermore both of these models are informed by the data analysis pipeline (through the mission characterization and science exploitation branches respectively) creating an iterative loop between simulation and analysis.
+Note that the generation of the input mission and sky models are themselves far from trivial tasks. The mission model is typically derived from pre-deployment measurements of the instrument properties refined by characterization from the data themselves, together with ancilliary pointing and environmental data characterizing the observation; the sky model requires its own dedicated simulation capability which - since it is independet of the details of any single mission - can be a community-side endeavor common to many.
 
 \subsection{Simulation and Data Analysis}
 
-The overall simulation and data analysis pipeline runs both as a top-down data reduction and a wrap-around refinement of mission characterization and sky modeling.
+Coupling the above, the overall simulation and data analysis pipeline (Figure \ref{fig_simda}) can now be seen as both as a top-down data reduction process and a right-to-left refinement of our mission and sky modeling. Typically we alternate between the two phases, with each new data reduction improving our mission and sky models, which models are in turn are fed back into an improved data reduction.
 
 \begin{figure}[htbp]
 \includegraphics[width=1\textwidth]{Analysis/simda}
@@ -63,7 +63,14 @@ The overall simulation and data analysis pipeline runs both as a top-down data r
 \label{fig_simda}
 \end{figure}
 
-Division into 5 expertise/challenge-defined subsets.
+The implementation and execution of this pipeline still poses many challenges to the CMB community, and we can subdivide it into 5 subsets based on the nature of the challenges posed and the expertise and activity required to address them:
+\begin{description}
+\item[Forecasting:] The rapid assessment of nominal scientific performance under sufficiently simplifying mission and sky models that all analysis can be done in the spectral domain.
+\item[Sky modeling:] Mission-independent modeling of the CMB (scalar, tensor and non-Gausian) and the astrophysical foregrounds, including the couplings between them.
+\item[Time-ordered data processing:] All processes that require the manipulation of time-domain data, dominated by the associated `Big Data' challenges.
+\item[Component separation:] Separation of the CMB from the foreground sky, and ideally separation of the individual foreground components to feed back into sky modeling.
+\item[Statistics and parameters:] Derivation of the CMB statistics, including power spectra and measures of non-Gaussianity, together with the parameters of cosmology and fundamental physics they constrain.
+\end{description}
 
 \newpage
 
