@@ -19,15 +19,15 @@ The reduction of a CMB data set typically proceeds in a sequence of steps:
 \begin{minipage}[h]{0.7\linewidth}
 \begin{description}
 \item[ Pre-processing:] The raw time-ordered detector data are calibrated and gross time-domain systematics are either removed (typically by template subtraction or filtering) or flagged. The goal here is to make the real data match a model that will underpin all subsequent analyses.
-\item[Map-making:] At each observing frequency, estimates of the intensity I and the Stokes Q- and U-polarizations of the sky signal are extracted from the cleaned time-ordered data based on their spatial stationarity, typically using some degree of knowledge of the instrument's noise properties.
+\item[Map-making:] At each observing frequency, estimates of the intensity and the Stokes Q- and U-polarizations of the sky signal are extracted from the cleaned time-ordered data based on their spatial stationarity, typically using some degree of knowledge of the instrument's noise properties.
 \item[Component separation:] The CMB is separated from the various foreground sky components using the set of frequency maps and relying on its unique spectral invariance (in CMB units).
-\item[Power spectrum estimation:] The six auto- and cross-angular power spectra of the CMB intensity and E- and B-mode polarizations are estimated from the autocorrelation of the CMB maps or the cross-correlation of the frequency maps, and corrected for E- to B-mode lensing.
-\item[Parameter estimation:] The best-fit parameters for any cosmological model are derived by comparing the theoretical CMB power spectra that they would induce with the data and their uncertainties.
+\item[Power spectrum estimation:] The six auto- and cross-angular power spectra of the CMB temperature T and E- and B-mode polarizations are estimated from the CMB and/or frequency maps, and corrected for E- to B-mode lensing.
+\item[Parameter estimation:] The best-fit parameters for any cosmological model are derived by comparing the theoretical TT, TE, EE and BB CMB power spectra that they would induce with the data and their uncertainties.
 \end{description}
 \end{minipage}
 \begin{minipage}[h]{0.3\linewidth}
 \centering
-\includegraphics[width=0.45\textwidth]{Analysis/dr}
+\includegraphics[width=0.465\textwidth]{Analysis/dr}
 \end{minipage}
 \end{figure}
 
@@ -45,7 +45,6 @@ Note however that the data can only remain a sufficient statistic at each step i
 Beyond this basic data reduction, the full analysis pipeline (Figure \ref{fig_da}) also includes mission characterization and science exploitation branches. For the former, the time-ordered data are extensively used to build a model of the mission itself, comprising both the instrument and the observation. This can include such processes as determining beam properties from planet crossings; estimating noise properties (including cross-correlations) from calibrated, signal-subtracted, time-ordered data; and reconstructing the telescope pointing solution from ancilliary time-domain data such as star-trackers. The resulting mission model then feeds back into all of the ensuing data reduction and interpretation. For the latter, given sufficient observing frequencies we can not simply perform foreground removal, but rather component separation, where the individual foreground components are isolated based on their different (possibly spatially varying) spectral dependencies; such component maps then provide important inputs to astronomy and astrophysics. Similarly a wide range of analyses of the CMB maps, power spectra and parameters collectively inform our understanding of cosmology and fundamental physics, including measurements of the energy scale of inflation and the sum of neutrino masses from the power spectra and of cosmological non-Gaussianity from the higher-order statistics of the CMB maps.
 
 \subsection{Simulation}
-
 Simulations of a CMB mission's data play a number of critical roles; specifically they are required for
 \begin{itemize}
 \item The design and development of both the instrument and the observation, to ensure that the mission is capable of meeting its science goals.
@@ -75,6 +74,7 @@ Coupling the above, the overall simulation and data analysis pipeline (Figure \r
 \end{figure}
 
 The implementation and execution of this pipeline still poses many challenges to the CMB community, and we can subdivide it into 5 subsets based on the nature of the challenges posed and the expertise and activity required to address them:
+\vspace*{-0.1in}
 \begin{description}
 \item[Forecasting:] The rapid assessment of nominal scientific performance under sufficiently simplifying mission and sky models that all analysis can be done in the spectral domain.
 \item[Sky modeling:] Mission-independent modeling of the CMB (scalar, tensor and non-Gausian) and the astrophysical foregrounds, including the couplings between them.
