@@ -25,7 +25,8 @@ As illustrated in Figure \ref{fig_da}, the reduction of a CMB data set nominally
 This reduction essentially consists of a series of changes of basis for the data, from time samples (red ovals) to map pixels (blue) to spectral multipoles (green) to cosmological parameters (yellow), with each basis-change reducing the data volume, increasing the signal-to-noise, and exposing a different class of systematic effects for mitigation.
 
 \begin{figure}[htbp]
-\hspace*{2.75in}\includegraphics[width=0.575\textwidth]{Analysis/da}
+\centering
+\includegraphics[width=0.575\textwidth]{Analysis/da}
 \caption{The CMB data analysis pipeline}
 \label{fig_da}
 \end{figure}
@@ -46,6 +47,7 @@ Simulations of a CMB mission's data play a number of critical roles; specificall
 As shown in Figure \ref{fig_sim}, given a mission model (both instrument and observation) and a sky model (both CMB and foregrounds) we can generate a simulation of the mission data in any of its domains. However, there is an inevitable trade-off between how representative the simulation is of real data and the complexity of the input models and computational cost of generating the simulation. The choice of the simulation data domain will then be determined by the balance between the realism requirements and the complexity/cost constraints for the particular task at hand.
 
 \begin{figure}[htbp]
+\centering
 \includegraphics[width=0.575\textwidth]{Analysis/sim}
 \caption{The CMB simulation pipeline}
 \label{fig_sim}
@@ -69,7 +71,7 @@ The implementation and execution of this pipeline still poses many challenges to
 \item[Sky modeling:] Mission-independent modeling of the CMB (scalar, tensor and non-Gausian) and the astrophysical foregrounds, including the couplings between them.
 \item[Time-ordered data processing:] All processes that require the manipulation of time-domain data, dominated by the associated `Big Data' challenges.
 \item[Component separation:] Separation of the CMB from the foreground sky, and ideally separation of the individual foreground components to feed back into sky modeling.
-\item[Statistics and parameters:] Derivation of the CMB statistics, including power spectra and measures of non-Gaussianity, together with the parameters of cosmology and fundamental physics they constrain.
+\item[Statistics and parameters:] Derivation of the CMB statistics, including 2-, 3-, and 4-point correlation functions, together with the parameters of cosmology and fundamental physics that they constrain.
 \end{description}
 
 \newpage
