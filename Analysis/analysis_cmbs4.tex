@@ -14,7 +14,9 @@ Extracting science from a CMB dataset is a complex, iterative process requiring 
 
 \subsection{Data Analysis}
 
-As illustrated in Figure \ref{fig_da}, the reduction of a CMB data set nominally proceeds in a sequence of steps\footnote{In all pipeline figures in this chapter, ovals represent data objects, rectangles processes, and dashed squares science domains.}.
+The reduction of a CMB data set typically proceeds in a sequence of steps:
+\begin{figure}[htbp]
+\begin{minipage}[h]{0.7\linewidth}
 \begin{description}
 \item[ Pre-processing:] The raw time-ordered detector data are calibrated and gross time-domain systematics are either removed (typically by template subtraction or filtering) or flagged. The goal here is to make the real data match a model that will underpin all subsequent analyses.
 \item[Map-making:] At each observing frequency, estimates of the intensity I and the Stokes Q- and U-polarizations of the sky signal are extracted from the cleaned time-ordered data based on their spatial stationarity, typically using some degree of knowledge of the instrument's noise properties.
@@ -22,7 +24,16 @@ As illustrated in Figure \ref{fig_da}, the reduction of a CMB data set nominally
 \item[Power spectrum estimation:] The six auto- and cross-angular power spectra of the CMB intensity and E- and B-mode polarizations are estimated from the autocorrelation of the CMB maps or the cross-correlation of the frequency maps, and corrected for E- to B-mode lensing.
 \item[Parameter estimation:] The best-fit parameters for any cosmological model are derived by comparing the theoretical CMB power spectra that they would induce with the data and their uncertainties.
 \end{description}
-This reduction essentially consists of a series of changes of basis for the data, from time samples (red ovals) to map pixels (blue) to spectral multipoles (green) to cosmological parameters (yellow), with each basis-change reducing the data volume, increasing the signal-to-noise, and exposing a different class of systematic effects for mitigation.
+\end{minipage}
+\begin{minipage}[h]{0.3\linewidth}
+\centering
+\includegraphics[width=0.45\textwidth]{Analysis/dr}
+\end{minipage}
+\end{figure}
+
+This reduction essentially consists of a series of changes of basis for the data, from time samples (red) to map pixels (blue) to spectral multipoles (green) to cosmological parameters (yellow), with each basis-change reducing the data volume, increasing the signal-to-noise, and exposing a different class of systematic effects for mitigation.
+
+Note however that the data can only remain a sufficient statistic at each step in the reduction if we also propagate its full covariance matrix. Since this is an ${\cal N}_b \times {\cal N}_b$ matrix in the dimension of the basis, its construction, manipulation and reduction pose the greatest computational challenge to this analysis. In particular, except in special cases the full pixel-domain data covariance matrix is dense and unstructured, requiring O(${\cal N}_p^3$) operations to build and O(${\cal N}_p^2$) bytes to store. All the major drivers of CMB science - polarization sensitivity, higher resolution, larger sky coverage - push us towards larger pixel counts, with an instrument mapping a fraction of the sky $f_{sky}$ with a beam of $b$ arcminutes covering O($10^9 \, f_{sky}/b^2$) pixels per IQU-component. For the last decade or more the computational intractability of the resulting pixel-domain matrices has forced us to replace explicit covariance propagation with Monte Carlo methods in all but a limited set of small sky fraction/low resolution cases.
 
 \begin{figure}[htbp]
 \centering
@@ -31,9 +42,7 @@ This reduction essentially consists of a series of changes of basis for the data
 \label{fig_da}
 \end{figure}
 
-Note however that the data can only remain a sufficient statistic at each step in the reduction if we also propagate its full covariance matrix. Since this is an ${\cal N}_b \times {\cal N}_b$ matrix in the dimension of the basis, its construction, manipulation and reduction pose the greatest computational challenge to this analysis. In particular, except in special cases the full pixel-domain data covariance matrix is dense and unstructured, requiring O(${\cal N}_p^3$) operations to build and O(${\cal N}_p^2$) bytes to store. All the major drivers of CMB science - polarization sensitivity, higher resolution, larger sky coverage - push us towards larger pixel counts\footnote{An instrument mapping a fraction of the sky $f_{sky}$ with a beam of $b$ arcminutes will cover O($10^9 \, f_{sky}/b^2$) pixels per IQU-component; for example, CMB-S4 will make intensity and polarization measurements over 70\% of the sky at 5 arcminute resolution, resulting in O($10^8$) pixels per observing frequency.}, and for the last decade or more the computational intractability of the resulting pixel-domain matrices has forced us to replace explicit covariance propagation with Monte Carlo methods in all but a limited set of small sky fraction/low resolution cases.
-
-Beyond this basic data reduction, the analysis pipeline also includes additional mission characterization and science exploitation branches. For the former, the time-ordered data are extensively used to build a model of the mission itself, comprising both the instrument and the observation. This can include such processes as determining beam properties from planet crossings; estimating noise properties (including cross-correlations) from calibrated, signal-subtracted, time-ordered data; and reconstructing the telescope pointing solution from ancilliary time-domain data such as star-trackers. The resulting mission model then feeds back into all of the ensuing data reduction and interpretation. For the latter, given sufficient observing frequencies we can not simply perform foreground removal, but rather component separation, where the individual foreground components are isolated based on their different (possibly spatially varying) spectral dependencies; such component maps then provide important inputs to astronomy and astrophysics. Similarly a wide range of analyses of the CMB maps, power spectra and parameters collectively inform our understanding of cosmology and fundamental physics, including measurements of the energy scale of inflation and the sum of neutrino masses from the power spectra and of cosmological non-Gaussianity from the higher-order statistics of the CMB maps.
+Beyond this basic data reduction, the full analysis pipeline (Figure \ref{fig_da}) also includes mission characterization and science exploitation branches. For the former, the time-ordered data are extensively used to build a model of the mission itself, comprising both the instrument and the observation. This can include such processes as determining beam properties from planet crossings; estimating noise properties (including cross-correlations) from calibrated, signal-subtracted, time-ordered data; and reconstructing the telescope pointing solution from ancilliary time-domain data such as star-trackers. The resulting mission model then feeds back into all of the ensuing data reduction and interpretation. For the latter, given sufficient observing frequencies we can not simply perform foreground removal, but rather component separation, where the individual foreground components are isolated based on their different (possibly spatially varying) spectral dependencies; such component maps then provide important inputs to astronomy and astrophysics. Similarly a wide range of analyses of the CMB maps, power spectra and parameters collectively inform our understanding of cosmology and fundamental physics, including measurements of the energy scale of inflation and the sum of neutrino masses from the power spectra and of cosmological non-Gaussianity from the higher-order statistics of the CMB maps.
 
 \subsection{Simulation}
 
