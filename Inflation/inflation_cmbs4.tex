@@ -38,54 +38,95 @@ The overall evolution of the universe is well modeled by a Friedmann-Robertson-L
 \begin{equation}
 ds^2=-dt^2+a^2(t)\left[\frac{dr^2}{1-kr^2}+r^2d\Omega^2\right]\,,
 \end{equation}
-where $k=\pm1$ allows for curvature and the time evolution is specified by the scale factor, $a(t)$. For much of the rest of the discussion we will assume spatial flatness ($k=0$) because it is consistent with all current data, but we will return to constraints on the curvature in Section xxx. The Hubble parameter, $H=\dot{a}/a$, gives the rate of expansion of the universe. 
+where $k=\pm1$ allows for spatial curvature and the time evolution is specified by the scale factor, $a(t)$. The Hubble parameter, $H=\dot{a}/a$, gives the rate of expansion of the universe. Current data is consistent with a spatially flat universe, and we will assume spatial flatness ($k=0$) for most of the discussion. However, we will return to constraints on the curvature in Section xxx.  
+
+The existence of primordial Helium and the cosmic microwave background radiation provide strong evidence for a hot big bang, a period during which the universe was dominated by radiation before it became dominated by matter and eventually dark energy. In the context of general relativity, observations of the cosmic microwave background furthermore provide strong evidence for a period preceding the hot big bang during which the co-moving Hubble radius, $(a|H|)^{-1}$, was decreasing with time: the measured average CMB temperature and the statistics of the measured anisotropies are the same over regions that otherwise share no causal history. 
 
 
-Arguably the most significant discrepancy between the predictions of a generic hot big bang model and our observed sky is the horizon problem: the measured average CMB temperature and the statistics of the measured anisotropies are the same over regions that share no causal history. Models for the primordial universe attempt to give a causal (and ideally also a `natural') explanation for the observed homogeneity on scales greater than a few degrees by postulating an early era where the co-moving Hubble radius, $(a|H|)^{-1}$ is decreasing with time. In an expanding universe this requires an era of accelerated expansion, $\ddot{a}>0$. The matter field that sources this expansion should have equation of state $w\approx -1$, which is minimally provided by a single scalar field whose energy density is predominately determined by its potential.
+%Arguably the most significant discrepancy between the predictions of a generic hot big bang model and our observed sky is the horizon problem: the measured average CMB temperature and the statistics of the measured anisotropies are the same over regions that share no causal history. Models for the primordial universe attempt to give a causal (and ideally also a `natural') explanation for the observed homogeneity on scales greater than a few degrees by postulating an early era where the co-moving Hubble radius, $(a|H|)^{-1}$ is decreasing with time. In an expanding universe this requires an era of accelerated expansion, $\ddot{a}>0$. The matter field that sources this expansion should have equation of state $w\approx -1$, which is minimally provided by a single scalar field whose energy density is predominately determined by its potential.
 
-The remarkable feature of inflation is that once an evolving scalar field is invoked to source the background accelerated expansion, quantum fluctuations during inflation inevitably generate post-inflationary metric perturbations. The perturbed metric can be described in the ADM formalism by
+In an expanding universe a decreasing co-moving Hubble radius requires an era of accelerated expansion, $\ddot{a}>0$, cosmic inflation. Such a period will drive the spatial curvature close to zero, in good agreement with current observations. Thus, we will assume spatial flatness and set $k=0$ for most of the discussion, but will return to constraints on the curvature in Section xxx. Since the period of cosmic inflation must end, there must exist a clock, or scalar degree of freedom. According to the uncertainty principle this clock must fluctuate, generating density perturbations that are adiabatic. In the most economic scenarios, these density perturbations are the seeds that grow into the anisotropies observed in the cosmic microwave background radiation and the stars and galaxies around us. Other degrees of freedom could, of course, also be present during this phase and might even be responsible for the generation of density perturbations we observe. (Mention isocurvature modes here?)
+
+Alternatively, the phase of decreasing Hubble radius could have occurred during a period of decelerating contraction which must then be followed by a bounce as in the ekpyrotic or matter bounce scenarios. 
+% The matter field that sources this expansion should have an equation of state $w\approx -1$, which is minimally provided by a single scalar field whose energy density is predominately determined by its potential.
+
+%The remarkable feature of inflation is that once an evolving scalar field is invoked to source the background accelerated expansion, quantum fluctuations during inflation inevitably generate post-inflationary metric perturbations. 
+The perturbed line element can be described in the ADM formalism by
 \begin{eqnarray}
 \label{eq:metric}
 ds^2&=&-N^2dt^2 +h_{ij}(dx^i+N^idt)(dx^j+N^jdt)\,\nonumber\\
 h_{ij}&=&a^2(t)[e^{2\zeta}\delta_{ij}+\gamma_{ij}]\,.
 \end{eqnarray}
-The equations of motion for $N$ (the lapse) and $N^i$ (the shift) are the Hamiltonian and momentum constraints, while $\zeta$ ($=-\mathcal{R}$ of {\it Planck convention}) and $\gamma_{ij}$ contain the dynamical scalar and tensor degrees of freedom. (In scenarios with matter sources other than a scalar field there may also be vector perturbations. These rapidly decay and can be neglected unless they are actively sourced by, e.g., cosmic strings in the post-inflationary universe.) 
 
-The link between the CMB and other tracers of primordial inhomogeneities and the primordial era is a statistical representation of the metric fluctuations after inflation and reheating. Observations today constrain the inhomogeneities at early times, and we can compare parameterizations of the observed statistics to calculations from any theory for the primordial era (and reheating). To an excellent approximation, the observed scalar fluctuations are statistically homogeneous, isotropic, and Gaussian so they are well characterized by a power spectrum that is only a function of wavenumber $|\vec{k}|$. Assuming that the same is true for any tensor fluctuations (as is predicted by inflation), we characterize the amplitude and scale dependence of fluctuations by
+The equations of motion for $N$ (the lapse) and $N^i$ (the shift) are the Hamiltonian and momentum constraints, while $\zeta$ ($=-\mathcal{R}$ of {\it Planck convention}) and $\gamma_{ij}$ contain the dynamical scalar and tensor degrees of freedom. (In scenarios with matter sources other than a scalar field there may also be vector perturbations. These rapidly decay and can be neglected unless they are actively sourced in the post-inflationary universe, e.g. by cosmic strings.)
+
+The link between the primordial era and the CMB and other probes of the structure of the late universe are the statistical properties of the scalar and tensor fluctuations, $\zeta$ and $\gamma_{ij}$, at times sufficiently late so that they have frozen out. For a universe that is statistically homogeneous and isotropic and in which the primordial fluctuations are Gaussian, the information about the statistical properties is contained in the two-point correlation functions
+
+%Observations today constrain these parameters at early times, which we can compare to calculations from any theory for the primordial era (and reheating). To an excellent approximation, the observed scalar fluctuations are statistically homogeneous, isotropic, and Gaussian so they are well characterized by a power spectrum that is only a function of wavenumber $|\vec{k}|$. Assuming that the same is true for any tensor fluctuations (as is predicted by inflation), we characterize the amplitude and scale dependence of fluctuations by
+
 
 \begin{eqnarray}
 \langle\zeta(\vec{k})\zeta(\vec{k}^{\prime})\rangle&=&(2\pi)^3\delta^3(\vec{k}+\vec{k}^{\prime})\frac{2\pi^2}{k^3}\mathcal{P}_{\zeta}(k)\nonumber\\
-\mathcal{P}_{\zeta}(k)&\equiv& A_s\left(\frac{k}{k_*}\right)^{n_s-1+\frac{1}{2}(dn_s/d\,\ln k)\ln(k/k_*)+\dots}\nonumber\\
 \langle\gamma_s(\vec{k})\gamma_{s^{\prime}}(\vec{k}^{\prime})\rangle&=&(2\pi)^3\delta_{ss^{\prime}}\delta^3(\vec{k}+\vec{k}^{\prime})\frac{2\pi^2}{k^3}\frac{1}{2}\mathcal{P}_{t}(k)\nonumber\\
-\mathcal{P}_{t}(k)&\equiv& A_t \left(\frac{k}{k_*}\right)^{n_t+\frac{1}{2}(dn_t/d\,\ln k)\ln(k/k_*)+\dots}
 \end{eqnarray}
-where the factor of $1/2$ in the second to last line accounts for the fact that the measured power includes contributions from each of the two graviton polarizations. 
+where the factor of $1/2$ in the second to last line accounts for the fact that the measured power includes contributions from each of the two graviton polarizations. In single field slow-roll inflation, the gauge invariant combination of metric and scalar field fluctuations that is conserved outside the horizon has the power spectrum
+\begin{equation}
+\label{eq:inf_Pzeta}
+\mathcal{P}_{\zeta}(k)=\frac{1}{2\epsilon M_p^2}\left.\left(\frac{H}{2\pi}\right)^2\right|_{k=aH}
+\end{equation}
+where $\epsilon=-\dot{H}/H^2$ is the first slow-roll parameter, and $M_p=1/\sqrt{8\pi G}$ is the reduced Planck mass. As indicated, the Hubble parameter and $\epsilon$ are to be evaluated at the time the wavenumber $k$ is equal to the inverse comoving Hubble radius. In the absence of any additional sources, the tensor power spectrum generated by inflation is
+\begin{equation}
+\label{eq:inf_Pt}
+\mathcal{P}_{t}(k)=\frac{8}{M_p^2}\left.\left(\frac{H}{2\pi}\right)^2\right|_{k=aH}
+\end{equation}
+
+The power spectra are conventionally parameterized in terms of the scalar and tensor amplitudes $A_s$, $A_t$, the scalar and tensor spectral indices $n_s$ and $n_t$ and their logarithmic derivatives as
+\begin{eqnarray}
+\mathcal{P}_{\zeta}(k)&\equiv& A_s\left(\frac{k}{k_*}\right)^{n_s-1+\frac{1}{2}(dn_s/d\,\ln k)\ln(k/k_*)+\dots}\,,\nonumber\\
+\mathcal{P}_{t}(k)&\equiv& A_t \left(\frac{k}{k_*}\right)^{n_t+\frac{1}{2}(dn_t/d\,\ln k)\ln(k/k_*)+\dots}\,.
+\end{eqnarray}
 The tensor-to-scalar ratio, $r$ is the relative power in the two types of fluctuations at a chosen pivot scale $k_*$ accessible by the CMB:
 \begin{equation}
 r=\frac{P_t(k_*)}{P_{\zeta}(k_*)}
 \end{equation}
 
-During inflation, all fields that are light compared to the Hubble scale pick up quantum fluctuations with rms amplitude proportional to $H/2\pi$. In particular, in the absence of any additional sources, the tensor power spectrum generated by inflation is 
+After they have frozen out, these power spectra of $\zeta$ and $\gamma_s$ remain constant until the modes of interest re-enter the horizon at late times. In particular, they provide the initial conditions for the system of equations governing the time evolution of the universe from around $10^9$ K when electrons and positrons have annihilated to the present. To exhibit the link between the primordial perturbations and late time observables explicitly, note that in a spatially flat universe, the contributions of primordial scalar perturbations to the angular power spectra of temperature or E-mode anisotropies are given by
 \begin{equation}
-\label{eq:inf_Pt}
-\mathcal{P}_{t}(k)=\frac{8}{M_p^2}\left(\frac{H}{2\pi}\right)^2\big|_{k=aH}
+C^{(S)}_{XX,\ell}=\int \frac{dk}{k}\mathcal{P}_\zeta(k)\left|\int\limits_0^{\tau_0} d\tau S_X^{(S)}(k,\tau)j_\ell(k(\tau_0-\tau))\right|^2\,,
 \end{equation}
-where $M_p=1/\sqrt{8\pi G}$ is the reduced Planck mass and the Hubble parameter is evaluated at the time the mode $k$ is equal to the inverse comoving Hubble scale. In the scalar sector, the combination of metric and scalar field fluctuations that is conserved outside the horizon (in the gauge used in Eq.(\ref{eq:metric})) has power spectrum
+where $S_X^{(S)}(k,\tau)$ with $X=T,E$ are source functions that encodes the physics of recombination and $j_\ell$ is a spherical Bessel function that encodes the (spatially flat) geometry of the universe.
+% and $\mathcal{P}_\zeta(k)$ is the power spectrum of initial conditions of primordial scalar perturbations as a function of the (comoving) momentum of the modes. 
+At linear order, scalar perturbations only contribute to angular power spectra of temperature and E-mode polarization and the cross-spectrum of temperature and E-mode polarization, while the tensor perturbations in addition generate B-mode polarization. The primordial contribution of the tensor perturbations to the angular power spectrum of B-modes is 
 \begin{equation}
-\label{eq:inf_Pzeta}
-\mathcal{P}_{\zeta}(k)=\frac{1}{2\epsilon M_p^2}\left(\frac{H}{2\pi}\right)^2\big|_{k=aH}
+C_{BB,\ell}=\int \frac{dk}{k}\mathcal{P}_t(k)\left|\int\limits_0^{\tau_0} d\tau S_B^{(T)}(k,\tau)j_\ell(k(\tau_0-\tau))\right|^2\,.
 \end{equation}
-where $\epsilon=-\dot{H}/H^2$ is the first slow-roll parameter. 
+where $S_B^{(T)}(k,\tau)$ is the appropriate source function. 
 
-Current constraints on the amplitude of primordial tensor modes already rule out some inflationary models.  We will discuss in detail what a detection of primordial gravitational waves would imply for inflation in the next several sections.
+At present, bounds on the tensor contribution to the temperature and E-mode anisotropies are comparable to constraints on the tensor-to-scalar ratio from B-mode observations. The former constraints are now cosmic variance limited. There is no limit on the latter from cosmic variance and improvements with CMB-S4 will rely on measurements of B-mode polarization on degree scales.
 
-It is important to note that a detection of primordial gravitational waves would rule out contracting universe scenarios. A contracting universe can also put large scales in causal contact if the scale factor $a$ is nearly constant while the Hubble parameter increases. This means the spectrum of gravitational wave fluctuations will be very blue \cite{Khoury:2001wf}. In addition the Hubble parameter at the end of the contracting phase can be approximately bounded (minimally, $H<M_p$, or $H\sim T_{\rm reheat}$) and so the value of $H$ that sets the amplitude of tensor fluctuations on scales accessible through the CMB must be exponentially smaller. The vacuum fluctuations in a contracting universe are then far too small to be detected \cite{Boyle:2003km}.
+Constraints on the amplitude of primordial tensor modes already strongly disfavor once popular inflationary models like minimally coupled chaotic inflation with a quadratic potential.  We will discuss in detail what a detection of primordial gravitational waves would imply for inflation in the next several sections, but it is also important to note that a detection would rule out contracting universe scenarios. A contracting universe can also put large scales in causal contact if the scale factor $a$ is nearly constant while the magnitude of the Hubble parameter increases. This means the spectrum of gravitational wave fluctuations will be very blue \cite{Khoury:2001wf}. In addition the Hubble parameter at the end of the contracting phase can be approximately bounded (minimally, $H<M_p$, or $H\sim T_{\rm reheat}$) and so the value of $H$ that sets the amplitude of tensor fluctuations on scales accessible through the CMB must be exponentially smaller. The vacuum fluctuations in a contracting universe are then far too small to be detected \cite{Boyle:2003km}.
+%During inflation, all fields that are light compared to the Hubble scale pick up quantum fluctuations with rms amplitude proportional to $H/2\pi$. In particular, in the absence of any additional sources, the tensor power spectrum generated by inflation is 
+%\begin{equation}
+%\label{eq:inf_Pt}
+%\mathcal{P}_{t}(k)=\frac{8}{M_p^2}\left(\frac{H}{2\pi}\right)^2\big|_{k=aH}
+%\end{equation}
+%where $M_p=1/\sqrt{8\pi G}$ is the reduced Planck mass and the Hubble parameter is evaluated at the time the mode $k$ is equal to the inverse comoving Hubble scale. In the scalar sector, the combination of metric and scalar field fluctuations that is conserved outside the horizon (in the gauge used in Eq.(\ref{eq:metric}) has power spectrum
+%\begin{equation}
+%\label{eq:inf_Pzeta}
+%\mathcal{P}_{\zeta}(k)=\frac{1}{2\epsilon M_p^2}\left(\frac{H}{2\pi}\right)^2\big|_{k=aH}
+%\end{equation}
+%where $\epsilon=-\dot{H}/H^2$ is the first slow-roll parameter. 
+
+%Current constraints on the amplitude of primordial tensor modes already rule out some inflationary models.  We will discuss in detail what a detection of primordial gravitational waves would imply for inflation in the next several sections.
+%
+%It is important to note that a detection of primordial gravitational waves would rule out contracting universe scenarios. A contracting universe can also put large scales in causal contact if the scale factor $a$ is nearly constant while the Hubble parameter increases. This means the spectrum of gravitational wave fluctuations will be very blue \cite{Khoury:2001wf}. In addition the Hubble parameter at the end of the contracting phase can be approximately bounded (minimally, $H<M_p$, or $H\sim T_{\rm reheat}$) and so the value of $H$ that sets the amplitude of tensor fluctuations on scales accessible through the CMB must be exponentially smaller. The vacuum fluctuations in a contracting universe are then far too small to be detected \cite{Boyle:2003km}.
+
 
 \subsection{A new scale of particle physics}
 \label{sec:scale-of-inflation}
 From the inflationary prediction for the amplitude of primordial gravitational waves, Eq.(\ref{eq:inf_Pt}), a detection means a direct measurement of the Hubble scale during inflation. Furthermore, it is the potential energy $V$ of the scalar field that sources the expansion according to $3M_p^2H^2=V$. Using the measured value of the scalar fluctuations from the {\it Planck} satellite, we can then derive the energy scale $V$ in terms of $r$ (all at the pivot scale $k=0.05$ Mpc$^{-1}$)
 \begin{equation}
-V^{1/4}=1.04\times 10^{16}{\rm GeV}\left(\frac{r_*}{0.01}\right)^{1/4}
+V^{1/4}=1.06\times 10^{16}{\rm GeV}\left(\frac{r_*}{0.01}\right)^{1/4}
 \end{equation}
 
 How model-independent is the relationship (equation $r\leftrightarrow V$)? To answer this question, a significant number of papers has dealt with scenarios of low-scale inflation where $r$ is nevertheless large and observable. These scenarios provide an opportunity for escaping the Lyth bound \cite{Lyth:1996im}. Most of this body of work has used non vacuum sources: some form of matter $\chi$ is created during inflation and acts as a source of gravitational waves \cite{Cook:2011hg,Senatore:2011sp}. The field $\chi$ should be massless, since massive particles contribute a smaller quadrupole moment and are a weaker source of gravitational waves \cite{Barnaby:2012xt}. An important limitation of these scenarios is that $\chi$ should be a stronger source of tensor than of scalar modes~\cite{Barnaby:2012xt,Ferreira:2014zia,Mirbabayi:2014jqa,Ozsoy:2014sba}, since the properties of the latter are tightly constrained by experiment, especially by the non-observation of nongaussianities \cite{Barnaby:2010vf}  but also (in some models), by constraints on the running of $n_s$ \cite{Meerburg:2012id}. As a consequence, it has been  assumed that the dynamics generating $\chi$ should be decoupled from the inflaton sector  \cite{Barnaby:2012xt}. 

@@ -72,11 +72,34 @@ where $\rho_{R}$ is the total energy density in radiation and $\rho_\gamma$ is t
 {\it Status of calculations in the Standard Model} -- (Contribution expected from G. Fuller)
 
 
-\subsection{Observational Signatures and Target}
+{\it Light Species}
+
+\begin{figure}[t!]
+\begin{center}
+\includegraphics[width=0.65\textwidth]{Neutrinos/Neff.pdf}
+\caption{Contribution to $\Neff$ from a massless field that was in thermal equilibrium with the Standard model at temperatures $T> T_{\rm freeze}$.  For $T_{\rm freeze} \gg m_{\rm top}$, these curves saturate with $\Delta \Neff > 0.027$.   The region in red shows the range of forecasts for $\sigma(\Neff)$ for plausible CMB-S4 configurations. }
+\label{fig:limits}
+\end{center}
+\end{figure}
+
+\subsection{Observational Signatures}
 
 Cosmic neutrinos play to two important roles in the CMB that are measured by $\Neff$.  They contribute to the total energy in radiation which controls the expansion history and, indirectly, the damping tail.  The fluctuations of neutrinos and any other free streaming radiation also produces a constant shift in the of the acoustic peaks.  These two effects drive both current and future constraints on $\Neff$.  
 
-{\it Status of current observations} -- Planck has provided a strong constraint on $\Neff = 3.15 \pm 0.23$ when combining both temperature and polarization data.  
+The effect of neutrinos on the damping tail has dominated has historically driven the constraint on $\Neff$ in the CMB.  The largest effect is from the mean-free path of photons, which introduces a suppression $e^{-(k/k_d)^2}$ to short wavelengths, with~\cite{Zaldarriaga:1995gi}
+\beq
+k_d^{-2} =\int \frac{da}{a^3 \sigma_T n_e H} \frac{R^2+ \frac{16}{15}(1+R)}{6(1+R)^2} \ ,
+\eeq
+where $R$ is the ratio of the energy in baryons to photons, $n_e$ is the density of free electrons and $\sigma_T$ is the Thompson cross-section.  The damping scale is sensitive to the energy in all radiation through $H \propto \sqrt{\rho_{\rm radiation}}$ during radiation domination (which is applicable at high $\ell$, and is therefore sensitive to $\Neff$ or any form of dark radiation.  At this level, this also illustrates the degeneracy with $n_e$ which may be altered by the helium fraction, $Y_p$.
+
+In reality, the effect on the damping tail is actually subdominant to the change to the scale of matter radiation equality and the location of the first acoustic peak~\cite{Hou:2011ec}.  As a result, the effect on neutrinos on the damping tail is more accurately represented by holding the first acoustic peak fixed.  This changes the sign of the effect on the damping tail, but the intuition for the origin of the effect (and degeneracy) remain applicable.
+
+In addition to the effect on the Hubble expansion, perturbations in neutrinos effect the photon-baryon fluid through their gravitational influence.  The contributions from neutrinos are well described by a correction to the amplitude and the phase of the acoustic peaks in both temperature and polarization~\cite{Bashinsky:2003tk}.  The phase shift is a particularly compelling signature as it is not degenerate with other cosmological parameters~\cite{Bashinsky:2003tk,Baumann:2015rya}.  This effect is the result of the free-streaming nature of neutrinos that allows propagation speeds of effectively the speed of light (while the neutrinos are relativistic).  This effect is sensitive to any gravitationally coupled light thermal relics.
+
+E-mode polarization will play an increasingly important role for several reasons.  First of all, the acoustic peaks are sharper in polarization which makes measurements of the peak locations more precise, and therefore aid the measurement of the phase shift.  The second reason is that polarization breaks a number of degeneracies that would also affect the damping tail~\cite{Baumann:2015rya}.
+
+{\it Status of current observations} -- Planck has provided a strong constraint on $\Neff = 3.15 \pm 0.23$ when combining both temperature and polarization data.  The addition of polarization data has both improved the constraint on $\Neff$ and reduced the impact of the degeneracy with $Y_p$.  Recently, the phase shift from neutrinos has also been established direction in the Planck temperature data~\cite{Follin:2015hya}.  This provides the most direct evidence for presence of free-steaming radiation in the early universe, consistent with the cosmic neutrino background.
+
 
 \subsection{Forecasts}
 
