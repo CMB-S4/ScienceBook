@@ -4,7 +4,7 @@
 
 \subsection{Overview}
 
-The time-ordered data (TOD) processing elements of the CMB simulation and analysis pipeline -- time-domain simulation, raw TOD pre-processing and clean TOD mission characterization, and map-making -- are grouped as a subset due to the unique computational challenges posed by the volume of data they must process.
+The time-ordered data (TOD) processing elements of the CMB simulation and analysis pipeline -- simulation, pre-processing and mission characterization, and map-making -- are grouped as a subset due to the unique computational challenges posed by the volume of data they must process.
 
 \begin{figure}[htbp]
 \centering
@@ -13,7 +13,33 @@ The time-ordered data (TOD) processing elements of the CMB simulation and analys
 \label{fig_td}
 \end{figure}
 
+\subsection{Simulation}
 
+sky signal to readout
+
+instrument - beam, bandpass, noise; calibration, electronics
+
+observation -- pointing, polarization (hwp), flagging, atmosphere
+
+V \& V for other TOD processing elements
+
+\subsection{Pre-Processing and Mission Characterization}
+
+systematics mitigation: filtering, template-subtraction, marginalization
+
+models: beam, noise, pointing
+
+\subsection{Map-Making}
+
+maimum likelihood
+
+destriping
+
+effective beam convolution
+
+binning
+
+\subsection{Computational Constraints}
 
 
 
@@ -27,7 +53,7 @@ As Figure \ref{fig_cmb_hpc_scaling} shows, the size of ground-based, balloon-bor
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.5\textwidth]{Analysis/cmb_hpc_scaling}
-\caption{Exponential growth of CMB time-ordered data volume and HPC capability: 1990 -- 2040.}
+\caption{Exponential growth of CMB time-ordered data volume and HPC capability: 1990 -- 2030.}
 \label{fig_cmb_hpc_scaling}
 \end{figure}
 
@@ -43,14 +69,6 @@ Key challenges:
 \item computational tractability due to data volume and complexity of next-generation supercomputers
 \item mitigating raw data systematics and developing sufficient mission and data models
 \end{itemize}
-
-
-
-\subsection{Simulation}
-
-\subsection{Pre-Processing and Mission Characterization}
-
-\subsection{Map-Making}
 
 
 %\bibliography{cmbs4}
