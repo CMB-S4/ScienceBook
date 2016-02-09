@@ -23,27 +23,46 @@ Key challenges:
 
 \subsubsection{Motivations}
 
-S4 science goals are r and neutrino mass
+S4 science goals are $r$ and neutrino mass
 \begin{itemize}
-	\item component separation is obviously a necessary step to go beyond current constraints on e.g. prim B-modes, cf. e.g. Fig.  of Errard et al (2015)?
-	\item for neutrino mass, I suppose $C_\ell^{dd}$ has the best lever-arm, and we should evaluate the impact of foregrounds on the 4-point function (E-B estimators I suppose). NB: Planck lensing 2015 is based on SMICA map.
+	\item component separation is obviously a necessary step to go beyond current constraints on e.g. primordial B-modes, cf. e.g. Fig.  of Errard et al (2015) --- foregrounds residuals coudl be expected to be dominant on largest scales?
+	\item for neutrino mass, I suppose $C_\ell^{dd}$ has the best lever-arm, and we should evaluate the impact of foregrounds on the 4-point function (E-B estimators I suppose). NB: Planck lensing 2015 is based on SMICA map. Yet, the use of multiple-resolution maps degrades the final resolution of the component separated maps compared to a simple quadratic combination of beams weighted by their corresponding sensitivity. This might impact constraints on the lensing BB peak.
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Definition of component separation}
+The general data modeling assumes that, for each sky pixel $p$, one has
+\begin{eqnarray}
+	\centering	
+		d_p = \mathbf{A}s_p + n_p
+	\label{eq:comp_sep_data_modeling}
+\end{eqnarray}
+where the vector $d$ contains the measured amplitude from each frequency map, $\mathbf{A}$ is the so-called mixing matrix, $s_p$ is a vector containing the unknown CMB and foregrounds amplitude and $n_p$ is vector containing the noise corresponding to each frequency band.
+
+Given this modeling, the component separation aims at inverting Eq.~\ref{eq:comp_sep_data_modeling}, to estimate the foregrounds-distangled CMB signal encapsulated in $s_p$. The method would generally
 \begin{itemize}
-	\item includes any data processing that characterizes and exploits correlations between multi-frequencies observations,
-	\item puts external constraints and physical modeling
-	\item and it aims at distinguishing between different physical sources of emission.
-	NB For a given method, one would think that there should be a validation step (do the tools work on reasonable sky models?) and a verification step (are the sky models consistent with reality?). The second step is obviously the most difficult to answer.
+	\item include any data processing that characterizes and exploit correlations between multi-frequencies observations,
+	\item put external constraints and physical modeling
+	\item and it would aim at distinguishing between different physical sources of emission.
+	%NB For a given method, one would think that there should be a validation step (do the tools work on reasonable sky models?) and a verification step (are the sky models consistent with reality?). The second step is obviously the most difficult to answer.
 \end{itemize}
 
 $\rightarrow$ feedback from Planck component separation as well as the early CMB cleaning achieved in the BKP measurements + Stivoli et al (2010) + Fantaye et al (2011+2012) + Errard et al (2011+2012+2015).
 
 %%%%%%%%%%%%%%%%%%%%%%
 \subsection{Description of methods}
+The overall idea of component separation boils down to two steps:
 \begin{itemize}
-	\item Parametric
+	\item estimation of the mixing matrix, $\mathbf{A}$;
+	\item inversion of Eq.~\ref{eq:comp_sep_data_modeling} to recover an estimate of the sky signal, $s_p$.
+\end{itemize}
+The second step being is rather general to any component separation cf. ..., whereas the first step can be performed in various ways:
+\begin{itemize}
+	\item Parametric -- it assumes that the mixing matrix, used in Eq.~\ref{eq:comp_sep_data_modeling}, can be parametrized $\mathbf{A} = \mathbf{A}(\beta)$. The functional form of $\mathbf{A}$ being fixed, the estimation of the mixing matrix is therefore equivalent to an estimation of the parameters $\beta$. This is usually down by maximizing the following likelihood cf.....
+	\begin{eqnarray}
+		\centering
+			-2\log \mathcal{L}(\beta) = - \sum_p \left( \mathbf{A}^T\mathbf{N}^{-1} d\right)^T\left( \mathbf{A}^T\mathbf{N}^{-1} \mathbf{A}\right)^{-1}\left( \mathbf{A}^T\mathbf{N}^{-1} d\right)
+	\end{eqnarray}
 	\item Blind
 	\item Discussion regarding the domain of application (harmonic, pixel, wavelet,etc.)
 \end{itemize}
