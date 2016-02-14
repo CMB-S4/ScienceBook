@@ -10,6 +10,10 @@
 \def\eea{\end{eqnarray}}
 
 \def\Neff{N_{\rm eff}}
+\def\Nf{N_{\rm eff}}
+\newcommand{\nucl}[3]{ \ensuremath{ \phantom{\ensuremath{^{#1}_{#2}}} \llap{\ensuremath{^{#1}}} \llap{\ensuremath{_{\rule{0pt}{.75em}#2}}} \mbox{#3} } }
+
+
 \def\gtrsim{\raise-.75ex\hbox{$\buildrel>\over\sim$}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -103,17 +107,106 @@ Relation between lab measurements of neutrino masses and the cosmological measur
 
 {\it Subsection to be completed by Clarence Chang}
 
+CMB-S4 will explore neutrino physics through precision measurements of the impact of the Cosmic Neutrino Background on the CMB.  There are two primary areas in which CMB-S4 provides interesting neutrino constraints.
+ 1) The first is using precision measurements of the radiation energy density in the early Universe to constrain neutrino physics beyond the 3-neutrino paradigm. The relativistic energy density in the early Universe is uniquely probed by the CMB and provides a critical constraint on any model for the neutrinos and their interactions. It is a highly complementary probe to terrestrial approaches to non-standard neutrino phenomena (e.g., sterile neutrinos) such as short baseline neutrino experiments. 
+ 2) The second is constraining the sum of the neutrino masses through precision measurements of the growth of large scale structure. The CMB-S4 mass sensitivity of 16 meV (1-sigma) is especially interesting as it corresponds to a 3-sigma measurement of the minimum predicted value. Fig.~\ref{fig:neutrino-noose} shows the complementarity of the projected CMB-S4 neutrino mass constraints to the neutrino oscillation experiments of the Intensity Frontier (Dune) as well as Katrin mass limits. The oscillation experiments measure the angles and phases of the neutrino mixing matrix and are insensitive to the absolute neutrino mass scale. CMB-S4 measures the sum of the neutrino masses in a manner that is independent of the neutrino oscillation parameters. Results from Intensity Frontier experiments together with CMB-S4 will provide precision measurements of the full neutrino mixing matrix (angles, phases, and masses).
+ 
+ \begin{figure}[ht]
+\centering \includegraphics[width=0.55\textwidth]{Neutrinos/numass_combine_dune}
+\caption{Shown are the current constraints and forecast sensitivity of
+  cosmology to the neutrino mass in relation to the neutrino mass
+  hierarchy.  In the case of an ``inverted hierarchy,'' with an
+  example case marked as a diamond in the upper curve, the CMB-S4 (with DESI BAO prior)
+  cosmological constraints would have a very high-significance
+  detection, with $1\sigma$ error shown as a blue band.  In the case
+  of a normal neutrino mass hierarchy with an example case marked as
+  diamond on the lower curve, CMB-S4 would detect the lowest
+  $\sum m_\nu$ at $\gtrsim 3 \sigma$. Also shown is the
+  sensitivity from the long baseline neutrino experiment (DUNE) as the
+  pink shaded band, which should be sensitive to the neutrino
+  hierarchy. Figure adapted from the Snowmass CF5 Neutrino planning document.
+ }
+\label{fig:neutrino-noose}
+\end{figure}
+
+
+
 \section{Effective Number of Neutrinos}
 
 \subsection{Theory Review}
 
 {\it Subsection to be completed by Joel Meyers with a contribution from George Fuller}
 
-The {\it effective} number of neutrinos defined to be
-\beq
-\Neff=\frac{8}{7} \left(\frac{11}{4}\right)^{4/3} \frac{\rho_{R}-\rho_\gamma}{\rho_\gamma}  \ ,
-\eeq
-where $\rho_{R}$ is the total energy density in radiation and $\rho_\gamma$ is the energy density in photons. 
+The angular power spectrum of the cosmic microwave background (CMB) at small angular scales is quite sensitive to the radiation content of the early universe, usually parametrized by a quantity $\Nf$ which will be defined more precisely below.  In the standard models of cosmology and particle physics, $\Nf$ is a measure of the energy density of the cosmic neutrino background.  More generally, however, $\Nf$ receives contributions from all forms of radiation apart from photons which are present in the early universe.  Due to its sensitivity to $\Nf$, the CMB can be used as a tool to probe physics of the standard model and beyond which are difficult to measure through other means.  Here we will give an overview of the theoretical issues related to $\Nf$ and outline the expectations from the standard model.
+
+\subsection{Thermal History of the Early Universe} \label{ThermalHistory}
+In this section, we will give a sketch of the thermal history of the standard hot big bang universe when the temperature of the plasma was falling from about $10^{11}$~K to about $10^8$~K following Section 3.1 of \cite{Weinberg:2008zzc}.  For other reviews see \cite{Dolgov:2002wy,Agashe:2014kda}.  During this era, there are two events of particular interest: neutrinos decoupled from the rest of the plasma, and a short time later electrons and positrons annihilated, heating the photons relative to the neutrinos.  Our task is to follow how these events impact the evolution of the energy densities of the photons and neutrinos.
+
+For massless particles described by the Fermi-Dirac or Bose-Einstein distributions, the energy density is given by
+\begin{equation}
+	\rho(T) =
+		\begin{cases}
+			g\frac{\pi^2k_B^4}{30\hbar^3 c^3}T^4 \\
+			\frac{7}{8}g\frac{\pi^2k_B^4}{30\hbar^3 c^3}
+		\end{cases} \, ,
+\end{equation}
+where $g$ counts the number of distinct spin states.  The entropy density for massless particles is given by
+\begin{equation}
+	s(T) = \frac{4\rho(T)}{3T} \, .
+\end{equation}
+It is convenient to define a quantity $\mathcal{N}$ which counts the spin states for all particles and antiparticles, with an additional factor $\frac{7}{8}$ for fermions.  With this definition, the total energy density and entropy density of the universe during radiation domination are given by
+\bea
+	\rho(T) &=& \mathcal{N}\frac{\pi^2k_B^4}{30\hbar^3 c^3}T^4 \, , \nonumber \\
+	s(T) &=& \frac{4}{3}\mathcal{N}\frac{\pi^2k_B^4}{30\hbar^3 c^3}T^3 \, .
+\eea
+In an expanding universe, the first law of thermodynamics implies that for particles in equilibrium, the comoving entropy density is conserved
+\begin{equation}
+	a^3s(T) = \mathrm{const} \, .
+\end{equation}
+One straightforward consequence of this conservation is that for radiation in free expansion, the temperature evolves as the inverse of the scale factor
+\begin{equation}
+	T\propto \frac{1}{a} \, .
+\end{equation}
+Let us now apply this to the physics of the early universe.
+
+At a temperature of $10^{11}$~K ($k_BT\sim10$~MeV), the universe was filled with photons, electrons and positrons, and neutrinos and antineutrinos of three species, all in thermal equilibrium with negligible chemical potential, along with a much smaller density of baryons and dark matter both of which are unimportant for the present discussion.  As the temperature of the plasma dropped below about $10^{10}$~K (about 1 second after the end of inflation), the rate of collisions between neutrinos and electrons and positrons could no longer keep up with the expansion rate of the universe, and neutrinos began to fall out of equilibrium and begin a free expansion.  This is just above the temperature for which $m_e c^2 \sim k_B T$, and so for slightly lower temperatures electrons and positrons rapidly disappeared from equilibrium.  We will simplify the discussion by assuming that neutrinos decoupled instantaneously before electron-positron annihilation and comment below how a more detailed calculation modifies the results.  Non-zero neutrino masses can safely be neglected here as long as $m_\nu c^2\lesssim1$~keV which is guaranteed by current observational bounds.
+
+>From this point on, we will distinguish the temperature of neutrinos $T_\nu$ from that of the photons $T_\gamma$.  Before neutrino decoupling, frequent interactions kept neutrinos and photons in equilibrium, ensuring they had a common falling temperature.  After the universe became transparent to neutrinos, the neutrinos kept their relativistic Fermi-Dirac distribution with a temperature which fell as the inverse of the scale factor.  The photons, on the other hand, were heated by the annihilation of the electrons and positrons.  Comoving entropy conservation allows us to compute the relative temperatures at later times.
+
+After neutrino decoupling, but before electron positron annihilation, the thermal plasma contained two spin states of photons, plus two spin states each of electrons and positrons, which means that during this period,
+\begin{equation}
+	\mathcal{N}_{\mathrm{before}} = 2 + \frac{7}{8}(2+2) = \frac{11}{2} \, .
+\end{equation}
+After electron positron annihilation, only the two spin states of photons remained, and so
+\begin{equation}
+	\mathcal{N}_{\mathrm{after}} = 2 \, .
+\end{equation}
+Since $T_\nu\propto a^{-1}$ during this period, we can express the condition of comoving entropy conservation as follows
+\begin{equation}
+	\frac{\mathcal{N}_{\mathrm{before}}T_{\gamma,\mathrm{before}}^3}{T_{\nu,\mathrm{before}}^3} = \frac{\mathcal{N}_{\mathrm{after}}T_{\gamma,\mathrm{after}}^3}{T_{\nu,\mathrm{after}}^3} \, .
+\end{equation}
+Using the fact that $T_{\gamma,\mathrm{before}} = T_{\nu,\mathrm{before}}$, we find as a result
+\begin{equation}
+	\frac{T_{\gamma,\mathrm{after}}}{T_{\nu,\mathrm{after}}} = \left(\frac{11}{4}\right)^{1/3} \, .
+\end{equation}
+We find that in the instantaneous neutrino decoupling limit, the annihilation of electrons and positrons raised the photons relative to the neutrinos by a factor of $(11/4)^{1/3}\simeq1.401$.
+
+After electron positron annihilation, assuming three species of light neutrinos and antineutrinos, each with one spin state, the radiation density of the universe is
+\begin{equation}
+	\rho_r = \frac{\pi^2k_B^4}{30\hbar^3 c^3}\left[2T_\gamma^4 + 3\frac{7}{8}T_\nu^4\right] = \frac{\pi^2k_B^4}{15\hbar^3 c^3}\left[1+3\,\frac{7}{8}\left(\frac{4}{11}\right)^{4/3}\right] T_\gamma^4 \, .
+\end{equation}
+It is conventional to define a quantity $\Nf$ which gives the radiation energy density in terms of the effective number of neutrino species as
+\begin{equation}
+	\rho_r = \frac{\pi^2k_B^4}{15\hbar^3 c^3}\left[1+\frac{7}{8}\left(\frac{4}{11}\right)^{4/3}\Nf\right] T_\gamma^4 \, .
+\end{equation}
+In the instantaneous neutrino decoupling approximation described above, we found $\Nf = 3$.  In the real universe, however, decoupling of neutrinos is not instantaneous, and the residual coupling of neutrinos at the time of electron positron annihilation increases $\Nf$ by a small amount in the standard model.
+
+The current best estimate of $\Nf$ in the standard model is $\Nf = 3.046$ \cite{Mangano:2005cc}.  There is some theoretical uncertainty in this quantity due to the various numerical approximations that are made in the calculation\ldots
+\begin{center}
+{\color{blue}Placeholder for comments on uncertainty in $\Nf$ in standard model from George Fuller}
+\end{center}
+
+
 
 {\it Status of calculations in the Standard Model} -- (Contribution expected from G. Fuller)
 
@@ -127,6 +220,18 @@ where $\rho_{R}$ is the total energy density in radiation and $\rho_\gamma$ is t
 \label{fig:limits}
 \end{center}
 \end{figure}
+
+\subsection{Dark Radiation}
+
+As will be discussed in more detail below, the CMB angular power spectrum is sensitive to the value of $\Nf$ in our universe.  Measurement of the value of $\Nf$ provides a huge amount of insight into the early universe, and is in fact an observational probe of the conditions at very early times, well before recombination.  Even within the standard model, $\Nf$ provides an observational handle on the thermal history back to about one second after the end of inflation.  The true power of measuring $\Nf$, however, comes from the realization that it is sensitive not just to the neutrinos of the standard model, but it in fact receives contributions from all forms of radiation apart from photons present in the early universe and is thus a probe of new physics.
+
+Collider experiments are known to provide a measurement of the number of neutrino species (or more precisely the number of species of fermions coupling to the $Z$ boson with mass below $m_Z/2$) and find very close agreement with three families of light active neutrinos \cite{ALEPH:2005ab}.  Cosmological measurements of $\Nf$ provide complimentary constraints and are sensitive to the total energy density of radiation whether constituted of active neutrinos or other light species.
+
+If the measured value of $\Nf$ exceeds the standard model prediction, it would be an indication that there is additional radiation content in the early universe or that the thermal history is somehow modified.  Additional radiation which contributes to $\Nf$ is often referred to as dark radiation.  There is a huge number of possible sources for dark radiation, including sterile neutrinos \cite{Abazajian:2001nj,Strumia:2006db,Boyarsky:2009ix}, gravitational waves \cite{Boyle:2007zx,Stewart:2007fu,Meerburg:2015zua}, dark photons \cite{Ackerman:mha,Kaplan:2011yj,CyrRacine:2012fz}, and many more \cite{Cadamuro:2010cz,Weinberg:2013kea}.  It is also possible that the measured value of $\Nf$ could be found below the standard model prediction.  This can happen if for example photons are heated relative to neutrinos after decoupling \cite{Steigman:2013yua,Boehm:2013jpa}.
+
+Furthermore, the CMB power spectrum has the ability to distinguish among certain types of dark radiation based on the behavior of its density perturbations  \cite{Chacko:2015noa,Baumann:2015rya}.  This point will be discussed further below. {\color{blue} (Check that Dan discusses free-streaming in effects on CMB section)}
+
+Even a measurement of $\Nf$ which agrees with the standard model prediction to high precision would be very interesting due to the constraints it would place on physics beyond the standard model.  Any light thermal relic will contribute to $\Nf$ at a level that can be determined by the particle type and the decoupling temperature \cite{Brust:2013ova,Chacko:2015noa}.  The forecasted constraints on $\Nf$ from CMB-Stage IV {\color{blue} (Check for consistency with other sections in naming convention)} are at a level which could constrain all light thermal relics up to temperatures near the electroweak phase transition.  This broad reach to extremely high energies and very early times demonstrates the discovery potential for a precision measurement of $\Nf$ with the CMB.
 
 \subsection{Observational Signatures}
 
@@ -149,13 +254,10 @@ E-mode polarization will play an increasingly important role for several reasons
 
 \subsection{Forecasts}
 
-\subsection{Thermal History and Big Bang Nucleosynthesis}
-
-{\it Subsection to be completed by Joel Meyers}
 
 
 
-\section{Sterile Neutrinos and Other Targets}
+\section{Sterile Neutrinos and Axions}
 \subsection{Sterile Neutrinos}
 
 {\it Subsection to be completed by Kevork Abazajian}
@@ -241,7 +343,72 @@ Two very common features of these models is that the axions as typically light (
 
 {\it Implications for CMB Stange IV} -- Sensitive to $\Neff$ of order $\sigma(\Neff) \simeq 10^{-2}$ has the sensitive to probe then entire mass range of ALPs down to $m_a =0$ under the assumption that it thermalized in the early universe.  Interpreting such bounds in terms of the couplings of axions is more complicated~\cite{Brust:2013xpv} and can depend on assumptions about the reheating temperature.  For high (but plausible) reheat temperatures of $10^{10}$ GeV, CMB stage IV would be sensitive to $g_{a\gamma \gamma}, g_{a g g} \gtrsim 10^{-13} {\rm GeV}^{-1}$~\cite{}, which exceeds current constraints and future probes for a range possible axions masses (including the QCD axion).  
 
-\subsection{Connections to BBN and Spectral Distortions}
+\section{Complementarity of CMB and BBN}
+
+\subsection{Introduction} \label{Introduction}
+
+Primordial light element abundances have historically been an interesting observational test of hot big bang cosmology.  The process by which light elements form in the early universe known as big bang nucleosynthesis (BBN) was worked out theoretically in the early days of the development of the hot big bang model of cosmology \cite{Alpher:1948ve}.  It is a process which depends on all four fundamental forces, that unfolded during the first three minutes of our current phase of expansion, and which has long provided a useful constraint on physics beyond the standard model.  The current observational limits on primordial abundances overall show good agreement with the predictions of standard BBN.  Primordial light element abundances are sensitive to the radiation content of the universe as measured through $\Nf$, which also affects the angular power spectrum of the CMB.  Combining these two probes provides useful insight into the physics of the early universe which neither could achieve alone.
+
+\subsection{Standard Big Bang Nucleosynthesis} \label{StandardBBN}
+In this section, we will briefly review the physics of big bang nucleosynthesis in the standard model.  For more extensive reviews see for example \cite{Weinberg:2008zzc,Agashe:2014kda,Cyburt:2015mya}.
+
+At temperatures above $k_BT\sim 1$~MeV, weak interactions kept neutrons and protons in thermal equilibrium, fixing their number densities to have the ratio $n_n/n_p = e^{-Q/k_BT}$, where $Q = 1.293$~MeV is the mass difference between neutrons and protons.  At lower temperatures, interactions which convert protons to neutrons could not keep up with the expansion rate, leaving free neutron beta decay as the only channel by which protons and neutrons interconverted.  The initial ratio of their number densities at the freeze-out temperature $k_BT_\mathrm{fr}\simeq0.8$~MeV was therefore
+\begin{equation}
+	n_n/p_n = e^{-Q/k_BT_\mathrm{fr}} \simeq 1/5 \, .
+\end{equation}
+
+
+After freeze-out, neutrons decayed until becoming bound into nuclei.  This process proceeded primarily through two-body processes, starting with the formation of deuterium.  The very small number density of baryons compared to that of photons (parametrized through $\eta\equiv n_b/n_\gamma$) delayed the start of these nuclear reactions until well after the temperature dropped below the binding energy of deuterium due to photo-dissociation of deuterium.  The condition of the onset of deuterium formation is set by requiring that the number of photons per baryon with energy above the binding energy of deuterium drops below unity
+\begin{equation}
+	\eta^{-1}e^{-|B_D|/k_BT_D} \simeq 1 \, .
+\end{equation}
+With the deuterium binding energy given by $|B_D|=2.23$~MeV, and $\eta\sim6\times10^{-10}$, we find that deuterium begins to form when the temperature drops below about $k_BT_D\simeq 0.1$~MeV.  By this time, due to free neutron decay, the neutron to proton ratio had dropped to about $n_n/n_p\simeq 1/7$.  Once deuterium was able to form, nearly all of the neutrons quickly became bound into the most energetically favorable light nucleus, which is $\nucl{4}{ }{He}$.  We can estimate the mass fraction of primordial $\nucl{4}{ }{He}$, $Y_p\equiv \frac{\rho\left(\nucl{4}{ }{He}\right)}{\rho_b}$ to be
+\begin{equation}
+	Y_p = \frac{2(n_n/n_p)}{1+n_n/n_p} \simeq 0.25 \, .
+\end{equation}
+
+In addition to $\nucl{4}{ }{He}$, BBN produces a small amount of $\nucl{ }{ }{D}$, $\nucl{3}{ }{He}$, $\nucl{6}{ }{Li}$, and $\nucl{7}{ }{Li}$ (and also $\nucl{7}{ }{Be}$ which subsequently decays by electron capture to $\nucl{7}{ }{Li}$).  While $Y_p$ is primarily sensitive to the neutron lifetime, the primordial abundances of the other light elements depend in complicated ways various nuclear rates and generally require numerical computation (see for example \cite{Wagoner:1966pv,Cyburt:2001pp,Pisanti:2007hk}).
+
+Standard BBN is a one parameter model, depending only on the baryon to photon ratio $\eta$.  The theory predicts several abundances which can be used to fix $\eta$ and check the consistency of the theory, or alternatively, to constrain new physics.  Current observations agree quite well with the predictions of standard BBN, with the exception of $\nucl{7}{ }{Li}$.  It is unclear whether this disagreement points to a problem with the astrophysical determination of the primordial abundance or a problem with the standard theory.  The cosmological lithium problem remains unsolved \cite{Fields:2011zzb}.  From here on, however, we will ignore the lithium problem and focus on how measurements of the other abundances (primarily $\nucl{ }{ }{D}$ and $\nucl{4}{ }{He}$) can be used to constrain the physics of the early universe.
+
+
+
+
+%-----------------------------------------------
+
+
+
+
+\subsection{Beyond the Standard Model}\label{BSM}
+Moving beyond standard BBN, measurements of primordial abundances have the ability to constrain many deviations from the standard thermal history and the standard model of particle physics.  Because BBN is sensitive to all fundamental forces, changes to any force can in principle impact light element abundances.  Of primary interest for our purpose is that BBN is sensitive to the expansion rate between about one second and a few minutes after the end of inflation.  The expansion rate is in turn determined by the radiation content of the universe during this period, and thus BBN is sensitive to $\Nf$.  
+
+More specifically, the expansion rate determines the freeze-out temperature setting the initial ratio of neutrons to protons and the amount of time free neutrons have to decay.  Additional radiation compared to the standard model gives a higher expansion rate, which leads to a higher freeze-out temperature and less time for free neutron decay, leading to a larger primordial $\nucl{4}{ }{He}$ abundance.  The freeze-out temperature also depends weakly on the distribution function of electron neutrinos, though this is subdominant to the dependence $\Nf$ for small non-thermal distortions \cite{Serpico:2004gx}.
+
+Historically, $Y_p$ had provided the best constraint on $\Nf$.  Recent advancements in the determination of primordial deuterium abundance have made constraints on $\Nf$ from deuterium competitive with those from $Y_p$ \cite{Cooke:2013cba}.  The precision with which primordial abundances constrain $\Nf$ is now comparable to that of constraints the CMB power spectrum, and there is no evidence for deviation from the standard model \cite{Ade:2015xua}.
+
+
+
+%-----------------------------------------------
+
+
+
+
+\subsection{Complementarity with the CMB}\label{Complementarity}
+The CMB can be used to quite precisely constrain $\eta$ by measurement of the baryon fraction of the critical density, which is related to $\eta$ by
+\begin{equation}
+	\Omega_b h^2 \simeq \frac{\eta\times10^{10}}{274} \, .
+\end{equation}
+Using the value of $\eta$ determined from CMB measurements as an input for BBN makes standard BBN a theory without free parameters which agrees very well with all observations (apart from the aforementioned disagreement with the observed lithium abundance).  The CMB and BBN are sensitive to the baryon density measured at different times.  While BBN is sensitive to the baryon to photon ratio up to a few minutes after the end of inflation, the CMB is sensitive to the baryon density at much later times, closer to recombination about 380,000 years later.  Combining constraints from BBN and CMB on the baryon fraction therefore allows constraints on models where the photon or baryon density changes between these times.
+
+The precision with which the CMB can constrain $\Nf$ will soon come to surpass the constraints from BBN, but the value of the latter will not be totally eclipsed.  BBN and the CMB probe the physics at different times, and so combining constraints can give insight into models where $\Nf$ changes in time.  If it were measured for example that $\Nf^{\mathrm{BBN}}<\Nf^{\mathrm{CMB}}$, this could be explained by the late decay of some unstable particles \cite{Fischler:2010xz,Menestrina:2011mz,Hooper:2011aj}.  Alternatively, if observations revealed that $\Nf^{\mathrm{BBN}}>\Nf^{\mathrm{CMB}}$, this might signal late photon heating \cite{Cadamuro:2010cz,Millea:2015qra}.
+
+The power spectrum of the CMB is also directly sensitive to $Y_p$.  Since helium recombines earlier than hydrogen, the density of helium present at the time of recombination affects the free electron density, and thereby affects the damping tail of the CMB (though in a way which can be distinguished from the effects of $\Nf$) \cite{Bashinsky:2003tk,Hou:2011ec,Follin:2015hya,Baumann:2015rya}.  The degeneracy between $Y_p$ and $\Nf$ is more strongly broken with precise CMB polarization data.
+
+CMB-Stage IV {\color{blue} (Check for consistent notation)} will provide constraints on $\Nf$ which are about an order of magnitude better than the current best constraints, and will also improve on the measurement of $Y_p$ by about a factor of two compared to the current best astrophysical measurements.  Combined with measurements of other primordial abundances, this will help to provide a very thorough check of our understanding of the early universe and provide the opportunity to discover physics beyond the standard model.
+
+
+
+
 
 
 \bibliography{cmbs4}
