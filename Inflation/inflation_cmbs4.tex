@@ -82,15 +82,23 @@ where $\epsilon=-\dot{H}/H^2$ is the first slow-roll parameter, and $M_p=1/\sqrt
 \mathcal{P}_{t}(k)=\frac{8}{M_p^2}\left.\left(\frac{H}{2\pi}\right)^2\right|_{k=aH}
 \end{equation}
 
-The power spectra are conventionally parameterized in terms of the scalar and tensor amplitudes $A_s$, $A_t$, the scalar and tensor spectral indices $n_s$ and $n_t$ and their logarithmic derivatives as
-\begin{eqnarray}
-\mathcal{P}_{\zeta}(k)&\equiv& A_s\left(\frac{k}{k_*}\right)^{n_s-1+\frac{1}{2}(dn_s/d\,\ln k)\ln(k/k_*)+\dots}\,,\nonumber\\
-\mathcal{P}_{t}(k)&\equiv& A_t \left(\frac{k}{k_*}\right)^{n_t+\frac{1}{2}(dn_t/d\,\ln k)\ln(k/k_*)+\dots}\,.
-\end{eqnarray}
-The tensor-to-scalar ratio, $r$ is the relative power in the two types of fluctuations at a chosen pivot scale $k_*$ accessible by the CMB:
-\begin{equation}
-r=\frac{P_t(k_*)}{P_{\zeta}(k_*)}
+The power spectra are conventionally parameterized as
+%\begin{eqnarray}
+%\mathcal{P}_{\zeta}(k)&\equiv& A_s\left(\frac{k}{k_\star}\right)^{n_s-1+\frac{1}{2}(dn_s/d\,\ln k)\ln(k/k_\star)+\dots}\,,\nonumber\\
+%\mathcal{P}_{t}(k)&\equiv& A_t \left(\frac{k}{k_\star}\right)^{n_t+\frac{1}{2}(dn_t/d\,\ln k)\ln(k/k_\star)+\dots}\,.
+%\end{eqnarray}
+\begin{equation}\label{eq:specind}
+\mathcal{P}_{\zeta}(k)\equiv A_s\left(\frac{k}{k_\star}\right)^{n_s(k)-1}\qquad{\rm and}\qquad\mathcal{P}_{t}(k)\equiv A_t \left(\frac{k}{k_\star}\right)^{n_t(k)}\,,
 \end{equation}
+where $A_s$, $A_t$ are the scalar and tensor amplitudes, and the logarithmic derivatives of the power spectra, conventionally denoted by $n_s(k)-1$ and $n_t(k)$, are in turn parameterized in terms of the scalar and tensor spectral indices and their logarithmic derivatives
+\begin{equation}
+n_s(k)-1=n_s-1+\left.\frac{dn_s(k)}{d\ln k}\right|_{k_\star}\ln(k/k_\star)+\dots\qquad{\rm and}\qquad n_t(k)=n_t+\left.\frac{dn_t(k)}{d\ln k}\right|_{k_\star}\ln(k/k_\star)+\dots \,.
+\end{equation}
+The tensor-to-scalar ratio, $r$ is the relative power in the two types of fluctuations at a chosen pivot scale $k_\star$ accessible by the CMB:
+\begin{equation}
+r=\frac{A_t}{A_s}
+\end{equation}
+
 
 As the co-moving horizon has decreased sufficiently so that $k/aH\ll 1$ the perturbations freeze out. The power spectra of $\zeta$ and $\gamma_s$ become time-independent, and only begin to evolve once the modes of interest re-enter the horizon at late times. In particular, they set the initial conditions for the system of equations governing the time evolution of the universe from around $10^9$ K when electrons and positrons have annihilated to the present. To exhibit the link between the primordial perturbations and late time observables explicitly, note that in a spatially flat universe, the contributions of primordial scalar perturbations to the angular power spectra of temperature or E-mode anisotropies are given by
 \begin{equation}
@@ -194,6 +202,24 @@ The three-point function of gravitational waves would also be a sensitive probe 
 
 \section{Constraining the amplitude of primordial gravitational waves} 
 \label{sec:upperLimits}
+A detection of primordial gravitational waves has profound implications. Even excluding the presence of gravitational waves at a level observable by CMB-S4 has important consequences for the theory of inflation. Current constraints strongly disfavor certain models that were plausible candidates such as chaotic inflation with a quadratic potential~\cite{bicepkeckplanck15}. Upper limits from CMB-S4 would rule out entire classes of inflationary models. 
+
+We first present a version of an argument developed in~\cite{Mukhanov:2013tua,Roest:2013fha,Creminelli:2014nqa} that does not rely on microscopic details of inflationary models. In the limit $\epsilon\ll1$, equations~(\ref{eq:inf_Pzeta}) and~(\ref{eq:specind}) lead to a differential equation
+\begin{equation}\label{eq:epsdiffeq}
+\frac{d\epsilon^{-1}}{d\mathcal{N}}+(n_s(\mathcal{N})-1)\epsilon^{-1}+2=0\,,
+\end{equation} 
+where $\mathcal{N}$ is the number of e-folds until the end of inflation, and $n_s(\mathcal{N})-1$ denotes the spectral index evaluated for the mode which exits the horizon $\mathcal{N}$ e-folds before the end of inflation, {\it i.e.} for which $k=aH$ at that time. Denoting the number of e-folds before the end of inflation at which the CMB pivot scale exits the horizon as $\mathcal{N}_\star$, the constraints on the spectral index from the {\it Planck} satellite is $\mathcal{O}(1/\mathcal{N}_\star)$  and it seems plausible that 
+\begin{equation}\label{eq:nsassump}
+n_s(\mathcal{N})-1=-\frac{p+1}{\mathcal{N}}\,,
+\end{equation}
+up to subleading corrections in an expansion in large $\mathcal{N}$ for some real $p$. Assuming equation~(\ref{eq:nsassump}), the solution to equation~(\ref{eq:epsdiffeq}) is
+\begin{equation}\label{eq:epssol}
+\epsilon(\mathcal{N})=\frac{p}{2\mathcal{N}}\frac{1}{1\pm\left(\mathcal{N}/\mathcal{N}_{\rm eq}\right)^{p}}\,,
+\end{equation}
+where we have chosen to parameterize the integration constant by $\mathcal{N}_{\rm eq}$ so that the magnitudes of the first and second term in the denominator become equal when $\mathcal{N}=\mathcal{N}_{\rm eq}$ . We take $\mathcal{N}_{\rm eq}>0$ and indicate the choice of sign for the integration constant by `$\pm$'. 
+
+Assuming the e-folds during which the modes we observe in the CMB exit are not special so that $\mathcal{N}\gg\mathcal{N}_{\rm eq}$ or $\mathcal{N}\ll\mathcal{N}_{\rm eq}$, equation~(\ref{eq:epsdiffeq}) leads to four classes of solutions. 
+
 \subsection{What we learn from the $r<0.01$}
 - models that live here have field ranges that are super-Planckian
 
