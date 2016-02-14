@@ -17,6 +17,10 @@ Key challenges:
 \label{default}
 \end{figure*}
 
+This section discusses the algorithms and methods disentangling sky emissions from multi-frequency maps. 
+We first present the motivations and the general ideas of existing methods. 
+We then give the specificities of parametric and blind methods. 
+Finally, we summarize several questions which might be answered by follow-up studies.
 
 \subsection{Introduction}
 
@@ -46,7 +50,16 @@ The general data modeling assumes that, for each sky pixel $p$, one has
 \end{eqnarray}
 where the vector $d$ contains the measured amplitude from each frequency map, $\mathbf{A}$ is the so-called mixing matrix, $s_p$ is a vector containing the unknown CMB and foregrounds amplitude and $n_p$ is vector containing the noise corresponding to each frequency band.
 
-Given this modeling, the component separation aims at inverting Eq.~\ref{eq:comp_sep_data_modeling}, to estimate the foregrounds-distangled CMB signal encapsulated in $s_p$. The method would generally
+Given this modeling, the component separation aims at inverting Eq.~\ref{eq:comp_sep_data_modeling}, to estimate the foregrounds-distangled CMB signal encapsulated in $s_p$. 
+The general solution to Eq.~\ref{eq:comp_sep_data_modeling} would be given by
+\begin{eqnarray}
+	\centering
+		\tilde{s}_p = \mathbf{W}d_p
+	\label{eq:sp_solution}
+\end{eqnarray}
+where $\mathbf{W}\equiv  \left( \mathbf{A}^T\mathbf{N}^{-1}\mathbf{A} \right)^{-1}\mathbf{A}^T\mathbf{N}^{-1}$ gives an unbiased estimate of the sky.
+
+The component separation methods would generally
 \begin{itemize}
 	\item include any data processing that characterizes and exploit correlations between multi-frequencies observations,
 	\item put external constraints and physical modeling
@@ -65,19 +78,16 @@ The overall idea of component separation boils down to two steps:
 \end{itemize}
 The second step being is rather general to any component separation cf. ..., whereas the first step can be performed in various ways:
 \begin{itemize}
-	\item Parametric -- it assumes that the mixing matrix, used in Eq.~\ref{eq:comp_sep_data_modeling}, can be parametrized $\mathbf{A} = \mathbf{A}(\beta)$. The functional form of $\mathbf{A}$ being fixed, the estimation of the mixing matrix is therefore equivalent to an estimation of the parameters $\beta$. This is usually down by maximizing the following likelihood cf.....
+	\item \textbf{Parametric} -- it assumes that the mixing matrix, used in Eq.~\ref{eq:comp_sep_data_modeling}, can be parametrized $\mathbf{A} = \mathbf{A}(\beta)$. The functional form of $\mathbf{A}$ being fixed, the estimation of the mixing matrix is therefore equivalent to an estimation of the parameters $\beta$. This is usually down by maximizing the following likelihood cf.....
 	\begin{eqnarray}
 		\centering
 			-2\log \mathcal{L}(\beta) = - \sum_p \left( \mathbf{A}^T\mathbf{N}^{-1} d\right)^T\left( \mathbf{A}^T\mathbf{N}^{-1} \mathbf{A}\right)^{-1}\left( \mathbf{A}^T\mathbf{N}^{-1} d\right)
 	\end{eqnarray}
-	\item Blind
-	\item Discussion regarding the domain of application (harmonic, pixel, wavelet,etc.)
+	\item \textbf{Blind} (Maude)
+	\item \textbf{Discussion regarding the domain of application (harmonic, pixel, wavelet,etc.)} -- 
 \end{itemize}
 
-$\rightarrow$ Parametric fitting vs. ILC, spatial domain versus
-non-spatial, that makes a basis of 4 algorithms. Although it was never
-quantified, the independence of those and very different hypotheses represent
-an opportunity for cross-checking and robustness.
+$\rightarrow$ Parametric fitting vs. ILC, spatial domain versus non-spatial, that makes a basis of 4 algorithms. Although it was never quantified, the independence of those and very different hypotheses represent an opportunity for cross-checking and robustness.
 
 %%%%%%%%%%%%%%%%%%%%%%
 \subsection{Questions to be addressed during follow-up studies}
