@@ -42,17 +42,17 @@ Finally, we summarize several questions which might be answered by follow-up stu
 
 %%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Definition of component separation}
-The general data modeling assumes that, for each sky pixel $p$, one has
+The general data modeling reads
 \begin{eqnarray}
 	\centering	
 		d_p &=& \sum_{\rm comp, p} a_p^{\rm comp} s^{\rm comp}_p + n_p\\
 		 &\equiv& \mathbf{A}\,s_p + n_p
 	\label{eq:comp_sep_data_modeling}
 \end{eqnarray}
-where the vector $d$ contains the measured amplitude from each frequency map, $\mathbf{A}$ is the so-called mixing matrix which encapsulate the emission law $a_p^{\rm comp}$ for each component, $s_p$ is a vector containing the unknown CMB and foregrounds amplitude and $n_p$ is vector containing the noise corresponding to each frequency band. The index $p$ refers to sky pixels $\left( \theta, \phi \right)$, or modes of a spherical harmonic decomposition $\left( \ell, m\right)$, or a set of Fourier modes $\left(k_x,k_y\right)$, etc. Eq.~\ref{eq:comp_sep_data_modeling} assumes that the spatial templates $s_p$ are the same at all frequencies of observations.
+where the vector $d_p$ contains the measured amplitude from each frequency map, $\mathbf{A}$ is the so-called mixing matrix which encapsulates the emission law $a_p^{\rm comp}$ of each component, $s_p$ is a vector containing the unknown CMB and foregrounds amplitude and $n_p$ is a vector containing the noise level for each frequency band. The index $p$ refers to sky pixels $\left( \theta, \phi \right)$, or modes of a spherical harmonic decomposition $\left( \ell, m\right)$, or a set of Fourier modes $\left(k_x,k_y\right)$, etc. Note that this modeling assumes spatial templates $s_p$ to be the same at all frequencies of observations.
 
-Given this modeling, the component separation aims at inverting Eq.~\ref{eq:comp_sep_data_modeling}, to estimate the foregrounds-distangled CMB signal encapsulated in $s_p$, as well as the foregrounds template which are relevant to test and update the sky modeling, cf. Fig.~\ref{fig:general_comp_sep_scheme}.
-The estimate $\tilde{s}_p$ of the true sky templates $s_p$ given $\mathbf{A}$, $d_p$ and the statistical properties of the noise, minimizes the following $\chi^2$:
+Component separation aims at inverting Eq.~\ref{eq:comp_sep_data_modeling}, to estimate the foregrounds-distangled CMB signal encapsulated in $s_p$, as well as the foregrounds template which are relevant to test and update the sky modeling, cf. Fig.~\ref{fig:general_comp_sep_scheme}.
+The estimate $\tilde{s}_p$ of the true sky templates $s_p$ --- given $\mathbf{A}$, $d_p$ and the statistical properties of the noise --- minimizes the following $\chi^2$:
 \begin{eqnarray}
 	\centering
 		\chi^2 \equiv \sum_p \left| s_p - \tilde{s}_p\right|^2
@@ -64,11 +64,10 @@ and can be taken to have the following general form
 		\tilde{s}_p = \mathbf{W}\,d_p
 	\label{eq:sp_solution}
 \end{eqnarray}
-where the weighting operator $\mathbf{W}$ is chosen to optimize some criterion regarding $\tilde{s}_p$ and $s_p$ while keeping statistical consistency and robustness. In particular, a common requirement for all component separation algorithms is the ability of propagating errors due to foreground subtraction, while having the flexibility of including foreground modeling and external constraints in a transparent way. 
+where the weighting operator $\mathbf{W}$ is chosen to optimize some criterion regarding $\tilde{s}_p$ and $s_p$ (variance of the cleaned map, unbiasedness, etc.) while keeping statistical consistency and robustness. In particular, a common requirement for all component separation algorithms is the ability of propagating errors due to foreground subtraction, while having the flexibility of including foreground modeling and external constraints in a transparent way. 
+Component separation is a method consisting in estimating the mixing matrix $\mathbf{A}$ and eventually in finding the best $\mathbf{W}$ to get the closest possible estimate $\tilde{s}_p$ to the true sky signal.
 
-A general solution to Eqs.~\ref{eq:chi2_compsep} and~\ref{eq:sp_solution} is given by $\mathbf{W} \equiv \left( \mathbf{A}^T\mathbf{N}^{-1}\mathbf{A} \right)^{-1}\mathbf{A}^T\mathbf{N}^{-1}$, leading to an unbiased estimate of the sky. As explained below, this expression can be changed, cf. e.g., Delabrouille\&Cardoso (2009), depending on the level of generality, complexity and prior knowledge on the sky signal analysts want or are able to use.
-
-Component separation is the method consisting in estimating the mixing matrix $\mathbf{A}$ and eventually in finding the best $\mathbf{W}$ to get the closest possible estimate $\tilde{s}_p$ to the true sky signal.
+For example, a solution to Eqs.~\ref{eq:chi2_compsep} and~\ref{eq:sp_solution} is obtained by taking $\mathbf{W} \equiv \left( \mathbf{A}^T\mathbf{N}^{-1}\mathbf{A} \right)^{-1}\mathbf{A}^T\mathbf{N}^{-1}$, leading to an unbiased estimate of the sky. As mentioned below, this expression can be changed, cf. e.g., Delabrouille \& Cardoso (2009), depending on the level of generality, complexity and prior knowledge on the sky signal analysts and observers want or are able to use. 
 
 
 \textcolor{red}{JE: The component separation methods would generally
@@ -120,8 +119,8 @@ Moreover, in a framework like SMICA, the level of blindness can be adjusted via 
 %%%%%%%%%%%%%%%%%%%%%%
 \subsection{Questions to be addressed during follow-up studies}
 \begin{itemize}
-	\item \textbf{E/B or Q/U basis of analysis} -- 
-	\item \textbf{Multi-sites} -- 
+	\item \textbf{E/B or Q/U basis of analysis} -- \textcolor{red}{Maude ? Jonathan ?}
+	\item \textbf{Multi-sites} -- \textcolor{red}{Carlo ? Jonathan ? }
 	\item \textbf{Various resolutions} -- under the approximation that the mixing matrix is not significantly varying under the largest resolution, the impact of various resolutions can be propagated to the noise level of the final CMB map through the CMB x CMB term of $\left(\mathbf{A}^T\mathbf{N}^{-1}\mathbf{A}\right)^{-1}$ as given by Eq.~\ref{eq:sp_solution} with $\mathbf{W} \equiv \left( \mathbf{A}^T\mathbf{N}^{-1}\mathbf{A} \right)^{-1}\mathbf{A}^T\mathbf{N}^{-1}$. Beam for each frequency channel would appear in the expression of the noise covariance matrix 
 	\begin{eqnarray}
 		\centering
@@ -132,7 +131,7 @@ Moreover, in a framework like SMICA, the level of blindness can be adjusted via 
 		\centering
 			N_\ell^{\rm post\ comp\ sep} = \left[\left(\mathbf{A}^T\left(\mathbf{N}_\ell\right)^{-1}\mathbf{A}\right)^{-1}\right]_{\rm CMBxCMB}
 	\end{eqnarray}
-	\item \textbf{Atmosphere residuals} -- Atmosphere residuals appear on large scale in CMB observations, and they scale with frequency in a similar way as dust. 
+	\item \textbf{Atmosphere residuals} -- Atmosphere residuals appear on large scale in CMB observations, and they scale with frequency in a similar way as dust, cf. Errard et al (2015a). Having redundant frequencies among the different observatories could help mitigating the atmospheric and astrophysical foregrounds.
 \end{itemize}
 
 \textcolor{red}{JE: we could outline a roadmap, i.e. the application and learning phase to SIV made by the various sub-orbitals which are going on-line now or soon with the usual 95, 150, 220. That would need to be investigated very accurately as it would represent a most important step for component separation towards SIV.}
