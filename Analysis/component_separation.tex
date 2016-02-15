@@ -79,19 +79,33 @@ The component separation methods would generally
 
 %%%%%%%%%%%%%%%%%%%%%%
 \subsection{Description of methods}
-The overall idea of component separation boils down to two steps:
+
 \begin{itemize}
-	\item estimation of the mixing matrix, $\mathbf{A}$;
-	\item inversion of Eq.~\ref{eq:comp_sep_data_modeling} to recover an estimate of the sky signal, $s_p$.
-\end{itemize}
-The second step being is rather general to any component separation cf. ..., whereas the first step can be performed in various ways:
-\begin{itemize}
-	\item \textbf{Parametric} -- it assumes that the mixing matrix, used in Eq.~\ref{eq:comp_sep_data_modeling}, can be parametrized $\mathbf{A} = \mathbf{A}(\beta)$. The functional form of $\mathbf{A}$ being fixed, the estimation of the mixing matrix is therefore equivalent to an estimation of the parameters $\beta$. This is usually down by maximizing the following likelihood cf.....
+	\item \textbf{Parametric} -- The overall idea of these methods boils down to two steps: 1) the estimation of the mixing matrix, $\mathbf{A}$; and 2) the inversion of Eq.~\ref{eq:comp_sep_data_modeling} to recover an estimate of the sky signal, $s_p$.
+	Parametric methods assumes that the mixing matrix, used in Eq.~\ref{eq:comp_sep_data_modeling}, can be parametrized $\mathbf{A} = \mathbf{A}(\beta)$. The functional form of $\mathbf{A}$ being fixed, the estimation of the mixing matrix is therefore equivalent to an estimation of the parameters $\beta$. This is usually down by maximizing the following likelihood cf.....
 	\begin{eqnarray}
 		\centering
 			-2\log \mathcal{L}(\beta) = - \sum_p \left( \mathbf{A}^T\mathbf{N}^{-1} d\right)^T\left( \mathbf{A}^T\mathbf{N}^{-1} \mathbf{A}\right)^{-1}\left( \mathbf{A}^T\mathbf{N}^{-1} d\right)
 	\end{eqnarray}
-	\item \textbf{Blind} -- By assuming that sky components are statistically independent, blind methods aim at recovering these with an a priori unknown mixing matrix. \textcolor{red}{(Maude to complete)}
+	\textcolor{red}{JE: to be completed}\\
+	\item \textbf{Blind} -- By assuming that sky components are statistically independent, blind methods aim at recovering these with an a priori unknown mixing matrix. Blind methods make minimal assumptions on the foregrounds and focus on the CMB reconstruction from its well known black body spectral energy distribution. The Internal Linear Combination (ILC, Tegmark et al. 2003) belongs to this class of methods. It only uses the CMB column of the mixing matrix elements (noted $a$ hereafter) to perform the minimum variance reconstruction, cf. Eq.~\ref{eq:sp_solution}:
+\begin{equation}
+  \tilde s_p = \sum_{i=0}^{i=m} w_i d_{p,i}
+\end{equation}
+with $\sum_i  w_i a_i = 1$, leading to the following solution:
+\begin{equation}
+  w_i = a^T N^{-1} (a^TN^{-1} a)^{-1}
+\end{equation}
+
+In this scheme, no attempt is made to design a foreground model. The decorrelation property between CMB and foregrounds alone is used to project out the contamination into a $m$-1 subspace (with $m$ being the number of frequency maps).
+
+The main caveat in this method is its well known bias (Hinshaw 2007, Delabrouille 2009, etc) which comes from empirical correlation between the CMB and the foregrounds. The ILC bias is proportional to the number of detectors $m$ and inversely proportional to the number of pixels used to compute $N$. In order to reduce this effect, one could think of reducing the foreground subspace size by adding further constraints. The SEVEM template fitting method (Martinez-Gonzales et al 2003, etc) follows this idea, by building some foreground templates with a combination of a subset of the input frequency maps.
+
+The semi-blind SMICA method (Cardoso et al 2008) also works at containing the foreground in a smaller dimension space, but in a more general way. The idea of Independent Component Analysis (ICA) is to blindly recover the full mixing matrix $\mathbf{A}$ by using the independence property of the different components. As we know that they are spatial correlations between the foregrounds, the ICA principle is used to disentangle the CMB from the noise and the foregrounds taken as a whole.
+
+The main advantage of such blind of semi-blind methods is their ability to face any unknown and/or complex foreground contamination, to reconstruct a clean CMB signal. This is a big advantage when real data comes, one can then focus on instrumental effects, or data set combination issues at first, and leave the complex task of the foreground modeling and reconstruction for a future analysis step.
+
+Moreover, in a framework like SMICA, the level of blindness can be adjusted via the plugin of any parametric component to its flexible engine as described in Cardoso et al 2008, allowing for a step by step fine grain design of the foreground model.\\
 	\item \textbf{Discussion regarding the domain of application (harmonic, pixel, wavelet,etc.)} -- the implementation of Eq.~\ref{eq:sp_solution} can be implemented equivalently with any representations of the maps i.e. pixel, harmonic, wavelet, etc. The resulting separation is independent of this choice as long as the linear data modeling holds, Eq.~\ref{eq:comp_sep_data_modeling}. That said, the difference between domain of application will lie in the computational needs: for high number of sky pixels, the implementation of Eq.~\ref{eq:sp_solution} might be significantly more efficient in harmonic space.
 \end{itemize}
 
