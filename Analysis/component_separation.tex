@@ -14,7 +14,7 @@ Key challenges:
 \centering
 \includegraphics[width=1\textwidth]{Analysis/cs}
 \caption{The component separation subset of the CMB simulation and data analysis pipeline}
-\label{default}
+\label{fig:general_comp_sep_scheme}
 \end{figure*}
 
 This section discusses the algorithms and methods disentangling sky emissions from multi-frequency maps. 
@@ -34,31 +34,39 @@ Finally, we summarize several questions which might be answered by follow-up stu
 
 \subsubsection{Motivations}
 
-S4 science goals are $r$ and neutrino mass
+\textcolor{red}{JE: S4 science goals are $r$ and neutrino mass
 \begin{itemize}
 	\item component separation is obviously a necessary step to go beyond current constraints on e.g. primordial B-modes, cf. e.g. Fig.  of Errard et al (2015) --- foregrounds residuals coudl be expected to be dominant on largest scales?
 	\item for neutrino mass, I suppose $C_\ell^{dd}$ has the best lever-arm, and we should evaluate the impact of foregrounds on the 4-point function (E-B estimators I suppose). NB: Planck lensing 2015 is based on SMICA map. Yet, the use of multiple-resolution maps degrades the final resolution of the component separated maps compared to a simple quadratic combination of beams weighted by their corresponding sensitivity. This might impact constraints on the lensing BB peak.
-\end{itemize}
+\end{itemize}}
 
 %%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Definition of component separation}
 The general data modeling assumes that, for each sky pixel $p$, one has
 \begin{eqnarray}
 	\centering	
-		d_p = \mathbf{A}s_p + n_p
+		d_p &=& \sum_{\rm comp, p} a_p^{\rm comp} s^{\rm comp}_p + n_p\\
+		 &\equiv& \mathbf{A}\,s_p + n_p
 	\label{eq:comp_sep_data_modeling}
 \end{eqnarray}
-where the vector $d$ contains the measured amplitude from each frequency map, $\mathbf{A}$ is the so-called mixing matrix, $s_p$ is a vector containing the unknown CMB and foregrounds amplitude and $n_p$ is vector containing the noise corresponding to each frequency band.
+where the vector $d$ contains the measured amplitude from each frequency map, $\mathbf{A}$ is the so-called mixing matrix which encapsulate the emission law $a_p^{\rm comp}$ for each component, $s_p$ is a vector containing the unknown CMB and foregrounds amplitude and $n_p$ is vector containing the noise corresponding to each frequency band. The index $p$ refers to sky pixels $\left( \theta, \phi \right)$, or modes of a spherical harmonic decomposition $\left( \ell, m\right)$, or a set of Fourier modes $\left(k_x,k_y\right)$, etc. Eq.~\ref{eq:comp_sep_data_modeling} assumes that the spatial templates $s_p$ are the same at all frequencies of observations.
 
-Given this modeling, the component separation aims at inverting Eq.~\ref{eq:comp_sep_data_modeling}, to estimate the foregrounds-distangled CMB signal encapsulated in $s_p$. 
-The general solution to Eq.~\ref{eq:comp_sep_data_modeling} would be given by
+Given this modeling, the component separation aims at inverting Eq.~\ref{eq:comp_sep_data_modeling}, to estimate the foregrounds-distangled CMB signal encapsulated in $s_p$, as well as the foregrounds template which are relevant to test and update the sky modeling, cf. Fig.~\ref{fig:general_comp_sep_scheme}.
+The estimate $\tilde{s}_p$ of the true sky templates $s_p$ given $\mathbf{A}$, $d_p$ and the statistical properties of the noise, minimizes the following $\chi^2$:
 \begin{eqnarray}
 	\centering
-		\tilde{s}_p = \mathbf{W}d_p
+		\chi^2 \equiv \sum_p \left| s_p - \tilde{s}_p\right|^2
+	\label{eq:chi2_compsep}
+\end{eqnarray}
+and can be taken to have the following general form
+\begin{eqnarray}
+	\centering
+		\tilde{s}_p = \mathbf{W}\,d_p
 	\label{eq:sp_solution}
 \end{eqnarray}
-where $\mathbf{W}\equiv  \left( \mathbf{A}^T\mathbf{N}^{-1}\mathbf{A} \right)^{-1}\mathbf{A}^T\mathbf{N}^{-1}$ gives an unbiased estimate of the sky.
+where the weighting operator $\mathbf{W}$ is chosen to optimize some criterion regarding $\tilde{s}_p$ and $s_p$ while keeping statistical consistency and robustness. A general solution to Eqs.~\ref{eq:chi2_compsep} and~\ref{eq:sp_solution} is given by $\mathbf{W} \equiv \left( \mathbf{A}^T\mathbf{N}^{-1}\mathbf{A} \right)^{-1}\mathbf{A}^T\mathbf{N}^{-1}$, leading to an unbiased estimate of the sky. This expression can be changed, cf. e.g., Delabrouille\&Cardoso (2009), depending on the level of generality, complexity and prior knowledge on the sky signal analysts want or are able to use.
 
+Component separation is the method consisting in estimating the mixing matrix $\mathbf{A}$ and eventually in finding the best $\mathbf{W}$ to get the closest possible estimate $\tilde{s}_p$ to the true sky signal.
 The component separation methods would generally
 \begin{itemize}
 	\item include any data processing that characterizes and exploit correlations between multi-frequencies observations,
@@ -67,7 +75,7 @@ The component separation methods would generally
 	%NB For a given method, one would think that there should be a validation step (do the tools work on reasonable sky models?) and a verification step (are the sky models consistent with reality?). The second step is obviously the most difficult to answer.
 \end{itemize}
 
-$\rightarrow$ feedback from Planck component separation as well as the early CMB cleaning achieved in the BKP measurements + Stivoli et al (2010) + Fantaye et al (2011+2012) + Errard et al (2011+2012+2015).
+\textcolor{red}{JE: $\rightarrow$ feedback from Planck component separation as well as the early CMB cleaning achieved in the BKP measurements + Stivoli et al (2010) + Fantaye et al (2011+2012) + Errard et al (2011+2012+2015).}
 
 %%%%%%%%%%%%%%%%%%%%%%
 \subsection{Description of methods}
@@ -83,11 +91,11 @@ The second step being is rather general to any component separation cf. ..., whe
 		\centering
 			-2\log \mathcal{L}(\beta) = - \sum_p \left( \mathbf{A}^T\mathbf{N}^{-1} d\right)^T\left( \mathbf{A}^T\mathbf{N}^{-1} \mathbf{A}\right)^{-1}\left( \mathbf{A}^T\mathbf{N}^{-1} d\right)
 	\end{eqnarray}
-	\item \textbf{Blind} (Maude)
-	\item \textbf{Discussion regarding the domain of application (harmonic, pixel, wavelet,etc.)} -- 
+	\item \textbf{Blind} -- By assuming that sky components are statistically independent, blind methods aim at recovering these with an a priori unknown mixing matrix. \textcolor{red}{(Maude to complete)}
+	\item \textbf{Discussion regarding the domain of application (harmonic, pixel, wavelet,etc.)} -- the implementation of Eq.~\ref{eq:sp_solution} can be implemented equivalently with any representations of the maps i.e. pixel, harmonic, wavelet, etc. The resulting separation is independent of this choice as long as the linear data modeling holds, Eq.~\ref{eq:comp_sep_data_modeling}. That said, the difference between domain of application will lie in the computational needs: for high number of sky pixels, the implementation of Eq.~\ref{eq:sp_solution} might be significantly more efficient in harmonic space.
 \end{itemize}
 
-$\rightarrow$ Parametric fitting vs. ILC, spatial domain versus non-spatial, that makes a basis of 4 algorithms. Although it was never quantified, the independence of those and very different hypotheses represent an opportunity for cross-checking and robustness.
+\textcolor{red}{JE: $\rightarrow$ Parametric fitting vs. ILC, spatial domain versus non-spatial, that makes a basis of 4 algorithms. Although it was never quantified, the independence of those and very different hypotheses represent an opportunity for cross-checking and robustness.}
 
 %%%%%%%%%%%%%%%%%%%%%%
 \subsection{Questions to be addressed during follow-up studies}
