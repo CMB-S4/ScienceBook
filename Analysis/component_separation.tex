@@ -120,15 +120,22 @@ Moreover, in a framework like SMICA, the level of blindness can be adjusted via 
 %%%%%%%%%%%%%%%%%%%%%%
 \subsection{Questions to be addressed during follow-up studies}
 \begin{itemize}
-	\item pros/cons for E/B vs Q/U
-	\item pros/cons for multi-sites
-	\item pros/cons for having various resolutions
-	\item atmosphere residuals and dust in maps could scale similarly with frequency...
-	\item we could outline a roadmap, i.e. the application and learning phase to SIV made by the various sub-orbitals which are going on-line now or soon with the usual 95, 150, 220. That would need to be investigated very accurately as it would represent a most important step for component separation
-towards SIV.
+	\item \textbf{E/B or Q/U basis of analysis} -- 
+	\item \textbf{Multi-sites} -- 
+	\item \textbf{Various resolutions} -- under the approximation that the mixing matrix is not significantly varying under the largest resolution, the impact of various resolutions can be propagated to the noise level of the final CMB map through the CMB x CMB term of $\left(\mathbf{A}^T\mathbf{N}^{-1}\mathbf{A}\right)^{-1}$ as given by Eq.~\ref{eq:sp_solution} with $\mathbf{W} \equiv \left( \mathbf{A}^T\mathbf{N}^{-1}\mathbf{A} \right)^{-1}\mathbf{A}^T\mathbf{N}^{-1}$. Beam for each frequency channel would appear in the expression of the noise covariance matrix 
+	\begin{eqnarray}
+		\centering
+			\mathbf{N}(i) \equiv \mathbf{N}(i)_\ell = \sigma(i)^2\exp\left[ \frac{\ell(\ell+1)\theta_{\rm FWHM}^2}{8\log(2)} \right]
+	\end{eqnarray}
+	where $i$ is a frequency channel. The noise variance after component separation would then be given by
+	\begin{eqnarray}
+		\centering
+			N_\ell^{\rm post\ comp\ sep} = \left[\left(\mathbf{A}^T\left(\mathbf{N}_\ell\right)^{-1}\mathbf{A}\right)^{-1}\right]_{\rm CMBxCMB}
+	\end{eqnarray}
+	\item \textbf{Atmosphere residuals} -- Atmosphere residuals appear on large scale in CMB observations, and they scale with frequency in a similar way as dust. 
 \end{itemize}
 
-
+\textcolor{red}{JE: we could outline a roadmap, i.e. the application and learning phase to SIV made by the various sub-orbitals which are going on-line now or soon with the usual 95, 150, 220. That would need to be investigated very accurately as it would represent a most important step for component separation towards SIV.}
 
 
 
