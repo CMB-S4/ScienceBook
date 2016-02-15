@@ -64,29 +64,35 @@ and can be taken to have the following general form
 		\tilde{s}_p = \mathbf{W}\,d_p
 	\label{eq:sp_solution}
 \end{eqnarray}
-where the weighting operator $\mathbf{W}$ is chosen to optimize some criterion regarding $\tilde{s}_p$ and $s_p$ while keeping statistical consistency and robustness. A general solution to Eqs.~\ref{eq:chi2_compsep} and~\ref{eq:sp_solution} is given by $\mathbf{W} \equiv \left( \mathbf{A}^T\mathbf{N}^{-1}\mathbf{A} \right)^{-1}\mathbf{A}^T\mathbf{N}^{-1}$, leading to an unbiased estimate of the sky. This expression can be changed, cf. e.g., Delabrouille\&Cardoso (2009), depending on the level of generality, complexity and prior knowledge on the sky signal analysts want or are able to use.
+where the weighting operator $\mathbf{W}$ is chosen to optimize some criterion regarding $\tilde{s}_p$ and $s_p$ while keeping statistical consistency and robustness. In particular, a common requirement for all component separation algorithms is the ability of propagating errors due to foreground subtraction, while having the flexibility of including foreground modeling and external constraints in a transparent way. 
+
+A general solution to Eqs.~\ref{eq:chi2_compsep} and~\ref{eq:sp_solution} is given by $\mathbf{W} \equiv \left( \mathbf{A}^T\mathbf{N}^{-1}\mathbf{A} \right)^{-1}\mathbf{A}^T\mathbf{N}^{-1}$, leading to an unbiased estimate of the sky. As explained below, this expression can be changed, cf. e.g., Delabrouille\&Cardoso (2009), depending on the level of generality, complexity and prior knowledge on the sky signal analysts want or are able to use.
 
 Component separation is the method consisting in estimating the mixing matrix $\mathbf{A}$ and eventually in finding the best $\mathbf{W}$ to get the closest possible estimate $\tilde{s}_p$ to the true sky signal.
-The component separation methods would generally
+
+
+\textcolor{red}{JE: The component separation methods would generally
 \begin{itemize}
 	\item include any data processing that characterizes and exploit correlations between multi-frequencies observations,
 	\item put external constraints and physical modeling
 	\item and it would aim at distinguishing between different physical sources of emission.
 	%NB For a given method, one would think that there should be a validation step (do the tools work on reasonable sky models?) and a verification step (are the sky models consistent with reality?). The second step is obviously the most difficult to answer.
 \end{itemize}
-
-\textcolor{red}{JE: $\rightarrow$ feedback from Planck component separation as well as the early CMB cleaning achieved in the BKP measurements + Stivoli et al (2010) + Fantaye et al (2011+2012) + Errard et al (2011+2012+2015).}
+$\rightarrow$ feedback from Planck component separation as well as the early CMB cleaning achieved in the BKP measurements + Stivoli et al (2010) + Fantaye et al (2011+2012) + Errard et al (2011+2012+2015).}
 
 %%%%%%%%%%%%%%%%%%%%%%
 \subsection{Description of methods}
 
+We distinguish methods based on the internal template subtraction (e.g. Bennett et al. 1992; Hansen et al. 2006), those exploiting statistical independence of sky components (e.g. Delabrouille et al. 2003; Maino et al. 2007; Bonaldi et al. 2006), those invoking the maximum-entropy principle (e.g. Stolyarov et al. 2005), or performing a parametric fit to the data (Brandt et al. 1994; Eriksen et al. 2006).
+
 \begin{itemize}
 	\item \textbf{Parametric} -- The overall idea of these methods boils down to two steps: 1) the estimation of the mixing matrix, $\mathbf{A}$; and 2) the inversion of Eq.~\ref{eq:comp_sep_data_modeling} to recover an estimate of the sky signal, $s_p$.
-	Parametric methods assumes that the mixing matrix, used in Eq.~\ref{eq:comp_sep_data_modeling}, can be parametrized $\mathbf{A} = \mathbf{A}(\beta)$. The functional form of $\mathbf{A}$ being fixed, the estimation of the mixing matrix is therefore equivalent to an estimation of the parameters $\beta$. This is usually down by maximizing the following likelihood cf.....
+	Parametric methods assumes that the mixing matrix, used in Eq.~\ref{eq:comp_sep_data_modeling}, has a functional form which is known and which can be parametrized by so-called "spectral" parameters $\beta$ i.e. $\mathbf{A} = \mathbf{A}(\beta)$. The functional form of $\mathbf{A}$ being fixed, the estimation of the mixing matrix is therefore equivalent to an estimation of the parameters $\beta$. The parameters of the model are determined via a fitting procedure, often performed on a pixel-by-pixel basis. This can be achieved by maximizing the following so-called "spectral" likelihood cf. Brandt et al (1994), Eriksen et al (2006):
 	\begin{eqnarray}
 		\centering
 			-2\log \mathcal{L}(\beta) = - \sum_p \left( \mathbf{A}^T\mathbf{N}^{-1} d\right)^T\left( \mathbf{A}^T\mathbf{N}^{-1} \mathbf{A}\right)^{-1}\left( \mathbf{A}^T\mathbf{N}^{-1} d\right)
 	\end{eqnarray}
+Any deviation between the true mixing matrix $\mathbf{A}$ and the estimated $\mathbf{\tilde A} \equiv A(\tilde \beta)$ leads to the presence of foregrounds residuals in the reconstructed components maps.
 	\textcolor{red}{JE: to be completed}\\
 	\item \textbf{Blind} -- By assuming that sky components are statistically independent, blind methods aim at recovering these with an a priori unknown mixing matrix. Blind methods make minimal assumptions on the foregrounds and focus on the CMB reconstruction from its well known black body spectral energy distribution. The Internal Linear Combination (ILC, Tegmark et al. 2003) belongs to this class of methods. It only uses the CMB column of the mixing matrix elements (noted $a$ hereafter) to perform the minimum variance reconstruction, cf. Eq.~\ref{eq:sp_solution}:
 \begin{equation}
