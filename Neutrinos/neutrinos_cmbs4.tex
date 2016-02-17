@@ -26,8 +26,8 @@ Direct interactions between neutrinos and observable matter effectively ceased a
 
 CMB-S4 can improve our understanding of neutrino physics in regimes of interest for both cosmology and particle physics.  Arguably the most important parameters of interest will be the sum of the neutrino masses $\sum m_\nu$ and the effective number of neutrino species, $\Neff$.  These two parameters have natural targets that are within reach of a CMB-S4 experiment:
 \begin{itemize}
-\item $ \sum m_\nu \gtrsim 58$ meV is the lower bound guaranteed by observations of solar and atmospheric neutrino oscillations.  A CMB experiment with $\sigma(\sum m_\nu) < 20$ meV would be guaranteed a detection of a least 3$\sigma$.
-\item $\Delta \Neff > 0.027$ is predicted for any light particle that was in thermal equilibrium with the standard model.  A CMB experiment producing $\sigma(\Neff) \lesssim 0.01$ would be sensitive to all models in this very broad class of extensions of the Standard Model, which includes a wide range of axions and axion-like particles.  
+\item $ \sum m_\nu \gtrsim \, 58$ meV is the lower bound guaranteed by observations of solar and atmospheric neutrino oscillations.  A CMB experiment with $\sigma(\sum m_\nu) < 20$ meV would be guaranteed a detection of a least 3$\sigma$.
+\item $\Delta \Neff >  0.027$ is predicted for any light particle that was in thermal equilibrium with the standard model.  A CMB experiment producing $\sigma(\Neff) \lesssim 0.01$ would be sensitive to all models in this very broad class of extensions of the Standard Model, which includes a wide range of axions and axion-like particles.  
 \end{itemize}
 Current CMB data already provides a robust detection of the cosmic neutrino background at $>10 \sigma$.  A CMB-S4 experiment will provide an order of magnitude improvement in sensitivity that opens a new window back to the time of neutrino decoupling and beyond.
 
@@ -111,7 +111,7 @@ CMB-S4 will explore neutrino physics through precision measurements of the impac
  1) The first is using precision measurements of the radiation energy density in the early Universe to constrain neutrino physics beyond the 3-neutrino paradigm. The relativistic energy density in the early Universe is uniquely probed by the CMB and provides a critical constraint on any model for the neutrinos and their interactions. It is a highly complementary probe to terrestrial approaches to non-standard neutrino phenomena (e.g., sterile neutrinos) such as short baseline neutrino experiments. 
  2) The second is constraining the sum of the neutrino masses through precision measurements of the growth of large scale structure. The CMB-S4 mass sensitivity of 16 meV (1-sigma) is especially interesting as it corresponds to a 3-sigma measurement of the minimum predicted value. Fig.~\ref{fig:neutrino-noose} shows the complementarity of the projected CMB-S4 neutrino mass constraints to the neutrino oscillation experiments of the Intensity Frontier (Dune) as well as Katrin mass limits. The oscillation experiments measure the angles and phases of the neutrino mixing matrix and are insensitive to the absolute neutrino mass scale. CMB-S4 measures the sum of the neutrino masses in a manner that is independent of the neutrino oscillation parameters. Results from Intensity Frontier experiments together with CMB-S4 will provide precision measurements of the full neutrino mixing matrix (angles, phases, and masses).
  
- \begin{figure}[ht]
+ \begin{figure}[h!]
 \centering \includegraphics[width=0.55\textwidth]{Neutrinos/numass_combine_dune}
 \caption{Shown are the current constraints and forecast sensitivity of
   cosmology to the neutrino mass in relation to the neutrino mass
@@ -143,13 +143,13 @@ The angular power spectrum of the cosmic microwave background (CMB) at small ang
 In this section, we will give a sketch of the thermal history of the standard hot big bang universe when the temperature of the plasma was falling from about $10^{11}$~K to about $10^8$~K following Section 3.1 of \cite{Weinberg:2008zzc}.  For other reviews see \cite{Dolgov:2002wy,Agashe:2014kda}.  During this era, there are two events of particular interest: neutrinos decoupled from the rest of the plasma, and a short time later electrons and positrons annihilated, heating the photons relative to the neutrinos.  Our task is to follow how these events impact the evolution of the energy densities of the photons and neutrinos.
 
 For massless particles described by the Fermi-Dirac or Bose-Einstein distributions, the energy density is given by
-\begin{equation}
+\beq
 	\rho(T) =
-	\Bigg\{\begin{array}{l}
-        g\frac{\pi^2k_B^4}{30\hbar^3 c^3}T^4  \\
-       \frac{7}{8}g\frac{\pi^2k_B^4}{30\hbar^3 c^3} T^4 
+	\Bigg\{\begin{array}{l c l}
+        g\frac{\pi^2k_B^4}{30\hbar^3 c^3}T^4 &  &{\rm Boson}\\
+       \frac{7}{8}g\frac{\pi^2k_B^4}{30\hbar^3 c^3} T^4 &  &{\rm Fermion}
         \end{array}
-\end{equation}
+\eeq
 where $g$ counts the number of distinct spin states.  The entropy density for massless particles is given by
 \begin{equation}
 	s(T) = \frac{4\rho(T)}{3T} \, .
@@ -208,20 +208,11 @@ The current best estimate of $\Nf$ in the standard model is $\Nf = 3.046$ \cite{
 
 
 
-{\it Status of calculations in the Standard Model} -- (Contribution expected from G. Fuller)
 
 
-{\it Light Species}
 
-\begin{figure}[t!]
-\begin{center}
-\includegraphics[width=0.65\textwidth]{Neutrinos/Neff.pdf}
-\caption{Contribution to $\Neff$ from a massless field that was in thermal equilibrium with the Standard model at temperatures $T> T_{\rm freeze}$.  For $T_{\rm freeze} \gg m_{\rm top}$, these curves saturate with $\Delta \Neff > 0.027$.   The region in red shows the range of forecasts for $\sigma(\Neff)$ for plausible CMB-S4 configurations. }
-\label{fig:limits}
-\end{center}
-\end{figure}
 
-\subsection{Dark Radiation}
+\subsection{Natural Target}
 
 As will be discussed in more detail below, the CMB angular power spectrum is sensitive to the value of $\Nf$ in our universe.  Measurement of the value of $\Nf$ provides a huge amount of insight into the early universe, and is in fact an observational probe of the conditions at very early times, well before recombination.  Even within the standard model, $\Nf$ provides an observational handle on the thermal history back to about one second after the end of inflation.  The true power of measuring $\Nf$, however, comes from the realization that it is sensitive not just to the neutrinos of the standard model, but it in fact receives contributions from all forms of radiation apart from photons present in the early universe and is thus a probe of new physics.
 
@@ -229,9 +220,30 @@ Collider experiments are known to provide a measurement of the number of neutrin
 
 If the measured value of $\Nf$ exceeds the standard model prediction, it would be an indication that there is additional radiation content in the early universe or that the thermal history is somehow modified.  Additional radiation which contributes to $\Nf$ is often referred to as dark radiation.  There is a huge number of possible sources for dark radiation, including sterile neutrinos \cite{Abazajian:2001nj,Strumia:2006db,Boyarsky:2009ix}, gravitational waves \cite{Boyle:2007zx,Stewart:2007fu,Meerburg:2015zua}, dark photons \cite{Ackerman:mha,Kaplan:2011yj,CyrRacine:2012fz}, and many more \cite{Cadamuro:2010cz,Weinberg:2013kea}.  It is also possible that the measured value of $\Nf$ could be found below the standard model prediction.  This can happen if for example photons are heated relative to neutrinos after decoupling \cite{Steigman:2013yua,Boehm:2013jpa}.
 
+One of the features that make $\Neff$ a compelling theoretical target, is the degree to which broad classes of models fall into two basic levels of $\Delta \Neff$.  As illustrate in Figure~\ref{fig:limits}, any species that was in thermal equilibrium with the Standard model produces a characteristic correction to $\Neff$ that depends only on its spin and its freeze-out temperature.  For freeze-out after the QCD phase transition, one finds $\Delta \Neff \gtrsim 0.3$.  Freeze-out before the QCD phase transition instead produces $\Delta \Neff > 0.027$.  This first category has been tested by Planck.  The second category, which is sensitive freeze-out temperatures as early as reheating, falls into the level of sensitivity compatible CMB Stage IV experiment.
+
+\begin{figure}[t!]
+\begin{center}
+\includegraphics[width=0.65\textwidth]{Neutrinos/Neff.pdf}
+\caption{Contribution to $\Neff$ from a massless field that was in thermal equilibrium with the Standard model at temperatures $T> T_{\rm freeze}$.  For $T_{\rm freeze} \gg m_{\rm top}$, these curves saturate with $\Delta \Neff > 0.027$.   The region in red shows the range of forecasts for $\sigma(\Neff)$ for plausible CMB-S4 configurations. }
+\label{fig:limits}
+\end{center}
+\end{figure} 
+
+The contributions to $\Neff$ from hot thermal relics are relatively easy to understand from the discussion of neutrino decoupling.  After freeze-out, the temperature of a relativistic specifics redshift like $a^{-1}$ and therefore is only diluted relative to the Standard model when energy is injected.  The annihilation of heavy standard model particles into photons conserves the comoving entropy and therefore, the diluted temperature of a relic before neutrino decoupling is given by
+\beq
+\left( \frac{T_{\rm relic}}{T_{\nu}} \right)^3 = \frac{g_\star (T_{\nu-{\rm freeze-out}})}{g_\star (T_{\rm relic \, freeze-out}) }= \frac{43/4}{g_\star (T_{\rm freeze-out})}
+\eeq
+The order of magnitude difference in $\Delta \Neff$ before and after the QCD phase transition is from order of magnitude drop in $g_\star$ below the QCD scale.
+
 Furthermore, the CMB power spectrum has the ability to distinguish among certain types of dark radiation based on the behavior of its density perturbations  \cite{Chacko:2015noa,Baumann:2015rya}.  This point will be discussed further below. {\color{blue} (Check that Dan discusses free-streaming in effects on CMB section)}
 
 Even a measurement of $\Nf$ which agrees with the standard model prediction to high precision would be very interesting due to the constraints it would place on physics beyond the standard model.  Any light thermal relic will contribute to $\Nf$ at a level that can be determined by the particle type and the decoupling temperature \cite{Brust:2013ova,Chacko:2015noa}.  The forecasted constraints on $\Nf$ from CMB-Stage IV {\color{blue} (Check for consistency with other sections in naming convention)} are at a level which could constrain all light thermal relics up to temperatures near the electroweak phase transition.  This broad reach to extremely high energies and very early times demonstrates the discovery potential for a precision measurement of $\Nf$ with the CMB.
+
+
+
+
+
 
 \subsection{Observational Signatures}
 
