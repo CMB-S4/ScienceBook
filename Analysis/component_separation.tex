@@ -111,8 +111,8 @@ The semi-blind SMICA method (Cardoso et al 2008) also works at containing the fo
 The main advantage of such blind of semi-blind methods is their ability to face any unknown and/or complex foreground contamination, to reconstruct a clean CMB signal. This is a big advantage when real data comes, one can then focus on instrumental effects, or data set combination issues at first, and leave the complex task of the foreground modeling and reconstruction for a future analysis step.
 
 Moreover, in a framework like SMICA, the level of blindness can be adjusted via the plugin of any parametric component to its flexible engine as described in Cardoso et al 2008, allowing for a step by step fine grain design of the foreground model.\\
-	\item \textbf{Maximum entropy} -- 
-	\item \textbf{Template fitting} -- 	
+	\item \textbf{Maximum entropy} --  this is a method which inverts the same linear system of component mixtures, cf Eq.~\ref{eq:comp_sep_data_modeling}, but assumes non-gaussian probability distributions, see Hobson \& Lasenby (1998), Stolyarov et al. (2002). \textcolor{red}{to be completed}
+	\item \textbf{Template fitting} -- 	Emission laws are not modeled and analysis is reduced to the maximisation of a likelihood over scalar and tensor contributions to any CMB angular power spectrum, as well as amplitudes of each foregrounds component, cf. Katayama \& Komatsu (2011).
 	\item \textbf{Discussion regarding the domain of application (harmonic, pixel, wavelet, etc.)} -- the implementation of Eq.~\ref{eq:sp_solution} can be implemented equivalently with any representations of the maps i.e. pixel, harmonic, wavelet, etc. The resulting separation is independent of this choice as long as the linear data modeling holds, Eq.~\ref{eq:comp_sep_data_modeling}. That said, the difference between domain of application will lie in the computational needs: for high number of sky pixels, the implementation of Eq.~\ref{eq:sp_solution} might be significantly more efficient in harmonic space.
 \end{itemize}
 
@@ -121,8 +121,8 @@ Moreover, in a framework like SMICA, the level of blindness can be adjusted via 
 %%%%%%%%%%%%%%%%%%%%%%
 \subsection{Questions to be addressed during follow-up studies}
 \begin{itemize}
-	\item \textbf{E/B or Q/U basis of analysis} -- \textcolor{red}{Maude ? Jonathan ?}
-	\item \textbf{Multi-sites} -- \textcolor{red}{Carlo ? Jonathan ? }
+	\item \textbf{E/B or Q/U basis of analysis} -- \textcolor{red}{Maude ? Jonathan ?} discussion about the leakage
+	\item \textbf{Multi-sites} -- \textcolor{red}{Carlo ? Jonathan ? } discussion about the importance of having the same filtering for the analysis.
 	\item \textbf{Various resolutions} -- under the approximation that the mixing matrix is not significantly varying under the largest resolution, the impact of various resolutions can be propagated to the noise level of the final CMB map through the CMB x CMB term of $\left(\mathbf{A}^T\mathbf{N}^{-1}\mathbf{A}\right)^{-1}$ as given by Eq.~\ref{eq:sp_solution} with $\mathbf{W} \equiv \left( \mathbf{A}^T\mathbf{N}^{-1}\mathbf{A} \right)^{-1}\mathbf{A}^T\mathbf{N}^{-1}$. Beam for each frequency channel would appear in the expression of the noise covariance matrix 
 	\begin{eqnarray}
 		\centering
