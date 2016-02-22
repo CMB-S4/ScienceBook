@@ -79,18 +79,17 @@ For example, a solution to Eqs.~\ref{eq:chi2_compsep} and~\ref{eq:sp_solution} i
 %%%%%%%%%%%%%%%%%%%%%%
 \subsection{Description of methods}
 
-We distinguish methods based on an internal template subtraction (e.g. Bennett et al. (1992), Hansen et al. (2006), Katayama \& Komatsu (2011)), those exploiting statistical independence of sky components (e.g. Delabrouille et al. (2003), Maino et al. (2007), Bonaldi et al. (2006)), those invoking the maximum-entropy principle (e.g. Stolyarov et al. (2005)), or performing a parametric fit to the data (Brandt et al. (1994), Eriksen et al. (2006), Stompor et al (2009)).
+We distinguish methods based on an internal template subtraction (e.g. \cite{bennett92,hansen06,katayama11}), those exploiting statistical independence of sky components (e.g. \cite{delabrouille03,maino07,bonaldi06}), those invoking the maximum-entropy principle (e.g. \cite{stolyarov05}), or performing a parametric fit to the data (\cite{brandt94,eriksen06, stompor09}).
 
 \begin{itemize}
 	\item \textbf{Parametric} -- The overall idea of these methods boils down to two steps: 1) the estimation of the mixing matrix, $\mathbf{A}$; and 2) the inversion of Eq.~\ref{eq:comp_sep_data_modeling} to recover an estimate of the sky signal, $s_p$.
-	Parametric methods assumes that the mixing matrix, used in Eq.~\ref{eq:comp_sep_data_modeling}, has a functional form which is known and which can be parametrized by so-called "spectral" parameters $\beta$ i.e. $\mathbf{A} = \mathbf{A}(\beta)$. The functional form of $\mathbf{A}$ being fixed, the estimation of the mixing matrix is therefore equivalent to an estimation of the parameters $\beta$. The parameters of the model are determined via a fitting procedure, often performed over sky pixels. This can be achieved by maximizing the following so-called "spectral" likelihood cf. Brandt et al (1994), Eriksen et al (2006):
+	Parametric methods assumes that the mixing matrix, used in Eq.~\ref{eq:comp_sep_data_modeling}, has a functional form which is known and which can be parametrized by so-called "spectral" parameters $\beta$ i.e. $\mathbf{A} = \mathbf{A}(\beta)$. The functional form of $\mathbf{A}$ being fixed, the estimation of the mixing matrix is therefore equivalent to an estimation of the parameters $\beta$. The parameters of the model are determined via a fitting procedure, often performed over sky pixels. This can be achieved by maximizing the following so-called "spectral" likelihood \cite{brandt94,eriksen06}:
 	\begin{eqnarray}
 		\centering
 			-2\log \mathcal{L}(\beta) = - \sum_p \left( \mathbf{A}^T\mathbf{N}^{-1} d\right)^T\left( \mathbf{A}^T\mathbf{N}^{-1} \mathbf{A}\right)^{-1}\left( \mathbf{A}^T\mathbf{N}^{-1} d\right)
 	\end{eqnarray}
 Any deviation between the true mixing matrix $\mathbf{A}$ and the estimated $\mathbf{\tilde A} \equiv A(\tilde \beta)$ leads to the presence of foregrounds residuals in the reconstructed components maps.
-	\textcolor{red}{JE: to be completed}\\
-	\item \textbf{Blind} -- By assuming that sky components are statistically independent, blind methods aim at recovering these with an a priori unknown mixing matrix. Blind methods make minimal assumptions on the foregrounds and focus on the CMB reconstruction from its well known black body spectral energy distribution. The Internal Linear Combination (ILC, Tegmark et al. 2003) belongs to this class of methods. It only uses the CMB column of the mixing matrix elements (noted $a$ hereafter) to perform the minimum variance reconstruction, cf. Eq.~\ref{eq:sp_solution}:
+	\item \textbf{Blind} -- By assuming that sky components are statistically independent, blind methods aim at recovering these with an a priori unknown mixing matrix. Blind methods make minimal assumptions on the foregrounds and focus on the CMB reconstruction from its well known black body spectral energy distribution. The Internal Linear Combination (ILC, \cite{tegmark03}) belongs to this class of methods. It only uses the CMB column of the mixing matrix elements (noted $a$ hereafter) to perform the minimum variance reconstruction, cf. Eq.~\ref{eq:sp_solution}:
 \begin{equation}
   \tilde s_p = \sum_{i=0}^{i=m} w_i d_{p,i}
 \end{equation}
