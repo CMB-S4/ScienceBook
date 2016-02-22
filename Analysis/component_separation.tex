@@ -27,7 +27,7 @@ Finally, we summarize several questions which might be answered by follow-up stu
 \begin{figure*}[htbp]
 \centering
 \includegraphics[width=0.5\textwidth]{Analysis/Power_Spectrum_figure_showing_foregrounds.pdf}
-\caption{Angular power spectra showing primordial $B$ modes, lensing $B$ modes, total intensity, and $E$ modes, as well as the total contribution of polarized $B$-mode foregrounds (dust plus synchrotron), expected on the cleanest $1-90\%$ of the sky, at $100$ and $200\;$GHz. Note that, as these results are derived from Planck's Galactic masks and are not therefore optimized for high-resolution, ground-based instruments, there is potential for discovery of small patches of sky (e.g., $f_{\mathrm sky} \leq 5\%$) cleaner than those indicated here. From~\cite{errard15b}.}
+\caption{Angular power spectra showing primordial $B$ modes, lensing $B$ modes, total intensity, and $E$ modes, as well as the total contribution of polarized $B$-mode foregrounds (dust plus synchrotron), expected on the cleanest $1-90\%$ of the sky, at $100$ and $200\;$GHz. Note that, as these results are derived from Planck's Galactic masks and are not therefore optimized for high-resolution, small scale instruments, there is potential for discovery of small patches of sky (e.g., $f_{\mathrm sky} \leq 5\%$) cleaner than those indicated here. From~\cite{errard15b}.}
 \label{fig:power_spectrum_fgs}
 \end{figure*}
 
@@ -37,29 +37,28 @@ Finally, we summarize several questions which might be answered by follow-up stu
 Given that Stage-IV science goals are $r$ and neutrino mass, and as illustrated in Fig.~\ref{fig:power_spectrum_fgs}:
 \begin{itemize}
 	\item component separation is an obvious necessary step to go beyond current constraints on primordial B-modes. In particular, as astrophysical foregrounds usually have a red angular spectrum, residuals in the reconstructed CMB map are usually expected to be important on large scales.
-	\item $C_\ell^{dd}$ has the best lever-arm for neutrino mass, and the impact of foregrounds residuals on the CMB 4-point functions has not been quantitatively addressed at this time. Yet, we note that Planck lensing 2015 is based on SMICA map, cf.~\cite{planck15-15}.
-	However, the use of multiple-resolution maps degrades the final resolution of the component separated maps compared to a simple quadratic combination of beams weighted by their corresponding sensitivity. This could impact constraints on the lensing BB peak, and therefore degrade measurements of high-$\ell$ cosmological parameters as $w$ or neutrino mass.
+	\item $C_\ell^{dd}$ has the best lever-arm for neutrino mass, and the impact of foregrounds residuals on the CMB 4-point functions has not been quantitatively addressed at this time. Yet, we note that Planck lensing 2015 is based on SMICA map, cf.~\cite{planck15-15}.\\
+	However, the use of multiple-resolution maps could degrade the final resolution of the component separated maps compared to a simple quadratic combination of beams weighted by their corresponding sensitivity. This degradation might impact constraints on the lensing BB peak, and therefore penalize measurements of high-$\ell$ cosmological parameters such as $w$ or neutrino mass.
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Definition of component separation}
 
-A component separation method would generally
+Component separation would generally
 \begin{itemize}
 	\item include any data processing that characterizes and exploit correlations between multi-frequencies observations,
-	\item put external constraints and physical modeling
+	\item use external constraints and physical modeling
 	\item and it would aim at distinguishing between different physical sources of emission.
 \end{itemize}
 The general data modeling reads
 \begin{eqnarray}
 	\centering	
-		d_p &=& \sum_{\rm comp, p} a_p^{\rm comp} s^{\rm comp}_p + n_p\\
-		 &\equiv& \mathbf{A}\,s_p + n_p
+		d_p &=& \sum_{\rm comp, p} a_p^{\rm comp} s^{\rm comp}_p + n_p \equiv \mathbf{A}\,s_p + n_p
 	\label{eq:comp_sep_data_modeling}
 \end{eqnarray}
-where the vector $d_p$ contains the measured amplitude from each frequency map, $\mathbf{A}$ is the so-called mixing matrix which encapsulates the emission law $a_p^{\rm comp}$ of each component, $s_p$ is a vector containing the unknown CMB and foregrounds amplitude and $n_p$ is a vector containing the noise level for each frequency band. The index $p$ refers to sky pixels $\left( \theta, \phi \right)$, or modes of a spherical harmonic decomposition $\left( \ell, m\right)$, or a set of Fourier modes $\left(k_x,k_y\right)$, etc. Note that this modeling assumes spatial templates $s_p$ to be the same at all frequencies of observations.
+where the vector $d_p$ contains the measured amplitude from each frequency map, $\mathbf{A}$ is the so-called mixing matrix which encapsulates the emission law $a_p^{\rm comp}$ of each component, $s_p$ is a vector containing the unknown CMB and foregrounds amplitude and $n_p$ is a vector containing the noise level for each frequency band. The index $p$ refers to sky pixels $\left( \theta, \phi \right)$, or modes of a spherical harmonic decomposition $\left( \ell, m\right)$, or a set of Fourier modes $\left(k_x,k_y\right)$, etc. Note that this modeling assumes spatial templates $s_p$ that are the same at all frequencies of observations.
 
-Component separation aims at inverting Eq.~\ref{eq:comp_sep_data_modeling}, to estimate the foregrounds-distangled CMB signal encapsulated in $s_p$, as well as the foregrounds template which are relevant to test and update the sky modeling, cf. Fig.~\ref{fig:general_comp_sep_scheme}.
+Component separation aims at inverting Eq.~\ref{eq:comp_sep_data_modeling}, to estimate the foregrounds-distangled CMB signal encapsulated in $s_p$, as well as the foregrounds template which are relevant to test and update the sky modeling, as illustrated in Fig.~\ref{fig:general_comp_sep_scheme}.
 The estimate $\tilde{s}_p$ of the true sky templates $s_p$ --- given $\mathbf{A}$, $d_p$ and the statistical properties of the noise --- minimizes the following $\chi^2$:
 \begin{eqnarray}
 	\centering
@@ -72,14 +71,10 @@ and can be taken to have the following general form
 		\tilde{s}_p = \mathbf{W}\,d_p
 	\label{eq:sp_solution}
 \end{eqnarray}
-where the weighting operator $\mathbf{W}$ is chosen to optimize some criterion regarding $\tilde{s}_p$ and $s_p$ (variance of the cleaned map, unbiasedness, etc.) while keeping statistical consistency and robustness. In particular, a common requirement for all component separation algorithms is the ability of propagating errors due to foreground subtraction, while having the flexibility of including foreground modeling and external constraints in a transparent way. 
-Component separation is a method consisting in estimating the mixing matrix $\mathbf{A}$ and eventually in finding the best $\mathbf{W}$ to get the closest possible estimate $\tilde{s}_p$ to the true sky signal.
+where the weighting operator $\mathbf{W}$ is chosen to optimize some criterion regarding $\tilde{s}_p$ and $s_p$ (variance of the cleaned map, unbiasedness, etc.) while keeping statistical consistency and robustness. In particular, a common requirement for all component separation algorithms is the ability of propagating errors due to foreground subtraction, while having the flexibility of including foreground modeling and external constraints in a transparent way. \\
+Component separation is finally a method consisting in estimating the mixing matrix $\mathbf{A}$ and eventually in finding the best $\mathbf{W}$ to get the closest possible estimate $\tilde{s}_p$ to the true sky signal.
 
-For example, a solution to Eqs.~\ref{eq:chi2_compsep} and~\ref{eq:sp_solution} is obtained by taking $\mathbf{W} \equiv \left( \mathbf{A}^T\mathbf{N}^{-1}\mathbf{A} \right)^{-1}\mathbf{A}^T\mathbf{N}^{-1}$, leading to an unbiased estimate of the sky. As mentioned below, this expression can be changed, cf. e.g., Delabrouille \& Cardoso (2009), depending on the level of generality, complexity and prior knowledge on the sky signal analysts and observers want or are able to use. 
-
-
-\textcolor{red}{JE: 
-$\rightarrow$ feedback from Planck component separation as well as the early CMB cleaning achieved in the BKP measurements + Stivoli et al (2010) + Fantaye et al (2011+2012) + Errard et al (2011+2012+2015).}
+For example, a solution to Eqs.~\ref{eq:chi2_compsep} and~\ref{eq:sp_solution} is obtained by taking $\mathbf{W} \equiv \left( \mathbf{A}^T\mathbf{N}^{-1}\mathbf{A} \right)^{-1}\mathbf{A}^T\mathbf{N}^{-1}$ with $\mathbf{N} \equiv \langle n_p^T n_p\rangle$, leading to an unbiased estimate of the sky. As mentioned below, this expression can be changed, cf. e.g., \cite{delabrouille09}, depending on the level of generality, complexity and prior knowledge on the sky signal analysts and observers want or are able to use. 
 
 %%%%%%%%%%%%%%%%%%%%%%
 \subsection{Description of methods}
