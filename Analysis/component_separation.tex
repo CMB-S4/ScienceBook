@@ -18,7 +18,7 @@ Key challenges:
 \end{figure*}
 
 This section discusses the algorithms and methods disentangling sky emissions from multi-frequency maps. 
-We first present the motivations and the general ideas of existing methods. 
+We first present the motivations and the general ideas of existing approaches. 
 We then give the specificities of parametric and blind methods. 
 Finally, we summarize several questions which might be answered by follow-up studies.
 
@@ -27,19 +27,22 @@ Finally, we summarize several questions which might be answered by follow-up stu
 \begin{figure*}[htbp]
 \centering
 \includegraphics[width=0.5\textwidth]{Analysis/Power_Spectrum_figure_showing_foregrounds.pdf}
-\caption{Angular power spectra showing primordial $B$ modes, lensing $B$ modes, total intensity, and $E$ modes, as well as the total contribution of polarized $B$-mode foregrounds (dust plus synchrotron), expected on the cleanest $1-90\%$ of the sky, at $100$ and $200\;$GHz. Note that, as these results are derived from Planck's Galactic masks and are not therefore optimized for high-resolution, small scale instruments, there is potential for discovery of small patches of sky (e.g., $f_{\mathrm sky} \leq 5\%$) cleaner than those indicated here. From~\cite{errard15b}.}
+\caption{Angular power spectra showing primordial $B$ modes, lensing $B$ modes, total intensity, and $E$ modes, as well as the total contribution of polarized $B$-mode foregrounds (dust plus synchrotron), expected on the cleanest $1-90\%$ of the sky, at $100$ and $200\;$GHz. Note that, as these results are derived from Planck data at intermediate and high Galactic latitudes, sensitive primarily to the large scale 
+foreground pattern in polarization and are not therefore optimized for high-resolution, small scale instruments, there is potential for discovery of small patches of sky (e.g., $f_{\mathrm sky} \leq 5\%$) with a signal differing than those indicated here. From~\cite{errard15b}.}
 \label{fig:power_spectrum_fgs}
 \end{figure*}
 
 
 \subsubsection{Motivations}
 
-Given that Stage-IV science goals are $r$ and neutrino mass, and as illustrated in Fig.~\ref{fig:power_spectrum_fgs}:
-\begin{itemize}
-	\item component separation is an obvious necessary step to go beyond current constraints on primordial B-modes. In particular, as astrophysical foregrounds usually have a red angular spectrum, residuals in the reconstructed CMB map are usually expected to be important on large scales.
-	\item $C_\ell^{dd}$ has the best lever-arm for neutrino mass, and the impact of foregrounds residuals on the CMB 4-point functions has not been quantitatively addressed at this time. Yet, we note that Planck lensing 2015 is based on SMICA map, cf.~\cite{planck15-15}.\\
-	However, the use of multiple-resolution maps could degrade the final resolution of the component separated maps compared to a simple quadratic combination of beams weighted by their corresponding sensitivity. This degradation might impact constraints on the lensing BB peak, and therefore penalize measurements of high-$\ell$ cosmological parameters such as $w$ or neutrino mass.
-\end{itemize}
+%Given that Stage-IV science goals are $r$ and neutrino mass, and as illustrated in Fig.~\ref{fig:power_spectrum_fgs}:
+%\begin{itemize}
+%	\item component separation is an obvious necessary step to go beyond current constraints on primordial B-modes. In particular, as astrophysical foregrounds usually have a red angular spectrum, residuals in the reconstructed CMB map are usually expected to be important on large scales.
+%	\item $C_\ell^{dd}$ has the best lever-arm for neutrino mass, and the impact of foregrounds residuals on the CMB 4-point functions has not been quantitatively addressed at this time. Yet, we note that Planck lensing 2015 is based on SMICA map, cf.~\cite{planck15-15}.\\
+%	However, the use of multiple-resolution maps could degrade the final resolution of the component separated maps compared to a simple quadratic combination of beams weighted by their corresponding sensitivity. This degradation might impact constraints on the lensing BB peak, and therefore penalize measurements of high-$\ell$ cosmological parameters such as $w$ or neutrino mass.
+%\end{itemize}
+
+Recent measurements by BICEP2/Keck/Planck \cite{bicepkeckplanck15} confirm that on the degree scale, where the imprint of $B$ modes from primordial GWs may be found, these are potentially comparable or higher than the cosmological signal at any frequency, in any sky location. Due to the power law decay behavior in $\ell$, found on larger scales by Planck and WMAP \cite{planck15-9,page07} foregrounds are thought to be more relevant at larger angular scales, subdominant  with respect to the $B$ mode lensing signal on the scale of a few arcminutes, see Fig.\ref{fig:power_spectrum_fgs}.\\ Nevertheless, observed levels, around $10\%$ of the dust polarization fraction has been shown to impact non-negligibly on the 4$^{th}$ point function used for achieving lensing extraction \cite{fantaye12}. Therefore, component separation is a necessary and most important step in order to gain insight into the amplitude of primordial GWs, as well as the neutrino masses and dark energy abundances through CMB lensing studies, powering the $B$ modes on the degree and few arcminute angular scales, respectively.}
 
 %%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Definition of component separation}
@@ -50,6 +53,7 @@ Component separation would generally
 	\item use external constraints and physical modeling
 	\item and it would aim at distinguishing between different physical sources of emission.
 \end{itemize}
+
 The general data modeling reads
 \begin{eqnarray}
 	\centering	
@@ -76,10 +80,18 @@ Component separation is finally a method consisting in estimating the mixing mat
 
 For example, a solution to Eqs.~\ref{eq:chi2_compsep} and~\ref{eq:sp_solution} is obtained by taking $\mathbf{W} \equiv \left( \mathbf{A}^T\mathbf{N}^{-1}\mathbf{A} \right)^{-1}\mathbf{A}^T\mathbf{N}^{-1}$ with $\mathbf{N} \equiv \langle n_p^T n_p\rangle$, leading to an unbiased estimate of the sky. As mentioned below, this expression can be changed, cf. e.g., \cite{delabrouille09}, depending on the level of generality, complexity and prior knowledge on the sky signal analysts and observers want or are able to use. 
 
+
+Early and recent studies demonstrated the applicability of classes of component separation 
+algorithms to simulated multi-frequency datasets from the ground or balloon-borne, targeting limited frequency ranges, sky areas \cite{stivoli10,fantaye11,fantaye12}. Results indicate that generally, for a frequency range extending from $90$ to $250$ GHz, polarized foregrounds may be removed effectively through a multi-frequency combination, at the price of enhancing the white noise contribution due to channel mixing; moreover, a possible bias may be introduced if, at the lowest frequency interval edge, the synchrotron component is not negligible: lower frequency templates/data are required to avoid such a contribution \cite{essinger14}. Along this line, algorithms progressed in terms of casting and analysis to be exploited as a guidance in the optimization of instrumental designs for foreground cleaning \cite{errard11, errard12}, which are now adopted as a standard for forecasting the feasibility of foreground cleaning and impact on the main science targets of $B$ modes \cite{errard15b}. The most comprehensive application of component separation to data, in terms of completeness of algorithms, extension of frequency range of application, is represented by Planck, although dominated by the CMB component  which is accessible by that, i.e. the total intensity and large scale polarization \cite{planck15-9}.
+
 %%%%%%%%%%%%%%%%%%%%%%
 \subsection{Description of methods}
 
-We distinguish methods based on an internal template subtraction (e.g. \cite{bennett92,hansen06,katayama11}), those exploiting statistical independence of sky components (e.g. \cite{delabrouille03,maino07,bonaldi06}), those invoking the maximum-entropy principle (e.g. \cite{stolyarov05}), or performing a parametric fit to the data (\cite{brandt94,eriksen06, stompor09}).
+The CMB extraction may be achieved essentially through two basic concepts: the fitting of foreground unknowns along with CMB, or the minimization of the variance of a linear mix of the data, possessing the frequency scaling of a black body.
+
+The first class of algorithms, known as ``parametric'', makes the maximum use of prior knowledge of foreground emission. On the contrary, the second class, known as ``blind'', makes the minimum set of assumptions. Both can be casted in the default, spatial domain of sky pixels, as well as a variety of harmonic domains, extending from the pure angular one, to the selection of localization in the spatial and harmonic domains through a suitable needlet set. The complementarity, and internal comparison of results through these pipelines has been proven to be relevant in actual data analysis on Planck data \cite{planck15-9}. 
+
+Historically this classification has been achieved through various works. Blind techniques made use of internal template subtraction (e.g. \cite{bennett92,hansen06,katayama11}), or exploiting statistical independence of sky components (e.g. \cite{delabrouille03,maino07,bonaldi06}), those invoking the maximum-entropy principle (e.g. \cite{stolyarov05}). The most important papers on parametric fitting are \cite{brandt94,eriksen06, stompor09}.
 
 \begin{itemize}
 	\item \textbf{Parametric} -- The overall idea of these methods boils down to two steps: 1) the estimation of the mixing matrix, $\mathbf{A}$; and 2) the inversion of Eq.~\ref{eq:comp_sep_data_modeling} to recover an estimate of the sky signal, $s_p$.
@@ -144,5 +156,3 @@ Moreover, in a framework like SMICA, the level of blindness can be adjusted via 
 %% or ADS Bibtex (if no SPIRES entry).
 %%  SPIRES will also supply the CITATION line information; please include it.
 %%
-
-
