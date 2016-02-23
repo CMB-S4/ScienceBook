@@ -1,27 +1,316 @@
-%%%%%% CMB-S4 Simulations and Data Analysis Chapter, Statistics & Parameters Section  %%%%%%%%%%%%%%%%
+\documentclass[prd,superscriptaddress,nofootinbib,floatfix,notitlepage]{revtex4-1}
+\pdfoutput=1
+\synctex=1
 
-\section{Statistics and Parameters}
+\usepackage{amsmath,amssymb,epsfig}
+\usepackage{hyperref}
+\usepackage{natbib,ifthen}
+\usepackage{dcolumn}
+\usepackage{mathrsfs}
+\usepackage{simplewick}
+\usepackage[lofdepth,lotdepth,caption=false]{subfig}
+\usepackage{color}
+\usepackage{bbold}
 
-Key challenges:
+\begin{document}
+
+\def\Btheo{{B_\delta^{\textrm{theo}}}}
+\newcommand{\todo}[1]{{\color{blue}{MS: #1}}} % write in main text
+\newcommand{\comment}[1]{{\color{blue}{Comment: #1}}}
+\newcommand{\changed}[1]{{\color{blue}{#1}}} % write in main text
+\newcommand{\lbar}[1]{\underline{l}_{#1}}
+\newcommand{\drm}{\mathrm{d}}
+\renewcommand{\d}{\mathrm{d}}
+\renewcommand{\rm}[1]{\mathrm{#1}}
+\newcommand{\gaensli}[1]{\lq #1\rq$ $}
+\newcommand{\bartilde}[1]{\bar{\tilde #1}}
+\newcommand{\barti}[1]{\bartilde{#1}}
+\newcommand{\ti}{\tilde}
+\newcommand{\oforder}[1]{\mathcal{O}(#1)}
+\newcommand{\D}{\mathrm{D}}
+\renewcommand{\(}{\left(}
+\renewcommand{\)}{\right)}
+\renewcommand{\[}{\left[}
+\renewcommand{\]}{\right]}
+\def\<{\left\langle}
+\def\>{\right\rangle}
+\newcommand{\mycaption}[1]{\caption{\footnotesize{#1}}}
+\newcommand{\hattilde}[1]{\hat{\tilde #1}}
+\newcommand{\mycite}[1]{[#1]}
+\newcommand{\mnras}{Mon.\ Not.\ R.\ Astron.\ Soc.}
+\newcommand{\apjs}{Astrophys.\ J.\ Supp.}
+\newcommand{\rmL}{\mathrm{L}}
+\newcommand{\RS}{\mathit{RS}}
+\newcommand{\WX}{\mathit{WX}}
+\newcommand{\YZ}{\mathit{YZ}}
+\newcommand{\pprime}[2]{\mathit{#1'#2'}}
+\newcommand{\PPrime}[2]{\mathit{#1'\!#2'}}
+\newcommand{\WXprime}{\PPrime{W}{X}}
+\newcommand{\YZprime}{\PPrime{Y}{Z}}
+\newcommand{\WW}{\mathit{WW}}
+\newcommand{\XX}{\mathit{XX}}
+\newcommand{\UV}{\mathit{UV}}
+\newcommand{\TT}{\mathit{TT}}
+\newcommand{\TE}{\mathit{TE}}
+\newcommand{\EB}{\mathit{EB}}
+\newcommand{\EE}{\mathit{EE}}
+\newcommand{\BB}{\mathit{BB}}
+\newcommand{\TTilde}[2]{\mathit{\tilde #1\!\tilde #2}}
+\newcommand{\ttilde}[2]{\mathit{\tilde #1\tilde #2}}
+\newcommand{\tWX}{\TTilde{W}{X}}
+\newcommand{\tST}{\TTilde{S}{T}}
+\newcommand{\tYZ}{\TTilde{Y}{Z}}
+\newcommand{\tWW}{\TTilde{W}{W}}
+\newcommand{\tXX}{\TTilde{X}{X}}
+\newcommand{\tUV}{\TTilde{U}{V}}
+\newcommand{\tEE}{\TTilde{E}{E}}
+\newcommand{\tEB}{\TTilde{E}{B}}
+\newcommand{\tBB}{\TTilde{B}{B}}
+
+
+
+\def\uk{{\bf \hat{k}}}
+\def\un{{\bf \hat{n}}}
+\def\ur{{\bf \hat{r}}}
+\def\ux{{\bf \hat{x}}}
+\def\bk{{\bf k}}
+\def\bn{{\bf n}}
+\def\br{{\bf r}}
+\def\bx{{\bf x}}
+\def\bK{{\bf K}}
+\def\by{{\bf y}}
+\def\bl{{\bf l}}
+\def\bkp{{\bf k^\pr}}
+\def\brp{{\bf r^\pr}}
+
+\newcommand{\fixme}[1]{{\textbf{Fixme: #1}}}
+\newcommand{\detD}{{\det\!\cld}}
+\newcommand{\clh}{\mathcal{H}}
+\newcommand{\ud}{{\rm d}}
+\renewcommand{\eprint}[1]{\href{http://arxiv.org/abs/#1}{#1}}
+\newcommand{\adsurl}[1]{\href{#1}{ADS}}
+\newcommand{\ISBN}[1]{\href{http://cosmologist.info/ISBN/#1}{ISBN: #1}}
+\newcommand{\vort}{\varpi}
+\newcommand\ba{\begin{eqnarray}}
+\newcommand\ea{\end{eqnarray}}
+\newcommand\be{\begin{equation}}
+\newcommand\ee{\end{equation}}
+\newcommand\lagrange{{\cal L}}
+\newcommand\cll{{\cal L}}
+\newcommand\cln{{\cal N}}
+\newcommand\clx{{\cal X}}
+\newcommand\clz{{\cal Z}}
+\newcommand\clv{{\cal V}}
+\newcommand\cld{{\cal D}}
+\newcommand\clt{{\cal T}}
+\newcommand\clo{{\cal O}}
+\newcommand{\cla}{{\cal A}}
+\newcommand{\clp}{{\cal P}}
+\newcommand{\clr}{{\cal R}}
+\newcommand{\uD}{{\mathrm{D}}}
+\newcommand{\calE}{{\cal E}}
+\newcommand{\calB}{{\cal B}}
+\newcommand{\curl}{\,\mbox{curl}\,}
+\newcommand\del{\nabla}
+\newcommand\Tr{{\rm Tr}}
+\newcommand\half{{\frac{1}{2}}}
+\newcommand\fourth{{1\over 8}}
+\newcommand\bibi{\bibitem}
+\newcommand{\kf}{\beta}
+\newcommand{\kfprod}{\alpha}
+\newcommand\calS{{\cal S}}
+\renewcommand\H{{\cal H}}
+\newcommand\K{{\rm K}}
+\newcommand\mK{{\rm mK}}
+\newcommand\synch{\text{syn}}
+\newcommand\opacity{\tau_c^{-1}}
+\newcommand{\Psil}{\Psi_l}
+\newcommand{\bsigma}{{\bar{\sigma}}}
+\newcommand{\bI}{\bar{I}}
+\newcommand{\bq}{\bar{q}}
+\newcommand{\bv}{\bar{v}}
+\renewcommand\P{{\cal P}}
+\newcommand{\numfrac}[2]{{\textstyle \frac{#1}{#2}}}
+\newcommand{\la}{\langle}
+\newcommand{\ra}{\rangle}
+\newcommand{\lla}{\left\langle}
+\newcommand{\rra}{\right\rangle}
+\newcommand{\Omtot}{\Omega_{\mathrm{tot}}}
+\newcommand\xx{\mbox{\boldmath $x$}}
+\newcommand{\phpr} {\phi'}
+\newcommand{\gam}{\gamma_{ij}}
+\newcommand{\sqgam}{\sqrt{\gamma}}
+\newcommand{\delk}{\Delta+3{\K}}
+\newcommand{\dph}{\delta\phi}
+\newcommand{\om} {\Omega}
+\newcommand{\dom}{\delta^{(3)}\left(\Omega\right)}
+\newcommand{\rar}{\rightarrow}
+\newcommand{\Rar}{\Rightarrow}
+\newcommand\gsim{ \lower .75ex \hbox{$\sim$} \llap{\raise .27ex \hbox{$>$}} }
+\newcommand\lsim{ \lower .75ex \hbox{$\sim$} \llap{\raise .27ex \hbox{$<$}} }
+\newcommand\bigdot[1] {\stackrel{\mbox{{\huge .}}}{#1}}
+\newcommand\bigddot[1] {\stackrel{\mbox{{\huge ..}}}{#1}}
+\newcommand{\Mpc}{\text{Mpc}}
+\newcommand{\Al}{{A_l}}
+\newcommand{\Bl}{{B_l}}
+\newcommand{\eAl}{e^\Al}
+\newcommand{\ix}{{(i)}}
+\newcommand{\ixp}{{(i+1)}}
+\renewcommand{\k}{\beta}
+\newcommand{\HD}{\mathrm{D}}
+\newcommand{\nonflat}[1]{#1}
+\newcommand{\Cgl}{C_{\text{gl}}}
+\newcommand{\Cgltwo}{C_{\text{gl},2}}
+\newcommand{\He}{{\rm{He}}}
+\newcommand{\Mhz}{{\rm MHz}}
+\newcommand{\vx}{{\mathbf{x}}}
+\newcommand{\ve}{{\mathbf{e}}}
+\newcommand{\vv}{{\mathbf{v}}}
+\newcommand{\vk}{{\mathbf{k}}}
+\newcommand{\vn}{{\mathbf{n}}}
+\newcommand{\vPsi}{{\mathbf{\Psi}}}
+\newcommand{\vs}{{\mathbf{s}}}
+\newcommand{\vH}{{\mathbf{H}}}
+\newcommand{\theo}{\mathrm{th}}
+\newcommand{\lin}{\mathrm{lin}}
+\newcommand{\rec}{\mathrm{rec}}
+\newcommand{\vnhat}{{\hat{\mathbf{n}}}}
+\newcommand{\vkhat}{{\hat{\mathbf{k}}}}
+\newcommand{\taueps}{{\tau_\epsilon}}
+\newcommand{\vgrad}{{\mathbf{\nabla}}}
+\newcommand{\fbarln}{\bar{f}_{,\ln\epsilon}(\epsilon)}
+\newcommand{\secref}[1]{Section \ref{#1}}
+\newcommand{\expt}{\mathrm{expt}}
+\newcommand{\eq}[1]{(\ref{eq:#1})} 
+\newcommand{\eqq}[1]{Eq.~(\ref{eq:#1})} 
+\newcommand{\fig}[1]{Fig.~\ref{fig:#1}} 
+\renewcommand{\to}{\rightarrow}
+\renewcommand{\(}{\left(}
+\renewcommand{\)}{\right)}
+\renewcommand{\[}{\left[}
+\renewcommand{\]}{\right]}
+\renewcommand{\vec}[1]{\mathbf{#1}}
+\newcommand{\vy}{\vec{y}}
+\newcommand{\vz}{\vec{z}}
+\newcommand{\vq}{\vec{q}}
+\newcommand{\VPsi}{\vec{\Psi}}
+\newcommand{\vecv}{\vec{v}}
+\newcommand{\vnabla}{\vec{\nabla}}
+\newcommand{\vl}{\vec{l}}
+\newcommand{\vL}{\vec{L}}
+\newcommand{\dl}{\d^2\vl}
+\newcommand{\valpha}{\vec{\alpha}}
+\renewcommand{\L}{\mathscr{L}}
+\newcommand{\abs}[1]{\lvert #1\rvert}
+\newcommand{\ul}{\underline{l}}
+\newcommand{\yucode}{\textsf{FastPM}~{}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\thispagestyle{empty}
+
+
+\title{Statistics and Parameters for CMB-Stage IV}
+
+\maketitle
+\section{CMB lensing covariances for CMB S4}
+\label{se:covs}
+
+The measured lensing power spectrum is given by a 4-point function of the lensed CMB.  This is not statistically independent from the lensed CMB 2-point function, because both depend on the same observed, lensed CMB maps.  As a consequence, measured lensing power spectra and lensed CMB power spectra may be correlated.  This correlation should be taken into account when combining these measurements to avoid spurious double counting of information.  For the specific case of Planck is negligible  \cite{marcel1308}.  However, the level of correlation depends on experiment specifications and the multipole range where power spectra have high signal-to-noise.  The correlation should thus be included in analyses that combine 2- and 4-point measurements unless it is known to be negligible for a specific experiment. 
+
+For CMB-S4, the best lensing measurements are expected to come from the auto-power spectrum of $\EB$ reconstruction.  Its covariance with the lensed $\EE$ and $\BB$ power spectra depends on six-point functions of the lensed CMB, e.g.~$\langle \EB\EB\EE \rangle$. Although many terms contribute, the dominant effect is expected from only a few contributions \cite{marcel1308}:  
+
 \begin{itemize}
-\item are our approximations to the full data covariance sufficient?
+\item First, there are signal contributions to the covariance of the form
+\begin{eqnarray}
+  \label{eq:covEEphiEBphiEB}
+  \text{cov}(\hat C^{\EE}_{l,\text{expt}},\, \hat
+  C^{\hat\phi_{\EB}\hat\phi_{\EB}}_{L})_\mathrm{signal}
+&=&
+\frac{\partial C^{\EE}_l}{\partial C^{\phi\phi}_{L}}
+\frac{2}{2L+1} (C^{\phi\phi}_{L})^2,\\
+  \label{eq:covBBphiEBphiEB}
+  \text{cov}(\hat C^{\BB}_{l,\text{expt}},\, \hat
+  C^{\hat\phi_{\EB}\hat\phi_{\EB}}_{L})_\mathrm{signal}
+&=&
+\frac{\partial C^{\BB}_l}{\partial C^{\phi\phi}_{L}}
+\frac{2}{2L+1} (C^{\phi\phi}_{L})^2,
+\end{eqnarray}
+where we used power spectra of observed (noisy, beam-deconvolved) CMB fluctuations $X\in \{E,B\}$:
+\begin{equation}
+  \label{eq:CXXexptExpectation}
+  \langle\hat C^{\XX}_{l,\text{expt}}\rangle = 
+ C^{\XX}_{l,\text{expt}} = C^{\XX}_{l}
++ \left(\frac{\sigma_X}{T_\mathrm{CMB}}\right)^2 
+  e^{l(l+1)\sigma^2_{\mathrm{FWHM}}/(8\ln 2)}.
+\end{equation}
+The signal covariance in Eqs.~\eq{covEEphiEBphiEB} and \eq{covBBphiEBphiEB} arises because cosmic variance fluctuations of the true lensing potential (i.e.~fluctuations of matter along the line of sight) modify the lensing reconstruction power as well as the lensed $\EE$ and $\BB$ power spectra.  Formally, this follows from the connected part of the lensed CMB 6-point function.
+\item Second, a noise covariance follows from the disconnected 6-point function,
+\begin{align}
+  \label{eq:2}
+\mathrm{cov}(\hat C^{\EE}_{l,\expt}, \,\hat C^{\hat\phi_\EB\hat\phi_\EB}_L)_\mathrm{noise}
+=
+\frac{2}{2l+1}(C^\EE_{l,\expt})^2 \, \frac{\partial(2\hat N^{(0)}_L)}{\partial \hat C^\EE_{l,\expt}},
+\end{align}
+and similarly for $\BB$.
+This noise covariance arises because fluctuations of the CMB and instrumental noise change both the Gaussian reconstruction noise $N^{(0)}$ and the CMB power spectra.  It is however cancelled if the Gaussian $N^{(0)}$ reconstruction noise is subtracted in a realization-dependent way \cite{cora0812,duncan1008,Namikawa1209,marcel1308}
+\begin{align}
+  \label{eq:RDN0procedure}
+  \hat C^{\hat\phi\hat\phi}_L \,\rightarrow \,
+\hat C^{\hat\phi\hat\phi}_L - 2 \hat N^{(0)}_L + N^{(0)}_{L}.
+\end{align}
+For the specific case of $\EB\EB$ reconstruction, the realization-dependent $\hat N^{(0)}$ is 
+\comment{MS: check}
+\begin{align}
+  \label{eq:RDN0}
+  \hat N^{(0)}_L = \frac{\left|A_L^\EB\right|^2}{2L+1}\sum_{l_1,l_2} 
+\left| g^\EB_{l_1l_2}(L) \right|^2
+\,\frac{1}{2}\,\left[\hat C^{EE}_{l_1,\expt} C^{\BB}_{l_2,\expt}+ C^{EE}_{l_1,\expt} \hat C^{\BB}_{l_2,\expt}\right],
+\end{align}
+\comment{CD: Define $g^\EB_{l_1l_2}(L)$.}
+where $A^\EB$ and $g^\EB$ denote the reconstruction estimator normalization and weight, respectively. 
+In the square brackets one of the CMB power spectra is replaced by a data power spectrum \comment{Are all $\hat{C_\ell}$s data power spectra?}. On average,  $\la\hat N^{(0)}_L\ra=N^{(0)}_L$.  This realization-dependent $\hat N^{(0)}$ subtraction also follows more formally from optimal trispectrum estimation (see Appendix~B in \cite{marcel1308} and Appendix~D in \cite{Planck2013Lensing}).
+\item A third covariance contribution  arises from the connected trispectrum part of the CMB 6-point function. If realization-dependent $\hat N^{(0)}$  subtraction is used, the dominant remaining term is expected to be (at leading order in $\phi$, see also Eq.~(D4) of \cite{marcel1308}; similarly for $\BB$)
+\begin{align}
+  \label{eq:cov_EBEB_EE}
+      \mathrm{cov}(\hat C_{l,\expt}^{\EE},\, \hat C_L^{\hat\phi^\EB\hat\phi^\EB}) = 
+2\,\frac{C^{\phi\phi}_L}{A_L^\EB}\,
+\frac{\partial (2\hat N_L^{(0)})}{\partial \hat C^{\EE}_{l,\expt}}\,
+\frac{2}{2l+1}
+(C^\EE_{l,\expt})^2.
+\end{align}
+
 \end{itemize}
 
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=1\textwidth]{Analysis/sp}
-\caption{The statistics and parameters subset of the CMB simulation and data analysis pipeline}
-\label{default}
-
-\end{figure}
-
-
-%\bibliography{cmbs4}
-
-%%
-%% Populate the .bib file with entries from SPIRES Bibtex (preferred)
-%% or ADS Bibtex (if no SPIRES entry).
-%%  SPIRES will also supply the CITATION line information; please include it.
-%%
+Similarly to avoiding the noise covariance with the realization-dependent $\hat N^{(0)}$ subtraction, the signal covariance could in principle also be avoided by delensing CMB power spectra with the estimated lensing reconstruction, e.g.~by forming \cite{marcel1308}
+\begin{equation}
+  \label{eq:matter_CV_mitigation}
+  \hat C^{\EE}_{l,\expt} \to  \hat C^{\EE}_{l,\expt}- 
+\sum_{L} 
+ \frac{\partial C_{l}^{\EE}}{\partial C_{L}^{\phi\phi}}
+\left(\frac{C_{L}^{\phi\phi}}{\langle
+\hat{C}_{L}^{\hat{\phi}\hat{\phi}}\rangle}\right)^2
+(\hat{C}_{L}^{\hat{\phi}\hat{\phi}}-2\hat{N}_{L}^{(0)}),
+\end{equation}
+or by applying more advanced delensing methods.  However this has not yet been tested in practice and makes only sense if lensing reconstructions have sufficient signal-to-noise.  In general, forming linear combinations of measured lensing and CMB power spectra as in Eqs.~\eq{RDN0procedure} and \eq{matter_CV_mitigation} does simplify covariances, but it cannot add any new information as long as correct covariances are used.
 
 
+ Since more covariance contributions arise from other couplings of the CMB 6-point function, it should be tested against simulations if the above contributions are sufficient.  In practice, it is then favorable to use analytical covariances because they are less noisy than those derived from simulations.   
+ 
+On top of the cross-covariance between 2-point CMB power spectra and 4-point lensing power spectra, both power spectra can also have non-trivial auto-covariances.  Covariances between CMB power spectra have been computed in \cite{2006PhRvD..74l3002S,2007PhRvD..75h3501L,BenoitSmithHu1205}. They contain similar building blocks as the covariances above \cite{BenoitSmithHu1205}.  Covariances between two 4-point lensing power spectra involve the lensed CMB 8-point function.  While many covariance contributions are cancelled when using realization-dependent $\hat N^{(0)}$ subtraction \cite{duncan1008}, other contributions may be relevant for future experiments.  Finally, the discussion above applies to the standard quadratic lensing reconstruction estimators and may change for maximum-likelihood lensing estimators \cite{HirataSeljak0209489}.
+
+\section{Delensing}
+For noise levels below $\Delta_P \simeq 1 \mu$K-arcmin,  the dominant source of effective noise in $B$-mode maps is the fluctuation induced by the lensing of $E$-modes from recombination.  This signal has a well-understood amplitude, and unlike other sources of astrophysical fluctuation in the map, it cannot be removed with multifrequency data.  Instead it must be removed using map-level estimates of both the primordial $E$ maps and the CMB lensing potential $\phi$.  
+
+As discussed in the dedicated CMB lensing chapter, delensing will be a crucial portion of the reconstruction of the CMB lensing field.  This is because at low noise levels a quadratic reconstruction of lensing using the $EB$ estimator (Hu $\&$ Okamoto 2001) can be improved upon by cleaning the CMB maps of the lens-induced $B$ fluctuations and then performing lens reconstruction again. \comment{Explain this in more detail. Why is it better to delens first for the reconstruction?}  CMB maps cleaned of the lensing signals will thus be produced as part of the CMB lensing analysis procedure.
+
+The finite noise in the CMB-Stage IV survey will lead to residual lensing $B$ modes which cannot be removed and will act as a noise floor for studying B modes from tensors.  The amplitude of these residual lensed $B$ modes are discussed in the dedicated lensing chapter as a function of the angular resolution and the noise level of the S4 survey; in particular, it is crucial to have high-angular resolution maps in order to obtain the small-scale $E$ and $B$ fluctuations needed for the $EB$ quadratic lensing estimator.
+
+The concerns with the delensing procedure are similar to those for measuring the lensing power spectrum. The impact of polarized dust and synchrotron emission from the Galaxy, and the impact of polarized point sources on small scales on the lensing reconstruction are addressed in chapter XX. \comment{Comment on the expected size of the impact of these foregrounds.}
+
+Additionally, rather than using an estimate of the CMB lensing field obtained from the CMB itself, it is also possible to use other tracers of large-scale structure which are correlated with  CMB lensing (Smith+ 2010).  In particular the dusty, star-forming galaxies that comprise the cosmic infrared background (CIB) are strongly correlated with CMB lensing, due to their redshift distribution which peaks near $z \sim 2$ (Sherwin+ 2014; Simard+ 2014).  The level of correlation is approximately $80\%$ (Planck 2013 XVIII) and can in principle be improved using multifrequency maps of the CIB which select different emission redshifts (Sherwin+ 2014).  
+
+\comment{Alex: could you please add the references in .bib form>}
+
+\bibliography{Statistics_and_parameters_CMBS4bib}
+
+\end{document}
