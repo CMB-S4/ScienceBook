@@ -28,10 +28,19 @@ The key challenges for the extragalactic sky models of CMB-S4 are to provide fas
 
 Hydrodynamical simulations of cosmological volumes are currently available which we can already used to model extragalactic foregrounds. These simulations will be used for the development and testing phases of the simulation pipeline. However, they are limited in their size, sub-grid modeling accuracy, thus will not meet our accuracy requirements of CMB-S4. We will develop new full hydrodynamical simulations of cosmological volumes that include a variety of physical processes. An essential requirement of these simulations will be to capture growth and evolution of galaxies to clusters size halos throughout cosmic time at a sufficient spacial resolution. Hydrodynamic simulations of this size and scale are already computationally feasible, the challenges will be the appropriate modeling of radiative cooling, star formation, and feedback processes in order to capture the global stellar and gas contents of these halos.
 
-There are many different approaches already developed to provide us with the underlying large-scale structure simulations that will we build our extragalactic model upon. They vary in speed which tend to inversely scale with accuracy. A benefit of our modular and flexible approach is that we do not need to limit ourselves to one approach. {\bf MORE}
+There are many different approaches already developed to provide us with the underlying large-scale structure simulations that will we build our extragalactic model upon. They vary in speed which tend to inversely scale with accuracy. A benefit of our modular and flexible approach is that we do not need to limit ourselves to one approach. In fact we will compare the various approaches to see how they bias our answers. It is in these simulations where we will vary cosmological parameters assuming that they only affect the growth of structure and not the {\it gastrophysical} properties of extragalactic foregrounds.
 
-Our final product will be all sky maps. They will be in HEALPIX format to seamlessly interface with galactic and CMB simulated maps.
-{\bf MORE}
+Our final product will be all sky maps. They will be in HEALPIX format (or some other format) to seamlessly interface with galactic and CMB simulated maps. The map products will include:
+
+\begin{itemize}
+\item Optical galaxies that correspond to the various overlapping surveys including LSST.
+\item Radio and dusty star-forming galaxy point sources.
+\item Unresolved cosmic infrared background.
+\item Projected density maps (both total and gas) of the large-scale structure.
+\item Thermal and kinetic SZ maps.
+\end{itemize}
+
+\noindent We will explore the parameter space for each of the maps listed above and provide a sufficient number of realization that we will marginalize over the many model uncertainties. For example, the lensing field can be constructed through a proper ray-tracing method from the projected density maps or via the born approximation. Our self-consistent extragalactic sky model allows us to test various sources of contamination and systematic biases in our estimators. Additionally, any cross-correlation analyses can easily be checked and evaluated using these maps. {\bf All the simulation products we create will become public.}
 
 %\bibliography{cmbs4}
 
