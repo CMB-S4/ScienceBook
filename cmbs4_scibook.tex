@@ -31,6 +31,15 @@
 
 \input workshopsymbols.tex      %   standard macros for common HEP terms
 \newcommand{\cmbexp}{{CMB-S4}}
+%    
+% Abbreviations for ADS bibtex entries
+%
+\newcommand\mnras{{\it Mon. Not. Roy. Astron. Soc.}}
+\newcommand\apj{{\it Ap.\ J.\ }}
+\newcommand\apjs{{\it Ap.\ J.\ Suppl.\ }}
+\newcommand\jcap{{\it JCAP }}
+\newcommand\prd{{\it Phys.\ Rev.\ }{\bf D}\ }
+
 
 
 \setlength{\headheight}{14pt}
@@ -40,13 +49,14 @@
 
 % macros
 \newcommand{\neff}{\ensuremath{N_\mathrm{eff}}}
+\newcommand{\mdash}{---}
 
 \begin{document}
 
 \def\bibname{References}
 
-\bibliographystyle{utphys}  %%%% MODIFIED FOR CF %%%%
-%\bibliographystyle{plain}
+%\bibliographystyle{utphys}  %%%% MODIFIED FOR CF %%%%
+\bibliographystyle{plain}
 
 \raggedbottom
 
@@ -92,6 +102,7 @@
 \input Instrumentation/instrumentation_cmbs4.tex 
 \input Analysis/analysis_cmbs4.tex 
 
+\bibliography{cmbs4}
 
 %\input conclusions_cmbs4.tex
 
