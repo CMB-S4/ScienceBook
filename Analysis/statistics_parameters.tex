@@ -1,4 +1,4 @@
-\section{Statistics and Parameters for CMB-Stage IV}
+\section{Statistics and Parameters}
 
 \subsection{CMB lensing covariances for CMB S4}
 \label{se:covs}
@@ -11,13 +11,13 @@ For CMB-S4, the best lensing measurements are expected to come from the auto-pow
 \item First, there are signal contributions to the covariance of the form
 \begin{eqnarray}
   \label{eq:covEEphiEBphiEB}
-  \text{cov}(\hat C^{\EE}_{l,\text{expt}},\, 
+  \mathrm{cov}(\hat C^{\EE}_{l,\mathrm{expt}},\, 
   \hat{C}^{\hat\phi_{\EB}\hat\phi_{\EB}}_{L})_\mathrm{signal}
 &=&
 \frac{\partial C^{\EE}_l}{\partial C^{\phi\phi}_{L}}
 \frac{2}{2L+1} (C^{\phi\phi}_{L})^2,\\
   \label{eq:covBBphiEBphiEB}
-  \text{cov}(\hat C^{\BB}_{l,\text{expt}},\, 
+  \mathrm{cov}(\hat C^{\BB}_{l,\mathrm{expt}},\, 
   \hat{C}^{\hat\phi_{\EB}\hat\phi_{\EB}}_{L})_\mathrm{signal}
 &=&
 \frac{\partial C^{\BB}_l}{\partial C^{\phi\phi}_{L}}
@@ -26,46 +26,48 @@ For CMB-S4, the best lensing measurements are expected to come from the auto-pow
 where we used power spectra of observed (noisy, beam-deconvolved) CMB fluctuations $X\in \{E,B\}$:
 \begin{equation}
   \label{eq:CXXexptExpectation}
-  \langle\hat C^{\XX}_{l,\text{expt}}\rangle = 
- C^{\XX}_{l,\text{expt}} = C^{\XX}_{l}
+  \langle\hat C^{\XX}_{l,\mathrm{expt}}\rangle = 
+ C^{\XX}_{l,\mathrm{expt}} = C^{\XX}_{l}
 + \left(\frac{\sigma_X}{T_\mathrm{CMB}}\right)^2 
   e^{l(l+1)\sigma^2_{\mathrm{FWHM}}/(8\ln 2)}.
 \end{equation}
 The signal covariance in Eqs.~\eq{covEEphiEBphiEB} and \eq{covBBphiEBphiEB} arises because cosmic variance fluctuations of the true lensing potential (i.e.~fluctuations of matter along the line of sight) modify the lensing reconstruction power as well as the lensed $\EE$ and $\BB$ power spectra.  Formally, this follows from the connected part of the lensed CMB 6-point function.
+
 \item Second, a noise covariance follows from the disconnected 6-point function,
-\begin{align}
+\begin{equation}
   \label{eq:2}
 \mathrm{cov}(\hat C^{\EE}_{l,\expt}, \,\hat C^{\hat\phi_\EB\hat\phi_\EB}_L)_\mathrm{noise}
 =
 \frac{2}{2l+1}(C^\EE_{l,\expt})^2 \, \frac{\partial(2\hat N^{(0)}_L)}{\partial \hat C^\EE_{l,\expt}},
-\end{align}
+\end{equation}
 and similarly for $\BB$.
 This noise covariance arises because fluctuations of the CMB and instrumental noise change both the Gaussian reconstruction noise $N^{(0)}$ and the CMB power spectra.  It is however cancelled if the Gaussian $N^{(0)}$ reconstruction noise is subtracted in a realization-dependent way \cite{cora0812,duncan1008,Namikawa1209,marcel1308}
-\begin{align}
+\begin{equation}
   \label{eq:RDN0procedure}
   \hat C^{\hat\phi\hat\phi}_L \,\rightarrow \,
 \hat C^{\hat\phi\hat\phi}_L - 2 \hat N^{(0)}_L + N^{(0)}_{L}.
-\end{align}
+\end{equation}
 For the specific case of $\EB\EB$ reconstruction, the realization-dependent $\hat N^{(0)}$ is 
 \comment{MS: check}
-\begin{align}
+\begin{equation}
   \label{eq:RDN0}
   \hat N^{(0)}_L = \frac{\left|A_L^\EB\right|^2}{2L+1}\sum_{l_1,l_2} 
 \left| g^\EB_{l_1l_2}(L) \right|^2
 \,\frac{1}{2}\,\left[\hat C^{EE}_{l_1,\expt} C^{\BB}_{l_2,\expt}+ C^{EE}_{l_1,\expt} \hat C^{\BB}_{l_2,\expt}\right],
-\end{align}
+\end{equation}
 \comment{CD: Define $g^\EB_{l_1l_2}(L)$.}
 where $A^\EB$ and $g^\EB$ denote the reconstruction estimator normalization and weight, respectively. 
-In the square brackets one of the CMB power spectra is replaced by a data power spectrum \comment{Are all $\hat{C_\ell}$s data power spectra?}. On average,  $\la\hat N^{(0)}_L\ra=N^{(0)}_L$.  This realization-dependent $\hat N^{(0)}$ subtraction also follows more formally from optimal trispectrum estimation (see Appendix~B in \cite{marcel1308} and Appendix~D in \cite{Planck2013Lensing}).
+In the square brackets one of the CMB power spectra is replaced by a data power spectrum \comment{Are all $\hat{C_\ell}$s data power spectra?}. On average,  $\langle \hat N^{(0)}_L \rangle = N^{(0)}_L$.  This realization-dependent $\hat N^{(0)}$ subtraction also follows more formally from optimal trispectrum estimation (see Appendix~B in \cite{marcel1308} and Appendix~D in \cite{Planck2013Lensing}).
+
 \item A third covariance contribution  arises from the connected trispectrum part of the CMB 6-point function. If realization-dependent $\hat N^{(0)}$  subtraction is used, the dominant remaining term is expected to be (at leading order in $\phi$, see also Eq.~(D4) of \cite{marcel1308}; similarly for $\BB$)
-\begin{align}
+\begin{equation}
   \label{eq:cov_EBEB_EE}
       \mathrm{cov}(\hat C_{l,\expt}^{\EE},\, \hat C_L^{\hat\phi^\EB\hat\phi^\EB}) = 
 2\,\frac{C^{\phi\phi}_L}{A_L^\EB}\,
 \frac{\partial (2\hat N_L^{(0)})}{\partial \hat C^{\EE}_{l,\expt}}\,
 \frac{2}{2l+1}
 (C^\EE_{l,\expt})^2.
-\end{align}
+\end{equation}
 
 \end{itemize}
 
