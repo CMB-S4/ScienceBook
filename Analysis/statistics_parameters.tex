@@ -1,6 +1,6 @@
-\chapter{Statistics and Parameters for CMB-Stage IV}
+\section{Statistics and Parameters for CMB-Stage IV}
 
-\section{CMB lensing covariances for CMB S4}
+\subsection{CMB lensing covariances for CMB S4}
 \label{se:covs}
 
 The measured lensing power spectrum is given by a 4-point function of the lensed CMB.  This is not statistically independent from the lensed CMB 2-point function, because both depend on the same observed, lensed CMB maps.  As a consequence, measured lensing power spectra and lensed CMB power spectra may be correlated.  This correlation should be taken into account when combining these measurements to avoid spurious double counting of information.  For the specific case of Planck is negligible  \cite{marcel1308}.  However, the level of correlation depends on experiment specifications and the multipole range where power spectra have high signal-to-noise.  The correlation should thus be included in analyses that combine 2- and 4-point measurements unless it is known to be negligible for a specific experiment. 
@@ -86,7 +86,7 @@ or by applying more advanced delensing methods.  However this has not yet been t
  
 On top of the cross-covariance between 2-point CMB power spectra and 4-point lensing power spectra, both power spectra can also have non-trivial auto-covariances.  Covariances between CMB power spectra have been computed in \cite{2006PhRvD..74l3002S,2007PhRvD..75h3501L,BenoitSmithHu1205}. They contain similar building blocks as the covariances above \cite{BenoitSmithHu1205}.  Covariances between two 4-point lensing power spectra involve the lensed CMB 8-point function.  While many covariance contributions are cancelled when using realization-dependent $\hat N^{(0)}$ subtraction \cite{duncan1008}, other contributions may be relevant for future experiments.  Finally, the discussion above applies to the standard quadratic lensing reconstruction estimators and may change for maximum-likelihood lensing estimators \cite{HirataSeljak0209489}.
 
-\section{Delensing}
+\subsection{Delensing}
 For noise levels below $\Delta_P \simeq 1 \mu$K-arcmin,  the dominant source of effective noise in $B$-mode maps is the fluctuation induced by the lensing of $E$-modes from recombination.  This signal has a well-understood amplitude, and unlike other sources of astrophysical fluctuation in the map, it cannot be removed with multifrequency data.  Instead it must be removed using map-level estimates of both the primordial $E$ maps and the CMB lensing potential $\phi$.  
 
 As discussed in the dedicated CMB lensing chapter, delensing will be a crucial portion of the reconstruction of the CMB lensing field.  This is because at low noise levels a quadratic reconstruction of lensing using the $EB$ estimator (Hu $\&$ Okamoto 2001) can be improved upon by cleaning the CMB maps of the lens-induced $B$ fluctuations and then performing lens reconstruction again. \comment{Explain this in more detail. Why is it better to delens first for the reconstruction?}  CMB maps cleaned of the lensing signals will thus be produced as part of the CMB lensing analysis procedure.
