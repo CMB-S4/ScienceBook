@@ -2,6 +2,11 @@
 
 \section{Forecasting}
 
+Here we describe the main approaches used by our community for forecasting the expected performance of CMB-S4. For assessing the expected performance for large-scale B-modes, two central considerations are Galactic foregrounds and ability to delens the data, as well as a realistic assessment of instrument noise at large scales. 
+
+To assess the science return from the smaller-scale polarization two-point functions (TE,EE), and from the lensing four-point function ($\kappa \kappa$), extragalactic foregrounds and instrumental noise are the key considerations.
+
+To forecast the return of the thermal Sunyaev-Zel'dovich effects, an estimate of the expected cluster counts as a function of mass and redshift is the core statistic, combined with an estimate of how well the masses can be calibrated using overlaps with weak lensing surveys. For the kinetic Sunyaev-Zeldovich effect, extragalactic foregrounds and overlap with spectroscopic surveys must all be considered. 
 
 \begin{figure}[htbp]
 \centering
@@ -11,14 +16,26 @@
 \end{figure}
 
 
-\subsection{Limits on r from BB}
+\subsection{Limits on the tensor-to-scalar ratio}
 
+\subsubsection{Spectrum-based domain forecasting}
+{\bf Forecasting in spectral domain coming from John Kovac}
+
+\subsubsection{Map-based domain forecasting}
+
+Foregrounds are intrinsically non-Gaussian, so it is beneficial to consider approaches directly in map space, to check the robustness of spectrum-based approaches, in particular in the case of pessimistic foregrounds where the spectral indices or dust emissivities have spatial variation. Here one of the approaches our community uses is a Bayesian model fitting method.
+
+Maps of the CMB plus Galactic foreground sky and instrument noise are simulated at each of the CMB-S4 frequencies and integrated across the expected bandpass, using Galactic models as described for example in Section \ref{sec:models}. A parameterized model is then fit to the simulated maps, for example fitting the CMB, thermal dust, and synchrotron in small pixels, and typically the synchrotron spectral index and dust emissivity and temperature in larger pixels of order degree-scale. The BB power spectrum of the foreground-marginalized CMB map is then estimated, and convered into an estimate of r and its uncertainty. Our community has at least three such codes.
+
+This method allows for an assessment of the expected bias on $r$ if the model does not match the simulation, and shows how much the expected uncertainty on $r$ would increase if more complicated foreground models are explored \citep[e.g. as in,][]{armitage-caplan/etal:2011,ramazeilles/etal:2015}. It is more computationally expensive than spectral-domain forecasts though, so we use this approach on a smaller-subset of explorations. 
 
 \subsection{Limits on parameters from TT/TE/EE/$\kappa\kappa$}
 
 {\bf Jo writing - much of this currently copied from Allison et al, in process of cutting and editing}
 
-To forecast the expected constraints on cosmological parameters for CMB-S4, we use a Fisher matrix method, combining S4 specifications with other available datasets, in particular Planck and measurements of Baryon Acoustic Oscillations. For the noise levels of Planck, we assume that a data release including reliable polarization data will have happened, and create an input that include TE and EE data and also optimistic large-scale polarization from HFI. This follows approaches in e.g. \cite{allison/etal:2015}.
+To forecast the expected constraints on cosmological parameters for CMB-S4, many of our community's codes use a Fisher matrix method, combining S4 specifications with other available datasets, for example the data from Planck and expected measurements of Baryon Acoustic Oscillations and other low redshift data. 
+
+For the noise levels of Planck, we assume that a data release including reliable polarization data will have happened, and forecast results that include TE and EE data and also large-scale polarization from HFI. This follows approaches in e.g. \cite{allison/etal:2015}.
 
 We assume uniform priors on all parameters, and evaluate the Fisher matrix at fiducial parameters. To compute the Fisher matrix we use the CMB power spectra, and also add BAO distance measurements. For the CMB, we use the lensed power spectrum between each pair of fields $X, Y$ from their spherical harmonic coefficients:
 %
