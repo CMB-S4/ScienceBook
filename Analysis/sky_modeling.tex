@@ -66,23 +66,22 @@ and the WMAP 7-year 23 GHz Q/U maps \cite{jarosik/etal:2011}
 % ApJS, 192, 14J) 
 smoothed to 3 degree FWHM and with smaller scales added using the PSM code \cite{delabrouille/etal:2013}
 % et al. A&A 553, A96, 2013). 
-The spectral index map was derived using a combination of the Haslam 
+The spectral index map is derived using a combination of the Haslam 
 408 MHz data and WMAP 23 GHz 7-year data \cite{miville-Deschenes/etal:2008}
 % M.-A. et al., 2008, A&A, 490, 1093). 
-The same scaling is used for intensity and polarization.  This is the same prescription as used in the Planck Sky Model's v1.7.8 'power law' option, but with the Haslam map updated to the Remazeilles version. A 'curved power 
-law' model can also be  with a single isotropic curvature index.
+The same scaling is used for intensity and polarization.  This is the same prescription as used in the Planck Sky Model's v1.7.8 `power law' option, but with the Haslam map updated to the Remazeilles version. 
 
-Extensions to this model that we are exploring include a 'curved power 
-law' model with a single isotropic curvature index, and a polarization spectral index that steepens with Galactic latitude by $\delta \beta \sim 0.2$ from low to high latitude, as this is currently consistent with WMAP data. 
+Extensions to this model that we are exploring include a curved power 
+law model with a single isotropic curvature index, and a polarization spectral index that steepens with Galactic latitude by $\delta \beta \sim 0.2$ from low to high latitude, as this is currently consistent with WMAP and Planck data. 
 
 \subsubsection{Thermal dust}
-A baseline model has thermal dust modelled as a single-component modified  black body.  We use dust templates for emission at 545 GHz in intensity and 
- 353 GHz in polarisation from the Planck-2015 analysis, and scale these to different  frequencies with a modified black-body spectrum using the spatially varying temperature and spectral  index obtained from the Planck data using the Commander code (Planck Collaboration  2015, arXiv:1502.01588). This therefore assumes the same spectral index for  polarization as for intensity.  These templates are smoothed to degree scale.
+A baseline model we consider has thermal dust modelled as a single component modified  blackbody. We use dust templates for emission at 545 GHz in intensity and 
+ 353 GHz in polarisation from the Planck-2015 analysis, and scale these to different  frequencies with a modified black-body spectrum using the spatially varying dust temperature and emissivity obtained from the Planck data using the Commander code (Planck Collaboration  2015, arXiv:1502.01588). This therefore assumes the same spectral index for  polarization as for intensity.  These templates are smoothed to degree scale.
 
-Variations on this model that appear consistent with current data are a more strongly varying emissivity, e.g. up to $\sigma \sim 0.2$ dispersion on degree scales,  in addition to different prescriptions for small-scale behaviour that account for turbulence in the magnetic field. Two components of dust, composed of the spatially varying sum of silicon and carbonaceous dust, each with a different emissivity, is also physically motivated.
+Variations on this model that appear consistent with current data are a more strongly varying emissivity, e.g. up to $\sigma \sim 0.2$ dispersion on degree scales,  in addition to different prescriptions for small-scale behaviour that account for turbulence in the magnetic field. A two (or more) component model for the dust, composed of the spatially varying sum of silicon and carbonaceous dust, each with a different emissivity, is also physically motivated.
 
 \subsubsection{Spinning dust}
-In polarization the spinning dust, or anomalous microwave emission, is nominally unpolarized, but a fractional polarization of a few percent is physically possible and not excluded by current data. We construct a possible polarized model for this on degree-scales using the intensity templates for spinning dust from the Planck-2015 Commander fits, combined with the thermal dust polarization angles, and an overall polarization fraction.
+In polarization the spinning dust, or anomalous microwave emission, is nominally unpolarized, but a fractional polarization of a few percent is physically possible and not excluded by current data. We construct a possible polarized model for this using the intensity templates for spinning dust from the Planck-2015 Commander fits, combined with the thermal dust polarization angles and an overall polarization fraction.
 
 \subsubsection{Free-free}
 
