@@ -331,17 +331,17 @@ Unfortunately, because of the scaling $M\propto \sqrt{\mathcal{N}_{\rm eq}}$ it 
 \section{CMB data products and simulations required to achieve goals for PGW}
 \label{sec:needs}
 
-\section{Improved constraints on the particle content of the primordial universe}
+\section{Improved constraints on primordial density perturbations}
 \label{sec:scalar}
 %CMB-S4 will either detect primordial gravitational waves or improve current constraints on the amplitude of their power spectrum by almost two orders of magnitude. In addition, CMB-S4 will significantly improve our knowledge of the statistical properties of primordial density perturbations. 
 All current data are consistent with primordial density perturbations that are adiabatic, Gaussian, and nearly scale invariant. Because of its high angular resolution, CMB-S4 will significantly improve current constraints on the scale dependence of the primordial power spectrum of scalar perturbations, on departures from Gaussianity, and on departures from adiabatic perturbations.
 
 \subsection{The scalar power spectrum of primordial density perturbations}
 %{\it The scalar spectral index}\\
-The density perturbations are close to scale invariant but not exactly so. In the context of $\Lambda$CDM, {\it Planck} has measured the scalar spectral index to be $n_s=0.9677\pm0.0060$ and has established $n_s-1<0$ at just above $5\,\sigma$. CMB-S4 will improve current constraints on the spectral index by more than a factor two to $\sigma(n_s)=0.0028$, and will provide interesting constraints on the space of inflationary models. 
+The density perturbations are close to scale invariant but not exactly so. In the context of $\Lambda$CDM, {\it Planck} has measured the scalar spectral index to be $n_s=0.9677\pm0.0060$ and has established $n_s-1<0$ at more than $5\,\sigma$. CMB-S4 will improve current constraints on the spectral index by more than a factor two to $\sigma(n_s)=0.0028$, and will provide interesting constraints on the space of inflationary models. 
 
 %{\it Running of the scalar spectral index}\\
-As mentioned in section~\ref{sec:upperLimits}, a measurement of the running of the scalar spectral index with a precision of a few parts in ten thousand would allow a measurement of $p$, defined in equation~(\ref{eq:nsassump}), or equivalently $\mathcal{N}_\star$. This precision cannot be achieve with CMB-S4, but with a precision of one part in a thousand, it will test the idea that the lack of power on large angular scales might be explained by scale dependence of the spectral index~\cite{Meerburg::2014bpa}.  
+As mentioned in section~\ref{sec:upperLimits}, a measurement of the running of the scalar spectral index with a precision of a few parts in ten thousand would allow a measurement of $p$, defined in equation~(\ref{eq:nsassump}), or equivalently $\mathcal{N}_\star$. This precision cannot be achieve with CMB-S4, but with a precision of one part in a thousand, it will test the idea that the lack of power on large angular scales might be explained by scale dependence of the spectral index~\cite{Meerburg:2014bpa}.  
 
 %{\it Oscillations in the primordial power spectrum}\\
 Models of inflation that achieve super-Planckian inflaton displacements from repeated circuits of a sub-Planckian fundamental period may give rise to oscillatory features in the spectrum or primordial perturbations. The features may arise either from instanton effects or from periodic bursts of particle or string production. A search for them is well motivated even though the amplitude is model-dependent and may be undetectably small. A detection would provide clues about the microscopic origin of the inflaton, the absence of a detection can constrain the parameters space of these models in interesting ways. CMB-S4 would tighten the constraints on the amplitude of features in the primordial power spectrum by a factor three. 
@@ -349,9 +349,20 @@ Models of inflation that achieve super-Planckian inflaton displacements from rep
 \subsection{Higher order correlations}
 Any detection of departures from Gaussianity would shed light on the interactions either of the inflaton with itself or between the inflaton and other degrees of freedom. The lowest order correlation function that encodes departures from Gaussianity is the $3pt$-function
 \begin{equation}
-\langle\zeta(\vec{k}_1,\vec{k}_2,\vec{k}_3)\rangle=(2\pi)^3\delta(\vec{k}_1+\vec{k}_2+\vec{k}_3)B(k_1,k_2,k_3)\,.
+\langle\zeta(\vec{k}_1)\zeta(\vec{k}_2)\zeta(\vec{k}_3)\rangle=(2\pi)^3\delta(\vec{k}_1+\vec{k}_2+\vec{k}_3)B(k_1,k_2,k_3)\,,
 \end{equation}
-Invariance under rotations and translations guarantees that the bispectrum $B(k_1,k_2,k_3)$ only depends on the magnitudes $k_1$, $k_2$, and $k_3$. 
+where invariance under rotations and translations guarantee that the bispectrum $B(k_1,k_2,k_3)$ only depends on the magnitudes $k_1$, $k_2$, and $k_3$. A model independent search for the bispectrum, or equivalently the angular bispectrum $b_{\ell_1\ell_2\ell_3}$, is not computationally tractable, and in practice searches place constraints on the amplitudes $f_{\rm NL}$ of certain theoretically motivated functional forms, or shapes.
+
+A detection of the most widely studied local shape would have far reaching theoretical implications. A detection of this shape with would rule out all models of single clock inflation \cite{Creminelli:2004yq}. In addition, such a signal would open the door to significant cosmic variance on all scales from coupling of fluctuations within our observed volume to any super-Hubble modes \cite{Nelson:2012sb,LoVerde:2013xka,Nurmi:2013xv}. Indeed, there would be room for a significant shift between the observed amplitude of scalar fluctuations (and so the observed $r$) and the mean value of fluctuations on much larger scales. Any scenario that predicts local non-Gaussianity together with fluctuations on scales much larger than our observed volume predicts a probability distribution for our observed $f_{\rm NL}^{\rm local}$. Many well-motivated scenarios predict a small mean value. These include the simplest modulated reheating scenario \cite{Zaldarriaga:2003my} and ekpyrotic cosmology \cite{Lehners:2009ja}, both of which predict mean values of $f_{\rm NL}^{\rm local}\sim5$. 
+Currently the strongest constraints on the local shape come from the {\it Planck} 2015 temperature and polarization analysis which and give $f_{\rm NL}^{\rm local} = 0.8 \pm 5.0$~\cite{Ade:2015ava}. A noise-free cosmic variance limited CMB experiment is expected to produce constraints on $f_{\rm NL}^{\rm local}$ with 1$\sigma$ error bars of about 3 \cite{Komatsu:2001rj}. Therefore the improvement expected of CMB-S4 over current limits is slightly less than a factor of two. This is not sufficient to reach the interesting theoretical threshold around $|f_{\rm NL}^{\rm local}|<\mathcal{O}(1)$~\cite{Alvarez:2014vva}, but will still reduce the space of viable models or hint at a detection. CMB-S4 could provide hints for the modulated reheating scenario or ekpyrotic cosmology at roughly $2\,\sigma$, the simplest curvaton scenario, which predicts $f_{\rm NL} = -5/4$ \cite{Lyth:2001nq}, will unfortunately be out of reach.
+
+Current constraints on the equilateral shape are $f_{\rm NL}^{\rm equil} = -4 \pm 43$ (68\% CL) \cite{Ade:2015ava}. An improvement by a factor of 2 would further tighten existing constraints on the speed of sound during inflation and the strong coupling scale in single-clock models of inflation. In addition, it would constrain scenarios with secondary production of gravitational waves.
+
+{\bf (Mention other shapes)}\\
+{\bf (Beyond the bispectrum)}
+% of comparable strength to the vacuum signal from fields coupled to the inflaton....{\bf be specific}. A detection of $f_{\rm NL}^{\rm equil}$ would provide support for single-clock models.
+
+
 
 %In models with a single clock, the symmetry breaking pattern underlying inflation guarantees that the fluctuations are governed by the action
 %\begin{equation}
@@ -364,26 +375,12 @@ Invariance under rotations and translations guarantees that the bispectrum $B(k_
 %The symmetry breaking pattern underlying inflation guarantees that the fluctuations are governed by the action
  
 
-The present best constraints on the bispectrum come from the {\it Planck} 2015 temperature and polarization analysis which and give $f_{\rm NL}^{\rm local} = 0.8 \pm 5.0$ and $f_{\rm NL}^{\rm equil} = -4 \pm 43$ (68\% CL) \cite{Ade:2015ava}. A noise-free cosmic variance limited CMB experiment is expected to produce constraints on $f_{\rm NL}^{\rm local}$ with 1$\sigma$ error bars of about 3 \cite{Komatsu:2001rj}. Therefore the best that can be expected of CMB-S4 is slightly less than a factor of two improvement on the current best limits. This is not sufficient to reach the interesting theoretical threshold around $|f_{\rm NL}^{\rm any}|<\mathcal{O}(1)$ \cite{Alvarez:2014vva}, but will still reduce the space of viable models or hint at a detection.
-
-A detection of local non-Gaussianity would have far reaching theoretical implications. First, any significant detection of $f_{\rm NL}^{\rm local}$ would rule out all models of single clock inflation \cite{Creminelli:2004yq}. In addition, such a signal would open the door to significant cosmic variance on all scales from coupling of fluctuations within our observed volume to any super-Hubble modes \cite{Nelson:2012sb,LoVerde:2013xka,Nurmi:2013xv}. Indeed, there would be room for a significant shift between the observed amplitude of scalar fluctuations (and so the observed $r$) and the mean value of fluctuations on much larger scales. Any scenario that predicts local non-Gaussianity together with fluctuations on scales much larger than our observed volume predicts a probability distribution for our observed $f_{\rm NL}^{\rm local}$, but there are well-motivated also which predict a small mean value. These models include the simplest modulated reheating scenario \cite{Zaldarriaga:2003my} and ekpyrotic cosmology \cite{Lehners:2009ja}, both of which predict mean values of $f_{\rm NL}^{\rm local}\sim5$. CMB-S4 could either hint toward, or slightly disfavor, these scenarios at around the level of 2$\sigma$. The simplest curvaton scenario, which predicts $f_{\rm NL} = -5/4$ \cite{Lyth:2001nq}, will unfortunately be out of reach of CMB-S4.
-
-A factor of 2 improvement on $f_{\rm NL}^{\rm equil}$ would further constrain scenarios with secondary production of gravitational waves of comparable strength to the vacuum signal from fields coupled to the inflaton....{\bf be specific}. A detection of $f_{\rm NL}^{\rm equil}$ would provide support for single-clock models.
 
 %In the modulated reheating scenario, the field which drives inflation $\phi$ decays to the particles of the standard model with a rate $\gamma$ which is determined by the value of a second field $\sigma$ which remains light throughout inflation. The quantum fluctuations in $\sigma$ result in a spatially modulated reheating surface resulting in the curvature perturbations that we observe in the CMB and large scale structure. The process by which the fluctuations in the light field are converted into curvature fluctuations naturally results in local non-Gaussianity given by $f_{\rm NL} = 5(1-\Gamma \Gamma^{\prime\prime}/\Gamma^{\prime2})$, where this formula holds in the case that $\phi$ oscillates about a quadratic minimum after inflation and the fluctuations in $\phi$ make a negligible contribution to the observed power spectrum.
 
 %This can be contrasted with the simplest curvaton scenario, where a scalar field $\sigma$ which remains light during inflation comes to dominate the energy density of the universe after the field which drives inflation $\phi$ decays. The fluctuations in the energy density of $\sigma$ then determine the curvature perturbations that are observed today. The local non-Gaussianity in this simple model is predicted to be $f_{\rm NL} = -5/4$ \cite{Lyth:2001nq}, which is unfortunately a few times smaller than the expected error bar from CMB Stage-IV.
 
 %In the absence of a detection, however, it is important to ask what can be learned from improved constraints on $f_{\rm NL}$. Though not firm, nor entirely robustly defined, it can be argued that a natural theoretical threshold where qualitatively new general conclusions about the physics of the early universe can be drawn would come from constraints on $f_{\rm NL}<\mathcal{O}(1)$, see for example [1412.4671] for a detailed discussion. In order to achieve this level of constraint, it seems necessary to move beyond the cosmic microwave background to study other data sets, such as large scale structure. Despite the fact that CMB Stage-IV is not expected to reach this threshold, it is worth asking what can be gleaned from an improved constraint on $f_{\rm NL}$ from the CMB.
-
-\subsection{Spatial Curvature}
-
-Despite the fact that inflation drives the spatial curvature to zero at the level of the background evolution, it predicts small, but non-zero curvature. The curvature measured in a Hubble patch receives contributions from long wavelength perturbations and is expected to be $|\Omega_k|<10^{-4}$. A measurements of $\Omega_k$ exceeding this expectation would contain important information about the process responsible for inflation.
-
-In particular, if $|\Omega_k|$ is found to be considerably larger than this value, it would tell us that inflation was not slowly rolling  when scales just larger than our observable horizon exited their inflationary horizons. Furthermore, observations of large negative $\Omega_k$ would falsify eternal inflation, while observation of positive and large $\Omega_k$ would be consistent with false vacuum eternal inflation.
-
-Current constraints on this parameter from the CMB alone are $\Omega_k= 0.005^{+0.016}_{-0.017}$. Including baryon acoustic oscillation (BAO) data tightens the bound to $\Omega_k=0.000\pm0.005$. CMB-S4 is expected to constrain spatial curvature at a level of $\sigma(\Omega_k)\approx 10^{-3}$ A detection at this level would have profound implications for the inflationary paradigm. 
-
 
 
 \subsection{Isocurvature}
@@ -394,6 +391,15 @@ Current constraints on this parameter from the CMB alone are $\Omega_k= 0.005^{+
 
 \section{Improved constraints on anomalies, birefringence, cosmic strings, axions\dots}
 \label{sec:other_topics}
+
+\subsection{Spatial Curvature}
+
+Despite the fact that inflation drives the spatial curvature to zero at the level of the background evolution, it predicts small, but non-zero curvature. The curvature measured in a Hubble patch receives contributions from long wavelength perturbations and is expected to be $|\Omega_k|<10^{-4}$. A measurements of $\Omega_k$ exceeding this expectation would contain important information about the process responsible for inflation.
+
+In particular, if $|\Omega_k|$ is found to be considerably larger than this value, it would tell us that inflation was not slowly rolling  when scales just larger than our observable horizon exited their inflationary horizons. Furthermore, observations of large negative $\Omega_k$ would falsify eternal inflation, while observation of positive and large $\Omega_k$ would be consistent with false vacuum eternal inflation.
+
+Current constraints on this parameter from the CMB alone are $\Omega_k= 0.005^{+0.016}_{-0.017}$. Including baryon acoustic oscillation (BAO) data tightens the bound to $\Omega_k=0.000\pm0.005$. CMB-S4 is expected to constrain spatial curvature at a level of $\sigma(\Omega_k)\approx 10^{-3}$ A detection at this level would have profound implications for the inflationary paradigm. 
+
 
 
 \subsection{Cosmic Birefringence}
