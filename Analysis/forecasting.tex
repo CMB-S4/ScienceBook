@@ -23,53 +23,66 @@ To forecast the return of the thermal Sunyaev-Zel'dovich effects, an estimate of
 
 \subsubsection{Map-based domain forecasting}
 
-Foregrounds are intrinsically non-Gaussian, so it is beneficial to consider approaches directly in map space, to check the robustness of spectrum-based approaches, in particular in the case of pessimistic foregrounds where the spectral indices or dust emissivities have spatial variation. Here one of the approaches our community uses is a Bayesian model fitting method.
+Foregrounds are intrinsically non-Gaussian, so it is beneficial to consider approaches directly in map space, to check the robustness of spectrum-based approaches, in particular in the case of pessimistic foregrounds where the spectral indices or dust emissivities have spatial variation. Here one of the approaches our community uses is a Bayesian model fitting method, where the foregrounds are described parametrically using a physical model for each compenent.
 
-Maps of the CMB plus Galactic foreground sky and instrument noise are simulated at each of the CMB-S4 frequencies and integrated across the expected bandpass, using Galactic models as described for example in Section \ref{sec:models}. A parameterized model is then fit to the simulated maps, for example fitting the CMB, thermal dust, and synchrotron in small pixels, and typically the synchrotron spectral index and dust emissivity and temperature in larger pixels of order degree-scale. The BB power spectrum of the foreground-marginalized CMB map is then estimated, and convered into an estimate of r and its uncertainty. Our community has at least three such codes.
+Using this method, maps of the CMB plus Galactic foreground sky and instrument noise are simulated at each of the CMB-S4 frequencies and integrated across the expected bandpass, using Galactic models as described for example in Section \ref{sec:models}. Simulations at ancillary frequencies that might be provided by other experiments, for example the Planck data, can also be included in the same way. A parameterized model is then fit to the simulated maps, for example fitting the CMB, thermal dust, and synchrotron in small pixels, and typically the synchrotron spectral index and dust emissivity and temperature in larger pixels of order degree-scale or larger. The BB power spectrum of the foreground-marginalized CMB map is then estimated using e.g., the Master algorithm or a pixel-based likelihood, and converted into an estimate of $r$ and its uncertainty. Our community has at least two such codes that can perform this procedure (Commander and BFoRe).
 
-This method allows for an assessment of the expected bias on $r$ if the model does not match the simulation, and shows how much the expected uncertainty on $r$ would increase if more complicated foreground models are explored e.g. \cite{armitage-caplan/etal:2011,ramazeilles/etal:2015}. It is more computationally expensive than spectral-domain forecasts though, so we use this approach on a smaller-subset of explorations. 
+This method allows for an assessment of the expected bias on $r$ if the model does not match the simulation, and shows how much the expected uncertainty on $r$ would increase if more complicated foreground models are explored e.g. \cite{armitage-caplan/etal:2011,ramazeilles/etal:2015}. It is more computationally expensive than spectral-domain forecasts though, so we limit this approach to a smaller subset of explorations. 
 
 \subsection{Limits on parameters from TT/TE/EE/$\kappa\kappa$}
 
-{\bf Jo writing - much of this currently copied from Allison et al, in process of cutting and editing}
+To forecast the expected constraints on cosmological parameters from TT/TE/EE and $\kappa\kappa$ for CMB-S4, many of our community's codes use a Fisher matrix method, which assumes that the resulting parameter distributions are close to Gaussian.  Some forecasts are performed using full MCMC simulations if the parameters are known to be highly non-Gaussian. 
 
-To forecast the expected constraints on cosmological parameters for CMB-S4, many of our community's codes use a Fisher matrix method, combining S4 specifications with other available datasets, for example the data from Planck and expected measurements of Baryon Acoustic Oscillations and other low redshift data. 
+For CMB-S4, the method we follow is to combine CMB-S4 specifications with other available datasets, for example the data from Planck and expected measurements of Baryon Acoustic Oscillations and other low redshift data. 
 
-For the noise levels of Planck, we assume that a data release including reliable polarization data will have happened, and forecast results that include TE and EE data and also large-scale polarization from HFI. This follows approaches in e.g. \cite{allison/etal:2015}.
+For the noise levels of Planck, we assume that a data release including reliable polarization data will have happened before CMB-S4 data is taken, and forecast results that include TE and EE data and also large-scale polarization from HFI at multipoles lower than CMB-S4 is expected to reach. This follows approaches in e.g. \cite{allison/etal:2015}.
 
-We assume uniform priors on all parameters, and evaluate the Fisher matrix at fiducial parameters. To compute the Fisher matrix we use the CMB power spectra, and also add BAO distance measurements. For the CMB, we use the lensed power spectrum between each pair of fields $X, Y$ from their spherical harmonic coefficients:
+Our community uses two approaches to these Fisher forecasts that include lensing, either considering the unlensed maps  and the lensing convergence map as the basic statistic, or the lensed two-point functions of those maps. In the case of the two-point functions, to compute the Fisher matrix for the CMB we use the lensed power spectrum between each pair of fields $X, Y$:
 %
 \begin{equation}
 \label{eqEstimator}
 \hat{C}^{XY}_\ell = \frac{1}{2\ell+1}\sum_{m=-\ell}^{m=\ell} x^{*}_{\ell m} y_{\ell m}.
 \end{equation}
 %
-The estimated power spectrum follows a Gaussian distribution to good approximation at small scales. For a full-sky survey, we have 
+The estimated power spectrum is Gaussian distribution to good approximation at small scales. A full-sky survey has
 %
 \begin{equation}
 -2\ln\mathcal{L}(\boldsymbol{\theta}) = -2\sum_\ell \ln p( \hat{C}_\ell | \boldsymbol{\theta}) \\
 =  \sum_\ell  \Big[ (\hat{C}_\ell - C_\ell(\boldsymbol{\theta}) )^\top  \mathbb{C}^{-1}_\ell(\boldsymbol{\theta}) \big(\hat{C}_\ell - C_\ell(\boldsymbol{\theta})) + \ln \det(2 \pi \mathbb{C}_\ell(\boldsymbol{\theta})) \Big]
 \end{equation}
 %
-where $ \hat{C}_\ell = (\hat{C}_\ell^{TT}, \hat{C}_\ell^{TE}, ...) $ contains auto- and cross-spectra and $\mathbb{C}_\ell$ is their covariance matrix. Inserting this likelihood into Eq.~\ref{eqFisher} and neglecting parameter dependence in the power spectrum covariance matrix one obtains
+where $ \hat{C}_\ell = (\hat{C}_\ell^{TT}, \hat{C}_\ell^{TE}, ...) $ contains auto- and cross-spectra and $\mathbb{C}_\ell$ is their covariance matrix. Discardingany parameter dependence in the power spectrum covariance matrix gives
 %
 \begin{equation}
 F_{ij} = \sum_\ell \frac{\partial C^\top_l}{\partial \theta_i} \mathbb{C}^{-1}_\ell \frac{\partial C_l}{\partial \theta_j}.
 \end{equation}
 %
-From Eq.~\ref{eqEstimator}, and applying Wick's theorem, the covariance matrix for the power spectra has elements
+Here the covariance matrix for the power spectra has elements
 %
 \begin{equation}
 \mathbb{C}(\hat{C}_l^{\alpha \beta}, \hat{C}_l^{\gamma \delta}) = \frac{1}{(2l+1)f_{\rm sky}} \big[ (C_l^{\alpha \gamma} + N_l^{\alpha \gamma}) (C_l^{\beta \delta} + N_l^{\beta \delta})  \\
 + (C_l^{\alpha \delta} + N_l^{\alpha \delta}) (C_l^{\beta \gamma} + N_l^{\beta \gamma}) \big],
 \end{equation}
 %
-where $\alpha, \beta, \gamma, \delta \in \{T, E, B, \kappa_c\}$ and $f_{\rm sky}$ accounts for the loss of information due to partial sky coverage \cite{Hobson:1996,dePutter:2009}. 
+where $\alpha, \beta, \gamma, \delta \in \{T, E, B, \kappa_c\}$ and $f_{\rm sky}$ is the effective fractional area of sky used. 
+
+The second approach we consider is to construct the Fisher matrix using the unlensed temperature and polarization fields, and the lensing convergence field, rather than the suite of lensed TT, TE, EE, BB spectra.
+
+The CMB lensing reconstruction noise is calculated using the \cite{Hu:2002} quadratic-estimator formalism. Our nominal approach is to neglect non-Gaussian terms in the power spectrum covariance. We also avoid including information from both lensed BB and the four-point $\kappa \kappa$, as they are covariant. The BB spectrum will not contribute as significantly to S4 constraints, compared to $\kappa \kappa$, and has a highly non-Gaussian covariance \cite{Benoit-Levy:2012}. 
+
+To address the issue of possible extragalactic foregrounds, we set a maximum multipole for the recoverable information $\ell^T_{\rm max} = 3000$, $\ell^P_{\rm max} = 4000$ for CMB-S4 experiments, as foregrounds are expected to be limiting at smaller scales. We also set a minimum multipole due to the challenge of recovering large-scales from the ground, and consider in general $\ell=50$. We include Planck data at the scales $\ell<\ell_{\rm min}$. 
+
+When relevant, we can also add information from Baryon Acoustic Oscillation (BAO) experiments by adding the BAO Fisher matrix:
+%
+\begin{equation}
+F_{ij}^{\rm BAO} = \sum_{k} \frac{1}{\sigma_{f,k}^2}\frac{\partial f_k}{\partial \theta_i}\frac{\partial f_k}{\partial \theta_j}
+\end{equation}
+%
+where $f_k \equiv f(z_k) = r_s/d_V(z_k)$ is the sound horizon at photon-baryon decoupling $r_s$ over the volume distance $d_V$ to the source galaxies at redshift $z_k$. We also follow standard approaches to including other low redshift probes.
 %, 
 
-
-\subsubsection{Instrument noise}
-Noise spectra are generated for each observable assuming the sum of white noise and atmospheric noise:
+\subsubsection{Instrument and atmospheric noise}
+Noise spectra are generated for each observable assuming the sum of white noise and atmospheric noise. The white noise part is given by
 %
 \begin{equation}
 N^{\alpha \alpha}_\ell = (\Delta T)^2 \exp \left( \frac{\ell(\ell + 1) \theta^2_{\rm FWHM}}{8 \ln 2} \right)
@@ -77,27 +90,12 @@ N^{\alpha \alpha}_\ell = (\Delta T)^2 \exp \left( \frac{\ell(\ell + 1) \theta^2_
 %
 for $\alpha \in \{T, E, B\}$, where $\Delta T$ ($\Delta P$ for polarization) is the map sensitivity in $\mu$K-arcmin and $\theta_{\rm FWHM}$ is the beam width. 
 
-To estimate the atmospheric noise level, we consider levels at the South Pole and in Chile.
-For polarization our nominal estimate is white noise, assuming half wave plates.
+To estimate the atmospheric noise level, we consider levels at the South Pole and in Chile. For Chile, we base this estimate on current data from ACT and POLARBEAR. for the South Pole, we use data from SPT and BICEP as a guide. We then make the assumption that the atmospheric noise will scale down with observation time for detector arrays within a telescope, and will be uncorrelated for physically separated telescopes.
+
+For polarization our nominal estimate is white noise, assuming that use of modulators minimizes atmospheric contamination.
 
 %
-The CMB lensing reconstruction noise is calculated using the \cite{Hu:2002} quadratic-estimator formalism. We neglect non-Gaussian terms in the power spectrum covariance, and also neglect the BB spectrum as it does not contribute significantly to upcoming constraints and has a highly non-Gaussian covariance \cite{Benoit-Levy:2012}. 
-
-When relevant, we can also add information from Baryon Acoustic Oscillation (BAO) experiments by computing the BAO Fisher matrix:
-%
-\begin{equation}
-F_{ij}^{\rm BAO} = \sum_{k} \frac{1}{\sigma_{f,k}^2}\frac{\partial f_k}{\partial \theta_i}\frac{\partial f_k}{\partial \theta_j}
-\end{equation}
-%
-where $f_k \equiv f(z_k) = r_s/d_V(z_k)$ is the sound horizon at photon-baryon decoupling $r_s$ over the volume distance $d_V$ to the source galaxies at redshift $z_k$. These real and forecast data are reported in Table \ref{tabBAO}.
-
-The total Fisher information matrix is given by the sum of the CMB and BAO Fisher matrices, and is inverted to forecast parameter covariances.  An alternative MCMC approach using simulated data can be taken to account for non-Gaussianity of the posterior \cite[e.g.,][]{Hall:2012}, but the Gaussian approximation is likely increasingly good as the data quality improve from {\sl Planck} through S3 to S4. 
-
-For the CMB power spectra, we set a maximum multipole for the recoverable information $\ell^T_{\rm max} = 3000$, $\ell^P_{\rm max} = 4000$ for the future S3 and S4 experiments, as foregrounds are expected to be limiting at smaller scales. We also set a minimum multipole due to the challenge of recovering large-scales from the ground, and consider two options for S4, $\ell=50$ and $\ell=5$. We include Planck data at the scales $\ell<\ell_{\rm min}$. 
-
-We also consider the lensed TT, TE, EE, BB spectra, rather than the unlensed fields and convergence.
-
-
-
 
 \subsection{Limits on parameters from tSZ/kSZ}
+
+To estimate the expected tSZ cluster counts from S4, we use.
