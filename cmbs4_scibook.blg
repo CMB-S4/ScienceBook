@@ -1,0 +1,92 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: cmbs4_scibook.aux
+The style file: plain.bst
+Reallocated field_info (elt_size=4) to 12245 items from 5000.
+Database file #1: cmbs4.bib
+Repeated entry---line 1445 of file cmbs4.bib
+ : @article{Hu:1997mj
+ :                   ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 40786 of file cmbs4.bib
+ : @article{Agashe:2014kda
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 42381 of file cmbs4.bib
+ : @article{Bond:1983hb
+ :                     ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "others?"
+Warning--I didn't find a database entry for "sec:scalar"
+Warning--I didn't find a database entry for "Lue:1998mq"
+Warning--I didn't find a database entry for "allison/etal:2015"
+Warning--I didn't find a database entry for "Hobson:1996"
+Warning--I didn't find a database entry for "dePutter:2009"
+Warning--I didn't find a database entry for "Hu:2002"
+Warning--I didn't find a database entry for "Benoit-Levy:2012"
+Warning--I didn't find a database entry for "["
+Warning--I didn't find a database entry for "Hu:2001k"
+Warning--I didn't find a database entry for "sherwin14"
+Warning--I didn't find a database entry for "simard14"
+Reallocated str_pool (elt_size=1) to 130000 items from 65000.
+Warning--empty journal in Abazajian:2012ys
+Warning--empty journal in Ade:2015xua
+Warning--empty journal in Ade:2015ava
+Warning--empty journal in Ade:2015fva
+Warning--empty journal in Alvarez:2014vva
+Warning--empty journal in Arzoumanian:2015liz
+Warning--empty journal in Baumann:2015rya
+Warning--empty journal in Blumenhagen:2015xpa
+Warning--empty journal in Brown:2015lia
+Warning--empty journal in Collins:2014yua
+Warning--empty journal in Cyburt:2015mya
+Warning--empty journal in Cyr-Racine:2015ihg
+Warning--empty journal in Grohs:2015tfy
+Warning--empty journal in Heidenreich:2015nta
+Warning--empty journal in Kaplan:2015fuy
+Warning--empty journal in Kooner:2015rza
+Warning--empty journal in Lasky:2015lej
+Warning--empty journal in Marsh:2015xka
+Warning--empty journal in Strumia:2006db
+You've used 303 entries,
+            2118 wiz_defined-function locations,
+            2214 strings with 64627 characters,
+and the built_in function-call counts, 121712 in all, are:
+= -- 10821
+> -- 9009
+< -- 6
++ -- 3556
+- -- 3252
+* -- 10480
+:= -- 21794
+add.period$ -- 914
+call.type$ -- 303
+change.case$ -- 2511
+chr.to.int$ -- 0
+cite$ -- 322
+duplicate$ -- 3356
+empty$ -- 7269
+format.name$ -- 3252
+if$ -- 23662
+int.to.chr$ -- 0
+int.to.str$ -- 303
+missing$ -- 304
+newline$ -- 1523
+num.names$ -- 608
+pop$ -- 2008
+preamble$ -- 1
+purify$ -- 2209
+quote$ -- 0
+skip$ -- 2282
+stack$ -- 0
+substring$ -- 5907
+swap$ -- 328
+text.length$ -- 6
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 1210
+warning$ -- 19
+while$ -- 888
+width$ -- 306
+write$ -- 3303
+(There were 3 error messages)
