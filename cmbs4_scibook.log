@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  23 FEB 2016 17:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  23 FEB 2016 17:37
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -417,7 +417,7 @@ LaTeX Font Warning: Command \tiny invalid in math mode on input line 56.
 LaTeX Font Warning: Command \tiny invalid in math mode on input line 62.
 
 [28] [29] [30] [31] [32]
-<Neutrinos/numass_combine_dune.pdf, id=1248, 485.34323pt x 398.52892pt>
+<Neutrinos/numass_combine_dune.pdf, id=1247, 485.34323pt x 398.52892pt>
 File: Neutrinos/numass_combine_dune.pdf Graphic file (type pdf)
 
 <use Neutrinos/numass_combine_dune.pdf>
@@ -425,7 +425,7 @@ Package pdftex.def Info: Neutrinos/numass_combine_dune.pdf used on input line 2
 24.
 (pdftex.def)             Requested size: 258.36667pt x 212.16188pt.
  [33 <./Neutrinos/numass_combine_dune.pdf>] [34] [35] <Neutrinos/Neff.pdf, id=1
-326, 1027.84pt x 770.88pt>
+325, 1027.84pt x 770.88pt>
 File: Neutrinos/Neff.pdf Graphic file (type pdf)
 
 <use Neutrinos/Neff.pdf>
@@ -459,27 +459,27 @@ Package pdftex.def Info: Intro/Fig-FlowChart1_v1.pdf used on input line 30.
 
 ]
 Chapter 6.
-<Analysis/dr.pdf, id=1709, 241.90375pt x 981.6675pt>
+<Analysis/dr.pdf, id=1708, 241.90375pt x 981.6675pt>
 File: Analysis/dr.pdf Graphic file (type pdf)
  <use Analysis/dr.pdf>
 Package pdftex.def Info: Analysis/dr.pdf used on input line 30.
 (pdftex.def)             Requested size: 64.58987pt x 262.10289pt.
 
-[55 <./Analysis/dr.pdf>] <Analysis/da.pdf, id=1733, 1027.84pt x 981.6675pt>
+[55 <./Analysis/dr.pdf>] <Analysis/da.pdf, id=1732, 1027.84pt x 981.6675pt>
 File: Analysis/da.pdf Graphic file (type pdf)
 
 <use Analysis/da.pdf>
 Package pdftex.def Info: Analysis/da.pdf used on input line 42.
 (pdftex.def)             Requested size: 270.10768pt x 257.96869pt.
  [56 <./Analysis/da.pdf>]
-<Analysis/sim.pdf, id=1757, 1053.9375pt x 827.09pt>
+<Analysis/sim.pdf, id=1756, 1053.9375pt x 827.09pt>
 File: Analysis/sim.pdf Graphic file (type pdf)
  <use Analysis/sim.pdf>
 Package pdftex.def Info: Analysis/sim.pdf used on input line 61.
 (pdftex.def)             Requested size: 270.10768pt x 211.97157pt.
 
 [57 <./Analysis/sim.pdf>]
-<Analysis/simda.pdf, id=1780, 1839.87375pt x 981.6675pt>
+<Analysis/simda.pdf, id=1779, 1839.87375pt x 981.6675pt>
 File: Analysis/simda.pdf Graphic file (type pdf)
 
 <use Analysis/simda.pdf>
@@ -487,7 +487,7 @@ Package pdftex.def Info: Analysis/simda.pdf used on input line 73.
 (pdftex.def)             Requested size: 469.75499pt x 250.62897pt.
  [58 <./Analysis/simda.pdf>]
 (./Analysis/forecasting.tex
-<Analysis/fc.pdf, id=1802, 1839.87375pt x 981.6675pt>
+<Analysis/fc.pdf, id=1801, 1839.87375pt x 981.6675pt>
 File: Analysis/fc.pdf Graphic file (type pdf)
  <use Analysis/fc.pdf>
 Package pdftex.def Info: Analysis/fc.pdf used on input line 8.
@@ -537,21 +537,21 @@ LaTeX Warning: Reference `tabBAO' on page 60 undefined on input line 75.
 LaTeX Warning: Citation `[' on page 60 undefined on input line 77.
 
 [60]) [61] (./Analysis/sky_modeling.tex
-<Analysis/sm.pdf, id=1848, 1839.87375pt x 981.6675pt>
+<Analysis/sm.pdf, id=1847, 1839.87375pt x 981.6675pt>
 File: Analysis/sm.pdf Graphic file (type pdf)
  <use Analysis/sm.pdf>
 Package pdftex.def Info: Analysis/sm.pdf used on input line 26.
 (pdftex.def)             Requested size: 469.75499pt x 250.62897pt.
 
 [62] [63 <./Analysis/sm.pdf>] [64]) [65] (./Analysis/tod_processing.tex
-<Analysis/td.pdf, id=1887, 1839.87375pt x 981.6675pt>
+<Analysis/td.pdf, id=1886, 1839.87375pt x 981.6675pt>
 File: Analysis/td.pdf Graphic file (type pdf)
  <use Analysis/td.pdf>
 Package pdftex.def Info: Analysis/td.pdf used on input line 11.
 (pdftex.def)             Requested size: 469.75499pt x 250.62897pt.
 
 [66 <./Analysis/td.pdf>] [67]
-<Analysis/cmb_hpc_scaling.pdf, id=1952, 770.88pt x 607.26875pt>
+<Analysis/cmb_hpc_scaling.pdf, id=1951, 770.88pt x 607.26875pt>
 File: Analysis/cmb_hpc_scaling.pdf Graphic file (type pdf)
 
 <use Analysis/cmb_hpc_scaling.pdf>
@@ -559,13 +559,13 @@ Package pdftex.def Info: Analysis/cmb_hpc_scaling.pdf used on input line 95.
 (pdftex.def)             Requested size: 234.87749pt x 185.02673pt.
  [68]) [69 <./Analysis/cmb_hpc_scaling.pdf>]
 (./Analysis/component_separation.tex
-<Analysis/cs.pdf, id=1994, 1839.87375pt x 981.6675pt>
+<Analysis/cs.pdf, id=1993, 1839.87375pt x 981.6675pt>
 File: Analysis/cs.pdf Graphic file (type pdf)
  <use Analysis/cs.pdf>
 Package pdftex.def Info: Analysis/cs.pdf used on input line 15.
 (pdftex.def)             Requested size: 469.75499pt x 250.62897pt.
 
-<Analysis/Power_Spectrum_figure_showing_foregrounds.pdf, id=1995, 789.95125pt x
+<Analysis/Power_Spectrum_figure_showing_foregrounds.pdf, id=1994, 789.95125pt x
  667.89528pt>
 File: Analysis/Power_Spectrum_figure_showing_foregrounds.pdf Graphic file (type
  pdf)
@@ -670,10 +670,10 @@ fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/local/texlive/2015/texmf-dist/fo
 nts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2015/texmf-dis
 t/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2015/texmf
 -dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on cmbs4_scibook.pdf (97 pages, 2496464 bytes).
+Output written on cmbs4_scibook.pdf (97 pages, 2496441 bytes).
 PDF statistics:
- 2560 PDF objects out of 2984 (max. 8388607)
- 2202 compressed objects within 23 object streams
+ 2559 PDF objects out of 2984 (max. 8388607)
+ 2201 compressed objects within 23 object streams
  636 named destinations out of 1000 (max. 500000)
  1050 words of extra memory for PDF output out of 10000 (max. 10000000)
 
