@@ -27,6 +27,13 @@ the current practice for this process, then we address specific challenges antic
 %? Paths toward meeting these challenges
 %
 
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=1\textwidth]{Analysis/sp}
+\caption{The statistics and parameters subset of the CMB simulation and data analysis pipeline}
+\label{fig_sp}
+\end{figure}
+
 
 \subsection{Current practice}
 \label{se:current}
@@ -180,8 +187,7 @@ Similarly to avoiding the noise covariance with the realization-dependent $\hat 
 \end{equation}
 or by applying more advanced delensing methods.  However this has not yet been tested in practice and makes only sense if lensing reconstructions have sufficient signal-to-noise.  In general, forming linear combinations of measured lensing and CMB power spectra as in Eqs.~\eq{RDN0procedure} and \eq{matter_CV_mitigation} does simplify covariances, but it cannot add any new information as long as correct covariances are used.
 
-
- Since more covariance contributions arise from other couplings of the CMB 6-point function, it should be tested against simulations if the above contributions are sufficient.  In practice, it is then favorable to use analytical covariances because they are less noisy than those derived from simulations.   
+Since more covariance contributions arise from other couplings of the CMB 6-point function, it should be tested against simulations if the above contributions are sufficient.  In practice, it is then favorable to use analytical covariances because they are less noisy than those derived from simulations.   
  
 On top of the cross-covariance between 2-point CMB power spectra and 4-point lensing power spectra, both power spectra can also have non-trivial auto-covariances.  Covariances between CMB power spectra have been computed in \cite{2006PhRvD..74l3002S,2007PhRvD..75h3501L,BenoitSmithHu1205}. They contain similar building blocks as the covariances above \cite{BenoitSmithHu1205}.  Covariances between two 4-point lensing power spectra involve the lensed CMB 8-point function.  While many covariance contributions are cancelled when using realization-dependent $\hat N^{(0)}$ subtraction \cite{duncan1008}, other contributions may be relevant for future experiments.  Finally, the discussion above applies to the standard quadratic lensing reconstruction estimators and may change for maximum-likelihood lensing estimators \cite{HirataSeljak0209489}.
 

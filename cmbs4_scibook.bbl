@@ -314,6 +314,11 @@ Florian Beutler et~al.
   datasets}.
 \newblock {\em Mon. Not. Roy. Astron. Soc.}, 444:3501, 2014.
 
+\bibitem{Bezrukov:2007ep}
+Fedor~L. Bezrukov and Mikhail Shaposhnikov.
+\newblock {The Standard Model Higgs boson as the inflaton}.
+\newblock {\em Phys. Lett.}, B659:703--706, 2008.
+
 \bibitem{BICEP2014}
 {BICEP2 Collaboration}, P.~A.~R. {Ade}, R.~W. {Aikin}, D.~{Barkats}, S.~J.
   {Benton}, C.~A. {Bischoff}, J.~J. {Bock}, J.~A. {Brevik}, I.~{Buder},
@@ -371,11 +376,23 @@ Céline Boehm, Matthew~J. Dolan, and Christopher McCabe.
 \newblock {A Lower Bound on the Mass of Cold Thermal Dark Matter from Planck}.
 \newblock {\em JCAP}, 1308:041, 2013.
 
+\bibitem{bond98a}
+J.\~R. {Bond}, A.\~H. {Jaffe}, and L.~{Knox}.
+\newblock Estimating the power spectrum of the cosmic microwave background.
+\newblock {\em \prd}, 57:2117--2137, February 1998.
+
 \bibitem{Bond:1983hb}
 J.~R. Bond and A.~S. Szalay.
 \newblock {The Collisionless Damping of Density Fluctuations in an Expanding
   Universe}.
 \newblock {\em Astrophys. J.}, 274:443--468, 1983.
+
+\bibitem{borrill99}
+J.~{Borrill}.
+\newblock {The challenge of data analysis for future CMB observations}.
+\newblock In L.~{Maiani}, F.~{Melchiorri}, and N.~{Vittorio}, editors, {\em 3K
+  cosmology}, volume 476 of {\em American Institute of Physics Conference
+  Series}, pages 277--282, May 1999.
 
 \bibitem{Boyarsky:2009ix}
 Alexey Boyarsky, Oleg Ruchayskiy, and Mikhail Shaposhnikov.
@@ -480,11 +497,21 @@ Zackaria Chacko, Yanou Cui, Sungwoo Hong, and Takemichi Okui.
 \newblock {Hidden dark matter sector, dark radiation, and the CMB}.
 \newblock {\em Phys. Rev.}, D92:055033, 2015.
 
+\bibitem{challinor05}
+A.~{Challinor} and A.~{Lewis}.
+\newblock {Lensed CMB power spectra from all-sky correlation functions}.
+\newblock {\em \prd}, 71(10):103010--+, May 2005.
+
 \bibitem{Chatterjee:2014hna}
 Arindam Chatterjee and Anupam Mazumdar.
 \newblock {Bound on largest $r\lesssim 0.1$ from sub-Planckian excursions of
   inflaton}.
 \newblock {\em JCAP}, 1501(01):031, 2015.
+
+\bibitem{Chen:2003gz}
+Xue-Lei Chen and Marc Kamionkowski.
+\newblock {Particle decays during the cosmic dark ages}.
+\newblock {\em Phys. Rev.}, D70:043502, 2004.
 
 \bibitem{Choi:2015fiu}
 Kiwoon Choi and Sang~Hui Im.
@@ -561,6 +588,26 @@ Paolo Creminelli, Sergei Dubovsky, Diana Lopez~Nacir, Marko Simonovic, Gabriele
 Paolo Creminelli and Matias Zaldarriaga.
 \newblock {Single-Field Consistency Relation for the 3-Point Function}.
 \newblock {\em JCAP}, 0410:006, 2004.
+
+\bibitem{crites15}
+A.~T. {Crites}, J.~W. {Henning}, P.~A.~R. {Ade}, K.~A. {Aird}, J.~E.
+  {Austermann}, J.~A. {Beall}, A.~N. {Bender}, B.~A. {Benson}, L.~E. {Bleem},
+  J.~E. {Carlstrom}, C.~L. {Chang}, H.~C. {Chiang}, H.-M. {Cho}, R.~{Citron},
+  T.~M. {Crawford}, T.~{de Haan}, M.~A. {Dobbs}, W.~{Everett}, J.~{Gallicchio},
+  J.~{Gao}, E.~M. {George}, A.~{Gilbert}, N.~W. {Halverson}, D.~{Hanson},
+  N.~{Harrington}, G.~C. {Hilton}, G.~P. {Holder}, W.~L. {Holzapfel},
+  S.~{Hoover}, Z.~{Hou}, J.~D. {Hrubes}, N.~{Huang}, J.~{Hubmayr}, K.~D.
+  {Irwin}, R.~{Keisler}, L.~{Knox}, A.~T. {Lee}, E.~M. {Leitch}, D.~{Li},
+  C.~{Liang}, D.~{Luong-Van}, J.~J. {McMahon}, J.~{Mehl}, S.~S. {Meyer},
+  L.~{Mocanu}, T.~E. {Montroy}, T.~{Natoli}, J.~P. {Nibarger}, V.~{Novosad},
+  S.~{Padin}, C.~{Pryke}, C.~L. {Reichardt}, J.~E. {Ruhl}, B.~R. {Saliwanchik},
+  J.~T. {Sayre}, K.~K. {Schaffer}, G.~{Smecher}, A.~A. {Stark}, K.~T. {Story},
+  C.~{Tucker}, K.~{Vanderlinde}, J.~D. {Vieira}, G.~{Wang}, N.~{Whitehorn},
+  V.~{Yefremenko}, and O.~{Zahn}.
+\newblock {Measurements of E-Mode Polarization and Temperature-E-Mode
+  Correlation in the Cosmic Microwave Background from 100 Square Degrees of
+  SPTpol Data}.
+\newblock {\em Astrophys. J.}, 805:36, May 2015.
 
 \bibitem{Csaki:2014bua}
 Csaba Csaki, Nemanja Kaloper, Javi Serra, and John Terning.
@@ -719,6 +766,11 @@ Cora Dvorkin, Kfir Blum, and Marc Kamionkowski.
 \newblock {Constraining Dark Matter-Baryon Scattering with Linear Cosmology}.
 \newblock {\em Phys. Rev. D}, 89(2):023519, 2014.
 
+\bibitem{Dvorkin:2013cga}
+Cora Dvorkin, Kfir Blum, and Matias Zaldarriaga.
+\newblock {Perturbed Recombination from Dark Matter Annihilation}.
+\newblock {\em Phys. Rev.}, D87(10):103522, 2013.
+
 \bibitem{eriksen06}
 H.~K. {Eriksen}, C.~{Dickinson}, C.~R. {Lawrence}, C.~{Baccigalupi}, A.~J.
   {Banday}, K.~M. {G{\'o}rski}, F.~K. {Hansen}, P.~B. {Lilje}, E.~{Pierpaoli},
@@ -820,6 +872,11 @@ Lee~Samuel Finn and Patrick~J. Sutton.
 Willy Fischler and Joel Meyers.
 \newblock {Dark Radiation Emerging After Big Bang Nucleosynthesis?}
 \newblock {\em Phys. Rev.}, D83:063520, 2011.
+
+\bibitem{Flauger:2013hra}
+Raphael Flauger, Daniel Green, and Rafael~A. Porto.
+\newblock {On squeezed limits in single-field inflation. Part I}.
+\newblock {\em JCAP}, 1308:032, 2013.
 
 \bibitem{Flauger:2009ab}
 Raphael Flauger, Liam McAllister, Enrico Pajer, Alexander Westphal, and Gang
@@ -983,6 +1040,14 @@ C.~M. {Hirata} and U.~{Seljak}.
   likelihood function}.
 \newblock {\em \prd}, 67(4):043001, February 2003.
 
+\bibitem{hivon02}
+E.~{Hivon}, K.~M. {G{\' o}rski}, C.~B. {Netterfield}, B.~P. {Crill},
+  S.~{Prunet}, and F.~{Hansen}.
+\newblock {MASTER of the Cosmic Microwave Background Anisotropy Power Spectrum:
+  A Fast Method for Statistical Analysis of Large and Complex Cosmic Microwave
+  Background Data Sets}.
+\newblock {\em Astrophys. J.}, 567:2--17, March 2002.
+
 \bibitem{Hivon2002}
 Eric Hivon, Krzysztof~M. Gorski, C.~Barth Netterfield, Brendan~P. Crill, Simon
   Prunet, and Frode Hansen.
@@ -990,6 +1055,11 @@ Eric Hivon, Krzysztof~M. Gorski, C.~Barth Netterfield, Brendan~P. Crill, Simon
   A Fast Method for Statistical Analysis of Large and Complex Cosmic Microwave
   Background Data Sets}.
 \newblock {\em The Astrophysical Journal}, 567(1):2--17, March 2002.
+
+\bibitem{hlozek:2015axa}
+R.~{Hlozek}, D.~{Grin}, D.~J.~E. {Marsh}, and P.~G. {Ferreira}.
+\newblock {A search for ultralight axions using precision cosmological data}.
+\newblock {\em \prd}, 91(10):103512, May 2015.
 
 \bibitem{Hooper:2011aj}
 Dan Hooper, Farinaldo~S. Queiroz, and Nickolay~Y. Gnedin.
@@ -1014,6 +1084,17 @@ Zhen Hou, Ryan Keisler, Lloyd Knox, Marius Millea, and Christian Reichardt.
   Damping Tail}.
 \newblock {\em Phys. Rev.}, D87:083008, 2013.
 
+\bibitem{hu:00a}
+W.~{Hu}, R.~{Barkana}, and A.~{Gruzinov}.
+\newblock {Fuzzy Cold Dark Matter: The Wave Properties of Ultralight
+  Particles}.
+\newblock {\em Physical Review Letters}, 85:1158--1161, August 2000.
+
+\bibitem{hu02a}
+W.~{Hu} and T.~{Okamoto}.
+\newblock {Mass Reconstruction with Cosmic Microwave Background Polarization}.
+\newblock {\em Astrophys. J.}, 574:566--574, August 2002.
+
 \bibitem{Hu:1997vi}
 Wayne Hu and Daniel~J. Eisenstein.
 \newblock {Small scale perturbations in a general MDM cosmology}.
@@ -1023,6 +1104,11 @@ Wayne Hu and Daniel~J. Eisenstein.
 Wayne Hu, Daniel~J. Eisenstein, and Max Tegmark.
 \newblock {Weighing neutrinos with galaxy surveys}.
 \newblock {\em Phys.Rev.Lett.}, 80:5255--5258, 1998.
+
+\bibitem{Hu:2001kj}
+Wayne Hu and Takemi Okamoto.
+\newblock {Mass reconstruction with cmb polarization}.
+\newblock {\em Astrophys.J.}, 574:566--574, 2002.
 
 \bibitem{Huber:2011wv}
 Patrick Huber.
@@ -1120,6 +1206,23 @@ E.~{Keih{\"a}nen} and M.~{Reinecke}.
   background measurements}.
 \newblock {\em Astronomy and Astrophysics}, 548:A110, December 2012.
 
+\bibitem{keisler15}
+R.~Keisler, S.~Hoover, N.~Harrington, J.~W. Henning, P.~A.~R. Ade, K.~A. Aird,
+  J.~E. Austermann, J.~A. Beall, A.~N. Bender, B.~A. Benson, L.~E. Bleem, J.~E.
+  Carlstrom, C.~L. Chang, H.~C. Chiang, H-M. Cho, R.~Citron, T.~M. Crawford,
+  A.~T. Crites, T.~de~Haan, M.~A. Dobbs, W.~Everett, J.~Gallicchio, J.~Gao,
+  E.~M. George, A.~Gilbert, N.~W. Halverson, D.~Hanson, G.~C. Hilton, G.~P.
+  Holder, W.~L. Holzapfel, Z.~Hou, J.~D. Hrubes, N.~Huang, J.~Hubmayr, K.~D.
+  Irwin, L.~Knox, A.~T. Lee, E.~M. Leitch, D.~Li, D.~Luong-Van, D.~P. Marrone,
+  J.~J. McMahon, J.~Mehl, S.~S. Meyer, L.~Mocanu, T.~Natoli, J.~P. Nibarger,
+  V.~Novosad, S.~Padin, C.~Pryke, C.~L. Reichardt, J.~E. Ruhl, B.~R.
+  Saliwanchik, J.~T. Sayre, K.~K. Schaffer, E.~Shirokoff, G.~Smecher, A.~A.
+  Stark, K.~T. Story, C.~Tucker, K.~Vanderlinde, J.~D. Vieira, G.~Wang,
+  N.~Whitehorn, V.~Yefremenko, and O.~Zahn.
+\newblock Measurements of sub-degree b-mode polarization in the cosmic
+  microwave background from 100 square degrees of sptpol data.
+\newblock {\em Astrophys. J.}, 807(2):151, 2015.
+
 \bibitem{Khoury:2001wf}
 Justin Khoury, Burt~A. Ovrut, Paul~J. Steinhardt, and Neil Turok.
 \newblock {The Ekpyrotic universe: Colliding branes and the origin of the hot
@@ -1194,6 +1297,12 @@ Julien Lesgourgues and Sergio Pastor.
 \newblock {Massive neutrinos and cosmology}.
 \newblock {\em Phys.Rept.}, 429:307--379, 2006.
 
+\bibitem{lewis02b}
+A.~{Lewis} and S.~{Bridle}.
+\newblock {Cosmological parameters from CMB and other data: A Monte Carlo
+  approach}.
+\newblock {\em \prd}, 66(10):103511--+, November 2002.
+
 \bibitem{2007PhRvD..75h3501L}
 C.~{Li}, T.~L. {Smith}, and A.~{Cooray}.
 \newblock {Non-Gaussian covariance of CMB B modes of polarization and parameter
@@ -1228,6 +1337,11 @@ A.~{Lue}, L.~{Wang}, and M.~{Kamionkowski}.
 \newblock {Cosmological Signature of New Parity-Violating Interactions}.
 \newblock {\em Physical Review Letters}, 83:1506--1509, August 1999.
 
+\bibitem{Lue:1998mq}
+Arthur Lue, Li-Min Wang, and Marc Kamionkowski.
+\newblock {Cosmological signature of new parity violating interactions}.
+\newblock {\em Phys. Rev. Lett.}, 83:1506--1509, 1999.
+
 \bibitem{Lyth:1996im}
 David~H. Lyth.
 \newblock {What would we learn by detecting a gravitational wave signal in the
@@ -1249,6 +1363,12 @@ Chung-Pei Ma.
 M.~E. {Machacek}.
 \newblock {Growth of adiabatic perturbations in self-interacting dark matter}.
 \newblock {\em \apj}, 431:41--51, August 1994.
+
+\bibitem{Madhavacheril:2013cna}
+Mathew~S. Madhavacheril, Neelima Sehgal, and Tracy~R. Slatyer.
+\newblock {Current Dark Matter Annihilation Constraints from CMB and
+  Low-Redshift Data}.
+\newblock {\em Phys. Rev.}, D89:103508, 2014.
 
 \bibitem{Maldacena:2011nz}
 Juan~M. Maldacena and Guilherme~L. Pimentel.
@@ -1283,6 +1403,11 @@ Fernando Marchesano, Gary Shiu, and Angel~M. Uranga.
 \newblock {F-term Axion Monodromy Inflation}.
 \newblock {\em JHEP}, 09:184, 2014.
 
+\bibitem{marsh:2013js}
+D.~J.~E. {Marsh} and J.~{Silk}.
+\newblock {A model for halo formation with axion mixed dark matter}.
+\newblock {\em \mnras}, 437:2652--2663, January 2014.
+
 \bibitem{Marsh:2015xka}
 David J.~E. Marsh.
 \newblock {Axion Cosmology}.
@@ -1313,6 +1438,11 @@ Matthew McCullough and Lisa Randall.
 Samuel~D. McDermott, Hai-Bo Yu, and Kathryn~M. Zurek.
 \newblock {Turning off the Lights: How Dark is Dark Matter?}
 \newblock {\em Phys. Rev. D}, 83:063509, 2011.
+
+\bibitem{Meerburg:2014bpa}
+P.~Daniel Meerburg.
+\newblock {Alleviating the tension at low $\ell$ through axion monodromy}.
+\newblock {\em Phys. Rev.}, D90(6):063529, 2014.
 
 \bibitem{Meerburg:2015zua}
 P.~Daniel Meerburg, Renée Hložek, Boryana Hadzhiyska, and Joel Meyers.
@@ -1365,6 +1495,27 @@ Viatcheslav Mukhanov.
 \newblock {Quantum Cosmological Perturbations: Predictions and Observations}.
 \newblock {\em Eur. Phys. J.}, C73:2486, 2013.
 
+\bibitem{naess14}
+S.~{Naess}, M.~{Hasselfield}, J.~{McMahon}, M.~D. {Niemack}, G.~E. {Addison},
+  P.~A.~R. {Ade}, R.~{Allison}, M.~{Amiri}, N.~{Battaglia}, J.~A. {Beall},
+  F.~{de Bernardis}, J.~R. {Bond}, J.~{Britton}, E.~{Calabrese}, H.-m. {Cho},
+  K.~{Coughlin}, D.~{Crichton}, S.~{Das}, R.~{Datta}, M.~J. {Devlin}, S.~R.
+  {Dicker}, J.~{Dunkley}, R.~{D{\"u}nner}, J.~W. {Fowler}, A.~E. {Fox},
+  P.~{Gallardo}, E.~{Grace}, M.~{Gralla}, A.~{Hajian}, M.~{Halpern},
+  S.~{Henderson}, J.~C. {Hill}, G.~C. {Hilton}, M.~{Hilton}, A.~D. {Hincks},
+  R.~{Hlozek}, P.~{Ho}, J.~{Hubmayr}, K.~M. {Huffenberger}, J.~P. {Hughes},
+  L.~{Infante}, K.~{Irwin}, R.~{Jackson}, S.~{Muya Kasanda}, J.~{Klein},
+  B.~{Koopman}, A.~{Kosowsky}, D.~{Li}, T.~{Louis}, M.~{Lungu},
+  M.~{Madhavacheril}, T.~A. {Marriage}, L.~{Maurin}, F.~{Menanteau},
+  K.~{Moodley}, C.~{Munson}, L.~{Newburgh}, J.~{Nibarger}, M.~R. {Nolta}, L.~A.
+  {Page}, C.~{Pappas}, B.~{Partridge}, F.~{Rojas}, B.~L. {Schmitt},
+  N.~{Sehgal}, B.~D. {Sherwin}, J.~{Sievers}, S.~{Simon}, D.~N. {Spergel},
+  S.~T. {Staggs}, E.~R. {Switzer}, R.~{Thornton}, H.~{Trac}, C.~{Tucker},
+  M.~{Uehara}, A.~{Van Engelen}, J.~T. {Ward}, and E.~J. {Wollack}.
+\newblock {The Atacama Cosmology Telescope: CMB polarization at 200 $<$ l $<$
+  9000}.
+\newblock {\em JCAP}, 10:7, October 2014.
+
 \bibitem{Namba:2013kia}
 Ryo Namba, Emanuela Dimastrogiovanni, and Marco Peloso.
 \newblock {Gauge-flation confronted with Planck}.
@@ -1396,6 +1547,11 @@ Se-Heon Oh, W.~J.~G. de~Blok, Elias Brinks, Fabian Walter, and Robert~C.
 \newblock {Dark and luminous matter in THINGS dwarf galaxies}.
 \newblock {\em Astron. J.}, 141:193, 2011.
 
+\bibitem{okamoto03}
+T.~{Okamoto} and W.~{Hu}.
+\newblock {Cosmic microwave background lensing reconstruction on the full sky}.
+\newblock {\em \prd}, 67(8):083002--+, April 2003.
+
 \bibitem{Agashe:2014kda}
 K.~A. Olive et~al.
 \newblock {Review of Particle Physics}.
@@ -1405,6 +1561,12 @@ K.~A. Olive et~al.
 Kyle~A. Oman et~al.
 \newblock {The unexpected diversity of dwarf galaxy rotation curves}.
 \newblock {\em Mon. Not. Roy. Astron. Soc.}, 452(4):3650--3665, 2015.
+
+\bibitem{Padmanabhan:2005es}
+Nikhil Padmanabhan and Douglas~P. Finkbeiner.
+\newblock {Detecting dark matter annihilation with CMB polarization: Signatures
+  and experimental prospects}.
+\newblock {\em Phys. Rev.}, D72:023508, 2005.
 
 \bibitem{page07}
 L.~{Page}, G.~{Hinshaw}, E.~{Komatsu}, M.~R. {Nolta}, D.~N. {Spergel}, C.~L.
@@ -1590,6 +1752,11 @@ Tom Rudelius.
 \newblock {On the Possibility of Large Axion Moduli Spaces}.
 \newblock {\em JCAP}, 1504(04):049, 2015.
 
+\bibitem{Salopek:1988qh}
+D.S. Salopek, J.R. Bond, and James~M. Bardeen.
+\newblock {Designing Density Fluctuation Spectra in Inflation}.
+\newblock {\em Phys.Rev.}, D40:1753, 1989.
+
 \bibitem{Sarangi:2002yt}
 Saswat Sarangi and S.~H.~Henry Tye.
 \newblock {Cosmic string production towards the end of brane inflation}.
@@ -1646,10 +1813,26 @@ Paolo Serra, Federico Zalamea, Asantha Cooray, Gianpiero Mangano, and
   microwave background and large scale structure data}.
 \newblock {\em Phys. Rev. D}, 81:043507, 2010.
 
+\bibitem{sherwin15}
+B.~D. {Sherwin} and M.~{Schmittfull}.
+\newblock {Delensing the CMB with the cosmic infrared background}.
+\newblock {\em \prd}, 92(4):043005, August 2015.
+
 \bibitem{Silverstein:2008sg}
 Eva Silverstein and Alexander Westphal.
 \newblock {Monodromy in the CMB: Gravity Waves and String Inflation}.
 \newblock {\em Phys.Rev.}, D78:106003, 2008.
+
+\bibitem{simard15}
+G.~{Simard}, D.~{Hanson}, and G.~{Holder}.
+\newblock {Prospects for Delensing the Cosmic Microwave Background for Studying
+  Inflation}.
+\newblock {\em \apj}, 807:166, July 2015.
+
+\bibitem{smith06}
+K.~M. {Smith}.
+\newblock {Pseudo-$C_\ell$ estimators which do not mix E and B modes}.
+\newblock {\em \prd}, 74(8):083002--+, October 2006.
 
 \bibitem{smith10}
 K.~M. {Smith}, D.~{Hanson}, M.~{LoVerde}, C.~M. {Hirata}, and O.~{Zahn}.
@@ -1811,6 +1994,18 @@ Ryan~J. Wilkinson, Julien Lesgourgues, and Celine Boehm.
 \newblock {Using the CMB angular power spectrum to study Dark Matter-photon
   interactions}.
 \newblock {\em jcap}, 1404:026, 2014.
+
+\bibitem{wright96}
+E.~L. {Wright}.
+\newblock {Scanning and Mapping Strategies for CMB Experiments}.
+\newblock {\em ArXiv Astrophysics e-prints}, November 1996.
+
+\bibitem{Wu:2014hta}
+W.~L.~K. Wu, J.~Errard, C.~Dvorkin, C.~L. Kuo, A.~T. Lee, P.~McDonald,
+  A.~Slosar, and O.~Zahn.
+\newblock {A Guide to Designing Future Ground-based Cosmic Microwave Background
+  Experiments}.
+\newblock {\em Astrophys. J.}, 788:138, 2014.
 
 \bibitem{Wyman:2013lza}
 Mark Wyman, Douglas~H. Rudd, R.~Ali Vanderveld, and Wayne Hu.
