@@ -34,7 +34,13 @@ With sufficient angular resolution, CMB-S4 opens tremendous possibilities for me
 	The estimation is made assuming foreground subtraction to reach the quoted CMB map noise level at the given angular resolution.  The method (Melin \& Bartlett 2015) employs an optimal filter matched to the NFW profile and applied to reconstructions of the lensing potential with a quadratic estimator (Hu \& Okamoto 2002).  The method has already been successfully applied to the Planck cluster cosmology sample of more than 400 objects (Planck Collaboration XXIV 2015).  This figure shows the sensitivity obtained with just CMB temperature lensing reconstruction.  Including polarization will significantly improve it.  
 	We see that the mass sensitivity remains flat with redshift, a remarkable property that enables mass estimation out to redshifts unreachable with galaxy shear measurements.  This is a powerful and unique capability of CMB lensing.  The figure also demonstrates the important gains attained with high angular resolution.  At one arcmin resolution, S4 achieves a mass sensitivity of 2e13 solar masses with temperature alone.  This unprecedented sensitivity not only ensures robust mass estimation for cluster cosmology over the large redshift interval where S4 will detect clusters through the SZ effect, but also paves the way to numerous cluster and large-scale structure studies.  The rapidly increasing science reach enabled by high angular resolution, approaching one arcmin, is an important consideration in S4 objectives.  
 
-
+\begin{figure}[t!]
+\begin{center}
+\includegraphics[width=0.65\textwidth]{DarkEnergy/m500lim_vs_z_1sigma_cmbs4_v1.pdf}
+\caption{Cluster mass sensitivity of CMB lensing.}
+\label{fig:limits}
+\end{center}
+\end{figure} 
 
 \subsection{Lensing}
 
@@ -50,13 +56,52 @@ omit?
 
 \section{Forecasts}
 
-\subsection{Parameterized Dark Energy}
-
 Paragraphs from Marco on EFT parameters.   Probably need to forecast some DETF FoM.  Do we forecast slip, growth rate or any other phenomenological parameter?
 
+\subsection{Parameterized Dark Energy}
+
+
+
+
+CMB-S4 will open new windows on the dark sector of our universe. By combining its power as a geometrical probe with high quality measurements of inhomogeneities CMB-S4 will allow us to study the origin of cosmic acceleration and the nature of the gravitational interaction. In this section, we shall briefly review the frameworks that have been proposed over the past years to perform parametric tests of Dark Energy and Gravity models. Such approaches represent the only viable option to explore the space of models beyond the fiducial one, in the absence of theoretically compelling alternatives. Different parametrizations place constraints on classes of models, rather than specific ones, allowing to phrase the knowledge gained through experiments in a model independent way. \\
+Several parametrizations have been proposed in the literature and they can be separated into three families: ``trigger'' parametrizations, equation of motion parametrizations and theory parametrizations. The first ones are directly derived from observations and are designed to detect a breakdown of the standard model. They are usually simple and very close to observations. As a drawback their consistency with GR does not rule out alternatives and the value of the ``trigger'' parameters does not necessarily have a physical meaning.
+%
+\begin{itemize}
+\item Description of the growth index (first forecast possible on a month timescale);
+\item $E_{G}$ (no forecast here on a short time scale);
+\item Discuss the observational status of these parametrizations;
+\item Discuss critical/natural threshold;
+\end{itemize}
+%
+The second way of parametrizing deviations from the fiducial scenario consists in modifying its equations of motion. The resulting parametrizations are general and sensitive to phenomenological signatures for which we might not have an appropriate theoretical description. For these reason they are very convenient to extract information about Dark Energy and Gravity from data but the lack of a strong contact with theories makes these information hard to interpret. Several of these frameworks have been developed over the years to describe, in a general way, the behavior of the cosmological background and the growth of perturbations.
+%
+\begin{itemize}
+\item Details and definitions of background parametrizations ($w_{DE}$) (w0wa DETF FoM, first forecast possible in 1 or 2 weeks timescale);
+\item Details and definitions of scalar perturbation parametrizations ($\mu$, $\gamma$, $\Sigma$, PPF, ...?) (first forecast on some of these on a month timescale); 
+\item Details and definitions of tensor perturbation parametrizations ($c_T$) (first forecast possible in 1 or 2 weeks timescale);
+\item Discuss the observational status of these parametrizations;
+\item Discuss critical/natural threshold;
+\end{itemize}
+%
+The last way of performing parametric studies of deviations from the fiducial model consists in directly parametrizing theories beyond it. This approach maintains a strong connection with the underlying theory simplifying the theoretical interpretation of data. This framework can be developed through an ‘effective’ approach, inspired by the effective field theory for inflation~\cite{Creminelli:2006xe,Cheung:2007st,Weinberg:2008hq,Creminelli:2008wc,Park:2010cw,Jimenez:2011nn} to describe the cosmological phenomenology of all universally coupled single scalar field Dark Energy and Gravity models. Specifically, the effective field theory (EFT) of cosmic acceleration~\cite{Gubitosi:2012hu,Bloomfield:2012ff} describes the space of these models with an action written in a unitary gauge that preserves isotropy and homogeneity of the cosmological background and reads:
+%
+\begin{eqnarray} \label{Eq:EFTaction}
+\mathcal{S}_{\rm EFT} = \int d^4x \sqrt{-g}&& \bigg\{ \frac{m_0^2}{2} \left[1+\Omega(\tau)\right] R + \Lambda(\tau) - c(\tau)\,a^2\delta g^{00} + \frac{M_2^4 (\tau)}{2} \left( a^2\delta g^{00} \right)^2 \nonumber \\ 
+&&   - \frac{\bar{M}_1^3 (\tau)}{2} \, a^2\delta g^{00}\,\delta K{^\mu_{\,\,\mu}}  - \frac{\bar{M}_2^2 (\tau)}{2} \left( \delta {K}{^\mu_{\,\,\mu}}\right)^2   - \frac{\bar{M}_3^2 (\tau)}{2} \,\delta {K}{^\mu_{\,\,\nu}}\,\delta {K}{^\nu_{\,\,\mu}} \nonumber \\
+&& + m_2^2(\tau)\left(g^{\mu\nu}+n^{\mu} n^{\nu}\right)\partial_{\mu}(a^2g^{00})\partial_{\nu}(a^2g^{00}) +\frac{\hat{M}^2(\tau)}{2} \, a^2 \delta g^{00}\,\delta \mathcal{R}+	\ldots \bigg\}  \nonumber \\
+&& + S_{m} [g_{\mu \nu}, \chi_m ]
+\end{eqnarray}
+%
+where $R$ is the four-dimensional Ricci scalar, $\delta g^{00}$, $\delta K{^\mu_{\,\,\nu}}$, $\delta K{^\mu_{\,\,\mu}}$ and  $\delta \mathcal{R}$ are, respectively, the perturbations of the upper time-time component of the metric, the extrinsic curvature and its trace and the three dimensional spatial Ricci scalar of constant-time hypersurfaces. Finally,  $S_m$ denotes the action for all the matter fields conventionally considered in cosmology. In the action (\ref{Eq:EFTaction}), the  extra scalar degree of freedom is hidden inside metric perturbations. To study the dynamics of linear perturbations, however, it is convenient to make it explicit by means of  the St\"{u}ckelberg technique i.e. performing an infinitesimal coordinate transformation such that $\tau\rightarrow \tau+\pi$, where the field $\pi$ describes the extra propagating degree of freedom. This approach allows us to maintain a direct link to the underlying theory so that we can keep under control its theoretical viability while exploring the cosmological implications of any of the models included in this language~\cite{Raveri:2014cka}. Since the choice of the unitary gauge breaks time diffeomorphism invariance, each operator allowed by the residual symmetry, in action (\ref{Eq:EFTaction}), can be multiplied by a time-dependent coefficient that we shall call EFT function. To fully specify the phenomenology of linear perturbations only a restricted set of EFT functions are needed. These can be either parametrized to explore agnostically the space of Dark Energy and Gravity models~\cite{Gleyzes:2013ooa,Bloomfield:2013efa,Piazza:2013coa,Gleyzes:2014rba} or can be fixed to reproduce exactly the phenomenology of some model of interest such as $f(R)$ gravity, quintessence and, more generally, the Horndeski class of theories and beyond~\cite{Gleyzes:2014dya,Frusciante:2015maa,Frusciante:2016xoj}.
+%
 \subsection{Forecasts}
 
-Set up fisher forecast methodology for completion with results 
+\begin{itemize}
+\item First forecast possible in 1 or 2 weeks timescale on all models in EFTCAMB;
+\item Discuss the observational status of these parametrizations;
+\item Discuss critical/natural threshold;
+\end{itemize}
+%
 
 
 
