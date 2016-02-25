@@ -1,9 +1,103 @@
 \section{Statistics and Parameters}
 
-Some of the avenues in the analysis that need to be re-addressed for an experiment such as CMB-Stage IV are the covariance between different observables (i.e., the lensed CMB power spectrum and the reconstructed lensing potential power spectrum), the separation of the gravitational lensing signal and the primordial B-mode signal, lowering the effective lensing background (these statistical algorithms are known as ``delensing"), the impact of delensing on cosmological parameters, etc.
-These are discussed in detail in the subsections below.
+In this section, we discuss the process of going from sky maps at different frequencies---or, in light
+of the previous section, foreground-cleaned CMB maps and an estimate of foreground residuals---to
+post-map products such as angular power spectra, estimates of lensing potential $\phi$, and finally
+cosmological parameters, as well as covariance estimates for all of these quantities. We briefly describe
+the current practice for this process, then we address specific challenges anticipated in the \cmbexp\ era.
+%
+%
+%? Current practice for going from frequency maps, or cleaned CMB maps, plus noise description, to lensing power spectra and (lensed) TT, TE, EE, BB power spectra, and parameters
+%
+%	? CMB power spectra
+%		How is map noise treated?
+%		How is foreground-related uncertainty treated?
+%			? galactic  (include BKP description of BKP work)
+%			? extragalactic
+%
+%	? Lensing power spectra
+%
+%? Challenges to reducing CMB-S4 data to cosmological parameter estimates
+%
+%	? Foreground-cleaning will be very important for r
+%	? Delensing will be important for studying the tensor signal, or setting tightest possible upper limit
+%	? Quadratic estimator will be highly suboptimal at S4 noise levels
+%	? Lensed power spectra and reconstructed lensing power will have lensing potential sample variance as source of correlated uncertainty
+%
+%? Paths toward meeting these challenges
+%
 
-\subsection{CMB lensing covariances for CMB S4}
+
+\subsection{Current practice}
+\label{se:current}
+Early measurements of CMB temperature anisotropy, with comparatively few map pixels or angular modes
+measured, often used maximum-likelihood methods to produce maps of the sky (e.g., \cite{wright96}) and
+either a direct evaluation of the full likelihood or a quadratic approximation to that likelihood to go from 
+maps to angular power spectra (e.g., \cite{bond98a}). With the advent of the WMAP and Planck space 
+missions, which would map the entire sky at sub-degree resolution, it became apparent that computing
+resources could not compete with the $\mathcal{O}(N^3)$ scaling of the full-likelihood approach 
+(e.g., \cite{borrill99}). The solution for power spectrum analysis
+that has been adopted by most current CMB experiments is a
+Monte-Carlo-based approach advocated in \cite{hivon02}. In this approach, a biased estimate of
+the angular power spectrum of the data is obtained by simply binning and averaging the square 
+of the spherical harmonic transform of the sky map. That estimate (known as the 
+``pseudo-$C_\ell$ spectrum'') is related to the unbiased 
+estimate that would be obtained in a maximum-likelihood procedure through the combined effect
+of noise bias, sky windowing, and any filtering applied to the data before or after mapmaking
+(including the effects of instrument beam and pixelization). These effects are estimated by ``observing''
+and analyzing simulated data and constructing a matrix describing their net influence on simulated data is 
+computed and inverted. This inverse matrix is applied to the pseudo-$C_\ell$s to produce the 
+final data product. It is expected that some version of this Monte-Carlo treatment will also be 
+adopted for \cmbexp.
+
+Pseudo-$C_\ell$ methods are also now commonly used in analysis of CMB polarization anisotropy
+\cite{planck15-11,naess14,crites15}. An added complication in polarization analyses is that 
+pseudo-$C_\ell$ methods do not cleanly separate $E$ and $B$ modes (e.g., \cite{challinor05}).
+``Pure'' $B$-mode estimators can be constructed that suppress the spurious $B$-mode contribution
+from estimating $E$ and $B$ on a cut sky with pseudo-$C_\ell$ methods \cite{smith06}), but 
+other analysis steps (such as particular choices of filtering) can produce spurious $B$ modes that
+are immune to the pure estimators \cite{keisler15}. These can also be dealt with using Monte-Carlo
+methods, either by estimating the statistical bias to the final $B$-mode spectrum or by constructing
+a matrix representing the effect of any analysis steps on the true sky \cite{BICEP2014}. The latter
+approach involves constructing an $N_\mathrm{pixel}$-by-$N_\mathrm{pixel}$ matrix, equal in size to the 
+full pixel-pixel covariance, and will not be feasible for high-resolution \cmbexp\ data but could be 
+used in analyzing lower-resolution data.
+
+In addition to the two-point function of CMB maps, higher-order statistics of the maps have recently 
+been of great interest to the community. In particular, the four-point function encodes the effect of 
+gravitational lensing, and estimators can be constructed to go from CMB temperature and polarzation
+maps to estimates of CMB lensing $\phi$ and the associated covariance (e.g., \cite{hu02a,okamoto03}).
+These quadratic estimators are the first step in an iterative estimation of the true likelihood, and in
+the weak-lensing limit they are nearly optimal; as a result, they remain the state of the art for estimating
+the large-scale $\phi$ from CMB lensing (e.g., \cite{planck13-18}). The computational burden involved
+in this step of the analysis is unlikely to be significantly greater for \cmbexp\ than for Planck.
+
+The final step in the analysis of a CMB data set is the estimation of cosmological parameters from
+the various post-map statistics discussed above. This involves estimating the likelihood of the data
+given a model parameterized by the standard six $\Lambda$CDM parameters, possible extensions
+of the cosmological model, and any nuisance parameters involving the instrument, foregrounds, and
+other sources of systematic uncertainty. The current industry standard for this part of the analysis are
+Monte-Carlo Markov-Chain (MCMC) methods, in particular the implementation in CosmoMC
+\cite{lewis02b}.
+
+\subsection{Challenges}
+\label{se:challenges}
+Some of the avenues in the analysis that need to be re-addressed for an experiment such as \cmbexp\ are: 
+\begin{itemize}
+\item{The impact of uncertainties in foreground modeling on cosmological parameters, particularly the tensor-to-scalar ratio $r$.}
+\item{The covariance between different observables (i.e., the lensed CMB power spectrum and the reconstructed lensing potential power spectrum)}
+\item{The separation of the gravitational lensing signal and the primordial $B$-mode signal, lowering the effective lensing background (these statistical algorithms are known as ``delensing"), the impact of delensing on cosmological parameters.} 
+\end{itemize}
+We treat each of these challenges individually in the sections below.
+
+\subsubsection{Foreground-related uncertainty on cosmological parameters}
+\label{se:paramforeg}
+
+ do frequency-map cross-spectra and fit for foregrounds or do component separation and 
+ parameterize foreground residuals. either way, what parameterization? refer to comp sep
+ and sky modeling sections.
+
+\subsubsection{CMB lensing covariances for CMB S4}
 \label{se:covs}
 
 The measured lensing power spectrum is given by a 4-point function of the lensed CMB.  This is not statistically independent from the lensed CMB 2-point function, because both depend on the same observed, lensed CMB maps.  As a consequence, measured lensing power spectra and lensed CMB power spectra may be correlated.  This correlation should be taken into account when combining these measurements to avoid spurious double counting of information.  For the specific case of Planck is negligible  \cite{marcel1308}.  However, the level of correlation depends on experiment specifications and the multipole range where power spectra have high signal-to-noise.  The correlation should thus be included in analyses that combine 2- and 4-point measurements unless it is known to be negligible for a specific experiment. 
@@ -91,15 +185,15 @@ or by applying more advanced delensing methods.  However this has not yet been t
  
 On top of the cross-covariance between 2-point CMB power spectra and 4-point lensing power spectra, both power spectra can also have non-trivial auto-covariances.  Covariances between CMB power spectra have been computed in \cite{2006PhRvD..74l3002S,2007PhRvD..75h3501L,BenoitSmithHu1205}. They contain similar building blocks as the covariances above \cite{BenoitSmithHu1205}.  Covariances between two 4-point lensing power spectra involve the lensed CMB 8-point function.  While many covariance contributions are cancelled when using realization-dependent $\hat N^{(0)}$ subtraction \cite{duncan1008}, other contributions may be relevant for future experiments.  Finally, the discussion above applies to the standard quadratic lensing reconstruction estimators and may change for maximum-likelihood lensing estimators \cite{HirataSeljak0209489}.
 
-\subsection{Delensing}
+\subsubsection{Delensing}
 For noise levels below $\Delta_P \simeq 5 \mu$K-arcmin,  the dominant source of effective noise in $B$-mode maps is the fluctuation induced by the lensing of $E$-modes from recombination.  This signal has a well-understood amplitude, and unlike other sources of astrophysical fluctuation in the map, it cannot be removed with multifrequency data.  Instead it must be removed using map-level estimates of both the primordial $E$-mode maps and the CMB lensing potential $\phi$.  
 
-As discussed in the dedicated CMB lensing chapter, delensing will be a crucial portion of the reconstruction of the CMB lensing field.  This is because at low noise levels a quadratic reconstruction of lensing using the $EB$ estimator \cite{Hu:2001k} can be improved upon by cleaning the CMB maps of the lens-induced $B$-mode fluctuations, and then performing lens reconstruction again.  In effect, the quadratic estimate of \cite{Hu:2001k} is effectively the first step in an iterative scheme to find the maximum-likelihood solution for the lensing and primordial fields \cite{HirataSeljak0209489}.  CMB maps cleaned of the lensing signals will thus likely be produced as part of the CMB lensing analysis procedure.
+As discussed in the dedicated CMB lensing chapter, delensing will be a crucial portion of the reconstruction of the CMB lensing field.  This is because at low noise levels a quadratic reconstruction of lensing using the $EB$ estimator \cite{Hu:2001kj} can be improved upon by cleaning the CMB maps of the lens-induced $B$-mode fluctuations, and then performing lens reconstruction again.  In effect, the quadratic estimate of \cite{Hu:2001kj} is effectively the first step in an iterative scheme to find the maximum-likelihood solution for the lensing and primordial fields \cite{HirataSeljak0209489}.  CMB maps cleaned of the lensing signals will thus likely be produced as part of the CMB lensing analysis procedure.
 
-The finite noise in the CMB-Stage IV survey will lead to residual lensing $B$-modes which cannot be removed and will act as a noise floor for studying B modes from tensors.  The amplitude of these residual lensed $B$-modes are discussed in the dedicated lensing chapter as a function of the angular resolution and the noise level of the S4 survey; in particular, it is crucial to have high-angular resolution maps in order to measure the small-scale $E$- and $B$-modes fluctuations needed for the $EB$ quadratic lensing estimator.
+The finite noise in the CMB-Stage IV survey will lead to residual lensing $B$-modes which cannot be removed and will act as a noise floor for studying $B$ modes from tensors.  The amplitude of these residual lensed $B$-modes are discussed in the dedicated lensing chapter as a function of the angular resolution and the noise level of the S4 survey; in particular, it is crucial to have high-angular resolution maps in order to measure the small-scale $E$- and $B$-modes fluctuations needed for the $EB$ quadratic lensing estimator.
 
 The concerns with the delensing procedure are similar to those for measuring the lensing power spectrum. The impact of polarized dust and synchrotron emission from the Galaxy, and the impact of polarized point sources on small scales on the lensing reconstruction are addressed in chapter IV. Left untreated the effects may be large; however the use of  multi-frequency data together with the application of dedicated point-source estimators can mitigate these effects.
 
-Additionally, rather than using an estimate of the CMB lensing field obtained from the CMB itself, it is also possible to use other tracers of large-scale structure which are correlated with  CMB lensing \cite{smith10}.  In particular the dusty, star-forming galaxies that comprise the cosmic infrared background (CIB) are strongly correlated with CMB lensing, due to their redshift distribution which peaks near $z \sim 2$ \cite{sherwin14,simard14}.  The level of correlation is approximately $80\%$ \cite{planck13-18} and can in principle be improved using multifrequency maps of the CIB which select different emission redshifts \cite{sherwin14}.  
+Additionally, rather than using an estimate of the CMB lensing field obtained from the CMB itself, it is also possible to use other tracers of large-scale structure which are correlated with  CMB lensing \cite{smith10}.  In particular the dusty, star-forming galaxies that comprise the cosmic infrared background (CIB) are strongly correlated with CMB lensing, due to their redshift distribution which peaks near $z \sim 2$ \cite{sherwin15,simard15}.  The level of correlation is approximately $80\%$ \cite{planck13-18} and can in principle be improved using multifrequency maps of the CIB which select different emission redshifts \cite{sherwin15}.  
 
 \comment{Add impact of delensing on Neff.}
