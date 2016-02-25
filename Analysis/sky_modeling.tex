@@ -1,20 +1,91 @@
 %%%%%% CMB-S4 Simulations and Data Analysis Chapter, Sky Modeling Section  %%%%%%%%%%%%%%%%
 
+%\section{Sky Modeling}
+%
+%Key challenges: 
+%\begin{itemize} 
+%\item reliability of models based on noisy, bandpassed, beam-convolved observations, including Planck
+%\item self-consistency of CMB secondaries and extra-Galactic foregrounds
+%\item usability/software engineering
+%\end{itemize} 
+%
+%%%%%% CMB-S4 Simulations and Data Analysis Chapter, Sky Modeling Section  %%%%%%%%%%%%%%%%
+
 \section{Sky Modeling}
 
-Key challenges: 
-\begin{itemize} 
-\item reliability of models based on noisy, bandpassed, beam-convolved observations, including Planck
-\item self-consistency of CMB secondaries and extra-Galactic foregrounds
-\item usability/software engineering
-\end{itemize} 
+The capability of CMB-S4 to address its science program crucially depends on the possibility to separate the signals of interest from astrophysical emission originating from various astrophysical processes, and on the accuracy of the characterization of foreground residuals after such cleaning is performed. 
+
+The polarised CMB is mostly contaminated by diffuse emission from the interstellar medium of our own Milky Way. Both synchrotron and thermal dust are highly polarised (at the level of tens of per cents, depending on the observed region). Their integrated emission dominates over both the CMB E-modes and the CMB B-modes on large angular scales, and cannot be safely neglected at scales where B-modes from gravitational lensing dominate without robust analyses of their impact on lensing science. Other components, such as spinning dust, free-free emission, emission of molecular lines such as CO, could in principle be polarized at a lower level, of order 1-2 per cent or less, but measurements or upper limits are scarce, and not sufficient at this stage for robust predictions of the polarized amplitude of their emission over large patches of sky. For low angular resolution observations, the presence of polarized extragalactic radio and infrared sources constitutes an additional source of contamination, which must be removed with a combination of masking or subtracting individual sources, and modeling residuals at the power-spectrum level.
+
+Massive clusters are easily detected in atmospheric windows below 217 GHz (and in particular around 150 GHz) as decrements in high angular resolution maps of total sky emission fluctuations. The detection of low-mass, distant galaxy clusters, however, will suffer from confusion with fluctuations of the CIB emission (which can be locally positive or negative), and from contamination by radio and infrared sources in the cluster halos. Accurate determination of the clusters profiles, of their integrated Compton parameter $Y$ that serves as a mass-proxy for cosmological constraints, and of cluster peculiar velocities along the line of sight via the kinematic SZ effect, will require sufficient frequency coverage at high angular resolution (of order 1-2$^\prime$) to separate the various SZ components (thermal SZ, relativistic corrections, and kinematic SZ) as well as sources of astrophysical confusion. In particular, it is plausible that high angular resolution observations of the positive side of the SZ effect (at frequencies above 217 GHz) will be required to fully exploit the sensitivity of CMB-S4 for galaxy cluster science.
+
+More precise estimations of the impact of foreground emission on these main science targets of CMB-S4 hence require realistic simulations of the sky emission, that can be used to investigate the effectiveness of component separation techniques and assess the impact of residual contamination from foregrounds on the main scientific products (degradation of the error bars and possible biases). The place of such modelling in the CMB simulation and data analysis pipeline is shown in Figure~\ref{fig:skymodel-in-pipeline}.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=1\textwidth]{Analysis/sm}
 \caption{The sky modeling subset of the CMB simulation and data analysis pipeline}
-\label{default}
+\label{fig:skymodel-in-pipeline}
 \end{figure}
+
+A sky model is useful only as far as it captures adequately the characteristics of real sky emission that play an essential role in the performance of cleaning techniques and on the amplitude and statistical properties of residual contamination after such cleaning is performed. The key characteristics of sky emission for foreground cleaning are:
+\begin{itemize}
+\item The coherence and decoherence of diffuse emission across observed frequencies, which is key to identifying foreground emission in the form of patterns that scale with an emission law different from that of the CMB;
+\item The existence or not of a simple parametric emission law for each component emission, such as power laws (for synchrotron) or modified blackbody emission (for dust components);
+\item The absolute level of foreground emission (in particular for those components that do not scale simply as a function of frequency, such as the superposition of many individual sources with a specific emission law each);
+\item Whether or not emissions for which the level of polarization is unknown or unclear (including possible surprises) are above the sensitivity objectives of CMB-S4, or can be safely neglected;
+\item The self-consistency of extragalactic emission (in particular CIB and SZ clusters) and CMB lensing. In particular, CIB as observed by Planck and by future instruments can be used to generate a proxy for the lensing potential, which can be used to partially de-lens the CMB B-modes.
+\end{itemize} 
+
+
+The key challenges for a usable sky model are hence:
+\begin{itemize} 
+\item The reliability of models based on observations at angular resolution lower than that of CMB-S4, integrated in broad frequency bands, and with a sensitivity limit at least an order of magnitude worse than what will be achieved with CMB-S4; the complexity of sky emission below current sensitivity limits must be extrapolated on the basis of existing knowledge and theoretical models, taking into account past experience when orders of magnitude in sensitivity were gained;
+\item The self-consistency of CMB secondary anisotropies (lensing, SZ emission from hot intra-cluster gaz and filaments, late ISW) and extra-Galactic foregrounds (CIB, radio and infrared sources) is crucial to both de-lensing, and to extragalactic science; generating reliable models over the entire Hubble volume is challenging, the evaluation of errors of such models even more so;
+\item The practical usability of the model (software engineering aspects for generating many simulations).
+\end{itemize} 
+
+
+\subsection{The sky modeling pipeline}
+
+The emission of the sky will be modeled as the sum of emission of different components, identified either by their emission process (e.g. Galactic synchrotron, due to electrons spiralling in the Galactic magnetic field), or by their region of origin (e.g. emission of a particular extragalactic source). These emissions, as a function of sky pixel and frequency, must then be band-integrated and beam-integrated to produce total emission maps as observed by the instrument. We decompose this simulation pipeline into two main steps: the multicomponent model of sky emission, which does not depend on the instrument, and the integration of this emission in the instrumental response.
+
+\subsubsection{The multi-component sky model}
+
+\subsubsection{Sky emission observations}
+
+\subsection{The Galactic interstellar medium}
+
+Strong evidence exists for variability of the physical properties of the interstellar medium as a function of the line of sight, and hence as a function of region of emission. Hence, in each line of sight  the total ISM emission is the superposition of emission from various regions. Even assuming that each such region has a simple parameteric emission law, such as a power law or a modified blackbody, the superposition of such emission cannot be modeled with a single simple emission law. Modeling the Galactic ISM for future sensitive surveys such as CMB-S4 requires  modeling  this complexity at the appropriate level. It seems reasonable to use a multi-layer approach, in which each ISM component is modeled as a superposition of several layers, with a simple (although pixel-dependent and polarization dependent) emission law for each such layer.
+
+\subsubsection{Synchrotron}
+
+A baseline model we use here has a power law scaling with a modestly spatially varying spectral index.  The emission templates are the Haslam 408 MHz data reprocessed by \cite{remazeilles/etal:2015}, 
+%MNRAS 451, 4311,
+and the WMAP 7-year 23 GHz Q/U maps \cite{jarosik/etal:2011}
+% ApJS, 192, 14J) 
+smoothed to 3 degree FWHM and with smaller scales added using the PSM code \cite{delabrouille/etal:2013}
+% et al. A&A 553, A96, 2013). 
+The spectral index map is derived using a combination of the Haslam 
+408 MHz data and WMAP 23 GHz 7-year data \cite{miville-Deschenes/etal:2008}
+% M.-A. et al., 2008, A&A, 490, 1093). 
+The same scaling is used for intensity and polarization.  This is the same prescription as used in the Planck Sky Model's v1.7.8 `power law' option, but with the Haslam map updated to the Remazeilles version. 
+
+Extensions to this model that we are exploring include a curved power 
+law model with a single isotropic curvature index, and a polarization spectral index that steepens with Galactic latitude by $\delta \beta \sim 0.2$ from low to high latitude, as this is currently consistent with WMAP and Planck data. 
+
+\subsubsection{Thermal dust}
+A baseline model we consider has thermal dust modelled as a single component modified  blackbody. We use dust templates for emission at 545 GHz in intensity and 
+ 353 GHz in polarisation from the Planck-2015 analysis, and scale these to different  frequencies with a modified black-body spectrum using the spatially varying dust temperature and emissivity obtained from the Planck data using the Commander code (Planck Collaboration  2015, arXiv:1502.01588). This therefore assumes the same spectral index for  polarization as for intensity.  These templates are smoothed to degree scale.
+
+Variations on this model that appear consistent with current data are a more strongly varying emissivity, e.g. up to $\sigma \sim 0.2$ dispersion on degree scales,  in addition to different prescriptions for small-scale behaviour that account for turbulence in the magnetic field. A two (or more) component model for the dust, composed of the spatially varying sum of silicon and carbonaceous dust, each with a different emissivity, is also physically motivated.
+
+\subsubsection{Spinning dust}
+In polarization the spinning dust, or anomalous microwave emission, is nominally unpolarized, but a fractional polarization of a few percent is physically possible and not excluded by current data. We construct a possible polarized model for this using the intensity templates for spinning dust from the Planck-2015 Commander fits, combined with the thermal dust polarization angles and an overall polarization fraction.
+
+\subsubsection{Free-free}
+
+\subsubsection{Atomic and molecular lines}
 
 \subsection{CMB Secondary Anisotropies and Extragalactic Sources}
 
@@ -28,10 +99,19 @@ The key challenges for the extragalactic sky models of CMB-S4 are to provide fas
 
 Hydrodynamical simulations of cosmological volumes are currently available which we can already used to model extragalactic foregrounds. These simulations will be used for the development and testing phases of the simulation pipeline. However, they are limited in their size, sub-grid modeling accuracy, thus will not meet our accuracy requirements of CMB-S4. We will develop new full hydrodynamical simulations of cosmological volumes that include a variety of physical processes. An essential requirement of these simulations will be to capture growth and evolution of galaxies to clusters size halos throughout cosmic time at a sufficient spacial resolution. Hydrodynamic simulations of this size and scale are already computationally feasible, the challenges will be the appropriate modeling of radiative cooling, star formation, and feedback processes in order to capture the global stellar and gas contents of these halos.
 
-There are many different approaches already developed to provide us with the underlying large-scale structure simulations that will we build our extragalactic model upon. They vary in speed which tend to inversely scale with accuracy. A benefit of our modular and flexible approach is that we do not need to limit ourselves to one approach. {\bf MORE}
+There are many different approaches already developed to provide us with the underlying large-scale structure simulations that will we build our extragalactic model upon. They vary in speed which tend to inversely scale with accuracy. A benefit of our modular and flexible approach is that we do not need to limit ourselves to one approach. In fact we will compare the various approaches to see how they bias our answers. It is in these simulations where we will vary cosmological parameters assuming that they only affect the growth of structure and not the {\it gastrophysical} properties of extragalactic foregrounds.
 
-Our final product will be all sky maps. They will be in HEALPIX format to seamlessly interface with galactic and CMB simulated maps.
-{\bf MORE}
+Our final product will be all sky maps. They will be in HEALPIX format (or some other format) to seamlessly interface with galactic and CMB simulated maps. The map products will include:
+
+\begin{itemize}
+\item Optical galaxies that correspond to the various overlapping surveys including LSST.
+\item Radio and dusty star-forming galaxy point sources.
+\item Unresolved CIB.
+\item Projected density maps (both total and gas) of the large-scale structure.
+\item Thermal and kinetic SZ maps.
+\end{itemize}
+
+\noindent We will explore the parameter space for each of the maps listed above and provide a sufficient number of realization that we will marginalize over the many model uncertainties. For example, the lensing field can be constructed through a proper ray-tracing method from the projected density maps or via the born approximation. Our self-consistent extragalactic sky model allows us to test various sources of contamination and systematic biases in our estimators. Additionally, any cross-correlation analyses can easily be checked and evaluated using these maps. {\bf All the simulation products we create will become public.}
 
 %\bibliography{cmbs4}
 

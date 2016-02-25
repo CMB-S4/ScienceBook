@@ -31,7 +31,15 @@
 
 \input workshopsymbols.tex      %   standard macros for common HEP terms
 \newcommand{\cmbexp}{{CMB-S4}}
-
+%    
+% Abbreviations for ADS bibtex entries
+%
+\newcommand\mnras{{\it Mon. Not. Roy. Astron. Soc.}}
+\newcommand\apj{{\it Ap.\ J.\ }}
+\newcommand\apjs{{\it Ap.\ J.\ Suppl.\ }}
+\newcommand\jcap{{\it JCAP }}
+\newcommand\prd{{\it Phys.\ Rev.\ }{\bf D}\ }
+\newcommand\aap{{\it A \& A\ }}
 
 \setlength{\headheight}{14pt}
 
@@ -40,13 +48,34 @@
 
 % macros
 \newcommand{\neff}{\ensuremath{N_\mathrm{eff}}}
+\newcommand{\comment}[1]{{\color{blue}{Comment: #1}}}
+\newcommand{\XX}{\mathit{XX}}
+\newcommand{\TT}{\mathit{TT}}
+\newcommand{\TE}{\mathit{TE}}
+\newcommand{\EB}{\mathit{EB}}
+\newcommand{\EE}{\mathit{EE}}
+\newcommand{\BB}{\mathit{BB}}
+\newcommand{\TTilde}[2]{\mathit{\tilde #1\!\tilde #2}}
+\newcommand{\ttilde}[2]{\mathit{\tilde #1\tilde #2}}
+\newcommand{\tWX}{\TTilde{W}{X}}
+\newcommand{\tST}{\TTilde{S}{T}}
+\newcommand{\tYZ}{\TTilde{Y}{Z}}
+\newcommand{\tWW}{\TTilde{W}{W}}
+\newcommand{\tXX}{\TTilde{X}{X}}
+\newcommand{\tUV}{\TTilde{U}{V}}
+\newcommand{\tEE}{\TTilde{E}{E}}
+\newcommand{\tEB}{\TTilde{E}{B}}
+\newcommand{\tBB}{\TTilde{B}{B}}
+\newcommand{\expt}{\mathrm{expt}}
+\newcommand{\eq}[1]{(\ref{eq:#1})} 
+\newcommand{\eqq}[1]{Eq.~(\ref{eq:#1})} 
 
 \begin{document}
 
 \def\bibname{References}
 
-\bibliographystyle{utphys}  %%%% MODIFIED FOR CF %%%%
-%\bibliographystyle{plain}
+%\bibliographystyle{utphys}  %%%% MODIFIED FOR CF %%%%
+\bibliographystyle{plain}
 
 \raggedbottom
 
@@ -92,6 +121,7 @@
 \input Instrumentation/instrumentation_cmbs4.tex 
 \input Analysis/analysis_cmbs4.tex 
 
+\bibliography{cmbs4}
 
 %\input conclusions_cmbs4.tex
 

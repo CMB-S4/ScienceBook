@@ -31,7 +31,7 @@ CMB-S4 can improve our understanding of neutrino physics in regimes of interest 
 \end{itemize}
 Current CMB data already provides a robust detection of the cosmic neutrino background at $>10 \sigma$.  A CMB-S4 experiment will provide an order of magnitude improvement in sensitivity that opens a new window back to the time of neutrino decoupling and beyond.
 
-Section 2 will review the motivation for studying neutrino masses with cosmological probes, and specifically with the CMB.  We will explain why cosmology is sensitive to $\sum m_\nu$ via different probes and how it is complementary to the experimental neutrino effort.  Section 3 will review the physics of $\Neff$ and its role as probe of the C$\nu$B and as sensitive tool for beyond the Standard model physics.  We will emphasize the unique impact $\Neff$ has on the CMB that makes it distinguishable from other extensions of $\Lambda$CDM.  In Section 4 we will discuss the implications for a variety of well motivated models, including sterile neutrinos and axions.   
+Section 2 will review the motivation for studying neutrino masses with cosmological probes, and specifically with the CMB.  We will explain why cosmology is sensitive to $\sum m_\nu$ via different probes and how it is complementary to the experimental neutrino effort.  Section 3 will review the physics of $\Neff$ and its role as probe of the C$\nu$B and as sensitive tool for beyond the Standard model physics.  We will emphasize the unique impact $\Neff$ has on the CMB that makes it distinguishable from other extensions of $\Lambda$CDM.  In Section 4, we will discuss the implications for a variety of well motivated models, including sterile neutrinos and axions.  In Section 5, we will discuss the relation between CMB and BBN based constraints.  
 
 \section{Neutrino Mass}
 
@@ -39,7 +39,95 @@ Section 2 will review the motivation for studying neutrino masses with cosmologi
 
 {\it Subsection to be completed by Marilena Loverde}
 
+Cosmic background neutrinos are nearly as abundant in the universe as CMB photons. In the standard cosmological model, neutrinos cease to scatter with other particles at temperatures $\sim 1 {\rm MeV}$. The relic neutrinos are relativistic at decoupling but as the universe expands and cools the neutrino momenta redshift as $p_\nu\propto 1/a$ and eventually the energy of relic neutrinos comes to be dominated by their rest mass, rather than the momentum. The energy density in nonrelativistic neutrinos therefore contributes to the matter budget of the universe today. The neutrinos, however, were relativistic for much of the history of the Universe so their gravitational clustering is qualitatively different from that of cold dark matter (CDM) particles. This difference can be used to distinguish the neutrino and cold dark matter contributions to the matter density \cite{Hu:1997mj, Lesgourgues:2006nd, Abazajian:2011dt}.  In this section, we review how neutrino mass affects the evolution of the neutrino energy density and the gravitational clustering of matter in the universe. 
+ 
+As discussed more detail in the $N_{eff}$ section, cosmic background neutrinos have been detected indirectly through their contribution to the energy density in radiation in the early universe. The current CMB constraints from $N_{eff}$ are in excellent agreement with the standard model expectation of three neutrino and anti-neutrino states each described by a relativistic thermal Fermi-Dirac distribution \cite{Ade:2015xua}. The phase space for each neutrino and anti-neutrino state is given by
+\beq
+f_\nu(p) = \frac{1}{e^{a p/(k_BT_\nu)} +1}
+\eeq
+where $T_\nu \approx 1.95K$ or $k_B T_\nu \approx 1.68 \times 10^{-4}{\rm eV}$ is the temperature today. Note that the spectral shape of the neutrino phase space distribution is preserved with the expansion of the universe so relic neutrinos will retain the relativistic Fermi-Dirac momentum distribution inherited from decoupling even if the individual neutrinos become non-relativistic. 
 
+The neutrino energy density is given by
+\beq
+\rho_\nu = \sum_i \int\frac{d^3 {\bf p}}{(2\pi \hbar)^3} \frac{\sqrt{p^2 + m_{\nu i}^2}}{e^{ap/(k_BT_\nu)} +1}
+\eeq
+where $m_{\nu i}$ are the three neutrino mass eigenstates.  For $T_\nu/a \gg m_{\nu i}$ the neutrino energies are dominated by their momenta and the total energy density behaves like radiation
+\bea
+\rho_{\nu}\Bigg|_{{\rm {\tiny early}}}  &\approx& \frac{7 \pi^2}{40}\frac{(k_B T_\nu)^4}{\hbar^3 c^3}\frac{1}{a^4}\\
+& \propto& a^{-4}\nonumber
+\eea
+While for $T_\nu/a \ll m_{\nu i}$ the energy density behaves like matter
+\bea
+\label{eq:rhonumassive}
+\rho_{\nu} \Bigg|_{{\rm {\tiny late}}}  &\approx& \sum_i m_{\nu i} \bar{n}_\nu \\
+&\propto& a^{-3}\nonumber
+\eea
+where $\bar{n}_\nu$ is the number of neutrinos and antineutrinos in each mass eigenstate
+\beq
+\bar{n}_\nu =\int\frac{d^3 {\bf p}}{(2\pi \hbar)^3} \frac{2}{e^{ap/(k_BT_\nu)} +1} \approx \frac{113}{a^3}{\rm cm}^{-3}\,.
+%&=&  \frac{6 \zeta(3)}{4\pi^2} \left(\frac{k_B T_\nu}{\hbar c}\right)^3\frac{1}{a^3}\\
+\eeq
+
+For a neutrino of mass $m_{\nu i}$ the transition between these two regimes ($T_\nu(a) \sim m_{\nu i}$) occurs at redshift $z_{nr} \sim 300 (m_{\nu i}/0.05 {\rm eV})$. Using Eq.~(\ref{eq:rhonumassive}) the fractional energy density in neutrinos today can be written as
+\beq
+\Omega_\nu h^2 \approx \frac{\sum_i m_{\nu i}}{93\,{\rm eV}}\,.
+\eeq
+The individual masses of the neutrino states are unknown but neutrino oscillation data specifies the square of two mass splittings $\Delta m_{12}^2 = 7.54 \times 10^{-5}$eV, $|\Delta m_{13}^2|\approx 2.4 \times 10^{-3}$eV \cite{Agashe:2014kda}. These mass splittings, in combination with the neutrino number density, give a lower limit on the contribution of neutrinos to the cosmic energy budget
+\beq
+\Omega_\nu h^2 \gtrsim 0.0006\,.
+\eeq
+At $z \ll z_{NR}$ the matter density of the universe, which enters into the Hubble equation, is the sum of the CDM, baryon, and massive neutrino energy densities $\Omega_m = \Omega_c + \Omega_b + \Omega_\nu$. Whereas, at $z\gg z_{nr}$ the matter density is solely the baryon and CDM parts and neutrinos contribute to the radiation density. 
+
+Neutrinos do not participate in gravitational collapse until late times when they have become nonrelativistic. Prior to this transition, the neutrinos {\em free-stream} out of gravitational wells, leaving the CDM and baryons behind  \cite{Bond:1983hb, Ma:1996za, Hu:1997vi, Hu:1997mj}. Primordial fluctuations in the neutrino density are therefore damped away on scales smaller than the horizon at $z_{nr}$. In comoving units, this scale corresponds to a wave number
+\beq
+k_{nr} \equiv a_{nr} H(a_{nr})/c \approx 0.003 \left(\frac{\Omega_m}{0.3}\frac{m_{\nu}}{0.05\, {\rm eV}}\right)^{1/2} h/{\rm Mpc}\,.
+\eeq
+Once the neutrinos are non-relativistic, their finite velocity dispersion still prevents them from clustering on scales smaller than the typical distance a neutrino travels in a Hubble time, $v_\nu /H(a)$ where $v_\nu \approx 3.15 T_\nu/(a m_\nu)$ the mean neutrino velocity. In analogy with the Jeans criterion for gravitational collapse, the neutrino free-streaming scale is defined by \cite{Bond:1983hb, Lesgourgues:2006nd}
+\beq
+k_{fs}(a) \equiv \sqrt{\frac{3}{2}}\frac{aH(a)}{v_\nu(a)} \approx 0.04\, a^2 \sqrt{\Omega_m a^{-3} + \Omega_\Lambda}\left(\frac{m_\nu}{0.05 {\rm eV}}\right) h/{\rm Mpc}
+\eeq
+in comoving coordinates. 
+
+On scales larger than $k_{nr}$ (adiabatic) perturbations in the density of neutrinos, baryons, and CDM are coherent and can be described by a single perturbation to the total matter density $\delta_m= \delta \rho_m/\rho_m$. On smaller scales where the neutrino perturbations have decayed, only the perturbations to the CDM and baryons remain so that $\delta_{m} = (\Omega_{c} + \Omega_b)/\Omega_m \delta_{cb}$. The remaining CDM and baryon perturbations also grow more slowly because the neutrino energy density contributes to the expansion rate, but not to the source potentials. These two effects cause a suppression in the amplitude and the growth rate of matter perturbations wavenumbers $k > k_{fs}$ relative to a universe with massless neutrinos (and also relative to density perturbations with $k<k_{nr}$). The net change in the amplitude of perturbations with $k > k_{nr}$ primarily depends on the fractional energy density in massive neutrinos but retains a small sensitivity to the individual neutrino masses through a dependence on $a_{nr}$. {\color{magenta} Add a figure}
+
+An estimate of the effect of massive neutrinos on the growth of structure can be made by studying the evolution of matter perturbations in the two regimes $k\ll k_{fs}$ and $k\gg k_{fs}$.  In the synchronous gauge, linear perturbations to the matter density with wavenumbers $k \ll k_{fs}$ evolve as
+\beq
+\label{eq:ddotdeltalarge}
+\ddot{\delta}_m + 2 H(a) \dot\delta_m - \frac{3}{2}\Omega_mH_0^2 a^{-3}\delta_m = 0\quad {\rm for }\quad k \ll k_{nr}
+\eeq
+which has solutions $\delta_m \propto a, \, a^{-\frac{3}{2}}$ during the matter dominated era. %On these scales, the evolution of matter perturbations just depends on $\Omega_m$, not on the fractional energy density in massive neutrinos. 
+
+On scales where the neutrino perturbations have decayed, perturbations to matter density are just in the CDM and baryon components 
+\beq
+\delta_m(k\gg k_{fs})\approx  (\delta\rho_c + \delta\rho_b)/\rho_m = (1-f_\nu)\delta_{cb}
+\eeq 
+where $f_\nu = \Omega_\nu/\Omega_m$ and $\delta_{cb} = (\delta\rho_c + \delta\rho_b)/(\rho_c + \rho_b)$, but the neutrino energy density still contributes to the Hubble friction. In this limit, linear perturbations to the  CDM and baryon density evolve as
+\beq
+\label{eq:ddotdeltasmall}
+\ddot{\delta}_{m} + 2 H(a)\dot{\delta}_{m} - \frac{3}{2}\Omega_{cb}H_0^2 a^{-3} \delta_{m} =0\quad {\rm for}\quad  k \gg k_{fs} 
+\eeq
+where $\Omega_{cb} = \Omega_c + \Omega_b$ and $\Omega_{cb} < \Omega_m$ for a cosmology with massive neutrinos. Equation (\ref{eq:ddotdeltasmall}) has the approximate solutions during the matter dominated era of $\delta_{cb} \propto a^{1-\frac{3}{5}f_\nu}, a^{-\frac{3}{2} + \frac{3}{5}f_\nu}$ for $f_\nu  \ll 1$. \
+
+The matter dominated solutions give a simple estimate of the net effects of massive neutrinos on the amplitude of matter perturbations. For fixed $\Omega_c h^2$, the evolution of perturbations in a cosmology with $f_\nu \neq 0$ is the same as a cosmology with $f_\nu =0$. After $a_{nr}$, the perturbations with $k\gg k_{fs}$ grow more slowly (according to Eq.~(\ref{eq:ddotdeltasmall}), the growing mode solution grows as  $\propto a^{1-3/5f_\nu}$) than those with $k\ll k_{fs}$ (according to Eq.~(\ref{eq:ddotdeltalarge}), $\propto a$).  At scale-factor $a$ during the matter dominated era, the total difference in growth or perturbations with $k\gg k_{fs}$ is roughly
+\beq
+\frac{\delta_{cb}(k \gg k_{fs}, a | f_\nu)}{\delta_{cb}(k \gg k_{fs}, a | f_\nu=0)} \sim \left(\frac{a}{a_{nr}}\right)^{-3/5f_\nu}\,.
+\eeq
+The resulting difference in the amplitude of the matter power spectra is then 
+\beq
+\frac{P_{mm}(k \gg k_{fs}, a  |f_\nu)}{P_{mm}(k \gg k_{fs}, a |f_\nu =0)}\sim (1-2f_\nu)\frac{P_{cc}(k \gg k_{fs} , a |f_\nu)}{P_{cc}(k \gg k_{fs}, a |f_\nu =0)}\sim \left(1-2f_\nu -\frac{6}{5}f_\nu\ln\left(a/a_{nr}\right)\right)\,.
+\eeq
+On the other hand, the evolution of the large scale modes is identical,
+\beq
+\frac{P_{mm}(k \ll k_{fs}, a  |f_\nu)}{P_{mm}(k \ll k_{fs}, a |f_\nu =0)}=1\,.
+\eeq
+The above expression overestimates the effect of neutrino mass by assuming the transition from relativistic to non-relativistic is instantaneous. It also ignores the effects of the cosmological constant at late times. Using the true evolution of $\delta_{cb}$ through $a_{nr}$ and allowing for the cosmological constant gives 
+\beq
+\frac{P_{mm}(k \gg k_{fs} |f_\nu)}{P_{mm}(k \gg k_{fs} |f_\nu =0)} \approx 1- 6 f_\nu
+\eeq
+at $a=1$. Note that this expression assumes fixed $\Omega_ch^2$, $\Omega_bh^2$ so that matter-radiation equality is not changed by neutrino mass and that and $\Omega_\Lambda = 1-\Omega_m$ is fixed by adjusting $h$ so that the onset of cosmological constant domination is also unchanged. Alternatively, assuming fixed $\Omega_m$ and decreasing $\Omega_{cb}$ to account for $\Omega_\nu$ makes matter-radiation equality, which occurs while the neutrinos are relativistic, slightly later so that the suppression is increased to
+\beq
+\frac{P_{mm}(k \gg k_{fs} |f_\nu)}{P_{mm}(k \gg k_{fs} |f_\nu =0)} \approx (1-8f_\nu)\,.
+\eeq
 
 \subsection{Observational Signatures and Target}
 %
@@ -66,11 +154,32 @@ uncertainty from the optical depth $\tau$, which we discuss later.
 The large scale structure (LSS) measures the small scales; this is the
 area where we expect significant improvement through CMB S4.
 
-\subsubsection{CMB Power Spectra (TT, EE, Lensing Potential)}
-Measurement of the lensing potential of LSS through gravitational
-lensing of the CMB provides us the opportunity of precisely measuring
-the small-scale amplitudes.  (Refer to lensing section?)
-%
+\subsection{CMB Lensing and Spectra}
+
+Likely the cleanest probe of the neutrino mass in the CMB is through gravitational lensing, which directly measures the matter distribution along the line of sight.  To be concrete, in the limber approximation, the lensing power spectrum is given by
+\bea
+C_\ell^{\phi \phi} &=& \frac{8\pi^2}{\ell^2} \int^{\chi_\star}_0 \chi d\chi P_\Psi(\ell /\chi ; \eta_0 - \chi)  \frac{(\chi_\star -\chi)^2}{\chi_\star \chi} \\
+P_\psi (k;\eta)&=& \frac{9 \Omega_m^2 (\eta) H^4(\eta)}{8 \pi^2} \frac{P_{mm}(k;\eta)}{k}
+\eea
+where $\chi$ ($\chi_\star$) is the co-moving distance (to the last scattering surface) and $\eta$ ($\eta_0$) is conformal time (today).   More details regarding CMB lensing, including current and future measurements, will be discussed in Chapter **.
+
+For the purposes of the neutrino mass measurement, the advantage of lensing over other probes is that it is largely free of astrophysical uncertainties.  As we see from the lensing power spectrum, we are directly sensitive to the matter power spectrum (rather than a biased tracer) and the relevant scales are in the linear regime where modeling should be reliable.
+
+The primary challenges for the lensing measurement are degeneracies with other cosmological parameters.  The two primary degeneracies in $\Lambda$CDM are
+\begin{itemize}
+\item Optical depth, $\tau$: The suppression of small scale power at low redshift requires a reliable measurement of the amplitude of the power spectrum at high redshift.  In principle, this is measured by the primary CMB anisotropies, but the overall normalization is degenerate with $\tau$ for $\ell \gtrsim 20$.  A precise measurement of $\tau$ is therefore crucial to calibrate the suppression at low redshifts.  This degeneracy can be broken by ... .
+\item $\Omega_m$ : The amount of lensing is controlled by the total amount of matter.  Therefore, we can compensate for a suppression from neutrinos by increasing the matte power spectrum.  This degeneracy will be broken by DESI BAO measurements of the expansion history.
+\end{itemize}
+In addition to degeneracies in $\Lambda$CMB there can be degeneracies with possible extensions.  Most noteablebly:
+\begin{itemize}
+\item $\Neff$: The density of neutrinos after they become non-relativistic is given by $\rho_\nu \simeq m_\nu n_\nu$ where $n_\nu$ is the number density.  Therefore, we only measure the mass if we know the number density to sufficient accuracy.  Fortunately, as we will discuss in the next section, measurements of the neutrino energy density from the primary CMB will be sufficiently accurate as to make this degeneracy insignificant under plausible assumptions
+\end{itemize}
+In principle, measurement of the free streaming scale directly in the matter power spectrum would separate the neutrino mass for most other physical quantities.  Unfortunately, given current limits on the neutrino mass, the change to the shape of the potential is not expected to drive future constraints.  
+
+
+
+
+
 Enumerate current measurements.  Mention future prospects.?
 
 Neutrino mass can also be probed through the early Integrated Sachs
@@ -201,10 +310,8 @@ It is conventional to define a quantity $\Nf$ which gives the radiation energy d
 \end{equation}
 In the instantaneous neutrino decoupling approximation described above, we found $\Nf = 3$.  In the real universe, however, decoupling of neutrinos is not instantaneous, and the residual coupling of neutrinos at the time of electron positron annihilation increases $\Nf$ by a small amount in the standard model.
 
-The current best estimate of $\Nf$ in the standard model is $\Nf = 3.046$ \cite{Mangano:2005cc}.  There is some theoretical uncertainty in this quantity due to the various numerical approximations that are made in the calculation\ldots
-\begin{center}
-{\color{blue}Placeholder for comments on uncertainty in $\Nf$ in standard model from George Fuller}
-\end{center}
+The current best estimate of $\Nf$ in the standard model is $\Nf = 3.046$ \cite{Mangano:2005cc}.   Very unlike photon decoupling at temperature $T \sim 0.2$ eV, active neutrino decoupling at $T \sim 10 \, {\rm MeV} - 0.1 \, {\rm MeV}$ takes place over many tens of Hubble times, with the result that we expect distortions in the relic neutrino energy spectra relative to thermal-shaped, Fermi-Dirac black bodies. Standard model physics Boltzmann neutrino transport calculations show that these distortions could change $\Neff$ from 3 to something close to 3.05. This result is largely due to (1) the incomplete decoupling of neutrinos during electro-positron annihilation and (2) QED plasma effects.  While both effects have been calculated independently quite accurately, there is some theoretical uncertainty in this quantity due to the various numerical approximations that are made in the calculations when both effects are included simultaneously (see e.g.~\cite{Grohs:2015tfy} for discussion).  
+
 
 
 
@@ -236,9 +343,17 @@ The contributions to $\Neff$ from hot thermal relics are relatively easy to unde
 \eeq
 The order of magnitude difference in $\Delta \Neff$ before and after the QCD phase transition is from order of magnitude drop in $g_\star$ below the QCD scale.
 
-Furthermore, the CMB power spectrum has the ability to distinguish among certain types of dark radiation based on the behavior of its density perturbations  \cite{Chacko:2015noa,Baumann:2015rya}.  This point will be discussed further below. {\color{blue} (Check that Dan discusses free-streaming in effects on CMB section)}
+Even a measurement of $\Nf$ which agrees with the standard model prediction to high precision would be very interesting due to the constraints it would place on physics beyond the standard model.  Some specific implications for sterile neutrinos, axions and other popular models will be discussed below.  Broadly speaking, contraining $\Delta \Neff$ at the $10^{-2}$ level would broadly constrain a wide variety of models that are consistent with current cosmology, astrophysical and lab based constraints.  Furthermore, because of the sharp change in $\Delta \Neff$ at the QCD phase transition, in the improvement from current constraints to projections for CMB-Stage IV can be quite dramatic.
 
-Even a measurement of $\Nf$ which agrees with the standard model prediction to high precision would be very interesting due to the constraints it would place on physics beyond the standard model.  Any light thermal relic will contribute to $\Nf$ at a level that can be determined by the particle type and the decoupling temperature \cite{Brust:2013ova,Chacko:2015noa}.  The forecasted constraints on $\Nf$ from CMB-Stage IV {\color{blue} (Check for consistency with other sections in naming convention)} are at a level which could constrain all light thermal relics up to temperatures near the electroweak phase transition.  This broad reach to extremely high energies and very early times demonstrates the discovery potential for a precision measurement of $\Nf$ with the CMB.
+For the minimal scenario of a single real scalar, reaching $\sigma(\Neff) \sim 1\times 10^{-2}$ would push the constraint on freeze-out temperatures from electroweak scale to the reheat temperature.  Nevertheless, a measurement a factor of a few times larger would still be extraordinarily valuable, for higher spin fields, multiple light scalars and modifications to the thermal history up to the electroweak scale.  This broad reach to extremely high energies and very early times demonstrates the discovery potential for a precision measurement of $\Nf$ with the CMB.  Furthermore, the CMB power spectrum has the ability to distinguish among certain types of dark radiation based on the behavior of its density perturbations  \cite{Chacko:2015noa,Baumann:2015rya}.  This point will be discussed further below.
+
+%Any light thermal relic will contribute to $\Nf$ at a level that can be determined by the particle type and the decoupling temperature \cite{Brust:2013ova,Chacko:2015noa}.  The forecasted constraints on $\Nf$ from CMB-Stage IV {\color{blue} (Check for consistency with other sections in naming convention)} are at a level which could constrain all light thermal relics up to temperatures near the electroweak phase transition.  This broad reach to extremely high energies and very early times demonstrates the discovery potential for a precision measurement of $\Nf$ with the CMB.
+
+
+%Furthermore, the CMB power spectrum has the ability to distinguish among certain types of dark radiation based on the behavior of its density perturbations  \cite{Chacko:2015noa,Baumann:2015rya}.  This point will be discussed further below.
+
+ 
+%Even a measurement of $\Nf$ which agrees with the standard model prediction to high precision would be very interesting due to the constraints it would place on physics beyond the standard model.  Any light thermal relic will contribute to $\Nf$ at a level that can be determined by the particle type and the decoupling temperature \cite{Brust:2013ova,Chacko:2015noa}.  The forecasted constraints on $\Nf$ from CMB-Stage IV {\color{blue} (Check for consistency with other sections in naming convention)} are at a level which could constrain all light thermal relics up to temperatures near the electroweak phase transition.  This broad reach to extremely high energies and very early times demonstrates the discovery potential for a precision measurement of $\Nf$ with the CMB.
 
 
 
@@ -353,7 +468,7 @@ Two very common features of these models is that the axions as typically light (
 
 {\it Status of current observations} -- Current constrains on ALPs arise from a combination of experimental~\cite{Graham:2015ouw}, astrophysical~\cite{Raffelt:2012kt} and cosmological~\cite{Marsh:2015xka} probes.  Current cosmological constraints are driven by several effects that depend on the mass of the axion.  For axion masses greater than 100 eV, stable thermal ALPs are easily excluded because they produce dark matter abundances inconsistent with observations.  By including the free streaming effects of thermal QCD-axions,  Planck data~\cite{DiValentino:2015wba} combined with local measurements provide the constrain $m_a < 0.525$ eV (95 \% CL).  At larger masses, ALPs become unstable and can be constrained by the change to $\Neff$ from energy injection as well as from spectral distortions and changes to BBN~\cite{Cadamuro:2011fd,Follin:2015hya}
 
-{\it Implications for CMB Stange IV} -- Sensitive to $\Neff$ of order $\sigma(\Neff) \simeq 10^{-2}$ has the sensitive to probe then entire mass range of ALPs down to $m_a =0$ under the assumption that it thermalized in the early universe.  Interpreting such bounds in terms of the couplings of axions is more complicated~\cite{Brust:2013xpv} and can depend on assumptions about the reheating temperature.  For high (but plausible) reheat temperatures of $10^{10}$ GeV, CMB stage IV would be sensitive to $g_{a\gamma \gamma}, g_{a g g} \gtrsim 10^{-13} {\rm GeV}^{-1}$~\cite{}, which exceeds current constraints and future probes for a range possible axions masses (including the QCD axion).  
+{\it Implications for CMB Stange IV} -- Sensitive to $\Neff$ of order $\sigma(\Neff) \simeq 10^{-2}$ has the sensitive to probe then entire mass range of ALPs down to $m_a =0$ under the assumption that it thermalized in the early universe.  Interpreting such bounds in terms of the couplings of axions is more complicated~\cite{Brust:2013xpv} and can depend on assumptions about the reheating temperature.  For high (but plausible) reheat temperatures of $10^{10}$ GeV, CMB stage IV would be sensitive to $g_{a\gamma \gamma}, \, g_{a g g} \,  \gtrsim \, 10^{-13} {\rm GeV}^{-1}$~\cite{}, which exceeds current constraints and future probes for a range possible axions masses (including the QCD axion).  
 
 \section{Complementarity of CMB and BBN}
 
@@ -423,7 +538,6 @@ CMB-Stage IV {\color{blue} (Check for consistent notation)} will provide constra
 
 
 
-\bibliography{cmbs4}
 
 %%
 %% Populate the .bib file with entries from SPIRES Bibtex (preferred)
