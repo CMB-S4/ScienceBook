@@ -127,7 +127,7 @@ For CMB-S4, the best lensing measurements are expected to come from the auto-pow
 \frac{\partial C^{\BB}_l}{\partial C^{\phi\phi}_{L}}
 \frac{2}{2L+1} (C^{\phi\phi}_{L})^2,
 \end{eqnarray}
-where we used power spectra of observed (noisy, beam-deconvolved) CMB fluctuations $X\in \{E,B\}$:
+where $\hat C$ are data power spectra, and $C_\expt$ are power spectra of observed (noisy, beam-deconvolved) CMB fluctuations $X\in \{E,B\}$:
 \begin{equation}
   \label{eq:CXXexptExpectation}
   \langle\hat C^{\XX}_{l,\mathrm{expt}}\rangle = 
@@ -152,17 +152,29 @@ This noise covariance arises because fluctuations of the CMB and instrumental no
 \hat C^{\hat\phi\hat\phi}_L - 2 \hat N^{(0)}_L + N^{(0)}_{L}.
 \end{equation}
 For the specific case of $\EB\EB$ reconstruction, the realization-dependent $\hat N^{(0)}$ is 
-\comment{MS: check}
 \begin{equation}
   \label{eq:RDN0}
   \hat N^{(0)}_L = \frac{\left|A_L^\EB\right|^2}{2L+1}\sum_{l_1,l_2} 
 \left| g^\EB_{l_1l_2}(L) \right|^2
 \,\frac{1}{2}\,\left[\hat C^{EE}_{l_1,\expt} C^{\BB}_{l_2,\expt}+ C^{EE}_{l_1,\expt} \hat C^{\BB}_{l_2,\expt}\right],
 \end{equation}
-\comment{CD: Define $g^\EB_{l_1l_2}(L)$.}
-where $A^\EB$ and $g^\EB$ denote the reconstruction estimator normalization and weight, respectively. 
-In the square brackets one of the CMB power spectra is replaced by a data power spectrum \comment{Are all $\hat{C_\ell}$s data power spectra?}. On average,  $\langle \hat N^{(0)}_L \rangle = N^{(0)}_L$.  This realization-dependent $\hat N^{(0)}$ subtraction also follows more formally from optimal trispectrum estimation (see Appendix~B in \cite{marcel1308} and Appendix~D in \cite{Planck2013Lensing}).
-
+where $A^\EB$ is the estimator normalization and $g^\EB$ is the optimal weight given by \cite{okamoto03}
+\begin{equation}
+  \label{eq:gweight}
+  g^\EB_{l_1l_2}(L) = -i\,\frac{C^\EE_{l_1} {}_{2}F_{l_2Ll_1} - C^\BB_{l_2}{}_2F_{l_1Ll_2}}{C^\EE_{l_1,\expt}C^\BB_{l_2,\expt}}
+\end{equation}
+with lensed spectra in numerator and denominator \cite{lewis11,duncan1008}, and
+\begin{equation}
+  \label{eq:BigF}
+  {}_{\pm
+    s}F_{l_1Ll_2}=[-l_1(l_1+1)+L(L+1)+l_2(l_2+1)]\sqrt{\frac{(2l_1+1)
+      (2L+1) (2l_2+1)}{16\pi}}
+\left( \begin{matrix} 
+l_1 & L & l_2 \\ 
+ \pm s & 0 & \mp s
+\end{matrix} \right).
+\end{equation}
+In the square brackets in \eqq{RDN0} one of the CMB power spectra is replaced by a data power spectrum. On average,  $\langle\hat N^{(0)}_L\rangle=N^{(0)}_L$.  This realization-dependent $\hat N^{(0)}$ subtraction also follows more formally from optimal trispectrum estimation (see Appendix~B in \cite{marcel1308} and Appendix~D in \cite{Planck2013Lensing}).
 \item A third covariance contribution  arises from the connected trispectrum part of the CMB 6-point function. If realization-dependent $\hat N^{(0)}$  subtraction is used, the dominant remaining term is expected to be (at leading order in $\phi$, see also Eq.~(D4) of \cite{marcel1308}; similarly for $\BB$)
 \begin{equation}
   \label{eq:cov_EBEB_EE}

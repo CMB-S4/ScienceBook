@@ -76,11 +76,11 @@ where ${\rm diag}( \mathbf{W})$ denotes the diagonal part of $\mathbf{W}$. In th
 
 Formally the linearity of the mapmaking operation permits the propagation of the uncertainty due to the instrumental noise from time- to pixel-domain as
 \begin{eqnarray}
-{\hat \mathbf{N}} = \mathbf{L} \mathbf{N} \mathbf{L}^{\rm T},
+{\hat{\mathbf{N}}} = \mathbf{L} \mathbf{N} \mathbf{L}^{\rm T},
 \end{eqnarray}
 which leads to a particularly simple expression for maximum likelihood estimators 
 \begin{eqnarray}
-{\hat \mathbf{N}} = (\mathbf{A}^{\rm T} \mathbf{N}^{-1} \mathbf{A})^{-1}.
+{\hat{\mathbf{N}}} = (\mathbf{A}^{\rm T} \mathbf{N}^{-1} \mathbf{A})^{-1}.
 \end{eqnarray}
 However, as noted above, due its size the computational cost involved in computating such pixel-domain noise correlations make them impractical for all but special cases today, and the uncertainty is either carried over to the next stages of the data processing in implicit form or the final uncertainty is estimated using Monte Carlo simulations.
 
