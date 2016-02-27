@@ -55,7 +55,7 @@ of noise bias, sky windowing, and any filtering applied to the data before or af
 and analyzing simulated data and constructing a matrix describing their net influence on simulated data is 
 computed and inverted. This inverse matrix is applied to the pseudo-$C_\ell$s to produce the 
 final data product. It is expected that some version of this Monte-Carlo treatment will also be 
-adopted for \cmbexp.
+adopted for \cmbexp. 
 
 Pseudo-$C_\ell$ methods are also now commonly used in analysis of CMB polarization anisotropy
 \cite{planck15-11,naess14,crites15}. An added complication in polarization analyses is that 
@@ -85,24 +85,74 @@ given a model parameterized by the standard six $\Lambda$CDM parameters, possibl
 of the cosmological model, and any nuisance parameters involving the instrument, foregrounds, and
 other sources of systematic uncertainty. The current industry standard for this part of the analysis are
 Monte-Carlo Markov-Chain (MCMC) methods, in particular the implementation in CosmoMC
-\cite{lewis02b}.
+\cite{lewis02b}, and it is expected that \cmbexp\ will use similar methods. There will be several 
+aspects of the \cmbexp\ dataset, however, that will necessitate going beyond what past analyses
+have done at this step. First of all, the data from several different telescopes and cameras will need
+to be combined in as lossless a fashion as possible---such that combining at the parameters stage
+may be sub-optimal.
+Further, as shown by \cite{bicepkeckplanck15}, foregrounds cannot be ignored in the 
+estimation of the $B$-mode power spectrum, even in the cleanest parts of the sky and in the 
+least contaminated observing bands. Foreground modeling will be used to mitigate the contamination,
+but there will be foreground residuals (both from noise and imperfect modeling), and these need
+to be properly characterized and accounted for in parameter extraction. 
+Similarly, algorithms to separate the $B$-mode power spectra from a background of gravitational
+waves and from lensing of $E$ modes (so-called ``de-lensing'', see the CMB Lensing chapter for 
+details) will leave an uncertain level of lensing residuals in the primordial $B$-mode spectrum, and
+this residual will need to be treated properly. Finally, for information from angular power spectra
+and lensing potential $\phi$ to be properly combined, the covariance between the two-point and
+four-point functions of the CMB needs to be taken into account.
 
 \subsection{Challenges}
 \label{se:challenges}
-Some of the avenues in the analysis that need to be re-addressed for an experiment such as \cmbexp\ are: 
+As discussed in the previous section, some of the avenues in the analysis that need to be re-addressed for an experiment such as \cmbexp\ are: 
 \begin{itemize}
+\item{The combination of data from different telescopes and cameras (with different heritage 
+and observation/analysis techniques) without significant loss of information.}
 \item{The impact of uncertainties in foreground modeling on cosmological parameters, particularly the tensor-to-scalar ratio $r$.}
 \item{The covariance between different observables (i.e., the lensed CMB power spectrum and the reconstructed lensing potential power spectrum)}
-\item{The separation of the gravitational lensing signal and the primordial $B$-mode signal, lowering the effective lensing background (these statistical algorithms are known as ``delensing"), the impact of delensing on cosmological parameters.} 
+\item{The separation of the gravitational lensing signal and the primordial $B$-mode signal, lowering the effective lensing background (these algorithms are known as ``delensing"), the impact of delensing on cosmological parameters.} 
 \end{itemize}
 We treat each of these challenges individually in the sections below.
+
+\subsubsection{Combining different data sets}
+\label{se:combine}
+At what stage in the analysis does it make the most sense to combine data from different experiments? 
+One possibility is to estimate
+angular power spectra from every data set individually and combine them at that stage. This would
+be computationally efficient but sub-optimal from a sensitivity standpoint unless every experiment
+covered fully independent patches of the sky. For any overlap between data sets, combining at
+the map or time-ordered data stage (adding before squaring) will lead to lower final uncertainties
+than combining at the power spectrum stage (squaring before adding). Of course, the earlier in the analysis
+we choose to combine data, the more work it will be to standardize the data between experiments---the
+time-ordered data is generally quite instrument-specific, the maps less so, etc. The trade-off between
+maximizing constraining power and possibly placing undue burdens on the individual experiment 
+pipelines will need to be balanced in answering this question.
 
 \subsubsection{Foreground-related uncertainty on cosmological parameters}
 \label{se:paramforeg}
 
- do frequency-map cross-spectra and fit for foregrounds or do component separation and 
- parameterize foreground residuals. either way, what parameterization? refer to comp sep
- and sky modeling sections.
+% do frequency-map cross-spectra and fit for foregrounds or do component separation and 
+% parameterize foreground residuals. either way, what parameterization? refer to comp sep
+% and sky modeling sections.
+
+To separate the CMB signal from the contaminating signals of Galactic and extragalactic foregrounds, 
+data from multiple bands will be combined, either 
+in a cross-spectrum analysis or, as detailed in Section \ref{sec:compsep}, by making linear 
+combinations of maps in different bands to produce a ``pure-CMB'' map for power spectrum estimation.
+In either case, an underlying model of foreground behavior is assumed---even if that model is simply
+an assumption regarding the level to which the spectral behavior of foregrounds varies over the sky.
+Any model of foreground behavior is by definition imperfect, and the resulting component separation
+or frequency-cross-spectrum fit will have leakage between the foreground and CMB components.
+At the sensitivity levels attainable by \cmbexp, these residuals have the potential to dominate the
+error budget on cosmological parameters and, more troublingly, to significantly bias the best-fit 
+parameter values if they are not properly taken into account.
+
+Section~\ref{sec:skymodel} discusses the baseline plan for, and challenges involved in, modeling
+Galactic and extragalactic foregrounds. It is likely that more information will be needed---from 
+Stage-3 experiments, or from a possible dedicated, balloon-borne CMB foreground mission---before
+we can confidently assess the level to which foregrounds will limit the final parameter constraints
+from \cmbexp\ and how flexible we will need to make the underlying foreground models that 
+inform component separation and parameter extraction. 
 
 \subsubsection{CMB lensing covariances for CMB S4}
 \label{se:covs}
