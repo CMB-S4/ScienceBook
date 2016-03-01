@@ -2,10 +2,23 @@
 
 \section{Forecasting}
 
-Here we describe the main approaches used by our community for forecasting the expected performance of CMB-S4. For assessing the expected performance for large-scale B-modes, two central considerations are Galactic foregrounds and ability to delens the data, as well as a realistic assessment of instrument noise at large scales. 
+We emphasize the importance of accurate forecasting for CMB-S4.
+Forecasting efforts for Stage 1 and 2 experiments were hampered by lack of experience with previous deep polarization maps and little knowledge of high latitude Galactic foregrounds.
+Forecasting for CMB-S4 will be built on the solid foundation of map-derived evaluations of instrumental noise performance and astrophysical foreground levels from the Stage 2 experiments and the Planck satellite.
 
-To assess the science return from the smaller-scale polarization two-point functions (TE,EE), and from the lensing four-point function ($\kappa \kappa$), extragalactic foregrounds and instrumental noise are the key considerations.
+The forecasting approach will combine Fisher matrix-derived estimates of power spectrum errors with detailed map-level simulations.
+The spectral-domain projections are computationally easy, making them useful to explore the large parameter space of instrument and survey configurations.
+Map-domain simulations are used to ground the spectral-domain projections in reality and to challenge them with cases of real world astrophysical complexity.
+To gain the benefit of this complementarity, it is important that we maintain compatibility between these two forecasting approaches and establish agreement between them for simple questions before proceeding to more difficult tests.
 
+A key input to the forecasting process are full-season noise maps from existing Stage 2 experiments, which encode actual noise performance and have been verified by null tests on real datasets.
+Performance of CMB-S4 can be estimated by rescaling these noise maps, which already contain reality factors such as detector yield, weather, observing efficiency, and filtering of sky modes.
+Systematic errors should be included in the projections, with unknown systematics allowed at a level that scales with the map noise used for jackknife null tests.
+Forecasting should also include our best knowledge of the astrophysical foregrounds and account for the impact of component separation on CMB-S4 science goals.
+The forecasting inputs will improve as we acquire data from Stage 3 experiments, which will produce deeper noise maps and better assessments of foregrounds, as well as demonstrations of new techniques and technologies in development for Stage 4.
+
+Here we describe the main approaches used by our community for forecasting the expected performance of CMB-S4. The central considerations for assessing the expected performance for large-scale B-modes are Galactic foregrounds, ability to delens the data, and a realistic assessment of instrument noise at large scales. 
+For the smaller-scale polarization two-point functions (TE, EE) and the lensing four-point function ($\kappa \kappa$), extragalactic foregrounds and instrumental noise are the key considerations.
 To forecast the return of the thermal Sunyaev-Zel'dovich effects, an estimate of the expected cluster counts as a function of mass and redshift is the core statistic, combined with an estimate of how well the masses can be calibrated using overlaps with weak lensing surveys. For the kinetic Sunyaev-Zeldovich effect, extragalactic foregrounds and overlap with spectroscopic surveys must all be considered. 
 
 \begin{figure}[htbp]
