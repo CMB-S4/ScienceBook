@@ -52,8 +52,8 @@ of the spherical harmonic transform of the sky map. That estimate (known as the
 estimate that would be obtained in a maximum-likelihood procedure through the combined effect
 of noise bias, sky windowing, and any filtering applied to the data before or after mapmaking
 (including the effects of instrument beam and pixelization). These effects are estimated by ``observing''
-and analyzing simulated data and constructing a matrix describing their net influence on simulated data is 
-computed and inverted. This inverse matrix is applied to the pseudo-$C_\ell$s to produce the 
+and analyzing simulated data and constructing a matrix describing their net influence on simulated data. 
+This matrix is inverted, and the inverse matrix is applied to the pseudo-$C_\ell$s to produce the 
 final data product. It is expected that some version of this Monte-Carlo treatment will also be 
 adopted for \cmbexp. 
 
@@ -72,7 +72,7 @@ used in analyzing lower-resolution data.
 
 In addition to the two-point function of CMB maps, higher-order statistics of the maps have recently 
 been of great interest to the community. In particular, the four-point function encodes the effect of 
-gravitational lensing, and estimators can be constructed to go from CMB temperature and polarzation
+gravitational lensing, and estimators can be constructed to go from CMB temperature and polarization
 maps to estimates of CMB lensing $\phi$ and the associated covariance (e.g., \cite{hu02a,okamoto03}).
 These quadratic estimators are the first step in an iterative estimation of the true likelihood, and in
 the weak-lensing limit they are nearly optimal; as a result, they remain the state of the art for estimating
@@ -118,7 +118,7 @@ We treat each of these challenges individually in the sections below.
 \label{se:combine}
 At what stage in the analysis does it make the most sense to combine data from different experiments? 
 One possibility is to estimate
-angular power spectra from every data set individually and combine them at that stage. This would
+angular power spectra or even cosmological parameters from every data set individually and combine them at that stage. This would
 be computationally efficient but sub-optimal from a sensitivity standpoint unless every experiment
 covered fully independent patches of the sky. For any overlap between data sets, combining at
 the map or time-ordered data stage (adding before squaring) will lead to lower final uncertainties
@@ -157,7 +157,7 @@ inform component separation and parameter extraction.
 \subsubsection{CMB lensing covariances for CMB S4}
 \label{se:covs}
 
-The measured lensing power spectrum is given by a 4-point function of the lensed CMB.  This is not statistically independent from the lensed CMB 2-point function, because both depend on the same observed, lensed CMB maps.  As a consequence, measured lensing power spectra and lensed CMB power spectra may be correlated.  This correlation should be taken into account when combining these measurements to avoid spurious double counting of information.  For the specific case of Planck is negligible  \cite{marcel1308}.  However, the level of correlation depends on experiment specifications and the multipole range where power spectra have high signal-to-noise.  The correlation should thus be included in analyses that combine 2- and 4-point measurements unless it is known to be negligible for a specific experiment. 
+The measured lensing power spectrum is given by a 4-point function of the lensed CMB.  This is not statistically independent from the lensed CMB 2-point function, because both depend on the same observed, lensed CMB maps.  As a consequence, measured lensing power spectra and lensed CMB power spectra may be correlated.  This correlation should be taken into account when combining these measurements to avoid spurious double counting of information.  For the specific case of Planck this correlation is negligible  \cite{marcel1308}.  However, the level of correlation depends on experiment specifications and the multipole range where power spectra have high signal-to-noise.  The correlation should thus be included in analyses that combine 2- and 4-point measurements unless it is known to be negligible for a specific experiment. 
 
 For CMB-S4, the best lensing measurements are expected to come from the auto-power spectrum of $\EB$ reconstruction.  Its covariance with the lensed $\EE$ and $\BB$ power spectra depends on six-point functions of the lensed CMB, e.g.~$\langle \EB\EB\EE \rangle$. Although many terms contribute, the dominant effect is expected from only a few contributions \cite{marcel1308}:  
 
