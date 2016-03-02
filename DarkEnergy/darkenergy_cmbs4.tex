@@ -54,7 +54,7 @@ cluster abundance.   The linear growth rate index $\gamma$ is another that is cl
 to peculiar velocities and the kSZ observables.   
 % add in $E_G$ if we forecast it or if it is discussed in the cross correlation section.
 
-The second way of parametrizing deviations from $\Lambda$CDM is in modifying the equations of motion for dark energy in a manner consistent with symmetries and conservation laws.   These have the benefit of attempting to tie distance and growth
+The second way of parametrizing deviations from $\Lambda$CDM is in modifying the equations of motion for dark energy in a manner consistent with conservation laws.   These have the benefit of attempting to tie distance and growth
 tests together in a physical, yet still phenomenological manner.    The next step up in
 complexity from a cosmological constant is a model where the dark energy is dynamical
 but spatially smooth relative to the dark matter.   In these models, the expansion history
@@ -67,27 +67,20 @@ w(z) = w_0 + w_a \frac{z}{1+z}.
 The figure of merit defined by the Dark Energy Task force is the inverse area of the
 95\% CL region in the $w_0-w_a$ plane.  
 
-Generalizations of this type of parameterization that separate the expansion history from 
+There are generalizations of this type of parameterization that separate the expansion history from 
 the growth of structure.   
-A complete parametrization for observables for scalar-tensor theories in the linear regime would include 
+A complete parametrization for observables for scalar-tensor theories in the linear regime would include in addition
 the gravitational slip or effective anisotropic stress  (the ratio of the space curvature potential and Newtonian potentials),  the effective Newton constant, and  $c_T$ the
 speed of tensor perturbations. [intentionally vague on which notation to use: forecaster will
 decide the favorite one and supply details, possibly add graviton mass as it is mentioned
 in inflaton]
 
-
-
- include the slip parameter.... [pick someones convention]...
 %
-\begin{itemize}
-\item Details and definitions of background parametrizations ($w_{DE}$) (w0wa DETF FoM, first forecast possible in 1 or 2 weeks timescale);
-\item Details and definitions of scalar perturbation parametrizations ($\mu$, $\gamma$, $\Sigma$, PPF, ...?) (first forecast on some of these on a month timescale); 
-\item Details and definitions of tensor perturbation parametrizations ($c_T$) (first forecast possible in 1 or 2 weeks timescale);
-\item Discuss the observational status of these parametrizations;
-\item Discuss critical/natural threshold;
-\end{itemize}
-%
-The last way of performing parametric studies of deviations from the fiducial model consists in directly parametrizing theories beyond it. This approach maintains a strong connection with the underlying theory simplifying the theoretical interpretation of data. This framework can be developed through an ÔeffectiveÕ approach, inspired by the effective field theory for inflation~\cite{Creminelli:2006xe,Cheung:2007st,Weinberg:2008hq,Creminelli:2008wc,Park:2010cw,Jimenez:2011nn} to describe the cosmological phenomenology of all universally coupled single scalar field Dark Energy and Gravity models. Specifically, the effective field theory (EFT) of cosmic acceleration~\cite{Gubitosi:2012hu,Bloomfield:2012ff} describes the space of these models with an action written in a unitary gauge that preserves isotropy and homogeneity of the cosmological background and reads:
+The last way of studying deviations from $\Lambda$CDM consists in directly testing theories beyond it.  Given the lack of a compelling specific theory to test, we can still make progress
+by parameterizing all possible Lagrangians for fluctuations that are consistent with the
+given symmetry.
+ This approach maintains a strong connection with the underlying theory at the price of
+complicating the relation to the raw data.   This framework can be developed through an ÔeffectiveÕ approach, inspired by the effective field theory for inflation~\cite{Creminelli:2006xe,Cheung:2007st,Weinberg:2008hq,Creminelli:2008wc,Park:2010cw,Jimenez:2011nn} to describe the cosmological phenomenology of all universally coupled single scalar field dark energy and modified gravity models. Specifically, the effective field theory (EFT) of cosmic acceleration~\cite{Gubitosi:2012hu,Bloomfield:2012ff} describes the space of these models with an action written in a unitary gauge that preserves isotropy and homogeneity of the cosmological background and reads:
 %
 \begin{eqnarray} \label{Eq:EFTaction}
 \mathcal{S}_{\rm EFT} = \int d^4x \sqrt{-g}&& \bigg\{ \frac{m_0^2}{2} \left[1+\Omega(\tau)\right] R + \Lambda(\tau) - c(\tau)\,a^2\delta g^{00} + \frac{M_2^4 (\tau)}{2} \left( a^2\delta g^{00} \right)^2 \nonumber \\ 
@@ -102,7 +95,14 @@ where $R$ is the four-dimensional Ricci scalar, $\delta g^{00}$, $\delta K{^\mu_
 
 \subsection{Cluster abundance and mass}
 
-Clusters of galaxies are sensitive to the content, geometry, and growth of structure in the universe.  
+Clusters of galaxies are sensitive to the content, geometry, and growth of structure in the universe.     In the report of the DETF, they were highlighted as having the highest sensitivity
+to dark energy parameters  but simultaneously the largest astrophysical systematic due
+to uncertainties in the mass scaling of the cluster observables.   In the ``Stage IV" era of
+dark energy probes, CMB-S4 will play a critical role in overcoming this challenge.
+
+
+
+
 Clusters of galaxies are the most massive ($\sim$10$^{14}$-10$^{15}$ M$_{\odot}$) objects in the universe to have underwent gravitational collapse, 
 having formed from regions $\sim$10-40 Mpc.  This property makes clusters representative of the overall content of the universe, and also makes them 
 important tracers of the evolution of large-scale structure, sampling the most extreme peaks in the large-scale matter distribution.  
@@ -122,7 +122,8 @@ low-scatter cluster observable \cite{nagai06, nagai07, kravtsov12}.  These prope
 relatively clean, mass-limited cluster catalogs out to high-redshift ($z > 1$).  Since the first SZ-discovered clusters were 
 report in 2009 \cite{staniszewski09}, SZ surveys have produced catalogs of over 1000 SZ-selected clusters extending out to $z \sim 1.7$ 
 \cite{vanderlinde10, reichardt13, hasselfield13, planck13-29, bleem15b, planck15-32}.  
-
+CMB-S4 will lower the mass threshold and provide an over an order of magnitude larger 
+catalogs compared with completed and ongoing CMB surveys (see Fig.~\ref{fig:cluster_counts}).
 
 \begin{figure}[t]
 \begin{center}
@@ -133,10 +134,11 @@ report in 2009 \cite{staniszewski09}, SZ surveys have produced catalogs of over 
 \end{center}
 \end{figure} 
 
-
-With sufficient angular resolution, CMB-S4 opens tremendous possibilities for measuring cluster, more generally halo masses through CMB lensing.  This is essential in particular for using cluster counts as a probe of dark energy and modified gravity.  Figure XX shows an estimate of the mass sensitivity, expressed as the one-sigma mass uncertainty as a function of redshift, for two possible S4 configurations and compares them to planned CMB experiments. 
+CMB-S4 will also enable a new means of calibrating cluster masses through CMB lensing.
+Accurate masses are crucial for catalogs to provide constraints on dark energy and modified gravity.
+With sufficient angular resolution, CMB-S4 opens tremendous possibilities for measuring cluster, more generally halo masses.    Figure \ref{fig:limits} shows an estimate of the mass sensitivity, expressed as the one-sigma mass uncertainty as a function of redshift, for two possible S4 configurations and compares them to planned CMB experiments. 
 	The estimation is made assuming foreground subtraction to reach the quoted CMB map noise level at the given angular resolution.  The method (Melin \& Bartlett 2015) employs an optimal filter matched to the NFW profile and applied to reconstructions of the lensing potential with a quadratic estimator (Hu \& Okamoto 2002).  The method has already been successfully applied to the Planck cluster cosmology sample of more than 400 objects (Planck Collaboration XXIV 2015).  This figure shows the sensitivity obtained with just CMB temperature lensing reconstruction.  Including polarization will significantly improve it.  
-	We see that the mass sensitivity remains flat with redshift, a remarkable property that enables mass estimation out to redshifts unreachable with galaxy shear measurements.  This is a powerful and unique capability of CMB lensing.  The figure also demonstrates the important gains attained with high angular resolution.  At one arcmin resolution, S4 achieves a mass sensitivity of 2e13 solar masses with temperature alone.  This unprecedented sensitivity not only ensures robust mass estimation for cluster cosmology over the large redshift interval where S4 will detect clusters through the SZ effect, but also paves the way to numerous cluster and large-scale structure studies.  The rapidly increasing science reach enabled by high angular resolution, approaching one arcmin, is an important consideration in S4 objectives.  
+	We see that the mass sensitivity remains flat with redshift, a remarkable property that enables mass estimation out to redshifts unreachable with galaxy shear measurements.  This is a powerful and unique capability of CMB lensing.  The figure also demonstrates the important gains attained with high angular resolution.  At one arcmin resolution, S4 achieves a mass sensitivity of $2 \times 10^{13}M_\odot$ with temperature alone.  This unprecedented sensitivity not only ensures robust mass estimation for cluster cosmology over the large redshift interval where S4 will detect clusters through the SZ effect, but also paves the way to numerous cluster and large-scale structure studies.  The rapidly increasing science reach enabled by high angular resolution, approaching one arcmin, is an important consideration in CMB-S4 objectives.  
 
 \begin{figure}[t!]
 \begin{center}
@@ -153,17 +155,24 @@ Suzanne Staggs.   Mainly a tie into the lensing section?
 \subsection{Kinematic SZ}
 
 % Edited by F. de Bernardis
-CMB-S4 will map with unprecedented precision the momentum field of the large scale structure via measurements of the kinematic Sunyaev Zel'dovich (kSZ) effect. Multi-frequency data can be used to remove other foregrounds and isolate the kSZ signal. CMB-S4 measurements with sufficient angular resolution can be used to reconstruct the diffuse kSZ anisotropy signal enabling sub-percent precision measurements of the amplitude of the matter density fluctuations $\sigma_8$ (see for example \cite{Calabrese:2014gwa}) while measurements of the patchy kSZ can place strong constraints on the time and duration of reionization.\\
-The combination of CMB-S4 with data from galaxy surveys will be able to measure the kSZ effect associated with galaxy clusters, which is proportional to their peculiar momentum. The large scale structure momentum field is an important cosmological observable that can place strong constraints on the cosmological parameters \cite{Bhattacharya:2007sk,Kosowsky:2009nc,Mueller:2014nsa,Mueller:2014dba} complementary to density fluctuations field measurements. The mean pairwise velocity of galaxy clusters is sensitive to both the growth of structure and the expansion history of the universe and it is an excellent probe for gravity on large scales. Being a differential measurement it is also particularly stable against residual foregrounds that might survive the frequency cleaning process. In \cite{Mueller:2014nsa,Mueller:2014dba} it has been shown that a S4 survey with high resolution can constrain the redshift dependent growth of structure at $\lesssim 5\%$ precision in generic models allowing also for a redshift dependent equation of state of the dark energy. These measurements will be able to distinguish dark energy from modified gravity and will provide complementary constraints to redshift space distortions and weak lensing measurements, probing larger physical scales.\\kSZ pairwise measurements can also constrain the sum of neutrino masses $M_{\nu}= \sum m_{\nu}$ with a $1\sigma$ uncertainty of $0.030 eV$ for a $1$ arcmin S4 overlapping 10000 sq. degrees with a galaxy survey able to identify $M>10^{13}M_{\odot}$ clusters. With a 5 arcmin resolution separating the CMB background from the kSZ signal would be more difficult, providing  $\sigma_{M_{\nu}} = 0.076 eV$ (de Bernardis et al., in preparation). These forecasts include only priors on the 6 standard cosmological parameters from Planck temperatures data and show the potential of the kSZ pairwise signal to provide constraints on the neutrino mass. 
+CMB-S4 will map with unprecedented precision the momentum field of the large scale structure via measurements of the kinematic Sunyaev Zel'dovich (kSZ) effect. Multi-frequency data can be used to remove other foregrounds and isolate the kSZ signal. CMB-S4 measurements with sufficient angular resolution can be used to reconstruct the diffuse kSZ anisotropy signal enabling sub-percent precision measurements of the amplitude of the matter density fluctuations $\sigma_8$ (see for example \cite{Calabrese:2014gwa}) while measurements of the patchy kSZ can place strong constraints on the time and duration of reionization.
 
+The combination of CMB-S4 with data from galaxy surveys will be able to measure the kSZ effect associated with galaxy clusters, which is proportional to their peculiar momentum. The large scale structure momentum field is an important cosmological observable that can place strong constraints on the cosmological parameters \cite{Bhattacharya:2007sk,Kosowsky:2009nc,Mueller:2014nsa,Mueller:2014dba} complementary to density fluctuations field measurements. The mean pairwise velocity of galaxy clusters is sensitive to both the growth of structure and the expansion history of the universe and it is an excellent probe for gravity on large scales. Being a differential measurement it is also particularly stable against residual foregrounds that might survive the frequency cleaning process. In \cite{Mueller:2014nsa,Mueller:2014dba} it has been shown that a S4 survey with high resolution can constrain the redshift dependent growth of structure at $\lesssim 5\%$ precision in generic models allowing also for a redshift dependent equation of state of the dark energy. These measurements will be able to distinguish dark energy from modified gravity and will provide complementary constraints to redshift space distortions and weak lensing measurements, probing larger physical scales.
 
-\subsection{Forecasts}
+kSZ pairwise measurements can also constrain the sum of neutrino masses $M_{\nu}= \sum m_{\nu}$ with a $1\sigma$ uncertainty of $0.030$eV for a $1$ arcmin CMB-S4 overlapping 10000 sq. degrees with a galaxy survey able to identify $M>10^{13}M_{\odot}$ clusters. With a 5 arcmin resolution separating the CMB background from the kSZ signal would be more difficult, providing  $\sigma_{M_{\nu}} = 0.076$eV (de Bernardis et al., in preparation). These forecasts include only priors on the 6 standard cosmological parameters from Planck temperatures data and show the potential of the kSZ pairwise signal to provide constraints on the neutrino mass. 
 
-\begin{itemize}
-\item First forecast possible in 1 or 2 weeks timescale on all models in EFTCAMB;
-\item Discuss the observational status of these parametrizations;
-\item Discuss critical/natural threshold;
-\end{itemize}
+%
+% Forecasts for the final book here or if more appropriate e.g. trigger type then embedded
+% in the sections themselves
+%
+%
+%\subsection{Forecasts}
+%
+%\begin{itemize}
+%\item First forecast possible in 1 or 2 weeks timescale on all models in EFTCAMB;
+%\item Discuss the observational status of these parametrizations;
+%\item Discuss critical/natural threshold;
+%\end{itemize}
 %
 
 
