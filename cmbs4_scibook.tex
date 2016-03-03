@@ -18,7 +18,7 @@
 %  These provide the page size, type style, headings, etc.
 
 
-\documentclass{tcibook}
+\documentclass[titlepage]{tcibook}
 \usepackage{fancyhea}
 \usepackage{work}
 \usepackage{bm}       %    enables bold math symbols  e.g.  \bm{\gamma}
@@ -29,6 +29,7 @@
 \usepackage{amsmath}
 \usepackage{chngcntr}
 \counterwithout{figure}{chapter}
+\usepackage[explicit]{titlesec}
 
 \input workshopsymbols.tex      %   standard macros for common HEP terms
 \newcommand{\cmbexp}{{CMB-S4}}
@@ -78,6 +79,10 @@
 
 \begin{document}
 
+\title{CMB-S4 Science Book: Working Draft}
+\author{CMB-S4 Collaboration}
+\maketitle
+
 \def\bibname{References}
 
 %\bibliographystyle{utphys}  %%%% MODIFIED FOR CF %%%%
@@ -104,6 +109,8 @@
 \renewcommand{\arraystretch}{1.25}
 \addtolength{\arraycolsep}{-3pt}
 
+
+\tableofcontents
 
 %%%% Author comment macros here
 
