@@ -1,27 +1,34 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  6 JAN 2016 00:12
+This is pdfeTeX, Version 3.141592-1.30.4-2.2 (Web2C 7.5.5) (format=pdflatex 2006.11.9)  3 MAR 2016 15:26
 entering extended mode
- \write18 enabled.
- %&-line parsing enabled.
+\write18 enabled.
 **intro_cmbs4.tex
 (./intro_cmbs4.tex
-LaTeX2e <2014/05/01>
-Babel <3.9k> and hyphenation patterns for 78 languages loaded.
+LaTeX2e <2005/12/01>
+Babel <v3.8d> and hyphenation patterns for american, french, german, ngerman, b
+ahasa, basque, bulgarian, catalan, croatian, czech, danish, dutch, esperanto, e
+stonian, finnish, greek, icelandic, irish, italian, latin, magyar, norsk, polis
+h, portuges, romanian, russian, serbian, slovak, slovene, spanish, swedish, tur
+kish, ukrainian, nohyphenation, loaded.
 ! Undefined control sequence.
 l.3 \chapter
-            *{Exhortations}
+            {Exhortations}
 ? 
 ! Emergency stop.
 l.3 \chapter
-            *{Exhortations}
+            {Exhortations}
 End of file on the terminal!
 
  
 Here is how much of TeX's memory you used:
- 5 strings out of 493117
- 143 string characters out of 6135433
- 52909 words of memory out of 5000000
- 3568 multiletter control sequences out of 15000+600000
- 3640 words of font info for 14 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 5i,0n,1p,61b,8s stack positions out of 5000i,500n,10000p,200000b,80000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 5 strings out of 94412
+ 139 string characters out of 1172319
+ 2048436 words of memory out of 4500000
+ 3326 multiletter control sequences out of 10000+50000
+ 3640 words of font info for 14 fonts, out of 2000000 for 2000
+ 582 hyphenation exceptions out of 5000
+ 5i,0n,1p,61b,8s stack positions out of 5000i,500n,6000p,200000b,40000s
+PDF statistics:
+ 0 PDF objects out of 300000
+ 0 named destinations out of 131072
+ 1 words of extra memory for PDF output out of 10000
+No pages of output.
