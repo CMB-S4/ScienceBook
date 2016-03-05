@@ -6,26 +6,52 @@
 
 \def\nnu{N_{\mathrm eff}}
 \def\gtrsim{\raise-.75ex\hbox{$\buildrel>\over\sim$}}
+\definecolor{orange}{rgb}{1,0.3,0}
+\newcommand\comments[1]{\textcolor{orange}{[#1]} }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \section{Introduction to CMB Lensing}
+\label{sec:lensing_intro}
 
-Measuring the deflection of microwave background light by the gravitational influence of matter along its path through the Universe is a powerful way to determine the properties of neutrinos and dark energy and constrain inflationary signals.  As CMB photons travel to us from the surface of last scattering their paths are slightly altered by the gravity of the mass distribution through which they pass.  These gravitational lensing deflections lead to a remapping of the primordial CMB sky, and this remapped sky is what we observe today.  Measuring the properties of this lensing deflection is interesting for two reasons:\\
+As CMB photons travel from the last scattering surface to Earth, their travel paths are bent by interactions with intervening matter in a process known as \textit{gravitational lensing}.
+This process distorts the observed pattern of CMB anisotropies, which has two important consequences:\\
+ 
+$\bullet$ CMB lensing encodes a wealth of statistical information about the entire large-scale structure (LSS) mass distribution, which is sensitive the properties of neutrinos and dark energy.\\
+
+$\bullet$ CMB lensing distortions obscure our view of the primordial Universe, limiting our power to constrain inflationary signals; removing this lensing noise more cleanly brings the early Universe and any inflationary signatures into sharper focus.\\
 
 
-$\bullet$ CMB lensing encodes a wealth of statistical information about the entire large-scale structure distribution, which in turn encodes information on the properties of neutrinos and dark energy.\\
+Gravitational lensing of the CMB can be measured by relying on the fact that the statistical properties of the primordial CMB are well known.
+The primordial (un-lensed) CMB anisotropies are statistically isotropic.
+Gravitational lensing shifts the apparent arrival direction of CMB photons, which breaks the primordial statistical isotropy;
+lensing thus correlates previously independent Fourier modes of the CMB temperature and polarization fields.
+These correlations can be used to make maps of the LSS projected along the line-of-sight; see the discussion in Section \ref{kappaMap}.
 
+A CMB-S4 experiment will make radical improvements in CMB lensing science:
+high sensitivity will enable lensing maps that have much higher signal to
+noise; the high polarization sensitivity will allow
+lensing maps that are much less sensitive to foreground contamination;
+multi-frequency coverage will greatly reduce foreground 
+contamination in the temperature-based lensing estimates, 
+allowing lensing maps with higher resolution;
+large area coverage will provide maps for cross-correlation with large
+scale structure for next generation surveys, including Euclid and LSST.
 
-$\bullet$ CMB lensing obscures our view of the primordial Universe, limiting our power to constrain inflationary signals; removing this lensing noise more cleanly brings the early Universe and any inflationary signatures into sharper focus.\\
+% \kscomment{Q1: What phrase should be used for the lensing maps?  "lensing deflection map," "lensing mass map," or just "lensing map" ?
+% Q2: singular, or plural?  I prefer plural.}
 
-The lensing of the CMB can be measured by relying on the fact that the statistical properties of the primordial CMB are well known.  Lensing changes these well-understood statistical properties, breaking statistical isotropy and thus correlating formerly independent modes of the CMB temperature and polarization fields.  Precisely measuring these correlations can be used to map out the lensing deflections and the projected large-scale structure that caused them, as discussed in more detail in Section \ref{kappaMap}.
+The information contained in lensing mass maps can be accessed and used in several ways.
+First, the power spectrum of the lensing deflection map is sensitive to any physics that modifies how structure grows, such as dark energy, modified gravity, and the masses of neutrinos.
+In Section \ref{kappaPower}, we discuss how the lensing power spectrum is measured, and in Section \ref{forecasts}, we give parameter forecasts combining primordial CMB power spectrum and CMB lensing power spectrum measurements.
+Second, lensing mass maps can be compared to other tracers of LSS at lower redshifts such as the distribution of galaxies and optical weak lensing shear maps.  By cross correlating, for example, CMB lensing and optical shear mass maps, which are each derived from lensed sources at widely differing redshifts, one can enhance dark energy constraints and improve the calibration of systematic effects.
+Cross-correlation science with CMB lensing maps is discussed in Section \ref{cross}.
+Finally, lensing distortions partially obscure potential signatures of cosmic inflation in the primordial B-mode polarization signal.
+With precise measurements, this lensing-induced noise can be characterized and removed in a procedure known as ``delensing.''
+Because B-mode polarization measurements from CMB-S4 are expected to be lensing-noise dominated, delensing will be critical to maximize the information we can infer about cosmic inflation; see the discussion in Section \ref{delens}.
 
-The power spectrum of the lensing deflection map is sensitive to any physics that modifies how structure grows, such as dark energy, modified gravity, and the masses of neutrinos.  In Section \ref{kappaPower}, we discuss how the lensing how the lensing power spectrum is measured, and in Section \ref{params}, we give parameter forecasts combining CMB power spectrum and CMB lensing power spectrum measurements.   Another key application of lensing as a signal is the comparison of CMB lensing maps with the distribution of galaxies and optical weak lensing shear maps.  This can give insights  via calibration of systematic effects as well as enhanced dark energy constraints. Cross-correlation science with CMB lensing maps is discussed in Section \ref{cross}.
-
-However, lensing is not only a signal that probes the cosmological mass distribution. It is also source of noise in measurements of a primordial B-mode polarization signal, which limits studies of inflation and the early Universe. With precise measurements, of lensing, however, this limiting source of noise can be removed, in a procedure known as delensing. This procedure, which will be crucial for the lensing-noise dominated B-mode polarization measurements from CMB-S4, is described in Section \ref{delens}.  We discuss systematics from astrophysical and instrumental effects that can inpact the lesning signal as well as ways to mitigate them in Section \ref{syst}.  Section \ref{require} describes the instrument, survey, and simulation requirements for CMB-S4 to maximize the science gain from CMB lensing measurements.
+We discuss systematics from astrophysical and instrumental effects that can impact the lensing signal as well as ways to mitigate them in Section \ref{syst}.  Section \ref{forecasts} describes forecasted parameter constraints when including CMB lensing measurements as well as the instrument requirements for CMB-S4 to maximize the science gain from CMB lensing.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -36,189 +62,276 @@ However, lensing is not only a signal that probes the cosmological mass distribu
 A map of the CMB lensing deflection field is a direct probe of the projected matter distribution that exists in the observable Universe. This lensing map is a fundamental object for nearly all areas of CMB lensing science: it is used to measure the lensing power spectrum, measure cross correlations between CMB lensing and external data sets, and to de-lens maps of the B-mode polarization.  
 
 \begin{figure}[h]
-\includegraphics[width=0.95\textwidth]{CMBLensing/signal_contribs.pdf}
-\caption{}
+\centering
+\includegraphics[width=0.7\textwidth]{CMBLensing/n0s_s4.pdf}
+\caption{Signal and noise-per-mode curves for three experiments. "Stage 2" is meant to represent a current-generation survey like SPTpol or ACTPol and has $\Delta_T = 9 \mu$K-';  "Stage 3" is an imminent survey like SPT-3G or AdvACT, with $\Delta_T = 5 \mu$K-'; and "Stage 4" has a nominal noise level of  $\Delta_T = 1 \mu$K-'.   These noise-per-mode curves do not depend on the area of sky surveyed.  All experiments assume a 1.4' beam.  \comments{note: iterative delensing not yet performed perfectly for stage 4 curves -- more accurate calculation in progress.} }
+\label{n0s_s4}
 \end{figure}
 
-To date, all maps of the lensing field have been constructed using the quadratic estimator by Hu \& Okamoto 2002.  This estimator uses information about the off-diagonal mode-coupling in spherical harmonic space that lensing induces to reconstruct the deflection field.  An estimate for the amount of lensing on a given scale is obtained by averaging over pairs of CMB modes in harmonic space separated by this scale (cite).  The high angular resolution of CMB-S4 improves upon the Planck measurement by increasing the number of CMB modes imaged on scales smaller than the Planck beam.  Imaging CMB modes between $l=2000$ and 3000, which can be achieved with CMB-S4 yields considerable gain in the accuracy of the lensing power spectrum measurement (cite).    
+
 
 \begin{figure}[h]
+\centering
+\includegraphics[width=0.85\textwidth]{CMBLensing/signal_contribs.pdf}
+\caption{Contributions from CMB scales ($\ell$) to lensing reconstruction on four lensing scales ($L$).  The $EB$ estimator is expected to be the main channel for lensing science with CMB-S4.  On degree and sub-degree scales, $L = 300$ and $800$, the estimator uses B and E modes at $\ell \sim 1000$.  On scales of several arcmin, $L = 1500$ and $2000$, the estimator uses B modes on significantly smaller scales.  Figure taken from Pearson et al. 2014}
+\label{sigCon}
+\end{figure}
+
+To date, all maps of the lensing field have been constructed using the quadratic estimator by Hu \& Okamoto 2002.  This estimator uses information about the off-diagonal mode-coupling in spherical harmonic space that lensing induces to reconstruct the deflection field.  An estimate for the amount of lensing on a given scale is obtained by averaging over pairs of CMB modes in harmonic space separated by this scale. CMB-S4 will greatly improve over existing
+measurements by having high angular resolution at high sensitivity to
+both temperature and polarization.
+
+One way that the high angular resolution and sensitivity
+of CMB-S4 improves upon the Planck measurement is simply
+by increasing the number of CMB modes imaged on scales smaller than the Planck beam.  Imaging CMB modes between $l=2000$ and 4000, which can be achieved with CMB-S4 yields considerable gain in the accuracy of the lensing power spectrum measurement.
+
+\begin{figure}[h]
+\centering
 \includegraphics[width=0.45\textwidth]{CMBLensing/ell300_1_40.pdf}
 \includegraphics[width=0.45\textwidth]{CMBLensing/ell300_4_00.pdf}
 \caption{Noise per mode in the lensing field for different lensing estimators at $L = 300$.  Left panel is for 1.4 arcmin resolution, and right panel is for 4 arcmin resolution.  For a 1.4 and 4 arcmin resolution experiment, the EB polarization estimator yields lower noise than the temperature estimator, below 3uk-arcmin and 5uk-arcmin noise in temperature respectively.}
+\label{crossoverPlot}
 \end{figure}
 
-
-The increased sensitivity of CMB-S4 also puts CMB lensing measurements in a new regime for two reasons.  The first is that to date all CMB lensing results have had their signal-to-noise dominated by lensing reconstructions based on CMB temperature data (cite).  While first results using CMB polarization have been obtained (cite), the unprecedented sensitivity of CMB-S4 will allow the bulk of lensing signal-to-noise to be derived from CMB polarization data, where atmospheric noise and systematic biases from astrophysical foregrounds are greatly reduced.  The second reason CMB lensing measurements will enter a new regime with CMB-S4 is becasue the low instrument noise of CMB-S4 will allow use of an iterative delensing technique.  With this iterative technique, the quadratic estimator operation can be repeated many times on B-mode maps resulting in higher fidelity lensing maps than with a single estimator operation (cite), as discussed in more detail in Section \ref{delens}.   
-
-
-
+However, the primary reason for the increased power of CMB-S4 lensing measurements is this experiment's ability to measure CMB polarization with unprecedented sensitivity. To date, all CMB lensing results have had their signal-to-noise dominated by lensing reconstructions based on CMB temperature data (cite). Such lensing measurements in temperature are limited for two reasons. First, they are limited by systematic biases from astrophysical foregrounds and atmospheric noise. Second, the signal-to-noise on lensing measurements from temperature is intrinsically limited by the cosmic variance of the unlensed CMB temperature field. Due to the unprecedented sensitivity of CMB-S4, the bulk of the lensing signal-to-noise will now be derived from CMB polarization data; polarization lensing reconstruction will allow CMB-S4 to overcome both of these limitations. First, the challenges of astrophysical emission and atmospheric noise are much reduced in polarization data. Second, low-noise polarization lensing measurements are not limited by primordial CMB cosmic variance, because they make use of measurements of the B-mode polarization, which contains no primordial signal on small scales. To fully exploit the lack of limiting primordial signal in the B-mode polarization, maximum likelihood lensing reconstruction algorithms can be used, which use iteration to surpass the quadratic estimator. This iterative lensing reconstruction procedure is discussed in more detail in Section \ref{delens}.   
 
 
 \subsection{Lensing Power Spectrum}\label{kappaPower}
 
-The power spectrum of reconstructed CMB lensing maps is a measure of the matter power spectrum integrated over redshift.  The lensing power spectrum has a broad redshift response kernel, with most of the contribution coming from $z\sim 1-5$, with a peak at $z\sim 2$ (cite).  
+The power spectrum of reconstructed CMB lensing maps is a measure of the matter power spectrum integrated over redshift.  The lensing power spectrum has a broad redshift response kernel, with most of the contribution coming from $z\sim 1-5$, with a peak at $z\sim 2$ (see Figure \ref{cmb-gal-kernels}).  
 %(Figure \ref{fig:cmblens_kernel}).  
-Most of the scales probed by the lensing power spectrum are on large enough scales that they are mainly in the linear regime.  As such, the lensing power spectrum is sensitive to physics which affects the growth of structure on large scales and at high redshift, such as the mass of the neutrinos. 
+Most of the scales probed by the lensing power spectrum are on sufficiently
+large scales that they are mainly in the linear regime.  As such, the lensing power spectrum is sensitive to physics which affects the growth of structure on large scales and at high redshift, such as the mass of the neutrinos. 
 
-The latest measurements of the CMB lensing autospectrum, as of early 2016, are shown in Figure \ref{CMBLensPower}. The first detections were obtained by the Atacama Cosmology Telescope (ACT; \cite{das/etal/2011}) and South Pole Telescope  (SPT; \cite{vanengelen/etal/2012}) teams, who analyzed maps of several hundreds of square degrees yielding precisions on the lensing power spectrum of approximately 25\% and 18\% respectively.  The Planck collaboration has since provided all-sky lensing maps whose precision on the power spectrum amplitude is approximately 4\% in the 2013 data release and 2.5\% in the 2015 data release.  The first detections of the lensing autospectrum using CMB polarization, which is ultimately a more sensitive measure of lensing for low-noise maps,  have also been obtained \cite{story/etal/2013, polarbear/lensing//2014}.
+%\comments{briefly discuss how measurement is done - need to subtract off bias etc.}
+
+The latest measurements of the CMB lensing autospectrum, as of early 2016, are shown in Figure \ref{CMBLensPower}. The first detections were obtained by the Atacama Cosmology Telescope (ACT; Das+ 2011) and South Pole Telescope  (SPT; van Engelen+ 2012) teams, who analyzed maps of several hundreds of square degrees yielding precisions on the lensing power spectrum of approximately 25\% and 18\% respectively.  The Planck collaboration has since provided all-sky lensing maps whose precision on the power spectrum amplitude is approximately 4\% in the 2013 data release and 2.5\% in the 2015 data release.  The first detections of the lensing autospectrum using CMB polarization, which is ultimately a more sensitive measure of lensing for low-noise maps,  have also been obtained (Story+2013, Polarbear 2014).
 
 \begin{figure}[h]
+\centering
 \includegraphics[width=0.95\textwidth]{CMBLensing/CMBLensPower.png}
-\caption{test}
+\caption{Compendium of lensing power spectrum measurements, since first discovery in 2011. \comments{Generation of new figure is underway, with only one set of bandpowers for Planck and with Polarbear and SPTPol included.} }
 \label{CMBLensPower}
 \end{figure}
 
-In spite of the rapid improvement in these measurements over the period of just a few years, no part of the CMB lensing autospectrum is yet sample variance limited.  The  power spectrum of the noise in the CMB lensing reconstruction  in the 2015 Planck data release is approximately equal to the lensing power spectrum at its peak of $L \sim 40$, but smaller scales are noise-dominated.  Lensing reconstructions from  ground-based surveys are signal-dominated below $L \sim 200$ and noise-dominated on smaller scales.  However, they have been obtained over relatively small sky areas of several hundreds of degrees. A ground-based survey such as CMB-S4, with wide sky coverage, low-noise, and high resolution, will provide a sample-variance-limited measurement to scales below $L \sim 1000$ (see Figure \ref{Neutrinos}).  
+There has been rapid improvement in these measurements over the period of just a few years. 
+Early detections of the CMB lensing autospectrum were not sample variance limited over a broad range in $L$ and were only covering a relatively small sky area;  
+the  power spectrum of the noise in the CMB lensing reconstruction  in the 2015 Planck data release is approximately equal to the lensing power spectrum only at its peak of $L \sim 40$, but smaller scales are noise-dominated and therefore not limited only by sample variance.  Lensing reconstructions from current ground-based surveys (like SPTPol, ACTPol, PolarBear) 
+are strongly signal-dominated below $L \sim 200$ and noise-dominated on smaller scales.  However, they have been obtained over relatively small sky areas of several hundreds of degrees. A ground-based survey such as CMB-S4, with wide sky coverage, low-noise, and high resolution, will provide a sample-variance-limited measurement to scales below $L \sim 1000$ (see Figure \ref{Neutrinos}) over a wide area.  
  
 
 
 \begin{figure}[h]
+\centering
 \includegraphics[width=0.95\textwidth]{CMBLensing/s4errors.pdf}
-\caption{test}
+\caption{Constraining neutrino mass with CMB-S4.  Top: lensing power spectra for multiple neutrino masses (curves) together with forecasted errors for S4.  Bottom: residual from curve at zero neutrino mass.  Error boxes are shown centered at the minimal value of $60$\,meV.  S4 will be targeted to resolve differences in neutrino mass of 20\,meV. }
 \label{Neutrinos}
 \end{figure}
 
  
- 
-Such a measurement holds the promise to qualitatively improve our understanding of cosmology.  While the cosmological parameters describing the standard Lambda-Cold Dark Matter model have been precisely measured \cite{planckpapers}, extensions to this model can be constrained by including growth or geometrical information at a new redshift.  From the redshifts probed by CMB lensing, extensions to the standard model such as a non-minimal mass for the sum of the neutrinos, a dark energy equation of state deviating from the vacuum expectation, and a non-zero curvature of the Universe can all be probed to much higher precision than with the primordial CMB alone. 
+Such a measurement holds the promise to qualitatively improve our understanding of cosmology.  While the cosmological parameters describing the standard 
+Lambda-Cold Dark Matter model have been precisely measured, extensions to this model can be constrained by including growth or geometrical information at a new redshift.  From the redshifts probed by CMB lensing, extensions to the standard model such as a non-minimal mass for the sum of the neutrinos, a dark energy equation of state deviating from the vacuum expectation, and a non-zero curvature of the Universe can all be probed to much higher precision than with the primordial CMB alone. 
 
 
-
-%-brief aside: biases\\
-
-%-brief summary of how neutrinos affect large scale structure with plots \\
-
-%-why lensing is a particularly good way of probing neutrinos\\
-
-
-
-\subsection{Parameter Forecasts with Lensing}\label{forecast}
-
-Since CMB lensing is a sensitive probe of the matter power spectrum, CMB lensing measurements added to measurements of the primordial CMB power spectrum serve to significantly tighten parameter constraints.  In particular, measurements of the CMB lensing autospectrum yield tight constraints on neutrino properties, such as the number of neutrinos species ($N_{\rm{eff}}$) and the sum of the masses of the neutrinos ($\sum {m_\nu}$).  We present forecasts for $\sigma(N_{\rm{eff}})$ and $\sigma(\sum {m_\nu})$ for CMB-S4 below.  
-
-Cross correlations of CMB lensing maps with maps of galaxy density and galaxy shear can further provide tight constraints on the dark energy equation of state ($w$) and modified gravity as presented in Section \ref{crossForecast}.  Delensing B-mode polarization maps from CMB-S4 can also give strong constraints on the tensor-to-scalr ratio ($r$) from inflationary primordial gravity waves, as discussed more fully in Section \ref{delensForecast}.
-
-\begin{figure}[h]
-\includegraphics[width=0.95\textwidth]{CMBLensing/Allisonetal.png}
-\caption{place holder from Allison et al 2015}
-\label{nuForecasts}
-\end{figure}
-
-%-forecasting assumptions for noise etc\\
-%-power spectrum forecasts incl s/n\\
-%-results for neutrinos\\
-%-robustness and comparison with other probes\\
-
-For these forecasts, we assumed...
 
 \section{Cross Correlations with CMB Lensing}\label{cross}
 
-A useful application of CMB lensing measures is in cross-correlation with other probes of large-scale structure.  This can yield higher detection significances, can be less prone to systematic effects, and given the generally lower redshift distribution of the other tracer, can more directly probe the evolution of dark energy.
+Cross-correlating CMB lensing maps with other probes of large-scale structure provides a powerful source of information inaccessible to either measurement alone.
+Because the CMB last-scattering surface is extremely distant, 
+the CMB lensing potential includes contributions from a wide range of 
+intervening distances extending to high redshift; as a result, many other cosmic observables trace some of the same LSS that lenses the CMB.
+These cross-correlations can yield high-significance detections, are generally less prone to systematic effects, and given the generally lower redshift distribution of other tracers, are probing LSS in exactly the redshift
+range relevant for dark energy studies (see Figure \ref{cmb-gal-kernels}). 
+With CMB-S4, cross-correlations will transition from detections to powerful cosmological probes. 
+%\kscomment{Point out the synergy with other experiments (LSST, DESI, etc) here?}
 
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.95\textwidth]{CMBLensing/CMB_effs.pdf}
+\caption{Redshift kernel for CMB lensing (blue solid) and for cosmic shear with LSST (red solid), together with the expected redshift distribution of LSST galaxies (red dashed) and the CMB source redshift (blue dashed).}
+\label{cmb-gal-kernels}
+\end{figure}
 
 \subsection{CMB Lensing Cross Galaxy Density}
+Galaxies form in the peaks of the cosmic density field; thus the distribution of galaxies traces the underlying dark matter structure -- which contributes to the CMB lensing potential.
+Cross-correlating galaxy density distributions with CMB lensing is highly complementary to galaxy clustering measurements.
+Galaxy surveys measure luminous matter while CMB lensing maps directly probe the underlying dark matter structure. Thus these correlations provide a clean measurement of the relation between luminous matter and dark matter.
+Cross-correlations between independent surveys are more robust against details of selection functions or spatially inhomogeneous noise that could add spurious power to auto-correlations.
+Additionally, while CMB lensing maps are projected along the line-of-sight, galaxy redshift surveys provide information about the line-of-sight distance; thus correlating redshift slices of galaxy populations allow for tomographic analysis of the CMB lensing signal (see, e.g., SPT/DES 2015).
+These properties can lead to improved constraints on cosmology: for example, with LSST galaxies, it has been shown that including cross-correlation with CMB lensing can substantially improve constraints on neutrino masses (Pearson \& Zahn 2013).
 
+%the contribution to CMB lensing as a function of redshift is extremely well-known, making cross-correlations more robust to uncertainties in redshift distributions.
+% KTS: I'm not sure this is true; you still need to know the redshift distribution of the galaxies!
 
-Very high S/N will be possible with S4 and various surveys.   Different dependence on bias factors ($b^2$ vs $b$.  Can also be done in tomography.
+CMB lensing was first detected using such a cross-correlation (Smith+ 2007, Hirata+ 2008).  Since these first detections, cross-correlation analyses have been performed with tracers at many wavelengths, including optically-selected sources (Bleem+ 2012, Sherwin+ 2012, Planck 2013 XVII, SPT/DES 2015, Pullen+ 2014), infrared-selected sources (Bleem+ 2012, Geach+ 2013, DiPompeo 2015), X-ray-selected galaxy clusters (Planck 2013 XVIII), sub-mm-selected galaxies (Bianchini+ 2014,2015) and maps of flux from unresolved dusty star-forming galaxies (Holder+ 2013, Hanson+ 2013, Planck 2013 XVIII, van Engelen+ 2015). 
 
--In principle, alternative route to measuring neutrino masses (with LSST galaxies: 50 meV -- Pearson \& Zahn 2013), but biases need to be understood as functions of z and k/M.  
+On the timescale of the S4 experiment, a number of large surveys are expected be complete, including DESI, Euclid, and LSST.  Due to the high number density of objects detected, wide areal coverage, and accurate redshifts, the precision of cross-correlation measurements with these surveys will be much higher than those performed to date.  For example, the amplitude of cross-correlation between the S4 convergence map and the galaxy distribution from LSST is expected to be measured to XXX\%.  
+%\kscomment{What other projections would we like to highlight here?  Should we report just detection significance, or also potential for improved parameter constraints?}
+
+% KTS: move this information above, to the first paragraph
+%Galaxy clustering measurements are extremely precise, but cross-correlation with CMB lensing is highly complementary in several aspects: as a direct correlation between galaxy density and mass it provides a clean measurement of the relation between luminous matter and dark matter, as compared to galaxy surveys which can only probe correlations in the luminous matter; as a cross-correlation between vastly different surveys it should be robust against details of selection functions or spatially inhomogeneous noise that could add spurious power to auto-correlations; the contribution to CMB lensing as a function of redshift is extremely well-known, making cross-correlations more robust to uncertainties in redshift distributions. These properties can lead to improved constraints on cosmology: for example, with LSST galaxies, it has been shown that including cross-correlation with CMB lensing can substantially improve constraints on neutrino masses (Pearson \& Zahn 2013).
+
 
 \subsection{CMB Lensing Cross Galaxy Shear}
 
+%-Will LSST x S4 be good enough to help with LSST auto? Need numbers for this stuff below
 
+There have been several recent detections of the cross-correlation between lensing of the CMB and cosmic shear (Hand+ 2015, Liu+ 2015, Kirk+2016), demonstrating the emergence of a new cosmological tool. 
 
-\subsubsection{Forecasts for CMB Lens Cross Galaxy Density and Galaxy Shear}\label{crossForecast}
+Cosmic shear tomography is the measurement of cosmic shear of distant galaxies as a function of redshift, providing the ability to reconstruct the 3D mass distribution. CMB lensing offers similar signal-to-noise as cosmic shear surveys but provides the most distant source possible, allowing this 3D reconstruction to extend to the edge of the observable universe and providing a high-redshift anchor for dark energy studies.
 
-0.3\% amplitude constraint with S4xLSST.  Also, EUCLID, WFIRST.
+CMB lensing, as a probe that is highly complementary to galaxy shear, can also be used as an external calibration for cosmic shear studies. It has been shown 
+(Vallinotto 2012, Vallinotto 2013, Das+ 2013) that CMB lensing, galaxy clustering, and cosmic shear taken together can in principle cross-calibrate each other while still providing precise constraints on cosmological parameters. This has been successfully applied to existing surveys (Liu+ 2015, Baxter+ 2016)
+as a proof of principle; CMB-S4 will be a powerful tool for precision
+cosmology.
 
-Applications:
+\subsection{CMB Halo Lensing}\label{haloLensing}
+%\kscomment{Requirements on resolution?}
 
--Mass tomography -- CMB can be used as highest-redshift plane in tomographic lensing studies serving as an anchor in the matter-dominated era for dark energy studies
+In addition to constructing CMB lens maps of matter fluctuations on relatively large scales ($> \sim 5$ arcmin) as discussed in the preceding sections, one can also make CMB lens maps capturing arcminute-scale matter distributions. Such small-scale measurements capture lesning of the CMB by individual dark matter halos, as opposed to lensing by larger scale structure represented by the clustering of halos.  This small-scale lensing signature, called CMB halo lensing, allows one to obtain measurements of the mass of these halos.  
 
--In principle, calibrating multiplicative bias from cosmic shear (Valinotto 2011).  Will LSST x S4 be good enough to help with LSST auto?
+Using CMB halo lensing, CMB-S4 will be sensitive to halo masses in the range of $10^{13} M_{\odot}$ to $10^{15} M_{\odot}$.  This corresponds to halos belonging to galaxy groups and galaxy clusters.  As discussed in Chapter 3, measuring the abundance of galaxy clusters as a function of mass and redshift provides a direct handle on the growth of matter perturbations and consequently, on the equation of state of Dark Energy.  Galaxy clusters can be identified internally in CMB maps through their wavelength-dependent imprint caused by the thermal Sunyaev-Zeldovich (tSZ) effect. However, the scaling between the tSZ observable, which is sensitive to baryonic physics, and the cluster mass, which is dominated by dark matter is not precisely constrained.  Calibration of this mass scaling and scatter is currently the dominant systematic for extracting Dark Energy constraints from cluster abundance measurements. 
 
--Can also add crosses with galaxy distribution (3x further improvement -- Das, Errard, \& Spergel 2014)
-
--Can constrain optical weak lensing multiplicative bias.
-
--Possibly help with calibrating WL intrinsic alignments?
-
-\subsection{Halo Lensing}
-
-
-The abundance of galaxy clusters as a function of mass and redshift provides a direct handle on the growth of matter perturbations and consequently, on the equation of state of Dark Energy. Clusters can be identified internally in CMB maps through their wavelength-dependent imprint via the thermal Sunyaev-Zeldovich (tSZ) effect. However, the scaling relations between the tSZ observable and the true mass of the cluster possess intrinsic scatter due to the complex gas physics producing the tSZ effect. Calibration of this mass uncertainty is currently the dominant systematic for extracting Dark Energy constraints from cluster abundance measurements. Weak lensing of sources behind the galaxy cluster is a promising method for mass calibration since it is directly sensitive to the total matter content of the cluster. Reconstructing the mass profiles of clusters using measurements of the shapes of distant galaxies in deep photometric surveys is an active research program; however, it is often limited by the poor accuracy of source redshifts and the availability of sufficient galaxies behind the cluster, especially for very high-redshift clusters. The CMB can come to help here since it is a source of radiation that is behind every cluster and has a very well defined source redshift.
-
-\subsubsection{Method}
-
-A general approach for obtaining the mass scale of a sample of clusters from the CMB is to reconstruct the lensing convergence field using standard quadratic estimator techniques (see Section X), stack on the location of clusters and fit to a cluster profile (e.g NFW). Care has to be taken not to underestimate the signal from massive clusters where $\kappa\sim\mathcal{O}(1)$. Hu, DeDeo, Vale (2007) have shown that the standard quadratic estimator can be modified under an approximation that the effect of halo lensing is to locally suppress the overall large-scale background gradient of the CMB. By imposing a sharp low-pass filter on the gradient of the CMB, the bias of the standard estimator for massive clusters is essentially eliminated. Iterative methods?
-
-\subsubsection{Forecasts for Halo Lensing}\label{haloLensForecast}
+Weak lensing of galaxies behind the galaxy cluster is a promising method for mass calibration since it is directly sensitive to the total matter content of the cluster.  Reconstructing the mass profiles of clusters using measurements of the shapes of distant galaxies in deep photometric surveys is an active research program; however, it is often limited by the poor accuracy of source redshifts and the availability of sufficient galaxies behind the cluster, especially for very high-redshift clusters. CMB halo lensing has an advantage here since the CMB is a source of light which is behind every cluster, has a well defined source redshift, and well understood statistical properties.  
 
 \begin{figure}[h]
-\includegraphics[width=0.95\textwidth]{CMBLensing/HaloLensing.png}
-\caption{}
+\centering 
+\includegraphics[width=0.75\textwidth]{CMBLensing/HaloLensing.png}
+\caption{Lensing sensitivity to halos of a given mass $M$ as a function of instrumental noise.  Figure from Hu, DeDeo, Vale 2007.}
+\label{haloLens}
 \end{figure}
 
-CMB experiments have only very recently reached the resolution and sensitivity required to detect the lensing signal from dark matter halos, with recent measurements by ACTPol, SPT and Planck (cite) being the first. S4 will be capable of providing mass calibration for clusters that will be an independent confirmation of the mass scale (also obtainable from galaxy lensing) and will be indispensable for high-z clusters. An arcminute resolution experiment with a sensitivity of around 1$\mu$K-arcmin can determine the mass scale of 1000 high-z clusters to better than 4\% using temperature maps and independently to better than 5\% using polarization maps. The primary systematic in temperature is the thermal SZ effect; however this can be mitigated using multi-frequency information due to the spectral dependence of the tSZ effect. The kinetic component of the SZ effect can also be mitigated by utilizing information from the polarization estimators -- where the SZ contribution is expected to be small -- especially since polarization estimators offer comparable signal-to-noise at S4 sensitivity levels.
+A general approach for obtaining the average mass of a sample of clusters using CMB halo lensing is to reconstruct the lensing deflection field using a variation of the standard quadratic estimator, stack the reconstructed lens maps at the positions of the clusters, and fit the resulting signal to a cluster profile (e.g NFW). A modified quadratic estimator is used to reconstruct small-scale lensing signals since the standard estimator tends to underestimate the signal from massive clusters (Hu, Dedeo, Vale 2007).  This modified estimator makes use of the fact that halo lensing induces a dipole pattern in the CMB that is aligned with the background gradient of the primordial CMB.  The halo lensing signal can be measured with both temperature and polarization estimators, which can be used to cross check each other and reduce systematics. 
 
-Useful plots: beam dependence of mass calibration uncertainty? beam dependence of number and mass of detected clusters? relative S/N from different polcombs of estimators?
+CMB experiments have only very recently reached the sensitivity required to detect the lensing signal on scales of dark matter halos.  The first detections were reported in 2015 by ACTPol (Madhavacheril+2015), SPT (Baxter+2015), and Planck (Planck 2015 XXIV).  CMB-S4 will be capable of providing precision mass calibration for thousands of clusters which will be an independent cross check of galaxy shear mass estimates and will be indispensable for high-redshift clusters. Figure \ref{haloLens} shows that an arcminute resolution experiment with a sensitivity of around 1$\mu$K-arcmin can determine the mass of 1000 stacked clusters to $\sim 5\%$ using temperature maps and independently to $\sim 5\%$ using polarization maps.
+The primary systematic in temperature maps is contamination from the thermal SZ effect and radio and infrared galaxies coincident with the halos. This systematic can be mitigated using multi-frequency information due to the spectral dependence of the thermal SZ effect and galaxy emission, a procedure that
+requires the high sensitivity at multiple frequencies of CMB-S4.  
+Halo lensing from polarization maps is relatively free of these systematics, and ultimately may be the cleanest way to measure halo masses, which 
+requires the high polarization sensitivity provided by CMB-S4. 
 
+%Useful plots: beam dependence of mass calibration uncertainty? beam dependence of number and mass of detected clusters? relative S/N from different polcombs of estimators?
+
+%0.3\% amplitude constraint with S4xLSST.  Also, EUCLID, WFIRST.
+%Applications:
 
 
 \section{Delensing}\label{delens}
 
-For noise levels below $\Delta_P \simeq 1 \mu$K-arcmin,  the dominant source of effective noise in $B$-mode maps is the fluctuation induced by the lensing of $E$-modes from recombination.  This signal has a well-understood amplitude, and unlike other sources of astrophysical fluctuation in the map, it cannot be removed with multifrequency data.  Instead it must be removed using map-level estimates of both the primordial $E$ maps and the CMB lensing potential $\phi$.
-
-As discussed in the dedicated CMB lensing chapter, delensing will be a crucial portion of the reconstruction of the CMB lensing field, for science goals like measuring the neutrino mass.  This is because at low noise levels a quadratic reconstruction of lensing using the $EB$ estimator (Hu \& Okamoto 2001) can be improved upon by cleaning the CMB maps of the lens-induced $B$ fluctuationf and then performing lens reconstruction again.  CMB maps cleaned of the lensing signals will thus be produced as part of the CMB lensing analysis procedure.
-
-Delensing can in principle be a perfect procedure, in the sense that in the limit of no instrumental noise or primordial $B$ modes, the lensing potential and the $E$ mode map can be perfectly imaged (Hirata/Seljak 2003).  However, the finite noise in a S4 survey will lead to residual lensing $B$ modes which cannot be removed and will act as a noise floor for studying B modes from tensors.  The amplitude of these residual lensed $B$ modes are discussed in the dedicated lensing chapter as a function of the angular resolution and the noise level of the S4 survey; in particular, it is crucial to have high-angular resolution maps in order to obtain the small-scale $E$ and $B$ fluctuations needed for the $EB$ quadratic lensing estimator.
-
-The concerns with the delensing procedure are similar to those for measuring the lensing power spectrum. The impact of polarized dust and synchrotron emission from the Galaxy, and the impact of polarized point sources on small scales on the lensing reconstruction are addresed in chapter XX.
-
-Additionally, rather than using an estimate of the CMB lensing field obtained from the CMB itself, it is also possible to use other tracers of large-scale structure which are correlated with  CMB lensing (Smith+ 2010).  In particular the dusty, star-forming galaxies that comprise the cosmic infrared background (CIB) are strongly correlated with CMB lensing, due to their redshift distribution which peaks near $z \sim 2$ (Sherwin+ 2014; Simard+ 2014).  The level of correlation is approximately $80\%$ (Planck 2013 XVIII) and can in principle be improved using multifrequency maps of the CIB which select different emission redshifts (Sherwin+ 2014). 
+To probe an inflationary gravity wave signal it is important to have low-noise B-mode polarization maps. However, for instrumental noise levels below $\Delta_P \simeq 5 \mu$K-arcmin in polarization, the dominant source of noise is no longer instrumental, but instead is from the generation of B-mode polarization
+by lensing of E-mode polarization from recombination (see Figure \ref{snowmssDelens}).  This B-mode lensing signal has a well-understood amplitude, but the 
+sample variance in these modes in the CMB maps leads to 
+increased noise in estimates of the inflationary B-modes. Unlike other sources of astrophysical B-mode fluctuations in the map, it cannot be removed with multifrequency data.  Fortunately, this signal can be removed using map-level 
+estimates of both the primordial $E$-mode map and the CMB lensing potential $\phi$ with a technique called delensing. However, this procedure requires
+precise maps of both the E-modes and of the gravitational lensing potential
+(which can be obtained from the CMB-S4 data itself).
 
 \begin{figure}[h]
-\includegraphics[width=0.75\textwidth]{CMBLensing/delensingIterative.png}
-\caption{test}
+\centering
+\includegraphics[width=0.80\textwidth]{CMBLensing/Delensing.png}
+\caption{The green curve is the power spectrum of lens-induced $E$-to-$B$ mixing.  Delensing can reduce the amplitude of this effect by large factors (green dashed curve) yielding lower effective noise in $B$-mode maps.\comments{Will add 5uK-arcmin noise curve to plot}}
+\label{snowmssDelens}
+\end{figure}
+
+Moreover, delensing will be a crucial part of the reconstruction of the CMB lensing field for CMB-S4, even for science goals like measuring the neutrino mass.  This is because at low noise levels the standard quadratic reconstruction of lensing using the $EB$ estimator (Hu \& Okamoto 2001) can be improved upon by cleaning the B-mode CMB maps of the lens-induced $B$-mode fluctuations and then performing lens reconstruction again.  This procedure can be repeated until CMB maps cleaned of the lensing signals are produced (See Figure \ref{iterative}).  
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.70\textwidth]{CMBLensing/delensingIterative.png}
+\vspace{0.3cm}
+\caption{The $B$-mode noise on large scales as a function of the noise level used in $EB$-based lens reconstruction.  The purple line is for no delensing and shows that lens-induced  $E$ to $B$ mixing manifests as an effective 5 uK-arcmin white noise level.  The blue curve shows the improvement possible when using a lens reconstruction to remove this source of effective noise.  The red curve shows further improvement when the delensing is performed in an iterative fashion.}
+\label{iterative}
+\end{figure}
+
+Delensing in principle can be a perfect procedure: in the limit of no instrumental noise or primordial $B$ modes, the lensing potential and the primordial $E$-mode map can be perfectly imaged (Hirata/Seljak 2003).  However, the finite noise in a CMB-S4 survey will lead to residual lensing $B$ modes which cannot be removed and will act as a noise floor for studying primordial B-modes from tensors.  
+%The amplitude of these residual lensed $B$-modes are given by:
+%\comments[add equation here?]
+In particular, as shown in Figure \ref{sigCon}, it is important to have high-angular resolution maps in order to obtain the small-scale $E$ and $B$ fluctuations needed for the $EB$ quadratic lensing estimator.
+
+Potential systematic biases with the delensing procedure are similar to those for measuring the lensing power spectrum. The impact of polarized dust and polarized synchrotron emission from the Galaxy as well as the impact of polarized extragalactic emission on the reconstructed lensing field are discussed in Section \ref{systAst} as well as ways to mitigate them.
+
+Additionally, rather than using an estimate of the CMB lensing field obtained internally from the CMB itself, it is also possible to use other tracers of large-scale structure which are correlated with  CMB lensing (Smith+ 2010).  In particular the dusty, star-forming galaxies that comprise the cosmic infrared background (CIB) are strongly correlated with CMB lensing due to their redshift distribution which peaks near $z \sim 2$ (Sherwin+ 2014; Simard+ 2014).  The level of correlation can be as high as $80\%$ (Planck 2013 XVIII) and can in principle be improved using multifrequency maps of the CIB which select different emission redshifts (Sherwin+ 2014). However, as shown in (Smith+2010), the gain from delensing with external galaxy tracers is modest, and delensing internally with CMB maps holds far more promise.
+
+
+\section{Systematic Effects and Mitigation}\label{syst}
+The quadratic estimators used for lens reconstruction search for departures from statistical isotropy.  The lens effect locally changes the CMB power spectrum via shear and dilation effects (e.g. Bucher+2011).  Other sources of 
+deviation from statistical isotropy can thus be confused with lensing effects; these can be of both instrumental and astrophysical origin.
+
+\subsection{Astrophysical Systematics}\label{systAst}
+	
+Extragalactic sources and tSZ clusters in temperature maps can be troublesome for 
+lensing estimates in two ways: they tend to cluster more
+strongly in overdense regions (i.e, are non-Gaussian), an effect which
+lensing estimators can mistakenly attribute to lensing, while individual
+sources show up as strong local deviations from statistical isotropy.  
+
+Planck (2013) removed the effect of Poisson sources in the CMB four-point function from their lensing autospectrum which left untreated would have shifted their measured lensing power spectrum amplitude by $4\%$, a  1$\sigma$ shift.  For an experiment with lower map noise level and smaller beam, such as CMB-S4, sources can be found and removed to much fainter flux thresholds, making this
+a much smaller effect.  The largest sources of bias thus come from the three-point and four-point correlation functions of the non-Gaussian clustering
+of sources and non-Gaussian clustering between the sources and the lensing field.  These biases can be as large as several percent (van Engelen+2013, Osborne+2013) and their amplitude is highly model-dependent in temperature-based CMB lensing estimates. However, the extragalactic sources and tSZ clusters that can cause large sources of bias in temperature-based CMB lensing estimates are expected to be nearly unpolarized and therefore not a concern for polarization-based lensing estimates. In
+addition, sensitive multi-frequency temperature measurements should be
+able to spectrally remove these foregrounds through their unique frequency
+signatures. In addition, a robust campaign to measure these non-Gaussianities
+in the CMB data should allow a careful empirical understanding of these
+effects, an approach known as ``bias-hardening'' (Osborne+ 2013).  
+%Furthermore, masking sources aggressively will lead to a greatly reduced foreground contamination overall.
+
+Galactic dust is likely to be the largest source of contamination for
+polarization-based lensing estimates, but the dominant signal there
+is on large scales.  Higher-frequency polarized data (such as Planck 353 GHz)
+should give a good template for this spurious signal. %(Let's measure this with Planck 353GHz data!)
+
+\subsection{Instrumental and Modeling Systematics}\label{systInst}
+ 	
+Given the unprecedented precision targeted by CMB-S4 lensing measurements, the effects of instrumental systematic errors must be investigated and well-controlled. Since lensing results in a remapping or distortion of the sky, beam systematics are a particular concern. 
+
+The main beam systematics that affect CMB measurements are commonly described by differential gain, differential beamwidth, differential ellipticity, as well as differential pointing and rotation. In Smith et al.~2003, the impact of all these beam systematics on lensing measurements and hence on $r$ and $\sum m_\nu$ was investigated using a Fisher matrix formalism. It was found that for an S4-type experiment, with $1 \mu $K-arcmin noise and a $\sim 3$ arcmin beam, the beam characterization from planets or other point sources will be sufficiently accurate that the biases arising from differential gain, differential beamwidth and differential ellipticity are less than one tenth of the one-sigma error on key parameters. Differential pointing and rotation must be controlled to within 0.02 arcmin and 0.02 degrees respectively in order to be similarly negligible.
+
+While ideally the instrument can be designed or shown using measurements to have systematic errors that are negligible, one can also estimate residual beam systematics directly from the data, in a manner analogous to bias hardening. Many beam systematics result in a known mode-coupling (Yadav/Su/Zaldarriaga); their levels can hence be estimated by quadratic estimators and projected out, though complications due to the scan strategy must be accounted for. This method of beam-hardening was first demonstrated in (Planck 2013).
+
+Another challenge in making high precision lensing power spectrum measurements is, given a set of cosmological parameters, predicting the actual observed lensing power spectrum. One example for such a challenge is the presence of higher-order biases, which have been previously neglected. For instance, often the Gaussianity of the lensing potential is assumed; however, if the full large scale structure non-linearity is taken into account, biases result that can affect measurements at the one-sigma level over many bandpowers. Another such challenge is that the lensing power spectrum itself may not be exactly known, due to astrophysical or baryonic effects which modify the mass distribution. While this is a challenge for optical weak lensing measurements, investigations with simulations have found that such baryonic effects can be neglected for CMB lensing, at least at the precision achievable by CMB-S4 (cite paper incl. Battaglia).
+
+
+\section{Parameter Forecasts with Lensing}\label{forecasts}
+
+Since CMB lensing is a sensitive probe of the matter power spectrum, CMB lensing measurements added to measurements of the primordial CMB power spectrum serve to significantly tighten parameter constraints.  In particular, measurements of the CMB lensing autospectrum yield tight constraints on the sum of the masses of the neutrinos ($\sum {m_\nu}$).  Cross correlations of CMB lensing maps with maps of galaxy density and galaxy shear can provide tight constraints on the dark energy equation of state ($w$) and modified gravity.  Delensing B-mode polarization maps can also give strong constraints on the tensor-to-scalar ratio ($r$) from inflationary primordial gravity waves, as well as tighten constraints on the number of neutrino species ($N_{\rm{eff}}$).  
+
+Below we forecast these parameter constraints including CMB lensing or delensing. \comments{Just did neutrino mass so far.  Other parameters in progress.  Adding cross with LSST shear also in progress.} Table \ref{neutrinoTable} shows the expected error on the neutrino mass with just the primordial CMB alone and after including CMB lensing. We also show how Baryon Acoustic Oscillation (BAO) measurements from DESI tighten neutrino mass constraints further.  
+
+\begin{table}[h]
+\centering
+\caption{Constraints on neutrino mass from CMB-S4 primodial CMB measurements plus CMB lensing and BAO measurements from DESI.  Inputs to these forecasts are discussed in Section \ref{forecasts}.  These constraints are robust to modest variations in instrument resolution and sensitivity.\vspace{0.2cm}}
+%\vspace{0.2cm}
+\label{neutrinoTable}
+\begin{tabular}{|l|l|l|l|}
+\hline
+$\sigma(\sum m_{\nu})$ meV & \textbf{S4 Primordial} & \textbf{S4 Primordial} & \textbf{S4 Primordial} \\
+&                         &  \textbf{+Lens} & \textbf{+Lens+DESI} \\ \hline
+1' , 1$\mu$K'              & 324         & 55               & 18                    \\ \hline
+3' , 1$\mu$K'              & 336         & 56               & 19                    \\ \hline
+1' , 5$\mu$K'              & 378         & 60               & 20                    \\ \hline
+3' , 5$\mu$K'              & 395         & 61               & 20                    \\ \hline
+\end{tabular}
+\end{table}
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.95\textwidth]{CMBLensing/Allisonetal.png}
+\caption{Constraints on total neutrino mass from various CMB surveys  and with and without large-scale structure data included.   In the minimal seven-parameter model (left bar) with all data included (red), the minimal neutrino mass of 60\,meV can be detected at 4$\sigma$; the plot shows how this number degrades when including less data or when freeing up additional cosmological parameters. Figure from Allison et al 2015.} 
+\label{nuForecasts}
 \end{figure}
 
 
 
-\subsection{Method}
+The assumptions input into these forecasts are that we assume no foregrounds and only white instrumental noise.  Removing foregrounds will inflate the errorbars by XX \comments{work in progress to calculate}.  Since most of the lensing signal-to-noise is coming from the EB lensing estimator (see Figure \ref{crossoverPlot}), white noise may be a reasonable assumption if leakage of atmospheric noise in temperature maps into polarization maps can be prevented via a half-wave plate or some alternative.  We also assume CMB-S4 will observe $40\%$ of the sky, and we include Planck primordial CMB data in the non-overlapping region of the sky ($65\% - 40\% = 25\%$ of sky).  For both CMB-S4 and Planck, we use temperature modes between $l=50-3000$, and polarization modes between $l=50-5000$.  We also include Planck low-ell data between modes $l=2-50$.  Given that there is covariance between the CMB power spectrum (2-point function) and the CMB lensing power spectrum (4-point function) because lensing induces peak-smearing in the former, we forecast Table I assuming unlensed CMB power spectra plus the CMB lensing 4-point function.    \comments{Note: work to include covariance between 2-point and 4-point is in progress.  We also did not include iterative lensing here yet - in progress.}
+
+In Table \ref{neutrinoTable}, we see that 1-sigma errors on the sum of the neutrino masses of 60 meV is possible combing CMB-S4 lensing measurements with measurements of the primordial CMB from CMB-S4 and Planck.  Table \ref{neutrinoTable} also shows the large improvement in neutrino mass constraint that CMB lensing measurements offer. When BAO data from DESI is added to this, neutrino mass errors of about 20 meV are achievable, which would yield a 4-sigma detection of the neutrino mass sum in the minimal mass scenario (also see Figure \ref{nuForecasts}).  
+
+We also vary the resoltuion and sensitivity of CMB-S4 and explore the impact on neutrino mass constraints.  We find that, given the assumptions above, the neutrino mass constraints are robust to modest variation in resolution (between 1 and 3 arcmin) and sensitivity (between 1uK-arcmin to 5uK-arcmin in temperature).  However, we point out that a higher-resolution of 1 arcmin, as opposed to 3 arcmin, would make high-ell foreground removal more effective.  High resolution on the scale of an arcminute is also critical for CMB halo lensing science as discussed in Section \ref{haloLensing}.  Additionally, increased sensitivity gives more weight to the EB lensing estimator (see Figure \ref{crossoverPlot}), which is relatively free from foreground systematics and atmospheric noise. 
+
+%\comments{-add LSST galaxy shear}
 
 
-\subsection{Parameter Forecasts with Delensing}\label{delensForecast}
 
-
-\section{Systematic Effects and Mitigation}\label{syst}
-The quadratic estimators used for lens reconstruction search for departures from statistical isotropy.  The lens effect locally changes the CMB power spectrum via shear and dilation effects (e.g. Bucher+2011).  Other sources of statistical isotropy can thus be confused with lensing effects; these can be of both instrumental and astrophysical origin.
-
-\subsection{Astrophysical Systematics}
-Extragalactic sources and SZ clusters in T maps.  Planck (2013) removed the effect of Poisson sources in the CMB four-point function from their lensing autospectrum which left untreated would have shifted their measured lensing power spectrum amplitude by $4\%$, a  1$\sigma$ shift.  For an experiment with lower map noise level and smaller beam, such as CMB-S4, sources can be found and removed to much fainter flux thresholds.  The largest sources of bias then come from the clustered, or correlated, portions of the four-point functions of the sources and the correlations with the lensing field.  These biases can be as large as several percent (van Engelen+2013, Osborne+2013) and their amplitude is highly model-dependent. 
-
-These biases are inherent on the sky but can likely be mitigated using a combination of techniques, (1) making heavy use of multifrequency data; (2) projecting them out of the lensing estimate, an approach known as "bias-hardening" (Osborne+ 2013) (3) masking sources aggressively.
-
-Galactic dust.  Four-point function of polarized dust??  (Let's measure this with Planck 353GHz data)
-
-\subsection{Instrumental Systematics}
- 	
-
-
-What level of control do we need on these?
-
--gain variations, monopole leakage, quadrupole leakage, pointing/beam offsets
-
-These can be estimated directly from the data using quadratic estimators (cite Yadav/Su/Zaldarriaga)
-
-
-\section{Instrument, Survey, and Simulation Requirements}\label{require}
-
--effect of nonlin growth
-
- -- bias from 2nd order perturbations (tree level bispectrum) is 1\% for an S4 survey (Boehm+ in prep; Sherwin+ in prep).  
-
-Is some information lost due to mode-coupling by nonlin growth (AVE comment, this should be pretty easy to answer)
 
 
 
