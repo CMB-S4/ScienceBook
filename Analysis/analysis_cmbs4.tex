@@ -12,7 +12,7 @@
 
 Extracting science from a CMB dataset is a complex, iterative process requiring expertise in both physical and computational sciences. In this chapter we start by outlining the data analysis pipeline and describing how this is complicated by various real-world issues ranging from instrument systematics to computational tractability. We then discuss the drivers for, and corresponding structure of, the simulation pipeline. Next we couple these into an overall simulation and data analysis pipeline, and motivate the division of this pipeline into 5 subsets based on the challenges they pose and the expertise required to meet these. Finally we consider each of these subsets in turn, sketching their current state of the art and noting the prospects for addressing their challenges in the context of the CMB-S4 mission.
 
-\subsection{Data Analysis}
+\section{Data Analysis Overview}
 
 \begin{figure}[htbp]
 \begin{minipage}[h]{0.7\linewidth}
@@ -39,14 +39,28 @@ Note however that the data can only remain a sufficient statistic at each step i
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.575\textwidth]{Analysis/da}
+\includegraphics[width=1\textwidth]{Analysis/da}
 \caption{The CMB data analysis pipeline}
 \label{fig_da}
 \end{figure}
 
 Beyond this basic data reduction, the full analysis pipeline (Figure \ref{fig_da}) also includes mission characterization and science exploitation branches. Time domain data are extensively used to build a model of the mission, which we take to comprise the instrument and the observation. For the instrument this modeling can include such steps as determining beam profiles from planet crossings, and estimating noise properties (including cross-correlations) from calibrated, signal-subtracted, detector data; for the observation, it includes reconstructing the detector pointing and polarization orientation from telescope sensor data, and incorporating atmosphere records in the data-flagging. The resulting mission model then feeds back into all of the ensuing data reduction and interpretation. The primary science exploitation derives cosmology and fundamental physics results from the various correlation functions of the CMB maps, from the power spectra's energy scale of inflation and neutrino mass to the higher-order statistics'  measures of non-Gaussianity and the lensing potential. In addition the frequency maps represent important astronomical and astrophysical observations, particularly when the frequency sampling is sufficient to isolate individual foreground components along with the CMB. 
 
-\subsection{Simulation}
+\newpage
+
+\input Analysis/tod_processing.tex
+
+\newpage
+
+\input Analysis/component_separation.tex
+
+\newpage
+
+\input Analysis/statistics_parameters.tex
+
+\newpage
+
+\section{Simulation Overview}
 Simulations of a CMB mission's data play a number of critical roles; specifically they are required for
 \begin{itemize}
 \item The design and development of both the instrument and the observation, to ensure that the mission is capable of meeting its science goals.
@@ -58,14 +72,24 @@ As shown in Figure \ref{fig_sim}, given a mission model (both instrument and obs
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.575\textwidth]{Analysis/sim}
+\includegraphics[width=1\textwidth]{Analysis/sim}
 \caption{The CMB simulation pipeline}
 \label{fig_sim}
 \end{figure}
 
 Note that the generation of the input mission and sky models are themselves far from trivial tasks. The mission model is typically derived from pre-deployment measurements of the instrument properties refined by characterization from the data themselves, together with ancilliary telescope and environmental data characterizing the observation; the sky model requires its own dedicated simulation capability which - since it is independent of the details of any single mission - can be a community-wide endeavor.
 
-\subsection{The Simulation and Data Analysis Pipeline}
+\newpage
+
+\input Analysis/sky_modeling.tex
+
+\newpage
+
+\input Analysis/data_simulation.tex
+
+\newpage
+
+\section{The Simulation and Data Analysis Pipeline}
 
 Coupling the above, the overall simulation and data analysis pipeline (Figure \ref{fig_simda}) can now be seen as both a top-down data reduction process and a wrap-around refinement of our mission and sky modeling. Typically the two phases are interleaved, with each new data reduction improving our mission and sky models, which are in turn fed back into an improved data reduction.
 
@@ -85,27 +109,16 @@ The implementation and execution of this pipeline still poses many challenges to
 \item[Statistics and parameters:] Derivation of CMB map statistics, including the 2-, 3-, and 4-point correlation functions, together with the parameters of cosmology and fundamental physics that they constrain.
 \end{description}
 
-\newpage
-
 \input Analysis/forecasting.tex
 
 \newpage
 
-\input Analysis/sky_modeling.tex
+\input Analysis/validation_verification.tex
 
 \newpage
 
-\input Analysis/tod_processing.tex
+\input Analysis/implementation.tex
 
-\newpage
-
-\input Analysis/component_separation.tex
-
-\newpage
-
-\input Analysis/statistics_parameters.tex
-
-\newpage
 
 %\bibliography{cmbs4}
 
