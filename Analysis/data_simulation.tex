@@ -2,39 +2,31 @@
  
 \section{Data Simulation}
 
+The data simulation subset of the CMB simulation pipeline (Figure \ref{fig_ds}) takes the sky model and applies the mission model to it to generate a simulated data set for that mission. The mission model consists of two parts; the instrument model defines the data acquisition system (telescope, detectors, read-out), while the observation model defines its deployment (scanning strategy, environment). Depending on the degree of detail of the sky, instrument and observation model that we include, the resulting data set can be in any of the data domains - time-ordered (raw or clean), map, or spectral. Inevitably there is a trade-off between the realism of the simulation and the complexity and cost both of generating the model inputs and of performing the simulation, with the choice reflecting both the requirements of the subsequent analyses of the data set and the availability of computational resources.
+
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=1\textwidth]{Analysis/ds}
 \caption{The data simulation subset of the CMB simulation pipeline}
-\label{fig:skymodel-in-pipeline}
+\label{fig_ds}
 \end{figure}
 
-
-Sky model
-
-Mission model:
-
-Instrument - beam, bandpass, hwp, detector/readout electronics
-
-Observation - pointing, flagging, atmosphere, ground
+At the most detailed level, the observation model includes the telescope pointing (typically sampled more sparsely that the detectors), and its environment (comprising the atmosphere and surroundings for a ground-based telescope). Correspondingly, the instrument model includes each detector's polarized $4 \pi$-beam and bandpass (defining the optical power incident on the detector for a given pointing), and a model of its electronics and readout (defining the recorded output data resulting from that optical power).
 
 \subsection{Time Domain}
 
-\subsubsection{Raw TOD}
+TOD simulations are necesserily the most expensive to perform, but provide the most precise representation of the mission data. In particular they enable the injection of systematic effects into the data both to assess strategies for their removal and quantify and residuals.
 
-The simulation of detector-level time ordered data serves a number of purposes, including 1.  end-to-end analysis pipeline validation, 2.  propagation of instrument systematic errors to errors in science results.  The software tool will be flexible enough to easily accommodate modifications as the instrument is better characterized with operational experience.  The software will be modular so that levels of complexity can be included or skipped, depending on the requirements of a particular simulation task.
+For a given detector, we first reconstruct the detector pointing (including any polarization modulation) from the overall telescope pointing model. We then generate the astrophysical sky signal for each pointing by convolving the sky model map with the beam and bandpass. The astrophysical sky signal is added to additional simulated signals from stray light, atmospheric signal fluctuations, and ground pickup, and the total signal is propagated through a simple simulation of the optics to include the polarization angle rotations and optical efficiencies of the optical stages. This results in a simulated  time ordered data set of the total millimeter-wave power incident on the detector.
 
-A sky resampler reads the predicted astrophysical sky signal from a sky model map convolved with a beam shape and bandpass model for a given detector pointing.  The astrophysical sky signal is added to additional simulated signals from stray light, atmospheric signal fluctuations, and ground pickup.  The signal is propagated through a simple simulation of the optics to include polarization angle rotations and optical efficiencies of the optical stages. This results in a simulated  time ordered data set of the total millimeter-wave power incident on the detector.
-
-A physical model of the detector system and associated readout is used to convert the simulated optical power into detector output that is designed to mimic  the response of the instrument to the incident optical power, both from sky signal and other sources. The details of the physical model depend on the detector technology chosen for a given band, but as an example case, consider a transition-edge superconducting (TES) bolometer read out with multiplexed SQUID amplifiers.  The simulator would model the flow of heat in the TES absorber and the flow of current and magnetic flux through the SQUID readout.  Variations in ambient magnetic field could be added at this stage.  The simulator would require the concurrent simulation of multiple detectors using the same multiplex channel so as to include correlations induced by crosstalk or thermal fluctuations.  Additional filters applied by the readout electronics would also be included, including digitization with an analog to digital converter. For MKID or coherent receivers, the physical model would be different in detail, but would include a similarly detailed model in order to easily allow systematic error injection anywhere in the system.
-
-\subsubsection{Clean TOD}
-
-Effective beam convolution (map domain via time domain pointing)
+For a clean TOD simulation this is sufficient; however for a raw TOD we now need to apply a physical model of the detector system and associated readout to convert the optical power into detector output. The details of the physical model depend on the detector technology, but as an example we consider a transition-edge superconducting (TES) bolometer read out with a multiplexed SQUID amplifier. The simulation would then need to model the flow of heat in the TES absorber and the flow of current and magnetic flux through the SQUID readout. Variations in ambient magnetic field could also be added at this stage. Such a simulation would also need to incorporate detector-detector correlations induced by crosstalk or thermal fluctuations.  Additional filters applied by the readout electronics would also be included, including digitization with an analog to digital converter. For MKID or coherent receivers, the physical model would be different in detail, but would include a similarly detailed model.
 
 %% Map/spectral domain text lifted from forecasting section?
 
 \subsection{Map Domain}
+
+Effective beam convolution (map domain via time domain pointing)
+
 
 \subsection{Spectral Domain}
 
