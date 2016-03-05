@@ -1,29 +1,14 @@
-%%%%%% CMB-S4 Simulations and Data Analysis Chapter, Time-Ordered Data Procesing Section  %%%%%%%%%%%%%%%%
+%%%%%% CMB-S4 Simulations and Data Analysis Chapter, Time-Ordered Data Processing Section  %%%%%%%%%%%%%%%%
  
 \section{Time-Ordered Data Processing}
-
-\subsection{Overview}
-
-The time-ordered data processing elements of the CMB simulation and analysis pipeline -- simulation, pre-processing and mission characterization, and map-making -- are grouped as a subset due to the unique computational challenges posed by the volume of data that they must process.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=1\textwidth]{Analysis/td}
-\caption{The time-ordered data processing subset of the CMB simulation and data analysis pipeline}
+\caption{The time-ordered data processing subset of the CMB data analysis pipeline}
 \label{fig_td}
 \end{figure}
 
-\subsection{Simulation}
-
-sky signal to instrument readout
-
-instrument - beam, bandpass, noise; calibration, electronics
-
-observation -- pointing, polarization (hwp), flagging, atmosphere
-
-V \& V for other TOD processing elements
-
-effective beam convolution
 
 \subsection{Pre-Processing and Mission Characterization}
 
@@ -83,31 +68,6 @@ which leads to a particularly simple expression for maximum likelihood estimator
 {\hat{\mathbf{N}}} = (\mathbf{A}^{\rm T} \mathbf{N}^{-1} \mathbf{A})^{-1}.
 \end{eqnarray}
 However, as noted above, due its size the computational cost involved in computating such pixel-domain noise correlations make them impractical for all but special cases today, and the uncertainty is either carried over to the next stages of the data processing in implicit form or the final uncertainty is estimated using Monte Carlo simulations.
-
-\subsection{Computational Constraints}
-
-
-
-The computational requirements here are for both capacity and capability. To support the iterative exploration of the time-ordered data required by the pre-processing and mission characterization steps we need many analysts to be able to process the full data simultaneously, with each seeing no worse than order 1-day turnaround time for their jobs to complete. Conversely, to support the massive Monte Carlo simulation and map-making required for percent level uncertainty quantification in the absence of a full data covariance matrix, we need to be able to perform occasional runs of up to $10^4$ realizations within the total cycles available to us.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.5\textwidth]{Analysis/cmb_hpc_scaling}
-\caption{Exponential growth of CMB time-ordered data volume and HPC capability: 1990 -- 2030.}
-\label{fig_cmb_hpc_scaling}
-\end{figure}
-
-As Figure \ref{fig_cmb_hpc_scaling} shows, the size of ground-based, balloon-borne and satellite CMB data sets exhibit exponential growth over a 40 year period. Moreover, for suborbital experiments the exponent exactly matches that of Moore's Law, where we us as a proxy the peak performance of the flagship high performance computing (HPC) system at the DOE's National Energy Research Scientific Computing (NERSC) Center at any epoch (this choice reflecting the widespread use of NERSC for CMB data analyses over the last 20 years). 
-
-As noted above, the intractability of pixel-domain data covariance matrices pushes us to use Monte Carlo (MC) methods for uncertainty quantification and debiasing, and the computational cost of the data analysis is dominated by the generation and reduction of sufficient MC realizations of the data for the resulting statistical error to be subdominant (typically assumed to be $10^4$ realizations for percent level uncertainty). 
-
-Key challenges:
-\begin{itemize}
-\item computational tractability due to data volume and complexity of next-generation supercomputers
-\item mitigating raw data systematics and developing sufficient mission and data models
-\end{itemize}
-
-All algorithmic and implementation choices we make must first and foremost be informed by their impact on computational tractability.
 
 %\bibliography{cmbs4}
 
