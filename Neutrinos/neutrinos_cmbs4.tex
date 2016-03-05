@@ -11,6 +11,7 @@
 
 \def\Neff{N_{\rm eff}}
 \def\Nf{N_{\rm eff}}
+\def\gs{g_{\star}}
 \newcommand{\nucl}[3]{ \ensuremath{ \phantom{\ensuremath{^{#1}_{#2}}} \llap{\ensuremath{^{#1}}} \llap{\ensuremath{_{\rule{0pt}{.75em}#2}}} \mbox{#3} } }
 
 
@@ -86,7 +87,7 @@ k_{fs}(a) \equiv \sqrt{\frac{3}{2}}\frac{aH(a)}{v_\nu(a)} \approx 0.04\, a^2 \sq
 \eeq
 in comoving coordinates. 
 
-On scales larger than $k_{nr}$ (adiabatic) perturbations in the density of neutrinos, baryons, and CDM are coherent and can be described by a single perturbation to the total matter density $\delta_m= \delta \rho_m/\rho_m$. On smaller scales where the neutrino perturbations have decayed, only the perturbations to the CDM and baryons remain so that $\delta_{m} = (\Omega_{c} + \Omega_b)/\Omega_m \delta_{cb}$. The remaining CDM and baryon perturbations also grow more slowly because the neutrino energy density contributes to the expansion rate, but not to the source potentials. These two effects cause a suppression in the amplitude and the growth rate of matter perturbations wavenumbers $k > k_{fs}$ relative to a universe with massless neutrinos (and also relative to density perturbations with $k<k_{nr}$). The net change in the amplitude of perturbations with $k > k_{nr}$ primarily depends on the fractional energy density in massive neutrinos but retains a small sensitivity to the individual neutrino masses through a dependence on $a_{nr}$. {\color{magenta} Add a figure}
+On scales larger than $k_{nr}$ (adiabatic) perturbations in the density of neutrinos, baryons, and CDM are coherent and can be described by a single perturbation to the total matter density $\delta_m= \delta \rho_m/\rho_m$. On smaller scales where the neutrino perturbations have decayed, only the perturbations to the CDM and baryons remain so that $\delta_{m} = (\Omega_{c} + \Omega_b)/\Omega_m \delta_{cb}$. The remaining CDM and baryon perturbations also grow more slowly because the neutrino energy density contributes to the expansion rate, but not to the source potentials. These two effects cause a suppression in the amplitude and the growth rate of matter perturbations wavenumbers $k > k_{fs}$ relative to a universe with massless neutrinos (and also relative to density perturbations with $k<k_{nr}$). The net change in the amplitude of perturbations with $k > k_{nr}$ primarily depends on the fractional energy density in massive neutrinos but retains a small sensitivity to the individual neutrino masses through a dependence on $a_{nr}$. 
 
 An estimate of the effect of massive neutrinos on the growth of structure can be made by studying the evolution of matter perturbations in the two regimes $k\ll k_{fs}$ and $k\gg k_{fs}$.  In the synchronous gauge, linear perturbations to the matter density with wavenumbers $k \ll k_{fs}$ evolve as
 \beq
@@ -179,23 +180,18 @@ In principle, measurement of the free streaming scale directly in the matter pow
 \subsection{Other Cosmological Probes}
 
 \subsubsection{SZ Cluster Abundance}
+
 Abundance of galaxy clusters also gives us a measure of the 
-amplitudes at small scales ($\simeq 0.1h\mathrm{Mpc}^{-1}$).
+amplitudes at small scales ($\simeq 0.1h\mathrm{Mpc}^{-1}$).  In particular, the mass function of clusters is strongly sensitive to $\sigma_8$ and therefore, in principle, clusters counts are sensitive to the sum of the neutrino mass through the same suppression of small scale power.
 %
 CMB datasets can be used to measure the abundance through the
-Sunyaev-Zel'dvich (SZ) effect.
+Sunyaev-Zel'dvich (SZ) effect.  The size of the SZ signal does not provide a direct measurement of the mass of the cluster as it is directly sensitive to the free electrons in the cluster.  As a result, determining the mass function requires calibration of the mass-signal relation.  
 %
-However, the interpretation of this dataset to derive the neutrino mass
- requires an accurate understanding of 
- the non-trivial mass-observable relation.
-[Mention mass-observable relation study works in progress ...]
 
 
 \subsubsection{Cross-correlations with External Datasets}
-Redshift tomography?  Calibrating optical surveys to help them measuring
-neutrino mass?  (Remember LSST is a DOE project and thus helping them
-makes a good case.)
 
+\subsubsection{Relation to Other Surveys}
 
 \subsection{Forecasts}
 
@@ -259,10 +255,10 @@ where $g$ counts the number of distinct spin states.  The entropy density for ma
 \begin{equation}
 	s(T) = \frac{4\rho(T)}{3T} \, .
 \end{equation}
-It is convenient to define a quantity $\mathcal{N}$ which counts the spin states for all particles and antiparticles, with an additional factor $\frac{7}{8}$ for fermions.  With this definition, the total energy density and entropy density of the universe during radiation domination are given by
+It is convenient to define a quantity $\gs$ which counts the spin states for all particles and antiparticles, with an additional factor $\frac{7}{8}$ for fermions.  With this definition, the total energy density and entropy density of the universe during radiation domination are given by
 \bea
-	\rho(T) &=& \mathcal{N}\frac{\pi^2k_B^4}{30\hbar^3 c^3}T^4 \, , \nonumber \\
-	s(T) &=& \frac{4}{3}\mathcal{N}\frac{\pi^2k_B^4}{30\hbar^3 c^3}T^3 \, .
+	\rho(T) &=& \gs\frac{\pi^2k_B^4}{30\hbar^3 c^3}T^4 \, , \nonumber \\
+	s(T) &=& \frac{4}{3}\gs\frac{\pi^2k_B^4}{30\hbar^3 c^3}T^3 \, .
 \eea
 In an expanding universe, the first law of thermodynamics implies that for particles in equilibrium, the comoving entropy density is conserved
 \begin{equation}
@@ -336,11 +332,11 @@ One of the features that make $\Neff$ a compelling theoretical target, is the de
 The contributions to $\Neff$ from hot thermal relics are relatively easy to understand from the discussion of neutrino decoupling.  After freeze-out, the temperature of a relativistic specifics redshift like $a^{-1}$ and therefore is only diluted relative to the Standard model when energy is injected.  The annihilation of heavy standard model particles into photons conserves the comoving entropy and therefore, the diluted temperature of a relic before neutrino decoupling is given by
 \beq
 %\left( \frac{T_{\rm relic}}{T_{\nu}} \right)^3 = \frac{g_\star (T_{\nu-{\rm freeze-out}})}{g_\star (T_{\rm relic \, freeze-out}) }= \frac{43/4}{g_\star (T_{\rm freeze-out})} *{jm: Changed g* to \mathcal{N} to match notation from above}
-\left( \frac{T_{\rm relic}}{T_{\nu}} \right)^3 = \frac{\mathcal{N}_{\nu-{\rm freeze-out}}}{\mathcal{N}_{\rm relic \, freeze-out} }= \frac{43/4}{\mathcal{N}_{\rm relic \, freeze-out}} \, ,
+\left( \frac{T_{\rm relic}}{T_{\nu}} \right)^3 = \frac{\gs^{\nu-{\rm freeze-out}}}{\gs^{\rm relic \, freeze-out} }= \frac{43/4}{\gs^{\rm relic \, freeze-out}} \, ,
 \eeq
-where $\mathcal{N}$ is defined as above to be the number of indpendent spin states including an additional factor of $\frac{7}{8}$ for fermions.  The order of magnitude difference in $\Delta \Neff$ before and after the QCD phase transition comes from order of magnitude drop in $\mathcal{N}$ below the QCD scale.
+where $\gs$ is defined as above to be the number of independent spin states including an additional factor of $\frac{7}{8}$ for fermions.  The order of magnitude difference in $\Delta \Neff$ before and after the QCD phase transition comes from order of magnitude drop in $\gs$ below the QCD scale.  At temperatures well above to top mass, the standard model gives $\gs = 106.75$.  
 
-Even a measurement of $\Nf$ which agrees with the standard model prediction to high precision would be very interesting due to the constraints it would place on physics beyond the standard model.  Some specific implications for sterile neutrinos, axions and other popular models will be discussed below.  Broadly speaking, contraining $\Delta \Neff$ at the $10^{-2}$ level would constrain a wide variety of models that are consistent with current cosmological, astrophysical, and lab-based constraints.  Furthermore, because of the sharp change in $\Delta \Neff$ at the QCD phase transition, the improvement from current constraints to projections for CMB-Stage IV can be quite dramatic.
+Even a measurement of $\Nf$ which agrees with the standard model prediction to high precision would be very interesting due to the constraints it would place on physics beyond the standard model.  Some specific implications for sterile neutrinos, axions and other popular models will be discussed below.  Broadly speaking, constraining $\Delta \Neff$ at the $10^{-2}$ level would constrain a wide variety of models that are consistent with current cosmological, astrophysical, and lab-based constraints.  Furthermore, because of the sharp change in $\Delta \Neff$ at the QCD phase transition, the improvement from current constraints to projections for CMB-Stage IV can be quite dramatic.
 
 For the minimal scenario of a single real scalar, reaching $\sigma(\Neff) \sim 1\times 10^{-2}$ would push the constraint on freeze-out temperatures from electroweak scale to the reheat temperature.  Nevertheless, a measurement a factor of a few times larger would still be extraordinarily valuable, for higher spin fields, multiple light scalars and modifications to the thermal history up to the electroweak scale.  This broad reach to extremely high energies and very early times demonstrates the discovery potential for a precision measurement of $\Nf$ with the CMB.  Furthermore, the CMB power spectrum has the ability to distinguish among certain types of dark radiation based on the behavior of its density perturbations  \cite{Chacko:2015noa,Baumann:2015rya}.  This point will be discussed further below.
 
@@ -438,7 +434,7 @@ consistent with sterile neutrinos.
 
 \subsection{Axion-like Particles}
 
-A ubiquitous component of extensions of the Standard model is the prediction of axions and/or axion-like particles (ALPs).  Axions have been introduced to solve the strong-CP problem~\cite{Peccei:1977hh}, the hierarchy problem~\cite{Graham:2015cka} and the naturalness of inflation~\cite{Freese:1990rb}.  Furthermore, they appear generically in string theory, in large numbers, leading to the qualitative phenomena describe as the string axiverse~\cite{Arvanitaki:2009fg}.
+A ubiquitous component of extensions of the Standard model are axions and/or axion-like particles (ALPs).  Axions have been introduced to solve the strong-CP problem~\cite{Peccei:1977hh}, the hierarchy problem~\cite{Graham:2015cka} and the naturalness of inflation~\cite{Freese:1990rb}.  Furthermore, they appear generically in string theory, in large numbers, leading to the qualitative phenomena describe as the string axiverse~\cite{Arvanitaki:2009fg}.
 
 ALPs typically appear as (pseudo)-Goldstone bosons of some high energy global symmetry.  At low energy, the mass of the ALP is protected by an approximate shift symmetry of the general form $a \to a + c$ where $a$ is the axion and $c$ is a constant (for non-abelian Goldstone bosons, this transformation will include higher order terms in $a$).  We will define an ALP to be any such particle where all of the couplings of the axion to the Standard model respect such a symmetry.  This symmetry may be softly broken with an explicit mass term, although this is highly restricted in the case of the QCD axion.
 
