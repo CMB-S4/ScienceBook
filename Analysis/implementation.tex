@@ -4,26 +4,28 @@
 
 \subsection{Time-Ordered Data Volume \& High Performance Computing}
 
-The computational requirements here are for both capacity and capability. To support the iterative exploration of the time-ordered data required by the pre-processing and mission characterization steps we need many analysts to be able to process the full data simultaneously, with each seeing no worse than order 1-day turnaround time for their jobs to complete. Conversely, to support the massive Monte Carlo simulation and map-making required for percent level uncertainty quantification in the absence of a full data covariance matrix, we need to be able to perform occasional runs of up to $10^4$ realizations within the total cycles available to us.
+The quest for ever-fainter signals in the CMB drives us to gather ever-larger time-ordered data (TOD) sets to obtain the necessary signal-to-noise to uncover them. As Figure \ref{fig_cmb_hpc_scaling} shows, the volumes of ground-based, balloon-borne and satellite CMB data sets have exhibited exponential growth over the last 20 years and are anticipated to do so again over the next. Moreover, for suborbital experiments the exponent exactly matches that of Moore's Law for the growth of computing capability, where we us as a proxy here the peak performance of the flagship high performance computing (HPC) system at the DOE's National Energy Research Scientific Computing (NERSC) Center at any epoch (reflecting the widespread use of NERSC for CMB data analyses over the last 20 years). 
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.5\textwidth]{Analysis/cmb_hpc_scaling}
+\includegraphics[width=0.75\textwidth]{Analysis/cmb_hpc_scaling}
 \caption{Exponential growth of CMB time-ordered data volume and HPC capability: 1990 -- 2030.}
 \label{fig_cmb_hpc_scaling}
 \end{figure}
 
-As Figure \ref{fig_cmb_hpc_scaling} shows, the size of ground-based, balloon-borne and satellite CMB data sets exhibit exponential growth over a 40 year period. Moreover, for suborbital experiments the exponent exactly matches that of Moore's Law, where we us as a proxy the peak performance of the flagship high performance computing (HPC) system at the DOE's National Energy Research Scientific Computing (NERSC) Center at any epoch (this choice reflecting the widespread use of NERSC for CMB data analyses over the last 20 years). 
+Furthermore, in the absence of a full covariance matrix we rely on Monte Carlo methods for uncertainty quantification and debiasing, and to achieve the desired percent-level statistical uncertainty requires us to simulate and reduce $10^4$ realizations of the data. Taken together, this implies that all TOD-processing steps (in simulation or analysis) (Figure \ref{fig_all_tod} must employ algorithms that scale no worse than linearly in the number of samples, and that these algorithms must {\em collectively} be implemented efficiently on the largest high performance computing (HPC) platforms available to us. 
 
-As noted above, the intractability of pixel-domain data covariance matrices pushes us to use Monte Carlo (MC) methods for uncertainty quantification and debiasing, and the computational cost of the data analysis is dominated by the generation and reduction of sufficient MC realizations of the data for the resulting statistical error to be subdominant (typically assumed to be $10^4$ realizations for percent level uncertainty). 
+The most massive Monte Carlo sets generated to date have been the Full Focal Plane (FFP) sets in support of the analysis of the Planck satellite data, with FFP8 comprising $10^4$ realizations of the mission reduced to O($10^6$) maps. Key to achieving this scale has been an aggressive optimization of the software stack, coupled with system-specific tuning over 6 generations of NERSC supercomputer. In particular wherever possible TOD input/output (IO) is removed from the pipeline so that, for example, instead of pre-computing the TOD and then pre-processing/mapping it, each realization is generated on demand and passed to the analysis pipeline in memory. While this necessitates the re-simulation of a realization should further analysis be required, it is still very substantially faster than writing it to disk and reading it back in. Similarly, inter-process communication is optimized by using a hybridized MPI/OpenMP implementation that employs explicit message passsing for inter-node, and threading for intra-node, communication.
 
-Key challenges:
-\begin{itemize}
-\item computational tractability due to data volume and complexity of next-generation supercomputers
-\item mitigating raw data systematics and developing sufficient mission and data models
-\end{itemize}
+\begin{figure}[tbp]
+\centering
+\includegraphics[width=1\textwidth]{Analysis/all_tod}
+\caption{Time-ordered data processing elements of the CMB simulation and data analysis pipeline.}
+\label{fig_all_tod}
+\end{figure}
 
-All algorithmic and implementation choices we make must first and foremost be informed by their impact on computational tractability.
+A critical challenge for CMB-S4 will be to develop this capability for a dataset 1000x the size of Planck's on the coming generations of energy-constrained HPC architectures, with their increased heterogeneity and deeper memory hierarchies. In the short term such systems will be based on either graphical programming unit (GPU) or many integrated core (MIC) technologies; in the longer term the path to Moore's Law is unclear.
+
 
 \subsection{Application Interfaces, Data Objects and Formats}
 
