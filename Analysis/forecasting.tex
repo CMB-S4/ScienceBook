@@ -24,7 +24,32 @@ To forecast the return of the thermal Sunyaev-Zel'dovich effects, an estimate of
 \subsection{Limits on the tensor-to-scalar ratio}
 
 \subsubsection{Spectrum-based domain forecasting}
-{\bf Forecasting in spectral domain coming from John Kovac}
+
+Power spectra are the primary tool used for CMB analysis.
+Forecasting the power spectrum uncertainty and resulting parameter constraints for CMB-S4 is an efficient and powerful tool to explore trade-offs in experiment design.
+
+The bandpower covariance matrix describes the raw sensitivity of all auto and cross-spectra obtained between maps of T, E, and/or B modes at multiple observing frequencies, as well as the signal and noise correlations that exist between these spectra.
+This covariance matrix includes contributions from the sample variance of signal fields (CMB and foreground) and instrumental noise, including signal$\times$noise terms.
+The signal variance depends on the assumed sky model, which can be modified to explore optimistic or pessimistic scenarios.
+As discussed above, estimates of the noise variance should be obtained by rescaling of noise levels that have actually been obtained by Stage 2 experiments (or Stage 3, when available).
+Only these scaled noise levels will include all the small ``reality factors'' that are incurred in operating a CMB experiment.
+
+We will explicitly account for the impact of systematic errors by including them in the bandpower covariance matrix.
+For constraining tensor-to-scalar ratio, we are particularly concerned with effects that add B-mode power to maps.
+Even if the bandpowers are debiased using accurate simulations of such a systematic, it will still leave behind a noise floor due to its sample variance.
+Unknown and unforseen sources of spurious signal in CMB-S4 will ultimately be constrained by jackknife null tests, which analyze a map constructed from the difference of two data subsets.
+The statistical power of the null test is set by the noise level of the maps, since any signal contributions should difference away.
+We can acknowledge this limitation by including in our projections an unknown systematic that adds B modes at the level of the null test uncertainty.
+Errors that are multiplicative in the signal, such as an absolute calibration error in the map, are best handled by adding nuisance parameters to the signal model.
+
+Once we have a projection for the bandpower covariance matrix of CMB-S4, we can derive constraints on a parametrized model of cosmological and foreground signals via the Fisher information matrix.
+While we are most interested in parameter $r$, it is necessary to also consider the amplitude, spectrum, and spatial distribution of the dust and synchrotron foregrounds (see \cite{bicepkeckplanck15} for an example).
+The Fisher matrix formalism allows us to calculate the marginalized error on each parameter, with priors if desired, or to explore the degeneracies between parameters.
+
+By compressing the data down to power spectra, it is feasible to use this technique to evaluate a wide range of survey designs.
+The parametrized signal model is also quite flexible and can include complications such as dust--synchrotron correlation or spatially varying foreground spectral indices.
+The limitation is that by considering the power spectrum only we are treating all signals as Gaussian, an approximation which must break down at some point for foregrounds.
+For this reason, it is important to have the ability to spot check the spectrum-based forecasts against map-based forecasts at specific choices of signal model.
 
 \subsubsection{Map-based domain forecasting}
 
