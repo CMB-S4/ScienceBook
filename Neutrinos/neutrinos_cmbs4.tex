@@ -203,16 +203,53 @@ Sunyaev-Zel'dvich (SZ) effect.  The size of the SZ signal does not provide a dir
 
 \subsection{Relation to Lab Experiments}
 
-In addition to the effort to constraint the sum of the neutrino masses from cosmology, a variety of lab-based experiments are constraining the angles, phases and masses describing neutrino mixing.  While cosmology is insensitive to mixing angles, the measurement of the summed neutrino masses complements direct measurements of the neutrino mass using radioactive decay. These kinematic measurements of neutrino mass focus on one of two processes, beta-decay or electron-capture, where the decay spectra near the decay endpoint is particularly sensitive to the mass of the lightest neutrino (add Figure of b-decay and e-capture endpoint spectra).
+One of the more interesting connections between cosmological measurements of neutrino mass and terrestrial experiments is the complementarity between cosmological neutrino mass measurements and the search for neutrinoless double beta decay (NLDBD). NLDBD is a hypothetical decay mode of certain nuclei where two neutrons convert to two protons and two electrons with no emission of neutrinos. The observation of NLDBD would be transformational demonstrating that neutrinos are Majorana particles and revealing a new lepton-number-violating mechanism for mass generation. This new physics could potentially explain both the smallness of neutrino masses and matter-antimatter asymmetry in the universe.
+
+Initial results from the current generation of NLDBD searches limit the NLDBD half life, $T^{0\nu}_{1/2}$, to be larger than  $\sim2\times10^{25}$~years~\cite{Gerda, Exo, Cuore}. The full sensitivity of these experiments is expected to be in the range of $10^{25}-10^{26}$~years~\cite{NSAC}. Planning and technology development is already underway for next generation ``ton-scale'' NLDBD searches which would achieve sensitivities of $10^{27}-10^{28}$~years~\cite{NSAC}.
+
+We can illustrate the connection between NLDBD searches to cosmological determinations of neutrino mass by examining the silmplest case where NLDBD is mediated by exchange of light Majorana neutrinos. Within the context of this mechanism, we can define an ``effective neutrino mass,'' $m_{\beta\beta}$, given by 
+
+\beq
+m_{\beta\beta}^{2} = ( \sum_i U_{ei}^{2}m_{\nu i} )^{2}
+\label{eq:mbb}
+\eeq
+where $m_{\nu i}$ are the light neutrino masses and $U_{ei}$ is the usual PMNS mixing matrix only including two unknown Majorana phases. The NLDBD half-life is then given by 
+
+\beq
+(T^{0\nu}_{1/2})^{-1} = G^{0\nu}\cdot (M^{0\nu} )^{2}\cdot m_{\beta\beta}^2,
+\eeq
+
+where $G^{0\nu}$ is a phase space integral and $M^{0\nu}$ is the nuclear matrix element. In this simple scenario, the signal from NLDBD experiments can be directly related to other measures of neutrino mass. Figure~\ref{fig:NLDBD} illustrates this relationship between the effective neutrino mass and the lightest neutrino mass including limits and sensitivities of current and next generation NLDBD searches.
+
+\begin{figure}[h!]
+\centering \includegraphics[width=1.0\textwidth]{Neutrinos/NLDBD_sensitivity.png}
+\caption{Plot of effective neutrino mass versus the mass of the lightest neutrino in the scenario where NLDBD is mediated by light neutrino exchange. Left corresponds to the inverted hierarchy (green band) and right corresponds to the normal hierarchy (red band). Current limits and expected sensitivities rom current generation NLDBD experiments are shown by gray and blue bands. Next generation ``ton-scale'' NLDBD searches will have sensitivities down to $m_{\beta\beta}>15$~meV (dashed line). Figure from~\cite{NSAC}}
+\label{fig:NLDBD}
+\end{figure}
+
+The complementarity between cosmological neutrino mass measurement and NLDBD can be understood by considering scenarios where NLDBD experiments either observe or fail to observe NLDBD. In the absence of a signal in next generation NLDBD searches, a cosmological measurement constraining $\sum_i m_{\nu i} > 100$~meV (corresponding to either the inverted hierarchy or a minimum neutrino mass of 50~meV) would strongly point to neutrinos being primarily Dirac particles (see Fig.~\ref{fig:NLDBD}). On the other hand, if NLDBD is observed, equation~\ref{eq:mbb} shows that cosmological measurements of $\sum_i m_{\nu i}$ are sensitive to the physics governing neutrino mass generation. For example, Fig.~\ref{fig:MajoranaPhase} shows that in the inverted mass hierarchy cosmological measurements together with NLDBD measurements can constrain one of the Majorana phases. Perhaps even more interesting would be the situation where cosmological and NLDBD measurements violate equation~\ref{eq:mbb} indicating new physics beyond the simple model of light Majorana neutrino mediated decay.
+
+\begin{figure}[h!]
+\centering \includegraphics[width=0.70\textwidth]{Neutrinos/IH_MajoranaPhase.png}
+\caption{Relationship between effective neutrino mass as measured by NLDBD experiments versus $\sum_i m_{\nu i}$ as measured by cosmology for the inverted hierarchy. The gray band corresponds to a region allowed by existing measurements where the width of the band is determined by the unknown Majorana phase. }
+\label{fig:MajoranaPhase}
+\end{figure}
+
+
+%In addition to the effort to constraint the sum of the neutrino masses from cosmology, a variety of lab-based experiments are constraining the angles, phases and masses describing neutrino mixing.  While cosmology is insensitive to mixing angles, 
+
+Cosmological measurements of the summed neutrino masses also complement direct measurements of the neutrino mass using radioactive decay. These kinematic measurements of neutrino mass focus on one of two processes, beta-decay or electron-capture, where the decay spectra near the decay endpoint is particularly sensitive to the mass of the lightest neutrino (add Figure of b-decay and e-capture endpoint spectra).
 %to measure the kinematic impact measurements from tritium decay~\cite{Drexlin:2013lha} and neutrino-less double beta decay~\cite{}.
 
 Current kinematic measurements from Mainz~\cite{Mainz} and Troitsk~\cite{Troitsk} limit the neutrino mass to $< 2.0$~eV. The KATRIN experiment~\cite{angrik} will begin taking data in 2016 and is expected to improve this limit by a factor of ten. The spectroscopic techniques of KATRIN are unlikely to improve beyond the $0.2$~eV limit because of the final state spectrum of the source itself, specifically rotational-vibrational states of molecular Tritium. As such, the community is in the process of developing new approaches to kinematic measurements of the neutrino mass. One of the new approaches is a calorimetric measurement of the electron-capture spectrum of $^{163}$Ho. The calorimetric measurement of the $^{163}$Ho endpoint is insensitive to the details of the source configuration and may provide an avenue for eventually surpassing the KATRIN sensitivity. Interestingly, upcoming experiments such as ECHO, HOLMES, and NuMECS utilize multiplexed superconducting detectors, the same technology baselined for the CMB-S4 experiment. Another promising direction for direct neutrino mass measurement is the frequency-based technique employed by the Project-8 experiment. Project-8 aims to measure the beta-decay spectrum of Tritium by measuring the frequency of cyclotron radiation emitted by the decay electrons when trapped in a magnetic field. An exciting aspect to this frequency-based technique is the potential to trap atomic Tritium which is not subject to the rotational-vibrational excitations of molecular Tritium. A spectroscopic measurement using atomic Tritium could eventually achieve sensitivities of $<0.04$~eV, a level comparable to cosmological measurements.
 
 %Direct mass measurement from tritium decay works on the following premise.  The $\beta$-decay for tritium produces Helium-3 and an electron and anti-neutrino that carry 18.6 keV of energy between them.  While in most decays this energy is distributed evenly neutrino and electron, there are rare decays where most of the energy is carried by the electron.  If the lightest neutrino is massless, the electron energy may be arbitrarily close to 18.6 eV.  However, for a non-zero mass for the lightest neutrino there is necessary a gap in the electron energy spectrum.  A careful measurement of the electron energy spectrum can therefore constrain the mass of the lightest neutrino.
 
-The relation between the cosmological measurement and the direct constraints expected from KATRIN~\cite{} are shown in Fig.~\ref{fig:neutrino-noose}.  The mass of the lightest neutrino is clearly related to the sum of the masses but the lower bound for the sum does not exist for the lightest neutrino.  In this sense the two approaches are complimentary as they cover different aspects of the neutrino mass hierarchy.
+The relation between cosmological measurement from CMB-S4, kinematic constraints constraints expected from KATRIN~\cite{}, and upcoming long-baseline oscillation experiments is shown in Fig.~\ref{fig:neutrino-noose}. The three approaches to neutrino mass and mixing are complementary and the combination of their results will either reveal new physics in the neutrino sector or provide a definitive measure of the full neutrino mass spectrum.
 
- \begin{figure}[h!]
+%The mass of the lightest neutrino is clearly related to the sum of the masses but the lower bound for the sum does not exist for the lightest neutrino.  In this sense the two approaches are complimentary as they cover different aspects of the neutrino mass hierarchy.
+
+\begin{figure}[h!]
 \centering \includegraphics[width=0.55\textwidth]{Neutrinos/numass_combine_dune}
 \caption{Shown are the current constraints and forecast sensitivity of
   cosmology to the neutrino mass in relation to the neutrino mass
@@ -230,7 +267,7 @@ The relation between the cosmological measurement and the direct constraints exp
 \label{fig:neutrino-noose}
 \end{figure}
 
-Neutrinoless double beta decay can occur in a variety of nuclei if neutrinos have a non-zero Majorana mass but does not occur for a Dirac mass.  The decay is effectively involves two neutrons decaying to two protons and two electrons with no associated neutrinos.  The flavor structure of this decay means the amplitude is proportional to $|m_{ee}|^2$ where $m_{ee} = \sum_i m_i U_{ei}$, $U$ is the PMNS matrix, and $m_i$ are the mass eigenstates.  While cosmology can not directly determine whether the mass is Majorana or Dirac, a detection of such a decay could establish that it it has a Majorana mass.  Also, like tritium decay, there is no required lower limit on $m_{ee}$ and therefore there is no level of sensitivity that would guarantee a detection.
+%Neutrinoless double beta decay can occur in a variety of nuclei if neutrinos have a non-zero Majorana mass but does not occur for a Dirac mass.  The decay is effectively involves two neutrons decaying to two protons and two electrons with no associated neutrinos.  The flavor structure of this decay means the amplitude is proportional to $|m_{ee}|^2$ where $m_{ee} = \sum_i m_i U_{ei}$, $U$ is the PMNS matrix, and $m_i$ are the mass eigenstates.  While cosmology can not directly determine whether the mass is Majorana or Dirac, a detection of such a decay could establish that it it has a Majorana mass.  Also, like tritium decay, there is no required lower limit on $m_{ee}$ and therefore there is no level of sensitivity that would guarantee a detection.
 
 Possible anomalies found in short baseline oscillation experiments (LSND,
 MiniBoon, etc.) may be explained as an active-sterile neutrino
