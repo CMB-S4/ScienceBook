@@ -1,0 +1,88 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: cmbs4_scibook.aux
+The style file: plain.bst
+Reallocated field_info (elt_size=4) to 14430 items from 5000.
+Database file #1: cmbs4.bib
+Reallocated str_pool (elt_size=1) to 130000 items from 65000.
+Warning--I didn't find a database entry for "Gerda"
+Warning--I didn't find a database entry for "Exo"
+Warning--I didn't find a database entry for "Cuore"
+Warning--I didn't find a database entry for "NSAC"
+Warning--I didn't find a database entry for "Mainz"
+Warning--I didn't find a database entry for "Troitsk"
+Warning--I didn't find a database entry for "angrik"
+Warning--I didn't find a database entry for "remazeilles/etal:2015"
+Warning--I didn't find a database entry for "jarosik/etal:2011"
+Warning--I didn't find a database entry for "delabrouille/etal:2013"
+Warning--I didn't find a database entry for "miville-Deschenes/etal:2008"
+Warning--I didn't find a database entry for "armitage-caplan/etal:2011"
+Warning--I didn't find a database entry for "ramazeilles/etal:2015"
+Warning--I didn't find a database entry for "allison/etal:2015"
+Warning--I didn't find a database entry for "Hu:2002"
+Warning--I didn't find a database entry for "Benoit-Levy:2012"
+Warning--empty journal in Abazajian:2012ys
+Warning--empty journal in Ade:2015xua
+Warning--empty journal in Ade:2015cva
+Warning--empty journal in Ade:2015ava
+Warning--empty journal in Ade:2015fva
+Warning--empty journal in Alvarez:2014vva
+Warning--empty journal in Arzoumanian:2015liz
+Warning--empty journal in Baumann:2015rya
+Warning--empty journal in Blumenhagen:2015xpa
+Warning--empty journal in Brown:2015lia
+Warning--empty journal in Collins:2014yua
+Warning--empty journal in Cyburt:2015mya
+Warning--empty journal in Cyr-Racine:2015ihg
+Warning--empty journal in Flauger:2014ana
+Warning--empty journal in Frusciante:2016xoj
+Warning--empty journal in Frusciante:2015maa
+Warning--empty journal in Grohs:2015tfy
+Warning--empty journal in Heidenreich:2015nta
+Warning--empty journal in Kaplan:2015fuy
+Warning--empty journal in Kooner:2015rza
+Warning--empty journal in Lasky:2015lej
+Warning--empty journal in Marsh:2015xka
+Warning--empty journal in Strumia:2006db
+You've used 394 entries,
+            2118 wiz_defined-function locations,
+            2673 strings with 91229 characters,
+and the built_in function-call counts, 172430 in all, are:
+= -- 14994
+> -- 13956
+< -- 9
++ -- 5523
+- -- 5125
+* -- 15485
+:= -- 31050
+add.period$ -- 1189
+call.type$ -- 394
+change.case$ -- 3717
+chr.to.int$ -- 0
+cite$ -- 417
+duplicate$ -- 4368
+empty$ -- 9479
+format.name$ -- 5125
+if$ -- 33074
+int.to.chr$ -- 0
+int.to.str$ -- 394
+missing$ -- 395
+newline$ -- 1980
+num.names$ -- 792
+pop$ -- 3059
+preamble$ -- 1
+purify$ -- 3324
+quote$ -- 0
+skip$ -- 2958
+stack$ -- 0
+substring$ -- 7734
+swap$ -- 430
+text.length$ -- 9
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 1574
+warning$ -- 23
+while$ -- 1156
+width$ -- 397
+write$ -- 4299
+(There were 39 warnings)
