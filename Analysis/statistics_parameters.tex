@@ -39,8 +39,8 @@ the current practice for this process, then we address specific challenges antic
 \label{se:current}
 Early measurements of CMB temperature anisotropy, with comparatively few map pixels or angular modes
 measured, often used maximum-likelihood methods to produce maps of the sky (e.g., \cite{wright96}) and
-either a direct evaluation of the full likelihood or a quadratic approximation to that likelihood to go from 
-maps to angular power spectra (e.g., \cite{bond98a}). With the advent of the WMAP and Planck space 
+either a direct evaluation of the full likelihood or a quadratic approximation to that likelihood (e.g., \cite{bond98a}) to go from 
+maps to angular power spectra (the first step in Figure \ref{fig_sp}). With the advent of the WMAP and Planck space 
 missions, which would map the entire sky at sub-degree resolution, it became apparent that computing
 resources could not compete with the $\mathcal{O}(N^3)$ scaling of the full-likelihood approach 
 (e.g., \cite{borrill99}). The solution for power spectrum analysis
@@ -76,11 +76,13 @@ gravitational lensing, and estimators can be constructed to go from CMB temperat
 maps to estimates of CMB lensing $\phi$ and the associated covariance (e.g., \cite{hu02a,okamoto03}).
 These quadratic estimators are the first step in an iterative estimation of the true likelihood, and in
 the weak-lensing limit they are nearly optimal; as a result, they remain the state of the art for estimating
-the large-scale $\phi$ from CMB lensing (e.g., \cite{planck13-18}). The computational burden involved
+the large-scale $\phi$ from CMB lensing (e.g., \cite{planck13-18}). For \cmbexp\ sensitivity levels, 
+it is possible that further gains can be made with more iterations (see Section \ref{delens}).
+Even with multiple steps, the computational burden involved
 in this step of the analysis is unlikely to be significantly greater for \cmbexp\ than for Planck.
 
 The final step in the analysis of a CMB data set is the estimation of cosmological parameters from
-the various post-map statistics discussed above. This involves estimating the likelihood of the data
+the various post-map statistics discussed above (the second half of Figure \ref{fig_sp}). This involves estimating the likelihood of the data
 given a model parameterized by the standard six $\Lambda$CDM parameters, possible extensions
 of the cosmological model, and any nuisance parameters involving the instrument, foregrounds, and
 other sources of systematic uncertainty. The current industry standard for this part of the analysis are
