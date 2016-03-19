@@ -1,6 +1,7 @@
 %%%%%% CMB-S4 Simulations and Data Analysis Chapter, Data Simulation Section  %%%%%%%%%%%%%%%%
  
 \section{Data Simulation}
+\label{sec_datasim}
 
 The data simulation subset of the CMB simulation pipeline (Figure \ref{fig_ds}) takes the sky model and applies the mission model to it to generate a simulated data set for that mission. The mission model consists of two parts; the instrument model defines the data acquisition system (telescope, detectors, read-out), while the observation model defines its deployment (scanning strategy, environment). Depending on the degree of detail of the sky, instrument and observation model that we include, the resulting data set can be in any of the data domains - time-ordered (raw or clean), map, or spectral. Inevitably there is a trade-off between the realism of the simulation and the complexity and cost both of generating the model inputs and of performing the simulation, with the choice reflecting both the requirements of the subsequent analyses of the data set and the availability of computational resources.
 
