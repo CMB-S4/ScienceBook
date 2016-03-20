@@ -83,9 +83,10 @@
 
 \begin{document}
 
-\title{CMB-S4 Science Book: Working Draft}
-\author{CMB-S4 Collaboration}
-\maketitle
+%\title{CMB-S4 Science Book \\ Working Draft}
+%\author{CMB-S4 Collaboration}
+%\maketitle
+
 
 \def\bibname{References}
 
@@ -106,14 +107,42 @@
 
 % The content begins here
 
-\pagenumbering{arabic}
-
 \renewcommand{\chapname}{chap:intro_}
 \renewcommand{\chapterdir}{.}
 \renewcommand{\arraystretch}{1.25}
 \addtolength{\arraycolsep}{-3pt}
 
+\pagenumbering{roman} 
+\chapter*{CMB-S4 Science Book}
+\vskip -8.5pt
+\hbox to\headwidth{%
+       \leaders\hrule height1.5pt\hfil}
+\vskip-6.5pt
+\hbox to\headwidth{%
+       \leaders\hrule height3.5pt\hfil}
 
+{\Large\bf
+  \begin{center}
+   CMB-S4 Collaboration\\
+   Working Draft\\
+   \bigskip
+   \today
+%  March 21, 2016
+ \end{center}
+}
+\eject
+
+\setcounter{page}{1}
+\begin{center}
+  {\Large \bf Forward}
+\end{center}
+
+\eject
+
+\begin{center}
+  {\Large \bf Acknowledgements}
+\end{center}
+  
 \tableofcontents
 
 %%%% Author comment macros here
@@ -130,6 +159,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\eject
+\pagenumbering{arabic}
+\setcounter{page}{1}
 \input Intro/intro_cmbs4.tex
 \input Inflation/inflation_cmbs4.tex 
 \input Neutrinos/neutrinos_cmbs4.tex 
