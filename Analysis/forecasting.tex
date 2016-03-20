@@ -21,7 +21,7 @@ Here we describe the main approaches used by our community for forecasting the e
 For the smaller-scale polarization two-point functions (TE, EE) and the lensing four-point function ($\kappa \kappa$), extragalactic foregrounds and instrumental noise are the key considerations.
 To forecast the return of the thermal Sunyaev-Zel'dovich effects, an estimate of the expected cluster counts as a function of mass and redshift is the core statistic, combined with an estimate of how well the masses can be calibrated using overlaps with weak lensing surveys. For the kinetic Sunyaev-Zeldovich effect, extragalactic foregrounds and overlap with spectroscopic surveys must all be considered. 
 
-\subsection{Limits on the tensor-to-scalar ratio}
+\subsection{Forecasting \cmbexp\ constraints on the tensor-to-scalar ratio}
 
 \subsubsection{Spectrum-based domain forecasting}
 \label{sec_specforecast}
@@ -60,7 +60,7 @@ Using this method, maps of the CMB plus Galactic foreground sky and expected noi
 
 This method allows for an assessment of the expected bias on $r$ if the model does not match the simulation, and shows how much the expected uncertainty on $r$ would increase if more complicated foreground models are explored e.g. \cite{armitage-caplan12,remazeilles16}. It is more computationally expensive than spectral-domain forecasts though, so we limit this approach to a smaller subset of explorations. 
 
-\subsection{Limits on parameters from TT/TE/EE/$\kappa\kappa$}
+\subsection{Forecasting \cmbexp\ constraints on parameters from TT/TE/EE/$\kappa\kappa$}
 
 To forecast the expected constraints on cosmological parameters from TT/TE/EE and $\kappa\kappa$ for CMB-S4, many of our community's codes use a Fisher matrix method, which assumes that the resulting parameter distributions are close to Gaussian.  Some forecasts are performed using full MCMC simulations if the parameters are known to be highly non-Gaussian. 
 
@@ -131,6 +131,34 @@ also be used.
 
 %
 
-\subsection{Limits on parameters from tSZ/kSZ}
+\subsection{Forecasting \cmbexp\ constraints on parameters from tSZ/kSZ}
 
-To estimate the expected tSZ cluster counts from S4, we use.
+As discussed in Section 4.1, some of the most important constraints on dark energy and tests of 
+General Relativity will come from the thermal and kinematic Sunyaev-Zel'dovich effects. The information
+from the tSZ will mostly be in the form of the abundance and clustering of galaxy clusters, while the 
+exact way in which kSZ information will be extracted is not fully determined, as this is a fairly new probe
+with rapidly developing analysis methods.
+
+Forecasting constraints from cluster abundance is complicated by the fact that even current CMB 
+experiments are not limited in their cluster-based constraints by raw sensitivity but rather by systematic
+uncertainties in the scaling relation between the tSZ observable and the cluster mass 
+\cite{reichardt13,planck15-24}. Thus the cluster-based forecasting for \cmbexp\ will likely be more
+focused on constraints on the observable-mass relation such as those that come from CMB-cluster
+lensing (see Section 4.1.2.1).
+
+Forecasting constraints from kSZ will be an ongoing avenue of development. As early results become
+more mature, and the community explores new ways of measuring this signal 
+\cite{hand12,keisler13,planck12-37,schaan15,hill16,soergel16}, the exact methods for forecasting
+will become more clear.
+
+
+
+
+
+
+
+
+
+
+
+

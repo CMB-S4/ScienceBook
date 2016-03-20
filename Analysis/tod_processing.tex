@@ -2,6 +2,14 @@
  
 \section{Time-Ordered Data Processing}
 
+This section discusses the first part of a CMB data analysis pipeline, in which the raw
+time-ordered data from every detector is pre-processed then added into the estimate
+of temperature and polarization on the sky. These pre-processing and map-making steps,
+and the input and output data products associated with them, are shown in Figure 
+\ref{fig_td}. We discuss those steps---and some of the challenges we expect to face in
+implementing those steps in the \cmbexp\ era---below.
+
+
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.5\textwidth]{Analysis/td}
@@ -12,11 +20,25 @@
 
 \subsection{Pre-Processing and Mission Characterization}
 
-systematics mitigation: filtering, template-subtraction, marginalization
+The first stage of analysis in typical CMB experiments involves pre-processing of the raw 
+time-ordered data in an attempt to clean the data of time-domain systematics and 
+make the real data match a model that will underpin all subsequent analyses. Typical 
+steps in this pre-processing are finding and removing cosmic-ray hits (``glitches'') on individual detectors
+and narrow-band filtering of spectral-line-like contamination to the time-ordered data (often 
+from detector sensitivity to a mechanical apparatus such as the cryocooler). 
+A challenge in the \cmbexp\ era will be to properly account for these steps---which can involve
+the data from the entire set of detectors over a long observing period---in the time-ordered data
+simulation pipeline, in order to characterize their effects on the final science results. The data 
+volume is sufficiently large at this step that multiple full simulations may be unfeasible.
 
-mission model building: pointing reconstruction, beam measurement, bandpass mismatch, noise estimation, systematics
+The pre-processing phase is also where many of the inputs to the mission model (a key piece of the
+data simulation pipeline) are measured. These inputs include pointing reconstruction, beam profiles, 
+bandpasses, and noise, though in ground-based experiments some of these are more easily
+measured using dedicated observations of bright sources or off-sky characterization.
+
 
 \subsection{Map-Making}
+\label{sec_mapmaking}
 
 Map-making is the stage of the analysis when the major compression of the time-ordered data happens and some estimate of the sky signal is produced at each observing frequency. It is usually a linear operation, characterized by some operator, $\mathbf{L}$, which transforms the input time-ordered data, $\mathbf{d}$, into a pixel domain map, $\mathbf{m}$, 
 e.g., \cite{Tegmark1997},

@@ -24,13 +24,44 @@ For the noise simulation we can simply generate a white noise timestream and con
 
 \subsection{Map Domain}
 
-Apply symmetric beam in harmonic space, or effective beam (built up over pointings), to bandpassed map.
+The next level of abstraction from full TOD simulations is simulating the sky map that would be made
+from the TOD. The signal part of such simulations is straightforward: the various components of the sky
+model are bandpass-integrated and convolved with a beam and any filtering kernel that is applied to the 
+actual data. Both of these operations can be performed on a per-detector basis (using the measured 
+individual-detector beams and bandpasses), but this reduces much of the computational gain in going from
+TOD to map-level simulations, so it is more likely that maps would be simulated for large groups of
+detectors---possibly all detectors at a given observing frequency---at once. For experimental platforms that 
+apply TOD filtering before mapmaking, it will be necessary to create a map-level (or two-dimensional 
+Fourier-space) representation of the TOD filtering that results in simulated maps with the same modes
+missing or altered as the real map (or a map that has been constructed from full TOD simulations).
 
-Use hitmap or 3x3 white noise covariance matrix (built up over pointings) to generate noise map.
+The simplest implementation for the noise part of map-level simulations is adding constant-amplitude
+white noise to every simulated map pixel. This ignores pixel-pixel correlations and incomplete coverage, 
+both of which are naturally accounted for in full-TOD simulations. The exact nature of the 
+correlated pixel-domain noise 
+(or non-white Fourier-space noise) arises from a combination of non-white noise in the TOD 
+and the scan strategy, and for some scan patterns can be analytically projected from the time domain
+to the pixel or 2d Fourier domain \cite{wandelt04,crawford07,bucher16}. 
+
+The effect of non-uniform coverage on the noise properties of the map is simple to simulate
+in the white-noise case: the uniform-coverage white-noise map is simply multiplied by the square
+root of the inverse of the ``hit-count'' map. The combined effect of non-white noise and non-uniform
+coverage---particularly if the coverage map is not smooth on scales of the noise correlation---will
+be more difficult to simulate purely in the map domain.
 
 \subsection{Spectral Domain}
 
-Model residuals (noise, systematics, component separation, etc) in spectral domain.
+Simulations at the one-dimensional power spectrum level are fast, computationally light, and can 
+be used to explore large experimental and observing-strategy parameter spaces quickly and efficiently.
+As such, they will constitute the bulk of simulations used in forecasting for \cmbexp, particularly in
+the era in which the experimental design is not final, and reasonably fast communication and iteration
+between the experiment design and forecasting teams is crucial. Section 
+\ref{sec_specforecast} contains a detailed discussion of plans for
+implementing maximally realistic spectral-domain simulations.
+
+
+
+%Model residuals (noise, systematics, component separation, etc) in spectral domain.
 
 %\bibliography{cmbs4}
 
