@@ -505,70 +505,152 @@ Despite the fact that inflation drives the spatial curvature to zero at the leve
 Current constraints on this parameter from the CMB alone are $\Omega_k= 0.005^{+0.016}_{-0.017}$. Including baryon acoustic oscillation (BAO) data tightens the bound to $\Omega_k=0.000\pm0.005$. CMB-S4 is expected to constrain spatial curvature at a level of $\sigma(\Omega_k)\approx 10^{-3}$. A detection at this level would have profound implications for the inflationary paradigm. 
 
 \subsection{Isocurvature}
-The structure of observed CMB power spectra indicate that the primordial initial conditions are adiabatic. That is, the initial entropy fluctuation (a gauge-invariant quantity) vanishes,
+
+Measurements of CMB temperature/polarization power spectra indicate that the primordial initial conditions are adiabatic, which means that the initial entropy fluctuation vanishes, that is
 \begin{align}
-S_{i \gamma}\equiv \frac{\delta n_{i}}{n_{i}}-\frac{\delta n_{\gamma}}{n_{\gamma}} =0,\end{align} where $i$ is a species label and can denote isocurvature in baryons, cold dark matter, or neutrinos. Number densities of the $i^{\rm th}$ species are denoted by $n_{i}$ and $\delta n_{i}$ denotes the spatial perturbation in the $i^{\rm th}$ species.
+S_{i \gamma}\equiv \frac{\delta n_{i}}{n_{i}}-\frac{\delta n_{\gamma}}{n_{\gamma}} =0.\end{align} The species label $i$ can denote baryons, cold dark matter, or neutrinos. Number densities are denoted by $n_{i}$ and perturbations in them by $\delta n_{i}$.
 
-%CURRENT OBSERVATIONAL LIMITS AND CITATION+S4 FORECAST OF IMPROVED LIMITS AT THE LEVEL OF OBSERVED ISOCURVATURE AMPLITUDES
+Adiabatic perturbations are produced in models where the initial perturbations in all species are seeded by   fluctuations of the inflaton. If fluctuations are also sourced by a second field, the initial conditions will be a mixture of adiabatic and entropy (a.k.a isocurvature) perturbations, for which $S_{i\gamma}\neq 0$. These initial conditions determine the acoustic peak structure and large-scale amplitude of CMB anisotropies, as well as large-scale structure statistics \cite{Bond:1984fp,Kodama:1986fg,Kodama:1986ud,Hu:1994jd,Moodley:2004nz,Bean:2006qz}. Observations can thus probe the number of fields during inflation. 
+\label{sec:isosec}
+Each species can carry isocurvature perturbations in its density (e.g. Refs~\cite{Bucher:1999re,Bucher:2004an,Moodley:2004nz}).\footnote{Neutrinos can also carry velocity isocurvature, but this mode is hard to excite in inflationary models and less well motivated.} Indeed, the normal modes of the perturbation evolution equations correspond to adiabatic, cold dark matter density isocurvature (CDI), baryon density isocurvature (BDI), neutrino density isocurvature (NDI), and neutrino velocity isocurvature (NVI) initial conditions. 
 
-Adiabatic perturbations are consistent with dark matter production during radiation domination and single field models of inflation, in which initial perturbations of all species are seeded by the vacuum fluctuations of the inflaton. If the perturbations produced during inflation, however, are partially sourced by a second degree of freedom, the primordial initial conditions will be an admixture of adiabatic and entropy (or isocurvature) perturbations, as long as the species carrying the isocurvature perturbation do not come into thermal equilibrium with the radiation after the isocurvature is initially produced. The initial conditions of perturbations completely determine the subsequent evolution of perturbations in all species, the phase structure of the CMB, and the details of structure formation.
+\begin{figure*}[htbp!]
+\includegraphics[width=0.5\textwidth, trim={0 10 0 0},clip]{./Inflation/iso_schematic.pdf} 
+ \caption{CMB isocurvature power spectra $C_{l}^{\rm TT}$ (solid) and $C_{l}^{\rm EE}$ (dashed) for equal primordial $P_{\zeta\zeta}(k)$  isocurvature perturbations. \textbf{Figure appropriated from Planck inflation paper. To be replaced by our own figure.}
+\label{fig:iso_schematic}}
+\end{figure*} 
 
-In principle, each cosmological degree of freedom can carry its own isocurvature perturbation in its density or velocity (e.g. Refs~\cite{Bucher:1999re,Bucher:2004an,Moodley:2004nz}). In this section we focus on two simple isocurvature scenarios, well-motivated within inflationary theory: the axion and the curvaton.
+Data from WMAP \cite{dunkley09}, \textit{Planck} \cite{Ade:2015lrj}, and ground-based experiments \cite{Enqvist:2000hp,MacTavish:2005yk} indicate that perturbations are predominantly adiabatic. The limits can stated in terms of the fractional primordial power in each isocurvature mode:\begin{equation}
+\beta\equiv \frac{P_{S_{i\gamma}}(k)}{P_{S_{i\gamma}}(k)+P_{\zeta\zeta}(k)}.
+\end{equation}
+The current CMB limits (allowing one isocurvature mode at a time) are shown in Table \ref{table:fisher_model_independent}, along with a Fisher forecast of CMB-S4 sensitivity to isocurvature modes. For the neutrino limits, the spectral slope and correlation (with adiabatic modes) of the isocurvature are marginalized over. In Table. \ref{table:fisher_model_independent}, ``correlated'' refers to totally correlated or anti-correlated (with $\zeta$) isocurvature perturbations. All results are quoted at a fiducial $k=0.05~{\rm Mpc}^{-1}$. Limits to BDI perturbations are not separately listed, as at linear order they are observationally degenerate with CDI perturbations \cite{Gordon:2002gv,Lewis:2002nc,Lewis:2007kz,Gordon:2009wx}. CMB-S4 could on these limits by as much as an order of magnitude (based on the precise assumptions), as shown by the results of a standard Fisher analysis in Table. \ref{table:fisher_model_independent}. 
 
-\subsection{Axion Dark Matter}
+%\begin{equation}
+%\beta\equiv \frac{P_{S_{i\gamma}}(k)}{P_{S_{i\gamma}}(k)+P_{\zeta\zeta}(k)}\leq \left\{\begin{array}{ll}0.0013~(0.038)&\mbox{CDI correlated, $n_{s}^{\rm iso}=n_s^{\rm adi}$ (CDI uncorrelated, $n_{s}^{\rm iso}=1)$},\\
+%0.193&\mbox{NDI},\\
+%0.074&\mbox{NVI}.\\
+%\end{array}\right. \label{eq:isocurvplancklimits}
+%\end{equation} 
 
-The QCD axion and other axion-like particles (ALPs), if stable on cosmological timescales, can contribute to the DM density. Along with thermal WIMPs, they are considered an extremely well-motivated DM candidate (see Ref.~\cite{Marsh:2015xka} for a recent review).
+\begin{table}
+\begin{center}
+\begin{tabular}
+{lcccc}\hline \hline {\rm Mode} &  $ \beta $ (\emph{Planck}, uncorrelated )&$ \beta$(CMB-S4, uncorrelated)&  $ \beta $ (\emph{Planck}, correlated )&$ \beta$(CMB-S4, correlated)\\ 
+\hline \\
+CDI & $\leq 0.04$&$0.008$&$0.001$&$XX$\\
+NDI &  $\leq 0.01$ &$XX$&$XX$&$XX$\\
+NVI &  $\leq 0.04$&$XX$&$XX$&$XX$\\
+\\ \hline \hline 
+\end{tabular}
+\caption{Constraints (from \emph{Planck} \cite{Ade:2015lrj}) TT+BAO+LowP data vs. CMB-S4 sensitivity to fractional primordial isocurvature power $\beta$ ($95\%$ C.L.) in various modes for uncorrelated/correlated isocurvature modes. \textbf{Numbers to be finalised based on results of Fisher forecast efforts.}
+\label{table:fisher_model_independent}}
+\end{center}
+\end{table}
 
-A key axion parameter is the symmetry breaking scale, $f_a$. If $H_I/2\pi<f_a$, the axion DM acquires \emph{uncorrelated isocurvature perturbations} (e.g. Refs.~\cite{Axenides:1983hj,Fox:2004kb,Hertzberg:2008wr}).\footnote{We will ignore the case where $H_I/2\pi>f_a$, since no isocurvature perturbations are produced. Since $r_{0.05}<0.12$ implies the all axion DM with $f_a>1.8\times 10^{13}\text{ GeV}$ produces isocurvature. This accounts for the QCD axion in the ``anthropic'' window (roughly half of the allowed range of $f_a$ on a logarithmic scale), all axions with GUT scale decay constants (such as string axions~\cite{Svrcek:2006yi,Arvanitaki:2009fg}) and axions with lower $f_a$ in models of low-scale inflation.} The uncorrelated CDM isocurvature amplitude is bounded by \emph{Planck} as $A_I/A_s<0.038$ at 95\% C.L.~\cite{Ade:2015lrj}. We performed a Fisher matrix forecast for CMB-S4: the isocurvature limit will be improved by a factor of approximately five compared to \emph{Planck}, allowing for detection of axion-type isocurvature at 2$\sigma$ significance in the region $0.008<A_I/A_s<0.038$.
+For the rest of this section we focus on two isocurvature scenarios that augment the inflaton with a second field: axion dark matter and the curvaton model. These models produce uncorrelated and correlated isocurvature pertrubrations, respectively.
 
-The axion isocuvrature amplitude is:
+\subsubsection{Axion Dark Matter}
+
+The QCD axion and other axion-like particles (ALPs), if stable on cosmological timescales, can contribute to the DM density. Along with thermal WIMPs, they are a well-motivated DM candidate (see Ref.~\cite{Marsh:2015xka} for a recent review).
+
+A key axion parameter is the symmetry breaking scale, $f_a$. If $H_I/2\pi<f_a$, the axion DM acquires \emph{uncorrelated isocurvature perturbations} (e.g. Refs.~\cite{Axenides:1983hj,Fox:2004kb,Hertzberg:2008wr}).\footnote{We will ignore the case where $H_I/2\pi>f_a$, since no isocurvature initial conditions are excited. Since $r_{0.05}<0.12$ implies the all axion DM with $f_a>1.8\times 10^{13}\text{ GeV}$ produces isocurvature. This accounts for the QCD axion in the ``anthropic'' window (roughly half of the allowed range of $f_a$ on a logarithmic scale), all axions with GUT scale decay constants (such as string axions~\cite{Svrcek:2006yi,Arvanitaki:2009fg}) and axions with lower $f_a$ in models of low-scale inflation.} The uncorrelated CDM isocurvature amplitude is bounded by \emph{Planck} to be $A_I/A_s<0.038$ at 95\% C.L.~\cite{Ade:2015lrj}. We performed a Fisher matrix forecast for CMB-S4: the isocurvature limit will be improved by a factor of approximately five compared to \emph{Planck}, allowing for detection of axion-type isocurvature at 2$\sigma$ significance in the region $0.008<A_I/A_s<0.038$.
+
+The axion isocurvature amplitude is:
 \begin{equation}
-A_I = \left(\frac{\Omega_a}{\Omega_d}\right)^2\frac{(H_I/M_{pl})^2}{\pi^2(\phi_i/M_{pl})^2} \, .
+A_I = \left(\frac{\Omega_a}{\Omega_d}\right)^2\frac{(H_I/M_{\rm pl})^2}{\pi^2(\phi_i/M_{\rm pl})^2} \, .
 \label{eqn:iso_amplitude}
 \end{equation}
-The initial axion displacement, $\phi_i$, fixes the axion relic abundance such that $\Omega_a=\Omega_a (\phi_i,m_a)$~\cite{Preskill:1982cy,Abbott:1982af,Dine:1982ah,Turner:1983he,Steinhardt:1983ia,Marsh:2010wq}. Thus, if the relic density and mass can be measured by independent means \emph{a measurement of the axion isocurvature amplitude can be used as a measurement of $H_I$.}
+The initial axion displacement, $\phi_i$, fixes the axion relic abundance such that $\Omega_a=\Omega_a (\phi_i,m_a)$~\cite{Preskill:1982cy,Abbott:1982af,Dine:1982ah,Turner:1983he,Steinhardt:1983ia,Marsh:2010wq}. Thus, if the relic density and mass can be measured by independent means, \emph{a measurement of the axion isocurvature amplitude can be used to measure the energy scale of inflation, $H_I$!}
 
-If the standard QCD axion is all of the DM, axion direct detection experiments can be used in conjunction with CMB-S4 to measure $H_I$ in the range
-\begin{align}
-& 2.5\times 10^6\lesssim H_I/\text{GeV}\lesssim 4\times 10^9\,  \nonumber \\ 
-&\text{(QCD axion + direct detection)}\,.
-\end{align}
-This is demonstrated in Fig.~\ref{fig:qcd_isocurvature} (left panel) for the case of ADMX~\cite{Asztalos:2009yp} (in operation), and CASPEr~\cite{Budker:2013hf} (proposed), where we have used the standard formulae relating the QCD axion mass and relic abundance to the decay constant (e.g. Ref.~\cite{Fox:2004kb}).\footnote{As is well known, this implies that, in standard minimally coupled, single-field, slow-roll models of inflation, the high-$f_a$ QCD axion is incompatible with detection of tensor modes~\cite{Fox:2004kb,Hertzberg:2008wr,Visinelli:2014twa,Marsh:2014qoa}. Non-minimal models such as Ref.~\cite{Fairbairn:2014zta}can alter these conclusions.} \emph{Combining axion DM direct detection with CMB-S4 isocurvature measurements allows a unique probe of low-scale inflation, inaccessible to searches for tensor modes.}
+If the standard QCD axion is all of the DM, axion direct detection experiments can be used in conjunction with CMB-S4 to probe $H_I$ in the range
+\begin{equation}
+ 2.5\times 10^6\lesssim H_I/\text{GeV}\lesssim 4\times 10^9\,\,
+\text{(QCD axion + direct detection)} \end{equation}
+This is demonstrated in Fig.~\ref{fig:qcd_isocurvature} (left panel) for the case of ADMX~\cite{Asztalos:2009yp} (in operation), and CASPEr~\cite{Budker:2013hf} (proposed), where we have used the standard formulae relating the QCD axion mass and relic abundance to the decay constant (e.g. Ref.~\cite{Fox:2004kb}).\footnote{As is well known, this implies that, in standard minimally coupled, single-field, slow-roll models of inflation, the high-$f_a$ QCD axion is incompatible with detection of tensor modes~\cite{Fox:2004kb,Hertzberg:2008wr,Visinelli:2014twa,Marsh:2014qoa,Visinelli:2014twa}, although non-standard cosmic thermal histories of PQ breaking mechanisms can lift constraints , e.g. \cite{Higaki:2014ooa,Fairbairn:2014zta,Nomura:2015xil}.} \emph{Combining axion DM direct detection with CMB-S4 isocurvature measurements allows a unique probe of low-scale inflation, inaccessible to searches for tensor modes.}
 
-\begin{figure*}
+\begin{figure*}[htbp!]
 \begin{center}
 $\begin{array}{@{\hspace{-0.8in}}c@{\hspace{+0.2in}}c@{\hspace{-0.5in}}}
-\includegraphics[width=0.5\textwidth]{Inflation/admx_casper_labelled.pdf} &
-\includegraphics[width=0.5\textwidth]{Inflation/alp_iso_labelled.pdf}
+\includegraphics[width=0.4\textwidth]{Inflation/admx_casper_labelled.pdf} &
+\includegraphics[width=0.4\textwidth]{Inflation/alp_iso_labelled.pdf}
  \end{array}$
  \end{center}
- \caption{Isocurvature axion DM. Red bands shows isocurvature amplitude consistent with \emph{Planck} and detectable with S4. \emph{Left Panel} The QCD axion: measuring the energy scale of inflation with S4+axion direct detection. Here we restrict axions to be all of the DM. The purple regions show the range of $f_a$ accessible to axion direct detection experiments. Combining ADMX~\cite{Asztalos:2009yp} (in operation), CASPEr~\cite{Budker:2013hf} (proposed), and S4 it is possible to measure $4\times 10^5\lesssim H_I/\text{GeV}\lesssim 4\times 10^9$. \emph{Right Panel} ALPs: a combination measurement using S4 alone. Assuming 1\% of the total DM resides in an ultralight axion, the mass and axion density can be determined to high significance using, for example, the lensing power. The isocurvature amplitude can also be determined, allowing for an independent determination of $H_I$ in the same regime as is accessible from tensor modes (purple band).}
+ \caption{Axion dark matter isocurvature. Red bands shows isocurvature amplitude consistent with \emph{Planck} and detectable with S4. \emph{Left Panel} The QCD axion: measuring the energy scale of inflation with S4+axion direct detection. Here we restrict axions to be all of the DM. The purple regions show the range of $f_a$ accessible to axion direct detection experiments. Combining ADMX~\cite{Asztalos:2009yp} (in operation), CASPEr~\cite{Budker:2013hf} (proposed), and S4 it is possible to measure $4\times 10^5\lesssim H_I/\text{GeV}\lesssim 4\times 10^9$. \emph{Right Panel} ALPs: a combination measurement using S4 alone. Assuming 1\% of the total DM resides in an ultralight axion, the mass and axion density can be determined to high significance using, for example, the lensing power. The isocurvature amplitude can also be determined, allowing for an independent determination of $H_I$ in the same regime as is accessible from tensor modes (purple band).}
 \label{fig:qcd_isocurvature}
 \end{figure*} 
 
-We now consider isocurvature in ultralight ALPs (ULAs, see e.g. Refs.~\cite{Marsh:2013taa,Marsh:2014qoa}). ULA DM has a number of distinctive features in large scale structure and the CMB~\cite{Hlozek:2014lca,Marsh:2013ywa}. For ULAs with $10^{-32}\lesssim m_a/\text{eV}\lesssim 10^{-23}$ a DM fraction of $\Omega_a/\Omega_d$ in the range of 1\% is consistent with \emph{Planck}~\cite{Hlozek:2014lca} and high-$z$ galaxy formation~\cite{Bozek:2014uqa,Schive:2015kza}, yet can be distinguished from pure CDM using S4 lensing power at $>2\sigma$ (depending on the ULA mass, see OUR OTHER SECTION). Fig.~\ref{fig:qcd_isocurvature} (right panel) shows isocurvature constraints possible with S4, compared to tensor constraints. We fix the fiducial ULA fraction to 1\%, such that $\Omega_a$ and $m_a$ can be separately measured using the S4 lensing power, and thus using Eq.~\ref{eqn:iso_amplitude} a measurement of $A_I$ is a measurement of $H_I$. 
+We now consider isocurvature in ultralight ALPs (ULAs, see e.g. Refs.~\cite{Marsh:2013taa,Marsh:2014qoa}). ULA DM has a number of distinctive features in large scale structure and the CMB~\cite{Hlozek:2015axa,Marsh:2013ywa}. For ULAs with $10^{-32}\lesssim m_a/\text{eV}\lesssim 10^{-23}$ a DM fraction of $\Omega_a/\Omega_d$ in the range of 1\% is consistent with \emph{Planck}~\cite{Hlozek:2015axa} and high-$z$ galaxy formation~\cite{Bozek:2014uqa,Schive:2015kza}, yet can be distinguished from pure CDM using S4 lensing power at $>2\sigma$ (depending on the ULA mass, Sec.~\ref{sec:uladiabat}). Fig.~\ref{fig:qcd_isocurvature} (right panel) shows isocurvature constraints possible with S4, compared to tensor constraints. We fix the fiducial ULA fraction to 1\%, such that $\Omega_a$ and $m_a$ can be separately measured using the S4 lensing power, and thus using Eq.~(\ref{eqn:iso_amplitude}) a measurement of $A_I$ is a measurement of $H_I$. 
 
 In contrast to the QCD axion, there are masses, $m_a\lesssim 10^{-26}\text{ eV}$, for which tensor modes impose a stronger constraint on $H_I$ than isocurvature (such that isocurvature in these ALPs would be undetectably small). However, there are also regions of overlap between possible tensor and isocurvature measurements. Using S4 in these regions, it is possible to make a combination measurement of isocurvature and axion parameters, giving an independent measurement of $H_I$:
-\begin{align}
-& 2.5\times 10^{13}\lesssim H_I/\text{GeV}\lesssim 1\times 10^{14}\,  \nonumber \\ 
-&\text{(ultralight ALPs, S4 alone)}\,.
-\end{align}
-This applies to ALPs in the mass range $10^{-26}\lesssim m_a/\text{eV}\lesssim 10^{-23}$, where effects on lensing of a 1\% axion fraction can be distinguished from CDM.\footnote{We note that obtaining a 1\% fraction in such ALPs requires $f_a\gg 1.8\times 10^{13}\text{ GeV}$, and so isocurvature in ULA DM is guaranteed.} \emph{Detecting isocuvrature and lensing effects from ULAs using CMB-S4 can provide a measurement of $H_I$ complementary to searches for tensor modes.}
+\begin{equation} 2.5\times 10^{13}\lesssim H_I/\text{GeV}\lesssim 10^{14}\,
+\text{(ultralight ALPs, S4 alone)}\,\,.
+\end{equation}
+This applies to ALPs in the mass range $10^{-26}\lesssim m_a/\text{eV}\lesssim 10^{-23}$, where effects on lensing of a 1\% axion fraction can be distinguished from CDM.\footnote{We note that obtaining a 1\% fraction in such ALPs requires $f_a\gg 1.8\times 10^{13}\text{ GeV}$, and so isocurvature in ULA DM is guaranteed.} \emph{Detecting isocurvature and lensing effects from ULAs using CMB-S4 can provide a measurement of $H_I$ complementary to searches for tensor modes.}
 
-\subsection{The Curvaton Scenario}
+\subsubsection{The Curvaton Scenario}
 
-To ease the observational constraints to single-field models, it has been suggested that a spectator field (the curvaton) acquires vacuum fluctuations during inflation, but then decays to dominate the overall curvature fluctuation. In this curvaton model, if any species or quantum numbers are produced directly by curvaton decay, or before it (as opposed to from the thermal plasma), there will be a mismatch that yields isocurvature perturbations, generally correlated (or anti-correlated) with the total density fluctuation. This correlation (or anti-correlation) is in contrast with the uncorrelated isocurvature perturbations produced in axion dark matter models where Peccei-Quinn symmetry breaking occurs before the end of inflation.
+One alternative to single-field models is the curvaton scenario, in which an energetically sub-dominant second field $\sigma$ acquires vacuum fluctuations during inflation, becomes more important [by redshifting as $(1+z)^{3}$] later, and sources $\zeta$ \cite{Mollerach:1989hu,Mukhanov:1990me,Moroi:2001ct,Lyth:2001nq,Lyth:2002my}. Eventually, the curvaton decays. Particle candidates for a curvaton include a sneutrino, a light modulus from string theory, as well as others \cite{Postma:2002et,Kasuya:2003va,Ikegami:2004ve,Mazumdar:2004qv,Allahverdi:2006dr,Papantonopoulos:2006xi,Mazumdar:2010sa,Mazumdar:2011xe}. Depending on whether a species $i$ (or the quantum numbers it carries) are produced by, before, or after curvaton decay, perturbations in $i$ are offset from $\zeta$, leading to isocurvature perturbations, that is \cite{Lyth:2001nq,Lyth:2002my,Gordon:2002gv}
 
-The amplitude of the curvaton-generated isocurvature perturbations is controlled by $r_{\rm D}$, the fractional energy density in the curvaton when it decays. The precise admixture of different isocurvature modes is determined by whether or not baryon number, lepton number (if there is a primordial lepton asymmetry), and cold dark matter are produced before, by, or after curvaton decay. The lepton asymmetry $\xi_{\rm lep}$ is important in setting the amplitude of neutrino isocurvature perturbations. \footnote{Strictly speaking, we refer hereto neutrino isocurvature \textit{density} perturbations. There is also a neutrino isocurvature velocity mode, but this is hard to excite in inflationary models and is neglected here.} %DEFINE LEPTON ASYMMETRY USING AN EQUATION
+\begin{eqnarray}
+S_{i \gamma}=\left\{\begin{array}{ll}-3\zeta-3(\zeta_{\gamma}-\zeta),&\mbox{if $i$ is produced before $\sigma$ decay,}\\3\left(\frac{1}{r_{D}}-1\right)\zeta-3(\zeta_{\gamma}-\zeta),&\mbox{if $i$ is produced by $\sigma$ decay},\\ -3(\zeta_\gamma-\zeta),&\mbox{if $i$ is produced after $\sigma$ decay},\end{array}\right.\label{eq:strew}
+\end{eqnarray} where $\zeta_{i}$ is the density perturbation in $i$ on surfaces of constant spatial curvature. The parameter $r_{\rm D}$ is the fractional energy density in the curvaton when it decays. 
 
-The remaining viable models are those in which one of baryon number or cold dark matter is produced by curvaton decay, as well as those in which \textit{both} baryon number and cold dark matter are produced after curvaton decay. Current isocurvature limits favor values of $r_{\rm D}\simeq 1$ for most of these models (in other words, the curvaton completely dominates the total density fluctuation if it exists at all), save for models in which baryon number is produced by curvaton decay and CDM before, or vice versa, which favor central values of $r_{\rm D} \simeq 0.16$ and $r_{\rm D} \simeq 0.84$. These numerical values are driven by the requirement that the CDM and baryon isocurvature perturbations nearly cancel out perfectly.
+The precise mixture of isocurvature modes is determined by whether or not baryon number, lepton number, and cold dark matter are produced before, by, or after curvaton decay. Curvaton-type isocurvature is distinct from axion-type isocurvature in the fact that it is correlated (or anti-correlated) with the adiabatic mode. If lepton number is produced by curvaton decay, the lepton chemical potential $\xi_{\rm lep}$ is important in setting the amplitude of NDI modes \cite{Lyth:2002my,Gordon:2003hw,DiValentino:2011sv}:\footnote{Going forward, we restrict our attention to NDI perturbations, as NVI modes are hard to excite in inflationary models.}
+\begin{equation}
+S_{\nu \gamma}=
+-\frac{135}{7}\left(\frac{\xi_{\rm lep}}{\pi}\right)^2\zeta_{\gamma}.\end{equation}
 
-Current Planck limits \cite{Smith/Grin:2015} are characterized by precision $\sim \Delta r_{\rm D}/r_{]rm D}\simeq 0.005-0.01$. Depending on the precise scenario, a standard Fisher-matrix analysis shows the S4 sensitivity to curvaton-sourced isocurvature should improve by a factor of $2-4$ on current limits. In models with nearly-canceling CDM and baryon isocurvature perturbations, S4 limits to neutrino isocurvature drive an improvement in the sensitivity to the lepton asymmetry from $\Delta \xi_{\rm lep}^{2}\simeq 0.015$ to $\Delta \xi_{\rm lep}^{2}\simeq 0.03$. This dramatic improvement would make CMB limits comparably sensitive to BBN probes of cosmological lepton asymmetry.
+All together, there are $27$ distinct curvaton decay scenarios, as baryon number, lepton number, and cold dark matter could each be produced before, by, or after curvaton decay. Viable models are those in which one of baryon number or cold dark matter is produced by curvaton decay, as well as those in which \textit{both} baryon number and cold dark matter are produced after curvaton decay. We demark the models with the notation ($b_{x}$, $c_{y}$, $L_{z}$), where $x\in ({\rm before, by, after})$, $b$ denotes baryon number, $c$ denotes cold dark matter, and $L$ denotes lepton number. For example, $(b_{\rm before}, c_{\rm by}, L_{\rm by})$ labels a model in which baryon number is produced before curvaton decay, cold dark matter by curvaton decay, and lepton number by curvaton decay.
+
+Current isocurvature limits favor values of $r_{\rm D}\simeq 1$, except for models in which baryon number is produced by curvaton decay and CDM before (or vice versa), which favor central values of $r_{\rm D} \simeq 0.16$ ($r_{\rm D} \simeq 0.84$). These numerical values are driven by the requirement that isocurvature nearly vanish.
+
+The current limits \cite{Smith/Grin:2015} are shown in Table \ref{limits_rd}, along with a Fisher forecast of the sensitivity of CMB-S4 to curvaton parameters from isocurvature. 
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}
+{lcc}\hline \hline {\rm scenario} &  $ \Delta r_D/r_{D}^{\rm adi}$ (\emph{Planck})&$ \Delta r_D/r_{D}^{\rm adi}$(CMB-S4)\\ 
+\hline \\
+$(b_{\rm by},c_{\rm before},L_{y_{L}})$ & $0.03$&$XX$\\
+$(b_{\rm before},c_{\rm by},L_{y_{L}})$ &  $0.01$ &$XX$\\
+$(b_{\rm by},c_{\rm after},L_{y_{L}})$ &  $0.04$&$XX$\\
+$(b_{\rm after},c_{\rm by},L_{y_{L}})$ & $0.008$&$XX$\\
+$(b_{\rm by},c_{\rm by},L_{y_{L}})$ &  $0.007$&$XX$\\
+$(b_{\rm after},c_{\rm after},L_{y_{L}})$ & $0.003$&$XX$\\
+\\ \hline \hline 
+\end{tabular}
+\caption{Isocurvature constraints on $r_D$ ($95\%$ C.L.) using \textit{Planck} TT+BAO+LowP data \cite{Smith/Grin:2015} in viable curvaton decay-scenarios, and Fisher forecasts for CMB-S4 sensitivity. \textbf{Numbers to be finalised based on the final Fisher forecasts as part of larger forecast effort}.
+\label{limits_rd}}
+\end{center}
+\end{table}
+
+\begin{table}
+\begin{center}
+\begin{tabular}
+{lcc}\hline \hline {\rm scenario} &  $\Delta \xi^{2}_{\rm lep}$ (\emph{Planck})&$\Delta \xi^{2}_{\rm lep}$ CMB-S4) \\ 
+\hline \\
+$(b_{\rm by},c_{\rm before},L_{\rm by})$ &$XX$ &$XX$\\
+$(b_{\rm before},c_{\rm by},L_{\rm by})$ &$XX$  & $XX$\\
+$(b_{\rm by},c_{\rm after},L_{\rm by})$ &$XX$  &$XX$\\
+$(b_{\rm after},c_{\rm by},L_{\rm by})$ & $XX$&$XX$\\
+$(b_{\rm by},c_{\rm by},L_{\rm by})$ & $XX$ & $XX$\\
+$(b_{\rm after},c_{\rm after},L_{\rm by})$ &$XX$ &$XX$\\
+\\ \hline \hline 
+\end{tabular}
+\caption{Isocurvature constraints on $\xi_{\rm lep}^{2}$ ($95\%$ C.L.) using \textit{Planck} TT+BAO+LowP data \cite{Smith/Grin:2015} in viable curvaton decay-scenarios where lepton number is generated by curvaton decay, and Fisher forecasts for CMB-S4 sensitivity.\textbf{$XX$ in the tables denotes results pending the result of a final Fisher analysis based on parameters developed by the forecasting group.}}
+\label{limits_xilep}
+\end{center}
+\end{table}
+
+
+Depending on the precise scenario, a standard Fisher analysis shows that the S4 sensitivity to curvaton-sourced isocurvature should improve by a factor of $2-4$ on current limits. In models with nearly-canceling CDM and baryon isocurvature perturbations, S4 limits to neutrino isocurvature drive an improvement in the sensitivity to the lepton asymmetry from $\Delta \xi_{\rm lep}^{2}\simeq 0.015$ to $\Delta \xi_{\rm lep}^{2}\simeq 0.003$. This dramatic improvement would make CMB limits comparably sensitive to BBN probes of lepton asymmetry generated in the curvaton model.
 
 In scenarios where baryon number/CDM are produced by/before curvaton decay (or vice versa), a relative large compensated isocurvature perturbation (CIP) is produced between the baryons and CDM, that is
 \begin{equation}
 S_{bc}=\frac{\delta n_{\rm b}}{n_{\rm b}}-\frac{\delta n_{\rm c}}{n_{\rm c}}\neq 0.
-\end{equation} Curvaton-generated CIPs are proportional to the adiabatic curvature perturbation $\zeta$, with $S_{\rm bc}=A\zeta$. In this scenario, the initial relative densities of baryons and dark matter fluctuate, but with no overall density fluctuation in non-relativistic matter or photon/neutrino density fluctuation. CIPs are relatively unconstrained at the level of the CMB power-spectrum. By modulating the baryon/CDM ratio, however, they would introduce correlations between pairs of multipole moments $a_{lm}^{\rm XY}$ with different $l$ and $m$. Just as with weak gravitational lensing, the CIP field $\Delta(\hat{n})$ can thus be reconstructed using CMB data. Using a Fisher-matrix analysis, it is easily shown that at S4 sensitivity the $T$ and $E$ cross correlation with the reconstructed $\Delta(\hat{n})$ can definitively (at $3\sigma$ confidence) test the curvaton-decay scenario in which baryon number is produced by curvaton decay, while CDM is produced by some exotic mechanism before curvaton decay.
+\end{equation} Curvaton-generated CIPs are proportional to the adiabatic curvature perturbation $\zeta$, with $S_{\rm bc}=A\zeta$, where $A\simeq 17$ [$A\simeq -3$] in the $(b_{\rm by}, c_{\rm before}, L_{\rm z})$ [$(b_{\rm before}, c_{\rm by}, L_{\rm z})$] scenario. In this scenario, the initial relative densities of baryons and dark matter vary, but with no additional overall or radiation density. 
+
+CIPs are relatively unconstrained at the level of the CMB power-spectrum, but would induce non-Gaussianities in the CMB \cite{Grin:2011nk,Grin:2011tf,Grin:2013uya,He:2015msa} due to a spatially varying baryon-photon sound speed at recombination. As with weak gravitational lensing \cite{Hu:2001kj}, the CIP field $\Delta(\hat{n})$ can thus be reconstructed using CMB data. Using a Fisher analysis \cite{He:2015msa}, we find that at S4 sensitivity, $A$ at the threshold for a $95\%$ C.L. detection is $A\simeq 10$, and so a CIP test of the $(b_{\rm by}, c_{\rm before}, L_{\rm z})$ scenario is within reach of CMB-S4. This is a vast improvement over the \emph{Planck} sensitivity, which at $95\%$ C.L. is $A\simeq 43$. Uncorrelated CIPs, are less well motivated theoretically. The sensitivity of CMB-S4 to a scale-invariant angular power spectrum of CIPs uncorrelated CIPs is an amplitude of $\Delta_{\rm cl}=0.004$ at the $95\%$ C.L. detection limit, to be compared with the upper limit of $\Delta_{\rm cl}\leq 0.077$ from the WMAP analysis of Ref. \cite{Grin:2013uya}. 
+
 
 \section{Constraints on other fundamental physics: spatial curvature, birefringence, primordial magnetic fields, cosmic strings, axions\dots}
 \label{sec:other_topics}
