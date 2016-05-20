@@ -12,6 +12,7 @@
 \def\Neff{N_{\rm eff}}
 \def\Nf{N_{\rm eff}}
 \def\gs{g_{\star}}
+\def\Mpl{M_{\rm pl}}
 \newcommand{\nucl}[3]{ \ensuremath{ \phantom{\ensuremath{^{#1}_{#2}}} \llap{\ensuremath{^{#1}}} \llap{\ensuremath{_{\rule{0pt}{.75em}#2}}} \mbox{#3} } }
 
 
@@ -34,7 +35,7 @@ Direct interactions between neutrinos and observable matter effectively ceased a
 CMB-S4 can improve our understanding of neutrino physics in regimes of interest for both cosmology and particle physics.  Arguably the most important parameters of interest will be the sum of the neutrino masses ($\sum m_\nu$) and the effective number of neutrino species ($\Neff$).  These two parameters have natural targets that are within reach of a CMB-S4 experiment:
 \begin{itemize}
 \item $ \sum m_\nu \gtrsim \, 58$ meV is the lower bound guaranteed by observations of solar and atmospheric neutrino oscillations.  A CMB experiment with $\sigma(\sum m_\nu) < 20$ meV would be guaranteed a detection of a least 3$\sigma$.  At this level, one can detect the overall scale of the neutrino masses even for a normal ordered hierarchy.
-\item $\Delta \Neff >  0.027$ is predicted for any light particle that was in thermal equilibrium with the standard model.  A CMB experiment producing $\sigma(\Neff) \lesssim 0.01$ would be sensitive to all models in this very broad class of extensions of the Standard Model, which includes a wide range of axions and axion-like particles.  
+\item $\Delta \Neff >  0.027, 0.047, 0.054$ is predicted for a light particle of spin 0,1/2 or 1 that was in thermal equilibrium with the standard model.  A CMB experiment producing $\sigma(\Neff) \lesssim 0.01$ would be sensitive to all models in this very broad class of extensions of the Standard Model, which includes a wide range of axions and axion-like particles.  At lower sensitivity ($\sigma(\Neff) \lesssim 0.03$), we can test the full range of light fermions and vectors, including the gravitinos and dark photons and light scalars that freeze-out before the QCD phase transition.  
 \end{itemize}
 Current CMB data already provides a robust detection of the cosmic neutrino background at $\sim10 \sigma$.  A CMB-S4 experiment will provide an order of magnitude improvement in sensitivity that opens a new window back to the time of neutrino decoupling and beyond.
 
@@ -410,7 +411,7 @@ E-mode polarization will play an increasingly important role for several reasons
 
 
 
-\section{Sterile Neutrinos and Axions}
+\section{Implications for Beyond the Standard Model Physics}
 \subsection{Sterile Neutrinos}
 \label{sec:sterile_neutrinos}
 
@@ -460,7 +461,7 @@ of massive neutrinos, and nonzero neutrino mass may be indicated
 alleviation in cases with massive or extra neutrinos
 \cite{Ade:2015xua}. 
 
-There is a potential emergance of both laboratory and cosmological
+There is a potential emergence of both laboratory and cosmological
 indications of massive and, potentially, extra neutrinos. However, the
 combined requirements of the specific masses to produce the short
 baseline results, along with mixing angles that require thermalized
@@ -487,11 +488,47 @@ Two couplings of particular interest for axion phenomenology are the coupling to
 \eeq
 These couplings typically appear as the consequence of chiral anomalies.  The coupling of the axion to gluons is what makes the solution to the strong-CP problem possible.  The coupling to photons is somewhat model dependent but typically arises in conjunction with the gluon coupling.  In addition or instead of these coupling, a variety of possible couplings to matter may also be included.
 
+\begin{figure}[h!]
+\centering \includegraphics[width=0.70\textwidth]{Neutrinos/AxionPhotonWithFuture.pdf}
+\caption{Relationship between freeze-out temperature ($T_F$) and axion-photon coupling ($g_{a\gamma\gamma}$).  While freeze-out is independent of the mass, experimental probes of the coupling are strongly mass dependent.  For $T_F > 10^4$ GeV the axion coupling would predict $\Delta \Neff = 0.027$.  Sensitivity at the level would translate into sensitivity to axions up to $T_F = T_{\rm reheat}$.  For plausible values of $T_{\rm reheat} > 10^{10}$ GeV, cosmology is orders of magnitude more sensitive that existing bounds over a wide range of masses.}
+\label{fig:axionphoton}
+\end{figure}
+
 Two very common features of these models are that the axions are typically light (in many cases, $m \ll 1$ eV) and their interactions are suppressed by powers of $f_a$.  These two features make ALPs a particularly compelling target.  Because of the small masses, they will often behave as relativistic species in the CMB.  Furthermore, because their production rate will scale as $T^{2n +1} / f_a^{2n}$ for some $n \geq 1$, they are likely to be thermalized at high temperatures.  Given that $\Delta \Neff > 0.027$ under such circumstances, a CMB experiment with sensitivity at this level will be sensitive to a very wide range of ALP models.
 
 {\it Status of current observations} -- Current constrains on ALPs arise from a combination of experimental~\cite{Graham:2015ouw}, astrophysical~\cite{Raffelt:2012kt} and cosmological~\cite{Marsh:2015xka} probes.  Current cosmological constraints are driven by several effects that depend on the mass of the axion.  For axion masses greater than 100 eV, stable thermal ALPs are easily excluded because they produce dark matter abundances inconsistent with observations.  By including the free streaming effects of thermal QCD-axions,  Planck data~\cite{DiValentino:2015wba} combined with local measurements provide the constrain $m_a < 0.525$ eV (95 \% CL).  At larger masses, ALPs become unstable and can be constrained by the change to $\Neff$ from energy injection as well as from spectral distortions and changes to BBN~\cite{Cadamuro:2011fd,Follin:2015hya}
 
 {\it Implications for CMB Stange IV} -- Sensitive to $\Neff$ of order $\sigma(\Neff) \simeq 10^{-2}$ has the sensitive to probe then entire mass range of ALPs down to $m_a =0$ under the assumption that it thermalized in the early universe.  Interpreting such bounds in terms of the couplings of axions is more complicated~\cite{Brust:2013xpv} and can depend on assumptions about the reheating temperature.  For high (but plausible) reheat temperatures of $10^{10}$ GeV, CMB stage IV would be sensitive to $g_{a\gamma \gamma}, \, g_{a g g} \,  \gtrsim \, 10^{-13} {\rm GeV}^{-1}$~\cite{}, which exceeds current constraints and future probes for a range of possible axion masses (including the QCD axion).  
+
+
+
+\begin{figure}[h!]
+\centering \includegraphics[width=0.70\textwidth]{Neutrinos/DipoleWithCASPErAndBBN.pdf}
+\caption{Relationship between freeze-out temperature ($T_F$) and axion-gluon coupling via the neutron dipole ($g_d$).  While freeze-out is independent of the mass, experimental probes of the coupling are strongly mass dependent. We see that cosmology is more sensitive than current limits even for freeze-out temperatures below the eletro-weak phase transition and therefore could be probed by $\Delta \Neff > 0.027$.   }
+\label{fig:axiondipole}
+\end{figure}
+
+\subsection{Gravitinos}
+
+One of the most popular extensions of the Standard model is supersymmetry, which is motivated both by naturalness and gauge coupling unification.  Although the most generic possibilities are under significant tension for the LHC, there are still a variety of possibilities consistent with low-scale supersymmetry.
+
+One of the universal predictions of supersymmetry is the existence of a spin-3/2 partner to the graviton, the gravitino.  The gravitino mass is determined by the absolute scale of supersymmetry breaking, 
+\beq
+m_{\frac{3}{2}} = \frac{|F|}{\sqrt{3} M_{\rm pl}}
+\eeq
+where $|F|$ is the order parameter for the scale of SUSY breaking (the vacuum expectation value of the auxiliary field $F$).  This result does not depend on details of the mechanism of SUSY breaking unlike the super-partners of the rest of the Standard model particles.
+
+The typical coupling strength of the gravitino is the same as the graviton, $8 \pi G = \Mpl^{-2}$.  However, the strength of the coupling to the helicity-1/2 component of the gravitino is enhanced by $\Mpl^2 /F$.  This is simply the statement that the goldstino of SUSY breaking if coupled with strength $F^{-1}$ (but is `eaten' by the gravitino).  Due to the enhanced coupling, the gravitino can be in thermal equilibrium with the Standard model at plausible temperatures in the early universe.  The gravitino therefore behaves just like a Weyl fermion in figure~\ref{fig:limits}.
+
+For $m_{3/2} \lesssim 10$ eV, hot relic gravitinos free stream on the scale of the CMB and therefore lead to observable signatures.  Current data from Planck already requires that $m_{3/2} < 4.7$ eV from a combination of the primary CMB and CMB lensing~\cite{Osato:2016ixc}.  To probe lower masses, note that for $m_{3/2} < {\cal O}(1)$ eV a gravitino will behave as free-streaming radiation from the point of view of the CMB.  One finds that for these low values of the mass, gravitinos contribute a shift to $\Neff$,
+\beq
+\left(\Delta \Neff\right)_{3/2} \, \gtrsim \, 0.057 \ .
+\eeq
+At $\sigma(\Neff) \sim 0.03$, CMB Stage IV can rule out all low-scale SUSY breaking models allowed by current cosmology.  
+
+
+\subsection{Light Fermions and Vectors}
+
 
 
 \section{Detection Scenarios for Labs and Cosmology}
@@ -504,24 +541,29 @@ As discussed in Section~\ref{sec:lab}, the measurements of the scale of neutrino
 
 The most conventional neutrino scenarios would be a majorana mass with a normal or inverted hierarchy.  The normal hierarchy with $\sum m_\nu = 60$ meV is perhaps the least exotic as it reflects the same hierarchical / non-degenerate masses that appear in the charged fermions of the Standard model.  This scenario is only detectable in the near term via cosmology due to the small size of the neutrino masses.  Somewhat more exotic is the case of a Dirac mass, as it predicts the existence of new light states.
 
+The more exotic possibility if that there could be sterile neutrinos that are consistent with a variety of anomalies, as discussed in Section~\ref{sec:sterile_neutrinos}.  In this case, we would obverse a correlated signature in both a excess in $\sum m_\nu$ and $\Delta \Neff$.  The sterile neutrino parameters that are most consistent with the anomalies in short-baseline experiments was already in tension with cosmology but would be detected at high significance if true.  
 
+Given the current cosmological constraints on $\sum m_\nu$, detections of $m_\beta$ and $m_{\beta \beta}$ in near term experiments would require a significant change to the thermal history.  In particular, a detection of a majorona mass at the $0.25 \, {\rm eV}$ level would predict a $\sum m_\nu$ that is already excluded by cosmology.  Making the current (or future) limit consistent then requires a mechanism that explains both the absence of massive neutrinos in cosmology without contradicting current observation of $\Neff = 3.04 \pm 0.18$.
+
+
+Finally, there are a variety of scenarios that produce $\Delta \Neff  \gtrless 0$ without changing neutrino physics.  In this case, the neutrino physics may follow a conventional pattern like the normal hierarchy.  In principle, one would distinguish scenarios where there is no change to the number density of neutrinos (dark radiation) from scenarios where the neutrinos are diluted or enhanced by a change to the thermal history (late decay) as the interpretation of $\sum m_\nu$ depends on the neutrino number density.  However, given that current measurements allow for $< 10$ percent change to the neutrino number density, we would need to detect $\sum m_\nu$ at 10$\sigma$ to be sensitive to such a change.  Nevertheless, dark radiation and changes to the thermal history can make correlated predictions for other experiments as we will discuss in the next subsection.
 
 \begin{table}[t!]
 \begin{center}
 \begin{tabular}
-{| l | r r r r | p{5cm} | }\hline Scenario & $m_{\beta \beta}$ & $m_{\beta}$&  $\sum m_\nu$ & $\Delta \Neff$ & Conclusion \\
+{| l | c c c c | p{5cm} | }\hline Scenario & $m_{\beta \beta}$ & $m_{\beta}$&  $\sum m_\nu$ & $\Delta \Neff$ & Conclusion \\
 \hline 
 Normal hierarchy & $< 0.15 \, {\rm eV}$ & $< 0.2 \,  {\rm eV}$  & $60 \, {\rm meV}$ & 0 & Normal neutrino physics; no evidence for BSM
 \\  
 Dirac Neutrinos & $< 0.15 \, {\rm eV}$ & $ <0.2 \, {\rm eV}$  & $350  \, {\rm meV}$ & 0 & Neutrino is a dirac particle \\
 Sterile Neutrino & $< 0.15 \, {\rm eV}$ & $ <0.2 \, {\rm eV}$   & $350  \, {\rm meV}$ & $>0$ & Detection of sterile neutrino consistent with short-baseline \\
 \hline
-Dark Radiation & $< 0.15 \, {\rm eV}$ & $ <0.2 \, {\rm eV}$  & $60  \, {\rm meV}$ & 0 & Evidence for new light particles; normal hierarchy for neutrinos
+Bad Cosmology & $ 0.25 \, {\rm eV}$ & $ 0.25 \, {\rm eV}$  & $<150  \, {\rm meV}$ & $0$ & Modified thermal history; (e.g. neutrino decay to new particle) \\
+Excluded & $ 0.25 \, {\rm eV}$ & $ 0.25 \, {\rm eV}$  & $500  \, {\rm meV}$ & $0$ & Already excluded by cosmology \\
+\hline
+Dark Radiation & $< 0.15 \, {\rm eV}$ & $ <0.2 \, {\rm eV}$  & $60  \, {\rm meV}$ & $>0$ & Evidence for new light particles; normal hierarchy for neutrinos
 \\  
 Late Decay & $< 0.15 \, {\rm eV}$ & $ <0.2 \, {\rm eV}$  & $60  \, {\rm meV}$ & $<0$ & Energy-injection into photons at temperature $T \lesssim 1$ MeV \\
-Bad Cosmology & $ 0.25 \, {\rm eV}$ & $ 0.25 \, {\rm eV}$  & $<150  \, {\rm meV}$ & $0$ & Modified thermal history; (e.g. neutrino decay to new particle) \\
-\hline
-Excluded & $ 0.25 \, {\rm eV}$ & $ 0.25 \, {\rm eV}$  & $500  \, {\rm meV}$ & $0$ & Already excluded by cosmology \\
 \hline 
 \end{tabular}
 \caption{Relation between Neutrino experiments and Cosmology.  We include the measurement of the majorona mass via NBBD ($m_{\beta \beta}$) or a kinematic endpoint ($m_\beta$) compared to the cosmological measurement of the sum of the masses $\sum m_\nu$ and the CMB measurement of $\Neff$.  For $\Delta\Neff$ the use of $\gtrless 0$ indicates a significant deviation from the Standard model value.}
@@ -530,6 +572,33 @@ Excluded & $ 0.25 \, {\rm eV}$ & $ 0.25 \, {\rm eV}$  & $500  \, {\rm meV}$ & $0
 \end{table} 
 
 \subsection{Dark Sectors and Particle Physics}
+
+Deviations from $\Neff = 3.046$ can arise from a wide variety of changes to the particle content and thermal history of the universe.  In most cases, the physics responsible fundamentally requires a coupling of new particles to the Standard model often in regimes where they can, in principle, be detected by other means.  Cosmology is a very broad tool for searching for beyond the Standard model physics, but it is also very complimentary to more targeted searches.  A list of plausible detection scenarios is shown in Figure~\ref{table:darkscenarios}.
+
+
+\begin{table}[t!]
+\begin{center}
+\begin{tabular}
+{| l | c | p{5cm} | p{5cm} | }\hline Scenario & $\Delta \Neff$ & Experimental Input & Conclusion \\
+\hline 
+Axions & $\geq 0.027$  & Casper or ADMX detect axions & axions are the DM; lower-limit on the reheat temperature
+\\  
+Low-reheating & $0$  & Casper or ADMX detect axions & axions are the DM; upper-limit on the reheat temperature
+\\  
+Gravitinos & $\geq 0.057$  & LHC evidence for SUSY & upper limit on scale of SUSY breaking
+\\  
+Late Decays & $< 0$  & Spectra Distortions observed in CMB & evidence for new massive particle; energy injection
+\\ 
+Evolving $\Neff$ & $> 0$  & BBN abundance consistent with $\Delta \Neff =0$ & Radiation density changed between BBN and Recombination
+\\  
+Dark Sectors & $\geq 0.027 $  & None & New light particles; very weakling coupled to the SM
+\\  
+\hline 
+\end{tabular}
+\caption{Relation between Particle Physics experiments and Cosmology.}
+\label{table:darkscenarios}
+\end{center}
+\end{table} 
 
 \section{Complementarity of CMB and BBN}
 
