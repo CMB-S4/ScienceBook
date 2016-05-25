@@ -36,7 +36,7 @@ Direct interactions between neutrinos and observable matter effectively ceased a
 CMB-S4 can improve our understanding of neutrino physics in regimes of interest for both cosmology and particle physics.  Arguably the most important parameters of interest will be the sum of the neutrino masses ($\sum m_\nu$) and the effective number of neutrino species ($\Neff$).  These two parameters have natural targets that are within reach of a CMB-S4 experiment:
 \begin{itemize}
 \item $ \sum m_\nu \gtrsim \, 58$ meV is the lower bound guaranteed by observations of solar and atmospheric neutrino oscillations.  A CMB experiment with $\sigma(\sum m_\nu) < 20$ meV would be guaranteed a detection of a least 3$\sigma$.  At this level, one can detect the overall scale of the neutrino masses even for a normal ordered hierarchy.
-\item $\Delta \Neff >  0.027, 0.047, 0.054$ is predicted for a light particle of spin 0,1/2 or 1 that was in thermal equilibrium with the standard model.  A CMB experiment producing $\sigma(\Neff) \lesssim 0.01$ would be sensitive to all models in this very broad class of extensions of the Standard Model, which includes a wide range of axions and axion-like particles.  At lower sensitivity ($\sigma(\Neff) \lesssim 0.03$), we can test the full range of light fermions and vectors, including the gravitinos and dark photons and light scalars that freeze-out before the QCD phase transition.  
+\item $\Delta \Neff \geq  0.027, \, 0.047$ and $0.054$ are predicted for a light particle of spin $0$, $1/2$ and $1$ that were in thermal equilibrium with the standard model.  A CMB experiment producing $\sigma(\Neff) \lesssim 0.01$ would be sensitive to all models in this very broad class of extensions of the Standard Model, which includes a wide range of axions and axion-like particles.  At lower sensitivity ($\sigma(\Neff) \lesssim 0.03$), we can test the full range of light fermions and vectors, including the gravitinos and dark photons and light scalars that freeze-out before the QCD phase transition.  
 \end{itemize}
 Current CMB data already provides a robust detection of the cosmic neutrino background at $\sim10 \sigma$.  A CMB-S4 experiment will provide an order of magnitude improvement in sensitivity that opens a new window back to the time of neutrino decoupling and beyond.
 
@@ -500,9 +500,9 @@ Two very common features of these models are that the axions are typically light
 
 The coupling of axions to matter has an additional feature that it can bring axions into thermal equilibrium at low temperatures.  Specifically, the lowest dimension coupling of an axion to charged matter takes the form
 \beq
-{\cal L} = -\frac{\partial_\mu a}{\Lambda_\psi} ( \bar \psi_i \gamma^\mu g^{ij}_V + g_A^{ij} \gamma^5 ) \psi_j
+{\cal L} = -\frac{\partial_\mu a}{\Lambda_\psi}  \bar \psi_i ( \gamma^\mu g^{ij}_V + g_A^{ij} \gamma^5 ) \psi_j
 \eeq
-Above the scale of EWSB, this coupling leads to an abundance of axions with $\Delta \Neff = 0.027$.  Through freeze-out, we are again very sensitive to $g_V$ and $g_A$ at levels that vastly exceed current limits.  In addition, below the scale of EWSB, this coupling can bring the axions into thermal equilibrium at low temperatures (freeze-in), only to freeze-out below the mass of the heaviest fermion, $T_F \lesssim m_{i}$ assume $m_i > m_j$.  Freeze-in will produce $\Delta \Neff \gtrsim 0.05$ and is therefore easier to detect.  The tradeoff is that for reheating temperatures well above the electroweak scale, the sensitivity of freeze-out exceeds that of freeze-in, although both are far more sensitive than current limits for second and third generation fermions.
+where $\psi_{i}$ is any of the charged fermions of the Standard model and $i,j$ label the three generations of fermions of with the same charges.  Above the scale of EWSB, this coupling leads to an abundance of axions with $\Delta \Neff = 0.027$.  Through freeze-out, we are again very sensitive to $g_V$ and $g_A$ at levels that vastly exceed current limits.  In addition, below the scale of EWSB, this coupling can bring the axions into thermal equilibrium at low temperatures (freeze-in), only to freeze-out below the mass of the heaviest fermion, $T_F \lesssim m_{i}$ assume $m_i > m_j$.  Freeze-in will produce $\Delta \Neff \approx 0.05$ and is therefore easier to detect.  The tradeoff is that for reheating temperatures well above the electroweak scale, the sensitivity of freeze-out exceeds that of freeze-in, although both are far more sensitive than current limits for second and third generation fermions.
 
 The coupling to matter is motivated also by the approximate $U(3)^5$ flavor symmetry of the Standard model.  It is natural for such couplings to arise if the axion is a goldstone boson that results from spontaneous breaking of this symmetry (or a sub-group).  Given the non-abelian nature of the flavor symmetry, these scenarios can ofter lead to many axions (also known as familons).  Under such circumstances, the contribution to freeze-out is given by 
 \beq
@@ -554,17 +554,26 @@ A general approach to interpreting $\Neff$ constraints in terms of massless fiel
 \beq
 {\cal L} \supset \sum_{\Delta_h, \Delta_s} \frac{1}{\Lambda^{\Delta_h+ \Delta_s-4}} \,  {\cal O}_{h, \Delta_h} \cdot {\cal O}_{s, \Delta_s}
 \eeq
-where ${\cal O}_{h,\Delta_h}$ is an operator of dimension $\Delta_h$ constructed only from hidden sector fields (and similarly for ${\cal O}_{s, \Delta_s}$ and standard model fields.  The total operator must be a scalar under Lorentz transformations and the symmetry that projects the mass of the hidden sector field(s).  The bounds on axions discussed in Section~\ref{sec:axions} are one such example, where the axion is protected by a shift symmetry.  For all practical purposes, we have classified all scalars of this type as axions.
+where ${\cal O}_{h,\Delta_h}$ is an operator of dimension $\Delta_h$ constructed only from hidden sector fields (and similarly for ${\cal O}_{s, \Delta_s}$ and standard model fields).  The total operator must be a scalar under both the Lorentz transformations and the symmetry that protects the mass of the hidden sector field(s).  The bounds on axions discussed in Section~\ref{sec:axions} are one such example, where the axion is protected by a shift symmetry.  For the purpose of this discussion, we have classified all scalars of this type as axions.
 
+For a single Weyl fermion, $\chi$, the leading couplings to the Standard model are through the anapole moment and 4-fermi interactions
+\beq
+{\cal L} \supset \frac{\chi^{\dagger} \bar \sigma^{\mu} \chi}{\Lambda_{\chi}^2} \Big( d_a  \, \partial^\nu F_{\mu \nu} + d_f \,  \bar \psi \gamma_\mu \psi \Big) \ ,
+\eeq
+where we have chosen a chosen one of several 4-fermi interactions for illustration and $d_f, d_a$ are order one numbers.  Current experimental constraint from LEP and the LHC limit $\Lambda_\chi \gtrsim 1$ TeV.  Similar bounds are set by Planck by excluding the contributions to $\Delta \Neff$ from freeze-out after the QCD phase transition.  If we are sensitive to the minimal contribution from a Weyl fermion of $\Delta \Neff = 0.047$, then for a reheat temperature of $T_{\rm Reheat} \sim 10^{10}$ GeV, we would be sensitive to $\Lambda_\psi \lesssim 10^{12}$ GeV.
 
+For a hidden Dirac fermion, $X$, the leading coupling is through an effective dipole interaction.  A similar interaction also permits a hidden $U(1)$ gauge boson, $A'_\mu$, to couple to Standard model fermions.
+\beq
+{\cal L} \supset  \frac{1}{\Lambda_X} \bar X \sigma_{\mu\nu} X  F^{\mu \nu} + \frac{1}{\Lambda_{A'}^2} H \bar \psi \sigma_{\mu\nu} \psi  F'_{\mu \nu}  \ ,
+\eeq
+where $F'_{\mu \nu}$ is the field strength of $A'_\mu$.  We have included the higgs field, $H$, in the coupling to Standard model fermions as it is required by gauge invariance above the scale of electroweak symmetry breaking.  
 
 \section{Complementarity of CMB and BBN}
-
 
 %\subsection{Introduction} \label{Introduction}
 
 Primordial light element abundances have historically been an interesting observational test of hot big bang cosmology.  The process by which light elements form in the early universe known as big bang nucleosynthesis (BBN) was worked out theoretically in the early days of the development of the hot big bang model of cosmology \cite{Alpher:1948ve}.  It is a process which depends on all four fundamental forces, that unfolded during the first three minutes of our current phase of expansion, and which has long provided a useful constraint on physics beyond the standard model.  The current observational limits on primordial abundances overall show good agreement with the predictions of standard BBN.  Primordial light element abundances are sensitive to the radiation content of the universe as measured through $\Nf$, which also affects the angular power spectrum of the CMB.  Combining these two probes provides useful insight into the physics of the early universe which neither could achieve alone.
-
+cd ..
 \subsection{Standard Big Bang Nucleosynthesis} \label{StandardBBN}
 In this section, we will briefly review the physics of big bang nucleosynthesis in the standard model.  For more extensive reviews see for example \cite{Weinberg:2008zzc,Agashe:2014kda,Cyburt:2015mya}.
 
