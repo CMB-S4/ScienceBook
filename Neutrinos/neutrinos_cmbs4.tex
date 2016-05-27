@@ -48,30 +48,30 @@ Section 2 will review the motivation for studying neutrino masses with cosmologi
 
 Cosmic background neutrinos are nearly as abundant in the universe as CMB photons. In the standard cosmological model, neutrinos ceased to scatter with other particles at temperatures $\sim 1 \, {\rm MeV}$. The relic neutrinos were relativistic at decoupling, but as the universe expanded and cooled the neutrino momenta redshifted as $p_\nu\propto 1/a$ and eventually the energy of most relic neutrinos came to be dominated by their rest mass, rather than their momentum. The energy density in nonrelativistic neutrinos therefore contributes to the matter budget of the universe today. The neutrinos, however, were relativistic for much of the history of the Universe so their gravitational clustering is qualitatively different from that of cold dark matter (CDM) particles. This difference can be used to distinguish the neutrino and cold dark matter contributions to the matter density \cite{Hu:1997mj, Lesgourgues:2006nd, Abazajian:2011dt}.  In this section, we review how neutrino mass affects the evolution of the neutrino energy density and the gravitational clustering of matter in the universe. 
  
-As discussed more detail in the $\Neff$ section, cosmic background neutrinos have been detected indirectly through their contribution to the energy density in radiation in the early universe. The current CMB constraints from $\Neff$ are in excellent agreement with the Standard Model expectation of three species of neutrinos and anti-neutrinos each described by a relativistic thermal Fermi-Dirac distribution \cite{Ade:2015xua}. The phase space for each neutrino and anti-neutrino state is given by
+As discussed more detail in the $\Neff$ section, cosmic background neutrinos have been detected indirectly through their contribution to the energy density in radiation in the early universe. The current CMB constraints from $\Neff$ are in excellent agreement with the Standard Model expectation of three species of neutrinos and anti-neutrinos each described by a relativistic thermal Fermi-Dirac distribution \cite{Ade:2015xua}. The distribution function for each species of neutrinos and anti-neutrinos is given by
 \beq
-f_\nu(p) = \frac{1}{e^{a p/(k_BT_{\nu})} +1} \ ,
+f_\nu(p) = \frac{1}{e^{a p/(k_BT_{\nu 0})} +1} \ ,
 \eeq
-where $T_{\nu} \approx 1.95K$ or $k_B T_{\nu} \approx 1.68 \times 10^{-4}\,{\rm eV}$ is the temperature today. Note that the spectral shape of the neutrino phase space distribution is preserved with the expansion of the universe so relic neutrinos have retained the relativistic Fermi-Dirac momentum distribution inherited from decoupling even as the individual neutrinos became non-relativistic. 
+where $T_{\nu 0} \approx 1.95K$ or $k_B T_{\nu 0} \approx 1.68 \times 10^{-4}\,{\rm eV}$ is the temperature today. Note that the spectral shape of the neutrino phase space distribution is preserved with the expansion of the universe so relic neutrinos have retained the relativistic Fermi-Dirac momentum distribution inherited from decoupling even as the individual neutrinos became non-relativistic. 
 
 The neutrino energy density is given by
 \beq
-\rho_\nu = \sum_i \int\frac{d^3 {\bf p}}{(2\pi \hbar)^3} \frac{\sqrt{p^2 + m_{\nu i}^2}}{e^{ap/(k_BT_{\nu})} +1}
+\rho_\nu = \sum_i \int\frac{d^3 {\bf p}}{(2\pi \hbar)^3} \frac{\sqrt{p^2 + m_{\nu i}^2}}{e^{ap/(k_BT_{\nu 0})} +1}
 \eeq
 where $m_{\nu i}$ are the three neutrino mass eigenstates.  For $T_{\nu}/a \gg m_{\nu i}$ the neutrino energies are dominated by their momenta and the total energy density behaves like radiation
 \bea
-\rho_{\nu}\Bigg|_{{\rm {\tiny early}}}  &\approx& \frac{7 \pi^2}{40}\frac{(k_B T_\nu)^4}{\hbar^3 c^3}\frac{1}{a^4}\\
-& \propto& a^{-4}\nonumber
+\rho_{\nu}\Bigg|_{{\rm {\tiny early}}}  &\approx& \frac{7 \pi^2}{40}\frac{(k_B T_{\nu 0})^4}{\hbar^3 c^3}\frac{1}{a^4} \\
+& \propto& a^{-4} \nonumber
 \eea
-While for $T_\nu/a \ll m_{\nu i}$ the energy density behaves like matter
+While for $T_{\nu 0}/a \ll m_{\nu i}$ the energy density behaves like matter
 \bea
 \label{eq:rhonumassive}
 \rho_{\nu} \Bigg|_{{\rm {\tiny late}}}  &\approx& \sum_i m_{\nu i} \bar{n}_\nu \\
-&\propto& a^{-3}\nonumber
+&\propto& a^{-3} \nonumber
 \eea
 where $\bar{n}_\nu$ is the number of neutrinos and antineutrinos in each mass eigenstate
 \beq
-\bar{n}_\nu =\int\frac{d^3 {\bf p}}{(2\pi \hbar)^3} \frac{2}{e^{ap/(k_BT_\nu)} +1} \approx \frac{113}{a^3}\,{\rm cm}^{-3}\,.
+\bar{n}_\nu =\int\frac{d^3 {\bf p}}{(2\pi \hbar)^3} \frac{2}{e^{ap/(k_BT_{\nu 0})} +1} \approx \frac{113}{a^3}\,{\rm cm}^{-3}\,.
 %&=&  \frac{6 \zeta(3)}{4\pi^2} \left(\frac{k_B T_\nu}{\hbar c}\right)^3\frac{1}{a^3}\\
 \eeq
 
@@ -89,7 +89,7 @@ Neutrinos do not participate in gravitational collapse until late times when the
 \beq
 k_{\rm nr} \equiv a_{\rm nr} H(a_{\rm nr})/c \approx 0.003 \left(\frac{\Omega_m}{0.3}\frac{m_{\nu}}{0.05\, {\rm eV}}\right)^{1/2} h/{\rm Mpc}\,.
 \eeq
-Once the neutrinos are non-relativistic, their finite velocity dispersion still prevents them from clustering on scales smaller than the typical distance a neutrino travels in a Hubble time, $v_\nu /H(a)$ where $v_\nu \approx 3.15 T_\nu/(a m_\nu)$ the mean neutrino velocity. In analogy with the Jeans criterion for gravitational collapse, the neutrino free-streaming scale is defined by \cite{Bond:1983hb, Lesgourgues:2006nd}
+Once the neutrinos are non-relativistic, their finite velocity dispersion still prevents them from clustering on scales smaller than the typical distance a neutrino travels in a Hubble time, $v_\nu /H(a)$ where $v_\nu \approx 3.15 T_{\nu 0}/(a m_\nu)$ the mean neutrino velocity. In analogy with the Jeans criterion for gravitational collapse, the neutrino free-streaming scale is defined by \cite{Bond:1983hb, Lesgourgues:2006nd}
 \beq
 k_{\rm fs}(a) \equiv \sqrt{\frac{3}{2}}\frac{aH(a)}{v_\nu(a)} \approx 0.04\, a^2 \sqrt{\Omega_m a^{-3} + \Omega_\Lambda}\left(\frac{m_\nu}{0.05 {\rm eV}}\right) h/{\rm Mpc}
 \eeq
