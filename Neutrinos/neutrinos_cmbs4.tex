@@ -581,7 +581,50 @@ At $\sigma(\Neff) \sim 0.03$, CMB Stage IV can rule out all low-scale SUSY break
 
 \subsection{Gravitational Waves}
 
-\textcolor{red}{(DG:  Add $\Neff$ and $n_t$ discussion here?  Coordinate with inflation chapter.)}
+Since gravitational waves are massless and free-streaming, any gravitational waves which were present in the early universe naturally contribute to the total radiation energy density, and can therefore be constrained with $\Neff$ \cite{Boyle:2003km,Boyle:2007zx,Stewart:2007fu,Meerburg:2015zua,Lasky:2015lej}.
+
+Let us briefly review how to compute the energy density of a stochastic background of gravitational waves, following the treatment of \cite{Isaacson:1968zza,Misner:1974qy,Watanabe:2006qe,Maggiore:1900zz}.  We will take the metric of spacetime to be given by a background component $\bar{g}_{\mu}$ described by the flat Friedmann-Robertson-Walker metric and a perturbation $\delta g_{\mu\nu}$.  We will take the characteristic frequency of $\delta g_{\mu\nu}$ to be much higher than that of $\bar{g}_{\mu\nu}$.  In particular, we will focus on gravitational waves whose wavelengths are much shorter than scales of cosmological interest.
+
+The Ricci tensor can be expanded in powers of $\delta g$ as
+\begin{equation}\label{eq:Ricci_GW}
+	R_{\mu\nu} = \bar{R}_{\mu\nu} + R_{\mu\nu}^{(1)} + R_{\mu\nu}^{(2)} + \cdots \, .
+\end{equation}
+We are interested in determining how spacetime is curved by the presence of small scale gravitational waves, or in other words, how $\bar{R}_{\mu\nu}$ is affected by terms containing $\delta g_{\mu\nu}$.  Since $R_{\mu\nu}^{(1)}$ is linear in $\delta g_{\mu\nu}$, it contains only high frequency components, while on the other hand, $R_{\mu\nu}^{(2)}$ has both low and high frequency parts.  
+
+The high frequency part of Einstein's equations governs how gravitational waves propagate in a curved background, and is not necessary here.  For the low frequency part, we can take an average over several cycles of the high frequency modes, which then gives
+\begin{equation}\label{eq:Einstein_Eq_GW}
+	\bar{R}_{\mu\nu} = -\left\langle R_{\mu\nu}^{(2)}\right\rangle + 8\pi G \left\langle T_{\mu\nu}-\frac{1}{2}g_{\mu\nu}T\right\rangle \, .
+\end{equation}
+We can then read off the effective energy-momentum tensor of small scale fluctuations
+\begin{equation}\label{eq:EM_Tensor_GW}
+	T_{\mu\nu}^\mathrm{GW} = -\frac{1}{8\pi G} \left \langle R_{\mu\nu}^{(2)}-\frac{1}{2}\bar{g}_{\mu\nu}R^{(2)} \right\rangle + \mathcal{O}(\delta g^3) \, .
+\end{equation}
+If we take our perturbation to be of the form $\delta g_{ij} = a^2 h_{ij}$ with $h_{ij,j} = 0$ and $h_{ii} = 0$, we can compute the energy density of gravitational waves explicitly in the transverse traceless gauge
+\begin{equation}\label{eq:Energy_GW}
+	\rho_\mathrm{GW} = T_{00}^\mathrm{GW} = \frac{1}{32 \pi G}\delta^{ik}\delta^{j\ell}\left\langle \dot{h}_{ij} \dot{h}_{k\ell} \right\rangle + \mathcal{O}(\delta g^3) \, .
+\end{equation}
+
+We will define the gravitational wave power spectrum as
+\begin{equation}\label{eq:GW_power_spectrum}
+	\left\langle h_{ij}(\eta,\mathbf{x})h^{ij}(\eta,\mathbf{x})\right\rangle \equiv \int  d \log k \, \mathcal{P}_t(k) \left[\mathcal{T}(\eta,k)\right]^2 \, ,
+\end{equation}
+where $\mathcal{P}_t(k)$ is the primordial power spectrum of gravitational waves and $\mathcal{T}(\eta,k)$ is the tensor transfer function.  The energy density of gravitational waves is then given by
+\begin{equation}\label{eq:GW_energy_density}
+	\rho_\mathrm{GW} = \frac{1}{32\pi G a^2}\int  d\log k \, \mathcal{P}_t(k) \left[\mathcal{T}'(\eta,k)\right]^2 \, ,
+\end{equation}
+where the prime denotes a derivative with respect to conformal time $\eta$.
+
+Direct searches for the stochastic gravitational wave backgound are often quoted in terms of the normalized energy density per logarithmic scale
+\begin{equation}\label{eq:Omega_GW}
+	\Omega_\mathrm{GW}(k) \equiv \frac{8\pi G}{3H_0^2}\frac{d\rho_\mathrm{GW}}{d\log k} = \frac{\mathrm{P}_t(k)}{12H_0^2a_0^2} \left[\mathcal{T}'(\eta_0,k)\right]^2 \, .
+\end{equation}
+On the other hand, constraints on $\Neff$ provide an integral constraint on the spectrum of gravitational waves since waves of all frequencies contribute to the total energy density.
+
+If for example, we take the primordial gravitational wave power spectrum to be a simple power law of the form $\mathcal{P}_t(k) = A_t \left(\frac{k}{k_\star}\right)^{n_t}$ (as in Eq.~(\ref{eq:power_spectra_power_law})), we can use a constraint on $\Neff$ to place bounds on the tensor spectral tilt $n_t$.  The contribution to $\Neff$ can then be approximated for $n_t>0$ as \cite{Meerburg:2015zua}
+\begin{equation}\label{eq:Neff_GW}
+	\Delta \Neff \simeq \left(3.046 + \frac{8}{7}\left(\frac{11}{4}\right)^{4/3}\right)\frac{A_t}{24n_t}\left(\frac{k_\mathrm{UV}}{k_\star}\right)^{n_t} \, ,
+\end{equation}
+where $k_\mathrm{UV}$ represents the ultraviolet cutoff of the primordial tensor power spectrum.  While this constraint does not probe the regime of great interest for inflationary models, it does provide a useful constraint on early universe alternatives to inflation which predict positive tensor tilt.
 
 \section{Complementarity of CMB and BBN}
 
