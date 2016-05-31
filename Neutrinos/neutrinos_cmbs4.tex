@@ -1,6 +1,6 @@
 %%%%%% CMB-S4 Neutrinos Chapter  %%%%%%%%%%%%%%%%
  
-\chapter{Neutrino Physics from the Cosmic Microwave Background}
+\chapter{Neutrinos and Light Species from the Cosmic Microwave Background}
 %\renewcommand*\thesection{\arabic{section}}
 
 
@@ -81,7 +81,7 @@ For a neutrino of mass $m_{\nu i}$ the transition between these two regimes ($T_
 \eeq
 The individual masses of the neutrino states are unknown but neutrino oscillation data specifies the square of two mass splittings $\Delta m_{12}^2 = 7.54 \times 10^{-5}$~eV, $|\Delta m_{13}^2|\approx 2.4 \times 10^{-3}$~eV \cite{Agashe:2014kda}. These mass splittings, in combination with the neutrino number density, give a lower limit on the contribution of neutrinos to the cosmic energy budget
 \beq
-\Omega_\nu h^2 \gtrsim 0.0006\,.
+\Omega_\nu h^2 \,  \gtrsim \, 0.0006\,.
 \eeq
 At $z \ll z_{\rm nr}$ the matter density of the universe, which enters into the Hubble equation, is the sum of the CDM, baryon, and massive neutrino energy densities $\Omega_m = \Omega_c + \Omega_b + \Omega_\nu$. Whereas, at $z\gg z_{\rm nr}$ the matter density is solely made up of the baryon and CDM parts while neutrinos contribute to the radiation density. 
 
@@ -136,32 +136,18 @@ at $a=1$. Note that this expression assumes fixed $\Omega_ch^2$, $\Omega_bh^2$ s
 \frac{P_{mm}(k \gg k_{\rm fs} |f_\nu)}{P_{mm}(k \gg k_{\rm fs} |f_\nu =0)} \approx (1-8f_\nu)\,.
 \eeq
 
-\subsection{Observational Signatures and Target}
-%
-\textcolor{blue}{JM: This section seems a bit out of place at the moment. Are the following two sections meant to be subsections of this one?  Should observational targets be discussed here, or should the section title be changed?}
+\subsection{Observational Signatures and Target Sensitivity}
 
-%
-Massive neutrinos contribute to the critical density as
+
+As explained in the previous section,  the signature of massive neutrinos manifests through
+the energy density $\Omega_\nu$, which is related to the mass through
 \beq
-\Omega_\nu h^2 \simeq \frac{\sum m_\nu}{93 \, {\rm eV}} \ .
+\Omega_\nu h^2 \simeq \, \frac{\sum m_\nu}{93 \, {\rm eV}} \, \gtrsim  \, 0.0006  \ .
 \eeq
-As discussed above, the signature of massive neutrinos manifests through
-the energy density $\Omega_\nu$ making its transition from relativistic
-radiation to non-relativistic matter as its temperature drops;
-the transition occurs at around $z_\mathrm{nr} \sim
-2000m_\nu/1\,\mathrm{eV}$.  During the epoch when
-neutrinos are relativistic, they free-stream out of the over-dense regions
-and washes out the matter fluctuations on small scales.  This effect
-turns off roughly at scales larger than the horizon scale at
-the redshift $z_\mathrm{nr}$.  Thus, comparison of the amplitudes of the
-fluctuations at large and small
-scales probes neutrino mass.
+The lower limit on $\Omega_\nu h^2$ is a reflection of the lower limit on the sum of the masses, $\sum m_\nu \, \gtrsim  \, 58 \, {\rm meV}$, that is determined from neutrino oscillation experiments.  This sets a clear observational target for future observations.
 
-The amplitudes at large scales are precisely measured through
-primordial CMB fluctuations in both TT and EE power spectra, except for the
-uncertainty from the optical depth $\tau$, which we discuss later.
-%
-The large scale structure (LSS) measures scales where we expect significant improvement through CMB-S4.
+Any probe of $P_{mm}$ late times is, in principle, sensitive to the sum of the neutrino masses.  The question we will be most interested in is whether a given probe is sensitive to the lower limit, $\sum m_\nu = 58 \, {\rm meV}$ (or $\Omega_\nu h^2 = 0.0006$) under realistic circumstances.  In this subsection, we will discuss the two methods through which CMB Stage IV can directly constrain the neutrino mass, CMB lensing and SZ cluster abundances.  We will also compare these observables to other cosmological probes of the neutrino mass from upcoming large scale structure surveys such as DESI and LSST.
+
 
 \subsection{CMB Lensing}
 
@@ -199,11 +185,24 @@ CMB datasets can be used to measure the abundance through the Sunyaev-Zel'dvich 
 %
 
 
-\subsubsection{Cross-correlations with External Datasets}
-
 \subsubsection{Relation to Other Surveys}
 
 \subsection{Forecasts}
+
+\begin{table}[t!]
+\begin{center}
+\begin{tabular}{l ccc cc} 
+ \toprule
+    				    			& $1'$  		& $2'$  		& $3'$  		& $\ell_{\rm max} = 3000$	& $\ell_{\rm max} = 4000$ \\ [0.5ex]
+ \midrule
+   $\sigma(\Neff)$ & -- 		& -- 		& --		& -- 	  	  	& -- 		  \\
+    \bottomrule
+\end{tabular}
+\caption{Forecasts for varying beam size and maximum multipole assuming...}
+\label{tab:beam}
+\end{center}
+\end{table}
+
 
 \subsection{Relation to Lab Experiments}\label{sec:lab}
 
@@ -212,7 +211,7 @@ One of the more interesting connections between cosmological measurements of neu
 Initial results from the current generation of NLDBD searches limit the NLDBD half life, $T^{0\nu}_{1/2}$, to be larger than  $\sim2\times10^{25}$~years~\cite{Agostini:2013mzu,Auger:2012ar,Artusa:2014lgv}.%\cite{Gerda, Exo, Cuore}.
  The full sensitivity of these experiments is expected to be in the range of $10^{25}-10^{26}$~years~\cite{NSAC}. Planning and technology development is already underway for next generation ``ton-scale'' NLDBD searches which would achieve sensitivities of $10^{27}-10^{28}$~years~\cite{NSAC}.
 
-We can illustrate the connection between NLDBD searches to cosmological determinations of neutrino mass by examining the silmplest case where NLDBD is mediated by exchange of light Majorana neutrinos. Within the context of this mechanism, we can define an ``effective neutrino mass,'' $m_{\beta\beta}$, given by 
+We can illustrate the connection between NLDBD searches to cosmological determinations of neutrino mass by examining the simplest case where NLDBD is mediated by exchange of light Majorana neutrinos. Within the context of this mechanism, we can define an ``effective neutrino mass,'' $m_{\beta\beta}$, given by 
 
 \beq
 m_{\beta\beta}^{2} = ( \sum_i U_{ei}^{2}m_{\nu i} )^{2}
@@ -282,7 +281,7 @@ neutrino decoupling, resulting in non-standard $N_\mathrm{eff}$ and
 contribution to $\sum m_\nu$.  Further description can be found
 below in Section~\ref{sec:sterile_neutrinos}.
 
-\section{Effective Number of Neutrinos}
+\section{Relativistic Species at Recombination}
 
 
 The angular power spectrum of the cosmic microwave background (CMB) at small angular scales is quite sensitive to the radiation content of the early universe, usually parametrized by a quantity $\Nf$ which will be defined more precisely below.  In the Standard Models of cosmology and particle physics, $\Nf$ is a measure of the energy density of the cosmic neutrino background.  More generally, however, $\Nf$ receives contributions from all forms of radiation apart from photons which are present in the early universe.  Due to its sensitivity to $\Nf$, the CMB can be used as a tool to probe physics of the Standard Model and beyond which are difficult to measure through other means.  Here we will give an overview of the theoretical issues related to $\Nf$ and outline the expectations from the Standard Model.
@@ -412,7 +411,19 @@ E-mode polarization will play an increasingly important role for several reasons
 
 \subsection{Forecasts}
 
-
+\begin{table}[t!]
+\begin{center}
+\begin{tabular}{l ccc cc} 
+ \toprule
+    				    			& $1'$  		& $2'$  		& $3'$  		& $\ell_{\rm max} = 3000$	& $\ell_{\rm max} = 4000$ \\ [0.5ex]
+ \midrule
+   $\sigma(\Neff)$ & -- 		& -- 		& --		& -- 	  	  	& -- 		  \\
+    \bottomrule
+\end{tabular}
+\caption{Forecasts for varying beam size and maximum multipole assuming...}
+\label{tab:beam}
+\end{center}
+\end{table}
 
 \section{Implications for Beyond the Standard Model Physics}
 
@@ -689,6 +700,26 @@ The power spectrum of the CMB is also directly sensitive to $Y_p$.  Since helium
 
 CMB Stage IV will provide constraints on $\Nf$ which are about an order of magnitude better than the current best constraints, and will also improve on the measurement of $Y_p$ by about a factor of two compared to the current best astrophysical measurements.  Combined with measurements of other primordial abundances, this will help to provide a very thorough check of our understanding of the early universe and provide the opportunity to discover physics beyond the Standard Model.
 
+\subsection{Forecasts}
+
+
+\begin{table}[h!t]
+\begin{center}
+ \begin{tabular}{l cc} 
+ \toprule
+   Experiment		& $\sigma(Y_p)$& $\sigma(\Nf)$    \\ [0.5ex] 
+ \midrule
+   \multirow{2}{*}{Design option 1} 		& -- & --\\
+				&-- & --    	     		\\
+ \cmidrule{1-3}
+   \multirow{2}{*}{Design option 2}			& --  	  & --\\
+				& --			& --    	   		\\
+ \bottomrule
+\end{tabular}
+\caption{Forecasts for the marginalized $1\sigma$ errors for $\Neff$ and $Y_p$.    A dash in the $\sigma(\Neff)$ entry indicates that $\Neff = 3.046$ was fixed.  Our forecasts assumed both delensing and lensing reconstruction. }
+\label{tab:Yp}
+\end{center}
+\end{table}
 
 
 
@@ -718,15 +749,15 @@ As discussed in Section~\ref{sec:lab}, the measurements of the absolute scale of
 {| l | c c c c | p{5cm} | }\hline Scenario & $m_{\beta \beta}$ & $m_{\beta}$&  $\sum m_\nu$ & $\Delta \Neff$ & Conclusion \\
 \hline 
 Normal hierarchy & $< 0.15 \, {\rm eV}$ & $< 0.2 \,  {\rm eV}$  & $60 \, {\rm meV}$ & 0 & Normal neutrino physics; no evidence for BSM
-\\  
-Dirac Neutrinos & $< 0.15 \, {\rm eV}$ & $ <0.2 \, {\rm eV}$  & $350  \, {\rm meV}$ & 0 & Neutrino is a dirac particle \\
+\\[.2cm]
+Dirac Neutrinos & $< 0.15 \, {\rm eV}$ & $ <0.2 \, {\rm eV}$  & $350  \, {\rm meV}$ & 0 & Neutrino is a dirac particle \\[.2cm]
 Sterile Neutrino & $< 0.15 \, {\rm eV}$ & $ <0.2 \, {\rm eV}$   & $350  \, {\rm meV}$ & $>0$ & Detection of sterile neutrino consistent with short-baseline \\
 \hline
-Bad Cosmology & $ 0.25 \, {\rm eV}$ & $ 0.25 \, {\rm eV}$  & $<150  \, {\rm meV}$ & $0$ & Modified thermal history; (e.g. neutrino decay to new particle) \\
+Bad Cosmology & $ 0.25 \, {\rm eV}$ & $ 0.25 \, {\rm eV}$  & $<150  \, {\rm meV}$ & $0$ & Modified thermal history; (e.g. neutrino decay to new particle) \\[.2cm]
 Excluded & $ 0.25 \, {\rm eV}$ & $ 0.25 \, {\rm eV}$  & $500  \, {\rm meV}$ & $0$ & Already excluded by cosmology \\
 \hline
 Dark Radiation & $< 0.15 \, {\rm eV}$ & $ <0.2 \, {\rm eV}$  & $60  \, {\rm meV}$ & $>0$ & Evidence for new light particles; normal hierarchy for neutrinos
-\\  
+\\[.2cm]
 Late Decay & $< 0.15 \, {\rm eV}$ & $ <0.2 \, {\rm eV}$  & $60  \, {\rm meV}$ & $<0$ & Energy-injection into photons at temperature $T \lesssim 1$ MeV \\
 \hline 
 \end{tabular}
@@ -755,17 +786,17 @@ Deviations from $\Neff = 3.046$ can arise from a wide variety of changes to the 
 {| l | c | p{5cm} | p{5cm} | }\hline Scenario & $\Delta \Neff$ & Experimental Input & Conclusion \\
 \hline 
 Axions & $\geq 0.027$  & Direct detection of axions & lower-limit on the reheat temperature
-\\  
+\\[.2cm]
 Low-reheating & $0$  & Direct detection of axions & upper-limit on the reheat temperature
-\\    
+\\[.2cm]    
 Stellar Cooling & $\geq 0.027$  & Anomalous Stellar cooling (e.g. white dwarfs) & Evidence for new light particle ; Spin determined by $\Delta \Neff$.  
-\\    
+\\[.2cm]    
 Gravitinos & $\geq 0.057$  & LHC evidence for SUSY & upper limit on scale of SUSY breaking
-\\  
-Late Decays & $< 0$  & Spectra Distortions observed ($\mu$ or $y$) & evidence for new massive particle; energy injection
-\\ 
+\\[.2cm]  
+Late Decays & $< 0$  & Spectral Distortions observed ($\mu$ or $y$) & evidence for new massive particle; energy injection
+\\[.2cm]
 Evolving $\Neff$ & $> 0$  & Primordial abundances (BBN) consistent with $\Delta \Neff =0$ & Radiation density changed between BBN and Recombination
-\\  
+\\[.2cm]  
 \hline 
 \end{tabular}
 \caption{Relation between particle physics experiments and cosmology.}
