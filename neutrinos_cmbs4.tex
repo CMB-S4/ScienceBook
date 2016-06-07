@@ -18,6 +18,7 @@
 
 
 \def\gtrsim{\raise-.75ex\hbox{$\buildrel>\over\sim$}}
+\def\lsim{\raise-.75ex\hbox{$\buildrel<\over\sim$}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -136,18 +137,6 @@ at $a=1$. Note that this expression assumes fixed $\Omega_ch^2$, $\Omega_bh^2$ s
 \frac{P_{mm}(k \gg k_{\rm fs} |f_\nu)}{P_{mm}(k \gg k_{\rm fs} |f_\nu =0)} \approx (1-8f_\nu)\,.
 \eeq
 
-\subsection{Observational Signatures and Target Sensitivity}
-
-
-As explained in the previous section,  the signature of massive neutrinos manifests through
-the energy density $\Omega_\nu$, which is related to the mass through
-\beq
-\Omega_\nu h^2 \simeq \, \frac{\sum m_\nu}{93 \, {\rm eV}} \, \gtrsim  \, 0.0006  \ .
-\eeq
-The lower limit on $\Omega_\nu h^2$ is a reflection of the lower limit on the sum of the masses, $\sum m_\nu \, \gtrsim  \, 58 \, {\rm meV}$, that is determined from neutrino oscillation experiments[Citation needed].  This sets a clear observational target for future observations.
-
-Any probe of $P_{mm}$ late times is, in principle, sensitive to the sum of the neutrino masses.  The question we will be most interested in is whether a given probe is sensitive to the lower limit, $\sum m_\nu = 58 \, {\rm meV}$ (or $\Omega_\nu h^2 = 0.0006$) under realistic circumstances.  In this subsection, we will discuss the two methods through which CMB Stage IV can directly constrain the neutrino mass, CMB lensing and SZ cluster abundances.  We will also compare these observables to other cosmological probes of the neutrino mass from upcoming large scale structure surveys such as DESI and LSST.
-
 
 \subsection{CMB Lensing}
 
@@ -177,12 +166,25 @@ In principle, measurement of the free streaming scale directly in the matter pow
 
 \subsection{Other Cosmological Probes}
 
-\subsubsection{SZ Cluster Abundance}
+\subsection{SZ Cluster Abundance}
+Galaxy clusters form from rare high peaks in the matter density field. A cluster of mass $M$ forms from a region of size $R\sim \left(M/(4/3\pi \bar\rho_m)\right)^{1/3}$, which is smaller than the neutrino free streaming scale for even the most massive galaxy clusters so long as $m_{\nu i} \lsim 0.1$eV. The neutrino free-streaming therefore slows the growth of structure on cluster scales, suppressing the abundance of galaxy clusters. 
 
-Galaxy cluster abundance also gives us a measurement of the fluctuation amplitude at small scales ($k\simeq 0.1 \, h\mathrm{Mpc}^{-1}$).  In particular, the mass function of clusters is strongly sensitive to the total power in small scale fluctuations ($\sigma_8$) and therefore, in principle, cluster counts are sensitive to the sum of the neutrino mass through the same suppression of the matter power spectrum discussed above.
-%
-CMB datasets can be used to measure the abundance through the Sunyaev-Zel'dvich (SZ) effect.  The size of the SZ signal does not provide a direct measurement of the mass of the cluster but instead is directly sensitive to the free electron density in the cluster.  As a result, determining the mass function requires calibration of the mass-signal relation.  
-%
+The abundance of clusters with mass $M$ can expressed by (e.g. \cite{Tinker:2008ff, 2011ApJ...732..122B}), 
+\beq
+\frac{dn}{dM}(M,z) = \frac{\rho}{M}\frac{d\ln \sigma^{-1}}{dM} f(\sigma, z)
+\eeq
+where $\sigma = \sigma(M,z)$ is the variance of linear perturbations in CDM and baryons on mass scale $M$ given by
+\beq
+\label{eq:sigmaM}
+\sigma^2(M, z) = \int \frac{dk}{k} \frac{4\pi}{(2\pi)^3} P_{cb}(k, z) |W(kR)|^2
+\eeq
+where $R = (3M/(4\pi \rho_{cb}))^{1/3}$, $P_{cb}(k)$ is the power spectrum of CDM and baryons, and $W(kR) = 3(\sin(kR)/(kR)^3 - \cos(kR)/(kR)^2)$ is a top-hat window function \cite{Costanzi:2013bha, LoVerde:2014rxa}. The cluster abundance is therefore extremely sensitive to $M_\nu$ via the suppression in the matter power spectrum discussed in the previous section. Current constraints from current constraints on neutrino mass from cluster abundance, in combination with the primary CMB and BAO, are $M_\nu \lsim 0.2 -0.3$eV at $95\%$ confidence \cite{Hasselfield:2013wf,Mantz:2014paa, Ade:2015fva,deHaan:2016qvy}. 
+
+Galaxy clusters can be identified from CMB data via the thermal Sunyaev-Zel'Dovich (tSZ) effect, the frequency shift of CMB photons that have scattered off of electrons in the hot, intra-cluster gas \cite{sunyaev72}.  The size of the SZ signal does not provide a direct measurement of the mass of the cluster but instead is directly sensitive to the free electron density in the cluster.  As a result, determining the mass function requires calibration of the mass-signal relation.  CMB S4 is projected to detect a nearly mass-limited sample of $\mathcal{O}(100,000)$ galaxy clusters that can be used to test the neutrino mass scale. 
+
+\subsection{CMB in Combination with Other Datasets}
+
+There are a number synergistic opportunities between CMB S4 and external cosmological datasets. The CMB lensing convergence map can be cross-correlated with external galaxy surveys to tighten constraints on neutrino mass (e.g. \cite{Takeuchi:2013gpa, Pearson:2013iha}) or CMB can be cross-correlated with galaxy survey data to constrain neutrino mass via the mean pair-wise momentum of galaxy clusters  \cite{Mueller:2014dba}. Additionally, CMB S-4 data indirectly aid measurements of neutrino mass from galaxy surveys because the CMB data can be used to calibrate systematics in weak lensing shear data \cite{Das:2013aia}. 
 
 
 \subsubsection{Relation to Other Surveys}
@@ -457,12 +459,12 @@ A measurement with a slightly larger error on $\Nf$ would still be extraordinari
 Mechanisms of introducing neutrino mass generally include sterile
 neutrinos, with both Majorana and Dirac terms potentially
 contributing (e.g., Ref.~\cite{Langacker:2011bi}):
-\bea
-\mathcal{L}_D &=& -m_D\left(\bar\nu_L\nu_R + \bar\nu_R\nu_L\right) \\
-\mathcal{L}_M &=& -\frac{1}{2}m_T\left(\bar\nu_L\nu_L^c + \bar\nu_L^c\nu_L\right) 
+\begin{eqnarray}
+\mathcal{L}_D &= -m_D\left(\bar\nu_L\nu_R + \bar\nu_R\nu_L\right)
+\mathcal{L}_M &= -\frac{1}{2}m_T\left(\bar\nu_L\nu_L^c + \bar\nu_L^c\nu_L\right) 
 -\frac{1}{2}m_S\left(\bar\nu_R\nu_R^c +\bar\nu_R^c\nu_R\right) =
 -\frac{1}{2}m_T\left(\bar\nu_a\nu_a\right) -\frac{1}{2}m_S\left(\bar\nu_s\nu_s\right),
-\eea
+\end{eqnarray}
 where $\nu_a \equiv \nu_L + (\nu_L)^c$ and $\nu_S \equiv \nu_R +
 (\nu_R)^c$ are active and sterile Majorana two component spinors,
 respectively. The mass $m_T$ can be generated by a Higgs triplet,
@@ -488,13 +490,13 @@ arose from re-evaluations of reactor antineutrino fluxes that
 indicate an increased flux of antineutrinos as well as a lower
 neutron lifetime and commensurately increased the antineutrino events
 from nuclear reactors by 6\%. This caused previous agreement of
-reactor antineutrino experiments to have a $\approx$6\% deficit
+reactor antineutrino experiments to have a $\sim$6\% deficit
 \cite{Mention:2011rk,Huber:2011wv}. Another indication consistent with
 sterile neutrinos was observed in radio-chemical gallium experiments for solar
 neutrinos. In their calibrations, a 5-20\% deficit of the measured
 count rate was found when intense sources of electron neutrinos from
 electron capture nuclei were placed in proximity to the
-detectors. Such a deficit could be produced by a $m_S >1\rm\ eV$ sterile
+detectors. Such a deficit could be produced by a $>1\rm\ eV$ sterile
 neutrino with appreciable mixing with electron neutrinos
 \cite{Bahcall:1994bq,Giunti:2010zu}. Some simultaneous fits to the
 short baseline anomalies and reactor neutrino deficits, commensurate
@@ -505,7 +507,7 @@ large mixing angles, they would be thermalized in the early universe
 with a standard thermal history, and affect primordial nucleosynthesis
 \cite{Abazajian:2002bj} and CMB measurements of $\Neff$.
 
-To accomodate $m_S = \mathcal{O}({\rm eV})$ with some mixing between active
+To accomodate $m_S = \mathcal{O}(eV)$ with some mixing between active
 and sterile states in the neutrino mass generation mechanism discussed
 above requires mixing between active and sterile states with the same
 chirality, which does not occur for pure Majorana or Dirac mass cases
