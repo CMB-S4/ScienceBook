@@ -516,9 +516,204 @@ The lowest order correlation function that encodes departures from Gaussianity i
 \end{equation}
 where the delta function comes from translation invariance. Many scenarios invariance under rotations and translations guarantee that the bispectrum $B(k_1,k_2,k_3)$ only depends on the magnitudes $k_1$, $k_2$, and $k_3$. A model independent search for the bispectrum, or equivalently the angular bispectrum $b_{\ell_1\ell_2\ell_3}$, is not computationally tractable, and in practice searches place constraints on the amplitudes $f_{\rm NL}$ of certain theoretically motivated functional forms, or shapes.
 
-%% Renee Hlozek moved all text on non-Gaussianity up to birefringence to a separate chapter
+Perhaps of special interest for CMB-S4 are non-Gaussian signatures that would be expected in models of large field inflation. For example, in models in which the inflaton is an axion, there is only an approximate discrete shift symmetry. In that case instanton contributions to the potential and periodic bursts of particle or string production naturally lead to periodic features in the bispectrum. If moduli in the underlying string constructions do not evolve appreciably, instanton contributions lead to oscillations with a constant amplitude in the logarithm of $k$. In general, moduli evolve during inflation and cause a drift in the frequency and a scale-dependent amplitude~\cite{Flauger:2014ana}. At present, these shapes have not yet been constrained systematically. Often these contributions will lead to counter-parts in the power spectrum and are expected to be detected there first~\cite{Behbahani:2011it}, but this need not be the case~\cite{Behbahani:2012be}. A first attempt has been made~\cite{Ade:2015ava} to look for resonant and local features in the bispectrum and a more dedicated analysis is underway. Since features in the power spectrum and the bispectrum generally contain correlated parameters \cite{Achucarro:2010da,NonBDBispectrum2009,nonBDbispectrum2015,Flauger:2010ja} statistical methods have been developed to use the power of both the power spectrum and the bispectrum to further constrain models space \cite{Meerburg2015b,Moritz2016,Fergusson:2014hya}. Signatures of higher order massive spin fields \cite{Arkani-Hamed:2015bza,Chen:2015lza} would also lead to a bispectrum with decaying features, which will not be present in the power spectrum.  So a search for these more general shapes is well motivated. Using both $T$ and $E$-mode polarization, CMB-S4 will improve constraints by about of two compared to {\it Planck} as we will show in the next section. Bispectra containing at least one $B$ mode, will generally be much better constrained (currently there is no bound on such correlation functions) and will benefit from CMB-S4. We will consider two examples in the next section. 
 
-%%
+More generally, one can divide the space of non-Gaussian inflationary models into those whose signals either (1) indicate fluctuations in degrees of freedom other than the inflaton, or (2) indicate non-trivial self-interactions of the effective inflaton fluctuation. Given the forecasted improvements from CMB-S4 over the {\it Planck}, it is unlikely that this instrument would uncover strong evidence of non-Gaussianity. However, since the {\it Planck} constraints have not ruled out $f_{\rm NL}\sim\mathcal{O}(1)$, even a hint of non-Gaussianity would be extremely interesting. Here we briefly review the physics in the two cases.
+
+A detection of the widely studied local shape would have far reaching theoretical implications. A detection of this shape would rule out all models of single clock inflation \cite{Creminelli:2004yq}. In addition, such a signal would open the door to significant cosmic variance on all scales from coupling of fluctuations within our observed volume to any super-Hubble modes \cite{Nelson:2012sb,LoVerde:2013xka,Nurmi:2013xv}. Indeed, there would be room for a significant shift between the observed amplitude of scalar fluctuations (and so the observed $r$) and the mean value of fluctuations on much larger scales \cite{Bonga:2015urq}. Any scenario that predicts local non-Gaussianity together with fluctuations on scales much larger than our observed volume predicts a probability distribution for our observed $f_{\rm NL}^{\rm local}$, but many well-motivated scenarios also predict a small mean value. These include the simplest modulated reheating scenario \cite{Zaldarriaga:2003my} and ekpyrotic cosmology \cite{Lehners:2009ja}, both of which predict mean values of $f_{\rm NL}^{\rm local}\sim5$. 
+Currently the strongest constraints on the local shape come from the {\it Planck} 2015 temperature and polarization analysis which finds $f_{\rm NL}^{\rm local} = 0.8 \pm 5.0$~\cite{Ade:2015ava}. A noise-free cosmic variance limited CMB experiment is expected to produce constraints on $f_{\rm NL}^{\rm local}$ with 1$\sigma$ error bars of about 3 \cite{Komatsu:2001rj}. Therefore the improvement expected of CMB-S4 over current limits is slightly less than a factor of two. This is not sufficient to reach the interesting theoretical threshold around $|f_{\rm NL}^{\rm local}|\lesssim 1$~\cite{Alvarez:2014vva}, but will still reduce the space of viable models or hint at a detection. CMB-S4 could, for example, provide hints for the mean level of non-Gaussianity expected from modulated reheating scenario or ekpyrotic cosmology at roughly $2\,\sigma$. The simplest curvaton scenario, which predicts $f_{\rm NL} = -5/4$ \cite{Lyth:2001nq}, will unfortunately be out of reach. Large-scale structure surveys (eg., \cite{Dore:2014cca}) may eventually achieve constraints $\sigma_{f_{\rm NL}}\sim\mathcal{O}(1)$. Those observations of the inhomogeneities in the late universe would be very complementary to the results of CMB-S4.
+
+Equilateral and orthogonal shapes shapes arise in scenarios where the scalar perturbations sourced by inflaton fluctuations have non-trivial self interactions, and indicate an additional scale of particle physics, $M_{c_s}$ between $H$ and $M_p$. The amplitude of the non-Gaussianity typically scales as $(H/M_{c_s})^2$. Current constraints on the equilateral and orthogonal shapes are $f_{\rm NL}^{\rm equil} = -4 \pm 43$ and $f_{\rm NL}^{\rm ortho} = -26 \pm 21$, both (68\% CL)~\cite{Ade:2015ava}, which translates into $M_{c_s}>\mathcal{O}(10)H$. The improvements from CMB-S4 would further tighten existing constraints on the speed of sound during inflation and the strong coupling scale in single-clock models of inflation. In addition, the tighter constraints on the equilateral shape would constrain scenarios with secondary production of gravitational waves.
+
+\subsection{Forecasts}
+
+\begin{figure}[htbp!]
+\centering
+\includegraphics[width=0.45\textwidth]{Inflation/DeltaFNL_TTT}
+\includegraphics[width=0.43\textwidth]{Inflation/DeltaFNL_TTT_lmin}
+\caption{Left: forecasts on the constraining power of CMB-S4 on 4 different types of non-Gaussianities as a function of $\ell_{\rm max}$ using $T$ and $E$ modes. Right: Sensitivity of different types of non-Gaussianities on the minimum multipole. The local type non-Gaussianity benefits from having the lowest multipoles, while the other standard shapes saturate to a constant at low $\ell_{\rm min}$ (not shown, see Tab.~\ref{tab:fnl_forecast}). The above plot was generated using $f_{\rm sky} = 0.4$, $T$-noise = 1 $\mu$K-' and $E$-noise = $\sqrt{2}$ $\mu$K-' and a beam of $1$' and $\ell_{\rm min} = 30$ (left) and with varying $\ell_{\rm min}$ and $\ell_{\rm max} = 3500$ (right).}
+\label{fig_fnlforecast}
+\end{figure}
+
+We forecast the constraints on non-Gaussianities from CMB-S4. We consider the most well motivated shapes; local, equilateral, orthogonal and enfolded. 
+In Fig.~\ref{fig_fnlforecast} we show the constraints as a function of the maximum multipole on the left using the following configuration $f_{\rm sky} = 0.4$, $T$-noise = 1 $\mu$K-' and $E$-noise = $\sqrt{2}$ $\mu$K-' and a beam of $1$' and $\ell_{\rm min} = 30$. Local type non-Gaussianities benefit from large scales, and as much as $40\%$ of the signal is lost when considering the lowest multipoles as shown in Fig.~\ref{fig_fnlforecast} on the right. Ideally, large scale information from Planck \cite{Ade:2015ava} should be included to put the best constraints on non-Gaussianities. Including Planck low $\ell$ (using $f_{\rm sky} = 0.75$ \cite{Ade:2015ava} to determine the noise level, and $f_{\rm sky}=0.4$ for the maximal overlap) we can improve the forecasted bounds on local type non-Gaussianities by almost a factor of 2. Equilateral, enfolded and orthogonal non-Gaussianities are noy affected by not including the lowest multipoles. We summerize the results in Tab.~\ref{tab:fnl_forecast}. Note that our forecast, using Planck Blue Book\footnote{\url{http://www.rssd.esa.int/SA/PLANCK/docs/Bluebook-ESA-SCI(2005)1_V2.pdf}} values, deviate slightly from the actual bounds on non-Gaussianities obtained in Ref.~\cite{Ade:2015ava}. The expected factor of improvement over {\it Planck}-only is somewhere between 1.6 and 1.7 for all shapes considered.
+
+% Requires the booktabs if the memoir class is not being used
+\begin{table*}[t]\label{tab:fnl_forecast}
+  \begin{center}
+    \begin{tabular}{ | c || c | c | c | c |}
+      \hline
+      Type & Planck & CMB-S4 & CMB-S4 + low $\ell$ Planck & rel. improvement \\ \hline \hline
+      local & $\sigma(f_{\rm NL}) = 4.6$ & $\sigma(f_{\rm NL}) = 3.9$ &  $\sigma(f_{\rm NL}) = 2.7$ & 1.7\\ \hline 
+      equilateral &  $\sigma(f_{\rm NL}) = 40.5$ & $\sigma(f_{\rm NL}) = 24$ &  $\sigma(f_{\rm NL}) = 24$ & 1.7\\ \hline 
+      orthogonal &  $\sigma(f_{\rm NL}) = 20.2$ & $\sigma(f_{\rm NL}) = 12.3$ &  $\sigma(f_{\rm NL}) = 12.3$ & 1.6\\ \hline 
+      flat &  $\sigma(f_{\rm NL}) = 35$ & $\sigma(f_{\rm NL}) = 21.8$ &  $\sigma(f_{\rm NL}) = 21.8$ & 1.6\\ \hline 
+    \end{tabular}
+  \end{center}
+  \caption{Forecasted constraints on several well motivated non-Gaussian shapes using $T$ and $E$ modes. {\it Planck} forecast is based on Blue Book values, with $f_{\rm sky} = 0.75$. The table shows we need to include low $\ell$ information from {\it Planck} for local type non-Gaussianities.}
+  \label{default}
+\end{table*}
+
+\begin{figure}[htbp!]
+\centering
+\includegraphics[width=0.45\textwidth]{Inflation/DeltaFNL_BTT_no_r}
+\includegraphics[width=0.45\textwidth]{Inflation/DeltaFNL_BTT_with_r}
+\caption{Left: Noise dominated $B$ modes. Forecasts on the constraining power of CMB-S4 on two types of $\langle h \zeta \zeta\rangle$ non-Gaussianities as a function of $\ell_{\rm max}$ using $\langle BTT\rangle$. Right: the effect of cosmic variance in $B$.  }
+\label{fig_fnlforecastBTT}
+\end{figure}
+
+Next, we determine the improvements as function of a fixed effort with $f_{\rm sky} = 0.4$ corresponding to noise of 1 $\mu$K-arcmin. 
+
+Correlators including at least one $B$ mode will benefit from the improved sensitivity of $B$ modes significantly. We define \cite{Meerburg2016}
+\begin{equation}
+\langle \zeta(\vec{k}_1)\zeta(\vec{k}_2)h^{\pm}(\vec{k}_3) \rangle = (2\pi)^3  \delta^{(3)} \left(\sum_{n=1}^3\vec{k}_n\right) \mathcal{B}(k_1,k_2,k_3) e_{ab}^{\mp}(\vec{k}_3)\hat{k}_1^a \hat{k}_2^b, 
+\end{equation}
+with 
+\begin{equation}
+\mathcal{B}(k_1,k_2,k_3)= 16 \pi^4 A_s^2 \sqrt{r}f_\mathrm{NL}^{h\zeta\zeta} F(k_1,k_2,k_3)
+\end{equation}
+and $e_{ab}^{\mp}$ the transvere traceless polarization tensor. 
+In the simplest model of inflation $f^{h \zeta \zeta}_{\rm NL} = \sqrt{r}/16$ \cite{Maldacena:2002vr,Maldacena:2011nz} which realistically is undetectable small. As mentioned before in Sec.~\ref{subsubsec:Interactions}, a measurement if this correlation would be an immediate indication of some deviation from the simple inflationary paradigm and as such would provide valuable information. The coupling above can be constrained using any type of correlation that contains one $B$ mode, e.g. $\langle BTT \rangle$ or $\langle BEE\rangle$. For $F$ we use local and equilateral shaped triangles and forecast the constraint on the amplitude in Fig.~\ref{fig_fnlforecastBTT} for $\langle BTT\rangle$. We anticipate similar constraints for $\langle BTE\rangle $ and $\langle BEE\rangle$. 
+
+\begin{figure}[htbp!]
+\centering
+\includegraphics[width=0.48\textwidth]{Inflation/FixedEffortBTTlocal}
+\includegraphics[width=0.48\textwidth]{Inflation/FixedEffortBTTlocalr}
+\caption{Left: Fixed effort density plot for local type $BTT$. Left, the effect of beam and $f_{\rm sky}$ variation in noise dominated $B$ mode. $f_{\rm sky}$ has very little effect, as it is cancelled by the $f_{\rm sky}$ associated with the masking of the total map. Right: adding a signal changes this picture, since the cancellation no longer happens for $r > 0.001$ (i.e. when CMB-S4 becomes cosmic variance limited). A larger sky fraction benefits cosmic variance limited $\langle BTT\rangle$. }
+\label{fig_BTTlocalfixedeffort}
+\end{figure}
+
+We consider two scenarios; one in which the $B$ modes are noise dominated and one in which they are cosmic variance limited by a future detection of $r$. For a local shape primordial bispectrum the error decreases as you decrease the beam. The signal is dominated by large angle $B$ modes correlated with small angle $T$ modes as was pointed out in \cite{Meerburg2016}. An equilateral component from the $\langle BTT\rangle$ correlation function suffers from the decaying tensor modes, which are negligible for $\ell_B > 500$. After this, no equilateral triangles can be constructed and the error saturates. The effect is that equilateral type non-Gaussianities are almost insensitive to beam size. For both shapes, in a scenario where $B$ modes are noise dominated, $f_{\rm sky}$ have very little effect. 
+
+On the right we show what happens when $B$ gets a primordial component; the take away message is that only if $r < 0.001$  CMB-S4 noise dominates cosmic variance. 
+
+In addition we consider fixed effort. We show the results in Fig.~\ref{fig_BTTlocalfixedeffort} and \ref{fig_BTTequilfixedeffort}. We find that $BTT$ is practically insensitive to $f_{\rm sky}$ as long as $B$ modes are noise dominated. For $r = 0.001$ and above a larger sky fraction helps constrain $\langle BTT \rangle$. 
+
+\begin{figure}[htbp!]
+\centering
+\includegraphics[width=0.48\textwidth]{Inflation/FixedEffortBTTequil}
+\includegraphics[width=0.48\textwidth]{Inflation/FixedEffortBTTequilr}
+\caption{Left: Fixed effort density plot for equilateral type $BTT$. Similar to local type bispectra, a larger sky fraction benefits cosmic variance limited $\langle BTT\rangle$. }
+\label{fig_BTTequilfixedeffort}
+\end{figure}
+%In models with a single clock, the symmetry breaking pattern underlying inflation guarantees that the fluctuations are governed by the action
+%\begin{equation}
+%S=\int\,d^4 x \sqrt{-g}\left[-\frac{M_p^2 \dot{H}}{c_s^2}\left(\dot{\pi}^2-c_s^2\frac{(\partial_i\pi)^2}{a^2}\right)+M_p^2 \dot{H}\left(1-\frac{1}{c_s^2}\right)\left(\dot\pi^3-\dot\pi\frac{(\partial_i\pi)^2}{a^2}\right)+M_3^4\dot\pi^3+\dots\right]\,,
+%\end{equation}
+%where at leading order $\zeta=H\pi$ and the omissions represent terms higher order in fields, derivatives, or both. In the presence of an approximate continuous shift symmetry, the coefficients in this action are approximately constant in time and there are only two linearly independent shapes. 
+%Current constraints on the equilateral and orthogonal shapes are $f_{\rm NL}^{\rm equil} = -4 \pm 43$ and $f_{\rm NL}^{\rm ortho} = -26 \pm 21$, both (68\% CL)~\cite{Ade:2015ava}. Because of its high angular resolution, CMB-S4 can improve these constraints by about a factor two which would further tighten existing constraints on the speed of sound during inflation and the strong coupling scale in single-clock models of inflation. In addition, the tighter constraints on the equilateral shape would constrain scenarios with secondary production of gravitational waves.
+
+{\color{blue} Any one care to work this out more:} 
+Higher order statistics encode further information about particle content and interactions. The relative amplitude of certain limits of the trispectrum (the momentum space 4-point function) and of the trispectrum can also reveal whether there may be multiple sources contributing to the primordial fluctuations (and both may be different from the fluctuations of the inflaton). {\bf more...}
+
+
+%In the modulated reheating scenario, the field which drives inflation $\phi$ decays to the particles of the standard model with a rate $\gamma$ which is determined by the value of a second field $\sigma$ which remains light throughout inflation. The quantum fluctuations in $\sigma$ result in a spatially modulated reheating surface resulting in the curvature perturbations that we observe in the CMB and large scale structure. The process by which the fluctuations in the light field are converted into curvature fluctuations naturally results in local non-Gaussianity given by $f_{\rm NL} = 5(1-\Gamma \Gamma^{\prime\prime}/\Gamma^{\prime2})$, where this formula holds in the case that $\phi$ oscillates about a quadratic minimum after inflation and the fluctuations in $\phi$ make a negligible contribution to the observed power spectrum.
+
+%This can be contrasted with the simplest curvaton scenario, where a scalar field $\sigma$ which remains light during inflation comes to dominate the energy density of the universe after the field which drives inflation $\phi$ decays. The fluctuations in the energy density of $\sigma$ then determine the curvature perturbations that are observed today. The local non-Gaussianity in this simple model is predicted to be $f_{\rm NL} = -5/4$ \cite{Lyth:2001nq}, which is unfortunately a few times smaller than the expected error bar from CMB Stage-IV.
+
+%In the absence of a detection, however, it is important to ask what can be learned from improved constraints on $f_{\rm NL}$. Though not firm, nor entirely robustly defined, it can be argued that a natural theoretical threshold where qualitatively new general conclusions about the physics of the early universe can be drawn would come from constraints on $f_{\rm NL}<\mathcal{O}(1)$, see for example [1412.4671] for a detailed discussion. In order to achieve this level of constraint, it seems necessary to move beyond the cosmic microwave background to study other data sets, such as large scale structure. Despite the fact that CMB Stage-IV is not expected to reach this threshold, it is worth asking what can be gleaned from an improved constraint on $f_{\rm NL}$ from the CMB.
+
+\section{Isocurvature}
+Measurements of CMB temperature/polarization power spectra indicate that the primordial initial conditions are adiabatic, that is, spatial entropy fluctuations vanish:
+\begin{align}
+S_{i \gamma}\equiv \frac{\delta n_{i}}{n_{i}}-\frac{\delta n_{\gamma}}{n_{\gamma}} =0.\end{align} The species label $i$ can denote baryons, cold dark matter (CDM), or neutrinos. Number densities are denoted by $n_{i}$ and perturbations in them by $\delta n_{i}$.
+
+Adiabatic perturbations are produced in models where the initial perturbations in all species are seeded by the inflaton. If fluctuations are also sourced by a second field, the initial conditions are a mixture of adiabatic and entropy (a.k.a isocurvature) perturbations, for which $S_{i\gamma}\neq 0$. These initial conditions determine the acoustic peak structure and large-scale amplitude of CMB anisotropies, as well as large-scale structure statistics \cite{Bond:1984fp,Kodama:1986fg,Kodama:1986ud,Hu:1994jd,Moodley:2004nz,Bean:2006qz}. Observations can thus probe the number of fields during inflation. 
+\label{sec:isosec}
+Each species can carry isocurvature perturbations in its density (e.g. Refs~\cite{Bucher:1999re,Bucher:2004an,Moodley:2004nz}).\footnote{Neutrinos can also carry velocity isocurvature, but this mode is not well motivated in inflationary models.} Indeed, the modes of the perturbation evolution equations correspond to adiabatic, CDM density isocurvature (CDI), baryon density isocurvature (BDI), neutrino density isocurvature (NDI), and neutrino velocity isocurvature (NVI) initial conditions. 
+
+\begin{figure*}[htbp!]
+\includegraphics[width=0.5\textwidth, trim={0 10 0 0},clip]{Inflation/iso_schematic.pdf} 
+ \caption{CMB isocurvature power spectra $C_{l}^{\rm TT}$ (solid) and $C_{l}^{\rm EE}$ (dashed) for equal primordial $P_{\zeta\zeta}(k)$  isocurvature perturbations. \textbf{Figure appropriated from Planck inflation paper. To be replaced by our own figure.}
+\label{fig:iso_schematic}}
+\end{figure*} 
+
+Data from WMAP \cite{dunkley09}, \textit{Planck} \cite{Ade:2015lrj}, and other experiments \cite{Enqvist:2000hp,MacTavish:2005yk} indicate that perturbations are predominantly adiabatic. The limits can stated in terms of the fractional primordial power in each isocurvature mode:\begin{equation}
+\beta\equiv \frac{P_{S_{i\gamma}}(k)}{P_{S_{i\gamma}}(k)+P_{\zeta\zeta}(k)}.
+\end{equation}
+The current CMB limits (allowing one isocurvature mode at a time) are shown in Table \ref{table:fisher_model_independent}, along with a forecast of CMB-S4 sensitivity.\footnote{All forecasts in the isocurvature section are produced using Fisher-matrix techniques.} In Table. \ref{table:fisher_model_independent}, ``correlated'' refers to totally correlated or anti-correlated (with $\zeta$) isocurvature perturbations. All results are quoted at a fiducial $k=0.05~{\rm Mpc}^{-1}$. Limits to BDI perturbations are not separately listed, as at linear order they are indistinguishable from CDI perturbations \cite{Gordon:2002gv,Lewis:2002nc,Lewis:2007kz,Gordon:2009wx}. CMB-S4 could improve on these limits by a factor of $2-5$, as shown in Table. \ref{table:fisher_model_independent}.
+
+\begin{table}
+\begin{center}
+\begin{tabular}
+{lcccc}\hline \hline {\rm Mode} &  $ \beta $ (\emph{Planck}, uncorrelated )&$ \beta$(CMB-S4, uncorrelated)&  $ \beta $ (\emph{Planck}, correlated )&$ \beta$(CMB-S4, correlated)\\ 
+\hline \\
+CDI & $\leq 0.04$&$0.008$&$\leq0.001$&$4\times 10^{-4}$\\
+NDI &  $\leq 0.01$ &$XX$&$XX$&$XX$\\
+NVI &  $\leq 0.04$&$XX$&$XX$&$XX$\\
+\\ \hline \hline 
+\end{tabular}
+\caption{Constraints (from \emph{Planck} \cite{Ade:2015lrj}) TT+BAO+LowP data vs. CMB-S4 sensitivity to fractional primordial isocurvature power $\beta$ ($95\%$ C.L.) in various modes for uncorrelated/correlated isocurvature modes.\textbf{Numbers to be finalised based on results of Fisher forecast efforts.}
+\label{table:fisher_model_independent}}
+\end{center}
+\end{table} 
+
+\subsection{The Curvaton Scenario}
+One alternative to single-field models is the curvaton scenario, in which a sub-dominant second field $\sigma$ acquires vacuum fluctuations during inflation, becomes more important later, sources $\zeta$, and then decays \cite{Mollerach:1989hu,Mukhanov:1990me,Moroi:2001ct,Lyth:2001nq,Lyth:2002my}. Curvaton candidates include sneutrinos, string moduli, and others \cite{Postma:2002et,Kasuya:2003va,Ikegami:2004ve,Mazumdar:2004qv,Allahverdi:2006dr,Papantonopoulos:2006xi,Mazumdar:2010sa,Mazumdar:2011xe}. Depending on whether a species $i$ (or its quantum numbers ) is produced by, before, or after curvaton decay, perturbations in $i$ are offset from $\zeta$, leading to isocurvature perturbations: \cite{Lyth:2001nq,Lyth:2002my,Gordon:2002gv}
+
+\begin{eqnarray}
+S_{i \gamma}=\left\{\begin{array}{ll}-3\zeta-3(\zeta_{\gamma}-\zeta),&\mbox{if $i$ is produced before $\sigma$ decay,}\\3\left(\frac{1}{r_{D}}-1\right)\zeta-3(\zeta_{\gamma}-\zeta),&\mbox{if $i$ is produced by $\sigma$ decay},\\ -3(\zeta_\gamma-\zeta),&\mbox{if $i$ is produced after $\sigma$ decay},\end{array}\right.\label{eq:strew}.
+\end{eqnarray} Here $\zeta_{i}$ is the density perturbation in $i$ on surfaces of constant curvature. The parameter $r_{\rm D}$ is the fractional energy density in the curvaton when it decays. 
+
+The mixture of isocurvature modes is determined by whether or not baryon number, lepton number, and CDM are produced before, by, or after curvaton decay. Curvaton-type isocurvature is distinct from axion isocurvature, as it is correlated (or anti-correlated) $\zeta$. If lepton number is produced by curvaton decay, the lepton chemical potential $\xi_{\rm lep}$ is important in setting the amplitude of NDI modes \cite{Lyth:2002my,Gordon:2003hw,DiValentino:2011sv}:
+\begin{equation}
+S_{\nu \gamma}=
+-\frac{135}{7}\left(\frac{\xi_{\rm lep}}{\pi}\right)^2\zeta_{\gamma}.\end{equation}
+There are $27$ distinct curvaton decay scenarios, as baryon number, lepton number, and CDM could each be produced before, by, or after curvaton decay. Viable models are those in which one of baryon number or CDM is produced by curvaton decay, and those in which \textit{both} baryon number and CDM are produced after curvaton decay. For curvaton-decay scenarios, we use the notation ($b_{x}$, $c_{y}$, $L_{z}$), where $x\in ({\rm before, by, after})$. Here $b$ denotes baryon number, $c$ denotes CDM, and $L$ denotes lepton number. For example, $(b_{\rm before}, c_{\rm by}, L_{\rm by})$ is a model in which baryon number is produced before curvaton decay, CDM by curvaton decay, and lepton number by curvaton decay.
+
+Current isocurvature limits favor values of $r_{\rm D}\simeq 1$, except for models in which baryon number is produced by curvaton decay and CDM before (or vice versa), which favor central values of $r_{\rm D} \simeq 0.16$ ($r_{\rm D} \simeq 0.84$). 
+
+The current limits \cite{Smith/Grin:2015} to $r_{\rm D}$ are shown in Table \ref{limits_rd}, along with a forecast of CMB-S4's sensitivity to $r_{\rm D}$ via isocurvature. The dramatic improvement in the $(b_{\rm by},c_{\rm before},L_{\rm by})$ and $(b_{\rm before},c_{\rm by},L_{\rm by})$ scenarios because of the accompanying NDI perturbations. One unusual case is the $(b_{\rm after},c_{\rm after}, L_{y_{\rm L}})$ scenario. Here isocurvature just constrains the degenerate combination \cite{Smith/Grin:2015} $\chi_{\rm D} \equiv \left\{1+\xi_{\rm lep}^2/(\pi^2) \left(1/r_D -1\right)\right\}^{-1}$, while the independent constraint to $\xi_{\rm lep}^{2}$ is driven by the $N_{\rm eff}$ limit from the CMB.
+
+\begin{table}
+\begin{center}
+\begin{tabular}
+{lcc}\hline \hline {\rm scenario} &  $ \Delta r_D/r_{D}^{\rm adi}$ (\emph{Planck})&$ \Delta r_D/r_{D}^{\rm adi}$(CMB-S4)\\ 
+\hline \\
+$(b_{\rm by},c_{\rm before},L_{y_{L}})$ & $0.03$&$0.005$\\
+$(b_{\rm before},c_{\rm by},L_{y_{L}})$ &  $0.01$ &$0.004$\\
+$(b_{\rm by},c_{\rm after},L_{y_{L}})$ &  $0.04$&$0.01$\\
+$(b_{\rm after},c_{\rm by},L_{y_{L}})$ & $0.008$&$0.002$\\
+$(b_{\rm by},c_{\rm by},L_{y_{L}})$ &  $0.007$&$0.002$\\\hline \hline \\ & $\Delta \chi_{\rm D}/\chi_{\rm }^{\rm adi}$ (\emph{Planck})&$\Delta \chi_{\rm D}/\chi_{\rm }^{\rm adi}$ (CMB-S4) \\\hline \\
+$(b_{\rm after},c_{\rm after},L_{y_{L}})$ & $0.003$&$0.0004$\\
+\\ 
+\end{tabular}
+\caption{Isocurvature constraints on $r_D$ ($95\%$ C.L.) using \textit{Planck} TT+BAO+LowP data \cite{Smith/Grin:2015} in viable curvaton decay-scenarios, and Fisher forecasts for CMB-S4 sensitivity. \textbf{Numbers to be finalised based on the final Fisher forecasts as part of larger forecast effort}.
+\label{limits_rd}}
+\end{center}
+\end{table}
+
+\begin{table}
+\begin{center}
+\begin{tabular}
+{lcc}\hline \hline {\rm scenario} &  $\Delta \xi^{2}_{\rm lep}$ (\emph{Planck})&$\Delta \xi^{2}_{\rm lep}$ (CMB-S4) \\ 
+\hline \\
+$(b_{\rm by},c_{\rm before},L_{\rm by})$ &$0.02$ &$0.002$\\
+$(b_{\rm before},c_{\rm by},L_{\rm by})$ &$0.4$  & $0.04$\\
+$(b_{\rm by},c_{\rm after},L_{\rm by})$ &$0.3$  &$0.04$\\
+$(b_{\rm after},c_{\rm by},L_{\rm by})$ & $0.3$&$0.04$\\
+$(b_{\rm by},c_{\rm by},L_{\rm by})$ & $0.3$ & $0.04$\\
+$(b_{\rm after},c_{\rm after},L_{\rm by})$ & $0.3$ & $0.04$\\
+\\ \hline \hline 
+\end{tabular}
+\caption{Isocurvature constraints on $\xi_{\rm lep}^{2}$ ($95\%$ C.L.) using \textit{Planck} TT+BAO+LowP data \cite{Smith/Grin:2015} in viable curvaton decay-scenarios where lepton number is generated by curvaton decay, and Fisher forecasts for CMB-S4 sensitivity.\textbf{Numbers to be finalised in forecasting effort.}
+\label{limits_xilep}}
+\end{center}
+\end{table}
+
+Depending on the scenario, forecasting shows that the S4 sensitivity to curvaton-sourced isocurvature should improve by a factor of $2-4$ on current limits. In models with nearly-canceling CDM and baryon isocurvature perturbations, S4 limits to neutrino isocurvature drive an improvement in the sensitivity to the lepton asymmetry from $\Delta \xi_{\rm lep}^{2}\simeq 0.015$ to $\Delta \xi_{\rm lep}^{2}\simeq 0.003$. This dramatic improvement would make CMB limits comparably sensitive to BBN probes $\xi_{\rm lep}^{2}$ (for this decay scenario).
+
+If baryon number/CDM are produced by/before curvaton decay (or vice versa), a relative large compensated isocurvature perturbation (CIP) is produced between the baryons and CDM, that is
+\begin{equation}
+S_{bc}=\frac{\delta n_{\rm b}}{n_{\rm b}}-\frac{\delta n_{\rm c}}{n_{\rm c}}\neq 0.
+\end{equation} Curvaton-generated CIPs are proportional to $\zeta$, $S_{\rm bc}=A\zeta$, where $A\simeq 17$ [$A\simeq -3$] in the $(b_{\rm by}, c_{\rm before}, L_{\rm z})$ [$(b_{\rm before}, c_{\rm by}, L_{\rm z})$] scenario. For CIPs, the initial relative densities of baryons and CDM vary, but with no additional overall matter or radiation density fluctuation.
+CIPs are relatively unconstrained at the level of the CMB power-spectrum (see Ref. \cite{Munoz:2015fdv} for an exception), but would induce non-Gaussianities in the CMB \cite{Grin:2011nk,Grin:2011tf,Grin:2013uya,He:2015msa}. As with weak gravitational lensing \cite{Hu:2001kj}, the CIP field $\Delta(\hat{n})$ can be reconstructed using CMB data. We find that at S4 sensitivity \cite{He:2015msa}, the threshold for a $95\%$ C.L. detection is $A\simeq 10$, and so a CIP test of the $(b_{\rm by}, c_{\rm before}, L_{\rm z})$ scenario is within reach of CMB-S4. This is a vast improvement over \emph{Planck} sensitivity, which at $95\%$ C.L. is $A\simeq 43$. Uncorrelated CIPs are less  motivated theoretically. Updating the analysis of Ref. \cite{He:2015msa} with current parameters \cite{Ade:2015lrj} and CMB-S4 specifications, we find that the sensitivity of CMB-S4 to a scale-invariant (SI) angular power spectrum of uncorrelated CIPs is $\Delta_{\rm cl}=0.003$ at the $95\%$ C.L. detection limit. Here $\Delta_{\rm cl}$ is the r.m.s. CIP amplitude on cluster scales. This is a vast improvement over the upper limit of $\Delta_{\rm cl}\leq 0.077$ from WMAP \cite{Grin:2013uya}, or the forecasted Planck \cite{Ade:2015lrj} (including polarization) sensitivity of $\Delta_{\rm cl}\leq 0.015$ \cite{He:2015msa}.
+
+
+%We now focus on two isocurvature scenarios, axion dark matter and the curvaton %model, which produce uncorrelated and correlated isocurvature pertrubrations, %respectively.
+
+
+
 %% Populate the .bib file with entries from SPIRES Bibtex (preferred)
 %% or ADS Bibtex (if no SPIRES entry).
 %%  SPIRES will also supply the CITATION line information; please include it.
