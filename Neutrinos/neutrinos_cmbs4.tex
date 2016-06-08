@@ -180,7 +180,7 @@ In principle, measurement of the free streaming scale directly in the matter pow
 
 \subsection{Other Cosmological Probes}
 
-\subsection{Galaxy Clusters}
+\subsubsection{Galaxy Clusters}
 Galaxy clusters form from rare high peaks in the matter density field. A cluster of mass $M$ forms from a region of size $R\sim \left(M/(4/3\pi \bar\rho_m)\right)^{1/3}$, which is smaller than the neutrino free streaming scale for even the most massive galaxy clusters so long as $m_{\nu i} \lsim 0.1$eV. The neutrino free-streaming therefore slows the growth of structure on cluster scales, suppressing the abundance of galaxy clusters. 
 
 
@@ -210,7 +210,7 @@ As with dark energy studies, there are strong synergies between the SZ cluster c
 
 
 
-\subsection{CMB in Combination with Other Datasets}
+\subsubsection{CMB in Combination with Other Datasets}
 
 There are a number synergistic opportunities between CMB S4 and external cosmological datasets. The CMB lensing convergence map can be cross-correlated with external galaxy surveys to tighten constraints on neutrino mass (e.g.\ \cite{Takeuchi:2013gpa, Pearson:2013iha}) or CMB can be cross-correlated with galaxy survey data to constrain neutrino mass via the mean pair-wise momentum of galaxy clusters \cite{Mueller:2014dba}. Additionally, CMB S-4 data indirectly aid measurements of neutrino mass from galaxy surveys because the CMB data can be used to calibrate systematics in weak lensing shear data \cite{Das:2013aia}. 
 
@@ -476,14 +476,18 @@ For the minimal scenario of a single real scalar, reaching $\sigma(\Neff) \sim 1
 
 A measurement with a slightly larger error on $\Nf$ would still be extraordinarily valuable for higher spin fields, multiple light scalars, and modifications to the thermal history up to the electroweak scale.  In particular, massless fermions and vectors have two helicity states which imply contributions of $\Delta \Neff  \geq 0.047$ and $\Delta \Neff  \geq 0.054$ respectively.  As a result, a less sensitive instrument is still capable of probing physics back to reheating since it could detect or rule out the existence of light thermal relics with non-zero spin.  In addition, there is good reason to think dark sectors could contain multiple light fields which could appear at any level of $\Delta \Neff$ above the minimum contribution from a single scalar field.  Still, the most dramatic jumps in discovery potential occur at the critical values $\Delta \Neff = 0.027, 0.047$, and $0.054$.  
 
-%% Renee Hlozek copied this text from the BSM section - it is currently duplicated %%%
+
+\section{Neutrino constraints on BSM physics}
+
+We primarily detect neutrinos in cosmology through their gravitational influence.  Light relics can contribute to the same observables, $\sum m_\nu$ and $\Neff$, and therefore these measurements constrain additional light degrees of freedom.  The precise relation between these observables and the underlying models depends on spin.  This section is organized by the spin of the relevant light particle from axions (spin 0) to gravitons (spin 2).  
+
+\subsection{Axions}
+\label{sec:neffaxions}
+
+\textcolor{red}{(DG:  Forward Reference to BSM chapter?)}
 
 \subsection{Sterile Neutrinos}
 \label{sec:sterile_neutrinos}
-
-%\textcolor{red}{(DG:  Needs more basic introduction.  What is a
-%  sterile neutrino (include lagrangian) and how does it explain these
-%  anomalies?)}
 
 Mechanisms of introducing neutrino mass generally include sterile
 neutrinos, with both Majorana and Dirac terms potentially
@@ -578,7 +582,96 @@ probes of neutrino mass and number such as CMB-S4 will be able to
 definitively test for the presence of extra neutrino number and mass
 consistent with sterile neutrinos.
 
-%%%% End of the text copied from BSM section
+
+
+
+\subsection{Light Fermions and Vectors}
+
+A general approach to interpreting $\Neff$ constraints in terms of massless fields of arbitrary spin was undertaken in~\cite{Brust:2013xpv}.  One identifies the symmetry that is required to explain  the small mass of the particle, and then writes the most general interactions with the Standard Model consistent with the symmetry.  The couplings will take the form
+\beq
+{\cal L} \supset \sum_{\Delta_h, \Delta_s} \frac{1}{\Lambda^{\Delta_h+ \Delta_s-4}} \,  {\cal O}_{h, \Delta_h} \cdot {\cal O}_{s, \Delta_s}
+\eeq
+where ${\cal O}_{h,\Delta_h}$ is an operator of dimension $\Delta_h$ constructed only from hidden sector fields (and similarly for ${\cal O}_{s, \Delta_s}$ and Standard Model fields).  The total operator must be a scalar under both the Lorentz transformations and the symmetry that protects the mass of the hidden sector field(s).  The bounds on axions discussed in Section~\ref{sec:axions} are one such example, where the axion is protected by a shift symmetry.  For the purpose of this discussion, we have classified all scalars of this type as axions.
+
+For a single Weyl fermion, $\chi$, the leading couplings to the Standard Model are through the anapole moment and four-fermion interactions
+\beq
+{\cal L} \supset \frac{\chi^{\dagger} \bar \sigma^{\mu} \chi}{\Lambda_{\chi}^2} \Big( d_a  \, \partial^\nu F_{\mu \nu} + d_f \,  \bar \psi \gamma_\mu \psi \Big) \ ,
+\eeq
+where we have chosen a chosen one of several four-fermion interactions for illustration and $d_f, d_a$ are order one numbers.  Current experimental constraint from LEP and the LHC limit $\Lambda_\chi \gtrsim \, 1$ TeV.  Similar bounds are set by Planck by excluding the contributions to $\Delta \Neff$ from freeze-out after the QCD phase transition.  If we are sensitive to the minimal contribution from a Weyl fermion of $\Delta \Neff = 0.047$, then for a reheat temperature of $T_{\rm reheat} \sim 10^{10}$ GeV, we would be sensitive to $\Lambda_\psi \lesssim 10^{12}$ GeV.  We see that for an order of magnitude improvement in sensitivity to $\Neff$, we get as much as a nine order of magnitude improvement in sensitivity to $\Lambda_\psi$.  
+
+For a hidden Dirac fermion, $X$, the leading coupling is through an effective dipole interaction.  A similar interaction also permits a hidden $U(1)$ gauge boson, $A'_\mu$, to couple to Standard Model fermions.
+\beq
+{\cal L} \supset  \frac{1}{\Lambda_X} \bar X \sigma_{\mu\nu} X  F^{\mu \nu} + \frac{1}{\Lambda_{A'}^2} H \bar \psi \sigma_{\mu\nu} \psi  F'_{\mu \nu}  \ ,
+\eeq
+where $F'_{\mu \nu}$ is the field strength of $A'_\mu$.  We have included the Higgs field, $H$, in the coupling to Standard Model fermions as it is required by gauge invariance above the scale of EWSB.  Stellar cooling provides a strong constraint of $\Lambda_X \gtrsim 10^9$ GeV and $\Lambda_{A'} \gtrsim 10^5$ GeV.  
+
+Freeze-out above the scale of EWSB for a Dirac fermion produces $\Delta \Neff = 0.094$ and $\Delta\Neff = 0.054$ for a hidden photon.  For a reheating temperature of $10^{10}$ GeV, we are sensitive to $\Lambda_X \lesssim 10^{13}$ GeV and $\Lambda_{A'}  \lesssim 10^{11}$ GeV respectively.  The Dirac fermion will be accessible with CMB Stage IV and will improve on the stellar cooling constraint for a reheat temperature $T_{\rm reheat} > 10^4$ GeV.
+
+\subsection{Gravitinos}
+
+One of the most popular extensions of the Standard Model is supersymmetry, which is motivated both by naturalness and gauge coupling unification.  Although the most generic possibilities are under significant tension for the LHC, there are still a variety of possibilities consistent with low-scale supersymmetry.
+
+One of the universal predictions of supersymmetry is the existence of a spin-3/2 partner to the graviton, the gravitino.  The gravitino mass is determined by the absolute scale of supersymmetry breaking, 
+\beq
+m_{\frac{3}{2}} = \frac{|F|}{\sqrt{3} M_{\rm pl}}
+\eeq
+where $|F|$ is the order parameter for the scale of SUSY breaking (the vacuum expectation value of the auxiliary field $F$).  This result does not depend on details of the mechanism of SUSY breaking unlike the super-partners of the rest of the Standard Model particles.
+
+The typical coupling strength of the gravitino is the same as the graviton, $8 \pi G = \Mpl^{-2}$.  However, the strength of the coupling to the helicity-1/2 component of the gravitino is enhanced by $\Mpl^2 /F$.  This is simply the statement that the goldstino of SUSY breaking is coupled with strength $F^{-1}$ (but is `eaten' by the gravitino).  Due to the enhanced coupling, the gravitino can be in thermal equilibrium with the Standard Model at plausible temperatures in the early universe.  The gravitino therefore behaves just like a Weyl fermion in figure~\ref{fig:Neff_thermal}.
+
+For $m_{3/2} \lesssim 10$ eV, hot relic gravitinos free stream on the scale of the CMB and therefore lead to observable signatures.  Current data from Planck already requires that $m_{3/2} < 4.7$ eV from a combination of the primary CMB and CMB lensing~\cite{Osato:2016ixc}.  To probe lower masses, note that for $m_{3/2} < {\cal O}(1)$ eV a gravitino will behave as free-streaming radiation from the point of view of the CMB.  One finds that for these low values of the mass, gravitinos contribute a shift to $\Neff$,
+\beq
+\left(\Delta \Neff\right)_{3/2} \, \gtrsim \, 0.057 \ .
+\eeq
+At $\sigma(\Neff) \sim 0.03$, CMB Stage IV can rule out all low-scale SUSY breaking models allowed by current cosmology.  
+
+\subsection{Gravitational Waves}\label{sec:constraintsntNeff}
+
+Since gravitational waves are massless and free-streaming, any gravitational waves which were present in the early universe naturally contribute to the total radiation energy density, and can therefore be constrained with $\Neff$ \cite{Boyle:2003km,Boyle:2007zx,Stewart:2007fu,Meerburg:2015zua,Lasky:2015lej}.
+
+Let us briefly review how to compute the energy density of a stochastic background of gravitational waves, following the treatment of \cite{Isaacson:1968zza,Misner:1974qy,Watanabe:2006qe,Maggiore:1900zz}.  We will take the metric of spacetime to be given by a background component $\bar{g}_{\mu}$ described by the flat Friedmann-Robertson-Walker metric and a perturbation $\delta g_{\mu\nu}$.  We will take the characteristic frequency of $\delta g_{\mu\nu}$ to be much higher than that of $\bar{g}_{\mu\nu}$.  In particular, we will focus on gravitational waves whose wavelengths are much shorter than scales of cosmological interest.
+
+The Ricci tensor can be expanded in powers of $\delta g$ as
+\begin{equation}\label{eq:Ricci_GW}
+	R_{\mu\nu} = \bar{R}_{\mu\nu} + R_{\mu\nu}^{(1)} + R_{\mu\nu}^{(2)} + \cdots \, .
+\end{equation}
+We are interested in determining how spacetime is curved by the presence of small scale gravitational waves, or in other words, how $\bar{R}_{\mu\nu}$ is affected by terms containing $\delta g_{\mu\nu}$.  Since $R_{\mu\nu}^{(1)}$ is linear in $\delta g_{\mu\nu}$, it contains only high frequency components, while on the other hand, $R_{\mu\nu}^{(2)}$ has both low and high frequency parts.  
+
+The high frequency part of Einstein's equations governs how gravitational waves propagate in a curved background, and is not necessary here.  For the low frequency part, we can take an average over several cycles of the high frequency modes, which then gives
+\begin{equation}\label{eq:Einstein_Eq_GW}
+	\bar{R}_{\mu\nu} = -\left\langle R_{\mu\nu}^{(2)}\right\rangle + 8\pi G \left\langle T_{\mu\nu}-\frac{1}{2}g_{\mu\nu}T\right\rangle \, .
+\end{equation}
+We can then read off the effective energy-momentum tensor of small scale fluctuations
+\begin{equation}\label{eq:EM_Tensor_GW}
+	T_{\mu\nu}^\mathrm{GW} = -\frac{1}{8\pi G} \left \langle R_{\mu\nu}^{(2)}-\frac{1}{2}\bar{g}_{\mu\nu}R^{(2)} \right\rangle + \mathcal{O}(\delta g^3) \, .
+\end{equation}
+If we take our perturbation to be of the form $\delta g_{ij} = a^2 h_{ij}$ with $h_{ij,j} = 0$ and $h_{ii} = 0$, we can compute the energy density of gravitational waves explicitly in the transverse traceless gauge
+\begin{equation}\label{eq:Energy_GW}
+	\rho_\mathrm{GW} = T_{00}^\mathrm{GW} = \frac{1}{32 \pi G}\delta^{ik}\delta^{j\ell}\left\langle \dot{h}_{ij} \dot{h}_{k\ell} \right\rangle + \mathcal{O}(\delta g^3) \, .
+\end{equation}
+
+We will define the gravitational wave power spectrum as
+\begin{equation}\label{eq:GW_power_spectrum}
+	\left\langle h_{ij}(\eta,\mathbf{x})h^{ij}(\eta,\mathbf{x})\right\rangle \equiv \int  d \log k \, \mathcal{P}_t(k) \left[\mathcal{T}(\eta,k)\right]^2 \, ,
+\end{equation}
+where $\mathcal{P}_t(k)$ is the primordial power spectrum of gravitational waves and $\mathcal{T}(\eta,k)$ is the tensor transfer function.  The energy density of gravitational waves is then given by
+\begin{equation}\label{eq:GW_energy_density}
+	\rho_\mathrm{GW} = \frac{1}{32\pi G a^2}\int  d\log k \, \mathcal{P}_t(k) \left[\mathcal{T}'(\eta,k)\right]^2 \, ,
+\end{equation}
+where the prime denotes a derivative with respect to conformal time $\eta$.
+
+Direct searches for the stochastic gravitational wave backgound are often quoted in terms of the normalized energy density per logarithmic scale
+\begin{equation}\label{eq:Omega_GW}
+	\Omega_\mathrm{GW}(k) \equiv \frac{8\pi G}{3H_0^2}\frac{d\rho_\mathrm{GW}}{d\log k} = \frac{\mathrm{P}_t(k)}{12H_0^2a_0^2} \left[\mathcal{T}'(\eta_0,k)\right]^2 \, .
+\end{equation}
+On the other hand, constraints on $\Neff$ provide an integral constraint on the spectrum of gravitational waves since waves of all frequencies contribute to the total energy density.
+
+If for example, we take the primordial gravitational wave power spectrum to be a simple power law of the form $\mathcal{P}_t(k) = A_t \left(\frac{k}{k_\star}\right)^{n_t}$ (as in Eq.~(\ref{eq:power_spectra_power_law})), we can use a constraint on $\Neff$ to place bounds on the tensor spectral tilt $n_t$.  The contribution to $\Neff$ can then be approximated for $n_t>0$ as \cite{Meerburg:2015zua}
+\begin{equation}\label{eq:Neff_GW}
+	\Delta \Neff \simeq \left(3.046 + \frac{8}{7}\left(\frac{11}{4}\right)^{4/3}\right)\frac{A_t}{24n_t}\left(\frac{k_\mathrm{UV}}{k_\star}\right)^{n_t} \, ,
+\end{equation}
+where $k_\mathrm{UV}$ represents the ultraviolet cutoff of the primordial tensor power spectrum.  While this constraint does not probe the regime of great interest for inflationary models, it does provide a useful constraint on early universe alternatives to inflation which predict positive tensor tilt.
+
 
 \subsection{Observational Signatures}
 
