@@ -1,0 +1,177 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: cmbs4_scibook.aux
+The style file: plain.bst
+Case mismatch error between cite keys Hlozek:2015axa and hlozek:2015axa
+---line 768 of file cmbs4_scibook.aux
+ : \citation{Hlozek:2015axa
+ :                         }
+I'm skipping whatever remains of this command
+Case mismatch error between cite keys Hlozek:2015axa and hlozek:2015axa
+---line 770 of file cmbs4_scibook.aux
+ : \citation{Hlozek:2015axa
+ :                         }
+I'm skipping whatever remains of this command
+Reallocated field_info (elt_size=4) to 17489 items from 5000.
+Database file #1: cmbs4.bib
+You're missing a field part---line 486 of file cmbs4.bib
+ :     month = 
+ :             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 513 of file cmbs4.bib
+ : @article{Moritz2016
+ :                    ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1259 of file cmbs4.bib
+ : @article{   abazajian:2002bj
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3950 of file cmbs4.bib
+ : @article{Lyth:2002my
+ :                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 13992 of file cmbs4.bib
+ : @article{dunkley09
+ :                   ,
+I'm skipping whatever remains of this entry
+Reallocated str_pool (elt_size=1) to 130000 items from 65000.
+Repeated entry---line 43644 of file cmbs4.bib
+ : @article{Tinker:2008ff
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 43661 of file cmbs4.bib
+ : @article{Costanzi:2013bha
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 43696 of file cmbs4.bib
+ : @article{LoVerde:2014rxa
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 43711 of file cmbs4.bib
+ : @article{Hasselfield:2013wf
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 43727 of file cmbs4.bib
+ : @article{Mantz:2014paa
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 43742 of file cmbs4.bib
+ : @article{Ade:2015fva
+ :                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 43754 of file cmbs4.bib
+ : @article{deHaan:2016qvy
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 43913 of file cmbs4.bib
+ : @article{Wang:2005vr
+ :                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 46869 of file cmbs4.bib
+ : @article{Mueller:2014dba
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 46954 of file cmbs4.bib
+ : @article{crawford07
+ :                    ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 47059 of file cmbs4.bib
+ : @article{Kaplinghat:2003bh
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 47579 of file cmbs4.bib
+ : @article{AguilarArevalo:2010wv
+ :                               ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 47596 of file cmbs4.bib
+ : @article{Aguilar:2001ty
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 47665 of file cmbs4.bib
+ : @article{Boyle:2007zx
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 47681 of file cmbs4.bib
+ : @article{Boyle:2003km
+ :                      ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "NSAC"
+Name 3 in "Misner, Charles W. and Thorne, Kip S. and Wheeler, John Archibald," has a comma at the end for entry Misner:1974qy
+while executing---line 1049 of file plain.bst
+Warning--empty journal in Abate:2012za
+Warning--empty journal in Abazajian:2012ys
+Warning--empty journal in Ade:2015xua
+Warning--empty journal in Ade:2015cva
+Warning--empty journal in Ade:2015ava
+Warning--empty journal in Ade:2015fva
+Warning--empty journal in Alvarez:2014vva
+Warning--empty journal in Angrik:2005ep
+Warning--empty journal in Arkani-Hamed:2015bza
+Warning--empty journal in Arzoumanian:2015liz
+Warning--empty journal in Baumann:2015rya
+Warning--empty journal in Baumann:2016wac
+Warning--empty journal in Ben-Dayan:2016iks
+Warning--empty journal in Blumenhagen:2015xpa
+Warning--empty journal in Bonga:2015urq
+Warning--empty journal in Brandenberger:2012zb
+Warning--empty journal in Brown:2015lia
+Warning--empty journal in Collins:2014yua
+Warning--empty journal in Cyburt:2015mya
+Warning--empty journal in Cyr-Racine:2015ihg
+Warning--empty journal in Das:2013aia
+Warning--empty journal in Dore:2014cca
+Warning--empty journal in Flauger:2014ana
+Warning--empty journal in Font-Ribera:2013rwa
+Warning--empty journal in Frusciante:2016xoj
+Warning--empty journal in Frusciante:2015maa
+Warning--empty journal in Grohs:2015tfy
+Warning--empty journal in Heidenreich:2015nta
+Warning--empty journal in Kaplan:2015fuy
+Warning--empty journal in Kooner:2015rza
+Name 3 in "Misner, Charles W. and Thorne, Kip S. and Wheeler, John Archibald," has a comma at the end for entry Misner:1974qy
+while executing---line 1090 of file plain.bst
+Warning--empty journal in Osato:2016ixc
+Warning--empty journal in Peloso:2016gqs
+Warning--empty journal in Strumia:2006db
+You've used 542 entries,
+            2118 wiz_defined-function locations,
+            3386 strings with 123162 characters,
+and the built_in function-call counts, 234689 in all, are:
+= -- 20422
+> -- 18945
+< -- 11
++ -- 7492
+- -- 6945
+* -- 20945
+:= -- 42298
+add.period$ -- 1636
+call.type$ -- 542
+change.case$ -- 5042
+chr.to.int$ -- 0
+cite$ -- 575
+duplicate$ -- 5986
+empty$ -- 12950
+format.name$ -- 6945
+if$ -- 45039
+int.to.chr$ -- 0
+int.to.str$ -- 542
+missing$ -- 545
+newline$ -- 2722
+num.names$ -- 1090
+pop$ -- 4172
+preamble$ -- 1
+purify$ -- 4503
+quote$ -- 0
+skip$ -- 4089
+stack$ -- 0
+substring$ -- 10450
+swap$ -- 580
+text.length$ -- 11
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 2162
+warning$ -- 33
+while$ -- 1575
+width$ -- 545
+write$ -- 5896
+(There were 24 error messages)

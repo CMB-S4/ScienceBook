@@ -46,7 +46,7 @@ Section 2 will review the motivation for studying neutrino masses with cosmologi
 \section{Neutrino Mass}
 
 \subsection{Theory Review}
-
+\label{ssec:numasstheoryreview}
 Cosmic background neutrinos are nearly as abundant in the universe as CMB photons. In the standard cosmological model, neutrinos ceased to scatter with other particles at temperatures $\sim 1 \, {\rm MeV}$. The relic neutrinos were relativistic at decoupling, but as the universe expanded and cooled the neutrino momenta redshifted as $p_\nu\propto 1/a$ and eventually the energy of most relic neutrinos came to be dominated by their rest mass, rather than their momentum. The energy density in nonrelativistic neutrinos therefore contributes to the matter budget of the universe today. The neutrinos, however, were relativistic for much of the history of the Universe so their gravitational clustering is qualitatively different from that of cold dark matter (CDM) particles. This difference can be used to distinguish the neutrino and cold dark matter contributions to the matter density \cite{Hu:1997mj, Lesgourgues:2006nd, Abazajian:2011dt}.  In this section, we review how neutrino mass affects the evolution of the neutrino energy density and the gravitational clustering of matter in the universe. 
  
 As discussed more detail in the $\Neff$ section, cosmic background neutrinos have been detected indirectly through their contribution to the energy density in radiation in the early universe. The current CMB constraints from $\Neff$ are in excellent agreement with the Standard Model expectation of three species of neutrinos and anti-neutrinos each described by a relativistic thermal Fermi-Dirac distribution \cite{Ade:2015xua}. The distribution function for each species of neutrinos and anti-neutrinos is given by
@@ -154,6 +154,7 @@ Any probe of $P_{mm}$ late times is, in principle, sensitive to the sum of the n
 
 Likely the cleanest probe of the neutrino mass in the CMB is through gravitational lensing~\cite{Kaplinghat:2003bh}, which directly measures the matter distribution along the line of sight.  To be concrete, in the Limber approximation, the lensing power spectrum is given by
 \bea
+\label{eq:CellPhiPhi}
 C_\ell^{\phi \phi} &=& \frac{8\pi^2}{\ell^2} \int^{\chi_\star}_0 \chi d\chi P_\Psi(\ell /\chi ; \eta_0 - \chi)  \frac{(\chi_\star -\chi)^2}{\chi_\star \chi} \\
 P_\Psi (k;\eta)&=& \frac{9 \Omega_m^2 (\eta) H^4(\eta)}{8 \pi^2} \frac{P_{mm}(k;\eta)}{k}
 \eea
@@ -178,11 +179,11 @@ In principle, measurement of the free streaming scale directly in the matter pow
 
 \subsection{Other Cosmological Probes}
 
-\subsubsection{Galaxy Clusters}
-Galaxy clusters form from rare high peaks in the matter density field. A cluster of mass $M$ forms from a region of size $R\sim \left(M/(4/3\pi \bar\rho_m)\right)^{1/3}$, which is smaller than the neutrino free streaming scale for even the most massive galaxy clusters so long as $m_{\nu i} \lsim 0.1$eV. The neutrino free-streaming therefore slows the growth of structure on cluster scales, suppressing the abundance of galaxy clusters. 
+\subsubsection{Galaxy Cluster Abundance}
+Galaxy clusters form from rare high peaks in the matter density field. A galaxy cluster of mass $M$ forms from a region of size $R\sim \left(M/(4/3\pi \bar\rho_m)\right)^{1/3}$, which is smaller than the neutrino free streaming scale for even the most massive galaxy clusters so long as $m_{\nu i} \lsim 0.1$eV. The neutrino free-streaming therefore slows the growth of structure on cluster scales, suppressing the abundance of galaxy clusters. 
 
 
-The abundance of clusters with mass $M$ can be expressed by (e.g. \cite{Tinker:2008ff,Bhattacharya:2010wy}), 
+The number density of clusters with mass $M$ can be expressed by (e.g. \cite{Tinker:2008ff,Bhattacharya:2010wy}), 
 \beq
 \label{eq:clmfcn}
 \frac{dn}{dM}(M,z) = \frac{\rho}{M}\frac{d\ln \sigma^{-1}}{dM} f(\sigma, z)
@@ -190,11 +191,11 @@ The abundance of clusters with mass $M$ can be expressed by (e.g. \cite{Tinker:2
 where $\sigma = \sigma(M,z)$ is the variance of linear perturbations in CDM and baryons on mass scale $M$ given by
 \beq
 \label{eq:sigmaM}
-\sigma^2(M, z) = \int \frac{dk}{k} \frac{4\pi}{(2\pi)^3} P_{cb}(k, z) |W(kR)|^2
+\sigma^2(M, z) = \int \frac{dk}{k} \frac{4\pi}{(2\pi)^3} P_{cc}(k, z) |W(kR)|^2
 \eeq
-where $R = (3M/(4\pi \rho_{cb}))^{1/3}$, $P_{cb}(k)$ is the power spectrum of CDM and baryons, and $W(kR) = 3(\sin(kR)/(kR)^3 - \cos(kR)/(kR)^2)$ is a top-hat window function \cite{Costanzi:2013bha,LoVerde:2014rxa}. The cluster abundance is therefore extremely sensitive to $M_\nu$ via the suppression in the matter power spectrum discussed in the previous section. 
+where $R = (3M/(4\pi \rho_{cb}))^{1/3}$, $P_{cc}(k)$ is the power spectrum of CDM and baryons, and $W(kR) = 3(\sin(kR)/(kR)^3 - \cos(kR)/(kR)^2)$ is a top-hat window function \cite{Costanzi:2013bha,LoVerde:2014rxa}. The cluster abundance is extremely sensitive to $\sigma(M, z)$, and therefore $M_\nu$ via the suppression in $P_{cc}$ discussed in \S\ref{ssec:numasstheoryreview}.
 
-Current constraints on neutrino mass from cluster abundance, in combination with the primary CMB and BAO, are $M_\nu \lsim 0.2$--$0.3$\,eV at $95\%$ confidence \cite{Hasselfield:2013wf,Mantz:2014paa,Ade:2015fva,deHaan:2016qvy}. To date, the contraints have been driven by the difference between (or consistency of) the matter power spectrum amplitude measured at late times, from clusters, and at early times, from the CMB. An additional signal is present internally to the cluster data, namely the time-dependent influence of massive neutrinos on cluster growth through Eqs.~\ref{eq:clmfcn} and \ref{eq:sigmaM}, which can potentially provide tighter constraints \cite{Wang0505390}.
+Current constraints on neutrino mass from cluster abundance, in combination with the primary CMB and BAO, are $M_\nu \lsim 0.2$--$0.3$\,eV at $95\%$ confidence \cite{Hasselfield:2013wf,Mantz:2014paa,Ade:2015fva,deHaan:2016qvy}. To date, the contraints have been driven by the difference between (or consistency of) the matter power spectrum amplitude measured at late times, from clusters, and at early times, from the CMB. An additional signal is present internally to the cluster data, namely the time-dependent influence of massive neutrinos on cluster growth through Eqs.~\ref{eq:clmfcn} and \ref{eq:sigmaM}, which can potentially provide tighter constraints \cite{Wang:2005vr}.
 
 
 Making these measurements of cluster abundance and growth require cluster surveys with well understood selection functions extending to high redshift ($z\sim2$). Galaxy clusters can be identified from CMB data via the thermal Sunyaev-Zel'dovich (tSZ) effect, the frequency shift of CMB photons that have scattered off of electrons in the hot, intra-cluster gas.  CMB S4 is projected to detect a nearly mass-limited sample of $\mathcal{O}(100,000)$ galaxy clusters.
@@ -208,9 +209,29 @@ As with dark energy studies, there are strong synergies between the SZ cluster c
 
 
 
-\subsubsection{CMB in Combination with Other Datasets}
+\subsubsection{CMB Measurements in Context with Other Datasets}
+Current and future large-scale structure surveys, such as BOSS, DES, DESI, LSST, Euclid, and WFIRST, provide maps of the distribution of mass and galaxies in the late universe\footnote{While these surveys measure structure by a variety of means (the distribution of galaxies or quasars, weak gravitational lensing, and the Lyman-$\alpha$ forest, for example) we refer to the data from them as galaxy surveys}. Large-scale structure datasets are primarily sensitive to the neutrino mass scale via two means: (i) the suppression of the matter power spectrum, which can be inferred from weak gravitational lensing, fluctuations in the number of galaxies, or fluctuations in the opacity of intervening gas, for example, and (ii) the change in the growth rate of matter perturbations which is inferred from redshift-space distortions (RSD). The first effect, the suppression in the matter power spectrum, is the same effect tested by CMB lensing.  The primary qualitative difference between information from galaxy surveys and the CMB, is that galaxy surveys measure structure at multiple epochs in cosmic history whereas the CMB provides a map of the integrated mass distribution out to the surface of last scattering. The LSS information content in galaxy surveys is therefore greater than the CMB, but interpreting the data can be considerably more complex because the structure measured in galaxy surveys is typically more nonlinear and the relationship between the galaxy and mass distribution is less well-understood (In fact, massive neutrinos can make this even more complicated). Importantly, many of the observational and astrophysical systematics in the CMB and galaxy surveys are different, so the two approaches to measuring the neutrino mass scale are complementary. A summary of the forecasted constraints on $M_\nu$ from galaxy surveys is given in Table XX \cite{Font-Ribera:2013rwa}. 
+\begin{table}[t!]
+\begin{center}
+\begin{tabular}{|c|c|} 
+\hline
+    				  Datasets 			& $\sigma_{M_\nu}$(eV) \\
+				  \hline
+Planck + DES lensing and galaxy clustering 		& 			0.041		\\
+\hline
+Planck + DESI Lyman-$\alpha$ Forest + BAO           &			0.098		\\
+\hline
+Planck + DESI Galaxy Power spectrum + BAO         &			0.024		\\
+\hline
+Planck + LSST Lensing and Galaxy Clustering         &   0.02					\\
+\hline
+\end{tabular}
+\caption{Forecasted constraints on neutrino mass from future galaxy surveys in combination with Planck CMB from \cite{Font-Ribera:2013rwa}}
+\label{table:numassLSS}
+\end{center}
+\end{table}
 
-There are a number synergistic opportunities between CMB S4 and external cosmological datasets. The CMB lensing convergence map can be cross-correlated with external galaxy surveys to tighten constraints on neutrino mass (e.g.\ \cite{Takeuchi:2013gpa, Pearson:2013iha}) or CMB can be cross-correlated with galaxy survey data to constrain neutrino mass via the mean pair-wise momentum of galaxy clusters \cite{Mueller:2014dba}. Additionally, CMB S-4 data indirectly aid measurements of neutrino mass from galaxy surveys because the CMB data can be used to calibrate systematics in weak lensing shear data \cite{Das:2013aia}. 
+There are a number synergistic opportunities between CMB S4 and external cosmological datasets. For instance, the large-scale structure measured by galaxy surveys gravitationally lenses the CMB so there is a physical correlation between the CMB lensing convergence and e.g. the galaxy distribution or weak lensing shear maps inferred from galaxy surveys. Constraints on neutrino mass can therefore be tightened by cross-correlating maps of structure from galaxy surveys with the lensing information from the CMB (e.g.\ \cite{Takeuchi:2013gpa, Pearson:2013iha}). Or, the CMB can be cross-correlated with galaxy survey data to constrain neutrino mass via the mean pair-wise momentum of galaxy clusters \cite{Mueller:2014dba}. Additionally, CMB S-4 data indirectly aid measurements of neutrino mass from galaxy surveys because the CMB data can be used to calibrate systematics in weak lensing shear data \cite{Das:2013aia}. 
 
 
 
