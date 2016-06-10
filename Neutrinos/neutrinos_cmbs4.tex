@@ -474,6 +474,44 @@ For the minimal scenario of a single real scalar, reaching $\sigma(\Neff) \sim 1
 
 A measurement with a slightly larger error on $\Nf$ would still be extraordinarily valuable for higher spin fields, multiple light scalars, and modifications to the thermal history up to the electroweak scale.  In particular, massless fermions and vectors have two helicity states which imply contributions of $\Delta \Neff  \geq 0.047$ and $\Delta \Neff  \geq 0.054$ respectively.  As a result, a less sensitive instrument is still capable of probing physics back to reheating since it could detect or rule out the existence of light thermal relics with non-zero spin.  In addition, there is good reason to think dark sectors could contain multiple light fields which could appear at any level of $\Delta \Neff$ above the minimum contribution from a single scalar field.  Still, the most dramatic jumps in discovery potential occur at the critical values $\Delta \Neff = 0.027, 0.047$, and $0.054$.  
 
+\subsection{Observational Signatures}
+
+Cosmic neutrinos and other light relics play to two important roles in the CMB that are measured by $\Neff$.  They contribute to the total energy in radiation which controls the expansion history and, indirectly, the damping tail of the power spectrum.  The fluctuations of neutrinos and any other free streaming radiation also produces a constant shift in the of phase the acoustic peaks.  These two effects drive both current and future constraints on $\Neff$.  
+
+The effect of neutrinos on the damping tail drives the constraint on $\Neff$ in the CMB in $\Lambda$CDM + $\Neff$.  The largest effect is from the mean free path of photons, which introduces a suppression $e^{-(k/k_d)^2}$ of short wavelength modes, with~\cite{Zaldarriaga:1995gi}
+\beq
+k_d^{-2} =\int \frac{da}{a^3 \sigma_T n_e H} \frac{R^2+ \frac{16}{15}(1+R)}{6(1+R)^2} \ ,
+\eeq
+where $R$ is the ratio of the energy in baryons to photons, $n_e$ is the density of free electrons, and $\sigma_T$ is the Thompson cross-section.  The damping scale is sensitive to the energy density in all radiation through $H \propto \sqrt{\rho_{\rm radiation}}$ during radiation domination (which is applicable at high $\ell$), and is therefore sensitive to $\Neff$ or any form of dark radiation.  From this discussion, we can also see the origin of the degeneracy between $\Neff$ and $n_e$ which may be altered by the primordial helium fraction, $Y_p$.
+
+In reality, the effect on the damping tail is subdominant to the change to the scale of matter radiation equality and the location of the first acoustic peak~\cite{Hou:2011ec}.  As a result, the effect of neutrinos on the damping tail is more accurately represented by holding the first acoustic peak fixed.  This changes the sign of the effect on the damping tail, but the intuition for the origin of the effect (and degeneracy) remains applicable.
+
+In addition to the effect on the Hubble expansion, perturbations in neutrinos affect the photon-baryon fluid through their gravitational influence.  The contributions from neutrinos are well described by a correction to the amplitude and the phase of the acoustic peaks in both temperature and polarization~\cite{Bashinsky:2003tk}.  The phase shift is a particularly compelling signature as it is not degenerate with other cosmological parameters~\cite{Bashinsky:2003tk,Baumann:2015rya}.  This effect is the result of the free-streaming nature of neutrinos that allows propagation speeds of effectively the speed of light (while the neutrinos are relativistic).  Any gravitationally coupled free-streaming light relics will also contribute to the amplitude and phase shift of the acoustic peaks.
+
+E-mode polarization will play an increasingly important role for several reasons.  First of all, the acoustic peaks are sharper in polarization which makes measurements of the peak locations more precise, and therefore aid the measurement of the phase shift.  The second reason is that polarization breaks a number of degeneracies that would also affect the damping tail~\cite{Baumann:2015rya}. \textcolor{blue}{JM: It might be worth mentioning that we can go to higher $\ell_{\rm max}$ with the EE power spectrum, though I guess nobody really knows where foregrounds become a serious issue.}
+
+{\it Status of current observations} -- Planck has provided a strong constraint on $\Neff = 3.15 \pm 0.23$ when combining both temperature and polarization data.  The addition of polarization data has both improved the constraint on $\Neff$ and reduced the impact of the degeneracy with $Y_p$.  Recently, the phase shift from neutrinos has also been established directly in the Planck temperature data~\cite{Follin:2015hya}.  This provides the most direct evidence for presence of free-steaming radiation in the early universe, consistent with the cosmic neutrino background.
+
+
+\subsection{Forecasts}
+
+\begin{table}[t!]
+\begin{center}
+\begin{tabular}{l ccc cc} 
+ \toprule
+    				    			& $1'$  		& $2'$  		& $3'$  		& $\ell_{\rm max} = 3000$	& $\ell_{\rm max} = 4000$ \\ [0.5ex]
+ \midrule
+   $\sigma(\Neff)$ & -- 		& -- 		& --		& -- 	  	  	& -- 		  \\
+    \bottomrule
+\end{tabular}
+\caption{Forecasts for varying beam size and maximum multipole assuming...}
+\label{tab:beam}
+\end{center}
+\end{table}
+
+% Renee Hlozek cut the text from the BSM section to make a later chapter
+
+
 
 \section{Neutrino constraints on BSM physics}
 
@@ -482,7 +520,21 @@ We primarily detect neutrinos in cosmology through their gravitational influence
 \subsection{Axions}
 \label{sec:neffaxions}
 
-\textcolor{red}{(DG:  Forward Reference to BSM chapter?)}
+Light particles of spin-0 (scalar fields) are highly constrained by naturalness.  In the absence of a symmetry, one would expect them to be heavy and thus a poor candidate for dark radiation.  On the other hand, (pseudo) Goldstone bosons are naturally lights and they appear generically from spontaneous breaking of some high energy global symmetry.  A ubiquitous  example in Beyond the Standard model physics are axions and/or axion-like particles (ALPs).  Axions have been introduced to solve the strong-CP problem~\cite{Peccei:1977hh}, the hierarchy problem~\cite{Graham:2015cka} and the naturalness of inflation~\cite{Freese:1990rb}.  Furthermore, they appear generically in string theory, in large numbers, leading to the qualitative phenomena describe as the string axiverse~\cite{Arvanitaki:2009fg}.  They may even be tied to the origin of the breaking of the flavor, baryon/lepton number symmetries of the standard model.
+
+At low energy, the mass of the ALP is protected by an approximate shift symmetry of the general form $a \to a + c$ where $a$ is the axion and $c$ is a constant (for non-abelian Goldstone bosons, this transformation will include higher order terms in $a$).  We will define an ALP to be any such particle where all of the couplings of the axion to the Standard model respect such a symmetry.  This symmetry may be softly broken with an explicit mass term, although this is highly restricted in the case of the QCD axion.
+
+Two very common features of these models are that the axions are typically light (in many cases, $m \ll 1$ eV) and their interactions are suppressed by powers of $f_a$, the dimensional scale that controls the symmetry breaking.  These two features make ALPs a particularly compelling target for $\Neff$.  Because of the small masses, they will often behave as relativistic species in the CMB.  Furthermore, because their production rate will scale as $T^{2n +1} / f_a^{2n}$ for some $n \geq 1$, they are likely to be thermalized at high temperatures.  Given that $\Delta \Neff \geq 0.027$ under such circumstances, a CMB experiment with sensitivity at this level will be sensitive to a very wide range of ALP models.
+
+A CMB experiment sensitive to $\Delta \Neff \leq 0.027$ would have a dramatic impact on axion physics.  We provide a detailed discussion of the constraints on individual couplings in Section~\ref{sec:neffBSMchap}, but here we will illustrate the impact qualitatively.  At this sensitivity, any freeze-out at $T< T_{\rm reheat}$ would be detectable in the CMB since they would all produce $\Delta \Neff$.  Since freeze-out is controlled by $f_a$ we can translate the measurements of $\Neff$ into limits on $f_a$.  Since it is possible that $T_{\rm reheat} >10^{10}$ GeV, freeze-out is generally sensitive to $f_a$ as high as $10^{12-14}$ GeV.  This easily surpasses the sensitivity from stellar cooling ($f_a \lesssim 10^{10}$ GeV), which to date is one of the most broadly sensitive probes of axions.  As long as $T_{\rm reheat} > 10^{4}$ GeV, the CMB will be a more sensitive than stellar cooling to these models.
+
+Axions can also produce $\Delta \Neff> 0.027$ in a wide variety of well-motived circumstances.  A case of particular interest is when axions couple directly to Standard model fermions.  The Standard model has an $U(3)^5$ flavor symmetry and it is for axions couplings to arise if the axion is a goldstone boson that results from spontaneous breaking of this symmetry (or a sub-group).  Given the non-abelian nature of the flavor symmetry, these scenarios can ofter lead to many axions (also known as familons).  Under such circumstances, the contribution to freeze-out is given by 
+\beq
+ \Delta \Neff = N_a \times 0.027
+ \eeq
+ where $N_a$ is the number of axions / number of broken generators of the symmetry group.  It is easy to find scenarios where $N_a\sim {\cal O}(10)$ which is at the current level of sensitivity.
+ 
+ 
 
 \subsection{Sterile Neutrinos}
 \label{sec:sterile_neutrinos}
@@ -671,42 +723,6 @@ If for example, we take the primordial gravitational wave power spectrum to be a
 where $k_\mathrm{UV}$ represents the ultraviolet cutoff of the primordial tensor power spectrum.  While this constraint does not probe the regime of great interest for inflationary models, it does provide a useful constraint on early universe alternatives to inflation which predict positive tensor tilt.
 
 
-\subsection{Observational Signatures}
-
-Cosmic neutrinos and other light relics play to two important roles in the CMB that are measured by $\Neff$.  They contribute to the total energy in radiation which controls the expansion history and, indirectly, the damping tail of the power spectrum.  The fluctuations of neutrinos and any other free streaming radiation also produces a constant shift in the of phase the acoustic peaks.  These two effects drive both current and future constraints on $\Neff$.  
-
-The effect of neutrinos on the damping tail drives the constraint on $\Neff$ in the CMB in $\Lambda$CDM + $\Neff$.  The largest effect is from the mean free path of photons, which introduces a suppression $e^{-(k/k_d)^2}$ of short wavelength modes, with~\cite{Zaldarriaga:1995gi}
-\beq
-k_d^{-2} =\int \frac{da}{a^3 \sigma_T n_e H} \frac{R^2+ \frac{16}{15}(1+R)}{6(1+R)^2} \ ,
-\eeq
-where $R$ is the ratio of the energy in baryons to photons, $n_e$ is the density of free electrons, and $\sigma_T$ is the Thompson cross-section.  The damping scale is sensitive to the energy density in all radiation through $H \propto \sqrt{\rho_{\rm radiation}}$ during radiation domination (which is applicable at high $\ell$), and is therefore sensitive to $\Neff$ or any form of dark radiation.  From this discussion, we can also see the origin of the degeneracy between $\Neff$ and $n_e$ which may be altered by the primordial helium fraction, $Y_p$.
-
-In reality, the effect on the damping tail is subdominant to the change to the scale of matter radiation equality and the location of the first acoustic peak~\cite{Hou:2011ec}.  As a result, the effect of neutrinos on the damping tail is more accurately represented by holding the first acoustic peak fixed.  This changes the sign of the effect on the damping tail, but the intuition for the origin of the effect (and degeneracy) remains applicable.
-
-In addition to the effect on the Hubble expansion, perturbations in neutrinos affect the photon-baryon fluid through their gravitational influence.  The contributions from neutrinos are well described by a correction to the amplitude and the phase of the acoustic peaks in both temperature and polarization~\cite{Bashinsky:2003tk}.  The phase shift is a particularly compelling signature as it is not degenerate with other cosmological parameters~\cite{Bashinsky:2003tk,Baumann:2015rya}.  This effect is the result of the free-streaming nature of neutrinos that allows propagation speeds of effectively the speed of light (while the neutrinos are relativistic).  Any gravitationally coupled free-streaming light relics will also contribute to the amplitude and phase shift of the acoustic peaks.
-
-E-mode polarization will play an increasingly important role for several reasons.  First of all, the acoustic peaks are sharper in polarization which makes measurements of the peak locations more precise, and therefore aid the measurement of the phase shift.  The second reason is that polarization breaks a number of degeneracies that would also affect the damping tail~\cite{Baumann:2015rya}. \textcolor{blue}{JM: It might be worth mentioning that we can go to higher $\ell_{\rm max}$ with the EE power spectrum, though I guess nobody really knows where foregrounds become a serious issue.}
-
-{\it Status of current observations} -- Planck has provided a strong constraint on $\Neff = 3.15 \pm 0.23$ when combining both temperature and polarization data.  The addition of polarization data has both improved the constraint on $\Neff$ and reduced the impact of the degeneracy with $Y_p$.  Recently, the phase shift from neutrinos has also been established directly in the Planck temperature data~\cite{Follin:2015hya}.  This provides the most direct evidence for presence of free-steaming radiation in the early universe, consistent with the cosmic neutrino background.
-
-
-\subsection{Forecasts}
-
-\begin{table}[t!]
-\begin{center}
-\begin{tabular}{l ccc cc} 
- \toprule
-    				    			& $1'$  		& $2'$  		& $3'$  		& $\ell_{\rm max} = 3000$	& $\ell_{\rm max} = 4000$ \\ [0.5ex]
- \midrule
-   $\sigma(\Neff)$ & -- 		& -- 		& --		& -- 	  	  	& -- 		  \\
-    \bottomrule
-\end{tabular}
-\caption{Forecasts for varying beam size and maximum multipole assuming...}
-\label{tab:beam}
-\end{center}
-\end{table}
-
-% Renee Hlozek cut the text from the BSM section to make a later chapter
 
 \section{Complementarity of CMB and BBN}
 
