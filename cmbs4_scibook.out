@@ -1,0 +1,137 @@
+\BOOKMARK [0][-]{chapter.1}{Exhortations}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Brief History and Current Status of CMB measurements}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Science reach of CMB-S4}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{From science goals to CMB-S4 design}{chapter.1}% 4
+\BOOKMARK [2][-]{subsection.1.3.1}{Conceptual design of CMB-S4}{section.1.3}% 5
+\BOOKMARK [3][-]{subsubsection.1.3.1.1}{Sensitivity and detector count}{subsection.1.3.1}% 6
+\BOOKMARK [3][-]{subsubsection.1.3.1.2}{Inflationary B-modes: low \040sensitivity, foregrounds and atmospheric noise mitigation}{subsection.1.3.1}% 7
+\BOOKMARK [3][-]{subsubsection.1.3.1.3}{Neutrinos and dark energy: high \040sensitivity}{subsection.1.3.1}% 8
+\BOOKMARK [2][-]{subsection.1.3.2}{Refining the CMB-S4 science case and key performance parameters}{section.1.3}% 9
+\BOOKMARK [1][-]{section.1.4}{The Road from Stage 3 to Stage 4}{chapter.1}% 10
+\BOOKMARK [0][-]{chapter.2}{Inflation Physics from the Cosmic Microwave Background}{}% 11
+\BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.2}{Basics of Cosmological Inflation}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.3}{Implications of a detection of primordial gravitational waves with CMB-S4}{chapter.2}% 14
+\BOOKMARK [2][-]{subsection.2.3.1}{The energy scale of inflation}{section.2.3}% 15
+\BOOKMARK [2][-]{subsection.2.3.2}{Planckian field ranges and symmetries}{section.2.3}% 16
+\BOOKMARK [2][-]{subsection.2.3.3}{Constraints on the graviton mass}{section.2.3}% 17
+\BOOKMARK [2][-]{subsection.2.3.4}{Constraining alternatives to inflation}{section.2.3}% 18
+\BOOKMARK [2][-]{subsection.2.3.5}{Following up on a detection}{section.2.3}% 19
+\BOOKMARK [3][-]{subsubsection.2.3.5.1}{Distinguishing vacuum fluctuations from other particle physics sources of B-modes}{subsection.2.3.5}% 20
+\BOOKMARK [3][-]{subsubsection.2.3.5.2}{Probing matter and gravitational interactions at the inflationary scale}{subsection.2.3.5}% 21
+\BOOKMARK [1][-]{section.2.4}{Lessons from upper limits}{chapter.2}% 22
+\BOOKMARK [1][-]{section.2.5}{CMB data products and simulations required to achieve goals for PGW}{chapter.2}% 23
+\BOOKMARK [1][-]{section.2.6}{Improved constraints on primordial density perturbations}{chapter.2}% 24
+\BOOKMARK [2][-]{subsection.2.6.1}{The power spectrum of primordial density perturbations}{section.2.6}% 25
+\BOOKMARK [2][-]{subsection.2.6.2}{Higher order correlations}{section.2.6}% 26
+\BOOKMARK [2][-]{subsection.2.6.3}{Forecasts}{section.2.6}% 27
+\BOOKMARK [1][-]{section.2.7}{Isocurvature}{chapter.2}% 28
+\BOOKMARK [2][-]{subsection.2.7.1}{The Curvaton Scenario}{section.2.7}% 29
+\BOOKMARK [1][-]{section.2.8}{Summary}{chapter.2}% 30
+\BOOKMARK [0][-]{chapter.3}{Neutrinos and Light Species from the Cosmic Microwave Background}{}% 31
+\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 32
+\BOOKMARK [1][-]{section.3.2}{Neutrino Mass}{chapter.3}% 33
+\BOOKMARK [2][-]{subsection.3.2.1}{Theory Review}{section.3.2}% 34
+\BOOKMARK [2][-]{subsection.3.2.2}{Observational Signatures and Target Sensitivity}{section.3.2}% 35
+\BOOKMARK [2][-]{subsection.3.2.3}{CMB Lensing}{section.3.2}% 36
+\BOOKMARK [2][-]{subsection.3.2.4}{Other Cosmological Probes}{section.3.2}% 37
+\BOOKMARK [3][-]{subsubsection.3.2.4.1}{Galaxy Cluster Abundance}{subsection.3.2.4}% 38
+\BOOKMARK [3][-]{subsubsection.3.2.4.2}{CMB Measurements in Context with Other Datasets}{subsection.3.2.4}% 39
+\BOOKMARK [2][-]{subsection.3.2.5}{Forecasts}{section.3.2}% 40
+\BOOKMARK [2][-]{subsection.3.2.6}{Relation to Lab Experiments}{section.3.2}% 41
+\BOOKMARK [1][-]{section.3.3}{Relativistic Species at Recombination}{chapter.3}% 42
+\BOOKMARK [2][-]{subsection.3.3.1}{Thermal History of the Early Universe}{section.3.3}% 43
+\BOOKMARK [2][-]{subsection.3.3.2}{Natural Target}{section.3.3}% 44
+\BOOKMARK [1][-]{section.3.4}{Neutrino constraints on BSM physics}{chapter.3}% 45
+\BOOKMARK [2][-]{subsection.3.4.1}{Axions}{section.3.4}% 46
+\BOOKMARK [2][-]{subsection.3.4.2}{Sterile Neutrinos}{section.3.4}% 47
+\BOOKMARK [2][-]{subsection.3.4.3}{Light Fermions and Vectors}{section.3.4}% 48
+\BOOKMARK [2][-]{subsection.3.4.4}{Gravitinos}{section.3.4}% 49
+\BOOKMARK [2][-]{subsection.3.4.5}{Gravitational Waves}{section.3.4}% 50
+\BOOKMARK [2][-]{subsection.3.4.6}{Observational Signatures}{section.3.4}% 51
+\BOOKMARK [2][-]{subsection.3.4.7}{Forecasts}{section.3.4}% 52
+\BOOKMARK [1][-]{section.3.5}{Complementarity of CMB and BBN}{chapter.3}% 53
+\BOOKMARK [2][-]{subsection.3.5.1}{Standard Big Bang Nucleosynthesis}{section.3.5}% 54
+\BOOKMARK [2][-]{subsection.3.5.2}{Beyond the Standard Model}{section.3.5}% 55
+\BOOKMARK [2][-]{subsection.3.5.3}{Complementarity with the CMB}{section.3.5}% 56
+\BOOKMARK [2][-]{subsection.3.5.4}{Forecasts}{section.3.5}% 57
+\BOOKMARK [1][-]{section.3.6}{Detection Scenarios for Labs and Cosmology}{chapter.3}% 58
+\BOOKMARK [2][-]{subsection.3.6.1}{Neutrino Physics}{section.3.6}% 59
+\BOOKMARK [2][-]{subsection.3.6.2}{Dark Sectors and Particle Physics}{section.3.6}% 60
+\BOOKMARK [0][-]{chapter.4}{Dark Energy and Dark Matter}{}% 61
+\BOOKMARK [1][-]{section.4.1}{Dark Energy and Modified Gravity}{chapter.4}% 62
+\BOOKMARK [2][-]{subsection.4.1.1}{Models and parameters}{section.4.1}% 63
+\BOOKMARK [2][-]{subsection.4.1.2}{CMB Dark Energy Observables}{section.4.1}% 64
+\BOOKMARK [3][-]{subsubsection.4.1.2.1}{Cluster abundance and mass}{subsection.4.1.2}% 65
+\BOOKMARK [3][-]{subsubsection.4.1.2.2}{Lensing}{subsection.4.1.2}% 66
+\BOOKMARK [3][-]{subsubsection.4.1.2.3}{Kinematic SZ}{subsection.4.1.2}% 67
+\BOOKMARK [1][-]{section.4.2}{Dark Matter}{chapter.4}% 68
+\BOOKMARK [2][-]{subsection.4.2.1}{Dark Matter Annihilation}{section.4.2}% 69
+\BOOKMARK [2][-]{subsection.4.2.2}{Non-standard Dark Matter Interactions}{section.4.2}% 70
+\BOOKMARK [3][-]{subsubsection.4.2.2.1}{Dark Matter-Baryon Scattering}{subsection.4.2.2}% 71
+\BOOKMARK [3][-]{subsubsection.4.2.2.2}{Dark Matter-Dark Radiation Interaction}{subsection.4.2.2}% 72
+\BOOKMARK [0][-]{chapter.5}{Physics Beyond The Standard Model}{}% 73
+\BOOKMARK [1][-]{section.5.1}{Constraints on Axion-like particles}{chapter.5}% 74
+\BOOKMARK [2][-]{subsection.5.1.1}{Constraints on the axion energy density}{section.5.1}% 75
+\BOOKMARK [2][-]{subsection.5.1.2}{Axion Isocurvature}{section.5.1}% 76
+\BOOKMARK [2][-]{subsection.5.1.3}{Constraints on Axion couplings}{section.5.1}% 77
+\BOOKMARK [1][-]{section.5.2}{Spatial Curvature}{chapter.5}% 78
+\BOOKMARK [1][-]{section.5.3}{Microwave Background Anomalies}{chapter.5}% 79
+\BOOKMARK [1][-]{section.5.4}{Cosmic Birefringence}{chapter.5}% 80
+\BOOKMARK [1][-]{section.5.5}{Primordial Magnetic Fields}{chapter.5}% 81
+\BOOKMARK [1][-]{section.5.6}{Cosmic Strings}{chapter.5}% 82
+\BOOKMARK [0][-]{chapter.6}{CMB Lensing}{}% 83
+\BOOKMARK [1][-]{section.6.1}{Introduction to CMB Lensing}{chapter.6}% 84
+\BOOKMARK [1][-]{section.6.2}{Measuring CMB Lensing}{chapter.6}% 85
+\BOOKMARK [2][-]{subsection.6.2.1}{Constructing a Lensing Map}{section.6.2}% 86
+\BOOKMARK [2][-]{subsection.6.2.2}{Lensing Power Spectrum}{section.6.2}% 87
+\BOOKMARK [1][-]{section.6.3}{Cross Correlations with CMB Lensing}{chapter.6}% 88
+\BOOKMARK [2][-]{subsection.6.3.1}{CMB Lensing Cross Galaxy Density}{section.6.3}% 89
+\BOOKMARK [2][-]{subsection.6.3.2}{CMB Lensing Cross Galaxy Shear}{section.6.3}% 90
+\BOOKMARK [2][-]{subsection.6.3.3}{CMB Halo Lensing}{section.6.3}% 91
+\BOOKMARK [1][-]{section.6.4}{Delensing}{chapter.6}% 92
+\BOOKMARK [1][-]{section.6.5}{Systematic Effects and Mitigation}{chapter.6}% 93
+\BOOKMARK [2][-]{subsection.6.5.1}{Astrophysical Systematics}{section.6.5}% 94
+\BOOKMARK [2][-]{subsection.6.5.2}{Instrumental and Modeling Systematics}{section.6.5}% 95
+\BOOKMARK [1][-]{section.6.6}{Parameter Forecasts}{chapter.6}% 96
+\BOOKMARK [0][-]{chapter.7}{Simulations and Data Analysis}{}% 97
+\BOOKMARK [1][-]{section.7.1}{Introduction}{chapter.7}% 98
+\BOOKMARK [1][-]{section.7.2}{Data Analysis Overview}{chapter.7}% 99
+\BOOKMARK [1][-]{section.7.3}{Time-Ordered Data Processing}{chapter.7}% 100
+\BOOKMARK [2][-]{subsection.7.3.1}{Pre-Processing and Mission Characterization}{section.7.3}% 101
+\BOOKMARK [2][-]{subsection.7.3.2}{Map-Making}{section.7.3}% 102
+\BOOKMARK [1][-]{section.7.4}{Component Separation}{chapter.7}% 103
+\BOOKMARK [2][-]{subsection.7.4.1}{Introduction}{section.7.4}% 104
+\BOOKMARK [3][-]{subsubsection.7.4.1.1}{Motivations}{subsection.7.4.1}% 105
+\BOOKMARK [3][-]{subsubsection.7.4.1.2}{Definition of component separation}{subsection.7.4.1}% 106
+\BOOKMARK [2][-]{subsection.7.4.2}{Description of methods}{section.7.4}% 107
+\BOOKMARK [2][-]{subsection.7.4.3}{Questions to be addressed during follow-up studies}{section.7.4}% 108
+\BOOKMARK [1][-]{section.7.5}{Statistics and Parameters}{chapter.7}% 109
+\BOOKMARK [2][-]{subsection.7.5.1}{Current practice}{section.7.5}% 110
+\BOOKMARK [2][-]{subsection.7.5.2}{Challenges}{section.7.5}% 111
+\BOOKMARK [3][-]{subsubsection.7.5.2.1}{Combining different data sets}{subsection.7.5.2}% 112
+\BOOKMARK [3][-]{subsubsection.7.5.2.2}{Foreground-related uncertainty on cosmological parameters}{subsection.7.5.2}% 113
+\BOOKMARK [3][-]{subsubsection.7.5.2.3}{CMB lensing covariances for CMB S4}{subsection.7.5.2}% 114
+\BOOKMARK [3][-]{subsubsection.7.5.2.4}{Delensing}{subsection.7.5.2}% 115
+\BOOKMARK [1][-]{section.7.6}{Simulation Overview}{chapter.7}% 116
+\BOOKMARK [1][-]{section.7.7}{Sky Modeling}{chapter.7}% 117
+\BOOKMARK [2][-]{subsection.7.7.1}{The Galactic interstellar medium}{section.7.7}% 118
+\BOOKMARK [3][-]{subsubsection.7.7.1.1}{Synchrotron}{subsection.7.7.1}% 119
+\BOOKMARK [3][-]{subsubsection.7.7.1.2}{Thermal dust}{subsection.7.7.1}% 120
+\BOOKMARK [3][-]{subsubsection.7.7.1.3}{Spinning dust}{subsection.7.7.1}% 121
+\BOOKMARK [3][-]{subsubsection.7.7.1.4}{Other components}{subsection.7.7.1}% 122
+\BOOKMARK [2][-]{subsection.7.7.2}{CMB Secondary Anisotropies and Extragalactic Sources}{section.7.7}% 123
+\BOOKMARK [1][-]{section.7.8}{Data Simulation}{chapter.7}% 124
+\BOOKMARK [2][-]{subsection.7.8.1}{Time Domain}{section.7.8}% 125
+\BOOKMARK [2][-]{subsection.7.8.2}{Map Domain}{section.7.8}% 126
+\BOOKMARK [2][-]{subsection.7.8.3}{Spectral Domain}{section.7.8}% 127
+\BOOKMARK [1][-]{section.7.9}{The Simulation and Data Analysis Pipeline}{chapter.7}% 128
+\BOOKMARK [1][-]{section.7.10}{Forecasting}{chapter.7}% 129
+\BOOKMARK [2][-]{subsection.7.10.1}{Forecasting CMB-S4 constraints on the tensor-to-scalar ratio}{section.7.10}% 130
+\BOOKMARK [3][-]{subsubsection.7.10.1.1}{Spectrum-based domain forecasting}{subsection.7.10.1}% 131
+\BOOKMARK [3][-]{subsubsection.7.10.1.2}{Map-based domain forecasting}{subsection.7.10.1}% 132
+\BOOKMARK [2][-]{subsection.7.10.2}{Forecasting CMB-S4 constraints on parameters from TT/TE/EE/}{section.7.10}% 133
+\BOOKMARK [3][-]{subsubsection.7.10.2.1}{Instrument and atmospheric noise}{subsection.7.10.2}% 134
+\BOOKMARK [2][-]{subsection.7.10.3}{Forecasting CMB-S4 constraints on parameters from tSZ/kSZ}{section.7.10}% 135
+\BOOKMARK [1][-]{section.7.11}{Implementation Issues}{chapter.7}% 136
+\BOOKMARK [2][-]{subsection.7.11.1}{Time-Ordered Data Volume \046 High Performance Computing}{section.7.11}% 137

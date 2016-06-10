@@ -456,7 +456,25 @@ Unfortunately, because of the scaling $M\propto \sqrt{\mathcal{N}_{\rm eq}}$ it 
 \section{CMB data products and simulations required to achieve goals for PGW}
 \label{sec:needs}
 
-Figure~\ref{fig_rforecast1} and Figure~\ref{fig_rforecast2} is a place-holder forecast done by Victor Buza with Colin Bischoff and John Kovac.
+Achieving the CMB-S4 target sensitivity to $r$ will require exquisite measurements of the $\BB$ spectrum at degree scales.
+It will be necessary to observe at many electromagnetic frequencies, to separate the CMB from polarized Galactic foregrounds that dominate at these angular scales, and also to delens the maps to suppress the sample variance of the lensing signal.
+Figure~\ref{fig_rforecast1} shows the forecasted sensitivity to $r$ for CMB-S4 as a function of the observed sky fraction under an upper limits scenario ($r=0$, left) or a detection scenario ($r=0.01$, right).
+Details of the forecasting methodology used here can be found in Section~\ref{sec_specforecast}.
+
+Focusing on the $r=0$ case, we see that an effort devoted to an initial detection of $r$ will benefit from a deep survey that targets a small sky area.
+Concerns about foreground complexity beyond what has been simulated will increase our preference for a small area survey that focuses on the cleanest regions.
+Likewise, our ability to identify and address instrumental systematics is often limited by the noise level of the maps, so deeper maps can serve as a guard against instrumental problems (\comment{Would be helpful to refine this argument with a simple model.}).
+
+The preference for small sky area is in tension with other CMB-S4 science goals that prefer large sky areas but have much lower requirements for foreground cleaning.
+To balance these goals, we assume that roughly one half of total CMB-S4 experiment is devoted to a deep survey targeting degree-scale $B$ modes while the other half is spent on a broad survey.
+Figure~\ref{fig_rforecast2} shows the forecasted sensitivity to $r$ as a function of the total effort spent on the deep survey.
+With 250,000 detectors operating for four years, CMB-S4 will significantly exceed the $r=0.001$ benchmark.
+If $r$ is as large as 0.01, then larger sky area will be needed to improve precision; the CMB-S4 deep survey must be designed with the flexibility to increase sky area in the event of a detection.
+
+For all scenarios, the inflation survey will require many observing frequencies.
+These forecasts include eight frequency bands distributed between the four atmospheric windows.
+While it may be desirable to measure the degree-scale CMB and foregrounds using small aperture telescopes, these forecasts require that at least 25--50\% (varies with the sky fraction) of the total effort must be spent on high resolution maps that can be used for delensing.
+For the deepest option, targeting just 1\% of the sky, achieving the forecasted sensitivity to $r$ will require an 80\% reduction in the map {\it r.m.s.} level of the CMB lensing $B$ modes.
 
 \begin{figure}[ht]
 \centering
@@ -529,14 +547,14 @@ Equilateral and orthogonal shapes shapes arise in scenarios where the scalar per
 
 \begin{figure}[htbp!]
 \centering
-\includegraphics[width=0.45\textwidth]{Inflation/DeltaFNL_TTT}
+\includegraphics[width=0.43\textwidth]{Inflation/DeltaFNL_TTT}
 \includegraphics[width=0.43\textwidth]{Inflation/DeltaFNL_TTT_lmin}
-\caption{Left: forecasts on the constraining power of CMB-S4 on 4 different types of non-Gaussianities as a function of $\ell_{\rm max}$ using $T$ and $E$ modes. Right: Sensitivity of different types of non-Gaussianities on the minimum multipole. The local type non-Gaussianity benefits from having the lowest multipoles, while the other standard shapes saturate to a constant at low $\ell_{\rm min}$ (not shown, see Tab.~\ref{tab:fnl_forecast}). The above plot was generated using $f_{\rm sky} = 0.4$, $T$-noise = 1 $\mu$K-' and $E$-noise = $\sqrt{2}$ $\mu$K-' and a beam of $1$' and $\ell_{\rm min} = 30$ (left) and with varying $\ell_{\rm min}$ and $\ell_{\rm max} = 3500$ (right).}
+\caption{Left: forecasts on the constraining power of CMB-S4 combined with {\it Planck} on 3 different types of non-Gaussianities as a function of $\ell_{\rm max}$ using $T$ and $E$ modes. Right: Sensitivity of local type non-Gaussianities as a function of the minimum multipole. The local type non-Gaussianity benefits from having the lowest multipoles, while the other standard shapes saturate to a constant at low $\ell_{\rm min}$ (not shown, see Tab.~\ref{tab:fnl_forecast}). The above plot was generated using $f_{\rm sky} = 0.4$, $T$-noise = 1 $\mu$K-' and $E$-noise = $\sqrt{2}$ $\mu$K-' and a beam of $1$' and $\ell_{\rm min} = 30$ combined with {\it Planck} Blue Book values in the range $2\leq \ell_{\rm min} \leq 30$.}
 \label{fig_fnlforecast}
 \end{figure}
 
 We forecast the constraints on non-Gaussianities from CMB-S4. We consider the most well motivated shapes; local, equilateral, orthogonal and enfolded. 
-In Fig.~\ref{fig_fnlforecast} we show the constraints as a function of the maximum multipole on the left using the following configuration $f_{\rm sky} = 0.4$, $T$-noise = 1 $\mu$K-' and $E$-noise = $\sqrt{2}$ $\mu$K-' and a beam of $1$' and $\ell_{\rm min} = 30$. Local type non-Gaussianities benefit from large scales, and as much as $40\%$ of the signal is lost when considering the lowest multipoles as shown in Fig.~\ref{fig_fnlforecast} on the right. Ideally, large scale information from Planck \cite{Ade:2015ava} should be included to put the best constraints on non-Gaussianities. Including Planck low $\ell$ (using $f_{\rm sky} = 0.75$ \cite{Ade:2015ava} to determine the noise level, and $f_{\rm sky}=0.4$ for the maximal overlap) we can improve the forecasted bounds on local type non-Gaussianities by almost a factor of 2. Equilateral, enfolded and orthogonal non-Gaussianities are noy affected by not including the lowest multipoles. We summerize the results in Tab.~\ref{tab:fnl_forecast}. Note that our forecast, using Planck Blue Book\footnote{\url{http://www.rssd.esa.int/SA/PLANCK/docs/Bluebook-ESA-SCI(2005)1_V2.pdf}} values, deviate slightly from the actual bounds on non-Gaussianities obtained in Ref.~\cite{Ade:2015ava}. The expected factor of improvement over {\it Planck}-only is somewhere between 1.6 and 1.7 for all shapes considered.
+In Fig.~\ref{fig_fnlforecast} we show the constraints as a function of the maximum multipole on the left using the following configuration $f_{\rm sky} = 0.4$, $T$-noise = 1 $\mu$K-' and $E$-noise = $\sqrt{2}$ $\mu$K-' and a beam of $1$' and $\ell_{\rm min} = 30$. Local type non-Gaussianities benefit from large scales, and as much as $40\%$ of the signal is lost if these modes are not available as cab be seen in Fig.~\ref{fig_fnlforecast} on the right. Ideally, large scale information from Planck \cite{Ade:2015ava} should be included to put the best constraints on non-Gaussianities. Including Planck low $\ell$ (using $f_{\rm sky} = 0.75$ \cite{Ade:2015ava} to determine the noise level, and $f_{\rm sky}=0.4$ for the maximal overlap) we can improve the forecasted bounds on local type non-Gaussianities by almost a factor of 2. Equilateral, enfolded and orthogonal non-Gaussianities are not affected by not including the lowest multipoles. We summerize the results in Tab.~\ref{tab:fnl_forecast}. Note that our forecast, using Planck Blue Book\footnote{\url{http://www.rssd.esa.int/SA/PLANCK/docs/Bluebook-ESA-SCI(2005)1_V2.pdf}} values, deviate slightly from the actual bounds on non-Gaussianities obtained in Ref.~\cite{Ade:2015ava}. The expected factor of improvement over {\it Planck}-only is somewhere between 1.7 and 1.8 for all shapes considered. Information saturates beyond $\ell_{\rm max} = 5000$ for all shapes for an experiment with $1$' beam. 
 
 % Requires the booktabs if the memoir class is not being used
 \begin{table*}[t]\label{tab:fnl_forecast}
@@ -544,10 +562,10 @@ In Fig.~\ref{fig_fnlforecast} we show the constraints as a function of the maxim
     \begin{tabular}{ | c || c | c | c | c |}
       \hline
       Type & Planck & CMB-S4 & CMB-S4 + low $\ell$ Planck & rel. improvement \\ \hline \hline
-      local & $\sigma(f_{\rm NL}) = 4.6$ & $\sigma(f_{\rm NL}) = 3.9$ &  $\sigma(f_{\rm NL}) = 2.7$ & 1.7\\ \hline 
-      equilateral &  $\sigma(f_{\rm NL}) = 40.5$ & $\sigma(f_{\rm NL}) = 24$ &  $\sigma(f_{\rm NL}) = 24$ & 1.7\\ \hline 
-      orthogonal &  $\sigma(f_{\rm NL}) = 20.2$ & $\sigma(f_{\rm NL}) = 12.3$ &  $\sigma(f_{\rm NL}) = 12.3$ & 1.6\\ \hline 
-      flat &  $\sigma(f_{\rm NL}) = 35$ & $\sigma(f_{\rm NL}) = 21.8$ &  $\sigma(f_{\rm NL}) = 21.8$ & 1.6\\ \hline 
+      local & $\sigma(f_{\rm NL}) = 3.1$ & $\sigma(f_{\rm NL}) = 2.8$ &  $\sigma(f_{\rm NL}) = 1.8$ & 1.7\\ \hline 
+      equilateral &  $\sigma(f_{\rm NL}) = 32.1$ & $\sigma(f_{\rm NL}) = 18.8$ &  $\sigma(f_{\rm NL}) = 18.8$ & 1.7\\ \hline 
+      orthogonal &  $\sigma(f_{\rm NL}) = 15.4$ & $\sigma(f_{\rm NL}) = 8.7$ &  $\sigma(f_{\rm NL}) = 8.7$ & 1.8\\ \hline 
+      flat &  $\sigma(f_{\rm NL}) = 26.1$ & $\sigma(f_{\rm NL}) = 15.2$ &  $\sigma(f_{\rm NL}) = 15.2$ & 1.7\\ \hline 
     \end{tabular}
   \end{center}
   \caption{Forecasted constraints on several well motivated non-Gaussian shapes using $T$ and $E$ modes. {\it Planck} forecast is based on Blue Book values, with $f_{\rm sky} = 0.75$. The table shows we need to include low $\ell$ information from {\it Planck} for local type non-Gaussianities.}
@@ -562,7 +580,7 @@ In Fig.~\ref{fig_fnlforecast} we show the constraints as a function of the maxim
 \label{fig_fnlforecastBTT}
 \end{figure}
 
-Next, we determine the improvements as function of a fixed effort with $f_{\rm sky} = 0.4$ corresponding to noise of 1 $\mu$K-arcmin. 
+Next, we determine the improvements as function of a fixed effort with $f_{\rm sky} = 0.4$ corresponding to noise of 1 $\mu$K-arcmin.  {\color{blue} To do this weekend/early next week}. 
 
 Correlators including at least one $B$ mode will benefit from the improved sensitivity of $B$ modes significantly. We define \cite{Meerburg2016}
 \begin{equation}
@@ -583,7 +601,7 @@ In the simplest model of inflation $f^{h \zeta \zeta}_{\rm NL} = \sqrt{r}/16$ \c
 \label{fig_BTTlocalfixedeffort}
 \end{figure}
 
-We consider two scenarios; one in which the $B$ modes are noise dominated and one in which they are cosmic variance limited by a future detection of $r$. For a local shape primordial bispectrum the error decreases as you decrease the beam. The signal is dominated by large angle $B$ modes correlated with small angle $T$ modes as was pointed out in \cite{Meerburg2016}. An equilateral component from the $\langle BTT\rangle$ correlation function suffers from the decaying tensor modes, which are negligible for $\ell_B > 500$. After this, no equilateral triangles can be constructed and the error saturates. The effect is that equilateral type non-Gaussianities are almost insensitive to beam size. For both shapes, in a scenario where $B$ modes are noise dominated, $f_{\rm sky}$ have very little effect. 
+We consider two scenarios; one in which the $B$ modes are noise dominated and one in which they are cosmic variance limited by a future detection of $r$. For a local shape primordial bispectrum the error decreases as you decrease the beam. The signal is dominated by large angle $B$ modes correlated with small angle $T$ modes as was pointed out in \cite{Meerburg2016}. An equilateral component from the $\langle BTT\rangle$ correlation function suffers from the decaying tensor modes, which are negligible for $\ell_B > 500$. After this, no equilateral triangles can be constructed and the error saturates. The effect is that equilateral type non-Gaussianities are almost insensitive to beam size. 
 
 On the right we show what happens when $B$ gets a primordial component; the take away message is that only if $r < 0.001$  CMB-S4 noise dominates cosmic variance. 
 
