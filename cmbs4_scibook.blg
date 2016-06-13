@@ -3,16 +3,16 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: cmbs4_scibook.aux
 The style file: plain.bst
 Case mismatch error between cite keys Hlozek:2015axa and hlozek:2015axa
----line 768 of file cmbs4_scibook.aux
+---line 787 of file cmbs4_scibook.aux
  : \citation{Hlozek:2015axa
  :                         }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Hlozek:2015axa and hlozek:2015axa
----line 770 of file cmbs4_scibook.aux
+---line 789 of file cmbs4_scibook.aux
  : \citation{Hlozek:2015axa
  :                         }
 I'm skipping whatever remains of this command
-Reallocated field_info (elt_size=4) to 17489 items from 5000.
+Reallocated field_info (elt_size=4) to 17719 items from 5000.
 Database file #1: cmbs4.bib
 You're missing a field part---line 486 of file cmbs4.bib
  :     month = 
@@ -22,80 +22,72 @@ Repeated entry---line 513 of file cmbs4.bib
  : @article{Moritz2016
  :                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1259 of file cmbs4.bib
+Repeated entry---line 1273 of file cmbs4.bib
  : @article{   abazajian:2002bj
  :                             ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3950 of file cmbs4.bib
+Repeated entry---line 3964 of file cmbs4.bib
  : @article{Lyth:2002my
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 13992 of file cmbs4.bib
+Repeated entry---line 14006 of file cmbs4.bib
  : @article{dunkley09
  :                   ,
 I'm skipping whatever remains of this entry
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
-Repeated entry---line 43644 of file cmbs4.bib
+Repeated entry---line 43673 of file cmbs4.bib
  : @article{Tinker:2008ff
  :                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 43661 of file cmbs4.bib
+Repeated entry---line 43690 of file cmbs4.bib
  : @article{Costanzi:2013bha
  :                          ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 43696 of file cmbs4.bib
+Repeated entry---line 43725 of file cmbs4.bib
  : @article{LoVerde:2014rxa
  :                         ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 43711 of file cmbs4.bib
+Repeated entry---line 43740 of file cmbs4.bib
  : @article{Hasselfield:2013wf
  :                            ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 43727 of file cmbs4.bib
+Repeated entry---line 43756 of file cmbs4.bib
  : @article{Mantz:2014paa
  :                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 43742 of file cmbs4.bib
+Repeated entry---line 43771 of file cmbs4.bib
  : @article{Ade:2015fva
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 43754 of file cmbs4.bib
+Repeated entry---line 43783 of file cmbs4.bib
  : @article{deHaan:2016qvy
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 43913 of file cmbs4.bib
+Repeated entry---line 43942 of file cmbs4.bib
  : @article{Wang:2005vr
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 46869 of file cmbs4.bib
+Repeated entry---line 46898 of file cmbs4.bib
  : @article{Mueller:2014dba
  :                         ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 46954 of file cmbs4.bib
+Repeated entry---line 46983 of file cmbs4.bib
  : @article{crawford07
  :                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 47059 of file cmbs4.bib
+Repeated entry---line 47088 of file cmbs4.bib
  : @article{Kaplinghat:2003bh
  :                           ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 47579 of file cmbs4.bib
- : @article{AguilarArevalo:2010wv
- :                               ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 47596 of file cmbs4.bib
- : @article{Aguilar:2001ty
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 47665 of file cmbs4.bib
+Reallocated str_pool (elt_size=1) to 195000 items from 130000.
+Repeated entry---line 47887 of file cmbs4.bib
  : @article{Boyle:2007zx
  :                      ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 47681 of file cmbs4.bib
+Repeated entry---line 47903 of file cmbs4.bib
  : @article{Boyle:2003km
  :                      ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "NSAC"
 Name 3 in "Misner, Charles W. and Thorne, Kip S. and Wheeler, John Archibald," has a comma at the end for entry Misner:1974qy
 while executing---line 1049 of file plain.bst
 Warning--empty journal in Abate:2012za
@@ -106,6 +98,7 @@ Warning--empty journal in Ade:2015ava
 Warning--empty journal in Ade:2015fva
 Warning--empty journal in Alvarez:2014vva
 Warning--empty journal in Angrik:2005ep
+Warning--empty journal in Geesaman:2015fha
 Warning--empty journal in Arkani-Hamed:2015bza
 Warning--empty journal in Arzoumanian:2015liz
 Warning--empty journal in Baumann:2015rya
@@ -133,45 +126,45 @@ while executing---line 1090 of file plain.bst
 Warning--empty journal in Osato:2016ixc
 Warning--empty journal in Peloso:2016gqs
 Warning--empty journal in Strumia:2006db
-You've used 542 entries,
+You've used 553 entries,
             2118 wiz_defined-function locations,
-            3386 strings with 123162 characters,
-and the built_in function-call counts, 234689 in all, are:
-= -- 20422
-> -- 18945
-< -- 11
-+ -- 7492
-- -- 6945
-* -- 20945
-:= -- 42298
-add.period$ -- 1636
-call.type$ -- 542
-change.case$ -- 5042
+            3444 strings with 137086 characters,
+and the built_in function-call counts, 261472 in all, are:
+= -- 22259
+> -- 22876
+< -- 12
++ -- 9063
+- -- 8505
+* -- 24214
+:= -- 47412
+add.period$ -- 1669
+call.type$ -- 553
+change.case$ -- 5856
 chr.to.int$ -- 0
-cite$ -- 575
-duplicate$ -- 5986
-empty$ -- 12950
-format.name$ -- 6945
-if$ -- 45039
+cite$ -- 587
+duplicate$ -- 6109
+empty$ -- 13211
+format.name$ -- 8505
+if$ -- 49505
 int.to.chr$ -- 0
-int.to.str$ -- 542
-missing$ -- 545
-newline$ -- 2722
-num.names$ -- 1090
-pop$ -- 4172
+int.to.str$ -- 553
+missing$ -- 556
+newline$ -- 2777
+num.names$ -- 1112
+pop$ -- 4972
 preamble$ -- 1
-purify$ -- 4503
+purify$ -- 5306
 quote$ -- 0
-skip$ -- 4089
+skip$ -- 4173
 stack$ -- 0
-substring$ -- 10450
-swap$ -- 580
-text.length$ -- 11
+substring$ -- 10662
+swap$ -- 595
+text.length$ -- 12
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 2162
-warning$ -- 33
-while$ -- 1575
-width$ -- 545
-write$ -- 5896
-(There were 24 error messages)
+type$ -- 2206
+warning$ -- 34
+while$ -- 1607
+width$ -- 556
+write$ -- 6014
+(There were 22 error messages)
