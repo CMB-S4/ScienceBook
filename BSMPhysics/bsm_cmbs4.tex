@@ -184,9 +184,22 @@ Cosmic strings can at most contribute O(1\%) to the total CMB temperature anisot
 We forecast the predicted constraints on cosmic strings using the StringFast code \cite{Foreman:2011uj}, based on the CMBACT simulations \cite{Pogosian:1999np} of a general string network, which allows for the correlation length of the strings, the `wiggliness' (which controls the small-scale structure of the string network) and the string rms velocity. StringFast allows for fast computation of the relevant string spectra, and includes the contribution to the string spectrum from scalar, vector and tensor modes, which are most relevant for the string B-modes \cite{Foreman:2011uj}.
 
 In keeping with the methodology of recent results, we compute the string spectrum with a value of the string tension ($G_\mu/c^2=1.97e-6$) that allows strings to make up all the TT power at $\ell=10$, and then use the fraction of the spectrum at that multipol $f_{10}$ as the forecast parameter. $f_10$ scales with the string tension as $f_{10} \propto G_\mu^2.$ The Fisher projections for Planck around a fiducial model of $f_{10}=0.01$ are $f_{10}<0.032,$ which maps to $\G_\mu/c^2 < 3.5e-7\, 95\% \mathrm{CL}$, is consistent with the Planck constraints on the AH-mimic spectra.
-We assume a fidcual model for the `wiggliness' $\alpha_\mathrm{str}$, string velocity $v_\mathrm{str}$ and correlation length $\xi_\mathrm{str}$ of $1.05, 0.4$ and $0.35$ respectively, in keeping with the model assumed in \cite{Foreman:2011uj}.
+We assume a fidcual model for the `wiggliness' $\alpha_\mathrm{str}$, string velocity $v_\mathrm{str}$ and correlation length $\xi_\mathrm{str}$ of $1.05, 0.4$ and $0.35$ respectively, in keeping with the model assumed in \cite{Foreman:2011uj}. We consider models where only the string fraction is varied, and the additional model where the small-scale structure of the string network is varied. The constraints are summarised in Table~\ref{tab:string_forecast} for a baseline resolution of 1 arcminute. The error on the string fraction for a 2 arcminute beam is only degraded by a few percent relative to the nominal case. In addition, the constraints are not strongly improved with the addition of BAO data, or with a more improved measurement of $\tau$.
 
 
+\begin{table}[t]\label{tab:string_forecast}
+  \begin{center}
+    \begin{tabular}{ | c || c | c |}
+      \hline
+       Model & Planck & CMB-S4 (1' resolution)  \\ \hline \hline
+       Fixed $\alpha_\mathrm{str}:$ & $\sigma(f_{10})= 0.015$ & $\sigma(f_{10})=1.0563e-03$  \\ \hline
+       Varying $\alpha_\mathrm{str}:$ & $\sigma(f_{10})= 0.017$ & $\sigma(f_{10})=1.8522e-033$ \\
+        & $\sigma(\alpha_\mathrm{str})= 5.55$ & $\sigma(\alpha_\mathrm{str})=6.3902e-01$ \\
+    \end{tabular}
+  \end{center}
+  \caption{Forecast constraints on the fraction of power in cosmic strings at $\ell=10$ and on the `wiggliness' of the string network, $\alpha$. {\it Planck} forecast is based on Blue Book values, with $f_{\rm sky} = 0.75$. CMB-S4 will yield an order of magnitude improvement in constraints on cosmic string parameters.
+  \label{default}
+\end{table*}
 
 
 CMB-S4 polawill be able to reveal the presence of cosmic strings through their B-mode signature even if strings contribute as little as 0.1\% to the CMB temperature anisotropy \cite{Avgoustidis:2011ax}. 
