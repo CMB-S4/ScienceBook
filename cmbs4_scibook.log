@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  15 JUN 2016 17:49
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  15 JUN 2016 17:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **cmbs4_scibook.tex
 (./cmbs4_scibook.tex
-LaTeX2e <2015/01/01>
-Babel <3.9l> and hyphenation patterns for 79 languages loaded.
+LaTeX2e <2011/06/27>
+Babel <3.9f> and hyphenation patterns for 78 languages loaded.
 (./tcibook.cls
 Document Class: tcibook 
 TC Software Research, Inc. `tcibook' <13 Apr 93>.
@@ -19,14 +19,14 @@ TCILCOMM Macros for TCI styles <08 Apr 93>.
 \trimheight=\dimen103
 \botmargin=\dimen104
 \marginpartotal=\dimen105
-) (/usr/local/texlive/2015/texmf-dist/tex/latex/base/book.cls
+) (/usr/local/texlive/2013/texmf-dist/tex/latex/base/book.cls
 
 LaTeX Warning: You have requested document class `tcibook',
                but the document class provides `book'.
 
-Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/bk10.clo
-File: bk10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/bk10.clo
+File: bk10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count81
 \c@chapter=\count82
@@ -53,39 +53,39 @@ TCI Document Style `tcibook' <5 Mar 92>.
 ) (./work.sty
 \sectionruledimen=\dimen114
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/bm.sty
-Package: bm 2014/10/28 v1.1c Bold Symbol Support (DPC/FMi)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup4
 \symboldletters=\mathgroup5
 \symboldsymbols=\mathgroup6
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
-LaTeX Info: Redefining \bm on input line 207.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 138.
+LaTeX Info: Redefining \bm on input line 204.
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks15
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/graphics.cfg
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: pdftex.def on input line 94.
+Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/pdftex-def/pdftex.def
+(/usr/local/texlive/2013/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count90
@@ -93,14 +93,14 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen115
 \Gin@req@width=\dimen116
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
 
 
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
@@ -141,25 +141,25 @@ Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
-(/usr/local/texlive/2015/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+(/usr/local/texlive/2013/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/auxhook.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen117
 \Hy@linkcounter=\count91
 \Hy@pagecounter=\count92
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/pd1enc.def
+(/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count93
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4443.
@@ -171,9 +171,9 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
 \c@Hy@tempcnt=\count94
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/url/url.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
 \XeTeXLinkMargin=\dimen118
@@ -196,33 +196,33 @@ LaTeX Info: Redefining \pageref on input line 6369.
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
 \Fld@listcount=\count99
 \c@bookmark@seq@number=\count100
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip44
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/color.cfg
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package color Info: Driver file: pdftex.def on input line 142.
+Package color Info: Driver file: pdftex.def on input line 130.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/dvipsnam.def
-File: dvipsnam.def 2014/10/14 v3.0j Driver-dependent file (DPC,SPQR)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 ))
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks16
 \symAMSa=\mathgroup7
@@ -230,25 +230,25 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsmath.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip45
 
 For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks17
 \ex@=\dimen121
 ))
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 LaTeX Info: Redefining \boldsymbol on input line 39.
 \pmbraise@=\dimen122
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsopn.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count101
@@ -292,7 +292,7 @@ LaTeX Info: Redefining \] on input line 2666.
 (./chngcntr.sty
 Package: chngcntr 2009/09/02 v1.0a change counter resetting
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/booktabs/booktabs.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen130
 \lightrulewidth=\dimen131
@@ -312,10 +312,10 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@lastruleclass=\count116
 \@thisrulewidth=\dimen142
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/multirow/multirow.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/multirow/multirow.sty
 \bigstrutjot=\dimen143
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/titlesec/titlesec.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 \ttl@box=\box28
 \beforetitleunit=\skip48
@@ -332,11 +332,7 @@ Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 LaTeX Warning: Unused global option(s):
     [titlepage].
 
-(./cmbs4_scibook.aux
-
-LaTeX Warning: Label `tab:beam' multiply defined.
-
-)
+(./cmbs4_scibook.aux)
 \openout1 = `cmbs4_scibook.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 86.
@@ -353,7 +349,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 86.
 LaTeX Font Info:    ... okay on input line 86.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 86.
 LaTeX Font Info:    ... okay on input line 86.
- (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
+
+(/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count117
 \scratchdimen=\dimen149
@@ -366,10 +363,10 @@ LaTeX Font Info:    ... okay on input line 86.
 \MPnumerator=\count121
 \makeMPintoPDFobject=\count122
 \everyMPtoPDFconversion=\toks24
-) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+) (/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/grfext.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 )
 Package grfext Info: Graphics extension search list:
@@ -377,17 +374,17 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box30
 Package hyperref Info: Link coloring OFF on input line 86.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count123
@@ -402,36 +399,35 @@ LaTeX Info: Redefining \nameref on input line 86.
 
 LaTeX Font Info:    Try loading font information for U+msa on input line 118.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 118.
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 (./ExecSum/exec-sum.texpdfTeX warning (ext4): destination with the same identif
 ier (name{page.i}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.18 \eject
-            [1]) [2] (./cmbs4_scibook.toc [3
-
-] [4] [5] [6] [7])
+            [1]) [2] (./cmbs4_scibook.toc)
 \tf@toc=\write4
 \openout4 = `cmbs4_scibook.toc'.
 
- [8]
-(./Intro/intro_cmbs4.tex
+ [3
+
+] (./Intro/intro_cmbs4.tex
 Chapter 1.
 [1
 
 ] [2]
 Missing character: There is no “ in font cmr10!
 Missing character: There is no ” in font cmr10!
- [3] [4] <Intro/expt_progress.pdf, id=795, 509.905pt x 401.5pt>
+ [3] [4] <Intro/expt_progress.pdf, id=181, 509.905pt x 401.5pt>
 File: Intro/expt_progress.pdf Graphic file (type pdf)
 
 <use Intro/expt_progress.pdf>
@@ -462,14 +458,14 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 131.
 
-[6] <Intro/Fig-FlowChart1_v1.pdf, id=820, 794.97pt x 614.295pt>
+[6] <Intro/Fig-FlowChart1_v1.pdf, id=207, 794.97pt x 614.295pt>
 File: Intro/Fig-FlowChart1_v1.pdf Graphic file (type pdf)
 
 <use Intro/Fig-FlowChart1_v1.pdf>
 Package pdftex.def Info: Intro/Fig-FlowChart1_v1.pdf used on input line 150.
 (pdftex.def)             Requested size: 446.2658pt x 344.84645pt.
 
-<Intro/Fig-FlowChart2_v1.pdf, id=822, 1027.84pt x 770.88pt>
+<Intro/Fig-FlowChart2_v1.pdf, id=209, 1027.84pt x 770.88pt>
 File: Intro/Fig-FlowChart2_v1.pdf Graphic file (type pdf)
 
 <use Intro/Fig-FlowChart2_v1.pdf>
@@ -483,20 +479,20 @@ Package pdftex.def Info: Intro/Fig-FlowChart2_v1.pdf used on input line 159.
 Chapter 2.
 [11]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 40.
- (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+ (/usr/local/texlive/2013/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 40.
  [12]
-<Inflation/CausalStructure.pdf, id=1066, 614.295pt x 794.97pt>
+<Inflation/CausalStructure.pdf, id=452, 614.295pt x 794.97pt>
 File: Inflation/CausalStructure.pdf Graphic file (type pdf)
 
 <use Inflation/CausalStructure.pdf>
 Package pdftex.def Info: Inflation/CausalStructure.pdf used on input line 68.
 (pdftex.def)             Requested size: 169.11208pt x 218.85396pt.
 
-<Inflation/QuantumFluctuations.pdf, id=1067, 614.295pt x 794.97pt>
+<Inflation/QuantumFluctuations.pdf, id=453, 614.295pt x 794.97pt>
 File: Inflation/QuantumFluctuations.pdf Graphic file (type pdf)
 
 <use Inflation/QuantumFluctuations.pdf>
@@ -539,13 +535,349 @@ f>]
 LaTeX Warning: Reference `sec:other_topics' on page 15 undefined on input line 
 102.
 
-[15] [16] [17] [18] [19] [20]
+
+LaTeX Warning: Citation `Khoury:2001wf' on page 15 undefined on input line 109.
+
+
+
+LaTeX Warning: Citation `Khoury:2001bz' on page 15 undefined on input line 109.
+
+
+
+LaTeX Warning: Citation `Steinhardt:2001st' on page 15 undefined on input line 
+109.
+
+
+LaTeX Warning: Citation `Nayeri:2005ck' on page 15 undefined on input line 109.
+
+
+
+LaTeX Warning: Citation `Brandenberger:2012zb' on page 15 undefined on input li
+ne 109.
+
+
+LaTeX Warning: Citation `Cai:2014jla' on page 15 undefined on input line 109.
+
+
+LaTeX Warning: Citation `deHaro:2015wda' on page 15 undefined on input line 109
+.
+
+[15] [16] [17]
+
+LaTeX Warning: Citation `Cook:2011hg' on page 18 undefined on input line 200.
+
+
+LaTeX Warning: Citation `Senatore:2011sp' on page 18 undefined on input line 20
+0.
+
+
+LaTeX Warning: Citation `Barnaby:2012xt' on page 18 undefined on input line 200
+.
+
+
+LaTeX Warning: Citation `Barnaby:2012xt' on page 18 undefined on input line 200
+.
+
+
+LaTeX Warning: Citation `Meerburg:2012id' on page 18 undefined on input line 20
+0.
+
+
+LaTeX Warning: Citation `Ferreira:2014zia' on page 18 undefined on input line 2
+00.
+
+
+LaTeX Warning: Citation `Mirbabayi:2014jqa' on page 18 undefined on input line 
+200.
+
+
+LaTeX Warning: Citation `Ozsoy:2014sba' on page 18 undefined on input line 200.
+
+
+
+LaTeX Warning: Citation `Ozsoy:2014sba' on page 18 undefined on input line 201.
+
+
+
+LaTeX Warning: Citation `Mirbabayi:2014jqa' on page 18 undefined on input line 
+201.
+
+
+LaTeX Warning: Citation `Barnaby:2012xt' on page 18 undefined on input line 205
+.
+
+
+LaTeX Warning: Citation `Peloso:2016gqs' on page 18 undefined on input line 205
+.
+
+
+LaTeX Warning: Citation `Namba:2015gja' on page 18 undefined on input line 205.
+
+
+
+LaTeX Warning: Citation `Peloso:2016gqs' on page 18 undefined on input line 205
+.
+
+
+LaTeX Warning: Citation `Anber:2006xt' on page 18 undefined on input line 207.
+
+
+LaTeX Warning: Citation `Sorbo:2011rz' on page 18 undefined on input line 207.
+
+
+LaTeX Warning: Citation `Namba:2015gja' on page 18 undefined on input line 207.
+
+
+
+LaTeX Warning: Citation `Namba:2015gja' on page 18 undefined on input line 207.
+
+
+[18]
+
+LaTeX Warning: Citation `Lyth:1996im' on page 19 undefined on input line 221.
+
+[19]
+
+LaTeX Warning: Citation `Linde:2005ht' on page 20 undefined on input line 243.
+
+
+LaTeX Warning: Citation `Kaloper:2011jz' on page 20 undefined on input line 243
+.
+
+
+LaTeX Warning: Citation `Csaki:2014bua' on page 20 undefined on input line 243.
+
+
+
+LaTeX Warning: Citation `Kaplan:2015fuy' on page 20 undefined on input line 243
+.
+
+
+LaTeX Warning: Citation `Choi:2015fiu' on page 20 undefined on input line 243.
+
+
+LaTeX Warning: Citation `Wen:1985jz' on page 20 undefined on input line 245.
+
+
+LaTeX Warning: Citation `Freese:1990rb' on page 20 undefined on input line 245.
+
+
+
+LaTeX Warning: Citation `Adams:1992bn' on page 20 undefined on input line 245.
+
+
+LaTeX Warning: Citation `Banks:2003sx' on page 20 undefined on input line 245.
+
+
+LaTeX Warning: Citation `ArkaniHamed:2006dz' on page 20 undefined on input line
+ 245.
+
+
+LaTeX Warning: Citation `Kim:2004rp' on page 20 undefined on input line 245.
+
+
+LaTeX Warning: Citation `Rudelius:2014wla' on page 20 undefined on input line 2
+45.
+
+
+LaTeX Warning: Citation `delaFuente:2014aca' on page 20 undefined on input line
+ 245.
+
+
+LaTeX Warning: Citation `Rudelius:2015xta' on page 20 undefined on input line 2
+45.
+
+
+LaTeX Warning: Citation `Brown:2015iha' on page 20 undefined on input line 245.
+
+
+
+LaTeX Warning: Citation `Bachlechner:2015qja' on page 20 undefined on input lin
+e 245.
+
+
+LaTeX Warning: Citation `Brown:2015lia' on page 20 undefined on input line 245.
+
+
+
+LaTeX Warning: Citation `Heidenreich:2015wga' on page 20 undefined on input lin
+e 245.
+
+
+LaTeX Warning: Citation `Heidenreich:2015nta' on page 20 undefined on input lin
+e 245.
+
+
+LaTeX Warning: Citation `Kooner:2015rza' on page 20 undefined on input line 245
+.
+
+
+LaTeX Warning: Citation `Silverstein:2008sg' on page 20 undefined on input line
+ 250.
+
+
+LaTeX Warning: Citation `McAllister:2008hb' on page 20 undefined on input line 
+250.
+
+
+LaTeX Warning: Citation `Kaloper:2008fb' on page 20 undefined on input line 250
+.
+
+
+LaTeX Warning: Citation `Berg:2009tg' on page 20 undefined on input line 250.
+
+
+LaTeX Warning: Citation `Palti:2014kza' on page 20 undefined on input line 250.
+
+
+
+LaTeX Warning: Citation `McAllister:2014mpa' on page 20 undefined on input line
+ 250.
+
+
+LaTeX Warning: Citation `Marchesano:2014mla' on page 20 undefined on input line
+ 250.
+
+
+LaTeX Warning: Citation `Blumenhagen:2015xpa' on page 20 undefined on input lin
+e 250.
+
+
+LaTeX Warning: Citation `Hebecker:2015tzo' on page 20 undefined on input line 2
+50.
+
+
+LaTeX Warning: Citation `BenDayan:2009kv' on page 20 undefined on input line 25
+2.
+
+
+LaTeX Warning: Citation `Hotchkiss:2011gz' on page 20 undefined on input line 2
+52.
+
+
+LaTeX Warning: Citation `Chatterjee:2014hna' on page 20 undefined on input line
+ 252.
+
+[20]
+
+LaTeX Warning: Citation `Ashoorioon:2014nta' on page 21 undefined on input line
+ 268.
+
+
+LaTeX Warning: Citation `Collins:2014yua' on page 21 undefined on input line 26
+8.
+
+
+LaTeX Warning: Citation `Aravind:2014axa' on page 21 undefined on input line 26
+8.
+
+
+LaTeX Warning: Citation `Flauger:2013hra' on page 21 undefined on input line 26
+8.
+
+
+LaTeX Warning: Citation `Dubovsky:2004sg' on page 21 undefined on input line 27
+6.
+
+
+LaTeX Warning: Citation `Hinterbichler:2011tt' on page 21 undefined on input li
+ne 276.
+
 
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 289.
 
-[21] [22]
+[21]
+
+LaTeX Warning: Citation `Dubovsky:2009xk' on page 22 undefined on input line 29
+5.
+
+
+LaTeX Warning: Citation `PhysRevD.65.044022' on page 22 undefined on input line
+ 297.
+
+
+LaTeX Warning: Citation `PhysRevLett.116.061102' on page 22 undefined on input 
+line 297.
+
+[22]
+
+LaTeX Warning: Citation `Khoury:2001bz' on page 23 undefined on input line 330.
+
+
+
+LaTeX Warning: Citation `Khoury:2001wf' on page 23 undefined on input line 330.
+
+
+
+LaTeX Warning: Citation `Brandenberger:2012zb' on page 23 undefined on input li
+ne 331.
+
+
+LaTeX Warning: Citation `Cai:2014jla' on page 23 undefined on input line 331.
+
+
+LaTeX Warning: Citation `deHaro:2015wda' on page 23 undefined on input line 331
+.
+
+
+LaTeX Warning: Citation `Brandenberger:1988aj' on page 23 undefined on input li
+ne 333.
+
+
+LaTeX Warning: Citation `Tseytlin:1991xk' on page 23 undefined on input line 33
+3.
+
+
+LaTeX Warning: Citation `Battefeld:2005av' on page 23 undefined on input line 3
+33.
+
+
+LaTeX Warning: Citation `Baumann:2008aq' on page 23 undefined on input line 336
+.
+
+
+LaTeX Warning: Citation `Creminelli:2006xe' on page 23 undefined on input line 
+350.
+
+
+LaTeX Warning: Citation `Buchbinder:2007ad' on page 23 undefined on input line 
+352.
+
+
+LaTeX Warning: Citation `Creminelli:2007aq' on page 23 undefined on input line 
+352.
+
+
+LaTeX Warning: Citation `Kallosh:2007ad' on page 23 undefined on input line 353
+.
+
+
+LaTeX Warning: Citation `Brustein:1994kw' on page 23 undefined on input line 35
+4.
+
+
+LaTeX Warning: Citation `Kaloper:1995ey' on page 23 undefined on input line 354
+.
+
+
+LaTeX Warning: Citation `Kaloper:1995tu' on page 23 undefined on input line 354
+.
+
+
+LaTeX Warning: Citation `Kaloper:2007pw' on page 23 undefined on input line 354
+.
+
+
+LaTeX Warning: Citation `Quintin:2015rta' on page 23 undefined on input line 36
+0.
+
+
+LaTeX Warning: Citation `Ben-Dayan:2016iks' on page 23 undefined on input line 
+360.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 356--361
 
  []
@@ -561,17 +893,307 @@ Underfull \hbox (badness 10000) in paragraph at lines 378--379
 
  []
 
+
+LaTeX Warning: Citation `Maleknejad:2011jw' on page 24 undefined on input line 
+380.
+
+
+LaTeX Warning: Citation `Adshead:2012kp' on page 24 undefined on input line 380
+.
+
+
+LaTeX Warning: Citation `Adshead:2012qe' on page 24 undefined on input line 380
+.
+
+
+LaTeX Warning: Citation `Adshead:2013qp' on page 24 undefined on input line 380
+.
+
+
+LaTeX Warning: Citation `Adshead:2013nka' on page 24 undefined on input line 38
+0.
+
+
+LaTeX Warning: Citation `Dimastrogiovanni:2012st' on page 24 undefined on input
+ line 380.
+
+
+LaTeX Warning: Citation `Dimastrogiovanni:2012ew' on page 24 undefined on input
+ line 380.
+
+
+LaTeX Warning: Citation `Lue:1998mq' on page 24 undefined on input line 380.
+
+
+LaTeX Warning: Citation `Gluscevic:2010vv' on page 24 undefined on input line 3
+80.
+
+
+LaTeX Warning: Citation `Bielefeld:2014nza' on page 24 undefined on input line 
+380.
+
+
+LaTeX Warning: Citation `Bielefeld:2015daa' on page 24 undefined on input line 
+380.
+
+
+LaTeX Warning: Citation `Namba:2013kia' on page 24 undefined on input line 380.
+
+
+
+LaTeX Warning: Citation `Hindmarsh:1994re' on page 24 undefined on input line 3
+82.
+
+
+LaTeX Warning: Citation `Vilenkin:1981iu' on page 24 undefined on input line 38
+2.
+
+
+LaTeX Warning: Citation `Kofman:1995fi' on page 24 undefined on input line 382.
+
+
+
+LaTeX Warning: Citation `Tkachev:1998dc' on page 24 undefined on input line 382
+.
+
+
+LaTeX Warning: Citation `Jeannerot:1995yn' on page 24 undefined on input line 3
+82.
+
+
+LaTeX Warning: Citation `Jeannerot:2003qv' on page 24 undefined on input line 3
+82.
+
+
+LaTeX Warning: Citation `Rocher:2004my' on page 24 undefined on input line 382.
+
+
+
+LaTeX Warning: Citation `Sarangi:2002yt' on page 24 undefined on input line 382
+.
+
+
+LaTeX Warning: Citation `Jones:2003da' on page 24 undefined on input line 382.
+
+
+LaTeX Warning: Citation `Copeland:2003bj' on page 24 undefined on input line 38
+2.
+
+
+LaTeX Warning: Citation `Urrestilla:2008jv' on page 24 undefined on input line 
+382.
+
+
+LaTeX Warning: Citation `Seljak:2006hi' on page 24 undefined on input line 382.
+
+
+
+LaTeX Warning: Citation `Avgoustidis:2011ax' on page 24 undefined on input line
+ 382.
+
+
+LaTeX Warning: Citation `Ade:2015ava' on page 24 undefined on input line 382.
+
+
+LaTeX Warning: Citation `Ade:2013xla' on page 24 undefined on input line 382.
+
+
+LaTeX Warning: Citation `Arzoumanian:2015liz' on page 24 undefined on input lin
+e 382.
+
+
+LaTeX Warning: Citation `Urrestilla:2007sf' on page 24 undefined on input line 
+382.
+
+
+LaTeX Warning: Citation `Avgoustidis:2011ax' on page 24 undefined on input line
+ 382.
+
+
+LaTeX Warning: Citation `Avgoustidis:2011ax' on page 24 undefined on input line
+ 382.
+
 [24]
 
+LaTeX Warning: Citation `Krauss:1991qu' on page 25 undefined on input line 384.
+
+
+
+LaTeX Warning: Citation `JonesSmith:2007ne' on page 25 undefined on input line 
+384.
+
+
+LaTeX Warning: Citation `Baumann:2009mq' on page 25 undefined on input line 384
+.
+
+
+LaTeX Warning: Citation `Lee:2014cya' on page 25 undefined on input line 384.
+
+
+LaTeX Warning: Citation `Price:2014ufa' on page 25 undefined on input line 389.
+
+
+
+LaTeX Warning: Citation `Baumann:2015xxa' on page 25 undefined on input line 38
+9.
+
+
+LaTeX Warning: Citation `Meerburg:2015zua' on page 25 undefined on input line 3
+89.
+
+
+LaTeX Warning: Citation `Lasky:2015lej' on page 25 undefined on input line 389.
+
+
+
+LaTeX Warning: Citation `Meerburg:2015zua' on page 25 undefined on input line 3
+89.
+
+
+LaTeX Warning: Reference `sec:constraintsntNeff' on page 25 undefined on input 
+line 389.
+
+
+LaTeX Warning: Citation `Baumann:2014cja' on page 25 undefined on input line 39
+1.
+
+
+LaTeX Warning: Citation `Turzynski:2014tza' on page 25 undefined on input line 
+391.
+
+
+LaTeX Warning: Citation `lue99' on page 25 undefined on input line 393.
+
+
+LaTeX Warning: Citation `Alexander:2004wk' on page 25 undefined on input line 3
+93.
+
+
+LaTeX Warning: Citation `Contaldi:2008yz' on page 25 undefined on input line 39
+3.
+
+
+LaTeX Warning: Citation `Takahashi:2009wc' on page 25 undefined on input line 3
+93.
+
+
+LaTeX Warning: Citation `Takahashi:2009wc' on page 25 undefined on input line 3
+93.
+
+
+LaTeX Warning: Citation `2010PhRvD..81l3529G' on page 25 undefined on input lin
+e 393.
+
+
+LaTeX Warning: Citation `Maldacena:2011nz' on page 25 undefined on input line 3
+93.
+
+
+LaTeX Warning: Citation `Maldacena:2002vr' on page 25 undefined on input line 3
+93.
+
+
+LaTeX Warning: Citation `Maldacena:2011nz' on page 25 undefined on input line 3
+93.
+
+
 LaTeX Warning: Citation `2013JCAP...10..011E' on page 25 undefined on input lin
+e 393.
+
+
+LaTeX Warning: Citation `Maleknejad:2011jw' on page 25 undefined on input line 
+393.
+
+
+LaTeX Warning: Citation `2016arXiv160508424B' on page 25 undefined on input lin
 e 393.
 
 
 LaTeX Warning: Citation `2016JCAP...02..017D' on page 25 undefined on input lin
 e 393.
 
-[25] [26] [27] [28]
-<Inflation/sigr_fsky_det1e6_r0.png, id=1522, 391.34206pt x 402.18256pt>
+
+LaTeX Warning: Citation `Meerburg2016' on page 25 undefined on input line 393.
+
+
+LaTeX Warning: Citation `Contaldi:2008yz' on page 25 undefined on input line 39
+4.
+
+[25]
+
+LaTeX Warning: Citation `bicepkeckplanck15' on page 26 undefined on input line 
+399.
+
+
+LaTeX Warning: Citation `Mukhanov:2013tua' on page 26 undefined on input line 4
+01.
+
+
+LaTeX Warning: Citation `Roest:2013fha' on page 26 undefined on input line 401.
+
+
+
+LaTeX Warning: Citation `Creminelli:2014nqa' on page 26 undefined on input line
+ 401.
+
+[26]
+
+LaTeX Warning: Citation `bicepkeckplanck15' on page 27 undefined on input line 
+430.
+
+
+LaTeX Warning: Citation `bicepkeckplanck15' on page 27 undefined on input line 
+432.
+
+
+LaTeX Warning: Citation `bicepkeckplanck15' on page 27 undefined on input line 
+434.
+
+[27]
+
+LaTeX Warning: Citation `Linde:1983gd' on page 28 undefined on input line 445.
+
+
+LaTeX Warning: Citation `bicepkeckplanck15' on page 28 undefined on input line 
+445.
+
+
+LaTeX Warning: Citation `Silverstein:2008sg' on page 28 undefined on input line
+ 445.
+
+
+LaTeX Warning: Citation `McAllister:2008hb' on page 28 undefined on input line 
+445.
+
+
+LaTeX Warning: Citation `Flauger:2009ab' on page 28 undefined on input line 445
+.
+
+
+LaTeX Warning: Citation `Starobinsky:1980te' on page 28 undefined on input line
+ 453.
+
+
+LaTeX Warning: Citation `Salopek:1988qh' on page 28 undefined on input line 453
+.
+
+
+LaTeX Warning: Citation `Bezrukov:2007ep' on page 28 undefined on input line 45
+3.
+
+
+LaTeX Warning: Citation `Goncharov:1983mw' on page 28 undefined on input line 4
+53.
+
+
+LaTeX Warning: Citation `Kallosh:2013hoa' on page 28 undefined on input line 45
+3.
+
+
+LaTeX Warning: Reference `sec_specforecast' on page 28 undefined on input line 
+471.
+
+[28] <Inflation/sigr_fsky_det1e6_r0.png, id=614, 391.34206pt x 402.18256pt>
 File: Inflation/sigr_fsky_det1e6_r0.png Graphic file (type png)
 
 <use Inflation/sigr_fsky_det1e6_r0.png>
@@ -579,7 +1201,7 @@ Package pdftex.def Info: Inflation/sigr_fsky_det1e6_r0.png used on input line 4
 90.
 (pdftex.def)             Requested size: 230.18251pt x 236.5615pt.
 
-<Inflation/sigr_fsky_det1e6_r01.png, id=1524, 391.34206pt x 402.18256pt>
+<Inflation/sigr_fsky_det1e6_r01.png, id=616, 391.34206pt x 402.18256pt>
 File: Inflation/sigr_fsky_det1e6_r01.png Graphic file (type png)
 
 <use Inflation/sigr_fsky_det1e6_r01.png>
@@ -587,14 +1209,14 @@ Package pdftex.def Info: Inflation/sigr_fsky_det1e6_r01.png used on input line
 491.
 (pdftex.def)             Requested size: 230.18251pt x 236.5615pt.
 
-<Inflation/sigr_effort_r0.png, id=1527, 387.3672pt x 399.29175pt>
+<Inflation/sigr_effort_r0.png, id=619, 387.3672pt x 399.29175pt>
 File: Inflation/sigr_effort_r0.png Graphic file (type png)
 
 <use Inflation/sigr_effort_r0.png>
 Package pdftex.def Info: Inflation/sigr_effort_r0.png used on input line 505.
 (pdftex.def)             Requested size: 230.18251pt x 237.26776pt.
 
-<Inflation/sigr_effort_r01.png, id=1528, 387.3672pt x 399.29175pt>
+<Inflation/sigr_effort_r01.png, id=620, 387.3672pt x 399.29175pt>
 File: Inflation/sigr_effort_r01.png Graphic file (type png)
 
 <use Inflation/sigr_effort_r01.png>
@@ -604,16 +1226,118 @@ Package pdftex.def Info: Inflation/sigr_effort_r01.png used on input line 506.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[29] [30 <./Inflation/sigr_fsky_det1e6_r0.png> <./Inflation/sigr_fsky_det1e6_r0
-1.png>] [31 <./Inflation/sigr_effort_r0.png> <./Inflation/sigr_effort_r01.png>]
-[32] <Inflation/DeltaFNL_TTT.pdf, id=1609, 451.6875pt x 451.6875pt>
+[29]
+
+LaTeX Warning: Citation `Meerburg:2014bpa' on page 30 undefined on input line 5
+30.
+
+[30 <./Inflation/sigr_fsky_det1e6_r0.png> <./Inflation/sigr_fsky_det1e6_r01.png
+>]
+
+LaTeX Warning: Citation `Flauger:2014ana' on page 31 undefined on input line 54
+6.
+
+
+LaTeX Warning: Citation `Behbahani:2011it' on page 31 undefined on input line 5
+46.
+
+
+LaTeX Warning: Citation `Behbahani:2012be' on page 31 undefined on input line 5
+46.
+
+
+LaTeX Warning: Citation `Ade:2015ava' on page 31 undefined on input line 546.
+
+
+LaTeX Warning: Citation `Achucarro:2010da' on page 31 undefined on input line 5
+46.
+
+
+LaTeX Warning: Citation `NonBDBispectrum2009' on page 31 undefined on input lin
+e 546.
+
+
+LaTeX Warning: Citation `nonBDbispectrum2015' on page 31 undefined on input lin
+e 546.
+
+
+LaTeX Warning: Citation `Flauger:2010ja' on page 31 undefined on input line 546
+.
+
+
+LaTeX Warning: Citation `Meerburg2015b' on page 31 undefined on input line 546.
+
+
+
+LaTeX Warning: Citation `Moritz2016' on page 31 undefined on input line 546.
+
+
+LaTeX Warning: Citation `Fergusson:2014hya' on page 31 undefined on input line 
+546.
+
+
+LaTeX Warning: Citation `Arkani-Hamed:2015bza' on page 31 undefined on input li
+ne 546.
+
+
+LaTeX Warning: Citation `Chen:2015lza' on page 31 undefined on input line 546.
+
+[31 <./Inflation/sigr_effort_r0.png> <./Inflation/sigr_effort_r01.png>]
+
+LaTeX Warning: Citation `Creminelli:2004yq' on page 32 undefined on input line 
+550.
+
+
+LaTeX Warning: Citation `Nelson:2012sb' on page 32 undefined on input line 550.
+
+
+
+LaTeX Warning: Citation `LoVerde:2013xka' on page 32 undefined on input line 55
+0.
+
+
+LaTeX Warning: Citation `Nurmi:2013xv' on page 32 undefined on input line 550.
+
+
+LaTeX Warning: Citation `Bonga:2015urq' on page 32 undefined on input line 550.
+
+
+
+LaTeX Warning: Citation `Zaldarriaga:2003my' on page 32 undefined on input line
+ 550.
+
+
+LaTeX Warning: Citation `Lehners:2009ja' on page 32 undefined on input line 550
+.
+
+
+LaTeX Warning: Citation `Ade:2015ava' on page 32 undefined on input line 551.
+
+
+LaTeX Warning: Citation `Komatsu:2001rj' on page 32 undefined on input line 551
+.
+
+
+LaTeX Warning: Citation `Alvarez:2014vva' on page 32 undefined on input line 55
+1.
+
+
+LaTeX Warning: Citation `Lyth:2001nq' on page 32 undefined on input line 551.
+
+
+LaTeX Warning: Citation `Dore:2014cca' on page 32 undefined on input line 551.
+
+
+LaTeX Warning: Citation `Ade:2015ava' on page 32 undefined on input line 553.
+
+[32] <Inflation/DeltaFNL_TTT.pdf, id=649, 451.6875pt x 451.6875pt>
 File: Inflation/DeltaFNL_TTT.pdf Graphic file (type pdf)
 
 <use Inflation/DeltaFNL_TTT.pdf>
 Package pdftex.def Info: Inflation/DeltaFNL_TTT.pdf used on input line 559.
 (pdftex.def)             Requested size: 201.9912pt x 201.99622pt.
 
-<Inflation/DeltaFNL_TTT_lmin.pdf, id=1610, 451.6875pt x 451.6875pt>
+<Inflation/DeltaFNL_TTT_lmin.pdf, id=650, 451.6875pt x 451.6875pt>
 File: Inflation/DeltaFNL_TTT_lmin.pdf Graphic file (type pdf)
 
 <use Inflation/DeltaFNL_TTT_lmin.pdf>
@@ -622,14 +1346,27 @@ Package pdftex.def Info: Inflation/DeltaFNL_TTT_lmin.pdf used on input line 560
 (pdftex.def)             Requested size: 201.9912pt x 201.99622pt.
 
 
+LaTeX Warning: Citation `Maldacena:2002vr' on page 33 undefined on input line 5
+65.
+
+
 LaTeX Warning: Citation `Babich:2004gb' on page 33 undefined on input line 565.
 
 
 
 LaTeX Warning: Citation `planck13-24' on page 33 undefined on input line 565.
 
+
+LaTeX Warning: Citation `Ade:2015ava' on page 33 undefined on input line 573.
+
+
+LaTeX Warning: Citation `Ade:2015ava' on page 33 undefined on input line 573.
+
+
+LaTeX Warning: Citation `Ade:2015ava' on page 33 undefined on input line 573.
+
 [33 <./Inflation/DeltaFNL_TTT.pdf> <./Inflation/DeltaFNL_TTT_lmin.pdf>]
-<Inflation/FixedEffortTTT_all.pdf, id=1773, 451.6875pt x 451.6875pt>
+<Inflation/FixedEffortTTT_all.pdf, id=811, 451.6875pt x 451.6875pt>
 File: Inflation/FixedEffortTTT_all.pdf Graphic file (type pdf)
 
 <use Inflation/FixedEffortTTT_all.pdf>
@@ -637,7 +1374,7 @@ Package pdftex.def Info: Inflation/FixedEffortTTT_all.pdf used on input line 59
 3.
 (pdftex.def)             Requested size: 225.48038pt x 225.48479pt.
 
-<Inflation/DeltaFNL_BTT_no_r.pdf, id=1775, 401.5pt x 401.5pt>
+<Inflation/DeltaFNL_BTT_no_r.pdf, id=813, 401.5pt x 401.5pt>
 File: Inflation/DeltaFNL_BTT_no_r.pdf Graphic file (type pdf)
 
 <use Inflation/DeltaFNL_BTT_no_r.pdf>
@@ -645,19 +1382,41 @@ Package pdftex.def Info: Inflation/DeltaFNL_BTT_no_r.pdf used on input line 603
 .
 (pdftex.def)             Requested size: 211.3883pt x 211.39104pt.
 
-<Inflation/DeltaFNL_BTT_with_r.pdf, id=1776, 401.5pt x 401.5pt>
+<Inflation/DeltaFNL_BTT_with_r.pdf, id=814, 401.5pt x 401.5pt>
 File: Inflation/DeltaFNL_BTT_with_r.pdf Graphic file (type pdf)
 
 <use Inflation/DeltaFNL_BTT_with_r.pdf>
 Package pdftex.def Info: Inflation/DeltaFNL_BTT_with_r.pdf used on input line 6
 04.
 (pdftex.def)             Requested size: 211.3883pt x 211.39104pt.
- [34 <./Inflation/FixedEffortTTT_all.pdf>]
+
+
+LaTeX Warning: Citation `Meerburg2016' on page 34 undefined on input line 612.
+
+[34 <./Inflation/FixedEffortTTT_all.pdf>]
+
+LaTeX Warning: Citation `Maldacena:2002vr' on page 35 undefined on input line 6
+21.
+
+
+LaTeX Warning: Citation `Maldacena:2011nz' on page 35 undefined on input line 6
+21.
+
+
+LaTeX Warning: Citation `2016arXiv160508424B' on page 35 undefined on input lin
+e 621.
+
 
 LaTeX Warning: Citation `2016JCAP...02..017D' on page 35 undefined on input lin
 e 621.
 
-<Inflation/FixedEffortBTTlocal.pdf, id=1863, 464.73625pt x 379.4175pt>
+
+LaTeX Warning: Citation `Meerburg2016' on page 35 undefined on input line 635.
+
+
+LaTeX Warning: Citation `Meerburg2016' on page 35 undefined on input line 635.
+
+<Inflation/FixedEffortBTTlocal.pdf, id=895, 464.73625pt x 379.4175pt>
 File: Inflation/FixedEffortBTTlocal.pdf Graphic file (type pdf)
 
 <use Inflation/FixedEffortBTTlocal.pdf>
@@ -665,16 +1424,19 @@ Package pdftex.def Info: Inflation/FixedEffortBTTlocal.pdf used on input line 6
 43.
 (pdftex.def)             Requested size: 225.48038pt x 184.08095pt.
 
-<Inflation/FixedEffortBTTlocalr.pdf, id=1864, 464.73625pt x 379.4175pt>
+<Inflation/FixedEffortBTTlocalr.pdf, id=896, 464.73625pt x 379.4175pt>
 File: Inflation/FixedEffortBTTlocalr.pdf Graphic file (type pdf)
 
 <use Inflation/FixedEffortBTTlocalr.pdf>
 Package pdftex.def Info: Inflation/FixedEffortBTTlocalr.pdf used on input line 
 644.
 (pdftex.def)             Requested size: 225.48038pt x 184.08095pt.
- [35 <./Inflation/DeltaFNL_BTT_no_r.pdf> <./Inflation/DeltaFNL_BTT_with_r.pdf>]
 
-<Inflation/FixedEffortBTTequil.pdf, id=2060, 464.73625pt x 380.42125pt>
+
+LaTeX Warning: Citation `Meerburg2016' on page 35 undefined on input line 652.
+
+[35 <./Inflation/DeltaFNL_BTT_no_r.pdf> <./Inflation/DeltaFNL_BTT_with_r.pdf>]
+<Inflation/FixedEffortBTTequil.pdf, id=1090, 464.73625pt x 380.42125pt>
 File: Inflation/FixedEffortBTTequil.pdf Graphic file (type pdf)
 
 <use Inflation/FixedEffortBTTequil.pdf>
@@ -682,7 +1444,7 @@ Package pdftex.def Info: Inflation/FixedEffortBTTequil.pdf used on input line 6
 60.
 (pdftex.def)             Requested size: 225.48038pt x 184.56792pt.
 
-<Inflation/FixedEffortBTTequilr.pdf, id=2061, 464.73625pt x 380.42125pt>
+<Inflation/FixedEffortBTTequilr.pdf, id=1091, 464.73625pt x 380.42125pt>
 File: Inflation/FixedEffortBTTequilr.pdf Graphic file (type pdf)
 
 <use Inflation/FixedEffortBTTequilr.pdf>
@@ -693,8 +1455,51 @@ Package pdftex.def Info: Inflation/FixedEffortBTTequilr.pdf used on input line
 f> <./Inflation/FixedEffortBTTequil.pdf> <./Inflation/FixedEffortBTTequilr.pdf>
 ]
 
-LaTeX Warning: Reference `table:fisher_model_independent' on page 37 undefined 
-on input line 700.
+LaTeX Warning: Citation `Bond:1984fp' on page 37 undefined on input line 687.
+
+
+LaTeX Warning: Citation `Kodama:1986fg' on page 37 undefined on input line 687.
+
+
+
+LaTeX Warning: Citation `Kodama:1986ud' on page 37 undefined on input line 687.
+
+
+
+LaTeX Warning: Citation `Hu:1994jd' on page 37 undefined on input line 687.
+
+
+LaTeX Warning: Citation `Moodley:2004nz' on page 37 undefined on input line 687
+.
+
+
+LaTeX Warning: Citation `Bean:2006qz' on page 37 undefined on input line 687.
+
+
+LaTeX Warning: Citation `Bucher:1999re' on page 37 undefined on input line 689.
+
+
+
+LaTeX Warning: Citation `Bucher:2004an' on page 37 undefined on input line 689.
+
+
+
+LaTeX Warning: Citation `Moodley:2004nz' on page 37 undefined on input line 689
+.
+
+
+LaTeX Warning: Citation `dunkley09' on page 37 undefined on input line 697.
+
+
+LaTeX Warning: Citation `Ade:2015lrj' on page 37 undefined on input line 697.
+
+
+LaTeX Warning: Citation `Enqvist:2000hp' on page 37 undefined on input line 697
+.
+
+
+LaTeX Warning: Citation `MacTavish:2005yk' on page 37 undefined on input line 6
+97.
 
 
 LaTeX Warning: Reference `table:fisher_model_independent' on page 37 undefined 
@@ -704,635 +1509,44 @@ on input line 700.
 LaTeX Warning: Reference `table:fisher_model_independent' on page 37 undefined 
 on input line 700.
 
-[37] <Inflation/S4CIPsfsky.pdf, id=2341, 867.24pt x 541.02126pt>
-File: Inflation/S4CIPsfsky.pdf Graphic file (type pdf)
 
-<use Inflation/S4CIPsfsky.pdf>
-Package pdftex.def Info: Inflation/S4CIPsfsky.pdf used on input line 779.
-(pdftex.def)             Requested size: 234.87749pt x 146.52347pt.
+LaTeX Warning: Citation `Gordon:2002gv' on page 37 undefined on input line 700.
 
-<Inflation/S4CIPsNoise.pdf, id=2342, 867.24pt x 532.99126pt>
-File: Inflation/S4CIPsNoise.pdf Graphic file (type pdf)
 
-<use Inflation/S4CIPsNoise.pdf>
-Package pdftex.def Info: Inflation/S4CIPsNoise.pdf used on input line 780.
-(pdftex.def)             Requested size: 234.87749pt x 144.34872pt.
 
-Overfull \hbox (2.2222pt too wide) in paragraph at lines 779--782
-[][] [] 
- []
+LaTeX Warning: Citation `Lewis:2002nc' on page 37 undefined on input line 700.
 
-[38] [39 <./Inflation/S4CIPsfsky.pdf> <./Inflation/S4CIPsNoise.pdf
 
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Inflation/S4CIPsNoise.pdf)
-: PDF inclusion: multiple pdfs with page group included in a single page
->]) (./Neutrinos/neutrinos_cmbs4.tex [40]
-Chapter 3.
-[41
+LaTeX Warning: Citation `Lewis:2007kz' on page 37 undefined on input line 700.
 
-]
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 66.
+LaTeX Warning: Citation `Gordon:2009wx' on page 37 undefined on input line 700.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 72.
 
-[42] [43] [44] [45]
-Overfull \hbox (19.65948pt too wide) in paragraph at lines 197--199
-\OT1/cmr/m/n/10 where $\OML/cmm/m/it/10 R \OT1/cmr/m/n/10 = (3\OML/cmm/m/it/10 
-M=\OT1/cmr/m/n/10 (4\OML/cmm/m/it/10 ^^Y^^Z[]\OT1/cmr/m/n/10 ))[]$, $\OML/cmm/m
-/it/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 k\OT1/cmr/m/n/10 )$ is the power sp
-ec-trum of CDM and baryons, and $\OML/cmm/m/it/10 W\OT1/cmr/m/n/10 (\OML/cmm/m/
-it/10 kR\OT1/cmr/m/n/10 ) = 3([](\OML/cmm/m/it/10 kR\OT1/cmr/m/n/10 )\OML/cmm/m
-/it/10 =\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 kR\OT1/cmr/m/n/10 )[] \OMS/cmsy/m/n/1
-0 ^^@
- []
+LaTeX Warning: Reference `table:fisher_model_independent' on page 37 undefined 
+on input line 700.
 
-[46] [47] [48] <Neutrinos/BetaDecay.pdf, id=2633, 246.08809pt x 171.01482pt>
-File: Neutrinos/BetaDecay.pdf Graphic file (type pdf)
 
-<use Neutrinos/BetaDecay.pdf>
-Package pdftex.def Info: Neutrinos/BetaDecay.pdf used on input line 295.
-(pdftex.def)             Requested size: 234.87749pt x 163.23033pt.
+LaTeX Warning: Citation `Mollerach:1989hu' on page 37 undefined on input line 7
+18.
 
-<Neutrinos/e-capture.pdf, id=2634, 253.59563pt x 173.97025pt>
-File: Neutrinos/e-capture.pdf Graphic file (type pdf)
 
-<use Neutrinos/e-capture.pdf>
-Package pdftex.def Info: Neutrinos/e-capture.pdf used on input line 295.
-(pdftex.def)             Requested size: 234.87749pt x 161.12965pt.
+LaTeX Warning: Citation `Mukhanov:1990me' on page 37 undefined on input line 71
+8.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: Citation `Moroi:2001ct' on page 37 undefined on input line 718.
 
-[49] [50 <./Neutrinos/BetaDecay.pdf> <./Neutrinos/e-capture.pdf>]
-<Neutrinos/mbb_v_sum_m_nu.pdf, id=2792, 249.96536pt x 161.11111pt>
-File: Neutrinos/mbb_v_sum_m_nu.pdf Graphic file (type pdf)
 
-<use Neutrinos/mbb_v_sum_m_nu.pdf>
-Package pdftex.def Info: Neutrinos/mbb_v_sum_m_nu.pdf used on input line 329.
-(pdftex.def)             Requested size: 375.80542pt x 242.24376pt.
- [51 <./Neutrinos/mbb_v_sum_m_nu.pdf>]
-<Neutrinos/IH_MajoranaPhase.png, id=2894, 971.63pt x 748.7975pt>
-File: Neutrinos/IH_MajoranaPhase.png Graphic file (type png)
+LaTeX Warning: Citation `Lyth:2001nq' on page 37 undefined on input line 718.
 
-<use Neutrinos/IH_MajoranaPhase.png>
-Package pdftex.def Info: Neutrinos/IH_MajoranaPhase.png used on input line 337.
 
-(pdftex.def)             Requested size: 328.82706pt x 253.41093pt.
- [52 <./Neutrinos/IH_MajoranaPhase.png>]
-<Neutrinos/numass_combine_dune.pdf, id=2913, 485.34323pt x 398.52892pt>
-File: Neutrinos/numass_combine_dune.pdf Graphic file (type pdf)
+LaTeX Warning: Citation `Lyth:2002my' on page 37 undefined on input line 718.
 
-<use Neutrinos/numass_combine_dune.pdf>
-Package pdftex.def Info: Neutrinos/numass_combine_dune.pdf used on input line 3
-56.
-(pdftex.def)             Requested size: 258.36667pt x 212.16188pt.
- [53 <./Neutrinos/numass_combine_dune.pdf>] [54] [55] <Neutrinos/Neff.pdf, id=2
-987, 1027.84pt x 770.88pt>
-File: Neutrinos/Neff.pdf Graphic file (type pdf)
 
-<use Neutrinos/Neff.pdf>
-Package pdftex.def Info: Neutrinos/Neff.pdf used on input line 528.
-(pdftex.def)             Requested size: 305.33788pt x 229.00735pt.
- [56] [57 <./Neutrinos/Neff.pdf>] [58]
+LaTeX Warning: Citation `Postma:2002et' on page 37 undefined on input line 718.
 
-LaTeX Warning: Reference `sec:neffBSMchap' on page 59 undefined on input line 5
-99.
 
-[59] [60]
 
-LaTeX Warning: Reference `sec:axions' on page 61 undefined on input line 714.
-
-[61] [62] [63] [64] [65] [66] [67] [68]
-Underfull \hbox (badness 10000) in paragraph at lines 945--946
-[]\OT1/cmr/m/n/10 lower-limit on the re-heat
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 947--948
-[]\OT1/cmr/m/n/10 upper-limit on the re-heat
- []
-
-
-Underfull \hbox (badness 1762) in paragraph at lines 955--955
-[]\OT1/cmr/m/n/10 Primordial abun-dances (BBN)
- []
-
-) (./DarkEnergy/darkenergy_cmbs4.tex [69] [70
-
-]
-Chapter 4.
-[71] [72] [73]
-<DarkEnergy/mass_vs_z_s4.pdf, id=3357, 625.33624pt x 523.9575pt>
-File: DarkEnergy/mass_vs_z_s4.pdf Graphic file (type pdf)
-
-<use DarkEnergy/mass_vs_z_s4.pdf>
-Package pdftex.def Info: DarkEnergy/mass_vs_z_s4.pdf used on input line 145.
-(pdftex.def)             Requested size: 230.18251pt x 192.86186pt.
-
-<DarkEnergy/dndz_s4.pdf, id=3358, 625.33624pt x 523.9575pt>
-File: DarkEnergy/dndz_s4.pdf Graphic file (type pdf)
-
-<use DarkEnergy/dndz_s4.pdf>
-Package pdftex.def Info: DarkEnergy/dndz_s4.pdf used on input line 146.
-(pdftex.def)             Requested size: 230.18251pt x 192.86186pt.
- [74 <./DarkEnergy/mass_vs_z_s4.pdf> <./DarkEnergy/dndz_s4.pdf>]
-<DarkEnergy/m500lim_vs_z_1sigma_cmbs4_v1.pdf, id=3423, 505.89pt x 361.35pt>
-File: DarkEnergy/m500lim_vs_z_1sigma_cmbs4_v1.pdf Graphic file (type pdf)
-
-<use DarkEnergy/m500lim_vs_z_1sigma_cmbs4_v1.pdf>
-Package pdftex.def Info: DarkEnergy/m500lim_vs_z_1sigma_cmbs4_v1.pdf used on in
-put line 163.
-(pdftex.def)             Requested size: 305.33788pt x 218.10188pt.
- [75 <./DarkEnergy/m500lim_vs_z_1sigma_cmbs4_v1.pdf>]
-Missing character: There is no √ in font cmr10!
-Missing character: There is no ê in font cmr10!
- [76]
-<DarkEnergy/DM_annihilation_CMBS4.png, id=3452, 497.86pt x 377.41pt>
-File: DarkEnergy/DM_annihilation_CMBS4.png Graphic file (type png)
-
-<use DarkEnergy/DM_annihilation_CMBS4.png>
-Package pdftex.def Info: DarkEnergy/DM_annihilation_CMBS4.png used on input lin
-e 237.
-(pdftex.def)             Requested size: 328.82706pt x 249.27565pt.
- [77] [78 <./DarkEnergy/DM_annihilation_CMBS4.png>] [79]
-<DarkEnergy/ClsPP_ETHOS_a_n.pdf, id=3587, 715.47299pt x 357.7365pt>
-File: DarkEnergy/ClsPP_ETHOS_a_n.pdf Graphic file (type pdf)
-
-<use DarkEnergy/ClsPP_ETHOS_a_n.pdf>
-Package pdftex.def Info: DarkEnergy/ClsPP_ETHOS_a_n.pdf used on input line 280.
-
-(pdftex.def)             Requested size: 469.75499pt x 234.87315pt.
-
-<DarkEnergy/ClsPP_ETHOS_f_int.pdf, id=3588, 715.47299pt x 357.7365pt>
-File: DarkEnergy/ClsPP_ETHOS_f_int.pdf Graphic file (type pdf)
-
-<use DarkEnergy/ClsPP_ETHOS_f_int.pdf>
-Package pdftex.def Info: DarkEnergy/ClsPP_ETHOS_f_int.pdf used on input line 28
-1.
-(pdftex.def)             Requested size: 469.75499pt x 234.87315pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) (./BSMPhysics/bsm_cmbs4.tex [80] [81 <./DarkEnergy/ClsPP_ETHOS_a_n.pdf> <./Da
-rkEnergy/ClsPP_ETHOS_f_int.pdf>] [82
-
-]
-Chapter 5.
-<DarkEnergy/Log_constraints_axions_s4.pdf, id=3691, 578.16pt x 433.62pt>
-File: DarkEnergy/Log_constraints_axions_s4.pdf Graphic file (type pdf)
-
-<use DarkEnergy/Log_constraints_axions_s4.pdf>
-Package pdftex.def Info: DarkEnergy/Log_constraints_axions_s4.pdf used on input
- line 24.
-(pdftex.def)             Requested size: 230.18251pt x 172.63109pt.
-
-<DarkEnergy/s4_frac_omnuh2.pdf, id=3692, 578.16pt x 433.62pt>
-File: DarkEnergy/s4_frac_omnuh2.pdf Graphic file (type pdf)
-
-<use DarkEnergy/s4_frac_omnuh2.pdf>
-Package pdftex.def Info: DarkEnergy/s4_frac_omnuh2.pdf used on input line 25.
-(pdftex.def)             Requested size: 230.18251pt x 172.63109pt.
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
- [83]
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
- [84 <./DarkEnergy/Log_constraints_axions_s4.pdf> <./DarkEnergy/s4_frac_omnuh2.
-pdf
-
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./DarkEnergy/s4_frac_omnuh2.
-pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] <Inflation/admx_casper_labelled.pdf, id=3846, 556.55156pt x 519.46751pt>
-File: Inflation/admx_casper_labelled.pdf Graphic file (type pdf)
-
-<use Inflation/admx_casper_labelled.pdf>
-Package pdftex.def Info: Inflation/admx_casper_labelled.pdf used on input line 
-57.
-(pdftex.def)             Requested size: 140.92792pt x 131.5311pt.
-
-<Inflation/alp_iso_labelled.pdf, id=3847, 542.29388pt x 514.96835pt>
-File: Inflation/alp_iso_labelled.pdf Graphic file (type pdf)
-
-<use Inflation/alp_iso_labelled.pdf>
-Package pdftex.def Info: Inflation/alp_iso_labelled.pdf used on input line 58.
-(pdftex.def)             Requested size: 140.92792pt x 133.82574pt.
-
-<Inflation/ALP_iso_mass_m25_Hi_sensitivity_resolution.pdf, id=3848, 578.16pt x 
-433.62pt>
-File: Inflation/ALP_iso_mass_m25_Hi_sensitivity_resolution.pdf Graphic file (ty
-pe pdf)
- <use Inflation/ALP_iso_mass_m25_Hi_sensitivity_resolution.pdf>
-Package pdftex.def Info: Inflation/ALP_iso_mass_m25_Hi_sensitivity_resolution.p
-df used on input line 59.
-(pdftex.def)             Requested size: 187.89912pt x 140.92482pt.
-
-
-LaTeX Warning: Citation `Hlozek:2015axa' on page 85 undefined on input line 65.
-
-
-
-LaTeX Warning: Citation `Hlozek:2015axa' on page 85 undefined on input line 65.
-
-
-
-LaTeX Warning: Reference `sec:uladiabat' on page 85 undefined on input line 65.
-
-
-[85 <./Inflation/admx_casper_labelled.pdf> <./Inflation/alp_iso_labelled.pdf> <
-./Inflation/ALP_iso_mass_m25_Hi_sensitivity_resolution.pdf>]
-<Neutrinos/AxionPhotonWithFuture.pdf, id=4086, 627.34375pt x 480.79625pt>
-File: Neutrinos/AxionPhotonWithFuture.pdf Graphic file (type pdf)
-
-<use Neutrinos/AxionPhotonWithFuture.pdf>
-Package pdftex.def Info: Neutrinos/AxionPhotonWithFuture.pdf used on input line
- 87.
-(pdftex.def)             Requested size: 328.82706pt x 252.0183pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[86] [87 <./Neutrinos/AxionPhotonWithFuture.pdf>]
-<Neutrinos/DipoleWithCASPErAndBBN.pdf, id=4122, 438.63875pt x 239.89626pt>
-File: Neutrinos/DipoleWithCASPErAndBBN.pdf Graphic file (type pdf)
-
-<use Neutrinos/DipoleWithCASPErAndBBN.pdf>
-Package pdftex.def Info: Neutrinos/DipoleWithCASPErAndBBN.pdf used on input lin
-e 121.
-(pdftex.def)             Requested size: 328.82706pt x 179.8412pt.
- [88 <./Neutrinos/DipoleWithCASPErAndBBN.pdf>]
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ú in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ú in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
- [89]
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ú in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
- [90] [91]) (./CMBLensing/cmblensing_cmbs4.tex [92]
-Chapter 6.
-
-Underfull \hbox (badness 10000) in paragraph at lines 23--25
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 26--27
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 28--29
-
- []
-
-[93
-
-] <CMBLensing/n0s_s4.pdf, id=4236, 587.19376pt x 587.19376pt>
-File: CMBLensing/n0s_s4.pdf Graphic file (type pdf)
-
-<use CMBLensing/n0s_s4.pdf>
-Package pdftex.def Info: CMBLensing/n0s_s4.pdf used on input line 71.
-(pdftex.def)             Requested size: 234.87749pt x 234.87334pt.
-
-<CMBLensing/signal_contribs.pdf, id=4237, 579.60541pt x 435.0654pt>
-File: CMBLensing/signal_contribs.pdf Graphic file (type pdf)
-
-<use CMBLensing/signal_contribs.pdf>
-Package pdftex.def Info: CMBLensing/signal_contribs.pdf used on input line 81.
-(pdftex.def)             Requested size: 305.33788pt x 229.19609pt.
- [94 <./CMBLensing/n0s_s4.pdf>]
-<CMBLensing/ell300_1_40.pdf, id=4278, 587.19376pt x 587.19376pt>
-File: CMBLensing/ell300_1_40.pdf Graphic file (type pdf)
-
-<use CMBLensing/ell300_1_40.pdf>
-Package pdftex.def Info: CMBLensing/ell300_1_40.pdf used on input line 96.
-(pdftex.def)             Requested size: 211.3883pt x 211.38959pt.
-
-<CMBLensing/ell300_4_00.pdf, id=4279, 587.19376pt x 587.19376pt>
-File: CMBLensing/ell300_4_00.pdf Graphic file (type pdf)
-
-<use CMBLensing/ell300_4_00.pdf>
-Package pdftex.def Info: CMBLensing/ell300_4_00.pdf used on input line 97.
-(pdftex.def)             Requested size: 211.3883pt x 211.38959pt.
- [95 <./CMBLensing/signal_contribs.pdf>]
-<CMBLensing/autoCompilation.pdf, id=4316, 731.73375pt x 370.38374pt>
-File: CMBLensing/autoCompilation.pdf Graphic file (type pdf)
-
-<use CMBLensing/autoCompilation.pdf>
-Package pdftex.def Info: CMBLensing/autoCompilation.pdf used on input line 119.
-
-(pdftex.def)             Requested size: 446.2658pt x 225.88853pt.
-
-<CMBLensing/s4errors.pdf, id=4318, 587.19376pt x 587.19376pt>
-File: CMBLensing/s4errors.pdf Graphic file (type pdf)
-
-<use CMBLensing/s4errors.pdf>
-Package pdftex.def Info: CMBLensing/s4errors.pdf used on input line 134.
-(pdftex.def)             Requested size: 399.2946pt x 399.29543pt.
- [96 <./CMBLensing/ell300_1_40.pdf> <./CMBLensing/ell300_4_00.pdf
-
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./CMBLensing/ell300_4_00.pdf
-): PDF inclusion: multiple pdfs with page group included in a single page
->] <CMBLensing/CMB_effs.pdf, id=4448, 596.25262pt x 224.58592pt>
-File: CMBLensing/CMB_effs.pdf Graphic file (type pdf)
-
-<use CMBLensing/CMB_effs.pdf>
-Package pdftex.def Info: CMBLensing/CMB_effs.pdf used on input line 174.
-(pdftex.def)             Requested size: 352.31624pt x 132.7033pt.
- [97 <./CMBLensing/autoCompilation.pdf>] [98 <./CMBLensing/s4errors.pdf>] [99 <
-./CMBLensing/CMB_effs.pdf>]
-<CMBLensing/HaloLensing.png, id=4695, 1138.2525pt x 854.19125pt>
-File: CMBLensing/HaloLensing.png Graphic file (type png)
-
-<use CMBLensing/HaloLensing.png>
-Package pdftex.def Info: CMBLensing/HaloLensing.png used on input line 226.
-(pdftex.def)             Requested size: 305.33788pt x 229.13582pt.
- [100] [101 <./CMBLensing/HaloLensing.png>]
-<CMBLensing/Delensing.png, id=4710, 696.6025pt x 507.8975pt>
-File: CMBLensing/Delensing.png Graphic file (type png)
-
-<use CMBLensing/Delensing.png>
-Package pdftex.def Info: CMBLensing/Delensing.png used on input line 257.
-(pdftex.def)             Requested size: 328.82706pt x 239.75035pt.
-
-<CMBLensing/delensingIterative.png, id=4712, 426.8748pt x 411.4572pt>
-File: CMBLensing/delensingIterative.png Graphic file (type png)
-
-<use CMBLensing/delensingIterative.png>
-Package pdftex.def Info: CMBLensing/delensingIterative.png used on input line 2
-67.
-(pdftex.def)             Requested size: 234.87749pt x 226.39632pt.
- [102 <./CMBLensing/Delensing.png>]
-[103 <./CMBLensing/delensingIterative.png>] [104]
-<CMBLensing/Allisonetal.png, id=4733, 873.2625pt x 588.1975pt>
-File: CMBLensing/Allisonetal.png Graphic file (type png)
-
-<use CMBLensing/Allisonetal.png>
-Package pdftex.def Info: CMBLensing/Allisonetal.png used on input line 360.
-(pdftex.def)             Requested size: 352.31624pt x 237.3032pt.
- [105]) (./Analysis/analysis_cmbs4.tex [106 <./CMBLensing/Allisonetal.png>]
-Chapter 7.
-[107
-
-] <Analysis/da.pdf, id=4757, 811.03pt x 1162.3425pt>
-File: Analysis/da.pdf Graphic file (type pdf)
- <use Analysis/da.pdf>
-Package pdftex.def Info: Analysis/da.pdf used on input line 37.
-(pdftex.def)             Requested size: 234.87749pt x 336.60956pt.
-
-[108 <./Analysis/da.pdf>] [109] (./Analysis/tod_processing.tex
-<Analysis/td.pdf, id=4787, 811.03pt x 1162.3425pt>
-File: Analysis/td.pdf Graphic file (type pdf)
- <use Analysis/td.pdf>
-Package pdftex.def Info: Analysis/td.pdf used on input line 15.
-(pdftex.def)             Requested size: 234.87749pt x 336.60956pt.
-
-[110 <./Analysis/td.pdf>] [111]) [112] (./Analysis/component_separation.tex
-<Analysis/cs.pdf, id=4867, 811.03pt x 1162.3425pt>
-File: Analysis/cs.pdf Graphic file (type pdf)
- <use Analysis/cs.pdf>
-Package pdftex.def Info: Analysis/cs.pdf used on input line 21.
-(pdftex.def)             Requested size: 234.87749pt x 336.60956pt.
-
-<Analysis/Power_Spectrum_figure_showing_foregrounds.pdf, id=4868, 789.95125pt x
- 667.89528pt>
-File: Analysis/Power_Spectrum_figure_showing_foregrounds.pdf Graphic file (type
- pdf)
- <use Analysis/Power_Spectrum_figure_showing_foregrounds.pdf>
-Package pdftex.def Info: Analysis/Power_Spectrum_figure_showing_foregrounds.pdf
- used on input line 30.
-(pdftex.def)             Requested size: 234.87749pt x 198.58665pt.
-
-[113 <./Analysis/cs.pdf>] [114 <./Analysis/Power_Spectrum_figure_showing_foregr
-ounds.pdf>] [115]
-Underfull \hbox (badness 10000) in paragraph at lines 131--133
-
- []
-
-[116] [117]) [118] (./Analysis/statistics_parameters.tex
-<Analysis/sp.pdf, id=5063, 811.03pt x 1162.3425pt>
-File: Analysis/sp.pdf Graphic file (type pdf)
- <use Analysis/sp.pdf>
-Package pdftex.def Info: Analysis/sp.pdf used on input line 32.
-(pdftex.def)             Requested size: 234.87749pt x 336.60956pt.
-
-[119 <./Analysis/sp.pdf>] [120] [121] [122] [123]) [124]
-<Analysis/sim.pdf, id=5199, 1053.9375pt x 990.70125pt>
-File: Analysis/sim.pdf Graphic file (type pdf)
- <use Analysis/sim.pdf>
-Package pdftex.def Info: Analysis/sim.pdf used on input line 70.
-(pdftex.def)             Requested size: 234.87749pt x 220.7818pt.
-
-[125 <./Analysis/sim.pdf>] (./Analysis/sky_modeling.tex
-<Analysis/sm.pdf, id=5222, 1053.9375pt x 990.70125pt>
-File: Analysis/sm.pdf Graphic file (type pdf)
- <use Analysis/sm.pdf>
-Package pdftex.def Info: Analysis/sm.pdf used on input line 27.
-(pdftex.def)             Requested size: 234.87749pt x 220.7818pt.
-
-[126 <./Analysis/sm.pdf>] [127] [128] [129]) [130]
-(./Analysis/data_simulation.tex
-<Analysis/ds.pdf, id=5280, 1053.9375pt x 990.70125pt>
-File: Analysis/ds.pdf Graphic file (type pdf)
- <use Analysis/ds.pdf>
-Package pdftex.def Info: Analysis/ds.pdf used on input line 10.
-(pdftex.def)             Requested size: 234.87749pt x 220.7818pt.
-
-[131 <./Analysis/ds.pdf>] [132]) [133]
-<Analysis/simda.pdf, id=5318, 1614.03pt x 1162.3425pt>
-File: Analysis/simda.pdf Graphic file (type pdf)
-
-<use Analysis/simda.pdf>
-Package pdftex.def Info: Analysis/simda.pdf used on input line 93.
-(pdftex.def)             Requested size: 352.31624pt x 253.71199pt.
- [134 <./Analysis/simda.pdf>]
-(./Analysis/forecasting.tex [135] [136]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 63.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\kappa' on input line 63.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\kappa' on input line 63.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 63.
-
-[137] [138]) [139] (./Analysis/implementation.tex
-<Analysis/cmb_hpc_scaling.pdf, id=5397, 764.63002pt x 600.51353pt>
-File: Analysis/cmb_hpc_scaling.pdf Graphic file (type pdf)
-
-<use Analysis/cmb_hpc_scaling.pdf>
-Package pdftex.def Info: Analysis/cmb_hpc_scaling.pdf used on input line 11.
-(pdftex.def)             Requested size: 352.31624pt x 276.69772pt.
- [140 <./Analysis/cmb_hpc_scaling.pdf>]
-<Analysis/all_tod.pdf, id=5424, 1614.03pt x 1162.3425pt>
-File: Analysis/all_tod.pdf Graphic file (type pdf)
-
-<use Analysis/all_tod.pdf>
-Package pdftex.def Info: Analysis/all_tod.pdf used on input line 22.
-(pdftex.def)             Requested size: 352.31624pt x 253.71199pt.
-)) (./cmbs4_scibook.bbl [141 <./Analysis/all_tod.pdf>] [142] [143] [144]
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no â in font cmr10!
- [145] [146] [147] [148]
-Missing character: There is no √ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no √ in font cmr10!
-Missing character: There is no â in font cmr10!
-Missing character: There is no √ in font cmr10!
-Missing character: There is no © in font cmr10!
-Missing character: There is no Ô in font cmr10!
-Missing character: There is no ø in font cmr10!
-Missing character: There is no Ω in font cmr10!
- [149] [150] [151] [152] [153]
-Missing character: There is no Ô in font cmr10!
-Missing character: There is no ø in font cmr10!
-Missing character: There is no Ω in font cmr10!
-
-[154] [155] [156]
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ì in font cmr10!
-Missing character: There is no √ in font cmr10!
-Missing character: There is no © in font cmr10!
-Missing character: There is no √ in font cmr10!
-Missing character: There is no ¥ in font cmr10!
-Missing character: There is no √ in font cmr10!
-Missing character: There is no © in font cmr10!
-Missing character: There is no √ in font cmr10!
-Missing character: There is no ¥ in font cmr10!
- [157] [158] [159] [160] [161] [162] [163] [164]
-Underfull \hbox (badness 1742) in paragraph at lines 2319--2324
-[]\OT1/cmr/m/n/10 Mathew Mad-havacheril et al.  Ev-i-dence of Lens-ing of the C
-os-mic Mi-crowave Back-ground
- []
-
-
-Underfull \hbox (badness 1052) in paragraph at lines 2319--2324
-\OT1/cmr/m/n/10 by Dark Mat-ter Ha-los.  \OT1/cmr/m/it/10 Phys. Rev. Lett.\OT1/
-cmr/m/n/10 , 114(15):151302, 2015.  [Ad-den-dum: Phys. Rev.
- []
-
-[165]
-Missing character: There is no Ô in font cmr10!
-Missing character: There is no ø in font cmr10!
-Missing character: There is no Ω in font cmr10!
- [166]
-Missing character: There is no √ in font cmr10!
-Missing character: There is no © in font cmr10!
-Missing character: There is no ≈ in font cmr10!
-Missing character: There is no æ in font cmr10!
- [167] [168] [169] [170] [171]
-Missing character: There is no á in font cmr10!
-Missing character: There is no ’ in font cmr10!
-Missing character: There is no ’ in font cmr10!
-Missing character: There is no é in font cmr10!
- [172] [173] [174] [175] [176]
-[177]
-Missing character: There is no Ô in font cmr10!
-Missing character: There is no ø in font cmr10!
-Missing character: There is no Ω in font cmr10!
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 188.
- [178]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 188.
- (./cmbs4_scibook.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 188.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 188.
-Package rerunfilecheck Info: File `cmbs4_scibook.out' has not changed.
-(rerunfilecheck)             Checksum: 083AC694E5F64279DA2E1E28EC0F641B;11692.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 188.
- ) 
-Here is how much of TeX's memory you used:
- 9280 strings out of 493089
- 138964 string characters out of 6134842
- 255563 words of memory out of 5000000
- 11430 multiletter control sequences out of 15000+600000
- 23508 words of font info for 84 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 29i,14n,34p,2202b,434s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
-usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxsl10.pfb><
-/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><
-/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
-usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb
-></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.
-pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.p
-fb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pf
-b></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb>
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></
-usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></us
-r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
-local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/lo
-cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/lo
-cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
-l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/
-texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/te
-xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texli
-ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/
-2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/201
-5/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2015/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsl9.pfb></usr/local/texlive/2015/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2015/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/font
-s/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2015/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmti7.pfb></usr/local/texlive/2015/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/p
-ublic/amsfonts/symbols/msam10.pfb></usr/local/texlive/2015/texmf-dist/fonts/typ
-e1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2015/texmf-dist/fonts
-/type1/public/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2015/texmf-dist/fo
-nts/type1/urw/ncntrsbk/uncr8a.pfb>
-Output written on cmbs4_scibook.pdf (187 pages, 6847789 bytes).
-PDF statistics:
- 5947 PDF objects out of 6186 (max. 8388607)
- 4650 compressed objects within 47 object streams
- 1092 named destinations out of 1200 (max. 500000)
- 1456 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+LaTeX Warning: Citation `Kasuya:
