@@ -419,6 +419,11 @@ Minos Axenides, Robert~H. Brandenberger, and Michael~S. Turner.
 \newblock {Development of Axion Perturbations in an Axion Dominated Universe}.
 \newblock {\em Phys. Lett.}, B126:178, 1983.
 
+\bibitem{Babich:2004gb}
+Daniel Babich, Paolo Creminelli, and Matias Zaldarriaga.
+\newblock {The Shape of Non-Gaussianities}.
+\newblock {\em JCAP}, 0408:009, 2004.
+
 \bibitem{Bachlechner:2015qja}
 Thomas~C. Bachlechner, Cody Long, and Liam McAllister.
 \newblock {Planckian Axions and the Weak Gravity Conjecture}.
@@ -1099,6 +1104,12 @@ Csaba Csaki, Nemanja Kaloper, Javi Serra, and John Terning.
 \newblock {Inflation from Broken Scale Invariance}.
 \newblock {\em Phys. Rev. Lett.}, 113:161302, 2014.
 
+\bibitem{Cuesta:2015iho}
+Antonio~J. Cuesta, Viviana Niro, and Licia Verde.
+\newblock {Neutrino mass limits: robust information from the power spectrum of
+  galaxy surveys}.
+\newblock {\em Phys. Dark Univ.}, 13:77--86, 2016.
+
 \bibitem{QUAD2010}
 T.~{Culverhouse}, P.~{Ade}, J.~{Bock}, M.~{Bowden}, M.~L. {Brown}, G.~{Cahill},
   P.~G. {Castro}, S.~E. {Church}, R.~{Friedman}, K.~{Ganga}, W.~K. {Gear},
@@ -1235,6 +1246,11 @@ Roberta Diamanti, Elena Giusarma, Olga Mena, Maria Archidiacono, and Alessandro
 \newblock {Dark Radiation and interacting scenarios}.
 \newblock {\em Phys. Rev. D}, 87:063509, 2013.
 
+\bibitem{2016JCAP...02..017D}
+E.~{Dimastrogiovanni}, M.~{Fasiello}, and M.~{Kamionkowski}.
+\newblock {Imprints of massive primordial fields on large-scale structure}.
+\newblock {\em \jcap}, 2:017, February 2016.
+
 \bibitem{Dimastrogiovanni:2012st}
 Emanuela Dimastrogiovanni, Matteo Fasiello, and Andrew~J. Tolley.
 \newblock {Low-Energy Effective Field Theory for Chromo-Natural Inflation}.
@@ -1346,6 +1362,11 @@ S.~Eliseev et~al.
 \newblock {Direct Measurement of the Mass Difference of $^{163}$Ho and
   $^{163}$Dy Solves the $Q$-Value Puzzle for the Neutrino Mass Determination}.
 \newblock {\em Phys. Rev. Lett.}, 115(6):062501, 2015.
+
+\bibitem{2013JCAP...10..011E}
+S.~{Endlich}, A.~{Nicolis}, and J.~{Wang}.
+\newblock {Solid inflation}.
+\newblock {\em \jcap}, 10:011, October 2013.
 
 \bibitem{Enqvist:2000hp}
 Kari Enqvist, Hannu Kurki-Suonio, and Jussi Valiviita.
@@ -2256,6 +2277,11 @@ Joanes Lizarraga, Jon Urrestilla, David Daverio, Mark Hindmarsh, Martin Kunz,
   anisotropies}.
 \newblock {\em Phys. Rev.}, D90(10):103504, 2014.
 
+\bibitem{LoVerde:2014pxa}
+Marilena LoVerde.
+\newblock {Halo bias in mixed dark matter cosmologies}.
+\newblock {\em Phys. Rev.}, D90(8):083530, 2014.
+
 \bibitem{LoVerde:2014rxa}
 Marilena LoVerde.
 \newblock {Spherical collapse in $\nu \Lambda$CDM}.
@@ -2708,6 +2734,12 @@ L.~{Page}, G.~{Hinshaw}, E.~{Komatsu}, M.~R. {Nolta}, D.~N. {Spergel}, C.~L.
   Polarization Analysis}.
 \newblock {\em \apjs}, 170:335--376, June 2007.
 
+\bibitem{Palanque-Delabrouille:2014jca}
+Nathalie Palanque-Delabrouille et~al.
+\newblock {Constraint on neutrino masses from SDSS-III/BOSS Ly$\alpha$ forest
+  and other cosmological probes}.
+\newblock {\em JCAP}, 1502(02):045, 2015.
+
 \bibitem{Palti:2014kza}
 Eran Palti and Timo Weigand.
 \newblock {Towards large r from [p, q]-inflation}.
@@ -2839,6 +2871,14 @@ O.~Pisanti, A.~Cirillo, S.~Esposito, F.~Iocco, G.~Mangano, G.~Miele, and P.~D.
 \newblock {Planck 2013 results. XVIII. The gravitational lensing-infrared
   background correlation}.
 \newblock {\em \aap}, 571:A18, November 2014.
+
+\bibitem{planck13-24}
+{Planck Collaboration}, P.~A.~R. {Ade}, N.~{Aghanim}, C.~{Armitage-Caplan},
+  M.~{Arnaud}, M.~{Ashdown}, F.~{Atrio-Barandela}, J.~{Aumont},
+  C.~{Baccigalupi}, A.~J. {Banday}, and et~al.
+\newblock {Planck 2013 results. XXIV. Constraints on primordial
+  non-Gaussianity}.
+\newblock {\em \aap}, 571:A24, November 2014.
 
 \bibitem{Ade:2015lrj}
 {Planck Collaboration}, P.~A.~R. {Ade}, N.~{Aghanim}, M.~{Arnaud}, F.~{Arroja},
@@ -3382,6 +3422,12 @@ M.~Tegmark et~al.
 \newblock {\em \prd}, page accepted, 2003.
 \newblock astro-ph/0310723.
 
+\bibitem{Tereno:2008mm}
+Ismael Tereno, Carlo Schimd, Jean-Philippe Uzan, Martin Kilbinger, Frederic~H.
+  Vincent, and Liping Fu.
+\newblock {CFHTLS weak-lensing constraints on the neutrino masses}.
+\newblock {\em Astron. Astrophys.}, 500:657--665, 2009.
+
 \bibitem{POLARBEAR}
 {The {\sc Polarbear} Collaboration}, P.~Ade, Y.~Akiba, a.~E. Anthony,
   K.~Arnold, M.~Atlas, D.~Barron, D.~Boettger, J.~Borrill, S.~Chapman,
@@ -3594,6 +3640,13 @@ Mark Wyman, Douglas~H. Rudd, R.~Ali Vanderveld, and Wayne Hu.
 \newblock {Neutrinos Help Reconcile Planck Measurements with the Local
   Universe}.
 \newblock {\em Phys. Rev. Lett.}, 112(5):051302, 2014.
+
+\bibitem{2012JCAP...06..010X}
+J.-Q. {Xia}, B.~R. {Granett}, M.~{Viel}, S.~{Bird}, L.~{Guzzo}, M.~G.
+  {Haehnelt}, J.~{Coupon}, H.~J. {McCracken}, and Y.~{Mellier}.
+\newblock {Constraints on massive neutrinos from the CFHTLS angular power
+  spectrum}.
+\newblock {\em \jcap}, 6:010, June 2012.
 
 \bibitem{Zaldarriaga:2003my}
 Matias Zaldarriaga.

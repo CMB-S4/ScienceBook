@@ -3,88 +3,88 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: cmbs4_scibook.aux
 The style file: plain.bst
 Case mismatch error between cite keys Hlozek:2015axa and hlozek:2015axa
----line 787 of file cmbs4_scibook.aux
+---line 808 of file cmbs4_scibook.aux
  : \citation{Hlozek:2015axa
  :                         }
 I'm skipping whatever remains of this command
 Case mismatch error between cite keys Hlozek:2015axa and hlozek:2015axa
----line 789 of file cmbs4_scibook.aux
+---line 810 of file cmbs4_scibook.aux
  : \citation{Hlozek:2015axa
  :                         }
 I'm skipping whatever remains of this command
-Reallocated field_info (elt_size=4) to 17719 items from 5000.
+Reallocated field_info (elt_size=4) to 17926 items from 5000.
 Database file #1: cmbs4.bib
-You're missing a field part---line 486 of file cmbs4.bib
+You're missing a field part---line 561 of file cmbs4.bib
  :     month = 
  :             ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 513 of file cmbs4.bib
+Repeated entry---line 588 of file cmbs4.bib
  : @article{Moritz2016
  :                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1273 of file cmbs4.bib
+Repeated entry---line 1348 of file cmbs4.bib
  : @article{   abazajian:2002bj
  :                             ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3964 of file cmbs4.bib
+Repeated entry---line 4039 of file cmbs4.bib
  : @article{Lyth:2002my
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 14006 of file cmbs4.bib
+Repeated entry---line 14081 of file cmbs4.bib
  : @article{dunkley09
  :                   ,
 I'm skipping whatever remains of this entry
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
-Repeated entry---line 43673 of file cmbs4.bib
+Repeated entry---line 43786 of file cmbs4.bib
  : @article{Tinker:2008ff
  :                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 43690 of file cmbs4.bib
+Repeated entry---line 43803 of file cmbs4.bib
  : @article{Costanzi:2013bha
  :                          ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 43725 of file cmbs4.bib
+Repeated entry---line 43838 of file cmbs4.bib
  : @article{LoVerde:2014rxa
  :                         ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 43740 of file cmbs4.bib
+Repeated entry---line 43853 of file cmbs4.bib
  : @article{Hasselfield:2013wf
  :                            ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 43756 of file cmbs4.bib
+Repeated entry---line 43869 of file cmbs4.bib
  : @article{Mantz:2014paa
  :                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 43771 of file cmbs4.bib
+Repeated entry---line 43884 of file cmbs4.bib
  : @article{Ade:2015fva
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 43783 of file cmbs4.bib
+Repeated entry---line 43896 of file cmbs4.bib
  : @article{deHaan:2016qvy
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 43942 of file cmbs4.bib
+Repeated entry---line 44055 of file cmbs4.bib
  : @article{Wang:2005vr
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 46898 of file cmbs4.bib
+Repeated entry---line 47011 of file cmbs4.bib
  : @article{Mueller:2014dba
  :                         ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 46983 of file cmbs4.bib
+Repeated entry---line 47096 of file cmbs4.bib
  : @article{crawford07
  :                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 47088 of file cmbs4.bib
+Repeated entry---line 47201 of file cmbs4.bib
  : @article{Kaplinghat:2003bh
  :                           ,
 I'm skipping whatever remains of this entry
 Reallocated str_pool (elt_size=1) to 195000 items from 130000.
-Repeated entry---line 47887 of file cmbs4.bib
+Repeated entry---line 48000 of file cmbs4.bib
  : @article{Boyle:2007zx
  :                      ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 47903 of file cmbs4.bib
+Repeated entry---line 48016 of file cmbs4.bib
  : @article{Boyle:2003km
  :                      ,
 I'm skipping whatever remains of this entry
@@ -126,45 +126,45 @@ while executing---line 1090 of file plain.bst
 Warning--empty journal in Osato:2016ixc
 Warning--empty journal in Peloso:2016gqs
 Warning--empty journal in Strumia:2006db
-You've used 553 entries,
+You've used 562 entries,
             2118 wiz_defined-function locations,
-            3444 strings with 137086 characters,
-and the built_in function-call counts, 261472 in all, are:
-= -- 22259
-> -- 22876
+            3483 strings with 138487 characters,
+and the built_in function-call counts, 264793 in all, are:
+= -- 22558
+> -- 23107
 < -- 12
-+ -- 9063
-- -- 8505
-* -- 24214
-:= -- 47412
-add.period$ -- 1669
-call.type$ -- 553
-change.case$ -- 5856
++ -- 9154
+- -- 8587
+* -- 24497
+:= -- 48009
+add.period$ -- 1696
+call.type$ -- 562
+change.case$ -- 5923
 chr.to.int$ -- 0
-cite$ -- 587
-duplicate$ -- 6109
-empty$ -- 13211
-format.name$ -- 8505
-if$ -- 49505
+cite$ -- 596
+duplicate$ -- 6208
+empty$ -- 13420
+format.name$ -- 8587
+if$ -- 50155
 int.to.chr$ -- 0
-int.to.str$ -- 553
-missing$ -- 556
-newline$ -- 2777
-num.names$ -- 1112
-pop$ -- 4972
+int.to.str$ -- 562
+missing$ -- 565
+newline$ -- 2822
+num.names$ -- 1130
+pop$ -- 5021
 preamble$ -- 1
-purify$ -- 5306
+purify$ -- 5364
 quote$ -- 0
-skip$ -- 4173
+skip$ -- 4238
 stack$ -- 0
-substring$ -- 10662
-swap$ -- 595
+substring$ -- 10815
+swap$ -- 604
 text.length$ -- 12
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 2206
+type$ -- 2242
 warning$ -- 34
-while$ -- 1607
-width$ -- 556
-write$ -- 6014
+while$ -- 1634
+width$ -- 565
+write$ -- 6113
 (There were 22 error messages)
