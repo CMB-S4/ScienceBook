@@ -11,23 +11,26 @@
 \contentsline {chapter}{\numberline {2}Inflation Physics from the Cosmic Microwave Background}{11}{chapter.2}
 \contentsline {section}{\numberline {2.1}Introduction}{11}{section.2.1}
 \contentsline {section}{\numberline {2.2}Basics of Cosmological Inflation}{13}{section.2.2}
-\contentsline {section}{\numberline {2.3}Implications of a detection of primordial gravitational waves with CMB-S4}{15}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}The energy scale of inflation}{17}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Planckian field ranges and symmetries}{18}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.2.1}Basics I}{13}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Basics II}{15}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}Implications of a detection of primordial gravitational waves with CMB-S4}{18}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}The energy scale of inflation}{18}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Planckian field ranges and symmetries}{19}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Constraints on the graviton mass}{21}{subsection.2.3.3}
-\contentsline {subsection}{\numberline {2.3.4}Constraining alternatives to inflation}{22}{subsection.2.3.4}
-\contentsline {subsection}{\numberline {2.3.5}Following up on a detection}{23}{subsection.2.3.5}
-\contentsline {subsubsection}{\numberline {2.3.5.1}Distinguishing vacuum fluctuations from other particle physics sources of B-modes}{23}{subsubsection.2.3.5.1}
-\contentsline {subsubsection}{\numberline {2.3.5.2}Probing matter and gravitational interactions at the inflationary scale}{24}{subsubsection.2.3.5.2}
-\contentsline {section}{\numberline {2.4}Lessons from upper limits}{25}{section.2.4}
-\contentsline {section}{\numberline {2.5}CMB data products and simulations required to achieve goals for PGW}{28}{section.2.5}
+\contentsline {subsection}{\numberline {2.3.4}Is Inflation Falsifiable?}{22}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}Constraining alternatives to inflation}{22}{subsection.2.3.5}
+\contentsline {subsection}{\numberline {2.3.6}Following up on a detection}{24}{subsection.2.3.6}
+\contentsline {subsubsection}{\numberline {2.3.6.1}Distinguishing vacuum fluctuations from other particle physics sources of B-modes}{24}{subsubsection.2.3.6.1}
+\contentsline {subsubsection}{\numberline {2.3.6.2}Probing matter and gravitational interactions at the inflationary scale}{25}{subsubsection.2.3.6.2}
+\contentsline {section}{\numberline {2.4}Lessons from upper limits}{26}{section.2.4}
+\contentsline {section}{\numberline {2.5}CMB data products and simulations required to achieve goals for PGW}{29}{section.2.5}
 \contentsline {section}{\numberline {2.6}Improved constraints on primordial density perturbations}{29}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}The power spectrum of primordial density perturbations}{29}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.1}The power spectrum of primordial density perturbations}{30}{subsection.2.6.1}
 \contentsline {subsection}{\numberline {2.6.2}Higher order correlations}{31}{subsection.2.6.2}
-\contentsline {subsection}{\numberline {2.6.3}Forecasts}{32}{subsection.2.6.3}
-\contentsline {section}{\numberline {2.7}Isocurvature}{35}{section.2.7}
-\contentsline {subsection}{\numberline {2.7.1}The Curvaton Scenario}{36}{subsection.2.7.1}
-\contentsline {section}{\numberline {2.8}Summary}{39}{section.2.8}
+\contentsline {subsection}{\numberline {2.6.3}Forecasts}{33}{subsection.2.6.3}
+\contentsline {section}{\numberline {2.7}Isocurvature}{37}{section.2.7}
+\contentsline {subsection}{\numberline {2.7.1}The Curvaton Scenario}{38}{subsection.2.7.1}
+\contentsline {section}{\numberline {2.8}Summary}{40}{section.2.8}
 \contentsline {chapter}{\numberline {3}Neutrinos and Light Species from the Cosmic Microwave Background}{41}{chapter.3}
 \contentsline {section}{\numberline {3.1}Introduction}{41}{section.3.1}
 \contentsline {section}{\numberline {3.2}Neutrino Mass}{42}{section.3.2}

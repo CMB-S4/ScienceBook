@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  13 JUN 2016 00:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  15 JUN 2016 11:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -334,9 +334,6 @@ LaTeX Warning: Unused global option(s):
 
 (./cmbs4_scibook.aux
 
-LaTeX Warning: Label `default' multiply defined.
-
-
 LaTeX Warning: Label `tab:beam' multiply defined.
 
 )
@@ -422,11 +419,11 @@ ier (name{page.i}) has been already used, duplicate ignored
 l.18 \eject
             [1]) [2] (./cmbs4_scibook.toc [3
 
-] [4] [5] [6])
+] [4] [5] [6] [7])
 \tf@toc=\write4
 \openout4 = `cmbs4_scibook.toc'.
 
- [7]
+ [8]
 (./Intro/intro_cmbs4.tex
 Chapter 1.
 [1
@@ -434,7 +431,7 @@ Chapter 1.
 ] [2]
 Missing character: There is no “ in font cmr10!
 Missing character: There is no ” in font cmr10!
- [3] [4] <Intro/expt_progress.pdf, id=775, 509.905pt x 401.5pt>
+ [3] [4] <Intro/expt_progress.pdf, id=795, 509.905pt x 401.5pt>
 File: Intro/expt_progress.pdf Graphic file (type pdf)
 
 <use Intro/expt_progress.pdf>
@@ -465,14 +462,14 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 131.
 
-[6] <Intro/Fig-FlowChart1_v1.pdf, id=801, 794.97pt x 614.295pt>
+[6] <Intro/Fig-FlowChart1_v1.pdf, id=820, 794.97pt x 614.295pt>
 File: Intro/Fig-FlowChart1_v1.pdf Graphic file (type pdf)
 
 <use Intro/Fig-FlowChart1_v1.pdf>
 Package pdftex.def Info: Intro/Fig-FlowChart1_v1.pdf used on input line 150.
 (pdftex.def)             Requested size: 446.2658pt x 344.84645pt.
 
-<Intro/Fig-FlowChart2_v1.pdf, id=803, 1027.84pt x 770.88pt>
+<Intro/Fig-FlowChart2_v1.pdf, id=822, 1027.84pt x 770.88pt>
 File: Intro/Fig-FlowChart2_v1.pdf Graphic file (type pdf)
 
 <use Intro/Fig-FlowChart2_v1.pdf>
@@ -485,26 +482,26 @@ Package pdftex.def Info: Intro/Fig-FlowChart2_v1.pdf used on input line 159.
 ]
 Chapter 2.
 [11]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 43.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 40.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 43.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 40.
  [12]
-<Inflation/CausalStructure.pdf, id=1047, 614.295pt x 794.97pt>
+<Inflation/CausalStructure.pdf, id=1066, 614.295pt x 794.97pt>
 File: Inflation/CausalStructure.pdf Graphic file (type pdf)
 
 <use Inflation/CausalStructure.pdf>
-Package pdftex.def Info: Inflation/CausalStructure.pdf used on input line 67.
+Package pdftex.def Info: Inflation/CausalStructure.pdf used on input line 68.
 (pdftex.def)             Requested size: 169.11208pt x 218.85396pt.
 
-<Inflation/QuantumFluctuations.pdf, id=1048, 614.295pt x 794.97pt>
+<Inflation/QuantumFluctuations.pdf, id=1067, 614.295pt x 794.97pt>
 File: Inflation/QuantumFluctuations.pdf Graphic file (type pdf)
 
 <use Inflation/QuantumFluctuations.pdf>
 Package pdftex.def Info: Inflation/QuantumFluctuations.pdf used on input line 6
-8.
+9.
 (pdftex.def)             Requested size: 169.11208pt x 218.85396pt.
 Missing character: There is no ‚ in font cmsl9!
 Missing character: There is no Ä in font cmsl9!
@@ -536,153 +533,181 @@ Missing character: There is no î in font cmsl9!
 Missing character: There is no ‚ in font cmsl9!
 Missing character: There is no Ä in font cmsl9!
 Missing character: There is no ô in font cmsl9!
- [13 <./Inflation/CausalStructure.pdf> <./Inflation/QuantumFluctuations.pdf>] [
-14]
+ [13] [14 <./Inflation/CausalStructure.pdf> <./Inflation/QuantumFluctuations.pd
+f>]
 
 LaTeX Warning: Reference `sec:other_topics' on page 15 undefined on input line 
-108.
+102.
 
 [15] [16] [17] [18] [19] [20]
 
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 290.
+(amsmath)                 on input line 289.
 
 [21] [22]
-Underfull \hbox (badness 10000) in paragraph at lines 349--354
+Underfull \hbox (badness 10000) in paragraph at lines 356--361
 
  []
 
 
-LaTeX Warning: Reference `where?' on page 23 undefined on input line 363.
+LaTeX Warning: Reference `where?' on page 23 undefined on input line 372.
 
 
-LaTeX Warning: Reference `which ones?' on page 23 undefined on input line 363.
+LaTeX Warning: Reference `which ones?' on page 23 undefined on input line 372.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 369--370
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 378--379
 
  []
 
-[23] [24] [25] [26] [27]
-<Inflation/sigr_fsky_det1e6_r0.png, id=1497, 391.34206pt x 402.18256pt>
+[24]
+
+LaTeX Warning: Citation `2013JCAP...10..011E' on page 25 undefined on input lin
+e 393.
+
+
+LaTeX Warning: Citation `2016JCAP...02..017D' on page 25 undefined on input lin
+e 393.
+
+[25] [26] [27] [28]
+<Inflation/sigr_fsky_det1e6_r0.png, id=1522, 391.34206pt x 402.18256pt>
 File: Inflation/sigr_fsky_det1e6_r0.png Graphic file (type png)
 
 <use Inflation/sigr_fsky_det1e6_r0.png>
 Package pdftex.def Info: Inflation/sigr_fsky_det1e6_r0.png used on input line 4
-81.
+90.
 (pdftex.def)             Requested size: 230.18251pt x 236.5615pt.
 
-<Inflation/sigr_fsky_det1e6_r01.png, id=1499, 391.34206pt x 402.18256pt>
+<Inflation/sigr_fsky_det1e6_r01.png, id=1524, 391.34206pt x 402.18256pt>
 File: Inflation/sigr_fsky_det1e6_r01.png Graphic file (type png)
 
 <use Inflation/sigr_fsky_det1e6_r01.png>
 Package pdftex.def Info: Inflation/sigr_fsky_det1e6_r01.png used on input line 
-482.
+491.
 (pdftex.def)             Requested size: 230.18251pt x 236.5615pt.
 
-<Inflation/sigr_effort_r0.png, id=1502, 387.3672pt x 399.29175pt>
+<Inflation/sigr_effort_r0.png, id=1527, 387.3672pt x 399.29175pt>
 File: Inflation/sigr_effort_r0.png Graphic file (type png)
 
 <use Inflation/sigr_effort_r0.png>
-Package pdftex.def Info: Inflation/sigr_effort_r0.png used on input line 496.
+Package pdftex.def Info: Inflation/sigr_effort_r0.png used on input line 505.
 (pdftex.def)             Requested size: 230.18251pt x 237.26776pt.
 
-<Inflation/sigr_effort_r01.png, id=1503, 387.3672pt x 399.29175pt>
+<Inflation/sigr_effort_r01.png, id=1528, 387.3672pt x 399.29175pt>
 File: Inflation/sigr_effort_r01.png Graphic file (type png)
 
 <use Inflation/sigr_effort_r01.png>
-Package pdftex.def Info: Inflation/sigr_effort_r01.png used on input line 497.
+Package pdftex.def Info: Inflation/sigr_effort_r01.png used on input line 506.
 (pdftex.def)             Requested size: 230.18251pt x 237.26776pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[28] [29 <./Inflation/sigr_fsky_det1e6_r0.png> <./Inflation/sigr_fsky_det1e6_r0
-1.png>] [30 <./Inflation/sigr_effort_r0.png> <./Inflation/sigr_effort_r01.png>]
-[31] <Inflation/DeltaFNL_TTT.pdf, id=1578, 451.6875pt x 451.6875pt>
+[29] [30 <./Inflation/sigr_fsky_det1e6_r0.png> <./Inflation/sigr_fsky_det1e6_r0
+1.png>] [31 <./Inflation/sigr_effort_r0.png> <./Inflation/sigr_effort_r01.png>]
+[32] <Inflation/DeltaFNL_TTT.pdf, id=1609, 451.6875pt x 451.6875pt>
 File: Inflation/DeltaFNL_TTT.pdf Graphic file (type pdf)
 
 <use Inflation/DeltaFNL_TTT.pdf>
-Package pdftex.def Info: Inflation/DeltaFNL_TTT.pdf used on input line 550.
+Package pdftex.def Info: Inflation/DeltaFNL_TTT.pdf used on input line 559.
 (pdftex.def)             Requested size: 201.9912pt x 201.99622pt.
 
-<Inflation/DeltaFNL_TTT_lmin.pdf, id=1579, 451.6875pt x 451.6875pt>
+<Inflation/DeltaFNL_TTT_lmin.pdf, id=1610, 451.6875pt x 451.6875pt>
 File: Inflation/DeltaFNL_TTT_lmin.pdf Graphic file (type pdf)
 
 <use Inflation/DeltaFNL_TTT_lmin.pdf>
-Package pdftex.def Info: Inflation/DeltaFNL_TTT_lmin.pdf used on input line 551
+Package pdftex.def Info: Inflation/DeltaFNL_TTT_lmin.pdf used on input line 560
 .
 (pdftex.def)             Requested size: 201.9912pt x 201.99622pt.
- [32 <./Inflation/DeltaFNL_TTT.pdf> <./Inflation/DeltaFNL_TTT_lmin.pdf>]
-<Inflation/DeltaFNL_BTT_no_r.pdf, id=1740, 401.5pt x 401.5pt>
+
+
+LaTeX Warning: Citation `Babich:2004gb' on page 33 undefined on input line 565.
+
+
+
+LaTeX Warning: Citation `planck13-24' on page 33 undefined on input line 565.
+
+[33 <./Inflation/DeltaFNL_TTT.pdf> <./Inflation/DeltaFNL_TTT_lmin.pdf>]
+<Inflation/FixedEffortTTT_all.pdf, id=1773, 451.6875pt x 451.6875pt>
+File: Inflation/FixedEffortTTT_all.pdf Graphic file (type pdf)
+
+<use Inflation/FixedEffortTTT_all.pdf>
+Package pdftex.def Info: Inflation/FixedEffortTTT_all.pdf used on input line 59
+3.
+(pdftex.def)             Requested size: 225.48038pt x 225.48479pt.
+
+<Inflation/DeltaFNL_BTT_no_r.pdf, id=1775, 401.5pt x 401.5pt>
 File: Inflation/DeltaFNL_BTT_no_r.pdf Graphic file (type pdf)
 
 <use Inflation/DeltaFNL_BTT_no_r.pdf>
-Package pdftex.def Info: Inflation/DeltaFNL_BTT_no_r.pdf used on input line 577
+Package pdftex.def Info: Inflation/DeltaFNL_BTT_no_r.pdf used on input line 603
 .
 (pdftex.def)             Requested size: 211.3883pt x 211.39104pt.
 
-<Inflation/DeltaFNL_BTT_with_r.pdf, id=1741, 401.5pt x 401.5pt>
+<Inflation/DeltaFNL_BTT_with_r.pdf, id=1776, 401.5pt x 401.5pt>
 File: Inflation/DeltaFNL_BTT_with_r.pdf Graphic file (type pdf)
 
 <use Inflation/DeltaFNL_BTT_with_r.pdf>
-Package pdftex.def Info: Inflation/DeltaFNL_BTT_with_r.pdf used on input line 5
-78.
+Package pdftex.def Info: Inflation/DeltaFNL_BTT_with_r.pdf used on input line 6
+04.
 (pdftex.def)             Requested size: 211.3883pt x 211.39104pt.
- [33 <./Inflation/DeltaFNL_BTT_no_r.pdf> <./Inflation/DeltaFNL_BTT_with_r.pdf>]
+ [34 <./Inflation/FixedEffortTTT_all.pdf>]
 
-<Inflation/FixedEffortBTTlocal.pdf, id=1941, 464.73625pt x 379.4175pt>
+LaTeX Warning: Citation `2016JCAP...02..017D' on page 35 undefined on input lin
+e 621.
+
+<Inflation/FixedEffortBTTlocal.pdf, id=1863, 464.73625pt x 379.4175pt>
 File: Inflation/FixedEffortBTTlocal.pdf Graphic file (type pdf)
 
 <use Inflation/FixedEffortBTTlocal.pdf>
 Package pdftex.def Info: Inflation/FixedEffortBTTlocal.pdf used on input line 6
-16.
+43.
 (pdftex.def)             Requested size: 225.48038pt x 184.08095pt.
 
-<Inflation/FixedEffortBTTlocalr.pdf, id=1942, 464.73625pt x 379.4175pt>
+<Inflation/FixedEffortBTTlocalr.pdf, id=1864, 464.73625pt x 379.4175pt>
 File: Inflation/FixedEffortBTTlocalr.pdf Graphic file (type pdf)
 
 <use Inflation/FixedEffortBTTlocalr.pdf>
 Package pdftex.def Info: Inflation/FixedEffortBTTlocalr.pdf used on input line 
-617.
+644.
 (pdftex.def)             Requested size: 225.48038pt x 184.08095pt.
- [34 <./Inflation/FixedEffortBTTlocal.pdf> <./Inflation/FixedEffortBTTlocalr.pd
-f>]
-<Inflation/FixedEffortBTTequil.pdf, id=2052, 464.73625pt x 380.42125pt>
+ [35 <./Inflation/DeltaFNL_BTT_no_r.pdf> <./Inflation/DeltaFNL_BTT_with_r.pdf>]
+
+<Inflation/FixedEffortBTTequil.pdf, id=2060, 464.73625pt x 380.42125pt>
 File: Inflation/FixedEffortBTTequil.pdf Graphic file (type pdf)
 
 <use Inflation/FixedEffortBTTequil.pdf>
 Package pdftex.def Info: Inflation/FixedEffortBTTequil.pdf used on input line 6
-33.
+60.
 (pdftex.def)             Requested size: 225.48038pt x 184.56792pt.
 
-<Inflation/FixedEffortBTTequilr.pdf, id=2053, 464.73625pt x 380.42125pt>
+<Inflation/FixedEffortBTTequilr.pdf, id=2061, 464.73625pt x 380.42125pt>
 File: Inflation/FixedEffortBTTequilr.pdf Graphic file (type pdf)
 
 <use Inflation/FixedEffortBTTequilr.pdf>
 Package pdftex.def Info: Inflation/FixedEffortBTTequilr.pdf used on input line 
-634.
+661.
 (pdftex.def)             Requested size: 225.48038pt x 184.56792pt.
- [35 <./Inflation/FixedEffortBTTequil.pdf> <./Inflation/FixedEffortBTTequilr.pd
-f>]
-<Inflation/iso_schematic.pdf, id=2168, 290.93532pt x 249.06781pt>
+ [36 <./Inflation/FixedEffortBTTlocal.pdf> <./Inflation/FixedEffortBTTlocalr.pd
+f> <./Inflation/FixedEffortBTTequil.pdf> <./Inflation/FixedEffortBTTequilr.pdf>
+]
+<Inflation/iso_schematic.pdf, id=2271, 290.93532pt x 249.06781pt>
 File: Inflation/iso_schematic.pdf Graphic file (type pdf)
 
 <use Inflation/iso_schematic.pdf>
-Package pdftex.def Info: Inflation/iso_schematic.pdf used on input line 665.
+Package pdftex.def Info: Inflation/iso_schematic.pdf used on input line 692.
 (pdftex.def)             Requested size: 234.87749pt x 192.97884pt.
-
-Overfull \hbox (37.35918pt too wide) in paragraph at lines 677--686
+ [37 <./Inflation/iso_schematic.pdf>]
+Overfull \hbox (37.35918pt too wide) in paragraph at lines 704--713
  [] 
  []
 
-[36 <./Inflation/iso_schematic.pdf>] [37] [38])
-(./Neutrinos/neutrinos_cmbs4.tex [39] [40
+[38] [39]) (./Neutrinos/neutrinos_cmbs4.tex [40]
+Chapter 3.
+[41
 
 ]
-Chapter 3.
-[41]
 
 LaTeX Font Warning: Command \tiny invalid in math mode on input line 66.
 
@@ -700,14 +725,14 @@ it/10 kR\OT1/cmr/m/n/10 ) = 3([](\OML/cmm/m/it/10 kR\OT1/cmr/m/n/10 )\OML/cmm/m
 0 ^^@
  []
 
-[46] [47] [48] <Neutrinos/BetaDecay.pdf, id=2519, 246.08809pt x 171.01482pt>
+[46] [47] [48] <Neutrinos/BetaDecay.pdf, id=2618, 246.08809pt x 171.01482pt>
 File: Neutrinos/BetaDecay.pdf Graphic file (type pdf)
 
 <use Neutrinos/BetaDecay.pdf>
 Package pdftex.def Info: Neutrinos/BetaDecay.pdf used on input line 295.
 (pdftex.def)             Requested size: 234.87749pt x 163.23033pt.
 
-<Neutrinos/e-capture.pdf, id=2520, 253.59563pt x 173.97025pt>
+<Neutrinos/e-capture.pdf, id=2619, 253.59563pt x 173.97025pt>
 File: Neutrinos/e-capture.pdf Graphic file (type pdf)
 
 <use Neutrinos/e-capture.pdf>
@@ -718,14 +743,14 @@ Package pdftex.def Info: Neutrinos/e-capture.pdf used on input line 295.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [49] [50 <./Neutrinos/BetaDecay.pdf> <./Neutrinos/e-capture.pdf>]
-<Neutrinos/mbb_v_sum_m_nu.pdf, id=2678, 249.96536pt x 161.11111pt>
+<Neutrinos/mbb_v_sum_m_nu.pdf, id=2777, 249.96536pt x 161.11111pt>
 File: Neutrinos/mbb_v_sum_m_nu.pdf Graphic file (type pdf)
 
 <use Neutrinos/mbb_v_sum_m_nu.pdf>
 Package pdftex.def Info: Neutrinos/mbb_v_sum_m_nu.pdf used on input line 329.
 (pdftex.def)             Requested size: 375.80542pt x 242.24376pt.
  [51 <./Neutrinos/mbb_v_sum_m_nu.pdf>]
-<Neutrinos/IH_MajoranaPhase.png, id=2780, 971.63pt x 748.7975pt>
+<Neutrinos/IH_MajoranaPhase.png, id=2879, 971.63pt x 748.7975pt>
 File: Neutrinos/IH_MajoranaPhase.png Graphic file (type png)
 
 <use Neutrinos/IH_MajoranaPhase.png>
@@ -733,7 +758,7 @@ Package pdftex.def Info: Neutrinos/IH_MajoranaPhase.png used on input line 337.
 
 (pdftex.def)             Requested size: 328.82706pt x 253.41093pt.
  [52 <./Neutrinos/IH_MajoranaPhase.png>]
-<Neutrinos/numass_combine_dune.pdf, id=2798, 485.34323pt x 398.52892pt>
+<Neutrinos/numass_combine_dune.pdf, id=2898, 485.34323pt x 398.52892pt>
 File: Neutrinos/numass_combine_dune.pdf Graphic file (type pdf)
 
 <use Neutrinos/numass_combine_dune.pdf>
@@ -741,7 +766,7 @@ Package pdftex.def Info: Neutrinos/numass_combine_dune.pdf used on input line 3
 56.
 (pdftex.def)             Requested size: 258.36667pt x 212.16188pt.
  [53 <./Neutrinos/numass_combine_dune.pdf>] [54] [55] <Neutrinos/Neff.pdf, id=2
-873, 1027.84pt x 770.88pt>
+971, 1027.84pt x 770.88pt>
 File: Neutrinos/Neff.pdf Graphic file (type pdf)
 
 <use Neutrinos/Neff.pdf>
@@ -776,21 +801,21 @@ Underfull \hbox (badness 1762) in paragraph at lines 955--955
 ]
 Chapter 4.
 [71] [72] [73]
-<DarkEnergy/mass_vs_z_s4.pdf, id=3241, 625.33624pt x 523.9575pt>
+<DarkEnergy/mass_vs_z_s4.pdf, id=3340, 625.33624pt x 523.9575pt>
 File: DarkEnergy/mass_vs_z_s4.pdf Graphic file (type pdf)
 
 <use DarkEnergy/mass_vs_z_s4.pdf>
 Package pdftex.def Info: DarkEnergy/mass_vs_z_s4.pdf used on input line 145.
 (pdftex.def)             Requested size: 230.18251pt x 192.86186pt.
 
-<DarkEnergy/dndz_s4.pdf, id=3242, 625.33624pt x 523.9575pt>
+<DarkEnergy/dndz_s4.pdf, id=3341, 625.33624pt x 523.9575pt>
 File: DarkEnergy/dndz_s4.pdf Graphic file (type pdf)
 
 <use DarkEnergy/dndz_s4.pdf>
 Package pdftex.def Info: DarkEnergy/dndz_s4.pdf used on input line 146.
 (pdftex.def)             Requested size: 230.18251pt x 192.86186pt.
  [74 <./DarkEnergy/mass_vs_z_s4.pdf> <./DarkEnergy/dndz_s4.pdf>]
-<DarkEnergy/m500lim_vs_z_1sigma_cmbs4_v1.pdf, id=3307, 505.89pt x 361.35pt>
+<DarkEnergy/m500lim_vs_z_1sigma_cmbs4_v1.pdf, id=3405, 505.89pt x 361.35pt>
 File: DarkEnergy/m500lim_vs_z_1sigma_cmbs4_v1.pdf Graphic file (type pdf)
 
 <use DarkEnergy/m500lim_vs_z_1sigma_cmbs4_v1.pdf>
@@ -801,7 +826,7 @@ put line 163.
 Missing character: There is no √ in font cmr10!
 Missing character: There is no ê in font cmr10!
  [76]
-<DarkEnergy/DM_annihilation_CMBS4.png, id=3335, 497.86pt x 377.41pt>
+<DarkEnergy/DM_annihilation_CMBS4.png, id=3435, 497.86pt x 377.41pt>
 File: DarkEnergy/DM_annihilation_CMBS4.png Graphic file (type png)
 
 <use DarkEnergy/DM_annihilation_CMBS4.png>
@@ -809,7 +834,7 @@ Package pdftex.def Info: DarkEnergy/DM_annihilation_CMBS4.png used on input lin
 e 237.
 (pdftex.def)             Requested size: 328.82706pt x 249.27565pt.
  [77] [78 <./DarkEnergy/DM_annihilation_CMBS4.png>] [79]
-<DarkEnergy/ClsPP_ETHOS_a_n.pdf, id=3471, 715.47299pt x 357.7365pt>
+<DarkEnergy/ClsPP_ETHOS_a_n.pdf, id=3569, 715.47299pt x 357.7365pt>
 File: DarkEnergy/ClsPP_ETHOS_a_n.pdf Graphic file (type pdf)
 
 <use DarkEnergy/ClsPP_ETHOS_a_n.pdf>
@@ -817,7 +842,7 @@ Package pdftex.def Info: DarkEnergy/ClsPP_ETHOS_a_n.pdf used on input line 280.
 
 (pdftex.def)             Requested size: 469.75499pt x 234.87315pt.
 
-<DarkEnergy/ClsPP_ETHOS_f_int.pdf, id=3472, 715.47299pt x 357.7365pt>
+<DarkEnergy/ClsPP_ETHOS_f_int.pdf, id=3570, 715.47299pt x 357.7365pt>
 File: DarkEnergy/ClsPP_ETHOS_f_int.pdf Graphic file (type pdf)
 
 <use DarkEnergy/ClsPP_ETHOS_f_int.pdf>
@@ -833,7 +858,7 @@ rkEnergy/ClsPP_ETHOS_f_int.pdf>] [82
 
 ]
 Chapter 5.
-<DarkEnergy/Log_constraints_axions_s4.pdf, id=3574, 578.16pt x 433.62pt>
+<DarkEnergy/Log_constraints_axions_s4.pdf, id=3674, 578.16pt x 433.62pt>
 File: DarkEnergy/Log_constraints_axions_s4.pdf Graphic file (type pdf)
 
 <use DarkEnergy/Log_constraints_axions_s4.pdf>
@@ -841,13 +866,12 @@ Package pdftex.def Info: DarkEnergy/Log_constraints_axions_s4.pdf used on input
  line 24.
 (pdftex.def)             Requested size: 230.18251pt x 172.63109pt.
 
-<DarkEnergy/s4_omnuh2_omaxh2_allmass.pdf, id=3575, 578.16pt x 578.16pt>
-File: DarkEnergy/s4_omnuh2_omaxh2_allmass.pdf Graphic file (type pdf)
+<DarkEnergy/s4_frac_omnuh2.pdf, id=3675, 578.16pt x 433.62pt>
+File: DarkEnergy/s4_frac_omnuh2.pdf Graphic file (type pdf)
 
-<use DarkEnergy/s4_omnuh2_omaxh2_allmass.pdf>
-Package pdftex.def Info: DarkEnergy/s4_omnuh2_omaxh2_allmass.pdf used on input 
-line 25.
-(pdftex.def)             Requested size: 230.18251pt x 230.17479pt.
+<use DarkEnergy/s4_frac_omnuh2.pdf>
+Package pdftex.def Info: DarkEnergy/s4_frac_omnuh2.pdf used on input line 25.
+(pdftex.def)             Requested size: 230.18251pt x 172.63109pt.
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
@@ -861,58 +885,67 @@ Missing character: There is no ô in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
- [84 <./DarkEnergy/Log_constraints_axions_s4.pdf> <./DarkEnergy/s4_omnuh2_omaxh
-2_allmass.pdf
+ [84 <./DarkEnergy/Log_constraints_axions_s4.pdf> <./DarkEnergy/s4_frac_omnuh2.
+pdf
 
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./DarkEnergy/s4_omnuh2_omaxh
-2_allmass.pdf): PDF inclusion: multiple pdfs with page group included in a sing
-le page
->] <Inflation/admx_casper_labelled.pdf, id=3725, 556.55156pt x 519.46751pt>
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./DarkEnergy/s4_frac_omnuh2.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] <Inflation/admx_casper_labelled.pdf, id=3827, 556.55156pt x 519.46751pt>
 File: Inflation/admx_casper_labelled.pdf Graphic file (type pdf)
 
 <use Inflation/admx_casper_labelled.pdf>
 Package pdftex.def Info: Inflation/admx_casper_labelled.pdf used on input line 
 57.
-(pdftex.def)             Requested size: 187.89912pt x 175.3801pt.
+(pdftex.def)             Requested size: 140.92792pt x 131.5311pt.
 
-<Inflation/alp_iso_labelled.pdf, id=3726, 542.29388pt x 514.96835pt>
+<Inflation/alp_iso_labelled.pdf, id=3828, 542.29388pt x 514.96835pt>
 File: Inflation/alp_iso_labelled.pdf Graphic file (type pdf)
 
 <use Inflation/alp_iso_labelled.pdf>
 Package pdftex.def Info: Inflation/alp_iso_labelled.pdf used on input line 58.
-(pdftex.def)             Requested size: 187.89912pt x 178.43433pt.
+(pdftex.def)             Requested size: 140.92792pt x 133.82574pt.
+
+<Inflation/ALP_iso_mass_m24_Hi_sensitivity_resolution.pdf, id=3829, 578.16pt x 
+433.62pt>
+File: Inflation/ALP_iso_mass_m24_Hi_sensitivity_resolution.pdf Graphic file (ty
+pe pdf)
+ <use Inflation/ALP_iso_mass_m24_Hi_sensitivity_resolution.pdf>
+Package pdftex.def Info: Inflation/ALP_iso_mass_m24_Hi_sensitivity_resolution.p
+df used on input line 59.
+(pdftex.def)             Requested size: 187.89912pt x 140.92482pt.
 
 
-LaTeX Warning: Citation `Hlozek:2015axa' on page 85 undefined on input line 64.
+LaTeX Warning: Citation `Hlozek:2015axa' on page 85 undefined on input line 65.
 
 
 
-LaTeX Warning: Citation `Hlozek:2015axa' on page 85 undefined on input line 64.
+LaTeX Warning: Citation `Hlozek:2015axa' on page 85 undefined on input line 65.
 
 
 
-LaTeX Warning: Reference `sec:uladiabat' on page 85 undefined on input line 64.
+LaTeX Warning: Reference `sec:uladiabat' on page 85 undefined on input line 65.
 
 
-[85 <./Inflation/admx_casper_labelled.pdf> <./Inflation/alp_iso_labelled.pdf>]
-<Neutrinos/AxionPhotonWithFuture.pdf, id=3867, 627.34375pt x 480.79625pt>
+[85 <./Inflation/admx_casper_labelled.pdf> <./Inflation/alp_iso_labelled.pdf> <
+./Inflation/ALP_iso_mass_m24_Hi_sensitivity_resolution.pdf>]
+<Neutrinos/AxionPhotonWithFuture.pdf, id=4055, 627.34375pt x 480.79625pt>
 File: Neutrinos/AxionPhotonWithFuture.pdf Graphic file (type pdf)
 
 <use Neutrinos/AxionPhotonWithFuture.pdf>
 Package pdftex.def Info: Neutrinos/AxionPhotonWithFuture.pdf used on input line
- 86.
+ 87.
 (pdftex.def)             Requested size: 328.82706pt x 252.0183pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [86] [87 <./Neutrinos/AxionPhotonWithFuture.pdf>]
-<Neutrinos/DipoleWithCASPErAndBBN.pdf, id=3905, 438.63875pt x 239.89626pt>
+<Neutrinos/DipoleWithCASPErAndBBN.pdf, id=4090, 438.63875pt x 239.89626pt>
 File: Neutrinos/DipoleWithCASPErAndBBN.pdf Graphic file (type pdf)
 
 <use Neutrinos/DipoleWithCASPErAndBBN.pdf>
 Package pdftex.def Info: Neutrinos/DipoleWithCASPErAndBBN.pdf used on input lin
-e 120.
+e 121.
 (pdftex.def)             Requested size: 328.82706pt x 179.8412pt.
  [88 <./Neutrinos/DipoleWithCASPErAndBBN.pdf>]
 Missing character: There is no ‚ in font cmr10!
@@ -937,7 +970,7 @@ Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
- [90] [91]) (./CMBLensing/cmblensing_cmbs4.tex [92]
+ [90]) (./CMBLensing/cmblensing_cmbs4.tex [91] [92]
 Chapter 6.
 
 Underfull \hbox (badness 10000) in paragraph at lines 23--25
@@ -956,35 +989,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--29
 
 [93
 
-] <CMBLensing/n0s_s4.pdf, id=4019, 587.19376pt x 587.19376pt>
+] <CMBLensing/n0s_s4.pdf, id=4203, 587.19376pt x 587.19376pt>
 File: CMBLensing/n0s_s4.pdf Graphic file (type pdf)
 
 <use CMBLensing/n0s_s4.pdf>
 Package pdftex.def Info: CMBLensing/n0s_s4.pdf used on input line 71.
 (pdftex.def)             Requested size: 234.87749pt x 234.87334pt.
 
-<CMBLensing/signal_contribs.pdf, id=4020, 579.60541pt x 435.0654pt>
+<CMBLensing/signal_contribs.pdf, id=4204, 579.60541pt x 435.0654pt>
 File: CMBLensing/signal_contribs.pdf Graphic file (type pdf)
 
 <use CMBLensing/signal_contribs.pdf>
 Package pdftex.def Info: CMBLensing/signal_contribs.pdf used on input line 81.
 (pdftex.def)             Requested size: 305.33788pt x 229.19609pt.
  [94 <./CMBLensing/n0s_s4.pdf>]
-<CMBLensing/ell300_1_40.pdf, id=4060, 587.19376pt x 587.19376pt>
+<CMBLensing/ell300_1_40.pdf, id=4245, 587.19376pt x 587.19376pt>
 File: CMBLensing/ell300_1_40.pdf Graphic file (type pdf)
 
 <use CMBLensing/ell300_1_40.pdf>
 Package pdftex.def Info: CMBLensing/ell300_1_40.pdf used on input line 96.
 (pdftex.def)             Requested size: 211.3883pt x 211.38959pt.
 
-<CMBLensing/ell300_4_00.pdf, id=4061, 587.19376pt x 587.19376pt>
+<CMBLensing/ell300_4_00.pdf, id=4246, 587.19376pt x 587.19376pt>
 File: CMBLensing/ell300_4_00.pdf Graphic file (type pdf)
 
 <use CMBLensing/ell300_4_00.pdf>
 Package pdftex.def Info: CMBLensing/ell300_4_00.pdf used on input line 97.
 (pdftex.def)             Requested size: 211.3883pt x 211.38959pt.
  [95 <./CMBLensing/signal_contribs.pdf>]
-<CMBLensing/autoCompilation.pdf, id=4099, 731.73375pt x 370.38374pt>
+<CMBLensing/autoCompilation.pdf, id=4283, 731.73375pt x 370.38374pt>
 File: CMBLensing/autoCompilation.pdf Graphic file (type pdf)
 
 <use CMBLensing/autoCompilation.pdf>
@@ -992,7 +1025,7 @@ Package pdftex.def Info: CMBLensing/autoCompilation.pdf used on input line 119.
 
 (pdftex.def)             Requested size: 446.2658pt x 225.88853pt.
 
-<CMBLensing/s4errors.pdf, id=4101, 587.19376pt x 587.19376pt>
+<CMBLensing/s4errors.pdf, id=4285, 587.19376pt x 587.19376pt>
 File: CMBLensing/s4errors.pdf Graphic file (type pdf)
 
 <use CMBLensing/s4errors.pdf>
@@ -1002,7 +1035,7 @@ Package pdftex.def Info: CMBLensing/s4errors.pdf used on input line 134.
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./CMBLensing/ell300_4_00.pdf
 ): PDF inclusion: multiple pdfs with page group included in a single page
->] <CMBLensing/CMB_effs.pdf, id=4231, 596.25262pt x 224.58592pt>
+>] <CMBLensing/CMB_effs.pdf, id=4415, 596.25262pt x 224.58592pt>
 File: CMBLensing/CMB_effs.pdf Graphic file (type pdf)
 
 <use CMBLensing/CMB_effs.pdf>
@@ -1010,21 +1043,21 @@ Package pdftex.def Info: CMBLensing/CMB_effs.pdf used on input line 174.
 (pdftex.def)             Requested size: 352.31624pt x 132.7033pt.
  [97 <./CMBLensing/autoCompilation.pdf>] [98 <./CMBLensing/s4errors.pdf>] [99 <
 ./CMBLensing/CMB_effs.pdf>]
-<CMBLensing/HaloLensing.png, id=4478, 1138.2525pt x 854.19125pt>
+<CMBLensing/HaloLensing.png, id=4661, 1138.2525pt x 854.19125pt>
 File: CMBLensing/HaloLensing.png Graphic file (type png)
 
 <use CMBLensing/HaloLensing.png>
 Package pdftex.def Info: CMBLensing/HaloLensing.png used on input line 226.
 (pdftex.def)             Requested size: 305.33788pt x 229.13582pt.
  [100] [101 <./CMBLensing/HaloLensing.png>]
-<CMBLensing/Delensing.png, id=4493, 696.6025pt x 507.8975pt>
+<CMBLensing/Delensing.png, id=4677, 696.6025pt x 507.8975pt>
 File: CMBLensing/Delensing.png Graphic file (type png)
 
 <use CMBLensing/Delensing.png>
 Package pdftex.def Info: CMBLensing/Delensing.png used on input line 257.
 (pdftex.def)             Requested size: 328.82706pt x 239.75035pt.
 
-<CMBLensing/delensingIterative.png, id=4495, 426.8748pt x 411.4572pt>
+<CMBLensing/delensingIterative.png, id=4679, 426.8748pt x 411.4572pt>
 File: CMBLensing/delensingIterative.png Graphic file (type png)
 
 <use CMBLensing/delensingIterative.png>
@@ -1033,7 +1066,7 @@ Package pdftex.def Info: CMBLensing/delensingIterative.png used on input line 2
 (pdftex.def)             Requested size: 234.87749pt x 226.39632pt.
  [102 <./CMBLensing/Delensing.png>]
 [103 <./CMBLensing/delensingIterative.png>] [104]
-<CMBLensing/Allisonetal.png, id=4516, 873.2625pt x 588.1975pt>
+<CMBLensing/Allisonetal.png, id=4700, 873.2625pt x 588.1975pt>
 File: CMBLensing/Allisonetal.png Graphic file (type png)
 
 <use CMBLensing/Allisonetal.png>
@@ -1043,27 +1076,27 @@ Package pdftex.def Info: CMBLensing/Allisonetal.png used on input line 360.
 Chapter 7.
 [107
 
-] <Analysis/da.pdf, id=4540, 811.03pt x 1162.3425pt>
+] <Analysis/da.pdf, id=4724, 811.03pt x 1162.3425pt>
 File: Analysis/da.pdf Graphic file (type pdf)
  <use Analysis/da.pdf>
 Package pdftex.def Info: Analysis/da.pdf used on input line 37.
 (pdftex.def)             Requested size: 234.87749pt x 336.60956pt.
 
 [108 <./Analysis/da.pdf>] [109] (./Analysis/tod_processing.tex
-<Analysis/td.pdf, id=4570, 811.03pt x 1162.3425pt>
+<Analysis/td.pdf, id=4754, 811.03pt x 1162.3425pt>
 File: Analysis/td.pdf Graphic file (type pdf)
  <use Analysis/td.pdf>
 Package pdftex.def Info: Analysis/td.pdf used on input line 15.
 (pdftex.def)             Requested size: 234.87749pt x 336.60956pt.
 
 [110 <./Analysis/td.pdf>] [111]) [112] (./Analysis/component_separation.tex
-<Analysis/cs.pdf, id=4649, 811.03pt x 1162.3425pt>
+<Analysis/cs.pdf, id=4834, 811.03pt x 1162.3425pt>
 File: Analysis/cs.pdf Graphic file (type pdf)
  <use Analysis/cs.pdf>
 Package pdftex.def Info: Analysis/cs.pdf used on input line 21.
 (pdftex.def)             Requested size: 234.87749pt x 336.60956pt.
 
-<Analysis/Power_Spectrum_figure_showing_foregrounds.pdf, id=4650, 789.95125pt x
+<Analysis/Power_Spectrum_figure_showing_foregrounds.pdf, id=4835, 789.95125pt x
  667.89528pt>
 File: Analysis/Power_Spectrum_figure_showing_foregrounds.pdf Graphic file (type
  pdf)
@@ -1079,21 +1112,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 131--133
  []
 
 [116] [117]) [118] (./Analysis/statistics_parameters.tex
-<Analysis/sp.pdf, id=4845, 811.03pt x 1162.3425pt>
+<Analysis/sp.pdf, id=5030, 811.03pt x 1162.3425pt>
 File: Analysis/sp.pdf Graphic file (type pdf)
  <use Analysis/sp.pdf>
 Package pdftex.def Info: Analysis/sp.pdf used on input line 32.
 (pdftex.def)             Requested size: 234.87749pt x 336.60956pt.
 
 [119 <./Analysis/sp.pdf>] [120] [121] [122] [123]) [124]
-<Analysis/sim.pdf, id=4981, 1053.9375pt x 990.70125pt>
+<Analysis/sim.pdf, id=5166, 1053.9375pt x 990.70125pt>
 File: Analysis/sim.pdf Graphic file (type pdf)
  <use Analysis/sim.pdf>
 Package pdftex.def Info: Analysis/sim.pdf used on input line 70.
 (pdftex.def)             Requested size: 234.87749pt x 220.7818pt.
 
 [125 <./Analysis/sim.pdf>] (./Analysis/sky_modeling.tex
-<Analysis/sm.pdf, id=5005, 1053.9375pt x 990.70125pt>
+<Analysis/sm.pdf, id=5189, 1053.9375pt x 990.70125pt>
 File: Analysis/sm.pdf Graphic file (type pdf)
  <use Analysis/sm.pdf>
 Package pdftex.def Info: Analysis/sm.pdf used on input line 27.
@@ -1101,14 +1134,14 @@ Package pdftex.def Info: Analysis/sm.pdf used on input line 27.
 
 [126 <./Analysis/sm.pdf>] [127] [128] [129]) [130]
 (./Analysis/data_simulation.tex
-<Analysis/ds.pdf, id=5062, 1053.9375pt x 990.70125pt>
+<Analysis/ds.pdf, id=5247, 1053.9375pt x 990.70125pt>
 File: Analysis/ds.pdf Graphic file (type pdf)
  <use Analysis/ds.pdf>
 Package pdftex.def Info: Analysis/ds.pdf used on input line 10.
 (pdftex.def)             Requested size: 234.87749pt x 220.7818pt.
 
 [131 <./Analysis/ds.pdf>] [132]) [133]
-<Analysis/simda.pdf, id=5101, 1614.03pt x 1162.3425pt>
+<Analysis/simda.pdf, id=5285, 1614.03pt x 1162.3425pt>
 File: Analysis/simda.pdf Graphic file (type pdf)
 
 <use Analysis/simda.pdf>
@@ -1133,14 +1166,14 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 63.
 
 [137] [138]) [139] (./Analysis/implementation.tex
-<Analysis/cmb_hpc_scaling.pdf, id=5180, 764.63002pt x 600.51353pt>
+<Analysis/cmb_hpc_scaling.pdf, id=5363, 764.63002pt x 600.51353pt>
 File: Analysis/cmb_hpc_scaling.pdf Graphic file (type pdf)
 
 <use Analysis/cmb_hpc_scaling.pdf>
 Package pdftex.def Info: Analysis/cmb_hpc_scaling.pdf used on input line 11.
 (pdftex.def)             Requested size: 352.31624pt x 276.69772pt.
  [140 <./Analysis/cmb_hpc_scaling.pdf>]
-<Analysis/all_tod.pdf, id=5207, 1614.03pt x 1162.3425pt>
+<Analysis/all_tod.pdf, id=5391, 1614.03pt x 1162.3425pt>
 File: Analysis/all_tod.pdf Graphic file (type pdf)
 
 <use Analysis/all_tod.pdf>
@@ -1216,7 +1249,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 188.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 188.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 188.
 Package rerunfilecheck Info: File `cmbs4_scibook.out' has not changed.
-(rerunfilecheck)             Checksum: 7FF734968159D5D1E882B9694462B140;11485.
+(rerunfilecheck)             Checksum: 083AC694E5F64279DA2E1E28EC0F641B;11692.
 
 
 LaTeX Warning: There were undefined references.
@@ -1227,10 +1260,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 188.
  ) 
 Here is how much of TeX's memory you used:
- 9253 strings out of 493089
- 138227 string characters out of 6134842
- 255485 words of memory out of 5000000
- 11412 multiletter control sequences out of 15000+600000
+ 9278 strings out of 493089
+ 138879 string characters out of 6134842
+ 253257 words of memory out of 5000000
+ 11427 multiletter control sequences out of 15000+600000
  23508 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  29i,14n,34p,2202b,434s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1279,10 +1312,10 @@ ic/uhvb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/ncntrsbk/uncr
 8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></u
 sr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/t
 exlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on cmbs4_scibook.pdf (186 pages, 7101837 bytes).
+Output written on cmbs4_scibook.pdf (187 pages, 7054096 bytes).
 PDF statistics:
- 5735 PDF objects out of 6186 (max. 8388607)
- 4549 compressed objects within 46 object streams
- 1086 named destinations out of 1200 (max. 500000)
- 1423 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 5922 PDF objects out of 6186 (max. 8388607)
+ 4649 compressed objects within 47 object streams
+ 1094 named destinations out of 1200 (max. 500000)
+ 1457 words of extra memory for PDF output out of 10000 (max. 10000000)
 
