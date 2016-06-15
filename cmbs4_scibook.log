@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  15 JUN 2016 15:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  15 JUN 2016 15:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -928,7 +928,7 @@ LaTeX Warning: Reference `sec:uladiabat' on page 87 undefined on input line 65.
 
 [87 <./Inflation/admx_casper_labelled.pdf> <./Inflation/alp_iso_labelled.pdf> <
 ./Inflation/ALP_iso_mass_m25_Hi_sensitivity_resolution.pdf>]
-<Neutrinos/AxionPhotonWithFuture.pdf, id=4075, 627.34375pt x 480.79625pt>
+<Neutrinos/AxionPhotonWithFuture.pdf, id=4074, 627.34375pt x 480.79625pt>
 File: Neutrinos/AxionPhotonWithFuture.pdf Graphic file (type pdf)
 
 <use Neutrinos/AxionPhotonWithFuture.pdf>
@@ -1262,7 +1262,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 188.
 Here is how much of TeX's memory you used:
  9280 strings out of 493089
  138895 string characters out of 6134842
- 253844 words of memory out of 5000000
+ 254032 words of memory out of 5000000
  11427 multiletter control sequences out of 15000+600000
  23508 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1312,7 +1312,7 @@ ic/uhvb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/ncntrsbk/uncr
 8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></u
 sr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/t
 exlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on cmbs4_scibook.pdf (189 pages, 7060663 bytes).
+Output written on cmbs4_scibook.pdf (189 pages, 7061200 bytes).
 PDF statistics:
  5943 PDF objects out of 6186 (max. 8388607)
  4657 compressed objects within 47 object streams
