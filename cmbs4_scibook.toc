@@ -30,7 +30,7 @@
 \contentsline {subsection}{\numberline {2.6.3}Forecasts}{33}{subsection.2.6.3}
 \contentsline {section}{\numberline {2.7}Isocurvature}{37}{section.2.7}
 \contentsline {subsection}{\numberline {2.7.1}The Curvaton Scenario}{38}{subsection.2.7.1}
-\contentsline {section}{\numberline {2.8}Summary}{40}{section.2.8}
+\contentsline {section}{\numberline {2.8}Summary}{41}{section.2.8}
 \contentsline {chapter}{\numberline {3}Neutrinos and Light Species from the Cosmic Microwave Background}{43}{chapter.3}
 \contentsline {section}{\numberline {3.1}Introduction}{43}{section.3.1}
 \contentsline {section}{\numberline {3.2}Neutrino Mass}{44}{section.3.2}
