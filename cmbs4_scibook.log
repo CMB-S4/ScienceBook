@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  15 JUN 2016 15:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  15 JUN 2016 15:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -905,12 +905,12 @@ File: Inflation/alp_iso_labelled.pdf Graphic file (type pdf)
 Package pdftex.def Info: Inflation/alp_iso_labelled.pdf used on input line 58.
 (pdftex.def)             Requested size: 140.92792pt x 133.82574pt.
 
-<Inflation/ALP_iso_mass_m24_Hi_sensitivity_resolution.pdf, id=3840, 578.16pt x 
+<Inflation/ALP_iso_mass_m25_Hi_sensitivity_resolution.pdf, id=3840, 578.16pt x 
 433.62pt>
-File: Inflation/ALP_iso_mass_m24_Hi_sensitivity_resolution.pdf Graphic file (ty
+File: Inflation/ALP_iso_mass_m25_Hi_sensitivity_resolution.pdf Graphic file (ty
 pe pdf)
- <use Inflation/ALP_iso_mass_m24_Hi_sensitivity_resolution.pdf>
-Package pdftex.def Info: Inflation/ALP_iso_mass_m24_Hi_sensitivity_resolution.p
+ <use Inflation/ALP_iso_mass_m25_Hi_sensitivity_resolution.pdf>
+Package pdftex.def Info: Inflation/ALP_iso_mass_m25_Hi_sensitivity_resolution.p
 df used on input line 59.
 (pdftex.def)             Requested size: 187.89912pt x 140.92482pt.
 
@@ -927,8 +927,8 @@ LaTeX Warning: Reference `sec:uladiabat' on page 87 undefined on input line 65.
 
 
 [87 <./Inflation/admx_casper_labelled.pdf> <./Inflation/alp_iso_labelled.pdf> <
-./Inflation/ALP_iso_mass_m24_Hi_sensitivity_resolution.pdf>]
-<Neutrinos/AxionPhotonWithFuture.pdf, id=4064, 627.34375pt x 480.79625pt>
+./Inflation/ALP_iso_mass_m25_Hi_sensitivity_resolution.pdf>]
+<Neutrinos/AxionPhotonWithFuture.pdf, id=4071, 627.34375pt x 480.79625pt>
 File: Neutrinos/AxionPhotonWithFuture.pdf Graphic file (type pdf)
 
 <use Neutrinos/AxionPhotonWithFuture.pdf>
@@ -940,7 +940,7 @@ Package pdftex.def Info: Neutrinos/AxionPhotonWithFuture.pdf used on input line
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [88] [89 <./Neutrinos/AxionPhotonWithFuture.pdf>]
-<Neutrinos/DipoleWithCASPErAndBBN.pdf, id=4100, 438.63875pt x 239.89626pt>
+<Neutrinos/DipoleWithCASPErAndBBN.pdf, id=4107, 438.63875pt x 239.89626pt>
 File: Neutrinos/DipoleWithCASPErAndBBN.pdf Graphic file (type pdf)
 
 <use Neutrinos/DipoleWithCASPErAndBBN.pdf>
@@ -989,35 +989,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--29
 
 [95
 
-] <CMBLensing/n0s_s4.pdf, id=4214, 587.19376pt x 587.19376pt>
+] <CMBLensing/n0s_s4.pdf, id=4221, 587.19376pt x 587.19376pt>
 File: CMBLensing/n0s_s4.pdf Graphic file (type pdf)
 
 <use CMBLensing/n0s_s4.pdf>
 Package pdftex.def Info: CMBLensing/n0s_s4.pdf used on input line 71.
 (pdftex.def)             Requested size: 234.87749pt x 234.87334pt.
 
-<CMBLensing/signal_contribs.pdf, id=4215, 579.60541pt x 435.0654pt>
+<CMBLensing/signal_contribs.pdf, id=4222, 579.60541pt x 435.0654pt>
 File: CMBLensing/signal_contribs.pdf Graphic file (type pdf)
 
 <use CMBLensing/signal_contribs.pdf>
 Package pdftex.def Info: CMBLensing/signal_contribs.pdf used on input line 81.
 (pdftex.def)             Requested size: 305.33788pt x 229.19609pt.
  [96 <./CMBLensing/n0s_s4.pdf>]
-<CMBLensing/ell300_1_40.pdf, id=4255, 587.19376pt x 587.19376pt>
+<CMBLensing/ell300_1_40.pdf, id=4262, 587.19376pt x 587.19376pt>
 File: CMBLensing/ell300_1_40.pdf Graphic file (type pdf)
 
 <use CMBLensing/ell300_1_40.pdf>
 Package pdftex.def Info: CMBLensing/ell300_1_40.pdf used on input line 96.
 (pdftex.def)             Requested size: 211.3883pt x 211.38959pt.
 
-<CMBLensing/ell300_4_00.pdf, id=4256, 587.19376pt x 587.19376pt>
+<CMBLensing/ell300_4_00.pdf, id=4263, 587.19376pt x 587.19376pt>
 File: CMBLensing/ell300_4_00.pdf Graphic file (type pdf)
 
 <use CMBLensing/ell300_4_00.pdf>
 Package pdftex.def Info: CMBLensing/ell300_4_00.pdf used on input line 97.
 (pdftex.def)             Requested size: 211.3883pt x 211.38959pt.
  [97 <./CMBLensing/signal_contribs.pdf>]
-<CMBLensing/autoCompilation.pdf, id=4293, 731.73375pt x 370.38374pt>
+<CMBLensing/autoCompilation.pdf, id=4300, 731.73375pt x 370.38374pt>
 File: CMBLensing/autoCompilation.pdf Graphic file (type pdf)
 
 <use CMBLensing/autoCompilation.pdf>
@@ -1025,7 +1025,7 @@ Package pdftex.def Info: CMBLensing/autoCompilation.pdf used on input line 119.
 
 (pdftex.def)             Requested size: 446.2658pt x 225.88853pt.
 
-<CMBLensing/s4errors.pdf, id=4295, 587.19376pt x 587.19376pt>
+<CMBLensing/s4errors.pdf, id=4302, 587.19376pt x 587.19376pt>
 File: CMBLensing/s4errors.pdf Graphic file (type pdf)
 
 <use CMBLensing/s4errors.pdf>
@@ -1035,7 +1035,7 @@ Package pdftex.def Info: CMBLensing/s4errors.pdf used on input line 134.
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./CMBLensing/ell300_4_00.pdf
 ): PDF inclusion: multiple pdfs with page group included in a single page
->] <CMBLensing/CMB_effs.pdf, id=4425, 596.25262pt x 224.58592pt>
+>] <CMBLensing/CMB_effs.pdf, id=4432, 596.25262pt x 224.58592pt>
 File: CMBLensing/CMB_effs.pdf Graphic file (type pdf)
 
 <use CMBLensing/CMB_effs.pdf>
@@ -1043,21 +1043,21 @@ Package pdftex.def Info: CMBLensing/CMB_effs.pdf used on input line 174.
 (pdftex.def)             Requested size: 352.31624pt x 132.7033pt.
  [99 <./CMBLensing/autoCompilation.pdf>] [100 <./CMBLensing/s4errors.pdf>] [101
  <./CMBLensing/CMB_effs.pdf>]
-<CMBLensing/HaloLensing.png, id=4673, 1138.2525pt x 854.19125pt>
+<CMBLensing/HaloLensing.png, id=4680, 1138.2525pt x 854.19125pt>
 File: CMBLensing/HaloLensing.png Graphic file (type png)
 
 <use CMBLensing/HaloLensing.png>
 Package pdftex.def Info: CMBLensing/HaloLensing.png used on input line 226.
 (pdftex.def)             Requested size: 305.33788pt x 229.13582pt.
  [102] [103 <./CMBLensing/HaloLensing.png>]
-<CMBLensing/Delensing.png, id=4687, 696.6025pt x 507.8975pt>
+<CMBLensing/Delensing.png, id=4694, 696.6025pt x 507.8975pt>
 File: CMBLensing/Delensing.png Graphic file (type png)
 
 <use CMBLensing/Delensing.png>
 Package pdftex.def Info: CMBLensing/Delensing.png used on input line 257.
 (pdftex.def)             Requested size: 328.82706pt x 239.75035pt.
 
-<CMBLensing/delensingIterative.png, id=4689, 426.8748pt x 411.4572pt>
+<CMBLensing/delensingIterative.png, id=4696, 426.8748pt x 411.4572pt>
 File: CMBLensing/delensingIterative.png Graphic file (type png)
 
 <use CMBLensing/delensingIterative.png>
@@ -1066,7 +1066,7 @@ Package pdftex.def Info: CMBLensing/delensingIterative.png used on input line 2
 (pdftex.def)             Requested size: 234.87749pt x 226.39632pt.
  [104 <./CMBLensing/Delensing.png>]
 [105 <./CMBLensing/delensingIterative.png>] [106]
-<CMBLensing/Allisonetal.png, id=4711, 873.2625pt x 588.1975pt>
+<CMBLensing/Allisonetal.png, id=4718, 873.2625pt x 588.1975pt>
 File: CMBLensing/Allisonetal.png Graphic file (type png)
 
 <use CMBLensing/Allisonetal.png>
@@ -1076,27 +1076,27 @@ Package pdftex.def Info: CMBLensing/Allisonetal.png used on input line 360.
 Chapter 7.
 [109
 
-] <Analysis/da.pdf, id=4734, 811.03pt x 1162.3425pt>
+] <Analysis/da.pdf, id=4741, 811.03pt x 1162.3425pt>
 File: Analysis/da.pdf Graphic file (type pdf)
  <use Analysis/da.pdf>
 Package pdftex.def Info: Analysis/da.pdf used on input line 37.
 (pdftex.def)             Requested size: 234.87749pt x 336.60956pt.
 
 [110 <./Analysis/da.pdf>] [111] (./Analysis/tod_processing.tex
-<Analysis/td.pdf, id=4764, 811.03pt x 1162.3425pt>
+<Analysis/td.pdf, id=4771, 811.03pt x 1162.3425pt>
 File: Analysis/td.pdf Graphic file (type pdf)
  <use Analysis/td.pdf>
 Package pdftex.def Info: Analysis/td.pdf used on input line 15.
 (pdftex.def)             Requested size: 234.87749pt x 336.60956pt.
 
 [112 <./Analysis/td.pdf>] [113]) [114] (./Analysis/component_separation.tex
-<Analysis/cs.pdf, id=4844, 811.03pt x 1162.3425pt>
+<Analysis/cs.pdf, id=4851, 811.03pt x 1162.3425pt>
 File: Analysis/cs.pdf Graphic file (type pdf)
  <use Analysis/cs.pdf>
 Package pdftex.def Info: Analysis/cs.pdf used on input line 21.
 (pdftex.def)             Requested size: 234.87749pt x 336.60956pt.
 
-<Analysis/Power_Spectrum_figure_showing_foregrounds.pdf, id=4845, 789.95125pt x
+<Analysis/Power_Spectrum_figure_showing_foregrounds.pdf, id=4852, 789.95125pt x
  667.89528pt>
 File: Analysis/Power_Spectrum_figure_showing_foregrounds.pdf Graphic file (type
  pdf)
@@ -1112,21 +1112,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 131--133
  []
 
 [118] [119]) [120] (./Analysis/statistics_parameters.tex
-<Analysis/sp.pdf, id=5040, 811.03pt x 1162.3425pt>
+<Analysis/sp.pdf, id=5047, 811.03pt x 1162.3425pt>
 File: Analysis/sp.pdf Graphic file (type pdf)
  <use Analysis/sp.pdf>
 Package pdftex.def Info: Analysis/sp.pdf used on input line 32.
 (pdftex.def)             Requested size: 234.87749pt x 336.60956pt.
 
 [121 <./Analysis/sp.pdf>] [122] [123] [124] [125]) [126]
-<Analysis/sim.pdf, id=5176, 1053.9375pt x 990.70125pt>
+<Analysis/sim.pdf, id=5183, 1053.9375pt x 990.70125pt>
 File: Analysis/sim.pdf Graphic file (type pdf)
  <use Analysis/sim.pdf>
 Package pdftex.def Info: Analysis/sim.pdf used on input line 70.
 (pdftex.def)             Requested size: 234.87749pt x 220.7818pt.
 
 [127 <./Analysis/sim.pdf>] (./Analysis/sky_modeling.tex
-<Analysis/sm.pdf, id=5199, 1053.9375pt x 990.70125pt>
+<Analysis/sm.pdf, id=5206, 1053.9375pt x 990.70125pt>
 File: Analysis/sm.pdf Graphic file (type pdf)
  <use Analysis/sm.pdf>
 Package pdftex.def Info: Analysis/sm.pdf used on input line 27.
@@ -1134,14 +1134,14 @@ Package pdftex.def Info: Analysis/sm.pdf used on input line 27.
 
 [128 <./Analysis/sm.pdf>] [129] [130] [131]) [132]
 (./Analysis/data_simulation.tex
-<Analysis/ds.pdf, id=5257, 1053.9375pt x 990.70125pt>
+<Analysis/ds.pdf, id=5264, 1053.9375pt x 990.70125pt>
 File: Analysis/ds.pdf Graphic file (type pdf)
  <use Analysis/ds.pdf>
 Package pdftex.def Info: Analysis/ds.pdf used on input line 10.
 (pdftex.def)             Requested size: 234.87749pt x 220.7818pt.
 
 [133 <./Analysis/ds.pdf>] [134]) [135]
-<Analysis/simda.pdf, id=5295, 1614.03pt x 1162.3425pt>
+<Analysis/simda.pdf, id=5302, 1614.03pt x 1162.3425pt>
 File: Analysis/simda.pdf Graphic file (type pdf)
 
 <use Analysis/simda.pdf>
@@ -1166,14 +1166,14 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 63.
 
 [139] [140]) [141] (./Analysis/implementation.tex
-<Analysis/cmb_hpc_scaling.pdf, id=5374, 764.63002pt x 600.51353pt>
+<Analysis/cmb_hpc_scaling.pdf, id=5381, 764.63002pt x 600.51353pt>
 File: Analysis/cmb_hpc_scaling.pdf Graphic file (type pdf)
 
 <use Analysis/cmb_hpc_scaling.pdf>
 Package pdftex.def Info: Analysis/cmb_hpc_scaling.pdf used on input line 11.
 (pdftex.def)             Requested size: 352.31624pt x 276.69772pt.
  [142 <./Analysis/cmb_hpc_scaling.pdf>]
-<Analysis/all_tod.pdf, id=5402, 1614.03pt x 1162.3425pt>
+<Analysis/all_tod.pdf, id=5409, 1614.03pt x 1162.3425pt>
 File: Analysis/all_tod.pdf Graphic file (type pdf)
 
 <use Analysis/all_tod.pdf>
@@ -1262,7 +1262,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 188.
 Here is how much of TeX's memory you used:
  9280 strings out of 493089
  138895 string characters out of 6134842
- 253842 words of memory out of 5000000
+ 253844 words of memory out of 5000000
  11427 multiletter control sequences out of 15000+600000
  23508 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1312,9 +1312,9 @@ ic/uhvb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/ncntrsbk/uncr
 8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></u
 sr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/t
 exlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on cmbs4_scibook.pdf (189 pages, 7056399 bytes).
+Output written on cmbs4_scibook.pdf (189 pages, 7059036 bytes).
 PDF statistics:
- 5932 PDF objects out of 6186 (max. 8388607)
+ 5939 PDF objects out of 6186 (max. 8388607)
  4657 compressed objects within 47 object streams
  1096 named destinations out of 1200 (max. 500000)
  1457 words of extra memory for PDF output out of 10000 (max. 10000000)
