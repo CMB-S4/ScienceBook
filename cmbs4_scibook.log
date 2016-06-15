@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  15 JUN 2016 11:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  15 JUN 2016 11:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -872,13 +872,47 @@ File: DarkEnergy/s4_frac_omnuh2.pdf Graphic file (type pdf)
 <use DarkEnergy/s4_frac_omnuh2.pdf>
 Package pdftex.def Info: DarkEnergy/s4_frac_omnuh2.pdf used on input line 25.
 (pdftex.def)             Requested size: 230.18251pt x 172.63109pt.
+
+! Undefined control sequence.
+<argument> ... \endcsname }{\ignorespaces \textbg 
+                                                  {Left:} Constraints on the...
+l.27 \label{fig:axions}}
+                        
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...r {\@currentHref }{\relax }}\textbg 
+                                                  {Left:} Constraints on the...
+l.27 \label{fig:axions}}
+                        
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...r {\@currentHref }{\relax }}\textbg 
+                                                  {Left:} Constraints on the...
+l.27 \label{fig:axions}}
+                        
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
- [83]
+[83]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
@@ -928,7 +962,7 @@ LaTeX Warning: Reference `sec:uladiabat' on page 85 undefined on input line 65.
 
 [85 <./Inflation/admx_casper_labelled.pdf> <./Inflation/alp_iso_labelled.pdf> <
 ./Inflation/ALP_iso_mass_m24_Hi_sensitivity_resolution.pdf>]
-<Neutrinos/AxionPhotonWithFuture.pdf, id=4055, 627.34375pt x 480.79625pt>
+<Neutrinos/AxionPhotonWithFuture.pdf, id=4054, 627.34375pt x 480.79625pt>
 File: Neutrinos/AxionPhotonWithFuture.pdf Graphic file (type pdf)
 
 <use Neutrinos/AxionPhotonWithFuture.pdf>
@@ -940,7 +974,7 @@ Package pdftex.def Info: Neutrinos/AxionPhotonWithFuture.pdf used on input line
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [86] [87 <./Neutrinos/AxionPhotonWithFuture.pdf>]
-<Neutrinos/DipoleWithCASPErAndBBN.pdf, id=4090, 438.63875pt x 239.89626pt>
+<Neutrinos/DipoleWithCASPErAndBBN.pdf, id=4089, 438.63875pt x 239.89626pt>
 File: Neutrinos/DipoleWithCASPErAndBBN.pdf Graphic file (type pdf)
 
 <use Neutrinos/DipoleWithCASPErAndBBN.pdf>
@@ -970,7 +1004,7 @@ Missing character: There is no œ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no  in font cmr10!
- [90]) (./CMBLensing/cmblensing_cmbs4.tex [91] [92]
+ [90] [91]) (./CMBLensing/cmblensing_cmbs4.tex [92]
 Chapter 6.
 
 Underfull \hbox (badness 10000) in paragraph at lines 23--25
@@ -1260,10 +1294,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 188.
  ) 
 Here is how much of TeX's memory you used:
- 9278 strings out of 493089
- 138879 string characters out of 6134842
- 253423 words of memory out of 5000000
- 11427 multiletter control sequences out of 15000+600000
+ 9279 strings out of 493089
+ 138885 string characters out of 6134842
+ 253460 words of memory out of 5000000
+ 11428 multiletter control sequences out of 15000+600000
  23508 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  29i,14n,34p,2202b,434s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1312,7 +1346,7 @@ ic/uhvb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/ncntrsbk/uncr
 8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></u
 sr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/t
 exlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on cmbs4_scibook.pdf (187 pages, 7055220 bytes).
+Output written on cmbs4_scibook.pdf (187 pages, 7055888 bytes).
 PDF statistics:
  5922 PDF objects out of 6186 (max. 8388607)
  4649 compressed objects within 47 object streams
