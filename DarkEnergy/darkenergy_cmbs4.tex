@@ -199,13 +199,43 @@ kSZ pairwise measurements can also constrain the sum of neutrino masses $M_{\nu}
 \subsection{Forecasts}
 %
 
-{\bf MR: shall we discuss here forecast specifications?}
+{\bf MR: the following section is highly work in progress. Any feedback is very welcome!}
+
+{\bf MR: shall we discuss here forecast specifications? Just in case, discussion of forecast specifications below.}
+
+To forecast CMB-S4 performances on Dark Energy and Modified Gravity models we shall use the following specifications.
+CMB-S4 is assumed to measure CMB fluctuations in temperature and polarization over $0.4$ of the sky with a $1\,\mu {\rm K} \, {\rm arcmin}$ sensitivity in temperature and $1.4\,\mu {\rm K} \, {\rm arcmin}$ sensitivity in polarization, with a beam with $1\, {\rm arcmin}$ FWHM.
+This is added to {\it Planck} measurements of CMB fluctuations on the remaining part of the sky with specifications from \cite{Adam:2015rua}. To reproduce the noise levels of real {\it Planck} measurements at large angular scales in polarization the E and B mode polarization sky fraction is reduced to $0.01$.
+Along with CMB probes we shall use DESI to exploit the complementary sensitivity of LSS measurements and investigate the synergies with CMB-S4 in constraining DE/MG models.
+We shall assume pessimistic specifications for the DESI survey as in \cite{Font-Ribera:2013rwa}.
+When both CMB-S4 and DESI are considered we include in the forecast all the cross correlations between these two probes.
 
 \subsubsection{Trigger}
 
-We consider the growth index $\gamma_{L}$, $\sigma_8(z)$ and $H(z)$ as trigger parameters. The central panel of Figure \ref{fig:MixedDEG} shows the marginal forecast constraint on $\gamma_{L}$. Figure \ref{fig:GrowthExpansion} shows the relative error on $\sigma_8(z)$ and $H(z)$, assuming an underlying $\Lambda$CDM model.
+\begin{figure}[!tb]
+\begin{center}
+\includegraphics[width=1.0\textwidth]{DarkEnergy/1_Thomographic}
+\caption{Relative error on $\sigma_{8}$ and $H$ as a function of redshift. Different colors correspond to different experiments, as shown in legend.}\label{fig:GrowthExpansion}
+\end{center}
+\end{figure}
 
-{\bf MR: shall we discuss here the results?}
+We consider $\sigma_8(z)$, $H(z)$ and the growth index $\gamma_{L}$ as trigger parameters. Figure \ref{fig:GrowthExpansion} shows the relative error on $\sigma_8(z)$ and $H(z)$, assuming an underlying $\Lambda$CDM model. The central panel of Figure \ref{fig:MixedDEG} shows the marginal forecast constraint on $\gamma_{L}$. 
+
+As we can see from the left panel of Figure \ref{fig:GrowthExpansion} CMB-S4 will improve on {\it Planck} determination of $\sigma_{8}(z)$ substantially, pushing the sensitivity to this parameter to sub-percent accuracy, especially at late times. 
+This level of accuracy is comparable with DESI measurements that are, in turn, just a factor two tighter.
+At early times CMB-S4 sensitivity to $\sigma_{8}$ is slightly lower but significantly better than DESI, as soon as redshift increases.
+Noticeably when CMB-S4 and DESI are joined $\sigma_{8}$ gets constrained to $\sim 0.1\%$ at all times. Moreover, the gain in the joint constraint is higher than the gain in sensitivity in going from CMB-S4 to DESI, thanks to the cross correlation between the two surveys.
+%
+A similar picture emerges from the right panel of Figure \ref{fig:GrowthExpansion} with the noticeable difference that CMB measurements have a peak in sensitivity around $z\sim 3$ that make CMB-S4 stronger than DESI. The joint DESI CMB-S4 constraints reflect this. The addition of CMB-S4 measurements improves the constraint on the expansion history significantly at redshifts higher than three.
+
+These levels of sensitivity will be instrumental in resolving tensions between different experiments. It is well known that CMB determinations of $\sigma_8$ are in marginal disagreement with LSS measurements. These tensions are still in a low statistical significance phase. Two experiments with similar, high, sensitivity can either confirm or falsify these tensions to high statistical significance making CMB-S4 and DESI instrumental to each other.
+
+{\bf MR: here will add something more quantitative.}
+
+This same trend appears also when considering the Growth index $\gamma_{L}$. CMB-S4 will give stronger constraints with respect to {\it Planck} due to the additional leverage of CMB lensing. These constraints will be comparable with DESI ones and displaying a slightly different degeneracy with the amplitude of scalar perturbations.
+Leveraging on the precision of both CMB and LSS measurements, the joint constraints with CMB-S4 and DESI are significantly stronger than the single probes considered alone.
+
+{\bf MR: add some numbers}.
 
 \subsubsection{Equation of motion parametrization}
 
@@ -219,12 +249,7 @@ We consider two parametrizations for the functions describing the EFT of cosmic 
 
 {\bf MR: shall we discuss here the results?}
 
-\begin{figure}[!tb]
-\begin{center}
-\includegraphics[width=1.0\textwidth]{DarkEnergy/1_Thomographic}
-\caption{Relative error on $\sigma_{8}$ and $H$ as a function of redshift. Different colors correspond to different experiments, as shown in legend.}\label{fig:GrowthExpansion}
-\end{center}
-\end{figure}
+
 
 \begin{figure}[!tb]
 \begin{center}
