@@ -62,13 +62,12 @@ This method allows for an assessment of the expected bias on $r$ if the model do
 
 \subsection{Forecasting \cmbexp\ constraints on parameters from TT/TE/EE/$\kappa\kappa$}
 
-To forecast the expected constraints on cosmological parameters from TT/TE/EE and $\kappa\kappa$ for CMB-S4, many of our community's codes use a Fisher matrix method, which assumes that the resulting parameter distributions are close to Gaussian.  Some forecasts are performed using full MCMC simulations if the parameters are known to be highly non-Gaussian. 
+Throughout this Science Book we forecast the expected constraints on cosmological parameters from TT/TE/EE and $\kappa\kappa$ using Fisher matrix methods. This assumes that the resulting parameter distributions are close to Gaussian, which is sufficient for the majority of parameters we consider.
 
-For CMB-S4, the method we follow is to combine CMB-S4 specifications with other available datasets, for example the data from Planck and expected measurements of Baryon Acoustic Oscillations and other low redshift data. 
+We assume that S4 data will be combined with existing Planck satellite data. We also assume that other non-CMB data will be available. In particular we consider measurements of Baryon Acoustic Oscillations from the DESI spectroscopic galaxy redshift survey. In some places we consider measurements of cosmic shear from the Large Synoptic Survey Telesope.
 
-For the noise levels of Planck, we assume that a data release including reliable polarization data will have happened before CMB-S4 data is taken, and forecast results that include TE and EE data and also large-scale polarization from HFI at multipoles lower than CMB-S4 is expected to reach. This follows approaches in e.g. \cite{allison15}.
 
-Our community uses two approaches to these Fisher forecasts, either considering the unlensed maps and the lensing convergence map as the basic statistics, or the lensed power spectra of those maps together with the reconstructed $\kappa \kappa$ spectrum. In the case of the power spectrum approach, to compute the Fisher matrix for the CMB we use the lensed power spectrum between each pair of fields $X, Y$:
+The codes we use either consider the unlensed maps and the lensing convergence map as the basic statistics, or the lensed power spectra of those maps together with the reconstructed $\kappa \kappa$ spectrum. For the power spectrum approach, to compute the Fisher matrix for the CMB we use the lensed power spectrum between each pair of fields $X, Y$:
 %
 \begin{equation}
 \label{eqEstimator}
@@ -97,23 +96,12 @@ Here the covariance matrix for the power spectra has elements
 %
 where $\alpha, \beta, \gamma, \delta \in \{T, E, B, \kappa_c\}$ and $f_{\rm sky}$ is the effective fractional area of sky used. 
 
-The second approach we consider is to construct the Fisher matrix using the unlensed temperature and polarization fields, and the lensing convergence field, rather than the suite of lensed two-point spectra and the lensing four-point function. Both approaches give consistent estimates.
+Other codes construct the Fisher matrix using the unlensed temperature and polarization fields, and the lensing convergence field, rather than the suite of lensed two-point spectra and the lensing four-point function. Both approaches give consistent estimates.
 
 The CMB lensing reconstruction noise is calculated using the \cite{hu02a} quadratic-estimator formalism. Our nominal approach is to neglect non-Gaussian terms in the power spectrum covariance. We also avoid including information from both lensed BB and the four-point $\kappa \kappa$, as they are covariant. The BB spectrum will not contribute as significantly to S4 constraints, compared to $\kappa \kappa$, and has a highly non-Gaussian covariance \cite{BenoitSmithHu1205}. 
 
-To address the issue of possible extragalactic foregrounds, we set a maximum multipole for the recoverable information of $\ell^T_{\rm max} = 3000$ and $\ell^P_{\rm max} = 4000$ for CMB-S4, as foregrounds are expected to be limiting at smaller scales. We also set a minimum multipole due to the challenge of recovering large-scales from the ground, and consider in general $\ell=50$. We include Planck data at the scales $\ell<\ell_{\rm min}$. 
-
-When relevant, we can also add information from Baryon Acoustic Oscillation (BAO) experiments. This can be done by adding the BAO Fisher matrix
-%
-\begin{equation}
-F_{ij}^{\rm BAO} = \sum_{k} \frac{1}{\sigma_{f,k}^2}\frac{\partial f_k}{\partial \theta_i}\frac{\partial f_k}{\partial \theta_j}
-\end{equation}
-%
-where $f_k = r_s/d_V(z_k)$ is the sound horizon at photon-baryon decoupling $r_s$ over the volume distance $d_V$ to the source galaxies at redshift $z_k$. We also follow standard approaches to including other low redshift probes.
-%, 
-
-\subsubsection{Instrument and atmospheric noise}
-For initial forecasts, noise spectra are generated assuming the sum of white noise and atmospheric noise. The white noise part is given by
+\subsubsection{S4 specifications}
+The white noise part is given by
 %
 \begin{equation}
 N^{\alpha \alpha}_\ell = (\Delta T)^2 \exp \left( \frac{\ell(\ell + 1) \theta^2_{\rm FWHM}}{8 \ln 2} \right)
@@ -121,15 +109,34 @@ N^{\alpha \alpha}_\ell = (\Delta T)^2 \exp \left( \frac{\ell(\ell + 1) \theta^2_
 %
 for $\alpha \in \{T, E, B\}$, where $\Delta T$ ($\Delta P$ for polarization) is the map sensitivity in $\mu$K-arcmin and $\theta_{\rm FWHM}$ is the beam width. 
 
-To estimate the atmospheric noise level in intensity, we consider levels at the South Pole and in Chile. For Chile, we base this estimate on current data from ACT and POLARBEAR. For the South Pole, we use data from SPT and BICEP as a guide. We then make the assumption that the atmospheric noise will scale down with observation time for detector arrays within a telescope, and will be uncorrelated for physically separated telescopes. For polarization our nominal estimate is white noise, assuming that the tiny intrinsic polarization of the atmosphere, potentially combined with the use of polarization modulators, minimizes atmospheric contamination.
+For polarization our nominal estimate is white noise, assuming that the tiny intrinsic polarization of the atmosphere, potentially combined with the use of polarization modulators, minimizes atmospheric contamination.
 
-In the longer term, it is expected that the TT/TE/EE/$\kappa \kappa$ forecasts will move toward the more
-experience-based approach laid out in Section \ref{sec_specforecast}. The analytic approximation to 
-$N_\ell$ can be replaced by scaled versions of noise spectra achieved in the field by experiments at the
-appropriate site. Eventually, full bandpower covariance matrices scaled from fielded experiments can 
-also be used.
+To address the issue of possible extragalactic foregrounds, we set a maximum multipole for the recoverable information of $\ell^T_{\rm max} = 3000$ and $\ell^P_{\rm max} = 4000$ for CMB-S4, as foregrounds are expected to be limiting at smaller scales. We also set a minimum multipole due to the challenge of recovering large-scales from the ground, and consider in general $\ell=50$. We include Planck data at the scales $\ell<\ell_{\rm min}$. 
 
+\subsubsection{Non-S4 data specifications}
+
+
+For the noise levels of Planck, we assume that a data release including reliable polarization data will have happened before CMB-S4 data is taken, and forecast results that include TE and EE data and also large-scale polarization from HFI at multipoles lower than CMB-S4 is expected to reach. This follows approaches in e.g. \cite{allison15}. For the optical depth to reionization, we only assume that Planck has reached currently published results, so impose a prior of $\tau=0.06\pm0.01$.
+
+In some cases we consider the addition of a cosmic-variance limited large-scale polarization measurement, as we might expect to get from PIXIE or LiteBIRD.
+
+When we add information from Baryon Acoustic Oscillation (BAO) experiments we can add the BAO Fisher matrix
 %
+\begin{equation}
+F_{ij}^{\rm BAO} = \sum_{k} \frac{1}{\sigma_{f,k}^2}\frac{\partial f_k}{\partial \theta_i}\frac{\partial f_k}{\partial \theta_j}
+\end{equation}
+%
+where $f_k = r_s/d_V(z_k)$ is the sound horizon at photon-baryon decoupling $r_s$ over the volume distance $d_V$ to the source galaxies at redshift $z_k$. Another approach is to include the forecasted power spectra directly. We also follow standard approaches to including other low redshift probes.
+%, 
+
+\subsubsection{Fisher code validation}
+
+We use six different Fisher matrix codes in the Science Book, but set up to use the same settings. We check that they all give consistent results for the $\Lambda$CDM model. These are shown in Table \ref{table:params}, which indicates the expected improvement of S4 over Planck for these parameters.
+
+
+In the longer term, it is expected that the TT/TE/EE/$\kappa \kappa$ forecasts will move towards using scaled versions of noise spectra achieved in the field by experiments at the
+appropriate site. Eventually, full bandpower covariance matrices scaled from fielded experiments can also be used.
+
 
 \subsection{Forecasting \cmbexp\ constraints on parameters from tSZ/kSZ}
 
