@@ -109,16 +109,20 @@ N^{\alpha \alpha}_\ell = (\Delta T)^2 \exp \left( \frac{\ell(\ell + 1) \theta^2_
 %
 for $\alpha \in \{T, E, B\}$, where $\Delta T$ ($\Delta P$ for polarization) is the map sensitivity in $\mu$K-arcmin and $\theta_{\rm FWHM}$ is the beam width. 
 
+We approximate the wide-field part of the S4 experiment as a 4-year survey using 250,000 detectors covering 40\% of the sky in the lowest Galactic foreground region. We consider beam widths of both 1' and 2', and in some cases consider the effect of greater variation in the beam width. By scaling the simple map depths achieved by the BICEP2 experient, we estimate a white noise level of 1 $\mu$K/amin in intensity, and $\sqrt(2)$ higher in polarization. For these smaller-scale forecasts we do not account for any possible mode filtering due to the mapping.
+
 For polarization our nominal estimate is white noise, assuming that the tiny intrinsic polarization of the atmosphere, potentially combined with the use of polarization modulators, minimizes atmospheric contamination.
 
-To address the issue of possible extragalactic foregrounds, we set a maximum multipole for the recoverable information of $\ell^T_{\rm max} = 3000$ and $\ell^P_{\rm max} = 4000$ for CMB-S4, as foregrounds are expected to be limiting at smaller scales. We also set a minimum multipole due to the challenge of recovering large-scales from the ground, and consider in general $\ell=50$. We include Planck data at the scales $\ell<\ell_{\rm min}$. 
+In these `non-r' studies, we do not model the removal of Galactic foregrounds, isntead assuming that all of the survey weight is focused at 150~GHz. In practice the survey would map the sky at a set of frequencies, and a component separation method used to estimate the CMB. Including these multiple frequencies will be the focus of future work; since Galactic foregrounds have a smaller effect on lensing and the CMB damping tail, we expect them to impact forecast constraints much less than for gravitational wave limits.
+
+To address the issue of extragalactic foregrounds, we set as the default a maximum multipole for the recoverable information of $\ell^T_{\rm max} = 3000$ and $\ell^P_{\rm max} = 5000$ for CMB-S4, as foregrounds are expected to be limiting at smaller scales. We also set a minimum multipole due to the challenge of recovering large scales from the ground, and consider in general $\ell=30$. We include Planck data at the scales $\ell<\ell_{\rm min}$. 
 
 \subsubsection{Non-S4 data specifications}
 
 
 For the noise levels of Planck, we assume that a data release including reliable polarization data will have happened before CMB-S4 data is taken, and forecast results that include TE and EE data and also large-scale polarization from HFI at multipoles lower than CMB-S4 is expected to reach. This follows approaches in e.g. \cite{allison15}. For the optical depth to reionization, we only assume that Planck has reached currently published results, so impose a prior of $\tau=0.06\pm0.01$.
 
-In some cases we consider the addition of a cosmic-variance limited large-scale polarization measurement, as we might expect to get from PIXIE or LiteBIRD.
+In some cases we consider the addition of a cosmic-variance limited large-scale polarization measurement, as we might expect to get from a PIXIE or LiteBIRD satellite or potentially a high-altitude balloon.
 
 When we add information from Baryon Acoustic Oscillation (BAO) experiments we can add the BAO Fisher matrix
 %
@@ -126,7 +130,7 @@ When we add information from Baryon Acoustic Oscillation (BAO) experiments we ca
 F_{ij}^{\rm BAO} = \sum_{k} \frac{1}{\sigma_{f,k}^2}\frac{\partial f_k}{\partial \theta_i}\frac{\partial f_k}{\partial \theta_j}
 \end{equation}
 %
-where $f_k = r_s/d_V(z_k)$ is the sound horizon at photon-baryon decoupling $r_s$ over the volume distance $d_V$ to the source galaxies at redshift $z_k$. Another approach is to include the forecasted power spectra directly. We also follow standard approaches to including other low redshift probes.
+where $f_k = r_s/d_V(z_k)$ is the sound horizon at photon-baryon decoupling $r_s$ over the volume distance $d_V$ to the source galaxies at redshift $z_k$. An alternative approach we take is to include the forecasted power spectra directly. We also follow standard approaches to including other low redshift probes.
 %, 
 
 \subsubsection{Fisher code validation}
