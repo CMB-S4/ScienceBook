@@ -54,7 +54,7 @@ of noise bias, sky windowing, and any filtering applied to the data before or af
 (including the effects of instrument beam and pixelization). These effects are estimated by ``observing''
 and analyzing simulated data and constructing a matrix describing their net influence on simulated data. 
 This matrix is inverted, and the inverse matrix is applied to the pseudo-$C_\ell$s to produce the 
-final data product. It is expected that some version of this Monte-Carlo treatment will also be 
+final data product. Some version of this Monte-Carlo treatment is likely to be 
 adopted for \cmbexp. 
 
 Pseudo-$C_\ell$ methods are also now commonly used in analysis of CMB polarization anisotropy
@@ -249,7 +249,7 @@ Similarly to avoiding the noise covariance with the realization-dependent $\hat 
 \hat{C}_{L}^{\hat{\phi}\hat{\phi}}\rangle}\right)^2
 (\hat{C}_{L}^{\hat{\phi}\hat{\phi}}-2\hat{N}_{L}^{(0)}),
 \end{equation}
-or by applying more advanced delensing methods.  However this has not yet been tested in practice and makes only sense if lensing reconstructions have sufficient signal-to-noise.  In general, forming linear combinations of measured lensing and CMB power spectra as in Eqs.~\eq{RDN0procedure} and \eq{matter_CV_mitigation} does simplify covariances, but it cannot add any new information as long as correct covariances are used.
+or by applying more advanced delensing methods.  However this has not yet been tested in practice and only makes sense if lensing reconstructions have sufficient signal-to-noise.  In general, forming linear combinations of measured lensing and CMB power spectra as in Eqs.~\eq{RDN0procedure} and \eq{matter_CV_mitigation} does not add any new information, but does simplify covariances.
 
 Since more covariance contributions arise from other couplings of the CMB 6-point function, it should be tested against simulations if the above contributions are sufficient.  In practice, it is then favorable to use analytical covariances because they are less noisy than those derived from simulations.   
  

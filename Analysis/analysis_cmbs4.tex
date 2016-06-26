@@ -15,7 +15,7 @@
 
 \section{Introduction}
 
-Extracting science from a CMB dataset is a complex, iterative process requiring expertise in both physical and computational sciences. In this chapter we start with an overview of the data analysis pipeline before diving more deeply into its subsets - time-orderd data processing, component separation and the estimation of statistics and parameters. We then discuss the drivers for, and corresponding structure of, the simulation pipeline, and describe in detail its sky modeling and data simulation subsets. Finally we assemble the full simulation and data analysis pipeline, noting its inherently iterative structure, and discuss its critical uses in forecasting and validation and verification, before concluding with a discussion of some key implementation issues. Throughout our goal is to describe the current state of the art, note the particular challenges posed by CMB-S4, and describe how they might be addressed.
+Extracting science from a CMB dataset is a complex, iterative process requiring expertise in both physical and computational sciences. In this chapter we start with an overview of the data analysis pipeline before diving more deeply into its subsets - time-ordered data processing, component separation and the estimation of statistics and parameters. We then discuss the drivers for, and corresponding structure of, the simulation pipeline, and describe in detail its sky modeling and data simulation subsets. Finally we assemble the full simulation and data analysis pipeline, noting its inherently iterative structure, and discuss its critical uses in forecasting and validation and verification, before concluding with a discussion of some key implementation issues. Throughout our goal is to describe the current state of the art, note the particular challenges posed by CMB-S4, and describe how these challenges might be addressed.
 
 \section{Data Analysis Overview}
 
@@ -23,9 +23,9 @@ The reduction of a CMB data set typically proceeds in a sequence of steps:
 \begin{description}
 \item[ Pre-processing:] The raw time-ordered detector data are calibrated and gross time-domain systematics are either removed (typically by template subtraction, filtering or marginalization) or flagged. The goal here is to make the real data match a model that will underpin all subsequent analyses.
 \item[Map-making:] At each observing frequency, estimates of the intensity I and the Stokes Q- and U-polarizations of the sky signal are extracted from the cleaned time-ordered data based on their spatial stationarity, typically using some degree of knowledge of the instrument's noise properties.
-\item[Component separation:] If sufficient frequenciy maps are available, the CMB can be separated from the various foreground sky components based on its unique spectral invariance (in CMB units).
+\item[Component separation:] If a sufficient number of frequency maps are available, the CMB can be separated from the various foreground sky components based on its unique spectral invariance (in CMB units).
 \item[Power spectrum estimation:] The six auto- and cross-angular power spectra of the CMB temperature T and E- and B-mode polarizations are estimated from the CMB and/or frequency maps, and corrected for E- to B-mode lensing.
-\item[Parameter estimation:] The best-fit parameters for any cosmological model are derived by comparing the theoretical TT, TE, EE and BB CMB power spectra that they would induce with the data and their uncertainties.
+\item[Parameter estimation:] The best-fit parameters for any cosmological model are derived by comparing the theoretical TT, TE, EE and BB CMB power spectra predicted by the model with the data.
 \end{description}
 
 This reduction essentially consists of a series of changes of basis for the data, from time samples to map pixels to spectral multipoles to cosmological parameters, with each basis-change reducing the data volume, increasing the signal-to-noise, and exposing a different class of systematic effects for mitigation.
