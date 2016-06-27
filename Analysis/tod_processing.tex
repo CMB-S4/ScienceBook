@@ -41,7 +41,7 @@ measured using dedicated observations of bright sources or off-sky characterizat
 \label{sec_mapmaking}
 
 Map-making is the stage of the analysis when the major compression of the time-ordered data happens and some estimate of the sky signal is produced at each observing frequency. It is usually a linear operation, characterized by some operator, $\mathbf{L}$, which transforms the input time-ordered data, $\mathbf{d}$, into a pixel domain map, $\mathbf{m}$, 
-e.g., \cite{Tegmark1997},
+e.g., \cite{Tegmark:1996qs},
 \begin{eqnarray}
 \mathbf{m} = \mathbf{L}\mathbf{d},
 \end{eqnarray}
@@ -70,16 +70,16 @@ which is solved by,
 Here the matrix $\mathbf{W}$ is an arbitrary positive definite weight matrix, and different choices of $\mathbf{W}$ lead to different estimates of the sky signal.
 \begin{itemize}
 \item If $\mathbf{W}$ is taken to be the inverse of the time-domain noise covariance, i.e., $\mathbf{W} = \mathbf{N}^{-1}$, then the sky signal estimate, $\mathbf{m}$, will correspond to the {\bf maximum likelihood} and {\bf minimum variance} solution. 
-\item If $\mathbf{W}$ is taken to be proportional to some diagonal matrix minus some low-rank correction, i.e. $\mathbf{W} \propto \mathbf{1} - \mathbf{T}\mathbf{T}^{\rm T}$,  with $\mathbf{T}$ assumed to be column-orthogonal, then the modes defined by its columns are marginalized over, effectively removing them from the solution. This approach includes as a special case so-called {\bf destriping} map-making, e.g.,~\cite{Poutanen2004, Keihanen2004}, which has gained recognition thanks to its successful applications to the Planck data, e.g.,~\cite{Keihanen2010, Tristram2011, LFIMaps2015, HFImaps2015}, and is therefore of potential interest to any experiments aiming to cover a large fraction of the sky. More generally, however $\mathbf{T}$ can be constructed to remove any unwanted modes present in the time domain data, e.g.,~\cite{Stompor2001, Cantalupo2010, Dunner2013}.
+\item If $\mathbf{W}$ is taken to be proportional to some diagonal matrix minus some low-rank correction, i.e. $\mathbf{W} \propto \mathbf{1} - \mathbf{T}\mathbf{T}^{\rm T}$,  with $\mathbf{T}$ assumed to be column-orthogonal, then the modes defined by its columns are marginalized over, effectively removing them from the solution. This approach includes as a special case so-called {\bf destriping} map-making, e.g.,~\cite{Poutanen:2004hy, Keihanen:2003pu}, which has gained recognition thanks to its successful applications to the Planck data, e.g.,~\cite{Keihanen:2009tj, Tristram:2011gq, Ade:2015uua, Adam:2015vua}, and is therefore of potential interest to any experiments aiming to cover a large fraction of the sky. More generally, however $\mathbf{T}$ can be constructed to remove any unwanted modes present in the time domain data, e.g.,~\cite{Stompor:2002jy, Cantalupo:2009if, Dunner:2012vp}.
 \item If $\mathbf{W}$ is taken to be diagonal, then the map-making solution corresponds to {\bf binning}, i.e. the weighted co-addition of the samples falling within each pixel.
 \end{itemize}
-If the instrument beams display complex, non-axially symmetric structure, the proper estimation of the sky signal may require correcting for their effects at the map level, leading to the so-called {\bf deconvolution} map-making ~\cite{ArmitageWandelt2004, Harrison2011, KeihanenReinecke2012}.  However, further work is needed to demonstrate the effectiveness of such an approach in general.
+If the instrument beams display complex, non-axially symmetric structure, the proper estimation of the sky signal may require correcting for their effects at the map level, leading to the so-called {\bf deconvolution} map-making ~\cite{Armitage:2004pk, Harrison:2011xt, Keihanen:2012rm}.  However, further work is needed to demonstrate the effectiveness of such an approach in general.
 
 If map-making is used primarily as a data compression operation on the way to deriving constraints on the statistical properties of the sky signal (such as its power spectra), one may choose to relax the condition in Eq.~(\ref{eq:condMaps}) in favor of the more computationally tractable, albeit potentially biased, sky estimate,
 \begin{eqnarray}
 \mathbf{m} = (\mathbf{A}^{\rm T} {\rm diag}( \mathbf{W}) \mathbf{A})^{-1} \mathbf{A}^{\rm T}\mathbf{W} \mathbf{d},
 \end{eqnarray}
-where ${\rm diag}( \mathbf{W})$ denotes the diagonal part of $\mathbf{W}$. In this approach any bias is then corrected at the next level of the data processing, e.g.,~\cite{Hivon2002}. This approach has been proven to be very effective, at least in the context of experiments with small sky coverage, e.g., \cite{QUAD2010, SPT2011, POLARBEAR, BICEP2014}.
+where ${\rm diag}( \mathbf{W})$ denotes the diagonal part of $\mathbf{W}$. In this approach any bias is then corrected at the next level of the data processing, e.g.,~\cite{Hivon:2001jp}. This approach has been proven to be very effective, at least in the context of experiments with small sky coverage, e.g., \cite{Culverhouse:2010ya, Schaffer:2011mz, Ade:2014afa, Ade:2014xna}.
 
 Formally the linearity of the mapmaking operation permits the propagation of the uncertainty due to the instrumental noise from time- to pixel-domain as
 \begin{eqnarray}

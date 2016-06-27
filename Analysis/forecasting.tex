@@ -44,7 +44,7 @@ We can acknowledge this limitation by including in our projections an unknown sy
 Errors that are multiplicative in the signal, such as an absolute calibration error in the map, are best handled by adding nuisance parameters to the signal model.
 
 Once we have a projection for the bandpower covariance matrix of CMB-S4, we can derive constraints on a parametrized model of cosmological and foreground signals via the Fisher information matrix.
-While we are most interested in parameter $r$, it is necessary to also consider the amplitude, spectrum, and spatial distribution of the dust and synchrotron foregrounds (see \cite{bicepkeckplanck15} for an example).
+While we are most interested in parameter $r$, it is necessary to also consider the amplitude, spectrum, and spatial distribution of the dust and synchrotron foregrounds (see \cite{Ade:2015tva} for an example).
 The Fisher matrix formalism allows us to calculate the marginalized error on each parameter, with priors if desired, or to explore the degeneracies between parameters.
 
 By compressing the data down to power spectra, it is feasible to use this technique to evaluate a wide range of survey designs.
@@ -56,9 +56,9 @@ For this reason, it is important to have the ability to spot check the spectrum-
 
 Foregrounds are intrinsically non-Gaussian, so it is beneficial to consider approaches directly in map space, to check the robustness of spectrum-based approaches, in particular in the case of pessimistic foregrounds where the spectral indices or dust emissivities have non-trivial spatial variation. Here one of the approaches our community uses is a Bayesian model fitting method, where the foregrounds are described parametrically using a physical model for each component.
 
-Using this method, maps of the CMB plus Galactic foreground sky and expected noise are simulated at each of the CMB-S4 frequencies and integrated across the expected bandpasses, using Galactic models as described for example in Section \ref{sec:skymodel}. Simulations at ancillary frequencies that might be provided by other experiments, for example the Planck data, can also be included in the same way. A parameterized model is then fit to the simulated maps, for example fitting the CMB, thermal dust, and synchrotron in small pixels, and typically the synchrotron spectral index and dust emissivity and temperature in larger pixels of order degree-scale or larger. The BB power spectrum of the foreground-marginalized CMB map is then estimated using e.g., the MASTER \cite{hivon02} algorithm or a pixel-based likelihood, and converted into an estimate of $r$ and its uncertainty. Our community has at least two such codes that can perform this procedure (Commander and BFoRe).
+Using this method, maps of the CMB plus Galactic foreground sky and expected noise are simulated at each of the CMB-S4 frequencies and integrated across the expected bandpasses, using Galactic models as described for example in Section \ref{sec:skymodel}. Simulations at ancillary frequencies that might be provided by other experiments, for example the Planck data, can also be included in the same way. A parameterized model is then fit to the simulated maps, for example fitting the CMB, thermal dust, and synchrotron in small pixels, and typically the synchrotron spectral index and dust emissivity and temperature in larger pixels of order degree-scale or larger. The BB power spectrum of the foreground-marginalized CMB map is then estimated using e.g., the MASTER \cite{Hivon:2001jp} algorithm or a pixel-based likelihood, and converted into an estimate of $r$ and its uncertainty. Our community has at least two such codes that can perform this procedure (Commander and BFoRe).
 
-This method allows for an assessment of the expected bias on $r$ if the model does not match the simulation, and shows how much the expected uncertainty on $r$ would increase if more complicated foreground models are explored e.g. \cite{armitage-caplan12,remazeilles16}. It is more computationally expensive than spectral-domain forecasts though, so we limit this approach to a smaller subset of explorations. 
+This method allows for an assessment of the expected bias on $r$ if the model does not match the simulation, and shows how much the expected uncertainty on $r$ would increase if more complicated foreground models are explored e.g. \cite{ArmitageCaplan:2011sn,Remazeilles:2015hpa}. It is more computationally expensive than spectral-domain forecasts though, so we limit this approach to a smaller subset of explorations. 
 
 \subsection{Forecasting \cmbexp\ constraints on parameters from TT/TE/EE/$\kappa\kappa$}
 
@@ -98,7 +98,7 @@ where $\alpha, \beta, \gamma, \delta \in \{T, E, B, \kappa_c\}$ and $f_{\rm sky}
 
 Other codes construct the Fisher matrix using the unlensed temperature and polarization fields, and the lensing convergence field, rather than the suite of lensed two-point spectra and the lensing four-point function. Both approaches give consistent estimates.
 
-The CMB lensing reconstruction noise is calculated using the \cite{hu02a} quadratic-estimator formalism. Our nominal approach is to neglect non-Gaussian terms in the power spectrum covariance. We also avoid including information from both lensed BB and the four-point $\kappa \kappa$, as they are covariant. The BB spectrum will not contribute as significantly to S4 constraints, compared to $\kappa \kappa$, and has a highly non-Gaussian covariance \cite{BenoitSmithHu1205}. 
+The CMB lensing reconstruction noise is calculated using the \cite{Hu:2001kj} quadratic-estimator formalism. Our nominal approach is to neglect non-Gaussian terms in the power spectrum covariance. We also avoid including information from both lensed BB and the four-point $\kappa \kappa$, as they are covariant. The BB spectrum will not contribute as significantly to S4 constraints, compared to $\kappa \kappa$, and has a highly non-Gaussian covariance \cite{BenoitLevy:2012va}. 
 
 \subsubsection{S4 specifications}
 The white noise part is given by
@@ -121,7 +121,7 @@ To address the issue of extragalactic foregrounds, we set as the default a maxim
 
 We include Planck data at the scales $\ell<\ell_{\rm min}$, nominally with $\ell_{min}=30$, and we also add Planck data at all scales over the part of the sky not measured by S4 from Chile or the South Pole, approximated as covering an additional $f_{sky}=0.2$.
 
-For the noise levels of Planck, we assume that a data release including reliable polarization data will have happened before CMB-S4 data is taken, and forecast results that include TE and EE data and also large-scale temperature and polarization from HFI. This follows approaches in e.g. \cite{allison15}. For the optical depth to reionization, we assume that Planck has reached currently published results, so impose a prior of $\tau=0.06\pm0.01$.
+For the noise levels of Planck, we assume that a data release including reliable polarization data will have happened before CMB-S4 data is taken, and forecast results that include TE and EE data and also large-scale temperature and polarization from HFI. This follows approaches in e.g. \cite{Allison:2015qca}. For the optical depth to reionization, we assume that Planck has reached currently published results, so impose a prior of $\tau=0.06\pm0.01$.
 
 In some cases we consider the addition of a cosmic-variance limited large-scale polarization measurement, as we might expect to get from a PIXIE or LiteBIRD satellite or potentially a high-altitude balloon.
 
@@ -173,13 +173,13 @@ with rapidly developing analysis methods.
 Forecasting constraints from cluster abundance is complicated by the fact that even current CMB 
 experiments are not limited in their cluster-based constraints by raw sensitivity but rather by systematic
 uncertainties in the scaling relation between the tSZ observable and the cluster mass 
-\cite{reichardt13,planck15-24}. Thus the cluster-based forecasting for \cmbexp\ will likely be more
+\cite{Reichardt:2012yj,Ade:2015fva}. Thus the cluster-based forecasting for \cmbexp\ will likely be more
 focused on constraints on the observable-mass relation such as those that come from CMB-cluster
 lensing (see Section 4.1.2.1).
 
 Forecasting constraints from kSZ will be an ongoing avenue of development. As early results become
 more mature, and the community explores new ways of measuring this signal 
-\cite{hand12,keisler13,planck12-37,schaan15,hill16,soergel16}, the exact methods for forecasting
+\cite{Hand:2012ui,Keisler:2012eg,Ade:2015lza,Schaan:2015uaa,Hill:2016dta,Soergel:2016mce}, the exact methods for forecasting
 will become more clear.
 
 
