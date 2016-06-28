@@ -212,6 +212,7 @@ When both CMB-S4 and DESI are considered we include in the forecast all the cros
 %
 When a result is presented it is always marginalized over all the other parameters of the model. 
 In particular, when considering DESI, we marginalize over a constant scale independent bias, different in all the survey redshift bins.
+%
 
 \subsubsection{Trigger}
 
@@ -263,29 +264,8 @@ CMB-S4 and DESI  &   0.0003	 & 	$33 \, \sigma$ & $12 \, \sigma$			\\
 \end{center}
 \end{table}
 
-The power of CMB-S4 in constraining the growth of structures and its synergy with LSS surveys clearly shows when considering the Growth index $\gamma_{L}$. As we can be see from both from the central panel of Figure \ref{fig:MixedDEG} and Table \ref{table:ForecastGammaL} CMB-S4 will give stronger constraints with respect to {\it Planck} due to the additional leverage of CMB lensing. These constraints will be comparable with DESI ones and displaying a slightly different degeneracy with the amplitude of scalar perturbations.
+The power of CMB-S4 in constraining the growth of structures and its synergy with LSS surveys clearly shows when considering the Growth index $\gamma_{L}$. As we can be see from both from the central panel of Figure \ref{fig:MixedDEG} and Table \ref{table:ForecastGammaConstEFT} CMB-S4 will give stronger constraints with respect to {\it Planck} due to the additional leverage of CMB lensing. These constraints will be comparable with DESI ones and displaying a slightly different degeneracy with the amplitude of scalar perturbations.
 Leveraging on the precision of both CMB and LSS measurements, the joint constraints with CMB-S4 and DESI are significantly stronger than the single probes considered alone.
-
-\begin{table}[t!]
-\begin{center}
-\begin{tabular}{|c|c|} 
-\hline
-Datasets 			& $\sigma_{\gamma_{\rm L}}$  \\
-\hline
-{\it Planck}  		& 		0.02	\\
-\hline
-CMB-S4       &			0.007  	\\
-\hline
-DESI            &   0.007	 \\
-\hline
-CMB-S4 + DESI  &   0.002	 \\
-\hline
-\end{tabular}
-\caption{Forecasted $68\%$ C.L. constraints on $\gamma_{\rm L}$.}
-\label{table:ForecastGammaL}
-\end{center}
-\end{table}
-
 
 \subsubsection{Equation of motion parametrization}
 
@@ -295,18 +275,77 @@ We parametrize deviations of the speed of GWs from the speed of light, with the 
 In the left panel of Figure \ref{fig:MixedDEG} we show the marginalized joint forecast constraint on the tensor to scalar ratio and the speed of GWs.
 As we can see these two parameters are only weakly degenerate.
 
+{\bf MR: uploading tomorrow the same forecast with different r fiducial}
+
 \subsubsection{Theory parametrization}
 
-We consider two parametrizations for the functions describing the EFT of cosmic acceleration and we shall restrict here to considering their Horndeski limit.
-To parametrize theories in this class we shall adopt two basis. The first one is obtained by making the couplings in action (\ref{Eq:EFTaction}) dimensionless, as in \cite{Hu:2014oga}.
-The second one consists of a re-parametrization of these couplings targeted at the class of Horndeski models, as in \cite{Bellini:2014fua}.
+{\bf MR: beware of inconsistent notation in the figures $f_0 \rightarrow f_{\rm early}$ and  $f_1 \rightarrow f_{\rm late}$. Will be fixed tomorrow.}
+
+\begin{table}[t!]
+\begin{center}
+\begin{tabular}{|c||c||c|c|c||c|c|c|} 
+\hline
+Datasets 			& $\sigma ( \gamma_{\rm L} )$  & $\sigma ( \Omega_0 )$ & $\sigma ( \gamma_0^{(2)} )$ & $\sigma ( \gamma_0^{(3)} ) $ & $\tilde{M}_0$ & $\alpha_0^{\rm B}$ & $\alpha_0^{\rm T}$    \\
+\hline
+\hline
+{\it Planck}  		& 0.02 & 0.03 & 0.4 & 0.01 & 0.03 & 0.02 & 0.02 \\
+\hline
+CMB-S4       & 0.007 & 0.02 & 0.1 & 0.01 & 0.02 & 0.02 & 0.008 \\
+\hline
+DESI            & 0.007 & 0.2 & 0.4 & 0.1 & 0.02 & 0.07 & 0.03 \\
+\hline
+CMB-S4 + DESI  & 0.002 & 0.01 & 0.05 & 0.002 & 0.006 & 0.02 & 0.001 \\
+\hline
+\end{tabular}
+\caption{Forecasted $68\%$ C.L. constraints on different models: the trigger parameter $\gamma_{\rm L}$; constant EFT couplings $\Omega_0$, $\gamma_0^{(2)}$ and $\gamma_0^{(3)}$; constant Horndeski couplings $\tilde{M}_0$, $\alpha_{\rm B}$ and $\alpha_{\rm T}$.}
+\label{table:ForecastGammaConstEFT}
+\end{center}
+\end{table}
+
+\begin{table}[t!]
+\begin{center}
+\begin{tabular}{|c||c|c||c|c|c|c|c|c|} 
+\hline
+Datasets 			& $\Omega_{\rm early}$ & $\Omega_{\rm late}$ & $\tilde{M}_{\rm early}$ &  $\tilde{M}_{\rm late}$ & $\alpha^B_{\rm early}$ & $\alpha^B_{\rm late}$ & $\alpha^T_{\rm early}$  & $\alpha^T_{\rm late}$   \\
+\hline
+\hline
+{\it Planck}  		& 0.08 & 0.05 & 0.2 &  0.1 & 0.05 & 0.2 & 0.03 & 0.04 \\
+\hline
+CMB-S4       &  0.04 &  0.04 & 0.05 & 0.02 & 0.05 & 0.1 & 0.02 & 0.01 \\
+\hline
+DESI            & 0.3 & 0.2 & 1.0 & 0.04 & 0.4 & 0.4 & 0.08 & 0.03 \\
+\hline
+CMB-S4 + DESI  &  0.03 &  0.01 & 0.04 & 0.007 & 0.04 & 0.08 & 0.01 & 0.001\\
+\hline
+\end{tabular}
+\caption{Forecasted $68\%$ C.L. constraints on early and late time values of different EFT couplings.}
+\label{table:ForecastAlphaAtan}
+\end{center}
+\end{table}
+
+We consider two parametrization basis for the functions describing the EFT of cosmic acceleration and, for the sake of simplicity, we focus on the Horndeski class of models.
 %
-In both cases we consider two functional parametrizations.
-The first one consists on assuming all the couplings constant in time. 
-The second one allows to have an early time value for the EFT couplings and a late time value, with a smooth transition in between, inspired by \cite{Linder:2015rcz}. 
-Specifically this second parametrization is given by $f(a)= 1/2 (f_0 + f_1) + ( f_1-f_0 ) {\rm ArcTan}[(a - a_0)/\Delta a]/\pi$ where 
-$f_0$ and $f_1$ are respectively the early and late time values of the considered EFT function, $a_0$ is the transition scale factor assumed to correspond to $z=10$ and $\Delta a=0.01$ is the transition sharpness. 
+The first parametrization is obtained by making the couplings in action (\ref{Eq:EFTaction}) dimensionless, as in \cite{Hu:2014oga}.
+The second one consists in re-parametrizing the couplings explicitly targeting the phenomenological features of Horndeski \cite{Bellini:2014fua}.
 %
+In both cases we consider two functional forms: we assume all the couplings constant in time; we allow all the EFT couplings to have different early and late time values, with a smooth transition in between, inspired by \cite{Linder:2015rcz}. Specifically this second parametrization is given by $f(a)= 1/2 (f_{\rm early} + f_{\rm late}) + ( f_{\rm late} -f_{\rm early} ) {\rm ArcTan}[(a - a_T)/\Delta a]/\pi$ where $f_{\rm early}$ and $f_{\rm late}$ are respectively the early and late time values of the considered EFT function, $a_T$ is the transition scale factor assumed to correspond to $z=10$ and $\Delta a=0.01$ is the transition sharpness. 
+%
+
+In Figure \ref{fig:ConstantEFT} and Table \ref{table:ForecastGammaConstEFT} we show the forecast constraints on constant EFT couplings. As we can see the sensitivity of CMB probes are unmatched when measuring the conformal coupling to gravity $\Omega_0$. 
+CMB-S4 measurements, in addition, are found to be the most constraining measurements on the other two EFT higher order operators, $\gamma_0^{(2)}$ and $\gamma_0^{(3)}$. Confirming the picture presented in the previous sections the synergy between CMB-S4 measurements and DESI results in much tighter constraints on all the considered parameters.
+For all the probes considered the kinetic operator, $\gamma_0^{(1)}$, is found to be unconstrained. 
+
+A similar picture also emerges from the forecast constraints on Horndeski couplings, with CMB-S4 providing the tightest bounds, as we can see from Figure \ref{fig:ConstantAlpha} and Table \ref{table:ForecastGammaConstEFT}. 
+When considering the effective Planck mass $\tilde{M}_0$ and the tensor speed excess, $\alpha_0^{\rm T}$, DESI and {\it Planck} sensitivities are comparable while CMB-S4 is a factor 1.5 and 2.5 stronger, respectively. 
+CMB measurements, on the other hand, are the most powerful at constraining the braiding coefficient $\alpha_0^{\rm B}$ and we can notice that {\it Planck} measurements are slightly stronger than CMB-S4 ones leveraging on the constraining power of large angular scales. 
+As expected, combining CMB-S4 to DESI, results in a significant improvement with respect to the single probes alone.
+As in the constant EFT case the scalar field kineticity $\alpha_0^{\rm K}$ is found to be unconstrained.
+
+When considering all the EFT couplings having different values at early and late times we found that early times changes are constrained by physical viability requirements and late time values have comparable bounds with respect to the constant case considered before.
+The only EFT coupling that does not display this behavior is the conformal one, $\Omega(a)$, and the corresponding forecast constraints are shown in the right panel of Figure \ref{fig:MixedDEG} and Table \ref{table:ForecastAlphaAtan}. For these parameters we find that marginalization slightly degrades the forecast bounds with respect to the constant case. Moreover we find that data are more sensitive to the sum of these two parameters rather than their difference but when CMB-S4 is combined to DESI this degeneracy in parameter space is relieved.
+
+Horndeski couplings in turn display a qualitatively different picture, as we can see from Figure \ref{fig:VariationAlpha} and Table \ref{table:ForecastAlphaAtan}.
+Not surprisingly CMB measurements are generally stronger than LSS surveys at constraining the early time values of these functions, i.e. $\tilde{M}_{\rm early}$, $\alpha^{\rm T}_{\rm early}$ and $\alpha^{\rm B}_{\rm early}$. However CMB-S4, leveraging on both the early and late time constraining power of CMB and CMB lensing measurements is sensitive to both early and late time values, to unmatched accuracy.
 
 
 \begin{figure}[!tb]
@@ -336,6 +375,7 @@ $f_0$ and $f_1$ are respectively the early and late time values of the considere
 \caption{Forecasted marginalized constraints on constant Horndeski couplings. Different colors correspond to different experiments, as shown in legend.}\label{fig:ConstantAlpha}
 \end{center}
 \end{figure}
+
 
 \clearpage
 
