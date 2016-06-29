@@ -152,7 +152,7 @@ The lower limit on $\Omega_\nu h^2$ is a reflection of the lower limit on the su
 Any probe of $P_{mm}$ late times is, in principle, sensitive to the sum of the neutrino masses.  The question we will be most interested in is whether a given probe is sensitive to the lower limit, $\sum m_\nu = 58 \, {\rm meV}$ (or $\Omega_\nu h^2 = 0.0006$) under realistic circumstances.  In this subsection, we will discuss the two methods through which CMB Stage IV can directly constrain the neutrino mass, CMB lensing and SZ cluster abundances.  We will also compare these observables to other cosmological probes of the neutrino mass from upcoming large scale structure surveys such as DESI and LSST.
 
 
-\subsection{CMB Lensing}
+\subsection{CMB Lensing}\label{sec:neulens}
 
 Likely the cleanest probe of the neutrino mass in the CMB is through gravitational lensing~\cite{Kaplinghat:2003bh}, which directly measures the matter distribution along the line of sight.  To be concrete, in the Limber approximation, the lensing power spectrum is given by
 \bea
@@ -169,7 +169,7 @@ The primary challenges for the lensing measurement are degeneracies with other c
 \item Optical depth, $\tau$: The suppression of small scale power at low redshift requires a reliable measurement of the amplitude of the power spectrum at high redshift.  In principle, this is measured by the primary CMB anisotropies, but the overall normalization is degenerate with $\tau$ for $\ell \gtrsim 20$.  A precise measurement of $\tau$ is therefore crucial to calibrate the suppression at low redshifts.  Such a measurement will likely come from $\ell \lesssim 20$ polarization data from CMB-S4 and/or other CMB experiments.  It should be emphasized that Stage IV sensitivity is not needed for the measurement of $\tau$ and such a measurement could be performed by Planck or a Stage III experiment.
 
 
-\item $\Omega_m$ : The amount of lensing is controlled by the total amount of matter.  Therefore, we can compensate for a suppression from neutrinos by increasing the matter power spectrum.  This degeneracy will be broken by DESI BAO measurements of the expansion history.
+\item $\Omega_m h^2$ : The amount of lensing is controlled by the total amount of matter.  Therefore, we can compensate for a suppression from neutrinos by increasing the matter power spectrum.  This degeneracy will be broken by DESI BAO measurements of the expansion history.
 \end{itemize}
 In addition to degeneracies in $\Lambda$CDM there can be degeneracies with possible extensions.  Most notably:
 \begin{itemize}
@@ -241,20 +241,21 @@ There are a number synergistic opportunities between CMB S4 and external cosmolo
 
 \subsection{Forecasts}
 
-\begin{table}[t!]
-\begin{center}
-\begin{tabular}{l ccc cc} 
- \toprule
-    				    			& $1'$  		& $2'$  		& $3'$  		& $\ell_{\rm max} = 3000$	& $\ell_{\rm max} = 4000$ \\ [0.5ex]
- \midrule
-   $\sigma(\Neff)$ & -- 		& -- 		& --		& -- 	  	  	& -- 		  \\
-    \bottomrule
-\end{tabular}
-\caption{Forecasts for varying beam size and maximum multipole assuming...}
-\label{tab:beam}
-\end{center}
-\end{table}
+As we described in Section~\ref{sec:neulens}, the most concrete constrains on $\sum m_\nu$ from CMB Stage IV are derived from the CMB lensing power spectrum, as seen in Equation~(\ref{eq:CellPhiPhi}).  Our sensitivity to $\sum m_\nu$ is the limited by the error in the reconstruction of $\phi$ from the $T$ or $E/B$ maps.  The noise for the lensing reconstruction is discussed in detail in Section~\ref{sec:lensing_intro} and the noise curves for both the $TT$- and $EB$-estimators are show in Figure~\ref{n0s_s4}.  
 
+Forecasts for CMB Stage IV with and without DESI BAO are shown in Figure~\ref{fig:mnuforecast}, following the methodology outlined in Section~\ref{sec:Forecasting}.  As we explained in Section~\ref{sec:neulens}, the main signature neutrino mass in CMB lensing is degenerate with both $\tau$ and $\Omega_m h^2$.  The sensitivity is therefore strongly dependent on the constraints on these parameters both internally and with external data.  We can see the effect of the measurement of $\Omega_m h^2$ by comparing the results with and without DESI BAO.  In particular, we note that the constraints improve by a factor or three by including DESI.  
+
+We have assumed that $\ell \geq 30$ and therefore we do not constraint $\tau$ directly.  We instead assume an external prior of $\tau = 0.06 \pm 0.01$ which is consistent with the current Planck measurement and sensitivity.  Note that this is somewhat larger that the Planck Blue Book values which leads to weaker constraints.  In particular, we see that $\sigma(\sum m_\nu) > 26$ meV for the full range of beam size and sensitivity.  These results improve significantly with a stronger prior on $\tau$.
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.4]{Neutrinos/S4_BeamVsNoise.png} \hspace{0.025cm}
+\includegraphics[scale=0.4]{Neutrinos/S4+DESI_BeamVsNoise.png}
+
+\caption{ Forecasts for $\sigma(\sum m_\nu)$ assuming $\Lambda$CDM + $\sum m_\nu$.  Both figures vary beam size in arcmin and effective detector noise in $\mu$K-arcmin.  These limits assume an external prior on $\tau = 0.06 \pm 0.01$. {\it Left:} CMB Stage IV alone. {\it Right: } CMB Stage IV with DESI BAO.  }
+\label{fig:mnuforecast}
+\end{center}
+\end{figure} 
 
 \subsection{Relation to Lab Experiments}\label{sec:lab}
 
@@ -544,7 +545,7 @@ For the minimal scenario of a single real scalar, reaching $\sigma(\Neff) \sim 1
 
 A measurement with a slightly larger error on $\Nf$ would still be extraordinarily valuable for higher spin fields, multiple light scalars, and modifications to the thermal history up to the electroweak scale.  In particular, massless fermions and vectors have two helicity states which imply contributions of $\Delta \Neff  \geq 0.047$ and $\Delta \Neff  \geq 0.054$ respectively.  As a result, a less sensitive instrument is still capable of probing physics back to reheating since it could detect or rule out the existence of light thermal relics with non-zero spin.  In addition, there is good reason to think dark sectors could contain multiple light fields which could appear at any level of $\Delta \Neff$ above the minimum contribution from a single scalar field.  Still, the most dramatic jumps in discovery potential occur at the critical values $\Delta \Neff = 0.027, 0.047$, and $0.054$.  
 
-\subsection{Observational Signatures}
+\subsection{Observational Signatures}\label{sec:Neffsignatures}
 
 Cosmic neutrinos and other light relics play to two important roles in the CMB that are measured by $\Neff$.  They contribute to the total energy in radiation which controls the expansion history and, indirectly, the damping tail of the power spectrum.  The fluctuations of neutrinos and any other free streaming radiation also produces a constant shift in the of phase the acoustic peaks.  These two effects drive both current and future constraints on $\Neff$.  
 
@@ -565,17 +566,25 @@ E-mode polarization will play an increasingly important role for several reasons
 
 \subsection{Forecasts}
 
+As we described in Section~\ref{sec:Neffsignatures}, the most concrete signatures of $\Neff$ from CMB Stage IV are derived from the damping tail at high-$\ell$ in both $T$ and $E$.  In addition, there is the effect of the shift in the phase of the acoustic peaks that is present at $\ell > 500$.  Within $\Lambda$CDM these parameters are robust to degeneracies, having already accounted for the degeneracy of the location of the first acoustic peak with $H_0$.  The damping tail is generate with other extensions, like $Y_p$, as we will explore in Section~\ref{sec:NeffBBNfore}.
+
+Forecasts for $\sigma(\Neff)$ under various experimental configurations are given in Table~\ref{tab:Neffbeam}.  Since the damping tail extends to very high-$\ell$, constraints on $\Neff$ are sensitive to $\ell_{\rm max}$ and the beamsize of the experiment.  We assume $\ell_{\rm max} = 5000$ except for $C^{TT}$ where we assume $\ell_{\rm max} = 3000$ due to foregrounds.  One can see the impact of the highest-$\ell$ modes  by looking at the effect of the beamsize.
+
+The other important parameter for $\Neff$ is the sky fraction of the survey, $f_{\rm sky}$.  Since the signature of neutrinos depends on the detailed measurement of the shape of the power spectra, constraints depend on the number of observed modes.  At fixed noise levels this implies that $\sigma(\Neff) \propto f^{-1/2}_{\rm sky}$.  Of course, with a fixed number of detectors the sensitivity, $S$, is proportional to $S \propto f_{\rm sky}^{1/2}$.  Since $\sigma(\Neff)$ grows more slowly that $S$, we see that we mostly gain information by increasing $f_{\rm sky}$.
+
 \begin{table}[t!]
 \begin{center}
-\begin{tabular}{l ccc cc} 
+\begin{tabular}{l ccc} 
  \toprule
-    				    			& $1'$  		& $2'$  		& $3'$  		& $\ell_{\rm max} = 3000$	& $\ell_{\rm max} = 4000$ \\ [0.5ex]
+    		$\sigma(\Neff)$		    			& $1'$  		& $2'$  		& $3'$  		 \\ [0.5ex]
  \midrule
-   $\sigma(\Neff)$ & -- 		& -- 		& --		& -- 	  	  	& -- 		  \\
+   1 $\mu$K-arcmin & 0.030 		& 0.032		& 0.35	 		  \\
+  2  $\mu$K-arcmin & 0.035 		& 0.038		& 0.041	 		  \\
+   3  $\mu$K-arcmin & 0.040 		& 0.042 		& 0.045	 		  \\
     \bottomrule
 \end{tabular}
-\caption{Forecasts for varying beam size and maximum multipole assuming...}
-\label{tab:beam}
+\caption{Forecasts for $\sigma(\Neff)$ with varying beamize in arcmin (') and detector sensitivity.  These forecasts assume $f_{\rm sky} = 0.4$.  }
+\label{tab:Neffbeam}
 \end{center}
 \end{table}
 
@@ -857,24 +866,27 @@ The power spectrum of the CMB is also directly sensitive to $Y_p$.  Since helium
 
 CMB Stage IV will provide constraints on $\Nf$ which are about an order of magnitude better than the current best constraints, and will also improve on the measurement of $Y_p$ by about a factor of two compared to the current best astrophysical measurements.  Combined with measurements of other primordial abundances, this will help to provide a very thorough check of our understanding of the early universe and provide the opportunity to discover physics beyond the Standard Model.
 
-\subsection{Forecasts}
+\subsection{Forecasts}\label{sec:NeffBBNfore}
 
+Constraints on the combined $Y_P$-$\Neff$ parameter space is a useful probe of both the physics of BBN and recombination and possible evolution in between.  It is therefore useful to consider joint constraints on these two parameters available from the CMB alone.  
 
-\begin{table}[h!t]
+The leading effect of both $Y_p$ and $\Neff$ is to change to damping tail and they are therefore degenerate.  However, this degeneracy is broken both by the phase shift induced by neutrinos and by the $E$-mode spectra.  The phase shift is sensitive to delensing of the $T$ and $E$-modes and proper forecasting must account for realistic delensing, and the non-trivial covariance induced by the imperfect delensing.  Forecasts including both effects are given in Table~\ref{tab:YpNeffbeam}.
+
+ 
+
+\begin{table}[t!]
 \begin{center}
- \begin{tabular}{l cc} 
+\begin{tabular}{l ccc} 
  \toprule
-   Experiment		& $\sigma(Y_p)$& $\sigma(\Nf)$    \\ [0.5ex] 
+    		$\sigma(\Neff)/\sigma(Y_p)$		    			& $1'$  		& $2'$  		& $3'$  		 \\ [0.5ex]
  \midrule
-   \multirow{2}{*}{Design option 1} 		& -- & --\\
-				&-- & --    	     		\\
- \cmidrule{1-3}
-   \multirow{2}{*}{Design option 2}			& --  	  & --\\
-				& --			& --    	   		\\
- \bottomrule
+   1 $\mu$K-arcmin & 0.082 / 0.0049		& 0.085 /  0.0050 		& 0.090 / 0.0053		 		  \\
+  2  $\mu$K-arcmin & 0.093 / 0.0054		& 0.096 / 0.0056		& 0.10 / 0.0058	 		  \\
+   3  $\mu$K-arcmin & 0.10 / 0.0058		& 0.10 / 0.0059		& 0.11 / 0.0062		 		  \\
+    \bottomrule
 \end{tabular}
-\caption{Forecasts for the marginalized $1\sigma$ errors for $\Neff$ and $Y_p$.    A dash in the $\sigma(\Neff)$ entry indicates that $\Neff = 3.046$ was fixed.  Our forecasts assumed both delensing and lensing reconstruction. }
-\label{tab:Yp}
+\caption{Forecasts for $\sigma(\Neff)$ and $\sigma(Y_p)$ with varying beamize in arcmin (') and detector sensitivity. These forecasts allow both $Y_p$ and $\Neff$ to vary (along with the parameters of $\Lambda$CDM).  We assume $f_{\rm sky} = 0.4$. }
+\label{tab:YpNeffbeam}
 \end{center}
 \end{table}
 
