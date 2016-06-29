@@ -171,24 +171,54 @@ r=\frac{A_t}{A_s}\;.
 The power spectra of $\zeta$ and $\gamma_s$ are time-independent as long as the modes are outside the horizon, and only begin to evolve once the modes of interest re-enter the horizon at late times. In particular, they set the initial conditions for the system of equations governing the time evolution of the universe from a temperature of around $10^9$ K (when electrons and positrons have just annihilated) to the present. To exhibit the link between the primordial perturbations and late time observables explicitly, note that in a spatially flat universe, the contributions of primordial scalar perturbations to the angular power spectra of temperature or E-mode anisotropies are given by
 \begin{equation}
 C^{(S)}_{XX,\ell}=\int \frac{dk}{k}\mathcal{P}_\zeta(k)\left|\int\limits_0^{\tau_0} d\tau S_X^{(S)}(k,\tau)j_\ell(k(\tau_0-\tau))\right|^2\,,
+\label{eq:clscalar}
 \end{equation}
 where $j_\ell$ is a spherical Bessel function that encodes the (spatially flat) geometry of the universe and $S_X^{(S)}(k,\tau)$ with $X=T,E$ are source functions that encode the evolution of the modes in the hot big bang universe (in particular, the physics of recombination is very important for B-modes).
 % and $\mathcal{P}_\zeta(k)$ is the power spectrum of initial conditions of primordial scalar perturbations as a function of the (comoving) momentum of the modes. 
 At linear order, scalar perturbations only contribute to angular power spectra of temperature and E-mode polarization and the cross-spectrum of temperature and E-mode polarization, while the tensor perturbations in addition generate B-mode polarization. The primordial contribution of the tensor perturbations to the angular power spectrum of B-modes is 
 \begin{equation}
 C_{BB,\ell}=\int \frac{dk}{k}\mathcal{P}_t(k)\left|\int\limits_0^{\tau_0} d\tau S_B^{(T)}(k,\tau)j_\ell(k(\tau_0-\tau))\right|^2\,.
+\label{eq:clbb}
 \end{equation}
 where $S_B^{(T)}(k,\tau)$ is the appropriate source function. 
 
-At present, bounds on the tensor contribution to the temperature and E-mode anisotropies are comparable to constraints on the tensor-to-scalar ratio from B-mode observations. The former constraints are now cosmic variance-limited. There is no limit on the latter from cosmic variance, and improvements and a potential detection with CMB-S4 will rely on measurements of B-mode polarization on degree scales.
+The results of calculations using Eqs.~(\ref{eq:clscalar}) and (\ref{eq:clbb}), performed with the Code for Anisotropies in the Microwave Background (CAMB, \cite{Lewis:1999bs}), are shown in Fig.~\ref{fig:clall}. Results for the total (scalar + tensor) temperature and E-mode spectra are given by the black and red lines, respectively, while the result for the tensor B-mode spectrum is given by the blue lines for two possible values of $r$. Also shown are predictions for contaminations to the primordial B-mode spectrum by gravitational lensing of E modes (green line) and foregrounds (brown dashed lines). For more discussion of B-mode signal shape and detection prospects, as well as contamination mitigation, see Sec.~\ref{sec:needs}. Finally, the black points in Fig.~\ref{fig:clall} show current constraints on the total (primordial + contamination) B modes from BICEP2/Keck \cite{Ade:2015fwj} and SPTpol \cite{Keisler:2015hfa}.
+
+At present, bounds on the tensor contribution to the temperature and E-mode anisotropies are comparable to constraints on the tensor-to-scalar ratio from B-mode observations. The former constraints are now cosmic variance-limited. There is no limit on the latter from cosmic variance, and improvements and a potential detection with CMB-S4 will rely on measurements of B-mode polarization, most likely targeting the degree-scale feature in the primordial B-mode spectrum (which is easier to access from the ground than the much larger-scale $\ell < 10$ feature).
 
 Constraints on the amplitude of primordial tensor modes already strongly disfavor once popular inflationary models like minimally coupled chaotic inflation with a quadratic potential. In the next section we will discuss in detail what a detection of primordial gravitational waves would imply for theories of the primordial universe. 
 
 %but it is also important to note that a detection would rule out contracting universe scenarios. A contracting universe can also put large scales in causal contact if the scale factor $a$ is nearly constant while the magnitude of the Hubble parameter increases. This means the spectrum of gravitational wave fluctuations will be very blue \cite{Khoury:2001wf}. In addition the Hubble parameter at the end of the contracting phase can be approximately bounded (minimally, $H<M_p$, or $H\sim T_{\rm reheat}$) and so the value of $H$ that sets the amplitude of tensor fluctuations on scales accessible through the CMB must be exponentially smaller. The vacuum fluctuations in a contracting universe are then far too small to be detected \cite{Boyle:2003km}.
 
+
 \section{Implications of a detection of primordial gravitational waves}
 % from vacuum fluctuations during inflation}
 \label{sec:detection}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=0.6\textwidth]{Inflation/cmb_powspec_for_s4scibook_with_data_uk2.pdf}
+\end{center}
+\caption{Theoretical predictions for the temperature (black), 
+$E$-mode (red), and tensor $B$-mode (blue) power spectra. Primordial 
+$B$-mode spectra are shown for two representative values of the tensor-to-scalar
+ratio: $r=0.001$ and $r=0.01.$ 
+The contribution to tensor $B$ modes from scattering at recombination peaks at $\ell \sim 80$
+and from reionization at $\ell < 10$.
+Also shown are expected values for the contamination
+to primordial $B$ modes from gravitationally lensed $E$ modes (green) and foregrounds
+for one small patch of sky (brown dashed). Current constraints on the total (primordial +
+lensing + foreground) B-mode spectrum are shown as black points, and sum of lensing + foregrounds
+is shown with a black dashed line.
+The lensing contribution
+to the $B$-mode spectrum can be at least partially removed from measurements by 
+exploiting the non-Gaussian statistics of the lensing, while the foreground contamination
+can be mitigated by a multi-frequency measurement (for details see Sec.~\ref{sec:needs}).
+}
+\label{fig:clall}
+\end{figure}
+
+
 The inflationary amplification of vacuum fluctuations of the metric leads to a nearly scale-invariant, very nearly Gaussian tensor power spectrum. This signal is very well characterized by a single parameter defining the (relative) amplitude of tensor fluctuations, $r$. In this section, we consider the consequences of a detection of primordial gravitational waves consistent with the inflationary expectation. Together with implications of an improved upper limit on $r$ presented in the next section, these expectations motivate the threshold level of sensitivity CMB S4 will aspire to and guide the baseline proposals for the instrument in Section \ref{sec:needs}. Of course, if a detection is achieved it will be essential to characterize the accuracy with which we can test the standard inflationary prediction. In Section \ref{sec:beyond_r} we will use the baseline instrument design from Section \ref{sec:needs} with hypothetical detection levels to forecast constraints on $n_T$ and tensor mode non-Gaussianity. We also use Section \ref{sec:beyond_r} to discuss alternatives to the inflationary vacuum prediction, including non-vacuum sources during inflation. Although all currently proposed alternatives are fine-tuned to produce a sizable signal, we will also see that they would be distinguishable from the simplest inflationary predictions as long as $r$ is detected at high significance. 
 
 The remainder of this section derives the remarkable implications of a detection of primordial gravitational waves with a nearly scale-invariant, nearly Gaussian spectrum: revealing the energy scale of inflation, providing excellent evidence for linearized quantum gravity, and suggesting a structure of non-linear quantum gravity through the field range of the inflaton. 
@@ -337,11 +367,26 @@ Unfortunately, because of the scaling $M\propto \sqrt{\mathcal{N}_{\rm eq}}$ it 
 \section{Forecasted sensitivity to $r$}
 \label{sec:needs}
 
-Achieving the CMB-S4 target sensitivity to $r$ will require exquisite measurements of the $\BB$ spectrum at degree scales.
-It will be necessary to observe at many electromagnetic frequencies, to separate the CMB from polarized Galactic foregrounds that dominate at these angular scales, and also to delens the maps to suppress the sample variance of the lensing signal.
-Figure~\ref{fig_rforecast1} shows the forecasted sensitivity to $r$ for CMB-S4 as a function of the observed sky fraction under an upper limits scenario ($r=0$, left) or a detection scenario ($r=0.01$, right).
-Details of the forecasting methodology used here can be found in Section~\ref{sec_specforecast}.
+Achieving the CMB-S4 target sensitivity to $r$ ($\sigma_r \sim 10^{-3}$) will require exquisite measurements of the B-mode power spectrum. 
+It is expected that CMB-S4 will target the degree-scale recombination feature rather than the tens-of-degree-scale reionization feature (see Fig.~\ref{fig:clall}), because these largest scales are difficult to access from the ground due to atmosphere and sidelobe pickup (though some Stage-3 ground-based experiments are attempting this measurement, notably CLASS \cite{Essinger-Hileman:2014pja}).
 
+As can be seen from Fig.~\ref{fig:clall}, the first requirement for this level of sensitivity to $r$ is a large leap forward in raw instrument sensitivity. As detailed in Sec.~\ref{sec:detectors}, for ground-based bolometric detectors, this means a large increase in detector count. 
+The forecasts in this section use a baseline of 250,000 detectors operating for four years (or $10^6$ detector years), dedicated solely to maximizing sensitivity to $r$. 
+It will be necessary to split this total effort among many electromagnetic frequencies, to separate the CMB from polarized Galactic foregrounds. % that dominate at these angular scales.
+The forecasts here assume eight frequency bands, ranging from 30 to 270 GHz.
+Contamination from gravitationally lensed E modes must also be mitigated.
+While a precise prediction for the cosmological mean of the lensing B-mode power spectrum can be made and subtracted from the observed spectrum, there will be a sample variance residual between this prediction and the real lensing B modes on a particular patch of sky.
+To suppress this sample variance, it will be necessary to ``de-lens'' the B-mode maps with a prediction for the lensing signal from that particular patch of sky, constructed from the E-mode map and some tracer of the lensing potential (see Sec.~\ref{delens} for details).
+Forecasts in this section assign part of the total detector count to a dedicated de-lensing effort, assumed to be a large-aperture ($\ge 6$-meter) telescope at a single frequency. 
+(See below for a discussion of assumptions about aperture size.)
+Finally, from the relative amplitudes of the temperature, E-mode, and B-mode power spectra, it is clear that instrumental systematics that mix temperature or E-mode power into B modes must also be exquisitely controlled. 
+To account for the potential hit in raw sensitivity taken by guarding against systematics, and to generally tie the Fisher-matrix, power-spectrum-based forecasts here with real-world results, the forecasts here use scaled versions of achieved power-spectrum covariance matrices from the BICEP2/Keck experiments.
+This conservative assumption regarding systematics mitigation and overall efficiency necessarily results in worse constraints on $r$ than a naive, raw-sensitivity calculation would imply.
+Further details of the forecasting methodology, including assumptions regarding foreground properties and de-lensing efficiency, can be found in Section~\ref{sec_specforecast}.
+
+The trade-off between raw sensitivity, ability to remove foregrounds, and ability to de-lens results in a complicated optimization with respect to sky coverage.
+Figure~\ref{fig_rforecast1} shows the forecasted sensitivity to $r$ for CMB-S4 as a function of the observed sky fraction under an upper limits scenario ($r=0$, left) or a detection scenario ($r=0.01$, right).
+%More details of the forecasting methodology used here can be found in Section~\ref{sec_specforecast}.
 Focusing on the $r=0$ case, we see that an effort devoted to an initial detection of $r$ will benefit from a deep survey that targets a small sky area.
 Concerns about foreground complexity beyond what has been simulated will increase our preference for a small area survey that focuses on the cleanest regions.
 Likewise, our ability to identify and address instrumental systematics is often limited by the noise level of the maps, so deeper maps can serve as a guard against instrumental problems (\comment{Would be helpful to refine this argument with a simple model.}).
@@ -352,10 +397,16 @@ Figure~\ref{fig_rforecast2} shows the forecasted sensitivity to $r$ as a functio
 With 250,000 detectors operating for four years, CMB-S4 will significantly exceed the $r=0.001$ benchmark.
 If $r$ is as large as 0.01, then larger sky area will be needed to improve precision; the CMB-S4 deep survey must be designed with the flexibility to increase sky area in the event of a detection.
 
-For all scenarios, the inflation survey will require many observing frequencies.
-These forecasts include eight frequency bands distributed between the four atmospheric windows.
-While it may be desirable to measure the degree-scale CMB and foregrounds using small aperture telescopes, these forecasts require that at least 25--50\% (varies with the sky fraction) of the total effort must be spent on high resolution maps that can be used for delensing.
-For the deepest option, targeting just 1\% of the sky, achieving the forecasted sensitivity to $r$ will require an 80\% reduction in the map {\it r.m.s.} level of the CMB lensing $B$ modes.
+%For all scenarios, the inflation survey will require many observing frequencies.
+%These forecasts include eight frequency bands distributed between the four atmospheric windows.
+%While it may be desirable to measure 
+In these forecasts, it is assumed that the degree-scale CMB and foregrounds are measured using small aperture telescopes, while the de-lensing is achieved with a separate, large-aperture telescope. 
+In all combinations of sky fraction and total detector effort, these forecasts indicate that at least 25--50\% of the total effort must be spent on high-resolution maps that can be used for de-lensing.
+If the large-aperture, high-resolution data can also be used for degree-scale science, the allocation of resources between bands and telescopes would change slightly, and the overall constraints on $r$ would improve. 
+If, furthermore, cost per detector were independent of telescope aperture size, an argument could be made to do all the science with large-aperture telescopes. 
+Neither of these assumptions is clearly supported by current data, however.
+Finally, we note that for the deepest option, targeting just 1\% of the sky, achieving the forecasted sensitivity to $r$ will require an 80\% reduction in the map {\it r.m.s.} level of the CMB lensing $B$ modes. 
+While this is achievable from a sensitivity standpoint (see Sec.~\ref{delens}), systematics and foregrounds will need to be carefully considered.
 
 \begin{figure}[ht]
 \centering
@@ -366,7 +417,7 @@ effort of $10^6$ detector-years (150 equivalent), assuming $r=0$ (left panel)
 and $r=0.01$ (right panel). The forecasting procedure is specifically targeted 
 towards optimizing tensor-to-scalar parameter constraints in the presence of 
 Galactic foregrounds and gravitational lensing of the CMB. The optimization 
-assumes an amount of achieved delensing that varies with $f_{sky}$; temporary 
+assumes an amount of achieved de-lensing that varies with $f_{sky}$; temporary 
 note: for a detailed description of the forecasting, please see: 
 \href{http://users.physics.harvard.edu/~buza/20150331_fisher/}{this posting.}}
 \label{fig_rforecast1}
@@ -381,7 +432,7 @@ $f_{sky}=0.01$, assuming $r=0$ (left panel) and $r=0.01$ (right panel).
 The forecasting procedure is specifically targeted
 towards optimizing tensor-to-scalar parameter constraints in the presence of 
 Galactic foregrounds and gravitational lensing of the CMB. The optimization 
-assumes an amount of achieved delensing that varies with $f_{sky}$; temporary 
+assumes an amount of achieved de-lensing that varies with $f_{sky}$; temporary 
 note: for a detailed description of the forecasting, please see: 
 \href{http://users.physics.harvard.edu/~buza/20150331_fisher/}{this posting.}  
 }
