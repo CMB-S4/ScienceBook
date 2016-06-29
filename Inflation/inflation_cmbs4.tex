@@ -213,6 +213,82 @@ can be mitigated by a multi-frequency measurement (for details see Sec.~\ref{sec
 \label{fig:clall}
 \end{figure}
 
+\section{Forecasted sensitivity to $r$}
+\label{sec:needs}
+
+Achieving the CMB-S4 target sensitivity to $r$ ($\sigma_r \sim 10^{-3}$) will require exquisite measurements of the B-mode power spectrum. 
+It is expected that CMB-S4 will target the degree-scale recombination feature rather than the tens-of-degree-scale reionization feature (see Fig.~\ref{fig:clall}), because these largest scales are difficult to access from the ground due to atmosphere and sidelobe pickup (though some Stage-3 ground-based experiments are attempting this measurement, notably CLASS \cite{Essinger-Hileman:2014pja}).
+
+As can be seen from Fig.~\ref{fig:clall}, the first requirement for this level of sensitivity to $r$ is a large leap forward in raw instrument sensitivity. As detailed in Sec.~\ref{sec:detectors}, for ground-based bolometric detectors, this means a large increase in detector count. 
+The forecasts in this section use a baseline of 250,000 detectors operating for four years (or $10^6$ detector years), dedicated solely to maximizing sensitivity to $r$. 
+It will be necessary to split this total effort among many electromagnetic frequencies, to separate the CMB from polarized Galactic foregrounds. % that dominate at these angular scales.
+The forecasts here assume eight frequency bands, ranging from 30 to 270 GHz.
+Contamination from gravitationally lensed E modes must also be mitigated.
+While a precise prediction for the cosmological mean of the lensing B-mode power spectrum can be made and subtracted from the observed spectrum, there will be a sample variance residual between this prediction and the real lensing B modes on a particular patch of sky.
+To suppress this sample variance, it will be necessary to ``de-lens'' the B-mode maps with a prediction for the lensing signal from that particular patch of sky, constructed from the E-mode map and some tracer of the lensing potential (see Sec.~\ref{delens} for details).
+Forecasts in this section assign part of the total detector count to a dedicated de-lensing effort, assumed to be a large-aperture ($\ge 6$-meter) telescope at a single frequency. 
+(See below for a discussion of assumptions about aperture size.)
+Finally, from the relative amplitudes of the temperature, E-mode, and B-mode power spectra, it is clear that instrumental systematics that mix temperature or E-mode power into B modes must also be exquisitely controlled. 
+To account for the potential hit in raw sensitivity taken by guarding against systematics, and to generally tie the Fisher-matrix, power-spectrum-based forecasts here with real-world results, the forecasts here use scaled versions of achieved power-spectrum covariance matrices from the BICEP2/Keck experiments.
+This conservative assumption regarding systematics mitigation and overall efficiency necessarily results in worse constraints on $r$ than a naive, raw-sensitivity calculation would imply.
+Further details of the forecasting methodology, including assumptions regarding foreground properties and de-lensing efficiency, can be found in Section~\ref{sec_specforecast}.
+
+The trade-off between raw sensitivity, ability to remove foregrounds, and ability to de-lens results in a complicated optimization with respect to sky coverage.
+Figure~\ref{fig_rforecast1} shows the forecasted sensitivity to $r$ for CMB-S4 as a function of the observed sky fraction under an upper limits scenario ($r=0$, left) or a detection scenario ($r=0.01$, right).
+%More details of the forecasting methodology used here can be found in Section~\ref{sec_specforecast}.
+Focusing on the $r=0$ case, we see that an effort devoted to an initial detection of $r$ will benefit from a deep survey that targets a small sky area.
+Concerns about foreground complexity beyond what has been simulated will increase our preference for a small area survey that focuses on the cleanest regions.
+Likewise, our ability to identify and address instrumental systematics is often limited by the noise level of the maps, so deeper maps can serve as a guard against instrumental problems (\comment{Would be helpful to refine this argument with a simple model.}).
+
+The preference for small sky area is in tension with other CMB-S4 science goals that prefer large sky areas but have much lower requirements for foreground cleaning.
+To balance these goals, we assume that roughly one half of total CMB-S4 experiment is devoted to a deep survey targeting degree-scale $B$ modes while the other half is spent on a broad survey.
+Figure~\ref{fig_rforecast2} shows the forecasted sensitivity to $r$ as a function of the total effort spent on the deep survey.
+With 250,000 detectors operating for four years, CMB-S4 will significantly exceed the $r=0.001$ benchmark.
+If $r$ is as large as 0.01, then larger sky area will be needed to improve precision; the CMB-S4 deep survey must be designed with the flexibility to increase sky area in the event of a detection.
+
+%For all scenarios, the inflation survey will require many observing frequencies.
+%These forecasts include eight frequency bands distributed between the four atmospheric windows.
+%While it may be desirable to measure 
+In these forecasts, it is assumed that the degree-scale CMB and foregrounds are measured using small aperture telescopes, while the de-lensing is achieved with a separate, large-aperture telescope. 
+In all combinations of sky fraction and total detector effort, these forecasts indicate that at least 25--50\% of the total effort must be spent on high-resolution maps that can be used for de-lensing.
+If the large-aperture, high-resolution data can also be used for degree-scale science, the allocation of resources between bands and telescopes would change slightly, and the overall constraints on $r$ would improve. 
+If, furthermore, cost per detector were independent of telescope aperture size, an argument could be made to do all the science with large-aperture telescopes. 
+Neither of these assumptions is clearly supported by current data, however.
+Finally, we note that for the deepest option, targeting just 1\% of the sky, achieving the forecasted sensitivity to $r$ will require an 80\% reduction in the map {\it r.m.s.} level of the CMB lensing $B$ modes. 
+While this is achievable from a sensitivity standpoint (see Sec.~\ref{delens}), systematics and foregrounds will need to be carefully considered.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.49\textwidth]{Inflation/sigr_fsky_det1e6_r0.png}
+\includegraphics[width=0.49\textwidth]{Inflation/sigr_fsky_det1e6_r01.png}
+\caption{Forecasted uncertainty on $r$, as a function of $f_{sky}$, for an
+effort of $10^6$ detector-years (150 equivalent), assuming $r=0$ (left panel) 
+and $r=0.01$ (right panel). The forecasting procedure is specifically targeted 
+towards optimizing tensor-to-scalar parameter constraints in the presence of 
+Galactic foregrounds and gravitational lensing of the CMB. The optimization 
+assumes an amount of achieved de-lensing that varies with $f_{sky}$; temporary 
+note: for a detailed description of the forecasting, please see: 
+\href{http://users.physics.harvard.edu/~buza/20150331_fisher/}{this posting.}}
+\label{fig_rforecast1}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.49\textwidth]{Inflation/sigr_effort_r0.png}
+\includegraphics[width=0.49\textwidth]{Inflation/sigr_effort_r01.png}
+\caption{Forecasted uncertainty on $r$, as a function of effort, for a fixed
+$f_{sky}=0.01$, assuming $r=0$ (left panel) and $r=0.01$ (right panel).
+The forecasting procedure is specifically targeted
+towards optimizing tensor-to-scalar parameter constraints in the presence of 
+Galactic foregrounds and gravitational lensing of the CMB. The optimization 
+assumes an amount of achieved de-lensing that varies with $f_{sky}$; temporary 
+note: for a detailed description of the forecasting, please see: 
+\href{http://users.physics.harvard.edu/~buza/20150331_fisher/}{this posting.}  
+}
+\label{fig_rforecast2}
+\end{figure}
+
+
 \section{Implications of a detection of primordial gravitational waves}
 \label{sec:detection}
 
@@ -360,81 +436,6 @@ This allows us to rephrase the lesson we can draw from an upper limit on $r$ fro
 {\em In the absence of a detection, CMB-S4 would rule out or disfavor all models that naturally explain the observed value of the scalar spectral index and in which the characteristic scale in field space equals or exceeds the Planck scale.}
 
 Unfortunately, because of the scaling $M\propto \sqrt{\mathcal{N}_{\rm eq}}$ it will only be possible to obtain constraints $M\lesssim M_p$ but not $M\ll M_p$. It should also be kept in mind that a natural explanation of the value of the scalar spectral index is not guaranteed and its value could be an accident. That a natural explanation is possible is, however, encouraging.
-
-\section{Forecasted sensitivity to $r$}
-\label{sec:needs}
-
-Achieving the CMB-S4 target sensitivity to $r$ ($\sigma_r \sim 10^{-3}$) will require exquisite measurements of the B-mode power spectrum. 
-It is expected that CMB-S4 will target the degree-scale recombination feature rather than the tens-of-degree-scale reionization feature (see Fig.~\ref{fig:clall}), because these largest scales are difficult to access from the ground due to atmosphere and sidelobe pickup (though some Stage-3 ground-based experiments are attempting this measurement, notably CLASS \cite{Essinger-Hileman:2014pja}).
-
-As can be seen from Fig.~\ref{fig:clall}, the first requirement for this level of sensitivity to $r$ is a large leap forward in raw instrument sensitivity. As detailed in Sec.~\ref{sec:detectors}, for ground-based bolometric detectors, this means a large increase in detector count. 
-The forecasts in this section use a baseline of 250,000 detectors operating for four years (or $10^6$ detector years), dedicated solely to maximizing sensitivity to $r$. 
-It will be necessary to split this total effort among many electromagnetic frequencies, to separate the CMB from polarized Galactic foregrounds. % that dominate at these angular scales.
-The forecasts here assume eight frequency bands, ranging from 30 to 270 GHz.
-Contamination from gravitationally lensed E modes must also be mitigated.
-While a precise prediction for the cosmological mean of the lensing B-mode power spectrum can be made and subtracted from the observed spectrum, there will be a sample variance residual between this prediction and the real lensing B modes on a particular patch of sky.
-To suppress this sample variance, it will be necessary to ``de-lens'' the B-mode maps with a prediction for the lensing signal from that particular patch of sky, constructed from the E-mode map and some tracer of the lensing potential (see Sec.~\ref{delens} for details).
-Forecasts in this section assign part of the total detector count to a dedicated de-lensing effort, assumed to be a large-aperture ($\ge 6$-meter) telescope at a single frequency. 
-(See below for a discussion of assumptions about aperture size.)
-Finally, from the relative amplitudes of the temperature, E-mode, and B-mode power spectra, it is clear that instrumental systematics that mix temperature or E-mode power into B modes must also be exquisitely controlled. 
-To account for the potential hit in raw sensitivity taken by guarding against systematics, and to generally tie the Fisher-matrix, power-spectrum-based forecasts here with real-world results, the forecasts here use scaled versions of achieved power-spectrum covariance matrices from the BICEP2/Keck experiments.
-This conservative assumption regarding systematics mitigation and overall efficiency necessarily results in worse constraints on $r$ than a naive, raw-sensitivity calculation would imply.
-Further details of the forecasting methodology, including assumptions regarding foreground properties and de-lensing efficiency, can be found in Section~\ref{sec_specforecast}.
-
-The trade-off between raw sensitivity, ability to remove foregrounds, and ability to de-lens results in a complicated optimization with respect to sky coverage.
-Figure~\ref{fig_rforecast1} shows the forecasted sensitivity to $r$ for CMB-S4 as a function of the observed sky fraction under an upper limits scenario ($r=0$, left) or a detection scenario ($r=0.01$, right).
-%More details of the forecasting methodology used here can be found in Section~\ref{sec_specforecast}.
-Focusing on the $r=0$ case, we see that an effort devoted to an initial detection of $r$ will benefit from a deep survey that targets a small sky area.
-Concerns about foreground complexity beyond what has been simulated will increase our preference for a small area survey that focuses on the cleanest regions.
-Likewise, our ability to identify and address instrumental systematics is often limited by the noise level of the maps, so deeper maps can serve as a guard against instrumental problems (\comment{Would be helpful to refine this argument with a simple model.}).
-
-The preference for small sky area is in tension with other CMB-S4 science goals that prefer large sky areas but have much lower requirements for foreground cleaning.
-To balance these goals, we assume that roughly one half of total CMB-S4 experiment is devoted to a deep survey targeting degree-scale $B$ modes while the other half is spent on a broad survey.
-Figure~\ref{fig_rforecast2} shows the forecasted sensitivity to $r$ as a function of the total effort spent on the deep survey.
-With 250,000 detectors operating for four years, CMB-S4 will significantly exceed the $r=0.001$ benchmark.
-If $r$ is as large as 0.01, then larger sky area will be needed to improve precision; the CMB-S4 deep survey must be designed with the flexibility to increase sky area in the event of a detection.
-
-%For all scenarios, the inflation survey will require many observing frequencies.
-%These forecasts include eight frequency bands distributed between the four atmospheric windows.
-%While it may be desirable to measure 
-In these forecasts, it is assumed that the degree-scale CMB and foregrounds are measured using small aperture telescopes, while the de-lensing is achieved with a separate, large-aperture telescope. 
-In all combinations of sky fraction and total detector effort, these forecasts indicate that at least 25--50\% of the total effort must be spent on high-resolution maps that can be used for de-lensing.
-If the large-aperture, high-resolution data can also be used for degree-scale science, the allocation of resources between bands and telescopes would change slightly, and the overall constraints on $r$ would improve. 
-If, furthermore, cost per detector were independent of telescope aperture size, an argument could be made to do all the science with large-aperture telescopes. 
-Neither of these assumptions is clearly supported by current data, however.
-Finally, we note that for the deepest option, targeting just 1\% of the sky, achieving the forecasted sensitivity to $r$ will require an 80\% reduction in the map {\it r.m.s.} level of the CMB lensing $B$ modes. 
-While this is achievable from a sensitivity standpoint (see Sec.~\ref{delens}), systematics and foregrounds will need to be carefully considered.
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=0.49\textwidth]{Inflation/sigr_fsky_det1e6_r0.png}
-\includegraphics[width=0.49\textwidth]{Inflation/sigr_fsky_det1e6_r01.png}
-\caption{Forecasted uncertainty on $r$, as a function of $f_{sky}$, for an
-effort of $10^6$ detector-years (150 equivalent), assuming $r=0$ (left panel) 
-and $r=0.01$ (right panel). The forecasting procedure is specifically targeted 
-towards optimizing tensor-to-scalar parameter constraints in the presence of 
-Galactic foregrounds and gravitational lensing of the CMB. The optimization 
-assumes an amount of achieved de-lensing that varies with $f_{sky}$; temporary 
-note: for a detailed description of the forecasting, please see: 
-\href{http://users.physics.harvard.edu/~buza/20150331_fisher/}{this posting.}}
-\label{fig_rforecast1}
-\end{figure}
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.49\textwidth]{Inflation/sigr_effort_r0.png}
-\includegraphics[width=0.49\textwidth]{Inflation/sigr_effort_r01.png}
-\caption{Forecasted uncertainty on $r$, as a function of effort, for a fixed
-$f_{sky}=0.01$, assuming $r=0$ (left panel) and $r=0.01$ (right panel).
-The forecasting procedure is specifically targeted
-towards optimizing tensor-to-scalar parameter constraints in the presence of 
-Galactic foregrounds and gravitational lensing of the CMB. The optimization 
-assumes an amount of achieved de-lensing that varies with $f_{sky}$; temporary 
-note: for a detailed description of the forecasting, please see: 
-\href{http://users.physics.harvard.edu/~buza/20150331_fisher/}{this posting.}  
-}
-\label{fig_rforecast2}
-\end{figure}
 
 \section{Beyond $r$: characterizing the B-mode spectrum, testing inflationary expectations and distinguishing models}
 %\section{Following up on a detection}
@@ -584,61 +585,7 @@ As mentioned in section~\ref{sec:upperLimits}, a measurement of the running of t
 Models of inflation that achieve super-Planckian inflaton displacements from repeated circuits of a sub-Planckian fundamental period may give rise to oscillatory features in the spectrum of primordial perturbations. The features may arise either from instanton effects or from periodic bursts of particle or string production. A search for such features is well motivated even though the amplitude is model-dependent and may be undetectably small. A detection would provide clues about the microscopic origin of the inflaton, the absence of a detection can constrain the parameter space of these models in interesting ways. CMB-S4 would tighten the constraints on the amplitude of features in the primordial power spectrum by a factor of three. 
 
 Other physical effects during inflation can lead to small features in the observed power spectrum, e.g by changing the equation of state during inflation \cite{}. Because of the stringent constraints on the minimum number of E-folds, such modifications can not last very long in order not to end inflation and associated features only affect a small range of scales. It is therefore unlikely that CMB-S4 will significanty improve constraints on these type of features unless they are on very small scales. 
- \section{Spatial Curvature}
-\label{sec:curvature}
 
-Despite the fact that inflation drives the spatial curvature to zero at the level of the background evolution, it predicts small, but non-zero curvature for a typical observer. The curvature measured in a Hubble patch receives contributions from long wavelength perturbations and is expected to be $|\Omega_k|<10^{-4}$. A measurements of $\Omega_k$ exceeding this expectation would contain important information about the process responsible for inflation. In particular, if $|\Omega_k|$ is found to be considerably larger than this value, it would tell us that the inflaton was not slowly rolling when scales slightly larger than our observable horizon exited the horizon. Furthermore, observations of large negative $\Omega_k$ would falsify eternal inflation, while observation of positive and large $\Omega_k$ would be consistent with false vacuum eternal inflation~\cite{Guth:2012ww,Kleban:2012ph}.
-
-Current constraints on this parameter from the CMB alone are $\Omega_k= 0.005^{+0.016}_{-0.017}$. Including baryon acoustic oscillation (BAO) data tightens the bound to $\Omega_k=0.000\pm0.005$.% CMB-S4 is expected to constrain spatial curvature at a level of $\sigma(\Omega_k)\approx 10^{-3}$. A detection at this level would have profound implications for the inflationary paradigm. 
-
-Figure~\ref{fig:OmK_vs_FWHM_or_uK_arcmin} demonstrates the $\Omega_k$ constraints achievable with CMB-S4 in isolation (solid yellow) and in combination with Planck (dashed yellow), future BAO measurements from DESI~\cite{Font-Ribera:2013rwa} (solid blue) and both (dashed blue). The constraining power of each configuration is explored as a function of CMB-S4�s beam size (left panel) and polarization noise (right panel); the noise and beam are fixed to 1 $\mu$K-arcmin and 3 arcmin in the left and right panels, respectively.
-
-The constraints on $\Omega_k$ are relatively weakly dependent on the resolution and sensitivity of CMB-S4, inflating by 30-50\% over the ranges considered. In isolation, CMB-S4 is able to place one-sigma limits of $6.7\times10^{-3}$ on our fiducial value of zero curvature, assuming a white noise level of 1 $\mu$K-arcmin and 3 arcmin resolution. These limits are halved when including Planck data, demonstrating the importance of large-scale CMB polarization information in breaking degeneracies involving $\Omega_k$ (primarily with $\tau$)~\cite{Leonard:2016evk}. CMB-only datasets are, however, fundamentally limited in their ability to constrain curvature by the geometrical degeneracy~\cite{Zaldarriaga:1997ch,Bond:1997wr}. Adding DESI measurements of the BAO standard ruler (at redshifts of 0 to 1.9) helps break this degeneracy, with a combined one-sigma limit of around $7.1\times10^{-4}$. Though CMB-S4 is therefore unable to measure curvature levels typical of slow-roll eternal inflation, any detection of curvature by CMB-S4 would have profound implications for the inflationary paradigm.
-
-\begin{figure}[h!]
-\centering \includegraphics[width=0.70\textwidth]{BSMPhysics/OmK_vs_FWHM_or_uK_arcmin.pdf}
-\caption{Results derived using the CMB4cast framework~\cite{Errard:2015cxa}, assuming CMB-S4 observations with a single 150GHz channel, at $1\,\mu$K-arcmin ($1.4\,\mu$K-arcmin) in temperature (polarization), with a FWHM of 3 arcmin. The instrument is assumed to observe $f_{\rm sky} = 40\%$, covering a multipole range of $30\leq\ell\leq 4000$.
-We consider no foregrounds, white noise and a single-parameter extension of the standard model: $\Lambda$CDM+$\Omega_k$. 
-The constraints are derived using information from unlensed $TT$, $TE$ and $EE$ spectra along with $\kappa\kappa$ information constructed with an iterative $EB$ quadratic estimator~\cite{Hirata:2002jy,Smith:2010gu}. Cases including Planck use additional $TT$, $TE$ and $EE$ information from Planck, assuming multipole coverage of $30\leq\ell\leq 2500$ over an additional $20\%$ of sky. A prior on $\tau$ is used: $0.06\pm0.01$. We follow~\cite{Wu:2014hta} for the combinations with DESI-BAO.}
-\label{fig:OmK_vs_FWHM_or_uK_arcmin}
-\end{figure}
-
-
-\section{Microwave Background Anomalies}
-
-Several unexpected features have been observed in the temperature of the CMB sky at relatively low-$\ell$ or large angular scales.  Some of these were first noticed in COBE data,  
-and all have been seen in both WMAP and Planck maps.  These include: 
-\begin{itemize}
-  \item a lack of correlation on the largest angular scales;
-  \item alignment of the lowest multipole moments with one another and with the geometry and motion of the Solar System;
- \item greater power in odd-parity modes than in even-parity ones;
-  \item a hemispherical asymmetry or dipolar modulation of the power.
-\end{itemize}
-
-Compared to the expectations of the best-fit inflationary $\Lambda$CDM model, the individual p-values of these features are in the per mille to per cent level, and therefore each anomaly has a frequentist probability at approximately the 3-sigma level or higher.  Since certain pairs of anomalies are uncorrelated in $\Lambda$CDM, in combination they nominally represent a very significant detection of anomalous behaviour. 
-
-There are however two possible concerns before one can conclude that the CMB large-angle pattern is truly anomalous. First, these features were identified a posteriori and are characterized by statistics that were devised after the anomalies were first noted. Second, there is no physical understanding of how the collection of such features could arise. In order to help address or resolve these concerns, it is therefore crucial to obtain additional information about the large-scale primordial fluctuations, and to devise a successful model or other explanation.
-
-The observed features can have two possible origins: either our cosmological model is incomplete and requires a modification (the “new physics hypothesis”), or we just happen to live in a realization of that model that is statistically unlikely (the “fluke hypothesis”).   Meanwhile, cosmologists have effectively exhausted their ability to obtain further independent CMB temperature data that can test these anomalies, as observations are already cosmic-variance limited at the relevant angular scales.
-
-It has been suggested that one may nevertheless make observational progress even in the absence of an alternative model.  This can occur in two ways:
-\begin{enumerate}
-  \item In the fluke hypothesis the conditional probability distributions of $\Lambda$CDM for correlation functions of CMB polarization
-  (and other observables) with CMB temperature and with one another are altered by the observed temperature anomalies  
-  (Dvorkin et al 2008, Copi et al 2013, Yoho et al. 2013). 
-  \item In the new physics hypothesis, a given phenomenological model that explains the anomalies will have observational consequences
-  for other observable quantities [Yoho et al. 2015]. For example, the absence of large-angle correlations in T may reflect a lack of
-  long-distance correlation in a fundamental physical quantity like the potential; similarly, 
-  a hemispherical asymmetry in TT power could cause a similar asymmetry in EE.
-\end{enumerate}
-
-A variety of ideas have been proposed to explain the anomalies, ranging from Solar system dust artifacts to anisotropic models of inflation (for a summary, see Copi et al, 2016). Unfortunately, none of those ideas leads to a convincing explanation, as it is simply difficult to find models that explain the alignments of the largest primordial structures in the universe while at the same time lowering the amplitude of large-angle temperature correlations (e.g. Gordon et al, 2005). 
-
-Additional information from polarization would be of great help. To address the first three anomalies we list above would probably require a space mission, due to the need to access very low $\ell$. But CMB-S4 can shed light on the fourth one. 
-
-CMB-S4, alone or in combination with other data, can begin to explore both the cosmological and the fluke explanation for the hemispherical power asymmetry.  For example, $\Lambda$CDM instructs us how to remove the part of the E-mode signal that is correlated to temperature; the remainder should be Gaussian random and statistically isotropic.  If it contains a hemispherical anomaly (especially one aligned with the temperature asymmetry), that would be evidence against the fluke hypothesis [Copi, Knox, O’Dwyer and Starkman, contribution to March 9/10 S4 meeting, in preparation]. 
-
- 
 \subsection{Higher order correlations of scalar modes}
 Any detection of departures from Gaussianity would shed light on the interactions either of the inflaton with itself or between the inflaton and other degrees of freedom. From the discussion of various scenarios to produce primordial B-modes, it is also a common theme that constraints on non-Gaussianity significantly cut into the model space of proposals to produce a B-mode signal of observable strength other than the standard inflationary signal. 
 
@@ -899,15 +846,61 @@ CIPs are relatively unconstrained at the at the linear level of the CMB power-sp
 A complementary constraint on uncorrelated CIPs can be derived from an independent search for their second-order effect on the CMB power spectrum \cite{Munoz:2015fdv}. With a CMB-S4 experiment, the power spectra would be sensitive to a CIP amplitude of $\Delta_{\rm cl} = 0.026$ at the 95 \% C.L., a factor of three better than the corresponding limit from the Planck analysis (see Ref.~\cite{Munoz:2015fdv}). The CMB-S4 constraints on these models are shown in Figure~\ref{fig:CIPs_kovetz}.
 
 
-%We now focus on two isocurvature scenarios, axion dark matter and the curvaton %model, which produce uncorrelated and correlated isocurvature pertrubrations, %respectively.
+\section{Spatial Curvature}
+\label{sec:curvature}
+
+Despite the fact that inflation drives the spatial curvature to zero at the level of the background evolution, it predicts small, but non-zero curvature for a typical observer. The curvature measured in a Hubble patch receives contributions from long wavelength perturbations and is expected to be $|\Omega_k|<10^{-4}$. A measurements of $\Omega_k$ exceeding this expectation would contain important information about the process responsible for inflation. In particular, if $|\Omega_k|$ is found to be considerably larger than this value, it would tell us that the inflaton was not slowly rolling when scales slightly larger than our observable horizon exited the horizon. Furthermore, observations of large negative $\Omega_k$ would falsify eternal inflation, while observation of positive and large $\Omega_k$ would be consistent with false vacuum eternal inflation~\cite{Guth:2012ww,Kleban:2012ph}.
+
+Current constraints on this parameter from the CMB alone are $\Omega_k= 0.005^{+0.016}_{-0.017}$. Including baryon acoustic oscillation (BAO) data tightens the bound to $\Omega_k=0.000\pm0.005$.% CMB-S4 is expected to constrain spatial curvature at a level of $\sigma(\Omega_k)\approx 10^{-3}$. A detection at this level would have profound implications for the inflationary paradigm. 
+
+Figure~\ref{fig:OmK_vs_FWHM_or_uK_arcmin} demonstrates the $\Omega_k$ constraints achievable with CMB-S4 in isolation (solid yellow) and in combination with Planck (dashed yellow), future BAO measurements from DESI~\cite{Font-Ribera:2013rwa} (solid blue) and both (dashed blue). The constraining power of each configuration is explored as a function of CMB-S4�s beam size (left panel) and polarization noise (right panel); the noise and beam are fixed to 1 $\mu$K-arcmin and 3 arcmin in the left and right panels, respectively.
+
+The constraints on $\Omega_k$ are relatively weakly dependent on the resolution and sensitivity of CMB-S4, inflating by 30-50\% over the ranges considered. In isolation, CMB-S4 is able to place one-sigma limits of $6.7\times10^{-3}$ on our fiducial value of zero curvature, assuming a white noise level of 1 $\mu$K-arcmin and 3 arcmin resolution. These limits are halved when including Planck data, demonstrating the importance of large-scale CMB polarization information in breaking degeneracies involving $\Omega_k$ (primarily with $\tau$)~\cite{Leonard:2016evk}. CMB-only datasets are, however, fundamentally limited in their ability to constrain curvature by the geometrical degeneracy~\cite{Zaldarriaga:1997ch,Bond:1997wr}. Adding DESI measurements of the BAO standard ruler (at redshifts of 0 to 1.9) helps break this degeneracy, with a combined one-sigma limit of around $7.1\times10^{-4}$. Though CMB-S4 is therefore unable to measure curvature levels typical of slow-roll eternal inflation, any detection of curvature by CMB-S4 would have profound implications for the inflationary paradigm.
+
+\begin{figure}[h!]
+\centering \includegraphics[width=0.70\textwidth]{BSMPhysics/OmK_vs_FWHM_or_uK_arcmin.pdf}
+\caption{Results derived using the CMB4cast framework~\cite{Errard:2015cxa}, assuming CMB-S4 observations with a single 150GHz channel, at $1\,\mu$K-arcmin ($1.4\,\mu$K-arcmin) in temperature (polarization), with a FWHM of 3 arcmin. The instrument is assumed to observe $f_{\rm sky} = 40\%$, covering a multipole range of $30\leq\ell\leq 4000$.
+We consider no foregrounds, white noise and a single-parameter extension of the standard model: $\Lambda$CDM+$\Omega_k$. 
+The constraints are derived using information from unlensed $TT$, $TE$ and $EE$ spectra along with $\kappa\kappa$ information constructed with an iterative $EB$ quadratic estimator~\cite{Hirata:2002jy,Smith:2010gu}. Cases including Planck use additional $TT$, $TE$ and $EE$ information from Planck, assuming multipole coverage of $30\leq\ell\leq 2500$ over an additional $20\%$ of sky. A prior on $\tau$ is used: $0.06\pm0.01$. We follow~\cite{Wu:2014hta} for the combinations with DESI-BAO.}
+\label{fig:OmK_vs_FWHM_or_uK_arcmin}
+\end{figure}
 
 
+\section{Microwave Background Anomalies}
 
-%% Populate the .bib file with entries from SPIRES Bibtex (preferred)
-%% or ADS Bibtex (if no SPIRES entry).
-%%  SPIRES will also supply the CITATION line information; please include it.
-%%
+Several unexpected features have been observed in the temperature of the CMB sky at relatively low-$\ell$ or large angular scales.  Some of these were first noticed in COBE data,  
+and all have been seen in both WMAP and Planck maps.  These include: 
+\begin{itemize}
+  \item a lack of correlation on the largest angular scales;
+  \item alignment of the lowest multipole moments with one another and with the geometry and motion of the Solar System;
+ \item greater power in odd-parity modes than in even-parity ones;
+  \item a hemispherical asymmetry or dipolar modulation of the power.
+\end{itemize}
 
+Compared to the expectations of the best-fit inflationary $\Lambda$CDM model, the individual p-values of these features are in the per mille to per cent level, and therefore each anomaly has a frequentist probability at approximately the 3-sigma level or higher.  Since certain pairs of anomalies are uncorrelated in $\Lambda$CDM, in combination they nominally represent a very significant detection of anomalous behaviour. 
+
+There are however two possible concerns before one can conclude that the CMB large-angle pattern is truly anomalous. First, these features were identified a posteriori and are characterized by statistics that were devised after the anomalies were first noted. Second, there is no physical understanding of how the collection of such features could arise. In order to help address or resolve these concerns, it is therefore crucial to obtain additional information about the large-scale primordial fluctuations, and to devise a successful model or other explanation.
+
+The observed features can have two possible origins: either our cosmological model is incomplete and requires a modification (the “new physics hypothesis”), or we just happen to live in a realization of that model that is statistically unlikely (the “fluke hypothesis”).   Meanwhile, cosmologists have effectively exhausted their ability to obtain further independent CMB temperature data that can test these anomalies, as observations are already cosmic-variance limited at the relevant angular scales.
+
+It has been suggested that one may nevertheless make observational progress even in the absence of an alternative model.  This can occur in two ways:
+\begin{enumerate}
+  \item In the fluke hypothesis the conditional probability distributions of $\Lambda$CDM for correlation functions of CMB polarization
+  (and other observables) with CMB temperature and with one another are altered by the observed temperature anomalies  
+  (Dvorkin et al 2008, Copi et al 2013, Yoho et al. 2013). 
+  \item In the new physics hypothesis, a given phenomenological model that explains the anomalies will have observational consequences
+  for other observable quantities [Yoho et al. 2015]. For example, the absence of large-angle correlations in T may reflect a lack of
+  long-distance correlation in a fundamental physical quantity like the potential; similarly, 
+  a hemispherical asymmetry in TT power could cause a similar asymmetry in EE.
+\end{enumerate}
+
+A variety of ideas have been proposed to explain the anomalies, ranging from Solar system dust artifacts to anisotropic models of inflation (for a summary, see Copi et al, 2016). Unfortunately, none of those ideas leads to a convincing explanation, as it is simply difficult to find models that explain the alignments of the largest primordial structures in the universe while at the same time lowering the amplitude of large-angle temperature correlations (e.g. Gordon et al, 2005). 
+
+Additional information from polarization would be of great help. To address the first three anomalies we list above would probably require a space mission, due to the need to access very low $\ell$. But CMB-S4 can shed light on the fourth one. 
+
+CMB-S4, alone or in combination with other data, can begin to explore both the cosmological and the fluke explanation for the hemispherical power asymmetry.  For example, $\Lambda$CDM instructs us how to remove the part of the E-mode signal that is correlated to temperature; the remainder should be Gaussian random and statistically isotropic.  If it contains a hemispherical anomaly (especially one aligned with the temperature asymmetry), that would be evidence against the fluke hypothesis [Copi, Knox, O’Dwyer and Starkman, contribution to March 9/10 S4 meeting, in preparation]. 
+
+ 
 \section{Summary}
 CMB-S4 is an ideal tool to test the inflationary paradigm and competing theories of the early universe. On the one hand, its exquisite sensitivity will allow a detection of degree scale B-modes in the CMB or achieve upper limits on the amount of B-mode polarization that improve current constraints on the tensor-to-scalar ratio by almost two orders of magnitude. In particular, it is sensitive enough to detect the level of B-mode polarization predicted in a wide range of well-motivated inflationary models. In doing so, it would provide invaluable information about physics at energy scales far outside the reach of any terrestrial particle physics experiment. In the absence of a detection it would exclude large classes of inflationary models. On the other hand, with sufficient angular resolution, it will measure anisotropies in both the temperature and E-mode polarization of the CMB to cosmic variance over the entire range of multipoles that is not contaminated by unresolved foregrounds, and it will extend our window to the early universe by almost one $e$-fold beyond the reach of current experiments. As a consequence, it will provide the best constraints achievable by any ground-based CMB experiment on any observable that benefits from the number of modes measured, such as the primordial power spectrum, and hence the spectral index, its running, features in the power spectrum, as well as higher order correlations.
 
