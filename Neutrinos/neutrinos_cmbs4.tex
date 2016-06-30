@@ -572,6 +572,7 @@ Forecasts for $\sigma(\Neff)$ under various experimental configurations are give
 
 The other important parameter for $\Neff$ is the sky fraction of the survey, $f_{\rm sky}$.  Since the signature of neutrinos depends on the detailed measurement of the shape of the power spectra, constraints depend on the number of observed modes.  At fixed noise levels this implies that $\sigma(\Neff) \propto f^{-1/2}_{\rm sky}$.  Of course, with a fixed number of detectors the sensitivity, $S$, is proportional to $S \propto f_{\rm sky}^{1/2}$.  Since $\sigma(\Neff)$ grows more slowly that $S$, we see that we mostly gain information by increasing $f_{\rm sky}$.  This trend is shown in Figure~\ref{fig:Neff_fsky}.
 
+
 \begin{table}[t!]
 \begin{center}
 \begin{tabular}{l ccc} 
@@ -892,20 +893,28 @@ The leading effect of both $Y_p$ and $\Neff$ is to change to damping tail and th
 \begin{center}
 \begin{tabular}{l ccc} 
  \toprule
-    		$\sigma(\Neff)/\sigma(Y_p)$		    			& $1'$  		& $2'$  		& $3'$  		 \\ [0.5ex]
+    		sensitivity / beamsize		    			& $1'$  		& $2'$  		& $3'$  		 \\ [0.5ex]
  \midrule
    1 $\mu$K-arcmin & 0.082 / 0.0049		& 0.085 /  0.0050 		& 0.090 / 0.0053		 		  \\
   2  $\mu$K-arcmin & 0.093 / 0.0054		& 0.096 / 0.0056		& 0.10 / 0.0058	 		  \\
    3  $\mu$K-arcmin & 0.10 / 0.0058		& 0.10 / 0.0059		& 0.11 / 0.0062		 		  \\
     \bottomrule
 \end{tabular}
-\caption{Forecasts for $\sigma(\Neff)$ and $\sigma(Y_p)$ with varying beamize in arcmin (') and detector sensitivity. These forecasts allow both $Y_p$ and $\Neff$ to vary (along with the parameters of $\Lambda$CDM).  We assume $f_{\rm sky} = 0.4$. }
+\caption{Forecasts for $\sigma(\Neff)$ / $\sigma(Y_p)$ with varying beamize in arcmin (') and detector sensitivity. These forecasts allow both $Y_p$ and $\Neff$ to vary (along with the parameters of $\Lambda$CDM).  We assume $f_{\rm sky} = 0.4$. }
 \label{tab:YpNeffbeam}
 \end{center}
 \end{table}
 
+Like the case of $\Neff$-only forecasts, constraints on $Y_p$ and $\Neff$ are primarily sensitive to $f_{\rm sky}$ as show in Figure~\ref{fig:YpNeff_fsky}.  Although both parameters are sensitive to the damping tail and we also see the significant impact of varying the beamsize from $1'$ to $3'$.  
 
-
+\begin{figure}[t!]
+\begin{center}
+\includegraphics[width=0.48\textwidth]{Neutrinos/NfskyYp.pdf}
+\includegraphics[width=0.5\textwidth]{Neutrinos/Ypfsky.pdf}
+\caption{{\it Left:} Forecasts for $\sigma(\Neff)$, marginalized over $Y_p$, as a function of sky fraction for beam sizes of $1',2'$ and $3'$.  {\it Right :} Forecasts for $\sigma(Y_p)$, marginalized over $\Neff$, as a function of sky fractionfor beam sizes of $1',2'$ and $3'$.  For both figures, the sensitivity have been normalized to 1 $\mu$K-arcmin for $f_{\rm sky} =0.4$ and is scaled according to $S \propto f_{\rm sky}^{1/2}$ for different sky fractions.}
+\label{fig:YpNeff_fsky}
+\end{center}
+\end{figure} 
 
 
 \section{Detection Scenarios for Labs and Cosmology}
