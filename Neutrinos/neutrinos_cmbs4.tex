@@ -1,6 +1,6 @@
 %%%%%% CMB-S4 Neutrinos Chapter  %%%%%%%%%%%%%%%%
  
-\chapter{Neutrinos and Light Species from the Cosmic Microwave Background}
+\chapter{Neutrinos from the Cosmic Microwave Background}
 %\renewcommand*\thesection{\arabic{section}}
 
 
@@ -46,8 +46,73 @@ Section 2 will review the motivation for studying neutrino masses with cosmologi
 \section{Neutrino Mass}
 
 
+\subsection{Thermal History of the Early Universe} \label{ThermalHistory}
+In this section, we will give a sketch of the thermal history of the standard hot big bang universe when the temperature of the plasma was falling from about $10^{11}$~K to about $10^8$~K following Section 3.1 of \cite{Weinberg:2008zzc}.  For other reviews see \cite{Dolgov:2002wy,Agashe:2014kda}.  During this era, there are two events of particular interest: neutrinos decoupled from the rest of the plasma, and a short time later electrons and positrons annihilated, heating the photons relative to the neutrinos.  Our task is to follow how these events impact the evolution of the energy densities of the photons and neutrinos.
 
-\subsection{Theory Review}
+For massless particles described by the Fermi-Dirac or Bose-Einstein distributions, the energy density is given by
+\beq
+	\rho(T) =
+	\Bigg\{\begin{array}{l c l}
+        g\frac{\pi^2k_B^4}{30\hbar^3 c^3}T^4 &  &{\rm Boson}\\
+       \frac{7}{8}g\frac{\pi^2k_B^4}{30\hbar^3 c^3} T^4 &  &{\rm Fermion}
+        \end{array}
+\eeq
+where $g$ counts the number of distinct spin states.  The entropy density for massless particles is given by
+\begin{equation}
+	s(T) = \frac{4\rho(T)}{3T} \, .
+\end{equation}
+It is convenient to define a quantity $\gs$ which counts the spin states for all particles and antiparticles, with an additional factor $\frac{7}{8}$ for fermions.  With this definition, the total energy density and entropy density of the universe during radiation domination are given by
+\bea
+	\rho(T) &=& \gs\frac{\pi^2k_B^4}{30\hbar^3 c^3}T^4 \, , \nonumber \\
+	s(T) &=& \frac{4}{3}\gs\frac{\pi^2k_B^4}{30\hbar^3 c^3}T^3 \, .
+\eea
+In an expanding universe, the first law of thermodynamics implies that for particles in equilibrium, the comoving entropy density is conserved
+\begin{equation}
+	a^3s(T) = \mathrm{const} \, .
+\end{equation}
+One straightforward consequence of this conservation is that for radiation in free expansion, the temperature evolves as the inverse of the scale factor
+\begin{equation}
+	T\propto \frac{1}{a} \, .
+\end{equation}
+Let us now apply this to the physics of the early universe.
+
+At a temperature of $10^{11}$~K ($k_BT\sim10$~MeV), the universe was filled with photons, electrons and positrons, and neutrinos and antineutrinos of three species, all in thermal equilibrium with negligible chemical potential, along with a much smaller density of baryons and dark matter both of which are unimportant for the present discussion.  As the temperature of the plasma dropped below about $10^{10}$~K (about 1 second after the end of inflation), the rate of collisions between neutrinos and electrons and positrons could no longer keep up with the expansion rate of the universe, and neutrinos began to fall out of equilibrium and begin a free expansion.  This is just above the temperature for which $m_e c^2 \sim k_B T$, and so for slightly lower temperatures electrons and positrons rapidly disappeared from equilibrium.  We will simplify the discussion by assuming that neutrinos decoupled instantaneously before electron-positron annihilation and comment below how a more detailed calculation modifies the results.  Non-zero neutrino masses can safely be neglected here as long as $m_\nu c^2\lesssim1$~keV which is guaranteed by current observational bounds.
+
+From this point on, we will distinguish the temperature of neutrinos $T_\nu$ from that of the photons $T_\gamma$.  Before neutrino decoupling, frequent interactions kept neutrinos and photons in equilibrium, ensuring they had a common falling temperature.  After the universe became transparent to neutrinos, the neutrinos kept their relativistic Fermi-Dirac distribution with a temperature which fell as the inverse of the scale factor.  The photons, on the other hand, were heated by the annihilation of the electrons and positrons.  Comoving entropy conservation allows us to compute the relative temperatures at later times.
+
+After neutrino decoupling, but before electron positron annihilation, the thermal plasma contained two spin states of photons, plus two spin states each of electrons and positrons, which means that during this period,
+\begin{equation}
+	g_{\star}^{\mathrm{before}} = 2 + \frac{7}{8}(2+2) = \frac{11}{2} \, .
+\end{equation}
+After electron positron annihilation, only the two spin states of photons remained, and so
+\begin{equation}
+	g_\star^{\mathrm{after}} = 2 \, .
+\end{equation}
+Since $T_\nu\propto a^{-1}$ during this period, we can express the condition of comoving entropy conservation as follows
+\begin{equation}
+	\frac{g_{\star}^{\mathrm{before}} \, T_{\gamma,\mathrm{before}}^3}{T_{\nu,\mathrm{before}}^3} = \frac{g_\star^{\mathrm{after}} \, T_{\gamma,\mathrm{after}}^3}{T_{\nu,\mathrm{after}}^3} \, .
+\end{equation}
+Using the fact that $T_{\gamma,\mathrm{before}} = T_{\nu,\mathrm{before}}$, we find as a result
+\begin{equation}
+	\frac{T_{\gamma,\mathrm{after}}}{T_{\nu,\mathrm{after}}} = \left(\frac{11}{4}\right)^{1/3} \, .
+\end{equation}
+We find that in the instantaneous neutrino decoupling limit, the annihilation of electrons and positrons raised the temperature of photons relative to that of neutrinos by a factor of $(11/4)^{1/3}\simeq1.401$.
+
+After electron positron annihilation, assuming three species of light neutrinos and antineutrinos, each with one spin state, the radiation density of the universe is
+\begin{equation}
+	\rho_r = \frac{\pi^2k_B^4}{30\hbar^3 c^3}\left[2T_\gamma^4 + 3\frac{7}{8}T_\nu^4\right] = \frac{\pi^2k_B^4}{15\hbar^3 c^3}\left[1+3\,\frac{7}{8}\left(\frac{4}{11}\right)^{4/3}\right] T_\gamma^4 \, .
+\end{equation}
+It is conventional to define a quantity $\Nf$ which gives the radiation energy density in terms of the effective number of neutrino species as
+\begin{equation}
+	\rho_r = \frac{\pi^2k_B^4}{15\hbar^3 c^3}\left[1+\frac{7}{8}\left(\frac{4}{11}\right)^{4/3}\Nf\right] T_\gamma^4 \, .
+\end{equation}
+In the instantaneous neutrino decoupling approximation described above, we found $\Nf = 3$.  In the real universe, however, decoupling of neutrinos is not instantaneous, and the residual coupling of neutrinos at the time of electron positron annihilation increases $\Nf$ by a small amount in the Standard Model.
+
+The current best estimate of $\Nf$ in the Standard Model is $\Nf = 3.046$ \cite{Mangano:2005cc}.   Unlike photon decoupling at temperature $T \sim 0.2$ eV, active neutrino decoupling at $T \sim 10 \, {\rm MeV} - 0.1 \, {\rm MeV}$ takes place over many tens of Hubble times, with the result that we expect distortions in the relic neutrino energy spectra relative to thermal-shaped, Fermi-Dirac black bodies. Standard Model physics Boltzmann neutrino transport calculations show that these distortions could change $\Neff$ from 3 to something close to 3.05. This result is largely due to (1) the incomplete decoupling of neutrinos during electron-positron annihilation and (2) QED plasma effects.  While both effects have been calculated independently quite accurately, there is some theoretical uncertainty in this quantity due to the various numerical approximations that are made in the calculations when both effects are included simultaneously (see e.g.~\cite{Grohs:2015tfy} for discussion).  
+
+
+
+\subsection{Neutrino Mass and Structure Formation}
 \label{ssec:numasstheoryreview}
 Cosmic background neutrinos are nearly as abundant in the universe as CMB photons. In the standard cosmological model, neutrinos ceased to scatter with other particles at temperatures $\sim 1 \, {\rm MeV}$. The relic neutrinos were relativistic at decoupling, but as the universe expanded and cooled the neutrino momenta redshifted as $p_\nu\propto 1/a$ and eventually the energy of most relic neutrinos came to be dominated by their rest mass, rather than their momentum. The energy density in nonrelativistic neutrinos therefore contributes to the matter budget of the universe today. The neutrinos, however, were relativistic for much of the history of the Universe so their gravitational clustering is qualitatively different from that of cold dark matter (CDM) particles. This difference can be used to distinguish the neutrino and cold dark matter contributions to the matter density \cite{Hu:1997mj, Lesgourgues:2006nd, Abazajian:2011dt}.  In this section, we review how neutrino mass affects the evolution of the neutrino energy density and the gravitational clustering of matter in the universe. 
  
@@ -257,7 +322,7 @@ We have assumed that $\ell \geq 30$ and therefore we do not constraint $\tau$ di
 \end{center}
 \end{figure} 
 
-\subsection{Relation to Lab Experiments}\label{sec:lab}
+\section{Relation to Lab Experiments}\label{sec:lab}
 
 Measurements of $ \sum m_\nu $ by CMB-S4 will be interesting within the context of the broader neutrino experimental program. Neutrino flavor oscillations are described by a model where the neutrino flavor eigenstates are a mixture of massive neutrino eigenstates. The mixing is parameterized by the Pontecorvo-Maki-Nakagawa-Sakata (PMNS) matrix,
 \[ \left( \begin{array}{c} \nu_e \\ \nu_{\mu} \\ \nu_{\tau} \\ \end{array} \right) = 
@@ -287,7 +352,7 @@ Experiments have measured the three mixing angles of $U_{\rm PMNS}$ and the two 
 \end{itemize}
 Exploring this physics is the focus of current and upcoming neutrino experiments. CMB-S4 will measure $ \sum m_\nu $ with sufficient sensitivity to be relevant to these open issues. Fig.~\ref{fig:neutrino-noose} shows the relationship between CMB-S4 measurements and other measures of neutrino mass and ordering and Fig.~\ref{fig:NLDBD} shows the connection between cosmological measurements of neutrino mass and neutrinoless doube beta decay experiments. 
 
-\subsubsection{Determining the neutrino mass scale}
+\subsection{Determining the neutrino mass scale}
 As discussed above, CMB-S4 will make a cosmological measurement of $\sum_i m_{\nu i}$ and thus the neutrino mass scale. This approach complements terrestrial measurements of the neutrino mass using radioactive decay. These kinematic measurements of neutrino mass focus on one of two processes, beta-decay or electron-capture, where the decay spectra near the decay endpoint is particularly sensitive to the mass of the neutrino (see Fig.~\ref{fig:kinematic_mass}).
 %to measure the kinematic impact measurements from tritium decay~\cite{Drexlin:2013lha} and neutrino-less double beta decay~\cite{}.
 
@@ -306,7 +371,7 @@ Improving kinematic measurements beyond KATRIN's $0.2$~eV limit will require new
 
 %Direct mass measurement from tritium decay works on the following premise.  The $\beta$-decay for tritium produces Helium-3 and an electron and anti-neutrino that carry 18.6 keV of energy between them.  While in most decays this energy is distributed evenly neutrino and electron, there are rare decays where most of the energy is carried by the electron.  If the lightest neutrino is massless, the electron energy may be arbitrarily close to 18.6 eV.  However, for a non-zero mass for the lightest neutrino there is necessary a gap in the electron energy spectrum.  A careful measurement of the electron energy spectrum can therefore constrain the mass of the lightest neutrino.
 
-\subsubsection{Lepton number violation: Majorana vs. Dirac neutrinos}
+\subsection{Lepton number violation: Majorana vs. Dirac neutrinos}
 One of the more interesting connections between cosmological measurements of neutrino mass and terrestrial experiments is the complementarity between cosmological neutrino mass measurements and the search for neutrinoless double beta decay (NLDBD). NLDBD is a hypothetical decay mode of certain nuclei where two neutrons convert to two protons and two electrons with no emission of neutrinos. The observation of NLDBD would be transformational demonstrating that neutrinos are Majorana particles and revealing a new lepton-number-violating mechanism for mass generation. This new physics could potentially explain both the smallness of neutrino masses and matter-antimatter asymmetry in the universe.
 
 Initial results from the current generation of NLDBD searches limit the NLDBD half life, $T^{0\nu}_{1/2}$, to be larger than  $\sim2\times10^{25}$~years~\cite{Agostini:2013mzu,Auger:2012ar,Artusa:2014lgv}.%\cite{Gerda, Exo, Cuore}.
@@ -343,7 +408,7 @@ The complementarity between cosmological neutrino mass measurement and NLDBD can
 
 %In addition to the effort to constraint the sum of the neutrino masses from cosmology, a variety of lab-based experiments are constraining the angles, phases and masses describing neutrino mixing.  While cosmology is insensitive to mixing angles, 
 
-\subsubsection{Neutrino mass ordering and CP violation}
+\subsection{Neutrino mass ordering and CP violation}
 In the case of normal ordering with non-degenerate neutrino mass, the CMB-S4 measurement of $\sum_i m_{\nu i}$ will provide a 2--4$\sigma$ determination of the neutrino mass ordering. Fully characterizing neutrino mass ordering and CP violation is one of the goals of the terrestrial neutrino physics program~\cite{Patterson:2015xja}. The upcoming reactor neutrino experiment JUNO~\cite{An:2015jdp} is scheduled to start data taking around $\sim$ 2020 and will have $\sim$ 2--3$\sigma$ sensitivity to neutrino ordering after six-years of operation. Future experiments measuring atmospheric neutrino oscillations (e.g Hyper-K~\cite{Abe:2015zbg}, DUNE~\cite{Goodman:2015gmv}, KM3NeT/ORCA~\cite{Adrian-Martinez:2016fdl}) can also resolve the neutrino mass ordering. For example, KM3NeT/ORCA forecasts a 3$\sigma$ measurement of the mass ordering by around 2023. Accelerator neutrino experiments are the only known method for exploring neutrino CP violation and in some cases, are also sensitive to neutrino mass ordering. In a $\sim 5$-year timescale, the currently operating NO$\nu$A experiment~\cite{Adamson:2016tbq} may determine the neutrino ordering at the 2--3$\sigma$ level, provided that $\delta_{CP}$ falls into a favorable range. Hyper-K will measureme $\delta_{CP}$, though it requires external input regarding the neutrino ordering (e.g. from Hyper-K atmospheric neutrinos or from cosmology). The next-generation US-based long-baseline neutrino-oscillation experiment, DUNE, is planned to start operation around 2024, and will measure both the neutrino mass ordering (at the 2--4$\sigma$ level) and $\delta_{CP}$. External input on neutrino ordering from other sources such as CMB-S4 would provide a strong consistency check of DUNE results and test the three-neutrino paradigm.
 
 In the scenario where the neutrino mass specrtum is normally ordered and non-degenerate, CMB-S4 would be a strong complement to terrestrial experiments by providing a measurement of neutrino ordering that is independent of oscillation parameters and $\delta_{CP}$. Under all circumstances, the combination of CMB-S4 with terrestrial determinations of neutrino ordering will provide a definitive measurement of the neutrino mass spectrum.
@@ -371,261 +436,6 @@ In the scenario where the neutrino mass specrtum is normally ordered and non-deg
 \label{fig:neutrino-noose}
 \end{figure}
 
-%Neutrinoless double beta decay can occur in a variety of nuclei if neutrinos have a non-zero Majorana mass but does not occur for a Dirac mass.  The decay is effectively involves two neutrons decaying to two protons and two electrons with no associated neutrinos.  The flavor structure of this decay means the amplitude is proportional to $|m_{ee}|^2$ where $m_{ee} = \sum_i m_i U_{ei}$, $U$ is the PMNS matrix, and $m_i$ are the mass eigenstates.  While cosmology can not directly determine whether the mass is Majorana or Dirac, a detection of such a decay could establish that it it has a Majorana mass.  Also, like tritium decay, there is no required lower limit on $m_{ee}$ and therefore there is no level of sensitivity that would guarantee a detection.
-
-% Possible anomalies found in short baseline oscillation experiments (LSND~\cite{Aguilar:2001ty},
-% MiniBooNE~\cite{AguilarArevalo:2010wv}, etc.) may be explained as an active-sterile neutrino
-% oscillation.  Parameters required to these fits typically lead to
-% thermalization of the sterile species in the early universe before
-% neutrino decoupling, resulting in non-standard $N_\mathrm{eff}$ and
-% contribution to $\sum m_\nu$.  Further description can be found
-% below in Section~\ref{sec:sterile_neutrinos}.
-
-%[AK:6/3] The mass hierarchy may be determined by terrestrial experiments
-%as well.  NO$\nu$A experiment can determine the hierarchy at
-%2--3$\sigma$ level if the $CP$-violating phase $\delta_{CP}$ falls into
-%the favorable range of around $3\pi/2$ ($\pi/2$) for normal (inverted)
-%hierarchy in a $\sim 5$-year timescale [1].  Possible ambiguity arises
-%if the nature chooses unfavorable $\delta_{CP}$; this can be resolved by
-%a future measurement of $\delta_{CP}$ by a next-generation long-baseline
-%experiment such as Hyper-Kamiokande.  [AK: was there a US competitor of
-%Hyper-K?  Is it LBNF?]
-%
-%The next-generation US-based long-baseline neutrino-oscillation
-%experiment, LBNF, is planned to start operation around 2024.
-%LBNF would resolve the hierarchy at 2--4$\sigma$ level depending on the
-%$\delta_{CP}$ [2].
-%
-% China-based next-generation reactor neutrino experiment, JUNO, is also
-% sensitive to the mass hierarchy.  It is scheduled to start data taking
-% around $\sim$ 2020 and will have $\sim$ 2 (3?)$\sigma$ sensitivity to
-% resolve the hierarchy after a six-year operation [3].  [AK: I have not
-% understood what they mean by ``crossing sensitivity.'']
-%
-% Atmospheric neutrino oscillation can also be used to resolve mass
-% hierarchy [4,5].  KM3NeT/ORCA forecasts to resolve the mass hierarchy at
-% a 3$\sigma$ level by around 2023.
-%
-% [AK: I have collected schedule information from slides etc., but we may
-% query PIs of each experiment to get firm citation.]
-
-%Cosmological measurements and these terrestrial hierarchy measurements
-%are complementary to each other.  For example, if cosmology measures the sum of
-%the neutrino mass heavier than $\sim 116$\,meV, the terrestrial
-%experiments are the only way to determine the hierarchy.  In turn,
-%in this case of $\sum m_\nu > 116$\,meV,
-%determination of the hierarchy by terrestrial experiments would allow
-%cosmology to constrain the mass of the lightest neutrino without
-%discrete ambiguity.
-%In a similar manner to the cosmology being dependent on the central
-%value of $\sum m_\nu$, 
-%long-baseline oscillation experiments would suffer from
-%relatively low sensitivity to the hierarchy
-%if the $\delta_{CP}$ turns out to be unfavorable.
-%Also, it is worth noting that all the terrestrial experiments use matter
-%effect to resolve the hierarchy.  Some of the beyond-the-standard models
-%involve modification of the neutrino interaction and thus that of the
-%matter
-%effect [citation needed].  Cosmological measurements, on the other hand, 
-%are relatively
-%insensitive to possible modification of interaction.  Consistency check
-%between the terrestrial measurements and cosmological constraints would
-%probe BSM physics in neutrino interaction.
-
-%[1] https://doi.org/10.1146/annurev-nucl-102014-021916
-%[2] https://arxiv.org/abs/1601.05471
-%[3] https://arxiv.org/abs/1507.05613
-%[4] http://arxiv.org/abs/1401.2046
-%[5] http://arxiv.org/abs/1601.07459
-
-\section{Relativistic Species at Recombination}
-
-
-The angular power spectrum of the cosmic microwave background (CMB) at small angular scales is quite sensitive to the radiation content of the early universe, usually parametrized by a quantity $\Nf$ which will be defined more precisely below.  In the Standard Models of cosmology and particle physics, $\Nf$ is a measure of the energy density of the cosmic neutrino background.  More generally, however, $\Nf$ receives contributions from all forms of radiation apart from photons which are present in the early universe.  Due to its sensitivity to $\Nf$, the CMB can be used as a tool to probe physics of the Standard Model and beyond which are difficult to measure through other means.  Here we will give an overview of the theoretical issues related to $\Nf$ and outline the expectations from the Standard Model.
-
-\subsection{Thermal History of the Early Universe} \label{ThermalHistory}
-In this section, we will give a sketch of the thermal history of the standard hot big bang universe when the temperature of the plasma was falling from about $10^{11}$~K to about $10^8$~K following Section 3.1 of \cite{Weinberg:2008zzc}.  For other reviews see \cite{Dolgov:2002wy,Agashe:2014kda}.  During this era, there are two events of particular interest: neutrinos decoupled from the rest of the plasma, and a short time later electrons and positrons annihilated, heating the photons relative to the neutrinos.  Our task is to follow how these events impact the evolution of the energy densities of the photons and neutrinos.
-
-For massless particles described by the Fermi-Dirac or Bose-Einstein distributions, the energy density is given by
-\beq
-	\rho(T) =
-	\Bigg\{\begin{array}{l c l}
-        g\frac{\pi^2k_B^4}{30\hbar^3 c^3}T^4 &  &{\rm Boson}\\
-       \frac{7}{8}g\frac{\pi^2k_B^4}{30\hbar^3 c^3} T^4 &  &{\rm Fermion}
-        \end{array}
-\eeq
-where $g$ counts the number of distinct spin states.  The entropy density for massless particles is given by
-\begin{equation}
-	s(T) = \frac{4\rho(T)}{3T} \, .
-\end{equation}
-It is convenient to define a quantity $\gs$ which counts the spin states for all particles and antiparticles, with an additional factor $\frac{7}{8}$ for fermions.  With this definition, the total energy density and entropy density of the universe during radiation domination are given by
-\bea
-	\rho(T) &=& \gs\frac{\pi^2k_B^4}{30\hbar^3 c^3}T^4 \, , \nonumber \\
-	s(T) &=& \frac{4}{3}\gs\frac{\pi^2k_B^4}{30\hbar^3 c^3}T^3 \, .
-\eea
-In an expanding universe, the first law of thermodynamics implies that for particles in equilibrium, the comoving entropy density is conserved
-\begin{equation}
-	a^3s(T) = \mathrm{const} \, .
-\end{equation}
-One straightforward consequence of this conservation is that for radiation in free expansion, the temperature evolves as the inverse of the scale factor
-\begin{equation}
-	T\propto \frac{1}{a} \, .
-\end{equation}
-Let us now apply this to the physics of the early universe.
-
-At a temperature of $10^{11}$~K ($k_BT\sim10$~MeV), the universe was filled with photons, electrons and positrons, and neutrinos and antineutrinos of three species, all in thermal equilibrium with negligible chemical potential, along with a much smaller density of baryons and dark matter both of which are unimportant for the present discussion.  As the temperature of the plasma dropped below about $10^{10}$~K (about 1 second after the end of inflation), the rate of collisions between neutrinos and electrons and positrons could no longer keep up with the expansion rate of the universe, and neutrinos began to fall out of equilibrium and begin a free expansion.  This is just above the temperature for which $m_e c^2 \sim k_B T$, and so for slightly lower temperatures electrons and positrons rapidly disappeared from equilibrium.  We will simplify the discussion by assuming that neutrinos decoupled instantaneously before electron-positron annihilation and comment below how a more detailed calculation modifies the results.  Non-zero neutrino masses can safely be neglected here as long as $m_\nu c^2\lesssim1$~keV which is guaranteed by current observational bounds.
-
-From this point on, we will distinguish the temperature of neutrinos $T_\nu$ from that of the photons $T_\gamma$.  Before neutrino decoupling, frequent interactions kept neutrinos and photons in equilibrium, ensuring they had a common falling temperature.  After the universe became transparent to neutrinos, the neutrinos kept their relativistic Fermi-Dirac distribution with a temperature which fell as the inverse of the scale factor.  The photons, on the other hand, were heated by the annihilation of the electrons and positrons.  Comoving entropy conservation allows us to compute the relative temperatures at later times.
-
-After neutrino decoupling, but before electron positron annihilation, the thermal plasma contained two spin states of photons, plus two spin states each of electrons and positrons, which means that during this period,
-\begin{equation}
-	g_{\star}^{\mathrm{before}} = 2 + \frac{7}{8}(2+2) = \frac{11}{2} \, .
-\end{equation}
-After electron positron annihilation, only the two spin states of photons remained, and so
-\begin{equation}
-	g_\star^{\mathrm{after}} = 2 \, .
-\end{equation}
-Since $T_\nu\propto a^{-1}$ during this period, we can express the condition of comoving entropy conservation as follows
-\begin{equation}
-	\frac{g_{\star}^{\mathrm{before}} \, T_{\gamma,\mathrm{before}}^3}{T_{\nu,\mathrm{before}}^3} = \frac{g_\star^{\mathrm{after}} \, T_{\gamma,\mathrm{after}}^3}{T_{\nu,\mathrm{after}}^3} \, .
-\end{equation}
-Using the fact that $T_{\gamma,\mathrm{before}} = T_{\nu,\mathrm{before}}$, we find as a result
-\begin{equation}
-	\frac{T_{\gamma,\mathrm{after}}}{T_{\nu,\mathrm{after}}} = \left(\frac{11}{4}\right)^{1/3} \, .
-\end{equation}
-We find that in the instantaneous neutrino decoupling limit, the annihilation of electrons and positrons raised the temperature of photons relative to that of neutrinos by a factor of $(11/4)^{1/3}\simeq1.401$.
-
-After electron positron annihilation, assuming three species of light neutrinos and antineutrinos, each with one spin state, the radiation density of the universe is
-\begin{equation}
-	\rho_r = \frac{\pi^2k_B^4}{30\hbar^3 c^3}\left[2T_\gamma^4 + 3\frac{7}{8}T_\nu^4\right] = \frac{\pi^2k_B^4}{15\hbar^3 c^3}\left[1+3\,\frac{7}{8}\left(\frac{4}{11}\right)^{4/3}\right] T_\gamma^4 \, .
-\end{equation}
-It is conventional to define a quantity $\Nf$ which gives the radiation energy density in terms of the effective number of neutrino species as
-\begin{equation}
-	\rho_r = \frac{\pi^2k_B^4}{15\hbar^3 c^3}\left[1+\frac{7}{8}\left(\frac{4}{11}\right)^{4/3}\Nf\right] T_\gamma^4 \, .
-\end{equation}
-In the instantaneous neutrino decoupling approximation described above, we found $\Nf = 3$.  In the real universe, however, decoupling of neutrinos is not instantaneous, and the residual coupling of neutrinos at the time of electron positron annihilation increases $\Nf$ by a small amount in the Standard Model.
-
-The current best estimate of $\Nf$ in the Standard Model is $\Nf = 3.046$ \cite{Mangano:2005cc}.   Unlike photon decoupling at temperature $T \sim 0.2$ eV, active neutrino decoupling at $T \sim 10 \, {\rm MeV} - 0.1 \, {\rm MeV}$ takes place over many tens of Hubble times, with the result that we expect distortions in the relic neutrino energy spectra relative to thermal-shaped, Fermi-Dirac black bodies. Standard Model physics Boltzmann neutrino transport calculations show that these distortions could change $\Neff$ from 3 to something close to 3.05. This result is largely due to (1) the incomplete decoupling of neutrinos during electron-positron annihilation and (2) QED plasma effects.  While both effects have been calculated independently quite accurately, there is some theoretical uncertainty in this quantity due to the various numerical approximations that are made in the calculations when both effects are included simultaneously (see e.g.~\cite{Grohs:2015tfy} for discussion).  
-
-
-
-
-
-
-
-
-\subsection{Natural Target}
-
-As will be discussed in more detail below, the CMB angular power spectrum is sensitive to the value of $\Nf$ in our universe.  Measurement of the value of $\Nf$ provides a huge amount of insight into the early universe, and is in fact an observational probe of the conditions at very early times, well before recombination.  Even within the Standard Model, $\Nf$ provides an observational handle on the thermal history back to about one second after the end of inflation.  The true power of measuring $\Nf$, however, comes from the realization that it is sensitive not just to the neutrinos of the Standard Model, but it in fact receives contributions from all forms of radiation apart from photons present in the early universe and is thus a probe of new physics.
-
-Collider experiments are known to provide a measurement of the number of neutrino species (or more precisely the number of species of fermions coupling to the $Z$ boson with mass below $m_Z/2$) and find very close agreement with three families of light active neutrinos \cite{ALEPH:2005ab}.  Cosmological measurements of $\Nf$ provide complimentary constraints and are sensitive to the total energy density of radiation whether constituted of active neutrinos or other light species.
-
-If the measured value of $\Nf$ exceeds the Standard Model prediction, it would be an indication that there is additional radiation content in the early universe or that the thermal history is somehow modified.  Additional radiation which contributes to $\Nf$ is often referred to as dark radiation.  There is a large number of possible sources for dark radiation, including sterile neutrinos \cite{Abazajian:2001nj,Strumia:2006db,Boyarsky:2009ix}, gravitational waves \cite{Boyle:2007zx,Stewart:2007fu,Meerburg:2015zua}, dark photons \cite{Ackerman:2008gi,Kaplan:2011yj,CyrRacine:2012fz}, and many more \cite{Cadamuro:2010cz,Weinberg:2013kea}.  It is also possible that the measured value of $\Nf$ could be found below the Standard Model prediction.  This can happen if for example photons are heated relative to neutrinos after decoupling \cite{Steigman:2013yua,Boehm:2013jpa}.
-
-One of the features that make $\Neff$ a compelling theoretical target is the degree to which broad classes of models fall into two basic levels of $\Delta \Neff$.  As illustrated in Figure~\ref{fig:Neff_thermal}, any species that was in thermal equilibrium with the Standard Model degrees of freedom produces a characteristic correction to $\Neff$ that depends only on its spin and its freeze-out temperature.  For freeze-out after the QCD phase transition, one finds $\Delta \Neff \gtrsim 0.3$.  Freeze-out before the QCD phase transition instead produces $\Delta \Neff > 0.027$.  This first category has been tested by Planck.  The second category, which is sensitive freeze-out temperatures as early as reheating, falls into the level of sensitivity attainable by CMB Stage IV.
-
-\begin{figure}[t!]
-\begin{center}
-\includegraphics[width=0.65\textwidth]{Neutrinos/Neff.pdf}
-\caption{Contribution to $\Neff$ from a massless field that was in thermal equilibrium with the Standard Model at temperatures $T> T_{\rm freeze}$.  For $T_{\rm freeze} \gg m_{\rm top}$, these curves saturate with $\Delta \Neff > 0.027$.   The region in red shows the range of forecasts for $\sigma(\Neff)$ for plausible CMB-S4 configurations. }
-\label{fig:Neff_thermal}
-\end{center}
-\end{figure} 
-
-The contributions to $\Neff$ from hot thermal relics are relatively easy to understand from the discussion of neutrino decoupling.  After freeze-out, the temperature of a relativistic specifics redshift like $a^{-1}$ and therefore is only diluted relative to the Standard Model when energy is injected.  The annihilation of heavy Standard Model particles into photons conserves the comoving entropy and therefore, the diluted temperature of a relic before neutrino decoupling is given by
-\beq
-%\left( \frac{T_{\rm relic}}{T_{\nu}} \right)^3 = \frac{g_\star (T_{\nu-{\rm freeze-out}})}{g_\star (T_{\rm relic \, freeze-out}) }= \frac{43/4}{g_\star (T_{\rm freeze-out})} *{jm: Changed g* to \mathcal{N} to match notation from above}
-\left( \frac{T_{\rm relic}}{T_{\nu}} \right)^3 = \frac{\gs^{\nu-{\rm freeze-out}}}{\gs^{\rm relic \, freeze-out} }= \frac{43/4}{\gs^{\rm relic \, freeze-out}} \, ,
-\eeq
-where $\gs$ is defined as above to be the number of independent spin states including an additional factor of $\frac{7}{8}$ for fermions.  The order of magnitude difference in $\Delta \Neff$ before and after the QCD phase transition comes from order of magnitude drop in $\gs$ below the QCD scale.  At temperatures well above to top mass, the Standard Model gives $\gs = 106.75$.  
-
-Even a measurement of $\Nf$ which agrees with the Standard Model prediction to high precision would be very interesting due to the constraints it would place on physics beyond the Standard Model.  Some specific implications for sterile neutrinos, axions, and other popular models will be discussed below.  Broadly speaking, constraining $\Delta \Neff$ at the $10^{-2}$ level would constrain or rule out a wide variety of models that are consistent with current cosmological, astrophysical, and lab-based constraints.  Furthermore, because of the sharp change in $\Delta \Neff$ at the QCD phase transition, the improvement from current constraints to projections for CMB Stage IV can be quite dramatic.
-
-For the minimal scenario of a single real scalar, reaching $\sigma(\Neff) \sim 1\times 10^{-2}$ would push the constraint on freeze-out temperatures from electroweak scale to the reheat temperature.  This broad reach to extremely high energies and very early times demonstrates the discovery potential for a precision measurement of $\Nf$ with the CMB.  Furthermore, the CMB power spectrum has the ability to distinguish among certain types of dark radiation based on the behavior of its density perturbations  \cite{Chacko:2015noa,Baumann:2015rya}.  This point will be discussed further below.
-
-A measurement with a slightly larger error on $\Nf$ would still be extraordinarily valuable for higher spin fields, multiple light scalars, and modifications to the thermal history up to the electroweak scale.  In particular, massless fermions and vectors have two helicity states which imply contributions of $\Delta \Neff  \geq 0.047$ and $\Delta \Neff  \geq 0.054$ respectively.  As a result, a less sensitive instrument is still capable of probing physics back to reheating since it could detect or rule out the existence of light thermal relics with non-zero spin.  In addition, there is good reason to think dark sectors could contain multiple light fields which could appear at any level of $\Delta \Neff$ above the minimum contribution from a single scalar field.  Still, the most dramatic jumps in discovery potential occur at the critical values $\Delta \Neff = 0.027, 0.047$, and $0.054$.  
-
-\subsection{Observational Signatures}\label{sec:Neffsignatures}
-
-Cosmic neutrinos and other light relics play to two important roles in the CMB that are measured by $\Neff$.  They contribute to the total energy in radiation which controls the expansion history and, indirectly, the damping tail of the power spectrum.  The fluctuations of neutrinos and any other free streaming radiation also produces a constant shift in the of phase the acoustic peaks.  These two effects drive both current and future constraints on $\Neff$.  
-
-The effect of neutrinos on the damping tail drives the constraint on $\Neff$ in the CMB in $\Lambda$CDM + $\Neff$.  The largest effect is from the mean free path of photons, which introduces a suppression $e^{-(k/k_d)^2}$ of short wavelength modes, with~\cite{Zaldarriaga:1995gi}
-\beq
-k_d^{-2} =\int \frac{da}{a^3 \sigma_T n_e H} \frac{R^2+ \frac{16}{15}(1+R)}{6(1+R)^2} \ ,
-\eeq
-where $R$ is the ratio of the energy in baryons to photons, $n_e$ is the density of free electrons, and $\sigma_T$ is the Thompson cross-section.  The damping scale is sensitive to the energy density in all radiation through $H \propto \sqrt{\rho_{\rm radiation}}$ during radiation domination (which is applicable at high $\ell$), and is therefore sensitive to $\Neff$ or any form of dark radiation.  From this discussion, we can also see the origin of the degeneracy between $\Neff$ and $n_e$ which may be altered by the primordial helium fraction, $Y_p$.
-
-In reality, the effect on the damping tail is subdominant to the change to the scale of matter radiation equality and the location of the first acoustic peak~\cite{Hou:2011ec}.  As a result, the effect of neutrinos on the damping tail is more accurately represented by holding the first acoustic peak fixed.  This changes the sign of the effect on the damping tail, but the intuition for the origin of the effect (and degeneracy) remains applicable.
-
-In addition to the effect on the Hubble expansion, perturbations in neutrinos affect the photon-baryon fluid through their gravitational influence.  The contributions from neutrinos are well described by a correction to the amplitude and the phase of the acoustic peaks in both temperature and polarization~\cite{Bashinsky:2003tk}.  The phase shift is a particularly compelling signature as it is not degenerate with other cosmological parameters~\cite{Bashinsky:2003tk,Baumann:2015rya}.  This effect is the result of the free-streaming nature of neutrinos that allows propagation speeds of effectively the speed of light (while the neutrinos are relativistic).  Any gravitationally coupled free-streaming light relics will also contribute to the amplitude and phase shift of the acoustic peaks.
-
-E-mode polarization will play an increasingly important role for several reasons.  First of all, the acoustic peaks are sharper in polarization which makes measurements of the peak locations more precise, and therefore aid the measurement of the phase shift.  The second reason is that polarization breaks a number of degeneracies that would also affect the damping tail~\cite{Baumann:2015rya}.
-
-{\it Status of current observations} -- Planck has provided a strong constraint on $\Neff = 3.15 \pm 0.23$ when combining both temperature and polarization data.  The addition of polarization data has both improved the constraint on $\Neff$ and reduced the impact of the degeneracy with $Y_p$.  Recently, the phase shift from neutrinos has also been established directly in the Planck temperature data~\cite{Follin:2015hya}.  This provides the most direct evidence for presence of free-steaming radiation in the early universe, consistent with the cosmic neutrino background.
-
-
-\subsection{Forecasts}
-
-As we described in Section~\ref{sec:Neffsignatures}, the most concrete signatures of $\Neff$ from CMB Stage IV are derived from the damping tail at high-$\ell$ in both $T$ and $E$.  In addition, there is the effect of the shift in the phase of the acoustic peaks that is present at $\ell > 500$.  Within $\Lambda$CDM these parameters are robust to degeneracies, having already accounted for the degeneracy of the location of the first acoustic peak with $H_0$.  The damping tail is generate with other extensions, like $Y_p$, as we will explore in Section~\ref{sec:NeffBBNfore}.
-
-Forecasts for $\sigma(\Neff)$ under various experimental configurations are given in Table~\ref{tab:Neffbeam}.  Since the damping tail extends to very high-$\ell$, constraints on $\Neff$ are sensitive to $\ell_{\rm max}$ and the beamsize of the experiment.  We assume $\ell_{\rm max} = 5000$ except for $C^{TT}$ where we assume $\ell_{\rm max} = 3000$ due to foregrounds.  One can see the impact of the highest-$\ell$ modes  by looking at the effect of the beamsize.
-
-The other important parameter for $\Neff$ is the sky fraction of the survey, $f_{\rm sky}$.  Since the signature of neutrinos depends on the detailed measurement of the shape of the power spectra, constraints depend on the number of observed modes.  At fixed noise levels this implies that $\sigma(\Neff) \propto f^{-1/2}_{\rm sky}$.  Of course, with a fixed number of detectors the sensitivity, $S$, is proportional to $S \propto f_{\rm sky}^{1/2}$.  Since $\sigma(\Neff)$ grows more slowly that $S$, we see that we mostly gain information by increasing $f_{\rm sky}$.  This trend is shown in Figure~\ref{fig:Neff_fsky}.
-
-
-\begin{table}[t!]
-\begin{center}
-\begin{tabular}{l ccc} 
- \toprule
-    		sensitivity / beamsize	    			& $1'$  		& $2'$  		& $3'$  		 \\ [0.5ex]
- \midrule
-   1 $\mu$K-arcmin & 0.030 		& 0.032		& 0.35	 		  \\
-  2  $\mu$K-arcmin & 0.035 		& 0.038		& 0.041	 		  \\
-   3  $\mu$K-arcmin & 0.040 		& 0.042 		& 0.045	 		  \\
-    \bottomrule
-\end{tabular}
-\caption{Forecasts for $\sigma(\Neff)$ with varying beamize in arcmin (') and detector sensitivity.  These forecasts assume $f_{\rm sky} = 0.4$.  }
-\label{tab:Neffbeam}
-\end{center}
-\end{table}
-
-
-\begin{figure}[t!]
-\begin{center}
-\includegraphics[width=0.65\textwidth]{Neutrinos/Nfsky.pdf}
-\caption{Forecasts for $\sigma(\Neff)$ as a function of sky fraction.  The sensitivity have been normalized to 1 $\mu$K-arcmin for $f_{\rm sky} =0.4$ and is scaled according to $S \propto f_{\rm sky}^{1/2}$ for different sky fractions.  The grey line shows that value of $\sigma(\Neff) =0.027$ which is the 1$\sigma$ sensitivity any scalar thermal relic, or equivalently, 2$\sigma$ sensitivity to any vector thermal relic.  For a fixed number of detectors, we see that $\sigma(\Neff)$ is minimized by increasing sky fraction.  }
-\label{fig:Neff_fsky}
-\end{center}
-\end{figure} 
-
-
-We see from these results that for sufficiently large sky fraction, the thresholds for the light fermions and vectors are accessible at 2$\sigma$ for plausible experimental configurations, or equivalently, 1$\sigma$ for the minimum threshold for a light scalar.  Specifically, we can reach $\sigma(\Neff) = 0.027$ with $S = 1$ $\mu$K-arcmin using 1' beams or 2' beams for $f_{\rm sky} \geq 0.5$ and $f_{\rm sky} \geq 0.6$ respectively.  Reaching at least 2$\sigma$ sensitivity for the light scalar may be possible with more extreme design configurations (i.e. lower noise at large sky fraction).  
-
-These results are tantalizingly close to some exciting theoretical targets.  This raises the question of whether we can reach these targets at higher significant by other means.  First, constraints on $\Neff$ improve significantly if $\ell_{\max}^{TT} > 3000$.  These modes are currently ignored due to foregrounds, but foreground removable could makes some of the modes accessible.  Second, one could also imagine the sensitivity could be improved in combination with large scale structure surveys such as DESI and LSST, both by breaking degeneracies and providing a future measurement of the primordial power spectra.  
-
-
-\section{Neutrino constraints on BSM physics}
-
-We primarily detect neutrinos in cosmology through their gravitational influence.  Light relics can contribute to the same observables, $\sum m_\nu$ and $\Neff$, and therefore these measurements constrain additional light degrees of freedom.  The precise relation between these observables and the underlying models depends on spin.  This section is organized by the spin of the relevant light particle from axions (spin 0) to gravitons (spin 2).  
-
-\subsection{Axions}
-\label{sec:neffaxions}
-
-Light particles of spin-0 (scalar fields) are highly constrained by naturalness.  In the absence of a symmetry, one would expect them to be heavy and thus a poor candidate for dark radiation.  On the other hand, (pseudo) Goldstone bosons are naturally lights and they appear generically from spontaneous breaking of some high energy global symmetry.  A ubiquitous  example in Beyond the Standard model physics are axions and/or axion-like particles (ALPs).  Axions have been introduced to solve the strong-CP problem~\cite{Peccei:1977hh}, the hierarchy problem~\cite{Graham:2015cka} and the naturalness of inflation~\cite{Freese:1990rb}.  Furthermore, they appear generically in string theory, in large numbers, leading to the qualitative phenomena describe as the string axiverse~\cite{Arvanitaki:2009fg}.  They may even be tied to the origin of the breaking of the flavor, baryon/lepton number symmetries of the standard model.
-
-At low energy, the mass of the ALP is protected by an approximate shift symmetry of the general form $a \to a + c$ where $a$ is the axion and $c$ is a constant (for non-abelian Goldstone bosons, this transformation will include higher order terms in $a$).  We will define an ALP to be any such particle where all of the couplings of the axion to the Standard model respect such a symmetry.  This symmetry may be softly broken with an explicit mass term, although this is highly restricted in the case of the QCD axion.
-
-Two very common features of these models are that the axions are typically light (in many cases, $m \ll 1$ eV) and their interactions are suppressed by powers of $f_a$, the dimensional scale that controls the symmetry breaking.  These two features make ALPs a particularly compelling target for $\Neff$.  Because of the small masses, they will often behave as relativistic species in the CMB.  Furthermore, because their production rate will scale as $T^{2n +1} / f_a^{2n}$ for some $n \geq 1$, they are likely to be thermalized at high temperatures.  Given that $\Delta \Neff \geq 0.027$ under such circumstances, a CMB experiment with sensitivity at this level will be sensitive to a very wide range of ALP models.
-
-A CMB experiment sensitive to $\Delta \Neff \leq 0.027$ would have a dramatic impact on axion physics.  We provide a detailed discussion of the constraints on individual couplings in Section~\ref{sec:axionbsm}, but here we will illustrate the impact qualitatively.  At this sensitivity, any freeze-out at $T< T_{\rm reheat}$ would be detectable in the CMB since they would all produce $\Delta \Neff$.  Since freeze-out is controlled by $f_a$ we can translate the measurements of $\Neff$ into limits on $f_a$.  Since it is possible that $T_{\rm reheat} >10^{10}$ GeV, freeze-out is generally sensitive to $f_a$ as high as $10^{12-14}$ GeV.  This easily surpasses the sensitivity from stellar cooling ($f_a \lesssim 10^{10}$ GeV), which to date is one of the most broadly sensitive probes of axions.  As long as $T_{\rm reheat} > 10^{4}$ GeV, the CMB will be a more sensitive than stellar cooling to these models.
-
-Axions can also produce $\Delta \Neff> 0.027$ in a wide variety of well-motived circumstances.  A case of particular interest is when axions couple directly to Standard model fermions.  The Standard model has an $U(3)^5$ flavor symmetry and it is for axions couplings to arise if the axion is a goldstone boson that results from spontaneous breaking of this symmetry (or a sub-group).  Given the non-abelian nature of the flavor symmetry, these scenarios can ofter lead to many axions (also known as familons).  Under such circumstances, the contribution to freeze-out is given by 
-\beq
- \Delta \Neff = N_a \times 0.027
- \eeq
- where $N_a$ is the number of axions / number of broken generators of the symmetry group.  It is easy to find scenarios where $N_a\sim {\cal O}(10)$ which is at the current level of sensitivity.
- 
- 
 
 \subsection{Sterile Neutrinos}
 \label{sec:sterile_neutrinos}
@@ -726,199 +536,7 @@ consistent with sterile neutrinos.
 
 
 
-\subsection{Light Fermions and Vectors}
-
-A general approach to interpreting $\Neff$ constraints in terms of massless fields of arbitrary spin was undertaken in~\cite{Brust:2013xpv}.  One identifies the symmetry that is required to explain  the small mass of the particle, and then writes the most general interactions with the Standard Model consistent with the symmetry.  The couplings will take the form
-\beq
-{\cal L} \supset \sum_{\Delta_h, \Delta_s} \frac{1}{\Lambda^{\Delta_h+ \Delta_s-4}} \,  {\cal O}_{h, \Delta_h} \cdot {\cal O}_{s, \Delta_s}
-\eeq
-where ${\cal O}_{h,\Delta_h}$ is an operator of dimension $\Delta_h$ constructed only from hidden sector fields (and similarly for ${\cal O}_{s, \Delta_s}$ and Standard Model fields).  The total operator must be a scalar under both the Lorentz transformations and the symmetry that protects the mass of the hidden sector field(s).  The bounds on axions discussed in Section~\ref{sec:neffaxions} are one such example, where the axion is protected by a shift symmetry.  For the purpose of this discussion, we have classified all scalars of this type as axions.
-
-For a single Weyl fermion, $\chi$, the leading couplings to the Standard Model are through the anapole moment and four-fermion interactions
-\beq
-{\cal L} \supset \frac{\chi^{\dagger} \bar \sigma^{\mu} \chi}{\Lambda_{\chi}^2} \Big( d_a  \, \partial^\nu F_{\mu \nu} + d_f \,  \bar \psi \gamma_\mu \psi \Big) \ ,
-\eeq
-where we have chosen a chosen one of several four-fermion interactions for illustration and $d_f, d_a$ are order one numbers.  Current experimental constraint from LEP and the LHC limit $\Lambda_\chi \gtrsim \, 1$ TeV.  Similar bounds are set by Planck by excluding the contributions to $\Delta \Neff$ from freeze-out after the QCD phase transition.  If we are sensitive to the minimal contribution from a Weyl fermion of $\Delta \Neff = 0.047$, then for a reheat temperature of $T_{\rm reheat} \sim 10^{10}$ GeV, we would be sensitive to $\Lambda_\psi \lesssim 10^{12}$ GeV.  We see that for an order of magnitude improvement in sensitivity to $\Neff$, we get as much as a nine order of magnitude improvement in sensitivity to $\Lambda_\psi$.  
-
-For a hidden Dirac fermion with a $U(1)$ global symmetry, $X$, the leading\footnote{The dipole operator preserves the same $U(1)$ symmetry that allows a Dirac mass.  It is unclear if one can UV-complete this model with a small Dirac mass.} coupling is through an effective dipole interaction.  A similar interaction also permits a hidden $U(1)$ gauge boson, $A'_\mu$, to couple to Standard Model fermions.
-\beq
-{\cal L} \supset  \frac{1}{\Lambda_X} \bar X \sigma_{\mu\nu} X  F^{\mu \nu} + \frac{1}{\Lambda_{A'}^2} H \bar \psi \sigma_{\mu\nu} \psi  F'_{\mu \nu}  \ ,
-\eeq
-where $F'_{\mu \nu}$ is the field strength of $A'_\mu$.  The We have included the Higgs field, $H$, in the coupling to Standard Model fermions as it is required by gauge invariance above the scale of EWSB.  Stellar cooling provides a strong constraint of $\Lambda_X \gtrsim 10^9$ GeV and $\Lambda_{A'} \gtrsim 10^5$ GeV.  
-
-Freeze-out above the scale of EWSB for a Dirac fermion produces $\Delta \Neff = 0.094$ and $\Delta\Neff = 0.054$ for a hidden photon.  For a reheating temperature of $10^{10}$ GeV, we are sensitive to $\Lambda_X \lesssim 10^{13}$ GeV and $\Lambda_{A'}  \lesssim 10^{11}$ GeV respectively.  The Dirac fermion will be accessible with CMB Stage IV and will improve on the stellar cooling constraint for a reheat temperature $T_{\rm reheat} > 10^4$ GeV.
-
-\subsection{Gravitinos}
-
-One of the most popular extensions of the Standard Model is supersymmetry, which is motivated both by naturalness and gauge coupling unification.  Although the most generic possibilities are under significant tension for the LHC, there are still a variety of possibilities consistent with low-scale supersymmetry.
-
-One of the universal predictions of supersymmetry is the existence of a spin-3/2 partner to the graviton, the gravitino.  The gravitino mass is determined by the absolute scale of supersymmetry breaking, 
-\beq
-m_{\frac{3}{2}} = \frac{|F|}{\sqrt{3} M_{\rm pl}}
-\eeq
-where $|F|$ is the order parameter for the scale of SUSY breaking (the vacuum expectation value of the auxiliary field $F$).  This result does not depend on details of the mechanism of SUSY breaking unlike the super-partners of the rest of the Standard Model particles.
-
-The typical coupling strength of the gravitino is the same as the graviton, $8 \pi G = \Mpl^{-2}$.  However, the strength of the coupling to the helicity-1/2 component of the gravitino is enhanced by $\Mpl^2 /F$.  This is simply the statement that the goldstino of SUSY breaking is coupled with strength $F^{-1}$ (but is `eaten' by the gravitino).  Due to the enhanced coupling, the gravitino can be in thermal equilibrium with the Standard Model at plausible temperatures in the early universe.  The gravitino therefore behaves just like a Weyl fermion in figure~\ref{fig:Neff_thermal}.
-
-For $m_{3/2} \lesssim 10$ eV, hot relic gravitinos free stream on the scale of the CMB and therefore lead to observable signatures.  Current data from Planck already requires that $m_{3/2} < 4.7$ eV from a combination of the primary CMB and CMB lensing~\cite{Osato:2016ixc}.  To probe lower masses, note that for $m_{3/2} < {\cal O}(1)$ eV a gravitino will behave as free-streaming radiation from the point of view of the CMB.  One finds that for these low values of the mass, gravitinos contribute a shift to $\Neff$,
-\beq
-\left(\Delta \Neff\right)_{3/2} \, \gtrsim \, 0.057 \ .
-\eeq
-At $\sigma(\Neff) \sim 0.03$, CMB Stage IV can rule out all low-scale SUSY breaking models allowed by current cosmology.  
-
-\subsection{Gravitational Waves}\label{sec:constraintsntNeff}
-
-Since gravitational waves are massless and free-streaming, any gravitational waves which were present in the early universe naturally contribute to the total radiation energy density, and can therefore be constrained with $\Neff$ \cite{Boyle:2003km,Boyle:2007zx,Stewart:2007fu,Meerburg:2015zua,Lasky:2015lej}.
-
-Let us briefly review how to compute the energy density of a stochastic background of gravitational waves, following the treatment of \cite{Isaacson:1968zza,Misner:1974qy,Watanabe:2006qe,Maggiore:1900zz}.  We will take the metric of spacetime to be given by a background component $\bar{g}_{\mu}$ described by the flat Friedmann-Robertson-Walker metric and a perturbation $\delta g_{\mu\nu}$.  We will take the characteristic frequency of $\delta g_{\mu\nu}$ to be much higher than that of $\bar{g}_{\mu\nu}$.  In particular, we will focus on gravitational waves whose wavelengths are much shorter than scales of cosmological interest.
-
-The Ricci tensor can be expanded in powers of $\delta g$ as
-\begin{equation}\label{eq:Ricci_GW}
-	R_{\mu\nu} = \bar{R}_{\mu\nu} + R_{\mu\nu}^{(1)} + R_{\mu\nu}^{(2)} + \cdots \, .
-\end{equation}
-We are interested in determining how spacetime is curved by the presence of small scale gravitational waves, or in other words, how $\bar{R}_{\mu\nu}$ is affected by terms containing $\delta g_{\mu\nu}$.  Since $R_{\mu\nu}^{(1)}$ is linear in $\delta g_{\mu\nu}$, it contains only high frequency components, while on the other hand, $R_{\mu\nu}^{(2)}$ has both low and high frequency parts.  
-
-The high frequency part of Einstein's equations governs how gravitational waves propagate in a curved background, and is not necessary here.  For the low frequency part, we can take an average over several cycles of the high frequency modes, which then gives
-\begin{equation}\label{eq:Einstein_Eq_GW}
-	\bar{R}_{\mu\nu} = -\left\langle R_{\mu\nu}^{(2)}\right\rangle + 8\pi G \left\langle T_{\mu\nu}-\frac{1}{2}g_{\mu\nu}T\right\rangle \, .
-\end{equation}
-We can then read off the effective energy-momentum tensor of small scale fluctuations
-\begin{equation}\label{eq:EM_Tensor_GW}
-	T_{\mu\nu}^\mathrm{GW} = -\frac{1}{8\pi G} \left \langle R_{\mu\nu}^{(2)}-\frac{1}{2}\bar{g}_{\mu\nu}R^{(2)} \right\rangle + \mathcal{O}(\delta g^3) \, .
-\end{equation}
-If we take our perturbation to be of the form $\delta g_{ij} = a^2 h_{ij}$ with $h_{ij,j} = 0$ and $h_{ii} = 0$, we can compute the energy density of gravitational waves explicitly in the transverse traceless gauge
-\begin{equation}\label{eq:Energy_GW}
-	\rho_\mathrm{GW} = T_{00}^\mathrm{GW} = \frac{1}{32 \pi G}\delta^{ik}\delta^{j\ell}\left\langle \dot{h}_{ij} \dot{h}_{k\ell} \right\rangle + \mathcal{O}(\delta g^3) \, .
-\end{equation}
-
-We will define the gravitational wave power spectrum as
-\begin{equation}\label{eq:GW_power_spectrum}
-	\left\langle h_{ij}(\eta,\mathbf{x})h^{ij}(\eta,\mathbf{x})\right\rangle \equiv \int  d \log k \, \mathcal{P}_t(k) \left[\mathcal{T}(\eta,k)\right]^2 \, ,
-\end{equation}
-where $\mathcal{P}_t(k)$ is the primordial power spectrum of gravitational waves and $\mathcal{T}(\eta,k)$ is the tensor transfer function.  The energy density of gravitational waves is then given by
-\begin{equation}\label{eq:GW_energy_density}
-	\rho_\mathrm{GW} = \frac{1}{32\pi G a^2}\int  d\log k \, \mathcal{P}_t(k) \left[\mathcal{T}'(\eta,k)\right]^2 \, ,
-\end{equation}
-where the prime denotes a derivative with respect to conformal time $\eta$.
-
-Direct searches for the stochastic gravitational wave backgound are often quoted in terms of the normalized energy density per logarithmic scale
-\begin{equation}\label{eq:Omega_GW}
-	\Omega_\mathrm{GW}(k) \equiv \frac{8\pi G}{3H_0^2}\frac{d\rho_\mathrm{GW}}{d\log k} = \frac{\mathrm{P}_t(k)}{12H_0^2a_0^2} \left[\mathcal{T}'(\eta_0,k)\right]^2 \, .
-\end{equation}
-On the other hand, constraints on $\Neff$ provide an integral constraint on the spectrum of gravitational waves since waves of all frequencies contribute to the total energy density.
-
-If for example, we take the primordial gravitational wave power spectrum to be a simple power law of the form $\mathcal{P}_t(k) = A_t \left(\frac{k}{k_\star}\right)^{n_t}$ (as in Eq.~(\ref{eq:power_spectra_power_law})), we can use a constraint on $\Neff$ to place bounds on the tensor spectral tilt $n_t$.  The contribution to $\Neff$ can then be approximated for $n_t>0$ as \cite{Meerburg:2015zua}
-\begin{equation}\label{eq:Neff_GW}
-	\Delta \Neff \simeq \left(3.046 + \frac{8}{7}\left(\frac{11}{4}\right)^{4/3}\right)\frac{A_t}{24n_t}\left(\frac{k_\mathrm{UV}}{k_\star}\right)^{n_t} \, ,
-\end{equation}
-where $k_\mathrm{UV}$ represents the ultraviolet cutoff of the primordial tensor power spectrum.  While this constraint does not probe the regime of great interest for inflationary models, it does provide a useful constraint on early universe alternatives to inflation which predict positive tensor tilt.
-
-
-
-\section{Complementarity of CMB and BBN}
-
-%\subsection{Introduction} \label{Introduction}
-
-Primordial light element abundances have historically been an interesting observational test of hot big bang cosmology.  The process by which light elements form in the early universe known as big bang nucleosynthesis (BBN) was worked out theoretically in the early days of the development of the hot big bang model of cosmology \cite{Alpher:1948ve}.  It is a process which depends on all four fundamental forces, that unfolded during the first three minutes of our current phase of expansion, and which has long provided a useful constraint on physics beyond the Standard Model.  The current observational limits on primordial abundances overall show good agreement with the predictions of standard BBN.  Primordial light element abundances are sensitive to the radiation content of the universe as measured through $\Nf$, which also affects the angular power spectrum of the CMB.  Combining these two probes provides useful insight into the physics of the early universe which neither could achieve alone.
-
-\subsection{Standard Big Bang Nucleosynthesis} \label{StandardBBN}
-In this section, we will briefly review the physics of big bang nucleosynthesis in the Standard Model.  For more extensive reviews see for example \cite{Weinberg:2008zzc,Agashe:2014kda,Cyburt:2015mya}.
-
-At temperatures above $k_BT\sim 1$~MeV, weak interactions kept neutrons and protons in thermal equilibrium, fixing their number densities to have the ratio $n_n/n_p = e^{-Q/k_BT}$, where $Q = 1.293$~MeV is the mass difference between neutrons and protons.  At lower temperatures, interactions which convert protons to neutrons could not keep up with the expansion rate, leaving free neutron beta decay as the only channel by which protons and neutrons interconverted.  The initial ratio of their number densities at the freeze-out temperature $k_BT_\mathrm{fr}\simeq0.8$~MeV was therefore
-\begin{equation}
-	n_n/p_n = e^{-Q/k_BT_\mathrm{fr}} \simeq 1/5 \, .
-\end{equation}
-
-
-After freeze-out, neutrons decayed until becoming bound into nuclei.  This process proceeded primarily through two-body processes, starting with the formation of deuterium.  The very small number density of baryons compared to that of photons (parametrized through $\eta\equiv n_b/n_\gamma$) delayed the start of these nuclear reactions until well after the temperature dropped below the binding energy of deuterium due to photo-dissociation of deuterium.  The condition of the onset of deuterium formation is set by requiring that the number of photons per baryon with energy above the binding energy of deuterium drops below unity
-\begin{equation}
-	\eta^{-1}e^{-|B_D|/k_BT_D} \simeq 1 \, .
-\end{equation}
-With the deuterium binding energy given by $|B_D|=2.23$~MeV, and $\eta\sim6\times10^{-10}$, we find that deuterium began to form when the temperature dropped below about $k_BT_D\simeq 0.1$~MeV.  By this time, due to free neutron decay, the neutron to proton ratio had dropped to about $n_n/n_p\simeq 1/7$.  Once deuterium was able to form, nearly all of the neutrons quickly became bound into the most energetically favorable light nucleus, which is $\nucl{4}{ }{He}$.  We can estimate the mass fraction of primordial $\nucl{4}{ }{He}$, $Y_p\equiv \frac{\rho\left(\nucl{4}{ }{He}\right)}{\rho_b}$ to be
-\begin{equation}
-	Y_p = \frac{2(n_n/n_p)}{1+n_n/n_p} \simeq 0.25 \, .
-\end{equation}
-
-In addition to $\nucl{4}{ }{He}$, BBN produces a small amount of $\nucl{ }{ }{D}$, $\nucl{3}{ }{He}$, $\nucl{6}{ }{Li}$, and $\nucl{7}{ }{Li}$ (and also $\nucl{7}{ }{Be}$ which subsequently decays by electron capture to $\nucl{7}{ }{Li}$).  While $Y_p$ is primarily sensitive to the neutron lifetime, the primordial abundances of the other light elements depend in complicated ways various nuclear rates and generally require numerical computation (see for example \cite{Wagoner:1966pv,Cyburt:2001pp,Pisanti:2007hk}).
-
-Standard BBN is a one parameter model, depending only on the baryon to photon ratio $\eta$.  The theory predicts several abundances which can be used to fix $\eta$ and check the consistency of the theory, or alternatively, to constrain new physics.  Current observations agree quite well with the predictions of standard BBN, with the exception of $\nucl{7}{ }{Li}$.  It is unclear whether this disagreement points to a problem with the astrophysical determination of the primordial abundance or a problem with the standard theory.  The cosmological lithium problem remains unsolved \cite{Fields:2011zzb}.  From here on, however, we will ignore the lithium problem and focus on how measurements of the other abundances (primarily $\nucl{ }{ }{D}$ and $\nucl{4}{ }{He}$) can be used to constrain the physics of the early universe.
-
-
-
-
-%-----------------------------------------------
-
-
-
-
-\subsection{Beyond the Standard Model}\label{BSM}
-Moving beyond standard BBN, measurements of primordial abundances have the ability to constrain many deviations from the standard thermal history and the Standard Model of particle physics.  Because BBN is sensitive to all fundamental forces, changes to any force can in principle impact light element abundances.  Of primary interest for our purpose is that BBN is sensitive to the expansion rate between about one second and a few minutes after the end of inflation.  The expansion rate is in turn determined by the radiation content of the universe during this period, and thus BBN is sensitive to $\Nf$.  
-
-More specifically, the expansion rate determines the freeze-out temperature setting the initial ratio of neutrons to protons and the amount of time free neutrons have to decay.  Additional radiation compared to the Standard Model gives a higher expansion rate, which leads to a higher freeze-out temperature and less time for free neutron decay, leading to a larger primordial $\nucl{4}{ }{He}$ abundance.  The freeze-out temperature also depends weakly on the distribution function of electron neutrinos, though this is subdominant to the dependence $\Nf$ for small non-thermal distortions \cite{Serpico:2004gx}.
-
-Historically, $Y_p$ had provided the best constraint on $\Nf$.  Recent advancements in the determination of primordial deuterium abundance have made constraints on $\Nf$ from deuterium competitive with those from $Y_p$ \cite{Cooke:2013cba}.  The precision with which primordial abundances constrain $\Nf$ is now comparable to that of constraints the CMB power spectrum, and there is no evidence for deviation from the Standard Model \cite{Ade:2015xua}.
-
-
-
-%-----------------------------------------------
-
-
-
-
-\subsection{Complementarity with the CMB}\label{Complementarity}
-The CMB can be used to quite precisely constrain $\eta$ by measurement of the baryon fraction of the critical density, which is related to $\eta$ by
-\begin{equation}
-	\Omega_b h^2 \simeq \frac{\eta\times10^{10}}{274} \, .
-\end{equation}
-Using the value of $\eta$ determined from CMB measurements as an input for BBN makes standard BBN a theory without free parameters which agrees very well with all observations (apart from the aforementioned disagreement with the observed lithium abundance).  The CMB and BBN are sensitive to the baryon density measured at different times.  While BBN is sensitive to the baryon to photon ratio up to a few minutes after the end of inflation, the CMB is sensitive to the baryon density at much later times, closer to recombination about 380,000 years later.  Combining constraints from BBN and CMB on the baryon fraction therefore allows constraints on models where the photon or baryon density changes between these times.
-
-The precision with which the CMB can constrain $\Nf$ will soon come to surpass the constraints from BBN, but the value of the latter will not be totally eclipsed.  BBN and the CMB probe the physics at different times, and so combining constraints can give insight into models where $\Nf$ changes in time.  If it were measured for example that $\Nf^{\mathrm{BBN}}<\Nf^{\mathrm{CMB}}$, this could be explained by the late decay of some unstable particles \cite{Fischler:2010xz,Menestrina:2011mz,Hooper:2011aj}.  Alternatively, if observations revealed that $\Nf^{\mathrm{BBN}}>\Nf^{\mathrm{CMB}}$, this might signal late photon heating \cite{Cadamuro:2010cz,Millea:2015qra}.
-
-The power spectrum of the CMB is also directly sensitive to $Y_p$.  Since helium recombines earlier than hydrogen, the density of helium present at the time of recombination affects the free electron density, and thereby affects the damping tail of the CMB (though in a way which can be distinguished from the effects of $\Nf$) \cite{Bashinsky:2003tk,Hou:2011ec,Follin:2015hya,Baumann:2015rya}.  The degeneracy between $Y_p$ and $\Nf$ is more strongly broken with precise CMB polarization data.
-
-CMB Stage IV will provide constraints on $\Nf$ which are about an order of magnitude better than the current best constraints, and will also improve on the measurement of $Y_p$ by about a factor of two compared to the current best astrophysical measurements.  Combined with measurements of other primordial abundances, this will help to provide a very thorough check of our understanding of the early universe and provide the opportunity to discover physics beyond the Standard Model.
-
-\subsection{Forecasts}\label{sec:NeffBBNfore}
-
-Constraints on the combined $Y_P$-$\Neff$ parameter space is a useful probe of both the physics of BBN and recombination and possible evolution in between.  It is therefore useful to consider joint constraints on these two parameters available from the CMB alone.  
-
-The leading effect of both $Y_p$ and $\Neff$ is to change to damping tail and they are therefore degenerate.  However, this degeneracy is broken both by the phase shift induced by neutrinos and by the $E$-mode spectra.  The phase shift is sensitive to delensing of the $T$ and $E$-modes and proper forecasting must account for realistic delensing, and the non-trivial covariance induced by the imperfect delensing.  Forecasts including both effects are given in Table~\ref{tab:YpNeffbeam}.
-
- 
-
-\begin{table}[t!]
-\begin{center}
-\begin{tabular}{l ccc} 
- \toprule
-    		sensitivity / beamsize		    			& $1'$  		& $2'$  		& $3'$  		 \\ [0.5ex]
- \midrule
-   1 $\mu$K-arcmin & 0.082 / 0.0049		& 0.085 /  0.0050 		& 0.090 / 0.0053		 		  \\
-  2  $\mu$K-arcmin & 0.093 / 0.0054		& 0.096 / 0.0056		& 0.10 / 0.0058	 		  \\
-   3  $\mu$K-arcmin & 0.10 / 0.0058		& 0.10 / 0.0059		& 0.11 / 0.0062		 		  \\
-    \bottomrule
-\end{tabular}
-\caption{Forecasts for $\sigma(\Neff)$ / $\sigma(Y_p)$ with varying beamize in arcmin (') and detector sensitivity. These forecasts allow both $Y_p$ and $\Neff$ to vary (along with the parameters of $\Lambda$CDM).  We assume $f_{\rm sky} = 0.4$. }
-\label{tab:YpNeffbeam}
-\end{center}
-\end{table}
-
-Like the case of $\Neff$-only forecasts, constraints on $Y_p$ and $\Neff$ are primarily sensitive to $f_{\rm sky}$ as show in Figure~\ref{fig:YpNeff_fsky}.  Although both parameters are sensitive to the damping tail and we also see the significant impact of varying the beamsize from $1'$ to $3'$.  
-
-\begin{figure}[t!]
-\begin{center}
-\includegraphics[width=0.48\textwidth]{Neutrinos/NfskyYp.pdf}
-\includegraphics[width=0.5\textwidth]{Neutrinos/Ypfsky.pdf}
-\caption{{\it Left:} Forecasts for $\sigma(\Neff)$, marginalized over $Y_p$, as a function of sky fraction for beam sizes of $1',2'$ and $3'$.  {\it Right :} Forecasts for $\sigma(Y_p)$, marginalized over $\Neff$, as a function of sky fractionfor beam sizes of $1',2'$ and $3'$.  For both figures, the sensitivity have been normalized to 1 $\mu$K-arcmin for $f_{\rm sky} =0.4$ and is scaled according to $S \propto f_{\rm sky}^{1/2}$ for different sky fractions.}
-\label{fig:YpNeff_fsky}
-\end{center}
-\end{figure} 
-
-
-\section{Detection Scenarios for Labs and Cosmology}
-
-The measurement of $\sum m_\nu$ and $\Neff$ from cosmology are complimentary to a wide variety of experiments.  In principle one or more experiment may observe deviations for the standard scenario and the interplay between the different observations will help narrow the space of possibilities. 
-
-\subsection{Neutrino Physics}
+\section{Detection Scenarios for Neutrino Physics}
 
 As discussed in Section~\ref{sec:lab}, the measurements of the absolute scale of the neutrinos masses from the lab and from cosmology are complimentary in that they are sensitive to different parameters.  In principle, there are a variety of possible scenarios where detections are made both in cosmology and in the lab.  However, given current constraints, most scenarios that involve mostly conventional neutrino physics will result in upper limits from the lab based measurements and a detection of $\sum m_\nu$ and/or $\Delta\Neff \equiv \Neff - 3.046$.  A plausible list of possibilities is shown in Table~\ref{table:neutrinoscenarios}:
 
@@ -957,78 +575,73 @@ Late Decay & $< 2\sigma$ & $< 2\sigma$  & $60  \, {\rm meV}$ & $<0$ & Energy-inj
 \end{table} 
 
 
-\subsection{Dark Sectors and Particle Physics}
+%Neutrinoless double beta decay can occur in a variety of nuclei if neutrinos have a non-zero Majorana mass but does not occur for a Dirac mass.  The decay is effectively involves two neutrons decaying to two protons and two electrons with no associated neutrinos.  The flavor structure of this decay means the amplitude is proportional to $|m_{ee}|^2$ where $m_{ee} = \sum_i m_i U_{ei}$, $U$ is the PMNS matrix, and $m_i$ are the mass eigenstates.  While cosmology can not directly determine whether the mass is Majorana or Dirac, a detection of such a decay could establish that it it has a Majorana mass.  Also, like tritium decay, there is no required lower limit on $m_{ee}$ and therefore there is no level of sensitivity that would guarantee a detection.
 
-Deviations from $\Neff = 3.046$ can arise from a wide variety of changes to the particle content and thermal history of the universe.  In most cases, the physics responsible fundamentally requires a coupling of new particles to the Standard Model in regimes where they often can, in principle, be detected by other means.  Cosmology is a very broad tool for searching for beyond the Standard Model physics, but it is also very complimentary to more targeted searches.  A list of plausible detection scenarios is shown in Table~\ref{table:darkscenarios}:
-\begin{itemize}
-\item Evidence for new massless particles from either experiments or astrophysical observations have immediate implications for cosmology.  Any non-cosmological probe of light particles necessarily requires a coupling of the field to the Standard Model.  A measurement suggesting the strength of the coupling for this particle implies an upper-limit on the freeze-out temperature.  One can then look for the contribution to $\Delta \Neff$ associated with the particle.  If no such contribution is detected, we could place an upper limit on the reheating temperature (or a lower limit for a detection).  Axions present the simplest such examples, as there are a number of experiments that could directly detect axion dark matter (such as ADMX and CASPEr).  A detection in either experiment would predict $\Delta\Neff \geq 0.027$ unless reheating was at sufficiently low temperatures.  The inferred bound in either experiment can be read off of Figures~\ref{fig:axionphoton} or~\ref{fig:axiondipole}.
+% Possible anomalies found in short baseline oscillation experiments (LSND~\cite{Aguilar:2001ty},
+% MiniBooNE~\cite{AguilarArevalo:2010wv}, etc.) may be explained as an active-sterile neutrino
+% oscillation.  Parameters required to these fits typically lead to
+% thermalization of the sterile species in the early universe before
+% neutrino decoupling, resulting in non-standard $N_\mathrm{eff}$ and
+% contribution to $\sum m_\nu$.  Further description can be found
+% below in Section~\ref{sec:sterile_neutrinos}.
 
-\item A more complicated example is if a deviation for typical stellar cooling is observed, as has been suggested for white dwarfs.  In this case, there are a number of models that could produce the necessary additional cooling, but would predict $\Delta\Neff \geq 0.027$.  The precise value of $\Delta \Neff$ depends on the spin of the particle and nature of the coupling (which cannot be unambiguously inferred from cooling).  Evidence for additional dark radiation would provide strong support that there is anomalous cooling and would imply a spin for the new light particle through the observed $\Delta \Neff$ using Figure~\ref{fig:Neff_thermal}.
+%[AK:6/3] The mass hierarchy may be determined by terrestrial experiments
+%as well.  NO$\nu$A experiment can determine the hierarchy at
+%2--3$\sigma$ level if the $CP$-violating phase $\delta_{CP}$ falls into
+%the favorable range of around $3\pi/2$ ($\pi/2$) for normal (inverted)
+%hierarchy in a $\sim 5$-year timescale [1].  Possible ambiguity arises
+%if the nature chooses unfavorable $\delta_{CP}$; this can be resolved by
+%a future measurement of $\delta_{CP}$ by a next-generation long-baseline
+%experiment such as Hyper-Kamiokande.  [AK: was there a US competitor of
+%Hyper-K?  Is it LBNF?]
+%
+%The next-generation US-based long-baseline neutrino-oscillation
+%experiment, LBNF, is planned to start operation around 2024.
+%LBNF would resolve the hierarchy at 2--4$\sigma$ level depending on the
+%$\delta_{CP}$ [2].
+%
+% China-based next-generation reactor neutrino experiment, JUNO, is also
+% sensitive to the mass hierarchy.  It is scheduled to start data taking
+% around $\sim$ 2020 and will have $\sim$ 2 (3?)$\sigma$ sensitivity to
+% resolve the hierarchy after a six-year operation [3].  [AK: I have not
+% understood what they mean by ``crossing sensitivity.'']
+%
+% Atmospheric neutrino oscillation can also be used to resolve mass
+% hierarchy [4,5].  KM3NeT/ORCA forecasts to resolve the mass hierarchy at
+% a 3$\sigma$ level by around 2023.
+%
+% [AK: I have collected schedule information from slides etc., but we may
+% query PIs of each experiment to get firm citation.]
 
-\item Evidence for supersymmetry at the LHC would suggest the existence of a gravitino.  The collider phenomenology of most SUSY models is driven by the precise spectrum of masses of the super partners of the Standard Model fields.  A priori, one may not be able to determine the mass or coupling of the gravitino in a collider.  However, if the gravitino mass is low ($\lesssim$ MeV) then a cosmological abundance of gravitinos is expected.
+%Cosmological measurements and these terrestrial hierarchy measurements
+%are complementary to each other.  For example, if cosmology measures the sum of
+%the neutrino mass heavier than $\sim 116$\,meV, the terrestrial
+%experiments are the only way to determine the hierarchy.  In turn,
+%in this case of $\sum m_\nu > 116$\,meV,
+%determination of the hierarchy by terrestrial experiments would allow
+%cosmology to constrain the mass of the lightest neutrino without
+%discrete ambiguity.
+%In a similar manner to the cosmology being dependent on the central
+%value of $\sum m_\nu$, 
+%long-baseline oscillation experiments would suffer from
+%relatively low sensitivity to the hierarchy
+%if the $\delta_{CP}$ turns out to be unfavorable.
+%Also, it is worth noting that all the terrestrial experiments use matter
+%effect to resolve the hierarchy.  Some of the beyond-the-standard models
+%involve modification of the neutrino interaction and thus that of the
+%matter
+%effect [citation needed].  Cosmological measurements, on the other hand, 
+%are relatively
+%insensitive to possible modification of interaction.  Consistency check
+%between the terrestrial measurements and cosmological constraints would
+%probe BSM physics in neutrino interaction.
 
-\item There are a variety of possibilities where we may observe $\Delta \Neff \gtrless 0$ which results from the decay of a massive particle after neutrino decoupling.  A change to $\Neff$ after BBN would imply that $\Neff$ as measured in the CMB could differ significantly from the value inferred from primordial abundances~\cite{Fischler:2010xz}.  From the CMB, we can measure $Y_p$ and $\Neff$ simultaneously which implies such a signature can even be internal to the CMB.  Similarly decays to photons after BBN can also produce $\mu$- or $y$-distortions to the CMB spectrum which could be correlated with $\Delta \Neff < 0$.
-\end{itemize}
+%[1] https://doi.org/10.1146/annurev-nucl-102014-021916
+%[2] https://arxiv.org/abs/1601.05471
+%[3] https://arxiv.org/abs/1507.05613
+%[4] http://arxiv.org/abs/1401.2046
+%[5] http://arxiv.org/abs/1601.07459
 
-
-\begin{table}[t!]
-\begin{center}
-\begin{tabular}
-{| l | c | p{5cm} | p{5cm} | }\hline Scenario & $\Delta \Neff$ & Experimental Input & Conclusion \\
-\hline 
-Axions & $\geq 0.027$  & Direct detection of axions & lower-limit on the reheat temperature
-\\[.2cm]
-Low-reheating & $0$  & Direct detection of axions & upper-limit on the reheat temperature
-\\[.2cm]    
-Stellar Cooling & $\geq 0.027$  & Anomalous Stellar cooling (e.g. white dwarfs) & Evidence for new light particle ; Spin determined by $\Delta \Neff$.  
-\\[.2cm]    
-Gravitinos & $\geq 0.057$  & LHC evidence for SUSY & upper limit on scale of SUSY breaking
-\\[.2cm]  
-Late Decays & $< 0$  & Spectral Distortions observed ($\mu$ or $y$) & evidence for new massive particle; energy injection
-\\[.2cm]
-Evolving $\Neff$ & $> 0$  & Primordial abundances (BBN) consistent with $\Delta \Neff =0$ & Radiation density changed between BBN and Recombination
-\\[.2cm]  
-\hline 
-\end{tabular}
-\caption{Relation between particle physics experiments and cosmology.}
-\label{table:darkscenarios}
-\end{center}
-\end{table} 
-
-\subsection{Dark Sectors and Neutrino Mass}
-
-CMB Stage IV will provide compelling sensitivity in the $\Neff$-$\sum m_\nu$ plane.  From cosmology alone a measurement of $\sum m_\nu \gtrsim 60$ meV is consistent with conventional neutrino physics and therefore does not point to more exotic beyond the standard model physics without $\Neff$.  However, an upper limit or detection of $\sum m_\nu < 60$ meV would provide evidence of unconventional cosmology on its own and combined with $\Neff$ may give future insight into possible modifications to the cosmological history and/or neutrino physics necessary to accommodate such an observations.   An illustration of possible scenarios is shown in Figure~\ref{fig:MnuNeff} and can be compared directly to the forecasted region in Figure~\ref{fig:Neff_Mnu}:
-
-
-\begin{figure}[t!]
-\begin{center}
-\includegraphics[width=0.65\textwidth]{Neutrinos/MnuNeff.pdf}
-\caption{ Physical mechanisms behind different regions in the space $\Delta\Neff$ - $\sum m_\nu$.   }
-\label{fig:MnuNeff}
-\end{center}
-\end{figure} 
-
-\begin{itemize}
-
-\item Conventional neutrino physics predicts $\sum m_\nu \gtrsim 60$ meV.  A measurement of $\Delta \Neff < 0.02$ (i.e. consistent with zero) is the expectation from $\Lambda$CDM.  As described in the previous subsection, $\Delta \Neff> 0$ suggests dark radiation or additional energy in neutrinos and $\Delta \Neff < 0$ would imply energy injection into photons after neutrino decoupling.  The amount of energy injection that is consistent with the current constraint from Planck, $\Neff = 3.04 \pm 0.18$, is insufficient to significantly alter $\sum m_\nu$, as it would correspond to at most a five percent change in $\Omega_\nu h^2$.
-
-\item If $\sum m_\nu < 60$ meV, the most natural explanation is that the number density of neutrinos was lowered due to a change to the standard cosmological evolution.  However, in order to significantly lower the number density to explain such an observation, the neutrinos number would have to be changed dramatically which, on its own, would be in contradiction with current $\Neff$ constraints.  Therefore, to satisfy existing constraints on $\Neff$ from Planck, some other form of radiation (i.e. other than Standard neutrinos) would also be required to make $|\Delta \Neff| < 0.2$.  Seeing a deviation of the form $\Delta \Neff \gtrless 0$ would give additional evidence for a modification of the thermal history.
-
-\item If $\sum m_\nu < 60$ meV and $\Delta\Neff = 0$, then it suggests that either the mass for the neutrinos is generated after the CMB (late mass) or that the heavy neutrinos decayed to a lighter specifics in some novel way.  This situation would be unusual in that the limits on $\sum m_\nu$ would suggest deviations from the Standard thermal history without any other hints.  Presumably this scenario would be scrutinized heavily to check that the amplitude of the power spectrum is normalized correctly.  Finally, one might also allow for a delicate cancelation between the dilution of the neutrinos and the additional dark energy to be consistent with $\Delta \Neff =0$.
-
-
-
-\end{itemize}
-
-
-
-\begin{figure}[t!]
-\begin{center}
-\includegraphics[width=0.65\textwidth]{Neutrinos/Neff_Mnu.png}
-\caption{Forecasts 2d parameter space $\sigma(\Neff)$ and $\sigma(\sum m_\nu$.  These constraints assume $f_{\rm sky} = 0.4$ and  1 $\mu$K-arcmin noise.  A prior of $\tau = 0.06 \pm 0.01$ was also assumed. }
-\label{fig:Neff_Mnu}
-\end{center}
-\end{figure} 
 
 %%
 %% Populate the .bib file with entries from SPIRES Bibtex (preferred)
