@@ -570,13 +570,13 @@ As we described in Section~\ref{sec:Neffsignatures}, the most concrete signature
 
 Forecasts for $\sigma(\Neff)$ under various experimental configurations are given in Table~\ref{tab:Neffbeam}.  Since the damping tail extends to very high-$\ell$, constraints on $\Neff$ are sensitive to $\ell_{\rm max}$ and the beamsize of the experiment.  We assume $\ell_{\rm max} = 5000$ except for $C^{TT}$ where we assume $\ell_{\rm max} = 3000$ due to foregrounds.  One can see the impact of the highest-$\ell$ modes  by looking at the effect of the beamsize.
 
-The other important parameter for $\Neff$ is the sky fraction of the survey, $f_{\rm sky}$.  Since the signature of neutrinos depends on the detailed measurement of the shape of the power spectra, constraints depend on the number of observed modes.  At fixed noise levels this implies that $\sigma(\Neff) \propto f^{-1/2}_{\rm sky}$.  Of course, with a fixed number of detectors the sensitivity, $S$, is proportional to $S \propto f_{\rm sky}^{1/2}$.  Since $\sigma(\Neff)$ grows more slowly that $S$, we see that we mostly gain information by increasing $f_{\rm sky}$.
+The other important parameter for $\Neff$ is the sky fraction of the survey, $f_{\rm sky}$.  Since the signature of neutrinos depends on the detailed measurement of the shape of the power spectra, constraints depend on the number of observed modes.  At fixed noise levels this implies that $\sigma(\Neff) \propto f^{-1/2}_{\rm sky}$.  Of course, with a fixed number of detectors the sensitivity, $S$, is proportional to $S \propto f_{\rm sky}^{1/2}$.  Since $\sigma(\Neff)$ grows more slowly that $S$, we see that we mostly gain information by increasing $f_{\rm sky}$.  This trend is shown in Figure~\ref{fig:Neff_fsky}.
 
 \begin{table}[t!]
 \begin{center}
 \begin{tabular}{l ccc} 
  \toprule
-    		$\sigma(\Neff)$		    			& $1'$  		& $2'$  		& $3'$  		 \\ [0.5ex]
+    		sensitivity / beamsize	    			& $1'$  		& $2'$  		& $3'$  		 \\ [0.5ex]
  \midrule
    1 $\mu$K-arcmin & 0.030 		& 0.032		& 0.35	 		  \\
   2  $\mu$K-arcmin & 0.035 		& 0.038		& 0.041	 		  \\
@@ -587,6 +587,20 @@ The other important parameter for $\Neff$ is the sky fraction of the survey, $f_
 \label{tab:Neffbeam}
 \end{center}
 \end{table}
+
+
+\begin{figure}[t!]
+\begin{center}
+\includegraphics[width=0.65\textwidth]{Neutrinos/Nfsky.pdf}
+\caption{Forecasts for $\sigma(\Neff)$ as a function of sky fraction.  The sensitivity have been normalized to 1 $\mu$K-arcmin for $f_{\rm sky} =0.4$ and is scaled according to $S \propto f_{\rm sky}^{1/2}$ for different sky fractions.  For a fixed number of detectors, we see that $\sigma(\Neff)$ is minimized by increasing sky fraction.  }
+\label{fig:Neff_fsky}
+\end{center}
+\end{figure} 
+
+
+We see from these results that for sufficiently large sky fraction, the thresholds for the light fermions and vectors are accessible at 2-$\sigma$ for plausible experimental configurations.  These forecasts reach that minimum threshold for a light scalar of $\Delta \Neff = 0.027$ at 1$\sigma$ for plausible configurations.  Reaching at least 2$\sigma$ sensitivity may be possible with more extreme design configurations (i.e. lower noise at large sky fraction).  
+
+These results are tantalizingly close to some exciting theoretical targets.  This raises the question of whether we can reach these targets at higher significant by other means.  First, constraints on $\Neff$ improve significantly if $\ell_{\max}^{TT} > 3000$.  These modes are currently ignored due to foregrounds, but foreground removable could makes some of the modes accessible.  Second, one could also imagine the sensitivity could be improved in combination with large scale structure surveys such as DESI and LSST, both by breaking degeneracies and providing a future measurement of the primordial power spectra.  
 
 % Renee Hlozek cut the text from the BSM section to make a later chapter
 
@@ -977,7 +991,7 @@ Evolving $\Neff$ & $> 0$  & Primordial abundances (BBN) consistent with $\Delta 
 
 \subsection{Dark Sectors and Neutrino Mass}
 
-CMB Stage IV will provide compelling sensitivity in the $\Neff$-$\sum m_\nu$ plane.  From cosmology alone a measurement of $\sum m_\nu \gtrsim 60$ meV is consistent with conventional neutrino physics and therefore does not point to more exotic beyond the standard model physics without $\Neff$.  However, an upper limit or detection of $\sum m_\nu < 60$ meV would provide evidence of unconventional cosmology on its own and combined with $\Neff$ may give future insight into possible modifications to the cosmological history and/or neutrino physics necessary to accommodate such an observations.   An illustration of possible scenarios is shown in Figure~\ref{fig:MnuNeff}:
+CMB Stage IV will provide compelling sensitivity in the $\Neff$-$\sum m_\nu$ plane.  From cosmology alone a measurement of $\sum m_\nu \gtrsim 60$ meV is consistent with conventional neutrino physics and therefore does not point to more exotic beyond the standard model physics without $\Neff$.  However, an upper limit or detection of $\sum m_\nu < 60$ meV would provide evidence of unconventional cosmology on its own and combined with $\Neff$ may give future insight into possible modifications to the cosmological history and/or neutrino physics necessary to accommodate such an observations.   An illustration of possible scenarios is shown in Figure~\ref{fig:MnuNeff} and can be compared directly to the forecasted region in Figure~\ref{fig:Neff_Mnu}:
 
 
 \begin{figure}[t!]
@@ -997,8 +1011,18 @@ CMB Stage IV will provide compelling sensitivity in the $\Neff$-$\sum m_\nu$ pla
 \item If $\sum m_\nu < 60$ meV and $\Delta\Neff = 0$, then it suggests that either the mass for the neutrinos is generated after the CMB (late mass) or that the heavy neutrinos decayed to a lighter specifics in some novel way.  This situation would be unusual in that the limits on $\sum m_\nu$ would suggest deviations from the Standard thermal history without any other hints.  Presumably this scenario would be scrutinized heavily to check that the amplitude of the power spectrum is normalized correctly.  Finally, one might also allow for a delicate cancelation between the dilution of the neutrinos and the additional dark energy to be consistent with $\Delta \Neff =0$.
 
 
+
 \end{itemize}
 
+
+
+\begin{figure}[t!]
+\begin{center}
+\includegraphics[width=0.65\textwidth]{Neutrinos/Neff_Mnu.png}
+\caption{Forecasts 2d parameter space $\sigma(\Neff)$ and $\sigma(\sum m_\nu$.  These constraints assume $f_{\rm sky} = 0.4$ and  1 $\mu$K-arcmin noise.  A prior of $\tau = 0.06 \pm 0.01$ was also assumed. }
+\label{fig:Neff_Mnu}
+\end{center}
+\end{figure} 
 
 %%
 %% Populate the .bib file with entries from SPIRES Bibtex (preferred)
