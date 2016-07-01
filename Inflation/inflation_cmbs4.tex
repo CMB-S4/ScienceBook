@@ -32,7 +32,7 @@ these small length scales to ones of astrophysical size. If the tensor perturbat
 To date we only have upper limits on the amplitude of tensor perturbations, upper limits that are as strong as they can be from measuring temperature anisotropies. To detect tensor perturbations we need to improve measurements of CMB polarization. %On degree scales a polarization pattern known as B-mode polarization would reveal the existence of primordial gravitational waves. 
 In the tensor sector, CMB-S4 will improve current constraints by almost two orders of magnitude. This is especially interesting because it allows this next-generation instrument to reach theoretically well-motivated thresholds for the tensor-to-scalar ratio (the ratio of power in tensor modes to power in scalar modes), which consequently serves as the primary inflationarFinn:2001qiy science driver for the design. 
 
-It is worth pointing out explicitly that these tensor perturbations are by definition gravitational waves. With the recent LIGO detections \cite{Abbott:2016blz,Abbott:2016blz}, we have entered the era of gravitational wave astronomy, and with CMB-S4 we will be targeting the ultra long-wavelength end of nature's gravitational wave spectrum. We expect that the background of inflation-produced gravitational waves to be nearly scale-invariant, and that waves with frequencies $10^8$ (TBD) times higher than those detectable with CMB-S4 may one day be detectable with a space-based observatory, greatly enhancing the value of any CMB-S4 detection. 
+It is worth pointing out explicitly that these tensor perturbations are by definition gravitational waves. With the recent LIGO detections \cite{Abbott:2016blz,Abbott:2016nmj}, we have entered the era of gravitational wave astronomy, and with CMB-S4 we will be targeting the ultra long-wavelength end of nature's gravitational wave spectrum. We expect that the background of inflation-produced gravitational waves to be nearly scale-invariant, and that waves with frequencies $10^8$ (TBD) times higher than those detectable with CMB-S4 may one day be detectable with a space-based observatory, greatly enhancing the value of any CMB-S4 detection. 
 
 Inflation predicts B-mode fluctuations sourced by primordial gravitational waves. But more generally, the B-mode signal carries information about both the spectrum of primordial perturbations in the tensor (and vector) components of the metric and any physics that affected the evolution of those modes once they re-entered the horizon. Furthermore, the inflationary sector is not isolated from the rest of particle physics at high energies. In the context of specific proposals for physics beyond the standard model, including dark matter models, a detection of B-modes can have consequences for predictions for the post-inflation spectrum of particles and their thermodynamics. These models may also provide observables other than the amplitude of B-modes that constrain inflationary physics. The rich interplay of inflation models and other physics beyond the standard model is discussed in detail in Section 5.%need to figure out how to reference chapters 
 
@@ -110,7 +110,7 @@ Since the period of cosmic inflation must end, there must exist a clock, or scal
 
 %{\bf (Mention isocurvature modes here?)}
 
-{\bf LK: I think this paragraph should probably get moved elsewhere -- perhaps to a discussion of inflation falsifiability that we need to include somewhere.}
+%{\bf LK: I think this paragraph should probably get moved elsewhere -- perhaps to a discussion of inflation falsifiability that we need to include somewhere.}
 We mention an alternative to inflation here.  Observations of the cosmic microwave background provide strong evidence for a period preceding the hot big bang during which the co-moving Hubble radius, $(a|H|)^{-1}$, was decreasing with time: the measured average CMB temperature and the statistics of the measured anisotropies are the same over regions that otherwise share no causal history. Inflation is one way of arranging for a period of decreasing co-moving Hubble radius, as an expanding and accelerating universe will have such a Hubble radius. Alternatively, the phase of decreasing co-moving Hubble radius could have occurred during a period of decelerating contraction which must then be followed by a bounce as in the ekpyrotic or matter bounce scenarios \cite{Khoury:2001wf,Khoury:2001bz,Steinhardt:2001st,Nayeri:2005ck,Brandenberger:2012zb,Cai:2014jla,deHaro:2015wda}. 
 % The matter field that sources this expansion should have an equation of state $w\approx -1$, which is minimally provided by a single scalar field whose energy density is predominately determined by its potential.
 
@@ -248,7 +248,8 @@ Figure~\ref{fig_rforecast1} shows the forecasted sensitivity to $r$ for CMB-S4 a
 %More details of the forecasting methodology used here can be found in Section~\ref{sec_specforecast}.
 Focusing on the $r=0$ case, we see that an effort devoted to an initial detection of $r$ will benefit from a deep survey that targets a small sky area.
 Concerns about foreground complexity beyond what has been simulated will increase our preference for a small area survey that focuses on the cleanest regions.
-Likewise, our ability to identify and address instrumental systematics is often limited by the noise level of the maps, so deeper maps can serve as a guard against instrumental problems (\comment{Would be helpful to refine this argument with a simple model.}).
+Likewise, our ability to identify and address instrumental systematics is often limited by the noise level of the maps, so deeper maps can serve as a guard against instrumental problems.
+% (\comment{Would be helpful to refine this argument with a simple model.}).
 
 The preference for small sky area is in tension with other CMB-S4 science goals that prefer large sky areas but have much lower requirements for foreground cleaning.
 To balance these goals, we assume that roughly one half of total CMB-S4 experiment is devoted to a deep survey targeting degree-scale $B$ modes while the other half is spent on a broad survey.
@@ -360,7 +361,15 @@ In writing~(\ref{eq:lbound}), we have assumed that $r$ is monotonic, or at least
 \begin{equation}
 \frac{\Delta\phi}{M_p}\gtrsim\left(\frac{r}{0.3}\right)^{1/2}\,,
 \end{equation}
-which bounds the distance in field space traveled during the time the modes we observe in the CMB exited the horizon. This inequality implies that even if the distance in field space traveled during this period is sub-Planckian, it is not parametrically smaller than $M_p$. Because general relativity is not UV complete and becomes strongly coupled at $M_p$, any weakly coupled UV completion will come with a scale of new physics $M$, e.g. the string scale, that must be parametrically smaller than the Planck scale to ensure weak coupling. This implies that we cannot avoid the question of the embedding of the inflation model into quantum gravity for $r=0.01$ or even for $r=0.005$ unless we assume the UV completion of general relativity is strongly coupled. 
+which bounds the distance in field space traveled during the time the modes we observe in the CMB exited the horizon. This inequality implies that even if the distance in field space traveled during this period is sub-Planckian, it is not parametrically smaller than $M_p$. Because general relativity is not UV complete and becomes strongly coupled at $M_p$, any weakly coupled UV completion will come with a scale of new physics $M$, e.g. the string scale, that must be parametrically smaller than the Planck scale to ensure weak coupling. This implies that we cannot avoid the question of the embedding of the inflation model into quantum gravity for $r=0.01$ or even for $r=0.005$ unless we assume the UV completion of general relativity is strongly coupled. These levels of primordial gravitational waves can be detected at high significance with CMB-S4 as shown in figure~\ref{fig:nsrp01} for a fiducial model of $r=0.01$.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=6in]{Inflation/nsrlabeledrp01v2s}
+\caption{Forecast of CMB-S4 constraints in the $n_s-r$ plane for a fiducial model with $r=0.01$}
+\label{fig:nsrp01}
+\end{figure}
+ 
 
 %Equation (\ref{eq:Lyth}) can be used to determine a useful theoretical threshold for $r$ that would allow the most robust conclusion about the field range of the inflaton. Give the possibility that $\Lambda_{\rm UV}$ may be slightly below $M_p$, and the desire for true parametric control of corrections rather than accidental cancellations, we will define small-field inflation as requiring $\frac{\Delta\phi}{M_p}\ll1$ (in contrast to perhaps half the literature where the line is drawn at $\frac{\Delta\phi}{M_p}=1$). The total number of e-folds needed to put the largest scales in causal contact depends on the reheating temperature, but since the integrand in Eq.(\ref{eq:Lyth}) is always positive, we can use constraints on the $\approx 7$ e-folds constrained by current CMB observations to provide a conservative bound. The evolution of $r$ during inflation is model dependent, but as a simple starting point consider canonical single-field slow-roll inflation where the consistency relation between $r$ and $n_T$ to write $d\ln r/d\mathcal{N}=-(n_s-1)-\frac{r}{8}$. The variation of this quantity is second-order in slow-roll parameters, so as a first pass we may take it to be constant and use the {\it Planck} satellite constraints assuming constant $n_s$ (and allowing a $3\sigma$ interval) to find
 %\begin{equation}
@@ -379,7 +388,14 @@ In deriving the primordial power spectra and Eq.(\ref{eq:Lyth}), we have assumed
 
 \section{Implications of an improved upper limit on $r$} 
 \label{sec:upperLimits}
-As detailed in previous sections, a detection of primordial gravitational waves would have profound implications; however, even excluding the presence of gravitational waves at a level observable by CMB-S4 would have important consequences for the theory of inflation. Current constraints already strongly disfavor models that were plausible candidates such as chaotic inflation with a quadratic potential~\cite{Ade:2015tva}. Upper limits from CMB-S4 would rule out entire classes of inflationary models. 
+As detailed in previous sections, a detection of primordial gravitational waves would have profound implications; however, even excluding the presence of gravitational waves at a level observable by CMB-S4 would have important consequences for the theory of inflation. Current constraints already strongly disfavor models that were plausible candidates such as chaotic inflation with a quadratic potential~\cite{Ade:2015tva}. Upper limits from CMB-S4 would rule out entire classes of inflationary models. This is shown in figure~\ref{fig:nsr0}. 
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=6in]{Inflation/nsrlabeledr0v2s}
+\caption{Forecast of CMB-S4 constraints in the $n_s-r$ plane for a fiducial model with $r=0$}
+\label{fig:nsr0}
+\end{figure}
 
 We first present a version of an argument developed in~\cite{Mukhanov:2013tua,Roest:2013fha,Creminelli:2014nqa} that does not rely on microscopic details of inflationary models. In the limit $\epsilon\ll1$, equations~(\ref{eq:inf_Pzeta}) and~(\ref{eq:specind}) lead to a differential equation
 \begin{equation}\label{eq:epsdiffeq}
