@@ -268,41 +268,66 @@ Neither of these assumptions is clearly supported by current data, however.
 Finally, we note that for the deepest option, targeting just 1\% of the sky, achieving the forecasted sensitivity to $r$ will require an 80\% reduction in the map {\it r.m.s.} level of the CMB lensing $B$ modes. 
 While this is achievable from a sensitivity standpoint (see Sec.~\ref{delens}), systematics and foregrounds will need to be carefully considered.
 
-\begin{figure}[ht]
+\begin{figure}[h]
 \centering
-\includegraphics[width=0.49\textwidth]{Inflation/clBB_r01.pdf}
-\caption{Text goes here}
+\includegraphics[width=0.6\textwidth]{Inflation/clBB_r01.pdf}
+\caption{
+Bin-by-bin forecasted tensor constraints for r=0.01. 
+Vertical error bars denote 68\% credible intervals, with the point marking 
+the model expectation value. If the 68\% interval includes zero, we indicate the 
+95\% upper limit with a downward triangle. Horizontal error bars denote bin widths 
+calculated from bandpower window functions. Primordial B-mode spectra are shown for two representative values of the tensor-to-scalar ratio: r=0.001 and r=0.01.
+The solid green line shows 
+lensed-$\Lambda$CDM, with the dashed line showing $1/10$ of the lensing power. The
+solid blue and red lines show the dust and synchrotron (current upper limit) model 
+assumed in the forecasting, at the foreground minimum of $95GHz$. The levels of dust
+and synchrotron are equal to the ones reported in BICEP/Keck VI.}
 \label{fig_clBBr01}
 \end{figure}
 
-\begin{figure}[ht]
+\begin{figure}[!h]
 \centering
 \includegraphics[width=0.49\textwidth]{Inflation/sigr_fsky_det1e6_r0.pdf}
 \includegraphics[width=0.49\textwidth]{Inflation/sigr_fsky_det1e6_r01.pdf}
-\caption{Forecasted uncertainty on $r$, as a function of $f_{sky}$, for an
+\caption{(Top panels)
+Forecasted uncertainty on $r$, as a function of $f_{sky}$, for an
 effort of $10^6$ detector-years (150 equivalent), assuming $r=0$ (left panel) 
 and $r=0.01$ (right panel). The forecasting procedure is specifically targeted 
 towards optimizing tensor-to-scalar parameter constraints in the presence of 
 Galactic foregrounds and gravitational lensing of the CMB. The optimization 
-assumes an amount of achieved de-lensing that varies with $f_{sky}$; temporary 
-note: for a detailed description of the forecasting, please see: 
-\href{http://users.physics.harvard.edu/~buza/20150331_fisher/}{this posting.}}
+assumes an amount of achieved delensing that varies with $f_{sky}$, as well as a
+level of dust decorrelation. In addition to the "delensed" case, two more cases are
+ included to quantify the importance of delensing ("no delensing" case), and 
+foregrounds + residual lensing ("raw sensitivity" case), towards achieving the 
+desired r constrains.
+(Bottom panels)
+For the "delensed" case, an rms lensing residual and the fraction of the total 
+deep survey effort devoted towards delensing are included as a function of 
+$f_{sky}$. For a detailed description of the forecasting framework and the 
+assumptions made, see Section 8.??}
 \label{fig_rforecast1}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[!h]
 \centering
 \includegraphics[width=0.49\textwidth]{Inflation/sigr_effort_r0.pdf}
 \includegraphics[width=0.49\textwidth]{Inflation/sigr_effort_r01.pdf}
-\caption{Forecasted uncertainty on $r$, as a function of effort, for a fixed
-$f_{sky}=0.01$, assuming $r=0$ (left panel) and $r=0.01$ (right panel).
+\caption{(Top Panels)
+Forecasted uncertainty on $r$, as a function of the deep survey effort, for a fixed
+$f_{sky}=0.03$, assuming $r=0$ (left panel) and $r=0.01$ (right panel).
 The forecasting procedure is specifically targeted
 towards optimizing tensor-to-scalar parameter constraints in the presence of 
 Galactic foregrounds and gravitational lensing of the CMB. The optimization 
-assumes an amount of achieved de-lensing that varies with $f_{sky}$; temporary 
-note: for a detailed description of the forecasting, please see: 
-\href{http://users.physics.harvard.edu/~buza/20150331_fisher/}{this posting.}  
-}
+assumes an amount of achieved de-lensing that varies with $f_{sky}$, as well as a
+level of dust decorrelation. In addition to the "delensed" case, two more cases are
+ included to quantify the importance of delensing ("no delensing" case), and
+foregrounds + residual lensing ("raw sensitivity" case), towards achieving the
+desired r constrains.
+(Bottom panels)
+For the "delensed" case, an rms lensing residual and the fraction of the total
+deep survey effort devoted towards delensing are included as a function of
+effort. For a detailed description of the forecasting framework and the
+assumptions made, see Section 8.??}  
 \label{fig_rforecast2}
 \end{figure}
 
