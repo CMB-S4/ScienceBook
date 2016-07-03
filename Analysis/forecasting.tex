@@ -2,9 +2,15 @@
 
 \section{Forecasting}\label{sec:Forecasting}
 
-We emphasize the importance of accurate forecasting for CMB-S4.
-Forecasting efforts for Stage 1 and 2 experiments were hampered by lack of experience with previous deep polarization maps and little knowledge of high latitude Galactic foregrounds.
-Forecasting for CMB-S4 will be built on the solid foundation of map-derived evaluations of instrumental noise performance and astrophysical foreground levels from the Stage 2 experiments and the Planck satellite.
+Given the computational constraints on time-domain simulations and analyses, it is currently not possible to use the production pipeline to explore the full instrument and observation parameter space. Howevr, such exploration is critical in the mission design and development phase, and so we employ a forecasting pipeline (Figure \ref{fig_fcast}) to bypass this bottleneck.
+
+\begin{figure}[htbp]
+\includegraphics[width=1.0\textwidth]{Analysis/forecast}\\
+\caption{The forecasting pipeline, including pixel- and spectral-domain simulations and analyses}
+\label{fig_fcast}
+\end{figure}
+
+Forecasting efforts for Stage 1 and 2 experiments were hampered by lack of experience with previous deep polarization maps and little knowledge of high latitude Galactic foregrounds; forecasting for \cmbexp\ will therefore be built on the solid foundation of map-derived evaluations of instrumental noise performance and astrophysical foreground levels from the Stage 2 experiments and the Planck satellite.
 
 The forecasting approach will combine Fisher matrix-derived estimates of power spectrum errors with detailed map-level simulations.
 The spectral-domain projections are computationally easy, making them useful to explore the large parameter space of instrument and survey configurations.
@@ -12,12 +18,12 @@ Map-domain simulations are used to ground the spectral-domain projections in rea
 To gain the benefit of this complementarity, it is important that we maintain compatibility between these two forecasting approaches and establish agreement between them for simple questions before proceeding to more difficult tests.
 
 A key input to the forecasting process are full-season noise maps from existing Stage 2 experiments, which encode actual noise performance and have been verified by null tests on real datasets.
-Performance of CMB-S4 can be estimated by rescaling these noise maps, which already contain reality factors such as detector yield, weather, observing efficiency, and filtering of sky modes.
+Performance of \cmbexp\ can be estimated by rescaling these noise maps, which already contain reality factors such as detector yield, weather, observing efficiency, and filtering of sky modes.
 Systematic errors should be included in the projections, with unknown systematics allowed at a level that scales with the map noise used for jackknife null tests.
-Forecasting should also include our best knowledge of the astrophysical foregrounds and account for the impact of component separation on CMB-S4 science goals.
+Forecasting should also include our best knowledge of the astrophysical foregrounds and account for the impact of component separation on \cmbexp\ science goals.
 The forecasting inputs will improve as we acquire data from Stage 3 experiments and possible complementary balloon-borne experiments, which will produce deeper noise maps and better assessments of foregrounds, as well as demonstrations of new techniques and technologies in development for Stage 4.
 
-Here we describe the main approaches used by our community for forecasting the expected performance of CMB-S4. The central considerations for assessing the expected performance for large-scale B-modes are Galactic foregrounds, ability to delens the data, and a realistic assessment of instrument noise at large scales. 
+Here we describe the main approaches used by our community for forecasting the expected performance of \cmbexp\. The central considerations for assessing the expected performance for large-scale B-modes are Galactic foregrounds, ability to delens the data, and a realistic assessment of instrument noise at large scales. 
 For the smaller-scale polarization two-point functions (TE, EE) and the lensing four-point function ($\kappa \kappa$), extragalactic foregrounds and instrumental noise are the key considerations.
 To forecast the return of the thermal Sunyaev-Zel'dovich effects, an estimate of the expected cluster counts as a function of mass and redshift is the core statistic, combined with an estimate of how well the masses can be calibrated using overlaps with weak lensing surveys. For the kinetic Sunyaev-Zeldovich effect, extragalactic foregrounds and overlap with spectroscopic surveys must all be considered. 
 
@@ -27,7 +33,7 @@ To forecast the return of the thermal Sunyaev-Zel'dovich effects, an estimate of
 \label{sec_specforecast}
 
 Power spectra are the primary tool used for CMB analysis.
-Forecasting the power spectrum uncertainty and resulting parameter constraints for CMB-S4 is an efficient and powerful tool to explore trade-offs in experiment design.
+Forecasting the power spectrum uncertainty and resulting parameter constraints for \cmbexp\ is an efficient and powerful tool to explore trade-offs in experiment design.
 
 The bandpower covariance matrix describes the raw sensitivity of all auto and cross-spectra obtained between maps of T, E, and/or B modes at multiple observing frequencies, as well as the signal and noise correlations that exist between these spectra.
 This covariance matrix includes contributions from the sample variance of signal fields (CMB and foreground) and instrumental noise, including signal$\times$noise terms.
@@ -38,12 +44,12 @@ Only these scaled noise levels will include all the small ``reality factors'' th
 We will explicitly account for the impact of systematic errors by including them in the bandpower covariance matrix.
 For constraining tensor-to-scalar ratio, we are particularly concerned with effects that add B-mode power to maps.
 Even if the bandpowers are debiased using accurate simulations of such a systematic, it will still leave behind a noise floor due to its sample variance.
-Unknown and unforseen sources of spurious signal in CMB-S4 will ultimately be constrained by jackknife null tests, which analyze a map constructed from the difference of two data subsets.
+Unknown and unforseen sources of spurious signal in \cmbexp\ will ultimately be constrained by jackknife null tests, which analyze a map constructed from the difference of two data subsets.
 The statistical power of the null test is set by the noise level of the maps, since any signal contributions should difference away.
 We can acknowledge this limitation by including in our projections an unknown systematic that adds B modes at the level of the null test uncertainty.
 Errors that are multiplicative in the signal, such as an absolute calibration error in the map, are best handled by adding nuisance parameters to the signal model.
 
-Once we have a projection for the bandpower covariance matrix of CMB-S4, we can derive constraints on a parametrized model of cosmological and foreground signals via the Fisher information matrix.
+Once we have a projection for the bandpower covariance matrix of \cmbexp\, we can derive constraints on a parametrized model of cosmological and foreground signals via the Fisher information matrix.
 While we are most interested in parameter $r$, it is necessary to also consider the amplitude, spectrum, and spatial distribution of the dust and synchrotron foregrounds (see \cite{Ade:2015tva} for an example).
 The Fisher matrix formalism allows us to calculate the marginalized error on each parameter, with priors if desired, or to explore the degeneracies between parameters.
 
@@ -56,7 +62,7 @@ For this reason, it is important to have the ability to spot check the spectrum-
 
 Foregrounds are intrinsically non-Gaussian, so it is beneficial to consider approaches directly in map space, to check the robustness of spectrum-based approaches, in particular in the case of pessimistic foregrounds where the spectral indices or dust emissivities have non-trivial spatial variation. Here one of the approaches our community uses is a Bayesian model fitting method, where the foregrounds are described parametrically using a physical model for each component.
 
-Using this method, maps of the CMB plus Galactic foreground sky and expected noise are simulated at each of the CMB-S4 frequencies and integrated across the expected bandpasses, using Galactic models as described for example in Section \ref{sec:skymodel}. Simulations at ancillary frequencies that might be provided by other experiments, for example the Planck data, can also be included in the same way. A parameterized model is then fit to the simulated maps, for example fitting the CMB, thermal dust, and synchrotron in small pixels, and typically the synchrotron spectral index and dust emissivity and temperature in larger pixels of order degree-scale or larger. The BB power spectrum of the foreground-marginalized CMB map is then estimated using e.g., the MASTER \cite{Hivon:2001jp} algorithm or a pixel-based likelihood, and converted into an estimate of $r$ and its uncertainty. Our community has at least two such codes that can perform this procedure (Commander and BFoRe).
+Using this method, maps of the CMB plus Galactic foreground sky and expected noise are simulated at each of the \cmbexp\ frequencies and integrated across the expected bandpasses, using Galactic models as described for example in Section \ref{sec:skymodel}. Simulations at ancillary frequencies that might be provided by other experiments, for example the Planck data, can also be included in the same way. A parameterized model is then fit to the simulated maps, for example fitting the CMB, thermal dust, and synchrotron in small pixels, and typically the synchrotron spectral index and dust emissivity and temperature in larger pixels of order degree-scale or larger. The BB power spectrum of the foreground-marginalized CMB map is then estimated using e.g., the MASTER \cite{Hivon:2001jp} algorithm or a pixel-based likelihood, and converted into an estimate of $r$ and its uncertainty. Our community has at least two such codes that can perform this procedure (Commander and BFoRe).
 
 This method allows for an assessment of the expected bias on $r$ if the model does not match the simulation, and shows how much the expected uncertainty on $r$ would increase if more complicated foreground models are explored e.g. \cite{ArmitageCaplan:2011sn,Remazeilles:2015hpa}. It is more computationally expensive than spectral-domain forecasts though, so we limit this approach to a smaller subset of explorations. 
 
@@ -115,13 +121,13 @@ For polarization our nominal estimate is white noise, assuming that the tiny int
 
 In these `non-r' studies, we do not model the removal of Galactic foregrounds, isntead assuming that all of the survey weight is focused at 150~GHz. In practice the survey would map the sky at a set of frequencies, and a component separation method used to estimate the CMB. Including these multiple frequencies will be the focus of future work; since Galactic foregrounds have a smaller effect on lensing and the CMB damping tail, we expect them to impact forecast constraints much less than for gravitational wave limits.
 
-To address the issue of extragalactic foregrounds, we set as the default a maximum multipole for the recoverable information of $\ell^T_{\rm max} = 3000$ and $\ell^P_{\rm max} = 5000$ for CMB-S4, as foregrounds are expected to be limiting at smaller scales. We also set a minimum multipole due to the challenge of recovering large scales from the ground, and consider in general $\ell=30$. 
+To address the issue of extragalactic foregrounds, we set as the default a maximum multipole for the recoverable information of $\ell^T_{\rm max} = 3000$ and $\ell^P_{\rm max} = 5000$ for \cmbexp\, as foregrounds are expected to be limiting at smaller scales. We also set a minimum multipole due to the challenge of recovering large scales from the ground, and consider in general $\ell=30$. 
 
 \subsubsection{Non-S4 data specifications}
 
 We include Planck data at the scales $\ell<\ell_{\rm min}$, nominally with $\ell_{min}=30$, and we also add Planck data at all scales over the part of the sky not measured by S4 from Chile or the South Pole, approximated as covering an additional $f_{sky}=0.2$.
 
-For the noise levels of Planck, we assume that a data release including reliable polarization data will have happened before CMB-S4 data is taken, and forecast results that include TE and EE data and also large-scale temperature and polarization from HFI. This follows approaches in e.g. \cite{Allison:2015qca}. For the optical depth to reionization, we assume that Planck has reached currently published results, so impose a prior of $\tau=0.06\pm0.01$.
+For the noise levels of Planck, we assume that a data release including reliable polarization data will have happened before \cmbexp\ data is taken, and forecast results that include TE and EE data and also large-scale temperature and polarization from HFI. This follows approaches in e.g. \cite{Allison:2015qca}. For the optical depth to reionization, we assume that Planck has reached currently published results, so impose a prior of $\tau=0.06\pm0.01$.
 
 In some cases we consider the addition of a cosmic-variance limited large-scale polarization measurement, as we might expect to get from a PIXIE or LiteBIRD satellite or potentially a high-altitude balloon.
 

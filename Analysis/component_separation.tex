@@ -4,26 +4,15 @@
 \label{sec:compsep}
 
 %\textbf{ Authors: Mark Ashdown, Jonathan Aumont, Carlo Baccicalupi, Josquin Errard, Maude Le Jeune}
-%
-%Key challenges:
-%\begin{itemize}
-%\item validation - are we using the right algorithms for the (as yet unknown) real foregrounds
-%\item verification - are these algorithms right given our (as yet flawed) simulations
-%\end{itemize}
 
-This section discusses the algorithms and methods for disentangling different sources of sky emission in multi-frequency maps. 
-We first present the motivations and the general ideas of existing approaches. 
-We then give some specifics of parametric and blind methods. 
-Finally, we summarize several questions which might be answered by follow-up studies.
+This section discusses the algorithms and methods for disentangling different sources of sky emission in multi-frequency maps, whether these come exclusively from \cmbexp\ or include well-characterized external maps. Under this assumption, we are able to go beyond simple foreground cleaning to full component separation, which provides both improtant consistency checks on our results and critical inputs to sky modeling (see below). We first present the motivations and the general ideas of existing approaches. We then give some specifics of parametric and blind methods. Finally, we summarize several questions which might be answered by follow-up studies.
 
-\begin{figure*}[htbp]
-\centering
-\includegraphics[width=0.5\textwidth]{Analysis/cs}
-\caption{The component separation subset of the CMB data analysis pipeline}
-\label{fig:general_comp_sep_scheme}
-\end{figure*}
-
-\subsection{Introduction}
+Recent measurements by BICEP2/Keck/Planck \cite{Ade:2015tva} confirm that on degree scales, where 
+\cmbexp\ is expected to search for 
+the imprint of $B$ modes from primordial GWs, the contamination from polarized foreground emission is  comparable to or higher than the cosmological signal at 150~GHz even in one of the cleaner patches of the sky.
+Given that 150~GHz is expected to be close to the minimum of foreground contamination vs.~CMB signal, this 
+is likely to be the case at all frequencies and all but the smallest fractions of the sky.
+Given the power law behavior in $\ell$ found on larger scales by Planck and WMAP \cite{Adam:2015tpy,Page:2006hz}, foregrounds are expected to be even more relevant at larger angular scales. Foregrounds are expected to be subdominant  with respect to the $B$-mode lensing signal on the scale of a few arcminutes (see Figure~\ref{fig:power_spectrum_fgs}); nevertheless, dust polarization fractions around $10\%$ (comparable to observed levels) have been shown to have non-negligible impact on the 4-point function used for achieving lensing extraction \cite{Fantaye:2012ha}. Therefore, component separation is a necessary and important step in gaining insight into the amplitude of primordial GWs, as well as the neutrino masses and dark energy abundances through CMB lensing studies.
 
 \begin{figure*}[htbp]
 \centering
@@ -32,26 +21,6 @@ Finally, we summarize several questions which might be answered by follow-up stu
 foreground pattern in polarization and are not therefore optimized for high-resolution, small scale instruments, there is potential for discovery of small patches of sky (e.g., $f_{\mathrm sky} \leq 5\%$) with a signal differing than those indicated here. From~\cite{Errard:2015cxa}.}
 \label{fig:power_spectrum_fgs}
 \end{figure*}
-
-
-\subsubsection{Motivations}
-
-%Given that Stage-IV science goals are $r$ and neutrino mass, and as illustrated in Fig.~\ref{fig:power_spectrum_fgs}:
-%\begin{itemize}
-%	\item component separation is an obvious necessary step to go beyond current constraints on primordial B-modes. In particular, as astrophysical foregrounds usually have a red angular spectrum, residuals in the reconstructed CMB map are usually expected to be important on large scales.
-%	\item $C_\ell^{dd}$ has the best lever-arm for neutrino mass, and the impact of foregrounds residuals on the CMB 4-point functions has not been quantitatively addressed at this time. Yet, we note that Planck lensing 2015 is based on SMICA map, cf.~\cite{planck15-15}.\\
-%	However, the use of multiple-resolution maps could degrade the final resolution of the component separated maps compared to a simple quadratic combination of beams weighted by their corresponding sensitivity. This degradation might impact constraints on the lensing BB peak, and therefore penalize measurements of high-$\ell$ cosmological parameters such as $w$ or neutrino mass.
-%\end{itemize}
-
-Recent measurements by BICEP2/Keck/Planck \cite{Ade:2015tva} confirm that on degree scales, where 
-\cmbexp\ is expected to search for 
-the imprint of $B$ modes from primordial GWs, the contamination from polarized foreground emission is  comparable to or higher than the cosmological signal at 150~GHz even in one of the cleaner patches of the sky.
-Given that 150~GHz is expected to be close to the minimum of foreground contamination vs.~CMB signal, this 
-is likely to be the case at all frequencies and all but the smallest fractions of the sky.
-Given the power law behavior in $\ell$ found on larger scales by Planck and WMAP \cite{Adam:2015tpy,Page:2006hz}, foregrounds are expected to be even more relevant at larger angular scales. Foregrounds are expected to be subdominant  with respect to the $B$-mode lensing signal on the scale of a few arcminutes (see Figure~\ref{fig:power_spectrum_fgs}); nevertheless, dust polarization fractions around $10\%$ (comparable to observed levels) have been shown to have non-negligible impact on the 4-point function used for achieving lensing extraction \cite{Fantaye:2012ha}. Therefore, component separation is a necessary and important step in gaining insight into the amplitude of primordial GWs, as well as the neutrino masses and dark energy abundances through CMB lensing studies.%, powering the $B$ modes on the degree and few arcminute angular scales, respectively.
-
-%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Definition of component separation}
 
 Broadly defined, the process of component separation would generally
 \begin{itemize}
@@ -96,7 +65,7 @@ although the targeted CMB components in that analysis (total intensity and $E$-m
 not the same as in the \cmbexp\ case.
 
 %%%%%%%%%%%%%%%%%%%%%%
-\subsection{Description of methods}
+\subsection{Component Separation Methods}
 
 The CMB extraction may be achieved essentially through two basic concepts: the fitting of foreground unknowns along with CMB, or the minimization of the variance of a linear combination of the data, constrained to have the frequency scaling of a black body.
 The first class of algorithms, known as ``parametric'', makes the maximum use of prior knowledge of foreground emission. By contrast, the second class, known as ``blind'', makes the minimum set of assumptions. 
@@ -144,7 +113,7 @@ This complementarity, and the internal comparison of results through these pipel
 %\textcolor{red}{JE: $\rightarrow$ Parametric fitting vs. ILC, spatial domain versus non-spatial, that makes a basis of 4 algorithms. Although it was never quantified, the independence of those and very different hypotheses represent an opportunity for cross-checking and robustness.}
 
 %%%%%%%%%%%%%%%%%%%%%%
-\subsection{Questions to be addressed during follow-up studies}
+\subsection{Open Questions}
 \begin{itemize}
 	\item \textbf{E/B or Q/U basis of analysis} -- Component separation between CMB radiation and its foregrounds can be performed either dealing with Stokes parameters $Q$ and $U$ maps of the sky in real space or Fourier space, and either before or after the separation between the $E$ and $B$ modes. Several approaches have been followed by CMB experiments so far \cite{Gold:2010fm,Aghanim:2015xee, Ade:2015tva},
 %(see e.g. \cite{Gold:2010fm,Aghanim:2015xee} for real space and e.g \cite{Ade:2015tva} for Fourier space separations) 
@@ -170,7 +139,7 @@ Component separation using observations from different platforms will be made mo
 	As stressed already, the first attempt at component separation or foreground cleaning for  $B$ modes on multi-platform data was recently implemented in \cite{Ade:2015tva}, using data from BICEP2, Keck Array and Planck. A template fitting analysis was implemented with the primary objective of minimizing the variance in the CMB solution.%, by achieving a linear combination of the data, which turned out in a reduction of the power observed from the ground, which is interpreted as cleaning of the Galactic dust, and sets the current limit on $B$ modes from primordial GWs. 
 %The independent reduction of the data 
 The simultaneous analysis of combined data sets 
-required an additional layer in the analysis, namely the simulated scans of the Planck data through the filtering by the ground observatories, along with validation through simulations of the whole procedure. A simpler approach for CMB-S4 would be to have a single pipeline reducing and combining different datasets. With a common filtering implemented from scratch in a multi-site experiment, the %latter a posteriori 
+required an additional layer in the analysis, namely the simulated scans of the Planck data through the filtering by the ground observatories, along with validation through simulations of the whole procedure. A simpler approach for \cmbexp\ would be to have a single pipeline reducing and combining different datasets. With a common filtering implemented from scratch in a multi-site experiment, the %latter a posteriori 
 combination would be built-in, thus avoiding the extra layer and increasing confidence and robustness of results.
 	\item \textbf{Various resolutions} -- Under the approximation that the mixing matrix does not significantly vary as a function of resolution, the impact of different beam sizes can be propagated to the noise level of the final CMB map %through the CMB x CMB term of $\left(\mathbf{A}^T\mathbf{N}^{-1}\mathbf{A}\right)^{-1}$ as given by Eq.~\ref{eq:sp_solution} with $\mathbf{W} \equiv \left( \mathbf{A}^T\mathbf{N}^{-1}\mathbf{A} \right)^{-1}\mathbf{A}^T\mathbf{N}^{-1}$. 
 by incorporating the beam for each frequency channel in the expression of the noise covariance matrix 

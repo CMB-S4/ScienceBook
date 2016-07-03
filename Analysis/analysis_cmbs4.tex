@@ -1,6 +1,6 @@
 %%%%%% CMB-S4 Simulations and Data Analysis Chapter  %%%%%%%%%%%%%%%%
  
-\chapter{Simulations and Data Analysis}
+\chapter{Data Analysis, Simulations \& Forecasting}
 %\renewcommand*\thesection{\arabic{section}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -12,53 +12,42 @@
 {\it \small (send any feedback on this chapter to \href{mailto:tcrawfor@kicp.uchicago.edu,jdborrill@lbl.gov}{tcrawfor@kicp.uchicago.edu and jdborrill@lbl.gov})}
 \end{center}
 
-
 \section{Introduction}
 
-Extracting science from a CMB dataset is a complex, iterative process requiring expertise in both physical and computational sciences. In this chapter we start with an overview of the data analysis pipeline before diving more deeply into its subsets - time-ordered data processing, component separation and the estimation of statistics and parameters. We then discuss the drivers for, and corresponding structure of, the simulation pipeline, and describe in detail its sky modeling and data simulation subsets. Finally we assemble the full simulation and data analysis pipeline, noting its inherently iterative structure, and discuss its critical uses in forecasting and validation and verification, before concluding with a discussion of some key implementation issues. Throughout our goal is to describe the current state of the art, note the particular challenges posed by CMB-S4, and describe how these challenges might be addressed.
+Extracting science from a CMB dataset is a complex, iterative process requiring expertise in both physical and computational sciences. In this chapter we start with an overview of the data analysis pipeline before diving more deeply into its subsets - time-ordered data processing, map-domain processing, and the estimation of statistics and parameters. We then discuss the drivers for the simulation pipeline, and describe in detail its sky modeling and data simulation subsets. From these pieces we then assemble the full production simulation and data analysis pipeline, including its various feedback loops, and consider the computational challenges posed by its implementation and execution. Finally we detail some approaches to mission forecasting, bypassing the most computationally challenging steps in the production pipeline in order to be able to explore the full instument and observation parameter space. Throughout our goal is to describe the current state of the art, note the particular challenges posed by \cmbexp\, and describe how these challenges might be addressed.
 
 \section{Data Analysis Overview}
 
-The reduction of a CMB data set typically proceeds in a sequence of steps:
-\begin{description}
-\item[ Pre-processing:] The raw time-ordered detector data are calibrated and gross time-domain systematics are either removed (typically by template subtraction, filtering or marginalization) or flagged. The goal here is to make the real data match a model that will underpin all subsequent analyses.
-\item[Map-making:] At each observing frequency, estimates of the intensity I and the Stokes Q- and U-polarizations of the sky signal are extracted from the cleaned time-ordered data based on their spatial stationarity, typically using some degree of knowledge of the instrument's noise properties.
-\item[Component separation:] If a sufficient number of frequency maps are available, the CMB can be separated from the various foreground sky components based on its unique spectral invariance (in CMB units).
-\item[Power spectrum estimation:] The six auto- and cross-angular power spectra of the CMB temperature T and E- and B-mode polarizations are estimated from the CMB and/or frequency maps, and corrected for E- to B-mode lensing.
-\item[Parameter estimation:] The best-fit parameters for any cosmological model are derived by comparing the theoretical TT, TE, EE and BB CMB power spectra predicted by the model with the data.
-\end{description}
-
-This reduction essentially consists of a series of changes of basis for the data, from time samples to map pixels to spectral multipoles to cosmological parameters, with each basis-change reducing the data volume, increasing the signal-to-noise, and exposing a different class of systematic effects for mitigation.
-
-Note however that the data can only remain a sufficient statistic at each step in the reduction if we also propagate its full covariance matrix. Since this is an ${\cal N}_b \times {\cal N}_b$ matrix in the dimension of the basis, its construction, manipulation and reduction pose the greatest computational challenge to this analysis. In particular the full pixel-domain data covariance matrix is generally dense and unstructured, requiring O(${\cal N}_p^3$) operations to build and O(${\cal N}_p^2$) bytes to store. All the major drivers of CMB science - polarization sensitivity, higher resolution, larger sky coverage - push us towards larger pixel counts, with an instrument mapping a fraction of the sky \fsky\ with a beam of $b$ arcminutes covering O($10^9 \, \fsky/b^2$) pixels per IQU-component. For the last decade or more the computational intractability of the resulting pixel-domain matrices has forced us to replace explicit covariance propagation with Monte Carlo methods in all but a limited set of small sky fraction/low resolution cases.
+The central challenge of CMB data analysis is to reduce both the systematic and statistical uncertainties in the data sufficient to make well-constrained estaimates of the parameters of cosmology and fundamental physics. Typically this is achieved through in an inerative process, first mitigating the systematic effects exposed in the particular data domain, and then performing a data-compressing domain transformation in order to reduce the statistical uncertainty by increasing the signal-to-noise.
 
 \begin{figure}[htbp]
-\centering
-\includegraphics[width=0.5\textwidth]{Analysis/da}
-\caption{The CMB data analysis pipeline}
+\includegraphics[width=0.7\textwidth]{Analysis/da}\\
+\caption{The schematic CMB data analysis pipeline, showing the reduction from time-samples (red) to map-pixels (blue) to spectral-multipoles (green), including processes to reduce both systematic (horizontal) and statistical (vertical) uncertainties.}
 \label{fig_da}
 \end{figure}
 
-Beyond this basic data reduction, the full analysis pipeline (Figure \ref{fig_da})\footnote{In all pipeline figures ovals represent data objects in the various domain (red for time, blue for pixel, green for multipole and yellow for parameter) and rectangles represent data processing steps.} also includes mission characterization and science exploitation branches. Time domain data are extensively used to build a model of the mission, comprising the instrument and the observation. For the instrument this modeling can include such steps as determining beam profiles and estimating noise properties (including cross-correlations); for the observation, it includes reconstructing the detector pointing and polarization orientation from telescope sensor data, and incorporating atmosphere records in the data-flagging. The resulting mission model then feeds back into all of the ensuing data reduction and interpretation. The primary science exploitation derives cosmology and fundamental physics results from the various correlation functions of the CMB maps, from the power spectra's energy scale of inflation and neutrino mass to the higher-order statistics'  measures of non-Gaussianity and the lensing potential. In addition the frequency maps represent important astronomical and astrophysical observations, particularly when the frequency sampling is sufficient to isolate individual foreground components along with the CMB. 
+As illustrated in Figure \ref{fig_da}, this analysis proceeds in a series of steps:
+\begin{description}
+\item[ Pre-processing:] The raw time-ordered detector data are calibrated and gross time-domain systematics are either removed (typically by template subtraction, filtering or marginalization) or flagged. The goal here is to make the real data match a model that will underpin all subsequent analyses.
+\item[Map-making:] At each observing frequency, estimates of the intensity I and the Stokes Q- and U-polarizations of the sky signal are extracted from the cleaned time-ordered data based on their spatial stationarity, typically using some degree of knowledge of the instrument's noise properties.
+\item[Foreground Cleaning:] If a sufficient number of frequency maps are available, the CMB can be separated from foreground emission based on its unique frequency-independence; if insufficient frequency maps are available then we must use a combination of masking and marginalizing over foreground templates from other sources.
+\item[Power spectrum estimation \& higher-order statistics:] The observed 2-point correlation functions (power spectra) of the CMB temperature T and E- and B-mode polarizations are estimated from the CMB and/or frequency maps; various higher-order (typically 3- and 4-point) correlation functions may also estimated from the CMB maps.
+\item[Post-processing]: The primordial power spectra are derived from the observed spectra, with the details of this step depending on both the input maps and the algorithms used in the spectral estimation; examples of this step include debiasing of pseudo-spectra, delensing, and spectral-domain point-source removal.
+\item[Parameter estimation:] The best-fit parameters for any cosmological model are derived by comparing the theoretical correlation function(s) predicted by the model with the data.
+\end{description}
 
-\newpage
+Note however that the data can only remain a sufficient statistic at each step in the reduction if we also propagate its full covariance matrix. This is an ${\cal N}_b \times {\cal N}_b$ matrix in the dimension of the basis, so its construction, manipulation and reduction typically poses the greatest computational challenge to this analysis. In particular the full pixel-domain data covariance matrix is generally dense and unstructured, requiring O(${\cal N}_p^3$) operations to build and O(${\cal N}_p^2$) bytes to store. A mission that covers a fraction of the sky \fsky\ with a beam of $b$ arcminutes generates O($10^9 \, \fsky/b^2$) pixels per CMB component per observing frequency, so that increases in sky fraction, resolution, polarization sensitivity or frequency coverage (as have been the science drivers to date) necessarily increases ${\cal N}_p$. For the last decade or more the computational intractability of the resulting pixel-domain matrices has forced us to replace explicit covariance propagation with Monte Carlo methods in all but a limited set of small sky fraction/low resolution cases -- although it should be noted that, as outlined previously, this case may be of great interest for determining $r$.
 
 \input Analysis/tod_processing.tex
 
-\newpage
-
 \input Analysis/component_separation.tex
 
-\newpage
-
 \input Analysis/statistics_parameters.tex
-
-\newpage
 
 \section{Simulation Overview}
 Simulations of a CMB mission's data play a number of critical roles; specifically they are required for
 \begin{itemize}
-\item Forecasting: informing the design and development of a mission to ensure that it is capable of meeting its science goals.
+\item Mission design and development: ensuring that the mission is capable of meeting its science goals.
 \item Validation and verification: ensuring that all of our data analysis tools meet their requirements and specifications.
 \item Uncertainty quantification and debiasing: providing an alternative to the full data covariance matrix when this is computationally intractable.
 \end{itemize}
@@ -66,49 +55,20 @@ Simulations of a CMB mission's data play a number of critical roles; specificall
 As shown in Figure \ref{fig_sim}, given a mission model (both instrument and observation) and a sky model (both CMB and extra-galactic and galactic foregrounds) we can generate a simulation of the mission data in any of its domains. However, there is an inevitable trade-off between how representative the simulation is of real data and the complexity of the input models and computational cost of generating the simulation. The choice of the simulation data domain will then be determined by the balance between the realism requirements and the complexity/cost constraints for the particular task at hand.
 
 \begin{figure}[htbp]
-\centering
-\includegraphics[width=0.5\textwidth]{Analysis/sim}
-\caption{The CMB simulation pipeline}
+\includegraphics[width=0.6\textwidth]{Analysis/sim}\\
+\caption{The CMB simulation pipeline, including both mission-independent sky modeling and mission-specific data simulation in the time (red), pixel (blue) and spectral (green) domains.}
 \label{fig_sim}
 \end{figure}
 
 The generation of the input mission and sky models are themselves far from trivial tasks. The mission model is typically derived from pre-deployment measurements of the instrument properties refined by characterization from the data themselves, together with ancilliary telescope and environmental data characterizing the observation; the sky model requires its own dedicated simulation capability which - since it is independent of the details of any single mission - can be a community-wide endeavor.
 
-\newpage
-
 \input Analysis/sky_modeling.tex
-
-\newpage
 
 \input Analysis/data_simulation.tex
 
-\newpage
-
-\section{The Simulation and Data Analysis Pipeline}
-
-The overall simulation and data analysis pipeline (Figure \ref{fig_simda}) can now be seen as both a top-down data reduction process and a wrap-around refinement of our mission and sky modeling. Typically the two phases are interleaved, with each new data reduction improving our mission and sky models, which are in turn fed back into an improved data reduction.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.75\textwidth]{Analysis/simda}
-\caption{The full CMB simulation and data analysis pipeline}
-\label{fig_simda}
-\end{figure}
-
-For CMB-S4 the most critical uses of this pipeline (or subsets thereof) are currently in forecasting and validation and verification. Further, the very discussion of such a pipeline provides a natural context in which to consider important implementation issues.
-
-\newpage
+\input Analysis/production.tex
 
 \input Analysis/forecasting.tex
-
-%\newpage
-%
-%\input Analysis/validation_verification.tex
-
-\newpage
-
-\input Analysis/implementation.tex
-
 
 %\bibliography{cmbs4}
 

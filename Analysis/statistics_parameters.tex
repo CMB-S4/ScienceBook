@@ -1,46 +1,17 @@
-\section{Post-map Analysis: Correlations and Parameter Estimation}
+\section{Statistics \& Parameters}
 
 In this section, we discuss the process of going from sky maps at different frequencies---or, in light
 of the previous section, foreground-cleaned CMB maps and an estimate of foreground residuals---to
 post-map products such as angular power spectra, estimates of lensing potential $\phi$, and finally
 cosmological parameters, as well as covariance estimates for all of these quantities. We briefly describe
 the current practice for this process, then we address specific challenges anticipated in the \cmbexp\ era.
-%
-%
-%? Current practice for going from frequency maps, or cleaned CMB maps, plus noise description, to lensing power spectra and (lensed) TT, TE, EE, BB power spectra, and parameters
-%
-%	? CMB power spectra
-%		How is map noise treated?
-%		How is foreground-related uncertainty treated?
-%			? galactic  (include BKP description of BKP work)
-%			? extragalactic
-%
-%	? Lensing power spectra
-%
-%? Challenges to reducing CMB-S4 data to cosmological parameter estimates
-%
-%	? Foreground-cleaning will be very important for r
-%	? Delensing will be important for studying the tensor signal, or setting tightest possible upper limit
-%	? Quadratic estimator will be highly suboptimal at S4 noise levels
-%	? Lensed power spectra and reconstructed lensing power will have lensing potential sample variance as source of correlated uncertainty
-%
-%? Paths toward meeting these challenges
-%
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.5\textwidth]{Analysis/sp}
-\caption{The statistics and parameters subset of the CMB data analysis pipeline}
-\label{fig_sp}
-\end{figure}
-
 
 \subsection{Current practice}
 \label{se:current}
 Early measurements of CMB temperature anisotropy, with comparatively few map pixels or angular modes
 measured, often used maximum-likelihood methods to produce maps of the sky (e.g., \cite{Wright:1996dk}) and
 either a direct evaluation of the full likelihood or a quadratic approximation to that likelihood (e.g., \cite{Bond:1998zw}) to go from 
-maps to angular power spectra (the first step in Figure \ref{fig_sp}). With the advent of the WMAP and Planck space 
+maps to angular power spectra. With the advent of the WMAP and Planck space 
 missions, which would map the entire sky at sub-degree resolution, it became apparent that computing
 resources could not compete with the $\mathcal{O}({\cal N}^3)$ scaling of the full-likelihood approach 
 (e.g., \cite{Borrill:1998tn}). The solution for power spectrum analysis
@@ -163,12 +134,12 @@ we can confidently assess the level to which foregrounds will limit the final pa
 from \cmbexp\ and how flexible we will need to make the underlying foreground models that 
 inform component separation and parameter extraction. 
 
-\subsubsection{CMB lensing covariances for CMB S4}
+\subsubsection{CMB lensing covariances for \cmbexp }
 \label{se:covs}
 
 The measured lensing power spectrum is given by a four-point function of the lensed CMB.  This is not statistically independent from the lensed CMB two-point function, because both depend on the same observed, lensed CMB maps.  As a consequence, measured lensing power spectra and lensed CMB power spectra may be correlated.  This correlation should be taken into account when combining these measurements to avoid spurious double counting of information.  For the specific case of Planck this correlation is negligible  \cite{Schmittfull:2013uea}.  However, the level of correlation depends on experiment specifications and the multipole range where power spectra have high signal-to-noise.  The correlation should thus be included in analyses that combine two- and four-point measurements unless it is known to be negligible for a specific experiment. 
 
-For CMB-S4, the best lensing measurements are expected to come from the auto-power spectrum of $\EB$ reconstruction.  Its covariance with the lensed $\EE$ and $\BB$ power spectra depends on six-point functions of the lensed CMB, e.g.~$\langle \EB\EB\EE \rangle$. Although many terms contribute, the dominant effect is expected from only a few contributions \cite{Schmittfull:2013uea}:  
+For \cmbexp\, the best lensing measurements are expected to come from the auto-power spectrum of $\EB$ reconstruction.  Its covariance with the lensed $\EE$ and $\BB$ power spectra depends on six-point functions of the lensed CMB, e.g.~$\langle \EB\EB\EE \rangle$. Although many terms contribute, the dominant effect is expected from only a few contributions \cite{Schmittfull:2013uea}:  
 
 \begin{itemize}
 \item First, there are signal contributions to the covariance of the form
