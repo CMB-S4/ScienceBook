@@ -9,7 +9,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{center}
-{\it \small (send any feedback on this chapter to \href{mailto:tcrawfor@kicp.uchicago.edu,jdborrill@lbl.gov}{tcrawfor@kicp.uchicago.edu and jdborrill@lbl.gov})}
+{\it \small (send any feedback on this chapter to 
+\href{mailto:s4_forecasting@cosmo.uchicago.edu}{s4\_forecasting@cosmo.uchicago.edu}
+or
+\href{mailto:s4_skymodel@cosmo.uchicago.edu}{s4\_skymodel@cosmo.uchicago.edu})}
 \end{center}
 
 \section{Introduction}
@@ -18,7 +21,7 @@ Extracting science from a CMB dataset is a complex, iterative process requiring 
 
 \section{Data Analysis Overview}
 
-The central challenge of CMB data analysis is to reduce both the systematic and statistical uncertainties in the data sufficient to make well-constrained estaimates of the parameters of cosmology and fundamental physics. Typically this is achieved through in an inerative process, first mitigating the systematic effects exposed in the particular data domain, and then performing a data-compressing domain transformation in order to reduce the statistical uncertainty by increasing the signal-to-noise.
+The central challenge of CMB data analysis is to reduce both the systematic and statistical uncertainties in the data to a sufficient level to enable well-constrained estimates of the parameters of cosmology and fundamental physics. Typically this is achieved through an iterative process, first mitigating the systematic effects exposed in the particular data domain, and then performing a data-compressing domain transformation in order to reduce the statistical uncertainty by increasing the signal-to-noise.
 
 \begin{figure}[htbp]
 \includegraphics[width=0.7\textwidth]{Analysis/da}\\
@@ -28,15 +31,15 @@ The central challenge of CMB data analysis is to reduce both the systematic and 
 
 As illustrated in Figure \ref{fig_da}, this analysis proceeds in a series of steps:
 \begin{description}
-\item[ Pre-processing:] The raw time-ordered detector data are calibrated and gross time-domain systematics are either removed (typically by template subtraction, filtering or marginalization) or flagged. The goal here is to make the real data match a model that will underpin all subsequent analyses.
+\item[ Pre-processing:] The raw time-ordered detector data are calibrated, and gross time-domain systematics are either removed (typically by template subtraction, filtering, or marginalization) or flagged. The goal here is to make the real data match a model that will underpin all subsequent analyses.
 \item[Map-making:] At each observing frequency, estimates of the intensity I and the Stokes Q- and U-polarizations of the sky signal are extracted from the cleaned time-ordered data based on their spatial stationarity, typically using some degree of knowledge of the instrument's noise properties.
-\item[Foreground Cleaning:] If a sufficient number of frequency maps are available, the CMB can be separated from foreground emission based on its unique frequency-independence; if insufficient frequency maps are available then we must use a combination of masking and marginalizing over foreground templates from other sources.
-\item[Power spectrum estimation \& higher-order statistics:] The observed 2-point correlation functions (power spectra) of the CMB temperature T and E- and B-mode polarizations are estimated from the CMB and/or frequency maps; various higher-order (typically 3- and 4-point) correlation functions may also estimated from the CMB maps.
+\item[Foreground Cleaning:] If a sufficient number of frequency maps are available, the CMB can be separated from foreground emission based on its unique spectral signature; if insufficient frequency maps are available then we must use a combination of masking and marginalizing over foreground templates from other sources.
+\item[Power spectrum estimation \& higher-order statistics:] The observed two-point correlation functions (power spectra) of the CMB temperature T and E- and B-mode polarizations are estimated from the CMB and/or frequency maps; various higher-order (typically three- and four-point) correlation functions may also estimated from the CMB maps.
 \item[Post-processing]: The primordial power spectra are derived from the observed spectra, with the details of this step depending on both the input maps and the algorithms used in the spectral estimation; examples of this step include debiasing of pseudo-spectra, delensing, and spectral-domain point-source removal.
 \item[Parameter estimation:] The best-fit parameters for any cosmological model are derived by comparing the theoretical correlation function(s) predicted by the model with the data.
 \end{description}
 
-Note however that the data can only remain a sufficient statistic at each step in the reduction if we also propagate its full covariance matrix. This is an ${\cal N}_b \times {\cal N}_b$ matrix in the dimension of the basis, so its construction, manipulation and reduction typically poses the greatest computational challenge to this analysis. In particular the full pixel-domain data covariance matrix is generally dense and unstructured, requiring O(${\cal N}_p^3$) operations to build and O(${\cal N}_p^2$) bytes to store. A mission that covers a fraction of the sky \fsky\ with a beam of $b$ arcminutes generates O($10^9 \, \fsky/b^2$) pixels per CMB component per observing frequency, so that increases in sky fraction, resolution, polarization sensitivity or frequency coverage (as have been the science drivers to date) necessarily increases ${\cal N}_p$. For the last decade or more the computational intractability of the resulting pixel-domain matrices has forced us to replace explicit covariance propagation with Monte Carlo methods in all but a limited set of small sky fraction/low resolution cases -- although it should be noted that, as outlined previously, this case may be of great interest for determining $r$.
+Note however that the data can only remain a sufficient statistic at each step in the reduction if we also propagate its full covariance matrix. This is an ${\cal N}_b \times {\cal N}_b$ matrix in the dimension of the basis, so its construction, manipulation and reduction typically poses the greatest computational challenge to this analysis. In particular the full pixel-domain data covariance matrix is generally dense and unstructured, requiring O(${\cal N}_p^3$) operations to build and O(${\cal N}_p^2$) bytes to store. A mission that covers a fraction of the sky \fsky\ with a beam of $b$ arcminutes generates O($10^9 \, \fsky/b^2$) pixels per CMB component per observing frequency, so that increases in sky fraction, resolution, polarization sensitivity or frequency coverage (as have been the science drivers to date) necessarily increases ${\cal N}_p$. For the last decade or more the computational intractability of the resulting pixel-domain matrices has forced us to replace explicit covariance propagation with Monte Carlo methods in all but a limited set of small sky fraction/low resolution cases -- although it should be noted that, as outlined previously, this case may be of great interest for determining the tensor-to-scalar ratio $r$.
 
 \input Analysis/tod_processing.tex
 

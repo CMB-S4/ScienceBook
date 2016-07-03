@@ -2,7 +2,7 @@
 
 \section{Forecasting}\label{sec:Forecasting}
 
-Given the computational constraints on time-domain simulations and analyses, it is currently not possible to use the production pipeline to explore the full instrument and observation parameter space. Howevr, such exploration is critical in the mission design and development phase, and so we employ a forecasting pipeline (Figure \ref{fig_fcast}) to bypass this bottleneck.
+Given the computational constraints on time-domain simulations and analyses, it is currently not possible to use the production pipeline to explore the full instrument and observation parameter space. However, such exploration is critical in the mission design and development phase, and so we employ a forecasting pipeline (Figure \ref{fig_fcast}) to bypass this bottleneck.
 
 \begin{figure}[htbp]
 \includegraphics[width=1.0\textwidth]{Analysis/forecast}\\
@@ -23,9 +23,9 @@ Systematic errors should be included in the projections, with unknown systematic
 Forecasting should also include our best knowledge of the astrophysical foregrounds and account for the impact of component separation on \cmbexp\ science goals.
 The forecasting inputs will improve as we acquire data from Stage 3 experiments and possible complementary balloon-borne experiments, which will produce deeper noise maps and better assessments of foregrounds, as well as demonstrations of new techniques and technologies in development for Stage 4.
 
-Here we describe the main approaches used by our community for forecasting the expected performance of \cmbexp\. The central considerations for assessing the expected performance for large-scale B-modes are Galactic foregrounds, ability to delens the data, and a realistic assessment of instrument noise at large scales. 
+Here we describe the main approaches used by our community for forecasting the expected performance of \cmbexp. The central considerations for assessing the expected performance for large-scale B-modes are Galactic foregrounds, ability to delens the data, and a realistic assessment of instrument noise at large scales. 
 For the smaller-scale polarization two-point functions (TE, EE) and the lensing four-point function ($\kappa \kappa$), extragalactic foregrounds and instrumental noise are the key considerations.
-To forecast the return of the thermal Sunyaev-Zel'dovich effects, an estimate of the expected cluster counts as a function of mass and redshift is the core statistic, combined with an estimate of how well the masses can be calibrated using overlaps with weak lensing surveys. For the kinetic Sunyaev-Zeldovich effect, extragalactic foregrounds and overlap with spectroscopic surveys must all be considered. 
+To forecast the return of the thermal Sunyaev-Zel'dovich effects, an estimate of the expected cluster counts as a function of mass and redshift is the core statistic, combined with an estimate of how well the masses can be calibrated using optical or CMB weak lensing. For the kinetic Sunyaev-Zeldovich effect, extragalactic foregrounds and overlap with spectroscopic surveys must all be considered. 
 
 \subsection{Forecasting \cmbexp\ constraints on the tensor-to-scalar ratio}
 
@@ -58,6 +58,21 @@ The parametrized signal model is also quite flexible and can include complicatio
 The limitation is that by considering the power spectrum only we are treating all signals as Gaussian, an approximation which must break down at some point for foregrounds.
 For this reason, it is important to have the ability to spot check the spectrum-based forecasts against map-based forecasts at specific choices of signal model.
 
+As described in Section~\ref{sec:needs}, the specific implementation of Fisher forecasting for CMB-S4 constraints
+on $r$ in this document assume the following baseline instrument configuration parameters:
+%
+\begin{itemize}
+\item{250,000 detectors operating for four years, dedicated solely to the combination of measuring degree-scale B modes and measuring lensing B modes on the same patch of sky. The split in effort between degree-scale observations and lensing observations depends on the fraction of sky observed, which sets the level of delensing needed.}
+\item{Eight frequency bands, two each in the four atmospheric windows between 30 and 300 GHz.}
+\item{For the degree-scale effort, bandpower covariance matrices scaled directly from achieved BICEP2/Keck performance.}
+\item{Foregrounds as measured in the BICEP2/Keck patch of sky, including decorrelation of the dust signal between high frequencies and the frequencies of interest for CMB.}
+\item{Delensing efficiency based solely on noise level in the high-resolution map used for delensing---i.e., no degradation to delensing from foregrounds or systematics.}
+\end{itemize}
+%
+In Section~\ref{sec:needs}, these assumptions are used to search sky fraction parameter space, with 
+$\sigma(r)$ as the figure of merit. We verify these results using a second Fisher code and a map-based
+forecasting method (see next section).
+
 \subsubsection{Map-based domain forecasting}
 
 Foregrounds are intrinsically non-Gaussian, so it is beneficial to consider approaches directly in map space, to check the robustness of spectrum-based approaches, in particular in the case of pessimistic foregrounds where the spectral indices or dust emissivities have non-trivial spatial variation. Here one of the approaches our community uses is a Bayesian model fitting method, where the foregrounds are described parametrically using a physical model for each component.
@@ -66,9 +81,16 @@ Using this method, maps of the CMB plus Galactic foreground sky and expected noi
 
 This method allows for an assessment of the expected bias on $r$ if the model does not match the simulation, and shows how much the expected uncertainty on $r$ would increase if more complicated foreground models are explored e.g. \cite{ArmitageCaplan:2011sn,Remazeilles:2015hpa}. It is more computationally expensive than spectral-domain forecasts though, so we limit this approach to a smaller subset of explorations. 
 
-\subsection{Forecasting \cmbexp\ constraints on parameters from TT/TE/EE/$\kappa\kappa$}
+In Section~\ref{sec:needs}, we use map-based forecasting to verify the results of the Fisher-matrix 
+forecasting described above. For discrete points in sky fraction and detector effort parameter space, 
+we recover the Fisher results with the map-based code, indicating that foreground residuals due to 
+assumptions of Gaussianity and stationarity are not significantly biasing the Fisher results, at least for
+the foreground assumptions in the map-based code.
 
-Throughout this Science Book we forecast the expected constraints on cosmological parameters from TT/TE/EE and $\kappa\kappa$ using Fisher matrix methods. This assumes that the resulting parameter distributions are close to Gaussian, which is sufficient for the majority of parameters we consider.
+\subsection{Forecasting \cmbexp\ constraints on parameters from TT/TE/EE/$\kappa\kappa$}
+\label{sec:ttee}
+
+Throughout this Science Book we forecast the expected constraints on cosmological parameters from TT/TE/EE and $\kappa\kappa$ (the CMB lensing convergence power spectrum) using Fisher-matrix methods. This assumes that the resulting parameter distributions are close to Gaussian, which is sufficient for the majority of parameters we consider.
 
 We assume that S4 data will be combined with existing Planck satellite data. We also assume that other non-CMB data will be available. In particular we consider measurements of Baryon Acoustic Oscillations from the DESI spectroscopic galaxy redshift survey. In some places we consider measurements of cosmic shear from the Large Synoptic Survey Telesope.
 
@@ -80,7 +102,7 @@ The codes we use either consider the unlensed maps and the lensing convergence m
 \hat{C}^{XY}_\ell = \frac{1}{2\ell+1}\sum_{m=-\ell}^{m=\ell} x^{*}_{\ell m} y_{\ell m}.
 \end{equation}
 %
-The estimated power spectrum is Gaussian distribution to good approximation at small scales. In this case a full-sky survey has
+The estimated power spectrum is Gaussian-distributed to good approximation at small scales. In this case a full-sky survey has
 %
 \begin{equation}
 -2\ln\mathcal{L}(\boldsymbol{\theta}) = -2\sum_\ell \ln p( \hat{C}_\ell | \boldsymbol{\theta}) \\
@@ -106,8 +128,8 @@ Other codes construct the Fisher matrix using the unlensed temperature and polar
 
 The CMB lensing reconstruction noise is calculated using the \cite{Hu:2001kj} quadratic-estimator formalism. Our nominal approach is to neglect non-Gaussian terms in the power spectrum covariance. We also avoid including information from both lensed BB and the four-point $\kappa \kappa$, as they are covariant. The BB spectrum will not contribute as significantly to S4 constraints, compared to $\kappa \kappa$, and has a highly non-Gaussian covariance \cite{BenoitLevy:2012va}. 
 
-\subsubsection{S4 specifications}
-The white noise part is given by
+\subsubsection{CMB-S4 specifications}
+For CMB-S4, we approximate the noise part of the covariance as
 %
 \begin{equation}
 N^{\alpha \alpha}_\ell = (\Delta T)^2 \exp \left( \frac{\ell(\ell + 1) \theta^2_{\rm FWHM}}{8 \ln 2} \right)
@@ -115,19 +137,19 @@ N^{\alpha \alpha}_\ell = (\Delta T)^2 \exp \left( \frac{\ell(\ell + 1) \theta^2_
 %
 for $\alpha \in \{T, E, B\}$, where $\Delta T$ ($\Delta P$ for polarization) is the map sensitivity in $\mu$K-arcmin and $\theta_{\rm FWHM}$ is the beam width. 
 
-We approximate the wide-field part of the S4 experiment as a 4-year survey using 250,000 detectors covering 40\% of the sky in the lowest Galactic foreground region. We consider beam widths of both 1' and 2', and in some cases consider the effect of greater variation in the beam width. By scaling the simple map depths achieved by the BICEP2 experient, we estimate a white noise level of 1 $\mu$K/amin in intensity, and $\sqrt{2}$ higher in polarization. For these smaller-scale forecasts we do not account for any possible mode filtering due to the mapping.
+We approximate the wide-field part of the S4 experiment as a 4-year survey using 250,000 detectors covering 40\% of the sky in the lowest Galactic foreground region. We consider beam widths of both 1' and 2', and in some cases consider the effect of greater variation in the beam width. By scaling the simple map depths achieved by the BICEP2 experient, we estimate a white noise level of 1 $\mu$K-arcmin in intensity, and $\sqrt{2}$ higher in polarization. For these smaller-scale forecasts we do not account for any possible mode filtering due to the mapping.
 
 For polarization our nominal estimate is white noise, assuming that the tiny intrinsic polarization of the atmosphere, potentially combined with the use of polarization modulators, minimizes atmospheric contamination. In the longer term, these forecasts may be refined using scaled versions of noise spectra achieved in the field by experiments at the appropriate site. Eventually, full bandpower covariance matrices scaled from fielded experiments can also be used.
 
-In these `non-r' studies, we do not model the removal of Galactic foregrounds, isntead assuming that all of the survey weight is focused at 150~GHz. In practice the survey would map the sky at a set of frequencies, and a component separation method used to estimate the CMB. Including these multiple frequencies will be the focus of future work; since Galactic foregrounds have a smaller effect on lensing and the CMB damping tail, we expect them to impact forecast constraints much less than for gravitational wave limits.
+In these ``non-$r$'' studies, we do not model the removal of Galactic foregrounds, instead assuming that all of the survey weight is focused at 150~GHz. In practice the survey would map the sky at a set of frequencies, and a component separation method would be used to estimate the CMB. Including these multiple frequencies will be the focus of future work; since Galactic foregrounds have a smaller effect on lensing and the CMB damping tail, we expect them to impact forecast constraints much less than for gravitational wave limits.
 
-To address the issue of extragalactic foregrounds, we set as the default a maximum multipole for the recoverable information of $\ell^T_{\rm max} = 3000$ and $\ell^P_{\rm max} = 5000$ for \cmbexp\, as foregrounds are expected to be limiting at smaller scales. We also set a minimum multipole due to the challenge of recovering large scales from the ground, and consider in general $\ell=30$. 
+To address the issue of extragalactic foregrounds, we set as the default a maximum multipole for the recoverable information of $\ell^T_{\rm max} = 3000$ and $\ell^P_{\rm max} = 5000$ for \cmbexp, as foregrounds are expected to be limiting at smaller scales. We also set a minimum multipole due to the challenge of recovering large scales from the ground, and consider in general $\ell=30$. 
 
 \subsubsection{Non-S4 data specifications}
 
-We include Planck data at the scales $\ell<\ell_{\rm min}$, nominally with $\ell_{min}=30$, and we also add Planck data at all scales over the part of the sky not measured by S4 from Chile or the South Pole, approximated as covering an additional $f_{sky}=0.2$.
+We include Planck data at the scales $\ell<\ell_{\rm min}$, nominally with $\ell_{min}=30$, and we also add Planck data at all scales over the part of the sky not measured by S4 from Chile or the South Pole, approximated as covering an additional $f_\mathrm{sky}=0.2$.
 
-For the noise levels of Planck, we assume that a data release including reliable polarization data will have happened before \cmbexp\ data is taken, and forecast results that include TE and EE data and also large-scale temperature and polarization from HFI. This follows approaches in e.g. \cite{Allison:2015qca}. For the optical depth to reionization, we assume that Planck has reached currently published results, so impose a prior of $\tau=0.06\pm0.01$.
+For the noise levels of Planck, we assume that a data release including reliable polarization data will have happened before \cmbexp\ data is taken and forecast results that include TE and EE data and also large-scale temperature and polarization from HFI. This follows approaches in e.g. \cite{Allison:2015qca}. For the optical depth to reionization, we assume that Planck has reached currently published results, so impose a prior of $\tau=0.06\pm0.01$.
 
 In some cases we consider the addition of a cosmic-variance limited large-scale polarization measurement, as we might expect to get from a PIXIE or LiteBIRD satellite or potentially a high-altitude balloon.
 
@@ -187,15 +209,3 @@ Forecasting constraints from kSZ will be an ongoing avenue of development. As ea
 more mature, and the community explores new ways of measuring this signal 
 \cite{Hand:2012ui,Keisler:2012eg,Ade:2015lza,Schaan:2015uaa,Hill:2016dta,Soergel:2016mce}, the exact methods for forecasting
 will become more clear.
-
-
-
-
-
-
-
-
-
-
-
-

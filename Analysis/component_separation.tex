@@ -5,20 +5,20 @@
 
 %\textbf{ Authors: Mark Ashdown, Jonathan Aumont, Carlo Baccicalupi, Josquin Errard, Maude Le Jeune}
 
-This section discusses the algorithms and methods for disentangling different sources of sky emission in multi-frequency maps, whether these come exclusively from \cmbexp\ or include well-characterized external maps. Under this assumption, we are able to go beyond simple foreground cleaning to full component separation, which provides both improtant consistency checks on our results and critical inputs to sky modeling (see below). We first present the motivations and the general ideas of existing approaches. We then give some specifics of parametric and blind methods. Finally, we summarize several questions which might be answered by follow-up studies.
+This section discusses the algorithms and methods for disentangling different sources of sky emission in multi-frequency maps, whether these come exclusively from \cmbexp\ or include well-characterized external maps. Under this assumption, we are able to go beyond simple foreground cleaning to full component separation, which provides both important consistency checks on our results and critical inputs to sky modeling (see below). We first present the motivations and the general ideas of existing approaches. We then give some specifics of parametric and blind methods. Finally, we summarize several questions which might be answered by follow-up studies.
 
 Recent measurements by BICEP2/Keck/Planck \cite{Ade:2015tva} confirm that on degree scales, where 
 \cmbexp\ is expected to search for 
-the imprint of $B$ modes from primordial GWs, the contamination from polarized foreground emission is  comparable to or higher than the cosmological signal at 150~GHz even in one of the cleaner patches of the sky.
+the imprint of $B$ modes from primordial gravitational waves, the contamination from polarized foreground emission is  comparable to or higher than the cosmological signal at 150~GHz even in one of the cleaner patches of the sky.
 Given that 150~GHz is expected to be close to the minimum of foreground contamination vs.~CMB signal, this 
 is likely to be the case at all frequencies and all but the smallest fractions of the sky.
-Given the power law behavior in $\ell$ found on larger scales by Planck and WMAP \cite{Adam:2015tpy,Page:2006hz}, foregrounds are expected to be even more relevant at larger angular scales. Foregrounds are expected to be subdominant  with respect to the $B$-mode lensing signal on the scale of a few arcminutes (see Figure~\ref{fig:power_spectrum_fgs}); nevertheless, dust polarization fractions around $10\%$ (comparable to observed levels) have been shown to have non-negligible impact on the 4-point function used for achieving lensing extraction \cite{Fantaye:2012ha}. Therefore, component separation is a necessary and important step in gaining insight into the amplitude of primordial GWs, as well as the neutrino masses and dark energy abundances through CMB lensing studies.
+Given the power law behavior in $\ell$ found on larger scales by Planck and WMAP \cite{Adam:2015tpy,Page:2006hz}, foregrounds are expected to be even more relevant at larger angular scales. Foregrounds are expected to be subdominant  with respect to the $B$-mode lensing signal on the scale of a few arcminutes (see Figure~\ref{fig:power_spectrum_fgs}); nevertheless, dust polarization fractions around $10\%$ (comparable to observed levels) have been shown to have non-negligible impact on the 4-point function used for achieving lensing extraction \cite{Fantaye:2012ha}. Therefore, component separation is a necessary and important step in gaining insight into the amplitude of primordial gravitational waves, as well as the neutrino masses and dark energy abundances through CMB lensing studies.
 
 \begin{figure*}[htbp]
 \centering
 \includegraphics[width=0.5\textwidth]{Analysis/Power_Spectrum_figure_showing_foregrounds.pdf}
 \caption{Angular power spectra showing primordial $B$ modes, lensing $B$ modes, total intensity, and $E$ modes, as well as the total contribution of polarized $B$-mode foregrounds (dust plus synchrotron), expected on the cleanest $1-90\%$ of the sky, at $100$ and $200\;$GHz. Note that, as these results are derived from Planck data at intermediate and high Galactic latitudes, sensitive primarily to the large scale 
-foreground pattern in polarization and are not therefore optimized for high-resolution, small scale instruments, there is potential for discovery of small patches of sky (e.g., $f_{\mathrm sky} \leq 5\%$) with a signal differing than those indicated here. From~\cite{Errard:2015cxa}.}
+foreground pattern in polarization and therefore not optimized for high-resolution, small scale instruments, there is potential for discovery of small patches of sky (e.g., $f_{\mathrm sky} \leq 5\%$) with a signal differing than those indicated here. From~\cite{Errard:2015cxa}.}
 \label{fig:power_spectrum_fgs}
 \end{figure*}
 
@@ -35,9 +35,10 @@ The general data modeling reads
 		d_p &=& \sum_{\rm comp, p} a_p^{\rm comp} s^{\rm comp}_p + n_p \equiv \mathbf{A}\,s_p + n_p
 	\label{eq:comp_sep_data_modeling}
 \end{eqnarray}
-where the vector $d_p$ contains the measured signal in each observing band, $\mathbf{A}$ is the so-called mixing matrix which encapsulates the emission law $a_p^{\rm comp}$ of each component, $s_p$ is a vector containing the unknown CMB and foregrounds amplitude and $n_p$ is a vector containing the noise level at each observing band. The index $p$ refers to sky pixels $\left( \theta, \phi \right)$, or modes of a spherical harmonic decomposition $\left( \ell, m\right)$, or a set of Fourier modes $\left(k_x,k_y\right)$, etc. Note that this modeling assumes spatial templates $s_p$ that are the same in all observing bands.
+where the vector $d_p$ contains the measured signal in each observing band, $\mathbf{A}$ is the so-called mixing matrix which encapsulates the emission law $a_p^{\rm comp}$ of each component, $s_p$ is a vector containing the unknown CMB and foregrounds amplitude, and $n_p$ is a vector containing the noise level at each observing band. The index $p$ refers to sky pixels $\left( \theta, \phi \right)$, or modes of a spherical harmonic decomposition $\left( \ell, m\right)$, or a set of Fourier modes $\left(k_x,k_y\right)$, etc. Note that this modeling assumes spatial templates $s_p$ that are the same in all observing bands.
 
-Component separation aims at inverting Eq.~\ref{eq:comp_sep_data_modeling}, to estimate the foreground-cleaned CMB signal encapsulated in $s_p$, as well as the foreground maps which are relevant for testing and updating our knowledge of astrophysical processes (and hence improve the sky model), as illustrated in Fig.~\ref{fig:general_comp_sep_scheme}.
+Component separation aims at inverting Eq.~\ref{eq:comp_sep_data_modeling}, thus estimating the foreground-cleaned CMB signal encapsulated in $s_p$, as well as the foreground maps which are relevant for testing and updating our knowledge of astrophysical processes (and hence improving the sky model).
+%, as illustrated in Fig.~\ref{fig:general_comp_sep_scheme}.
 The estimate $\tilde{s}_p$ of the true sky templates $s_p$ --- given $\mathbf{A}$, $d_p$ and the statistical properties of the noise --- minimizes the following $\chi^2$:
 \begin{eqnarray}
 	\centering
@@ -50,7 +51,7 @@ and can be taken to have the following general form
 		\tilde{s}_p = \mathbf{W}\,d_p
 	\label{eq:sp_solution}
 \end{eqnarray}
-where the weighting operator $\mathbf{W}$ is chosen to optimize some criterion regarding $\tilde{s}_p$ and $s_p$ (variance of the cleaned map, unbiasedness, etc.) while keeping statistical consistency and robustness. In particular, a common requirement for all component separation algorithms is the ability of propagating errors due to foreground subtraction, while having the flexibility of including foreground modeling and external constraints in a transparent way. \\
+where the weighting operator $\mathbf{W}$ is chosen to optimize some criterion regarding $\tilde{s}_p$ and $s_p$ (variance of the cleaned map, unbiasedness, etc.) while keeping statistical consistency and robustness. In particular, a common requirement for all component separation algorithms is the ability of propagating errors due to foreground subtraction, while having the flexibility of including foreground modeling and external constraints in a transparent way. 
 Component separation is then defined as a method of estimating the mixing matrix $\mathbf{A}$ and finding the weighting $\mathbf{W}$ that provides closest possible estimate $\tilde{s}_p$ to the true sky signal.
 
 For example, a solution to Eqs.~\ref{eq:chi2_compsep} and~\ref{eq:sp_solution} is obtained by taking $\mathbf{W} \equiv \left( \mathbf{A}^T\mathbf{N}^{-1}\mathbf{A} \right)^{-1}\mathbf{A}^T\mathbf{N}^{-1}$ with $\mathbf{N} \equiv \langle n_p^T n_p\rangle$, leading to an unbiased estimate of the sky. As mentioned below, this expression can be changed (see, e.g., \cite{Delabrouille:2009aa}), depending on the desired level of generality and complexity and on the level of prior knowledge of the sky signal.
@@ -67,20 +68,20 @@ not the same as in the \cmbexp\ case.
 %%%%%%%%%%%%%%%%%%%%%%
 \subsection{Component Separation Methods}
 
-The CMB extraction may be achieved essentially through two basic concepts: the fitting of foreground unknowns along with CMB, or the minimization of the variance of a linear combination of the data, constrained to have the frequency scaling of a black body.
+The CMB extraction may be achieved essentially through two basic concepts: the fitting of foreground unknowns along with CMB, or the minimization of the variance of a linear combination of the data, constrained to have the frequency scaling of a blackbody.
 The first class of algorithms, known as ``parametric'', makes the maximum use of prior knowledge of foreground emission. By contrast, the second class, known as ``blind'', makes the minimum set of assumptions. 
 These two broad classes and other possibilities are discussed in turn below.
 %Historically this classification has been achieved through various works. Blind techniques made use of internal template subtraction (e.g. \cite{bennett92,hansen06,Katayama:2011eh}), or exploiting statistical independence of sky components (e.g. \cite{delabrouille03,maino07,bonaldi06,stolyarov05}). The most important papers on parametric fitting are \cite{Brandt:1994aa,Eriksen:2005dr, stompor09}.
 
 \begin{itemize}
 	\item \textbf{Parametric} -- The overall idea of these methods boils down to two steps: 1) the estimation of the mixing matrix, $\mathbf{A}$; and 2) the inversion of Eq.~\ref{eq:comp_sep_data_modeling} to recover an estimate of the sky signal, $s_p$.
-	Parametric methods assumes that the mixing matrix, used in Eq.~\ref{eq:comp_sep_data_modeling}, has a functional form which is known and which can be parametrized by so-called "spectral" parameters $\beta$, i.e. $\mathbf{A} = \mathbf{A}(\beta)$. The functional form of $\mathbf{A}$ being fixed, the estimation of the mixing matrix is therefore equivalent to an estimation of the parameters $\beta$. The parameters of the model are determined via a fitting procedure, often performed over sky pixels. This can be achieved by maximizing the following so-called ``spectral" likelihood \cite{Brandt:1994aa,Eriksen:2005dr}:
+	Parametric methods assumes that the mixing matrix, used in Eq.~\ref{eq:comp_sep_data_modeling}, has a functional form which is known and which can be parametrized by so-called "spectral" parameters $\beta$, i.e., $\mathbf{A} = \mathbf{A}(\beta)$. The functional form of $\mathbf{A}$ being fixed, the estimation of the mixing matrix is therefore equivalent to an estimation of the parameters $\beta$. The parameters of the model are determined via a fitting procedure, often performed over sky pixels. This can be achieved by maximizing the following so-called ``spectral" likelihood \cite{Brandt:1994aa,Eriksen:2005dr}:
 	\begin{eqnarray}
 		\centering
 			-2\log \mathcal{L}(\beta) = - \sum_p \left( \mathbf{A}^T\mathbf{N}^{-1} d\right)^T\left( \mathbf{A}^T\mathbf{N}^{-1} \mathbf{A}\right)^{-1}\left( \mathbf{A}^T\mathbf{N}^{-1} d\right).
 	\end{eqnarray}
 Any deviation between the true mixing matrix $\mathbf{A}$ and the estimated $\mathbf{\tilde A} \equiv A(\tilde \beta)$ leads to the presence of foreground residuals in the reconstructed component maps.
-	\item \textbf{Blind} -- Under the  assumption that sky components are statistically independent, blind methods aim to recover these components with an a priori unknown mixing matrix. Blind methods make minimal assumptions about the foregrounds and focus on reconstructing the CMB from its well known black body spectral energy distribution. The Internal Linear Combination (ILC, \cite{Tegmark:2003ud}) belongs to this class of methods. It only uses the CMB column of the mixing matrix elements (noted $a$ hereafter) to perform the minimum variance reconstruction, cf. Eq.~\ref{eq:sp_solution}:
+	\item \textbf{Blind} -- Under the  assumption that sky components are statistically independent, blind methods aim to recover these components with an a priori unknown mixing matrix. Blind methods make minimal assumptions about the foregrounds and focus on reconstructing the CMB from its well known blackbody spectral energy distribution. The Internal Linear Combination (ILC, \cite{Tegmark:2003ud}) belongs to this class of methods. It only uses the CMB column of the mixing matrix elements (noted $a$ hereafter) to perform the minimum variance reconstruction, cf. Eq.~\ref{eq:sp_solution}:
 \begin{equation}
   \tilde s_p = \sum_{i=0}^{i=m} w_i d_{p,i}
 \end{equation}
@@ -135,8 +136,8 @@ Although these different approaches are currently giving satisfactory results on
 	\item \textbf{Combining data from multiple instruments} -- Ground-based instruments heavily filter time streams because of atmosphere contamination, ground emission, etc. %to perform projections on the sky. 
 	In particular, large angular scales are usually suppressed anisotropically, and this suppression is corrected in the power spectrum estimate. 
 %	In order to perform component separation using various observations, component separation methods will require the use of maps derived from common filters. \\
-Component separation using observations from different platforms will be made more straightforward if all maps are derived from common filters. \\
-	As stressed already, the first attempt at component separation or foreground cleaning for  $B$ modes on multi-platform data was recently implemented in \cite{Ade:2015tva}, using data from BICEP2, Keck Array and Planck. A template fitting analysis was implemented with the primary objective of minimizing the variance in the CMB solution.%, by achieving a linear combination of the data, which turned out in a reduction of the power observed from the ground, which is interpreted as cleaning of the Galactic dust, and sets the current limit on $B$ modes from primordial GWs. 
+Component separation using observations from different platforms will be made more straightforward if all maps are derived from common filters. 
+As stressed already, the first attempt at component separation or foreground cleaning for  $B$ modes on multi-platform data was recently implemented in \cite{Ade:2015tva}, using data from BICEP2, Keck Array and Planck. A template fitting analysis was implemented with the primary objective of minimizing the variance in the CMB solution.%, by achieving a linear combination of the data, which turned out in a reduction of the power observed from the ground, which is interpreted as cleaning of the Galactic dust, and sets the current limit on $B$ modes from primordial GWs. 
 %The independent reduction of the data 
 The simultaneous analysis of combined data sets 
 required an additional layer in the analysis, namely the simulated scans of the Planck data through the filtering by the ground observatories, along with validation through simulations of the whole procedure. A simpler approach for \cmbexp\ would be to have a single pipeline reducing and combining different datasets. With a common filtering implemented from scratch in a multi-site experiment, the %latter a posteriori 
@@ -150,7 +151,7 @@ by incorporating the beam for each frequency channel in the expression of the no
 	where $i$ is a frequency channel and $\sigma_i$ is the noise level in the corresponding map. The noise variance in the reconstructed CMB map, i.e. after component separation, would then be given by
 	\begin{eqnarray}
 		\centering
-			N_\ell^{\rm post\ comp\ sep} = \left[\left(\mathbf{A}^T\left(\mathbf{N}_\ell\right)^{-1}\mathbf{A}\right)^{-1}\right]_{\rm CMBxCMB}
+			N_\ell^{\rm post\ comp\ sep} = \left[\left(\mathbf{A}^T\left(\mathbf{N}_\ell\right)^{-1}\mathbf{A}\right)^{-1}\right]_{\rm CMBxCMB}.
 	\end{eqnarray}
 %	The effective beam of this noise is degraded compared to a simple quadratically combined noise, but this obviously depends on the involved beams sizes and on the importance of given channels to perform the foregrounds cleaning.
 	\item \textbf{Atmosphere residuals} -- Atmosphere residuals appear at large scales in ground-based CMB observations, and they scale with frequency in a similar way as dust, $\propto \nu^\beta$ \cite{Errard:2015twg}. Having redundant frequencies among the different observatories could help mitigate the atmospheric and astrophysical foregrounds. Furthermore, the small intrinsic polarization of the atmosphere \cite{Battistelli:2012we,Errard:2015twg} will

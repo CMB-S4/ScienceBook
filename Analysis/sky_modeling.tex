@@ -22,7 +22,7 @@ At the degree scales targeted by ground-based B-mode searches, the polarized CMB
 
 Estimating more precisely the impact of foreground emission on the main science targets of \cmbexp\ will require realistic simulations of the sky emission that can be used to test the effectiveness of component separation techniques and to assess any degradation of the error bars or possible biases due to residual foreground contamination. 
 
-The sky emission is naturally modeled as the sum of emission from different sources. These sources may identified by their emission process (e.g. Galactic synchrotron, due to electrons spiralling in the Galactic magnetic field), or by their place of origin (e.g. emission of a particular extragalactic source). These emissions, as a function of sky pixel and frequency, must then be integrated over the instrument observing band and angular response function (beam) to produce the individual frequency maps observed by the instrument. 
+The sky emission is naturally modeled as the sum of emission from different sources. These sources may identified by their emission process (e.g. Galactic synchrotron, due to electrons spiralling in the Galactic magnetic field), or by their place of origin (e.g. emission of a particular extragalactic source). These emissions, as a function of sky pixel and frequency, must then be integrated over the instrument observing band and angular response function (beam) to produce individual frequency maps as observed by the instrument. 
 %We decompose this simulation pipeline into two main steps: the multicomponent model of sky emission, which does not depend on the instrument, and the integration of this emission in the instrumental response.
 This latter part of the simulation pipeline is treated in Section \ref{sec_datasim}; we concentrate in this section on the sky model.
 
@@ -68,14 +68,14 @@ Strong evidence exists for variability of the physical properties of the interst
 
 \subsubsection{Synchrotron}
 
-The baseline Galactic synchrotron model we use here has a power law scaling with a modestly spatially varying spectral index.  The emission templates are the Haslam 408 MHz data reprocessed by \cite{Remazeilles:2015hpa}, 
+The baseline Galactic synchrotron model we use here has a power-law scaling with a modestly spatially varying spectral index.  The emission templates are the Haslam 408 MHz data reprocessed by \cite{Remazeilles:2015hpa}, 
 %MNRAS 451, 4311,
 and the WMAP 7-year 23 GHz Q/U maps \cite{Jarosik:2010iu}
 % ApJS, 192, 14J) 
-smoothed to 3 degree FWHM and with smaller scales added using the PSM code \cite{Delabrouille:2012ye}
+smoothed to 3 degree FWHM and with smaller scales added using the PSM code \cite{Delabrouille:2012ye}.
 % et al. A&A 553, A96, 2013). 
 The spectral index map is derived using a combination of the Haslam 
-408 MHz data \cite{Haslam:1981aa} and WMAP 23 GHz 7-year data \cite{MivilleDeschenes:2008hn}
+408 MHz data \cite{Haslam:1981aa} and WMAP 23 GHz 7-year data \cite{MivilleDeschenes:2008hn}.
 % M.-A. et al., 2008, A&A, 490, 1093). 
 The same scaling is used for intensity and polarization.  This is the same prescription as used in the Planck Sky Model's v1.7.8 `power law' option, but with the Haslam map updated to the version in \cite{Remazeilles:2015hpa}.
 
@@ -113,7 +113,7 @@ The key goal for the extragalactic sky models of \cmbexp\ is to provide fast and
 \item To have self-consistent maps we will have a flexible pipeline that generates simulated all sky maps which applies the parametric models from the hydrodynamical simulations to our backbone large-scale structure simulations and halo catalogs.
 \end{itemize}
 
-Hydrodynamical simulations of cosmological volumes are currently available which we can already use to model extragalactic foregrounds. These simulations will be used for the development and testing phases of the simulation pipeline. However, they are limited in their size and sub-grid modeling accuracy, and thus will not meet our accuracy requirements of \cmbexp\. We will develop new full hydrodynamical simulations of cosmological volumes that include a variety of physical processes. An essential requirement of these simulations will be to capture growth and evolution of galaxies to cluster-size halos throughout cosmic time at a sufficient spatial resolution. Hydrodynamic simulations of this size and scale are already computationally feasible, the challenges will be the appropriate modeling of radiative cooling, star formation, and feedback processes in order to capture the global stellar and gas contents of these halos.
+Hydrodynamical simulations of cosmological volumes are currently available which we can already use to model extragalactic foregrounds. These simulations will be used for the development and testing phases of the simulation pipeline. However, they are limited in their size and sub-grid modeling accuracy, and thus will not meet our accuracy requirements of \cmbexp. We will develop new full hydrodynamical simulations of cosmological volumes that include a variety of physical processes. An essential requirement of these simulations will be to capture growth and evolution of galaxies to cluster-size halos throughout cosmic time at a sufficient spatial resolution. Hydrodynamic simulations of this size and scale are already computationally feasible, the challenges will be the appropriate modeling of radiative cooling, star formation, and feedback processes in order to capture the global stellar and gas contents of these halos.
 
 There are many different approaches already developed to provide us with the underlying large-scale structure simulations that will we build our extragalactic model upon. They vary in speed which tend to inversely scale with accuracy. A benefit of our modular and flexible approach is that we do not need to limit ourselves to one approach. In fact we will compare the various approaches to see how they bias our answers. It is in these simulations where we will vary cosmological parameters assuming that they only affect the growth of structure and not the {\it gastrophysical} properties of extragalactic foregrounds.
 
