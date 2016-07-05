@@ -44,7 +44,7 @@ on the growth of structure.  The $\Lambda$CDM model predicts that the growth of 
 will slow in a precisely known manner as the expansion starts to accelerate.   
 For example the rms amplitude of linear matter fluctuations at the $8 h^{-1}$Mpc
 scale $\sigma_8(z)$ is a trigger parameter that can be closely associated with the 
-cluster abundance.   The linear growth rate index $\gamma$ is another that is closely related
+cluster abundance.   The linear growth rate index $\gamma_L$ is another that is closely related
 to peculiar velocities and the kSZ observables.   
 % add in $E_G$ if we forecast it or if it is discussed in the cross correlation section.
 
@@ -215,13 +215,17 @@ For a fixed integration time (and a varied noise level and sky coverage), large 
 \section{Forecasts}
 %
 
-To forecast CMB-S4 performances on Dark Energy and Modified Gravity models we shall use the following specifications.
-CMB-S4 is assumed to measure CMB fluctuations in temperature and polarization over $40 \%$ of the sky with a $1\,\mu {\rm K} \, {\rm arcmin}$ sensitivity in temperature and $1.4\,\mu {\rm K} \, {\rm arcmin}$ sensitivity in polarization, with a beam with $1\, {\rm arcmin}$ FWHM.
-This is added to {\it Planck} measurements of CMB fluctuations on the remaining part of the sky with specifications from \cite{Adam:2015rua}. To reproduce the noise levels of real {\it Planck} measurements at large angular scales in polarization the E and B mode polarization sky fraction is reduced to $0.01$.
+To forecast CMB-S4 performances on dark energy and modified gravity models we shall use the following specifications.
+CMB-S4 is assumed to measure CMB fluctuations in temperature and polarization over $40 \%$ of the sky with a $1\,\mu {\rm K} \, {\rm arcmin}$ sensitivity in temperature and $1.4\,\mu {\rm K} \, {\rm arcmin}$ sensitivity in polarization, with a beam with $1'$ FWHM. This is added to {\it Planck} measurements of CMB fluctuations on the remaining part of the sky with specifications from \cite{Adam:2015rua}. To reproduce the noise levels of real {\it Planck} measurements at large angular scales in polarization the E and B mode polarization sky fraction is reduced to $0.01$.
+ As such, 
+these forecasts do not include the cluster abundance or kSZ but do include CMB-S4 lensing.  The former
+can then be viewed as providing independent trigger tests for the consistency of $\Lambda$CDM or    on dark energy and modified gravity models 
+using the projections described in the previous sections.
+
+
 Along with CMB probes we shall use DESI to exploit the complementary sensitivity of LSS measurements and investigate the synergies with CMB-S4 in constraining DE/MG models.
 We shall assume pessimistic specifications for the DESI survey as in \cite{Font-Ribera:2013rwa}.
-When both CMB-S4 and DESI are considered we include in the forecast all the cross correlations between these two probes. \\
-%
+When both CMB-S4 and DESI are considered we include in the forecast all the cross correlations between these two probes. 
 When a result is presented it is always marginalized over all the other parameters of the model. 
 In particular, when considering DESI, we marginalize over a constant scale independent bias, different in all the survey redshift bins.
 %
@@ -303,8 +307,8 @@ CMB-S4 + DESI     & 0.001 & 0.0007 & - \\
 \label{table:ForecastCT}
 \end{center}
 \end{table}
-
-We describe deviations of the speed of GWs from the speed of light, with the parameter $c^2_{\rm GW}$. If the effect of primordial GWs on the B-mode polarization of the CMB is detected then the same observations will be capable of constraining their propagation speed at the time of recombination.
+Of the parameters for the equation of motion description of dark energy and modified gravity,  CMB-S4 is in a unique position to 
+constrain deviations of the speed of gravitational waves from the speed of light, with the parameter $c^2_{\rm GW}$. If the effect of primordial GWs on the B-mode polarization of the CMB is detected then the same observations will be capable of constraining their propagation speed at the time of recombination.
 In the left panel of Figure \ref{fig:MixedDEG} we show the marginalized joint forecast constraint on the tensor to scalar ratio and the speed of GWs for a fiducial value of $r=0.01$ and $c_{\rm GW}^2=1$. In Table \ref{table:ForecastCT} we show the expected marginal constraints when changing the fiducial value of $r$.
 
 As we can see, if $r$ is detected in the $0.05$ range, CMB-S4 measurements will provide a $5\%$ bound on the speed of GWs at the time of recombination.
@@ -358,12 +362,12 @@ CMB-S4 + DESI  &  0.03 &  0.02 & 0.04 & 0.007 & 0.04 & 0.08 & 0.02 & 0.002\\
 \end{center}
 \end{table}
 
-We consider two parametrization basis for the functions describing the EFT of cosmic acceleration and, for the sake of simplicity, we focus on the Horndeski class of models \cite{Horndeski:1974wa}.
+We consider two parametrization bases for the functions describing the EFT of cosmic acceleration and, for the sake of simplicity, we focus on the Horndeski class of models \cite{Horndeski:1974wa}.
 %
 The first parametrization is obtained by making the couplings in action (\ref{Eq:EFTaction}) dimensionless, as in \cite{Hu:2014oga}.
 The second one consists in re-parametrizing the couplings explicitly targeting the phenomenological features of Horndeski, as in \cite{Bellini:2014fua}.
 %
-In both cases we consider two functional forms: we assume all the couplings constant in time; we allow all the EFT couplings to have different early and late time values, with a smooth transition in between, inspired by \cite{Linder:2015rcz}. Specifically this second parametrization is given by $f(a)= 1/2 (f_{\rm early} + f_{\rm late}) + ( f_{\rm late} -f_{\rm early} ) {\rm ArcTan}[(a - a_T)/\Delta a]/\pi$ where $f_{\rm early}$ and $f_{\rm late}$ are respectively the early and late time values of the considered EFT function, $a_T$ is the transition scale factor assumed to correspond to $z=10$ and $\Delta a=0.01$ is the transition sharpness. 
+In both cases we consider two functional forms: first we assume all the couplings are constant in time; next we allow all the EFT couplings to have different early and late time values, with a smooth transition in between, inspired by \cite{Linder:2015rcz}. Specifically this second parametrization is given by $f(a)= 1/2 (f_{\rm early} + f_{\rm late}) + ( f_{\rm late} -f_{\rm early} ) {\rm ArcTan}[(a - a_T)/\Delta a]/\pi$ where $f_{\rm early}$ and $f_{\rm late}$ are respectively the early and late time values of the considered EFT function, $a_T$ is the transition scale factor assumed to correspond to $z=10$ and $\Delta a=0.01$ is the transition sharpness. 
 %
 
 In Figure \ref{fig:ConstantEFT} and Table \ref{table:ForecastGammaConstEFT} we show the forecast constraints on constant EFT couplings. As we can see the sensitivity of CMB probes are unmatched when measuring the conformal coupling to gravity $\Omega_0$. 
@@ -411,8 +415,8 @@ Not surprisingly CMB measurements are generally stronger than LSS surveys at con
 \end{center}
 \end{figure}
 
-\section{Summary}
-Dark Energy is an elusive cosmological component which drives many current efforts in cosmology. The model parameter space is broad, and CMB-S4 provides a powerful probe to distinguish different models of dark energy through their effects on both the CMB power spectrum itself and the lensing of the CMB, bringing us closer to the goal of understanding and ruling out competing models of this strange compenent in our cosmological model.
+\subsection{Summary}
+Dark Energy is an elusive cosmological component which drives many current efforts in cosmology. The model parameter space is broad, and CMB-S4 provides a powerful probe to distinguish different models of dark energy through their effects on both the CMB power spectrum itself and the lensing of the CMB, bringing us closer to the goal of understanding and ruling out competing models of this mysterious component in our cosmological model.
 %\bibliography{cmbs4}
 
 %%
