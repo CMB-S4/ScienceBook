@@ -266,7 +266,7 @@ can be mitigated by a multi-frequency experimental strategy (for details see Sec
 \label{fig:clall}
 \end{figure}
 
-\section{Forecasted sensitivity to $r$}
+\section{Sensitivity forecasts for $r$}
 \label{sec:needs}
 
 Achieving the CMB-S4 target sensitivity to $r$ ($\sigma(r) \sim 10^{-3}$) will require exquisite measurements of the B-mode power spectrum. 
@@ -277,7 +277,7 @@ As can be seen from Fig.~\ref{fig:clall}, the first requirement for this level o
 For ground-based bolometric detectors, which are individually limited in sensitivity by the random arrival of background photons, this means a large increase in detector count. 
 The forecasts in this section use a baseline of 250,000 detectors operating for four years (or $10^6$ detector years), dedicated solely to maximizing sensitivity to $r$. 
 It will be necessary to split this total effort among many electromagnetic frequencies, to separate the CMB from polarized Galactic foregrounds. % that dominate at these angular scales.
-The forecasts here assume eight frequency bands, ranging from 30 to 270 GHz.
+The forecasts here assume eight frequency bands, ranging from 30 to 270\,GHz.
 Contamination from gravitationally lensed E modes must also be mitigated.
 While a precise prediction for the cosmological mean of the lensing B-mode power spectrum can be made and subtracted from the observed spectrum, there will be a sample variance residual between this prediction and the real lensing B modes on a particular patch of sky.
 To suppress this sample variance, it will be necessary to ``delens'' the B-mode maps with a prediction for the lensing signal from that particular patch of sky, constructed from the E-mode map and some tracer of the lensing potential (see Sec.~\ref{delens} for details).
@@ -297,21 +297,21 @@ Several real-world constraints caution against this extreme interpretation, the 
 For example, as shown in the bottom-left panel of Fig.~\ref{fig_rforecast1}, achieving the forecasted sensitivity to $r$ for a survey targeting 1\% of the sky will require an 80\% reduction in the map r.m.s. level of the CMB lensing $B$ modes. 
 While this is achievable from a sensitivity standpoint (see Sec.~\ref{delens}), systematics and foregrounds will need to be carefully considered.
 There are other real-world concerns not completely captured in the forecasting code that would work in the other direction, steepening the optimization curve at high sky fractions.
-For now we assume identical foreground behavior in all parts of the sky (equivalent to the measured behavior in the BICEP2/Keck region), while in fact the average amplitude -- and possibly the complexity -- of foregrounds will increase as larger sky fractions are targeted.
+For now we assume identical foreground behavior in all parts of the sky (equivalent to the measured behavior in the BICEP2/Keck region), while in fact the average amplitude -- and possibly the complexity -- of foregrounds will increase as larger sky fractions are targeted ]cite{PlanckIntXXX,PlanckIntL}.
 %Concerns about foreground complexity beyond what has been simulated 
-This effect will increase our preference for a small area survey that focuses on the cleanest regions.
+This effect might appear to increase our preference for a small area survey that focuses on the cleanest regions; however, we need to be cautious until we know more about foregrounds at these sensitivity levels.
 Likewise, our ability to identify and address instrumental systematics is often limited by the noise level of the maps, so deeper maps can serve as a guard against instrumental problems.
 % (\comment{Would be helpful to refine this argument with a simple model.}).
 Balancing the forecasting results with these real-world concerns, for subsequent plots we have chosen 3\% as the default sky fraction for CMB-S4 $r$ constraints (assuming a true value of $r=0$).
 
 The preference for small sky area is in tension with other CMB-S4 science goals that prefer large sky areas but have much lower requirements for foreground cleaning.
-To balance these goals, we assume that roughly one half of total CMB-S4 experiment is devoted to a deep survey targeting degree-scale $B$ modes while the other half is spent on a broad survey.
+To balance these goals, we assume that roughly one half of total CMB-S4 experiment is devoted to a deep survey targeting degree-scale $B$ modes, while the other half is spent on a broad survey.
 However, if an important science goal was slightly out of the reach of the default survey, one could consider increasing the effort spent on constraining $r$.
 Fig.~\ref{fig_rforecast2} shows the forecasted sensitivity to $r$ as a function of the total effort spent on the deep survey.
 With 250,000 detectors operating for four years, CMB-S4 will exceed the $\sigma(r)=0.001$ benchmark, again assuming a true value of $r=0$.
 
 If the true value of $r$ is not zero, the optimum survey strategy and detector effort will change.
-As shown in the right panel of Fig.~\ref{fig_rforecast1}, if $r$ is as large as 0.01, then larger sky area will be needed to improve precision; thus, the CMB-S4 deep survey must be designed with the flexibility to increase sky area in the event of a detection.
+As shown in the right panel of Fig.~\ref{fig_rforecast1}, if $r$ is as large as 0.01, then a larger sky area will be needed to improve precision; thus, the CMB-S4 deep survey must be designed with the flexibility to increase sky area in the event of a detection.
 
 %For all scenarios, the inflation survey will require many observing frequencies.
 %These forecasts include eight frequency bands distributed between the four atmospheric windows.
@@ -319,13 +319,13 @@ As shown in the right panel of Fig.~\ref{fig_rforecast1}, if $r$ is as large as 
 In these forecasts, it is assumed that the degree-scale CMB and foregrounds are measured using small-aperture telescopes, while the delensing is achieved with a separate, large-aperture telescope. 
 In all combinations of sky fraction and total detector effort, these forecasts indicate that at least 25--50\% of the total effort must be spent on high-resolution maps that can be used for delensing.
 If the large-aperture, high-resolution data can also be used for degree-scale science, the allocation of resources between bands and telescopes would change slightly, and the overall constraints on $r$ would improve. 
-If, furthermore, cost per detector were independent of telescope aperture size, an argument could be made to do all the science with large-aperture telescopes. 
+If, furthermore, cost per detector were independent of telescope aperture size, an argument could be made to carry out all the science with large-aperture telescopes. 
 Neither of these assumptions is clearly supported by current data, however.
 
 Finally, we note that we have validated the results of the primary Fisher forecasting code used in this section with two other codes, one Fisher-based and one map-based. 
-For several individual points in sky-fraction and detector-effort parameter space, and using a common set of assumptions about observing bands and noise per detector, the three independent codes return consistent values of $\sigma(r)$.
+For several individual points in sky-fraction and detector-effort parameter space (and using a common set of assumptions about observing bands and noise per detector), the three independent codes return consistent values of $\sigma(r)$.
 Worth noting in particular is that the map-based forecasting code does not assume purely Gaussian-distributed foreground emission or translationally invariant foreground properties; rather, foregrounds are simulated in map space based on currently available data.
-The agreement between the map-based approach and the power-spectrum-based approaches provides evidence that the foreground mitigation approach in the design of CMB-S4 (in particular the number of observing bands and their placement in frequency) is adequate.
+The agreement between the map-based approach and the power-spectrum-based approaches provides reassurance that the foreground-mitigation approach in the design of CMB-S4 (in particular the number of observing bands and their placement in frequency) is adequate.
 
 \begin{figure}[h]
 \centering
@@ -342,7 +342,7 @@ The solid green line shows the
 $\Lambda$CDM expectation for the B modes induced by gravitational lensing of E modes, 
 with the dashed line showing $1/10$ of the lensing power. The
 solid blue and red lines show the dust and synchrotron (current upper limit) model 
-assumed in the forecasting, at the foreground minimum of 95~GHz. The levels of dust
+assumed in the forecasting, at the foreground minimum of 95\,GHz. The levels of dust
 and synchrotron are equal to the ones reported in \cite{Array:2015xqh}.}
 \label{fig_clBBr01}
 \end{figure}
@@ -352,8 +352,8 @@ and synchrotron are equal to the ones reported in \cite{Array:2015xqh}.}
 \includegraphics[width=0.49\textwidth]{Inflation/sigr_fsky_det1e6_r0.pdf}
 \includegraphics[width=0.49\textwidth]{Inflation/sigr_fsky_det1e6_r01.pdf}
 \caption{(Top panels)
-Forecasted uncertainty on $r$, as a function of $f_\mathrm{sky}$, for an
-effort of $10^6$ detector-years (150 equivalent), assuming $r=0$ (left panel) 
+Uncertainty forecasts on $r$, as a function of $f_\mathrm{sky}$, for an
+$10^6$ detector-years of effort (150\,GHz equivalent), assuming $r=0$ (left panel) 
 and $r=0.01$ (right panel). The forecasting procedure is specifically targeted 
 towards optimizing tensor-to-scalar parameter constraints in the presence of 
 Galactic foregrounds and gravitational lensing of the CMB. The optimization 
@@ -375,7 +375,7 @@ assumptions made, see Section~\ref{sec_specforecast}}
 \includegraphics[width=0.49\textwidth]{Inflation/sigr_effort_r0.pdf}
 \includegraphics[width=0.49\textwidth]{Inflation/sigr_effort_r01.pdf}
 \caption{(Top Panels)
-Forecasted uncertainty on $r$, as a function of the deep survey effort, for a fixed
+Uncertainty forecasts on $r$, as a function of the deep survey effort, for a fixed
 $f_\mathrm{sky}=0.03$, assuming $r=0$ (left panel) and $r=0.01$ (right panel).
 The forecasting procedure is specifically targeted
 towards optimizing tensor-to-scalar parameter constraints in the presence of 
@@ -807,7 +807,7 @@ The constraints on $\Omega_k$ are relatively weakly dependent on the resolution 
 
 \begin{figure}[h!]
 \centering \includegraphics[width=0.70\textwidth]{Inflation/OmK_vs_FWHM_or_uK_arcmin.pdf}
-\caption{Constraints on mean curvature derived using the CMB4cast framework~\cite{Errard:2015cxa}, assuming CMB-S4 observations with a single 150GHz channel, at $1\,\mu$K-arcmin ($1.4\,\mu$K-arcmin) in temperature (polarization), with a FWHM of 3 arcmin. The instrument is assumed to observe $f_{\rm sky} = 40\%$, covering a multipole range of $30\leq\ell\leq 4000$.
+\caption{Constraints on mean curvature derived using the CMB4cast framework~\cite{Errard:2015cxa}, assuming CMB-S4 observations with a single 150\,GHz channel, at $1\,\mu$K-arcmin ($1.4\,\mu$K-arcmin) in temperature (polarization), with a FWHM of 3 arcmin. The instrument is assumed to observe $f_{\rm sky} = 40\%$, covering a multipole range of $30\leq\ell\leq 4000$.
 We consider no foregrounds, white noise and a single-parameter extension of the standard model: $\Lambda$CDM+$\Omega_k$. 
 The constraints are derived using information from unlensed $TT$, $TE$ and $EE$ spectra along with $\kappa\kappa$ information constructed with an iterative $EB$ quadratic estimator~\cite{Hirata:2002jy,Smith:2010gu}. Cases including {\it Planck\/} use additional $TT$, $TE$ and $EE$ information from {\it Planck}, assuming multipole coverage of $30\leq\ell\leq 2500$ over an additional $20\%$ of sky. A prior on $\tau$ is used: $0.06\pm0.01$. We follow~\cite{Wu:2014hta} for the combinations with DESI-BAO.}
 \label{fig:OmK_vs_FWHM_or_uK_arcmin}
@@ -867,7 +867,7 @@ Ideally, large scale information from {\it Planck\/} \cite{Ade:2015ava} should b
       flat &  $\sigma(f_{\rm NL}) = 26.1$ & $\sigma(f_{\rm NL}) = 15.2$ &  $\sigma(f_{\rm NL}) = 15.2$ & 1.7\\ \hline 
     \end{tabular}
   \end{center}
-  \caption{Forecasted constraints on several well motivated non-Gaussian shapes using $T$ and $E$ modes. {\it Planck\/} forecast is based on Blue Book values, with $f_{\rm sky} = 0.75$. The table shows we need to include low $\ell$ information from {\it Planck\/} for local type non-Gaussianities. CMB-S4 is assumed to have $f_{\rm sky} = 0.4$, $T$-noise = 1 $\mu$K-' and $E$-noise = $\sqrt{2}$ $\mu$K-' and a beam of $1$' and $\ell_{\rm min} = 30$.}
+  \caption{Constraint forecasts for several well motivated non-Gaussian shapes using $T$ and $E$ modes. {\it Planck\/} forecast is based on Blue Book values, with $f_{\rm sky} = 0.75$. The table shows we need to include low $\ell$ information from {\it Planck\/} for local type non-Gaussianities. CMB-S4 is assumed to have $f_{\rm sky} = 0.4$, $T$-noise = 1 $\mu$K-' and $E$-noise = $\sqrt{2}$ $\mu$K-' and a beam of $1$' and $\ell_{\rm min} = 30$.}
   \label{tab:fnl_forecast}
 \end{table*}
 
@@ -1060,7 +1060,7 @@ Multi-field inflationary scenarios that end with phase transitions \cite{Hindmar
         & $\sigma(\alpha_\mathrm{str})= 5.55$ & $\sigma(\alpha_\mathrm{str})=0.64$ \\\hline \hline
     \end{tabular}
   \end{center}
-  \caption{Forecast constraints on the fraction of power in cosmic strings at $\ell=10$ and on the ``wiggliness'' of the string network, $\alpha$. {\it Planck\/} forecast is based on Blue Book values, with $f_{\rm sky} = 0.75$. CMB-S4 will yield an order of magnitude improvement in constraints on cosmic string parameters.}
+  \caption{Constraint forecasts on the fraction of power in cosmic strings at $\ell=10$ and on the ``wiggliness'' of the string network, $\alpha$. {\it Planck\/} forecast is based on Blue Book values, with $f_{\rm sky} = 0.75$. CMB-S4 will yield an order of magnitude improvement in constraints on cosmic string parameters.}
 \end{table}
 
 Cosmic strings can at most contribute O(1\%) to the total CMB temperature anisotropy~\cite{Ade:2013xla,Lizarraga:2014xza,Lazanu:2014eya}, however, they can still generate observable B modes. As shown in \cite{Moss:2014cra}, the bounds on cosmic strings obtained solely from the POLARBEAR \cite{Ade:2014afa} and BICEP2  \cite{Ade:2014xna} B-mode spectra are comparable to those from temperature spectra. 
