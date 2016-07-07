@@ -194,7 +194,7 @@ precise maps of both the E-modes and of the gravitational lensing potential
 \label{snowmssDelens}
 \end{figure}
 
-Moreover, delensing will be a crucial part of the reconstruction of the CMB lensing field for CMB-S4, even for science goals like measuring the neutrino mass.  This is because at low noise levels the standard quadratic reconstruction of lensing using the $EB$ estimator (\cite{Hu:2001kj}) can be improved upon by cleaning the B-mode CMB maps of the lens-induced $B$-mode fluctuations and then performing lens reconstruction again.  This procedure can be repeated until CMB maps cleaned of the lensing signals are produced (See Figure \ref{iterative}).  
+Moreover, delensing will be a crucial part of the reconstruction of the CMB lensing field for CMB-S4, even for science goals like measuring the neutrino mass.  This is because at low noise levels the standard quadratic reconstruction of lensing using the $EB$ estimator (\cite{Hu:2001kj}) can be improved upon by cleaning the B-mode CMB maps of the lens-induced $B$-mode fluctuations and then performing lens reconstruction again.  This procedure can be repeated until CMB maps cleaned of the lensing signals are produced (see Figure \ref{iterative}).  
 
 \begin{figure}[htbp]
 \centering
@@ -204,7 +204,7 @@ Moreover, delensing will be a crucial part of the reconstruction of the CMB lens
 \label{iterative}
 \end{figure}
 
-Delensing in principle can be a perfect procedure: in the limit of no instrumental noise or primordial $B$ modes, the lensing potential and the primordial $E$-mode map can be perfectly imaged (\cite{Hirata:2003ka}).  However, the finite noise in a CMB-S4 survey will lead to residual lensing $B$ modes which cannot be removed and will act as a noise floor for studying primordial B-modes from tensors.  
+Delensing in principle can be a nearly-perfect procedure: in the limit of no instrumental noise or primordial $B$ modes, the lensing potential and the primordial $E$-mode map can be nearly-perfectly imaged (\cite{Hirata:2003ka}).  However, the finite noise in a CMB-S4 survey will lead to residual lensing $B$ modes which cannot be removed and will act as a noise floor for studying primordial B-modes from tensors.  In addition, higher order effects may ultimately limit the reconstruction.
 
 
 It is important to have relatively high-angular resolution maps in order to obtain the small-scale $E$ and $B$ fluctuations needed for the $EB$ quadratic lensing estimator.  As shown in Figure \ref{sigCon}, quadratic EB lens reconstruction requires high-fidelity measurements of the E and B polarization fields on a variety of angular scales.  For large-scale lenses, such as those at degree scales of $L=300$, the E and B fields contain information to scales of several arcminutes ($l \sim 2000$).  For arcminute-scale lenses at $L = 2000$, the B field must be measured to even smaller scales, $l > 3000$. 
@@ -255,6 +255,7 @@ In addition, the lensing power spectrum itself may not be exactly known, due to 
 \section{Impact of CMB Lensing/Delensing on Parameters}\label{forecasts}
 
 Measurements of CMB lensing are essential to all the key science goals of CMB-S4.  Since CMB lensing is a sensitive probe of the matter power spectrum, CMB lensing measurements added to measurements of the primordial CMB power spectrum serve to significantly tighten parameter constraints.  In particular, measurements of the CMB lensing power spectrum (4-point signal) and the peak-smearing lensing induces in the CMB primordial power spectrum (2-point signal) yield tight constraints on the sum of the masses of the neutrinos ($\sum {m_\nu}$).  
+\vspace{0.3cm}
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.7\textwidth]{CMBLensing/Neff_Mnu.png}
@@ -265,8 +266,8 @@ Cross-correlations of CMB lensing maps with maps of galaxy density and galaxy sh
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.45\textwidth]{CMBLensing/sigma-r.png}
-\caption{Delensing is critical to achieving the tightest constraints on $r$.  The impact of delensing on $r$ is also more significant as the sensitivity of the experiment is increased. For a $1 \mu $K-arcmin effective map depth, iterative delensing can improve the constraint on $r$ by a factor of five (see text for details).}
+\includegraphics[width=0.7\textwidth]{CMBLensing/inflation.png}
+\caption{Delensing is critical to achieving the tightest constraints on $r$.  The impact of delensing on $r$ is also more significant as the sensitivity of the experiment is increased. For representive CMB-S4 map sensitivites, iterative delensing can improve the constraint on $r$ by roughly a factor of 2.5.}
 \label{inflation}
 \end{figure}
 
@@ -282,11 +283,9 @@ For Figure \ref{neutrinos}, no foregrounds are assumed and only white instrument
 \label{darkEnergy}
 \end{figure}
 
-In Figure \ref{inflation} the impact of delensing on measuring the tensor-to-scalar ratio $r$ is shown.  This Figure assumes 10\% of the sky is observed with a single-dish CMB-S4 configuration for simplicity, which can measure modes between $l=40-4000$ and has 3-arcminute resolution.  Two effective, foreground-cleaned map depths are chosen, $1 \mu $K-arcmin and $2 \mu $K-arcmin, to demonstrate that the impact of delensing on $r$ is more significant as the sensitivity of the experiment is increased.  For a $1 \mu $K-arcmin effective map depth, for example, iterative delensing improves the constrain on $r$ by a factor of five.
+In Figure \ref{inflation} the impact of delensing on measuring the tensor-to-scalar ratio $r$ is shown.  This figure assumes the same instrument configuration and foreground-cleaned map depths as discussed in Chapters 2 and 8 for a survey covering 10\% of the sky.  Delensing the B-mode power spectrum using a lensing reconstruction made from E-mode and B-mode maps increases the senstivity to $r$ by a factor of 2.5.  For deeper effective map depths, the improvement on the $r$ constraint from delensing is even larger (see Figure \ref{iterative}).  For a $1 \mu $K-arcmin effective map depth, for example, iterative delensing improves the constraint on $r$ by a factor of five.  
 
 Figure \ref{darkEnergy} shows the constraints on dark energy from CMB-S4 obtained largely from the cross-correlation of CMB lensing with other lower-redshift probes of large-scale structure.  Here is shown the improvement when a 1\% measurement of the cosmographic distance ratio (see Section \ref{lensxlens}), obtained from the combination of CMB-S4 lensing, LSST shear, and DESI galaxy survey data, is combined with Planck CMB data.  This is just one example of a number of cross-correlations with CMB-S4 lensing that can constrain the geometry of the Universe and dark energy properties.
-
-
 
 
 %\bibliography{cmbs4}
