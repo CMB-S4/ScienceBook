@@ -70,8 +70,10 @@ on $r$ in this document assume the following baseline instrument configuration p
 \end{itemize}
 %
 In Section~\ref{sec:needs}, these assumptions are used to search sky fraction parameter space, with 
-$\sigma(r)$ as the figure of merit. We verify these results using a second Fisher code and a map-based
+$\sigma(r)$ as the figure of merit. We verify these results using a second Fisher code (described below) and a map-based
 forecasting method (see next section).
+
+The second Fisher code---detailed in \cite{Errard:2015cxa}---parameterizes the CMB-S4 instrument by its sky and multipole coverage, along with the central frequency, bandwidth, resolution and white-noise level of each channel. The ability of the instrument to remove diffuse foregrounds is estimated using a parametric maximum-likelihood forecast \cite{Errard:2011vi,Errard:2012qx} based on Planck foreground measurements \cite{Adam:2015tpy,Adam:2015wua}. The impacts of foreground subtraction---residual foregrounds and increased noise relative to the raw combination of all channels---are propagated to a delensing forecast (based on \cite{Smith:2010gu}), which also estimates the sensitivity to the lensing convergence power spectrum. Constraints on $r$ are produced with a standard Fisher forecast (see Section~\ref{sec:ttee} for a complete description) using temperature, $E$-mode, delensed-$B$-mode and lensing convergence information, marginalizing over the amplitude and multipole-dependence of the foreground residuals. As the mitigation of systematic effects is not currently modelled within this code, constraints on $r$ are typically a factor of 2.5 more optimistic than when these effects are included.
 
 \subsubsection{Map-based domain forecasting}
 
