@@ -34,10 +34,10 @@
 
 Direct interactions between neutrinos and observable matter effectively ceased about one second after the end of inflation.  Nevertheless, the total energy density carried by neutrinos was comparable to other components through recent cosmological times.  As a result, the gravitational effect of the neutrinos is detectable both at the time of recombination and in the growth of structure at later times~\cite{Abazajian:2013oma}, leaving imprints in the temperature and polarization spectrum as well as in CMB lensing.
 
-CMB-S4 can improve our understanding of neutrino physics in regimes of interest for both cosmology and particle physics.  Arguably the most important parameters of interest will be the sum of the neutrino masses ($\sum m_\nu$), the effective number of neutrino species ($\Neff$) and the helium fraction ($Y_p$).  These three parameters are highly constrained within the Standard model of particle physics that are testable with a CMB-S4 experiment:
+CMB-S4 can improve our understanding of neutrino physics in regimes of interest for both particle physics and neutrino cosmology.  Arguably the most important parameters of interest will be the sum of the neutrino masses ($\sum m_\nu$), the effective number of neutrino species ($\Neff$) and the helium fraction ($Y_p$).  These three parameters are highly constrained within the Standard model of particle physics that are testable with a CMB-S4 experiment:
 \begin{itemize}
 \item $ \sum m_\nu \gtrsim \, 58$ meV is the lower bound guaranteed by observations of solar and atmospheric neutrino oscillations.  A CMB experiment with $\sigma(\sum m_\nu) < 20$ meV would be guaranteed a detection of a least 3$\sigma$.  At this level, one can detect the overall scale of the neutrino masses even for a normal ordered hierarchy.
-\item $\Neff =  3.045$ and $Y_p \approx 0.2311 + 0.9502 \, \Omega_b h^2$ are predicted by standard neutrino decoupling and big bang nucleosynethesis (BBN).  $\Neff$ is a measure of the total energy density in neutrinos at recombination while $Y_p$ is a measures the neutrino distribution at BBN. 
+\item $\Neff =  3.046$ and $Y_p \approx 0.2311 + 0.9502 \, \Omega_b h^2$ are predicted by standard neutrino decoupling and big bang nucleosynethesis (BBN).  $\Neff$ is a measure of the total energy density in neutrinos at recombination while $Y_p$ is a measures the neutrino distribution at BBN. 
 \end{itemize}
 Current CMB data already provides a robust detection of the cosmic neutrino background at $\sim10 \sigma$.  A CMB-S4 experiment will provide an order of magnitude improvement in sensitivity that opens a new window back to the time of neutrino decoupling and beyond.  $\Neff$ and $Y_p$ are also sensitive to any additional light particles beyond the Standard model, such as sterile neutrinos or axions.  The implications of these will be explore in more detail in Chapter 4, where we will discuss the observational signatures and forecasts for future measurements of $\Neff$ and $Y_p$.  
 
@@ -45,6 +45,7 @@ Section~\ref{sec:neureview} will review neutrino cosmology and the motivation fo
 
 \section{ Review of Neutrino Cosmology}\label{sec:neureview}
 
+Cosmological measurements of neutrinos depend on our detailed understanding of the cosmic history, starting with their decoupling at high temperatures ($T \lesssim 10$ MeV) through to their contribution to the growth of structure at late times.  In this Section we will give an overview of these epochs with an eye towards to the measurements of $\sum m_\nu$, $\Neff$ and $Y_p$ to be discussed in the next two chapters.  
 
 \subsection{Thermal History of the Early Universe} \label{ThermalHistory}
 In this section, we will give a sketch of the thermal history of the standard hot big bang universe when the temperature of the plasma was falling from about $10^{11}$~K to about $10^8$~K following Section 3.1 of \cite{Weinberg:2008zzc}.  For other reviews see \cite{Dolgov:2002wy,Agashe:2014kda}.  During this era, there are two events of particular interest: neutrinos decoupled from the rest of the plasma, and a short time later electrons and positrons annihilated, heating the photons relative to the neutrinos.  Our task is to follow how these events impact the evolution of the energy densities of the photons and neutrinos.
@@ -238,7 +239,7 @@ The primary challenges for the lensing measurement are degeneracies with other c
 \end{itemize}
 In addition to degeneracies in $\Lambda$CDM there can be degeneracies with possible extensions.  Most notably:
 \begin{itemize}
-\item $\Neff$: The density of neutrinos after they become non-relativistic is given by $\rho_\nu \simeq m_\nu n_\nu$ where $n_\nu$ is the number density.  Therefore, we only measure the mass if we know the number density to sufficient accuracy.  Fortunately, as we will discuss in the next section, measurements of the neutrino energy density from the primary CMB will be sufficiently accurate as to make this degeneracy insignificant under plausible assumptions.
+\item $\Neff$: The density of neutrinos after they become non-relativistic is given by $\rho_\nu \simeq m_\nu n_\nu$ where $n_\nu$ is the number density.  Therefore, we only measure the mass if we know the number density to sufficient accuracy.  Fortunately, as we will discuss in the next chapter, measurements of the neutrino energy density from the primary CMB will be sufficiently accurate as to make this degeneracy insignificant under plausible assumptions.
 \end{itemize}
 In principle, measurement of the free streaming scale directly in the matter power spectrum would separate the neutrino mass from most other physical quantities.  Unfortunately, given current limits on the neutrino mass, the change to the shape of the lensing potential power spectrum is not expected to drive future constraints.  
 
@@ -293,7 +294,7 @@ Planck + DESI Galaxy Power spectrum + BAO         &			0.024		\\
 Planck + LSST Lensing and Galaxy Clustering         &   0.02					\\
 \hline
 \end{tabular}
-\caption{Forecasted constraints on neutrino mass from future galaxy surveys in combination with Planck CMB from \cite{Font-Ribera:2013rwa}}
+\caption{Forecasted constraints on neutrino mass from future galaxy surveys in combination with Planck CMB from \cite{Font-Ribera:2013rwa}.  These forecasts assume Planck Blue Book priors for $\tau$, which is a stronger assumption than we apply to our forecasting.  See related discussion in Section~\ref{sec:nuforecasts}. }
 \label{table:numassLSS}
 \end{center}
 \end{table}
@@ -304,13 +305,20 @@ There are a number synergistic opportunities between CMB S4 and external cosmolo
 
 
 
-\subsection{Forecasts}
+\subsection{Forecasts}\label{sec:nuforecasts}
 
-As we described in Section~\ref{sec:neulens}, the most concrete constrains on $\sum m_\nu$ from CMB Stage IV are derived from the CMB lensing power spectrum, as seen in Equation~(\ref{eq:CellPhiPhi}).  Our sensitivity to $\sum m_\nu$ is the limited by the error in the reconstruction of $\phi$ from the $T$ or $E/B$ maps.  The noise for the lensing reconstruction is discussed in detail in Section~\ref{sec:lensing_intro} and the noise curves for both the $TT$- and $EB$-estimators are show in Figure~\ref{n0s_s4}.  
+Target thresholds for $\sigma(\sum m_\nu)$ are $20$ meV and $30$ meV, corresponding to 3$\sigma$ and 2$\sigma$ detections of the minimum value for the normal hierarchy, $\sum m_\nu \sim 58$ meV.  Our goal is to explore the degree to which CMB Stage IV can reach these targets with realistic forecasts.  
+
+The most concrete constrains on $\sum m_\nu$ from the CMB are derived from the CMB lensing power spectrum, as seen in Equation~(\ref{eq:CellPhiPhi}).  Our sensitivity to $\sum m_\nu$ is the limited by the error in the reconstruction of $\phi$ from the $T$ or $E/B$ maps.  The noise for the lensing reconstruction is discussed in detail in Section~\ref{sec:lensing_intro} and the noise curves for both the $TT$- and $EB$-estimators are show in Figure~\ref{n0s_s4}.  There are many reasons to prefer the$EB$-estimator which motivates a sensitive $< 5 \, \mu K$-arcmin.  
 
 Forecasts for CMB Stage IV with and without DESI BAO are shown in Figure~\ref{fig:mnuforecast}, following the methodology outlined in Section~\ref{sec:Forecasting}.  As we explained in Section~\ref{sec:neulens}, the main signature neutrino mass in CMB lensing is degenerate with both $\tau$ and $\Omega_m h^2$.  The sensitivity is therefore strongly dependent on the constraints on these parameters both internally and with external data.  We can see the effect of the measurement of $\Omega_m h^2$ by comparing the results with and without DESI BAO.  In particular, we note that the constraints improve by a factor or three by including DESI.  
 
-We have assumed that $\ell \geq 30$ and therefore we do not constraint $\tau$ directly.  We instead assume an external prior of $\tau = 0.06 \pm 0.01$ which is consistent with the current Planck measurement and sensitivity.  Note that this is somewhat larger that the Planck Blue Book values which leads to weaker constraints.  In particular, we see that $\sigma(\sum m_\nu) > 26$ meV for the full range of beam size and sensitivity.  These results improve significantly with a stronger prior on $\tau$.
+We have assumed that $\ell \geq 30$ and therefore we do not constrain $\tau$ directly.  We instead assume an external prior of $\tau = 0.06 \pm 0.01$ which is consistent with the current Planck measurement and sensitivity.  Even having assumed no further improvements in the measure of $\tau$, we see that we reach $\sigma(\sum m_\nu) < 30$ meV for a wide range of experimental configurations.  On the other hand, we also note that there is little improvement with decreased noise or beamsize as we saturate at $\sigma(\sum m_\nu) \sim 26$ meV.  The reason is we are essentially limited by degeneracy with $\tau$ and without improving the measurement of $\tau$ we are ultimately limited in the sensitivity to $\sum m_\nu$.  This is true even if we increase $f_{\rm sky} >0.4$.  
+
+
+
+
+%Note that this is somewhat larger that the Planck Blue Book values which leads to weaker constraints.  In particular, we see that $\sigma(\sum m_\nu) > 26$ meV for the full range of beam size and sensitivity.  
 
 \begin{figure}[h!]
 \begin{center}
@@ -321,6 +329,26 @@ We have assumed that $\ell \geq 30$ and therefore we do not constraint $\tau$ di
 \label{fig:mnuforecast}
 \end{center}
 \end{figure} 
+
+In order to reach the 3$\sigma$ target, $\sigma(\sum m_\nu) < 20$ meV, the most dramatic improvements will come from improved measurements of $\tau$.  As shown in Figure~\ref{fig:mnu_tau}, even with a measurement at the level of $\sigma(\tau) = 0.006$, we can reach $\sigma(\sum m_\nu) \sim 20$ for a variety of plausible configurations.  However, as before, we see that there are only moderate improvements coming from lower noise or smaller beams.  We see a similar limitation that applies to other cosmological probes, as seen in Table~\ref{table:numassLSS}, which also saturate at a similar sensitivity.
+
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.4]{Neutrinos/S4+DESI_BeamVsNoise_tauprior.png} \hspace{0.025cm}
+\includegraphics[scale=0.4]{Neutrinos/S4+DESI_BeamVsNoise_tauprior.png}
+
+\caption{ {\it Left:} Forecasts for $\sigma(\sum m_\nu)$ assuming $\Lambda$CDM + $\sum m_\nu$ using CMB Stage IV and DESI BAO.  We assume a prior $\tau = 0.06 \pm 0.006$, corresponding to the Planck Blue Book expected sensitivity. {\it Right:} TBD.  }
+\label{fig:mnu_tau}
+\end{center}
+\end{figure} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% Placeholder for Neelima's systematics discussion %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
 
 \section{Relation to Lab Experiments}\label{sec:lab}
 
@@ -497,7 +525,7 @@ chirality, which does not occur for pure Majorana or Dirac mass cases
 or for the conventional seesaw mechanism. One proposed mechanism is
 the minimal mini-seesaw ($m_T =0$ and $m_D\ll
 m_S\sim\mathcal{O}(\mathrm{eV})$,
-e.g. Ref.\cite{deGouvea:2011zz,Donini:2012tt}. In such models, the
+e.g. Ref.\cite{deGouvea:2011zz,Donini:2012tt} ). In such models, the
 sterile neutrinos can have the appropriate masses and mixings to
 accommodate the short baseline anomalies. For standard thermal
 histories, these sterile neutrinos are typically fully thermalized
@@ -534,18 +562,18 @@ experiment follow up \cite{Abazajian:2012ys}.
 %definitively test for the presence of extra neutrino number and mass
 %consistent with sterile neutrinos.
 
-In fact, we know little about the sterile neutrino sector, though its possible existence is in part motivated by the experimental establishment that neutrinos have nonzero rest masses as discussed above. Stage IV CMB probes could shed light on the sterile neutrino mass and vacuum flavor mixing parameters invoked to explain the experimental neutrino anomalies. It must be kept in mind that sterile neutrinos might have different masses and much smaller vacuum mixing with active neutrinos species. Telltale signatures in $\Neff$, $\sum m_{\nu}$, and BBN 4He and deuterium abundances can allow Stage IV CMB to probe this larger parameter space.
+In fact, we know little about the sterile neutrino sector, though its possible existence is in part motivated by the experimental establishment that neutrinos have nonzero rest masses as discussed above. Stage IV CMB probes could shed light on the sterile neutrino mass and vacuum flavor mixing parameters invoked to explain the experimental neutrino anomalies. It must be kept in mind that sterile neutrinos might have different masses and much smaller vacuum mixing with active neutrinos species. Telltale signatures in $\Neff$, $\sum m_{\nu}$, and BBN 4He and deuterium abundances can allow Stage IV CMB to probe this larger parameter space.  These measurements will be discussed in the next chapter.
 
 
 
 \section{Detection Scenarios for Neutrino Physics} \label{sec:neuscenarios}
 
-As discussed in Section~\ref{sec:lab}, the measurements of the absolute scale of the neutrinos masses from the lab and from cosmology are complimentary in that they are sensitive to different parameters.  In principle, there are a variety of possible scenarios where detections are made both in cosmology and in the lab.  However, given current constraints, most scenarios that involve mostly conventional neutrino physics will result in upper limits from the lab based measurements and a detection of $\sum m_\nu$ and/or $\Delta\Neff \equiv \Neff - 3.046$.  A plausible list of possibilities is shown in Table~\ref{table:neutrinoscenarios}:
+As discussed in Section~\ref{sec:lab}, the measurements of the absolute scale of the neutrinos masses from the lab and from cosmology are complimentary in that they are sensitive to different parameters.  In principle, there are a variety of possible scenarios where detections are made both in cosmology and in the lab.  However, given current constraints, most scenarios that involve mostly conventional neutrino physics will result in upper limits from the lab based measurements and a detection of $\sum m_\nu$ and/or $\Delta\Neff \equiv \Neff - 3.046$.  We will discuss $\Neff$ is greater detail in the next chapter but here it serves as a measurement of the total number of thermal neutrinos which calibrates the cosmological mass measurement. A plausible list of detection scenarios are shown in Table~\ref{table:neutrinoscenarios}:
 
 \begin{itemize}
 \item Conventional neutrino mass scenarios imply majorana masses with a normal or inverted hierarchy.  The normal hierarchy with $\sum m_\nu \simeq 58$~meV is perhaps the most conventional as it reflects the same hierarchical / non-degenerate masses that appear in the charged fermions of the Standard Model.  This scenario is only detectable in the near term via cosmology due to the small size of the neutrino masses.  Somewhat more exotic is the case of a Dirac mass, as it predicts the existence of new light states.
 
-\item The more exotic possibility is that there could be sterile neutrinos that are consistent with a variety of anomalies, as discussed in Section~\ref{sec:sterile_neutrinos}.  In this case, we would observe a correlated signature in both a excess in $\sum m_\nu$ and $\Delta \Neff$.  The sterile neutrino parameters that are most consistent with the anomalies in short-baseline experiments are already in tension with cosmology but would be detected at high significance if true.  
+\item The more exotic possibility is that there could be sterile neutrinos that are consistent with a variety of anomalies, as discussed in Section~\ref{sec:sterile_neutrinos}.  In this case, we would observe a correlated signature in both a excess in $\sum m_\nu$ and $\Delta \Neff$ due to the presence of thermalized sterile neutrinos in addition to the active neutrinos.  The sterile neutrino parameters that are most consistent with the anomalies in short-baseline experiments are already in tension with cosmology but would be detected at high significance if true.  
 
 \item Given the current cosmological constraints on $\sum m_\nu$, detections of $m_\beta$ and $m_{\beta \beta}$ in near term experiments would require a significant change to the thermal history.  In particular, a detection of a Majorona mass at the $0.25 \, {\rm eV}$ level would predict a $\sum m_\nu$ that is already excluded by cosmology.  Making the current (or future) limit consistent then requires a mechanism that satisfies both the present bound on $\sum m_\nu$ and the current constraints on $\Neff$.
 
