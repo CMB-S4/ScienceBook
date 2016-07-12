@@ -137,107 +137,29 @@ inform component separation and parameter extraction.
 \subsubsection{CMB lensing covariances for \cmbexp }
 \label{se:covs}
 
-The measured lensing power spectrum is given by a four-point function of the lensed CMB.  This is not statistically independent from the lensed CMB two-point function, because both depend on the same observed, lensed CMB maps.  As a consequence, measured lensing power spectra and lensed CMB power spectra may be correlated.  This correlation should be taken into account when combining these measurements to avoid spurious double counting of information.  For the specific case of Planck this correlation is negligible  \cite{Schmittfull:2013uea}.  However, the level of correlation depends on experiment specifications and the multipole range where power spectra have high signal-to-noise.  The correlation should thus be included in analyses that combine two- and four-point measurements unless it is known to be negligible for a specific experiment. 
+The measured lensing power spectrum is given by a four-point function of the lensed CMB. 
+This is not statistically independent from the lensed CMB two-point function, because both depend on the same observed, lensed CMB maps. 
+As a consequence, measured lensing power spectra and lensed CMB power spectra may be correlated. 
+This correlation should be taken into account when combining these measurements to avoid spurious double counting of information. 
+For the specific case of Planck this correlation is negligible \cite{Schmittfull:2013uea}. 
+However, the level of correlation depends on experiment specifications and the multipole range where power spectra have high signal-to-noise. 
+The correlation should thus be included in analyses that combine two- and four-point measurements unless it is known to be negligible for a specific experiment.
+\\
 
-For \cmbexp\, the best lensing measurements are expected to come from the auto-power spectrum of $\EB$ reconstruction.  Its covariance with the lensed $\EE$ and $\BB$ power spectra depends on six-point functions of the lensed CMB, e.g.~$\langle \EB\EB\EE \rangle$. Although many terms contribute, the dominant effect is expected from only a few contributions \cite{Schmittfull:2013uea}:  
+The forecasted noise level for CMB-S4 is much lower than the noise level for Planck, and the reconstruction of the lensing potential power spectrum will come from a mixture of temperature and polarisation data.
+In this context, modelling the correlations only in the case of temperature is not accurate enough.
+Instead, a minimum variance lensing estimator out of all the measured quadratic pairs needs to be considered, and contributions arising from all couplings of the CMB six-point function would need to be modelled.
+There are a number of further challenges involving the covariance of CMB N-point functions, which we do not treat in detail here but are addressed in \cite{Peloton:prep} for example. 
+\\
 
-\begin{itemize}
-\item First, there are signal contributions to the covariance of the form
-\begin{eqnarray}
-  \label{eq:covEEphiEBphiEB}
-  \mathrm{cov}(\hat C^{\EE}_{l,\mathrm{expt}},\, 
-  \hat{C}^{\hat\phi_{\EB}\hat\phi_{\EB}}_{L})_\mathrm{signal}
-&=&
-\frac{\partial C^{\EE}_l}{\partial C^{\phi\phi}_{L}}
-\frac{2}{2L+1} (C^{\phi\phi}_{L})^2,\\
-  \label{eq:covBBphiEBphiEB}
-  \mathrm{cov}(\hat C^{\BB}_{l,\mathrm{expt}},\, 
-  \hat{C}^{\hat\phi_{\EB}\hat\phi_{\EB}}_{L})_\mathrm{signal}
-&=&
-\frac{\partial C^{\BB}_l}{\partial C^{\phi\phi}_{L}}
-\frac{2}{2L+1} (C^{\phi\phi}_{L})^2,
-\end{eqnarray}
-where $\hat C$ are data power spectra, and $C_\expt$ are power spectra of observed (noisy, beam-deconvolved) CMB fluctuations $X\in \{E,B\}$:
-\begin{equation}
-  \label{eq:CXXexptExpectation}
-  \langle\hat C^{\XX}_{l,\mathrm{expt}}\rangle = 
- C^{\XX}_{l,\mathrm{expt}} = C^{\XX}_{l}
-+ \left(\frac{\sigma_X}{T_\mathrm{CMB}}\right)^2 
-  e^{l(l+1)\sigma^2_{\mathrm{FWHM}}/(8\ln 2)}.
-\end{equation}
-The signal covariance in Eqs.~\eq{covEEphiEBphiEB} and \eq{covBBphiEBphiEB} arises because cosmic variance fluctuations of the true lensing potential (i.e.~fluctuations of matter along the line of sight) modify the lensing reconstruction power as well as the lensed $\EE$ and $\BB$ power spectra.  Formally, this follows from the connected part of the lensed CMB six-point function.
-
-\item Second, a noise covariance follows from the disconnected six-point function,
-\begin{equation}
-  \label{eq:2}
-\mathrm{cov}(\hat C^{\EE}_{l,\expt}, \,\hat C^{\hat\phi_\EB\hat\phi_\EB}_L)_\mathrm{noise}
-=
-\frac{2}{2l+1}(C^\EE_{l,\expt})^2 \, \frac{\partial(2\hat N^{(0)}_L)}{\partial \hat C^\EE_{l,\expt}},
-\end{equation}
-and similarly for $\BB$.
-This noise covariance arises because fluctuations of the CMB and instrumental noise change both the Gaussian reconstruction noise $N^{(0)}$ and the CMB power spectra.  It is however cancelled if the Gaussian $N^{(0)}$ reconstruction noise is subtracted in a realization-dependent way \cite{Dvorkin:2008tf,Hanson:2010rp,Namikawa:2012pe,Schmittfull:2013uea}
-\begin{equation}
-  \label{eq:RDN0procedure}
-  \hat C^{\hat\phi\hat\phi}_L \,\rightarrow \,
-\hat C^{\hat\phi\hat\phi}_L - 2 \hat N^{(0)}_L + N^{(0)}_{L}.
-\end{equation}
-For the specific case of $\EB\EB$ reconstruction, the realization-dependent $\hat N^{(0)}$ is 
-\begin{equation}
-  \label{eq:RDN0}
-  \hat N^{(0)}_L = \frac{\left|A_L^\EB\right|^2}{2L+1}\sum_{l_1,l_2} 
-\left| g^\EB_{l_1l_2}(L) \right|^2
-\,\frac{1}{2}\,\left[\hat C^{EE}_{l_1,\expt} C^{\BB}_{l_2,\expt}+ C^{EE}_{l_1,\expt} \hat C^{\BB}_{l_2,\expt}\right],
-\end{equation}
-where $A^\EB$ is the estimator normalization and $g^\EB$ is the optimal weight given by \cite{Okamoto:2003zw}
-\begin{equation}
-  \label{eq:gweight}
-  g^\EB_{l_1l_2}(L) = -i\,\frac{C^\EE_{l_1} {}_{2}F_{l_2Ll_1} - C^\BB_{l_2}{}_2F_{l_1Ll_2}}{C^\EE_{l_1,\expt}C^\BB_{l_2,\expt}}
-\end{equation}
-with lensed spectra in numerator and denominator \cite{Lewis:2011fk,Hanson:2010rp}, and
-\begin{equation}
-  \label{eq:BigF}
-  {}_{\pm
-    s}F_{l_1Ll_2}=[-l_1(l_1+1)+L(L+1)+l_2(l_2+1)]\sqrt{\frac{(2l_1+1)
-      (2L+1) (2l_2+1)}{16\pi}}
-\left( \begin{matrix} 
-l_1 & L & l_2 \\ 
- \pm s & 0 & \mp s
-\end{matrix} \right).
-\end{equation}
-In the square brackets in \eqq{RDN0} one of the CMB power spectra is replaced by a data power spectrum. On average,  $\langle\hat N^{(0)}_L\rangle=N^{(0)}_L$.  This realization-dependent $\hat N^{(0)}$ subtraction also follows more formally from optimal trispectrum estimation (see Appendix~B in \cite{Schmittfull:2013uea} and Appendix~D in \cite{Ade:2013tyw}).
-\item A third covariance contribution  arises from the connected trispectrum part of the CMB six-point function. If realization-dependent $\hat N^{(0)}$  subtraction is used, the dominant remaining term is expected to be (at leading order in $\phi$, see also Eq.~(D4) of \cite{Schmittfull:2013uea}; similarly for $\BB$)
-\begin{equation}
-  \label{eq:cov_EBEB_EE}
-      \mathrm{cov}(\hat C_{l,\expt}^{\EE},\, \hat C_L^{\hat\phi^\EB\hat\phi^\EB}) = 
-2\,\frac{C^{\phi\phi}_L}{A_L^\EB}\,
-\frac{\partial (2\hat N_L^{(0)})}{\partial \hat C^{\EE}_{l,\expt}}\,
-\frac{2}{2l+1}
-(C^\EE_{l,\expt})^2.
-\end{equation}
-
-\end{itemize}
-
-Similarly to avoiding the noise covariance with the realization-dependent $\hat N^{(0)}$ subtraction, the signal covariance could in principle also be avoided by delensing CMB power spectra with the estimated lensing reconstruction, e.g.~by forming \cite{Schmittfull:2013uea}
-\begin{equation}
-  \label{eq:matter_CV_mitigation}
-  \hat{C}^{\EE}_{l,\expt} \to  \hat{C}^{\EE}_{l,\expt}- 
-\sum_{L} 
- \frac{\partial C_{l}^{\EE}}{\partial C_{L}^{\phi\phi}}
-\left(\frac{C_{L}^{\phi\phi}}{\langle
-\hat{C}_{L}^{\hat{\phi}\hat{\phi}}\rangle}\right)^2
-(\hat{C}_{L}^{\hat{\phi}\hat{\phi}}-2\hat{N}_{L}^{(0)}),
-\end{equation}
-or by applying more advanced delensing methods.  However this has not yet been tested in practice and only makes sense if lensing reconstructions have sufficient signal-to-noise.  In general, forming linear combinations of measured lensing and CMB power spectra as in Eqs.~\eq{RDN0procedure} and \eq{matter_CV_mitigation} does not add any new information, but does simplify covariances.
-
-Though these are expected to be the dominant contributions to the covariance, 
-contributions do arise from other couplings of the CMB six-point function, and testing against simulations will be necessary to determine if the above contributions are sufficient.  If this is found to be the case, then using these analytical covariances will be preferable because they are less noisy than those derived from simulations.   
- 
-There are a number of further challenges involving the covariance of CMB $N$-point functions, which 
-we do not treat in detail here but which will need to be addressed. For instance,
-in addition to the cross-covariance between two-point and four-point functions of the CMB, these quantities can each have non-trivial auto-covariances.  
-%Covariances between CMB power spectra have been computed in \cite{Smith:2006nk,Li:2006pu,BenoitLevy:2012va}. They contain similar building blocks as the covariances above \cite{BenoitLevy:2012va}.  Covariances between two four-point lensing power spectra involve the lensed CMB eight-point function.  
-%While many covariance contributions are cancelled when using realization-dependent $\hat N^{(0)}$ subtraction \cite{Hanson:2010rp}, other contributions may be relevant for future experiments.  
-Additionally, the discussion above applies to the standard quadratic lensing reconstruction estimators, and the situation may be different for iterative or maximum-likelihood lensing estimators \cite{Hirata:2002jy}.
+\cite{Schmittfull:2013uea} and \cite{Peloton:prep} identified three main contributions to the cross-covariance: The noise contribution arising because fluctuations of the unlensed CMB and instrumental noise change both the Gaussian reconstruction noise $N^{(0)}$ and the CMB power spectra;
+the signal contribution from the cosmic variance fluctuations of the true lensing potential (i.e.~fluctuations of matter along the line of sight); and contributions coming from the connected trispectrum part of the CMB six-point function.
+Those contributions have been modelled with a good accuracy, allowing to have very good agreement against simulations.
+The noise contribution is not present if the Gaussian reconstruction bias $N^{(0)}$ is subtracted in a realization-dependent way using the measured CMB power spectrum in our universe (see e.g.~\cite{Hanson:2010rp,Schmittfull:2013uea}).
+However for an experiment such as CMB-S4, the last two contributions contribute the most to the correlation between lensing power spectra and lensed CMB power spectra, reaching few tens of percent in some cases.
+The signal covariance could in principle also be avoided by delensing CMB power spectra with the estimated lensing reconstruction by mimicking the realization-dependent technique as shown in \cite{Schmittfull:2013uea}, or by applying more advanced delensing methods as described in Section \ref{delens}.
+In addition to the cross-covariance between two-point and four-point functions of the CMB, these quantities can each have non-trivial auto-covariances which can again be modeled as shown in e.g.~\cite{Smith:2005ue,Smith:2006nk,Li:2006pu,BenoitLevy:2012va,Schmittfull:2013uea,Peloton:prep}. 
+However we want to emphasise that the discussion above applies to the standard quadratic lensing reconstruction estimators, and the situation may be different for iterative or maximum-likelihood lensing estimators \cite{Hirata:2002jy}.
 
 \subsubsection{Delensing}
 For noise levels below $\Delta_P \simeq 5 \mu$K-arcmin,  the dominant source of effective noise in the search for primordial $B$ modes is the fluctuation induced by the lensing of $E$ modes from recombination.  This signal has a well-understood amplitude, and unlike many other sources of astrophysical fluctuation in the map, it cannot be removed with multifrequency data.  Instead it must be removed either using map-level estimates of both the primordial $E$-mode maps and the CMB lensing potential $\phi$ or using a prediction for the lensing $B$-mode spectrum. The latter approach necessarily leaves some cosmic variance residual of the lensing signal after cleaning, while the former can in principle result in nearly perfect cleaning, so we will concentrate on that approach here.
