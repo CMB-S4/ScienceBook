@@ -179,15 +179,15 @@ The equations of motion for $N$ (the lapse) and $N^i$ (the shift) are the Hamilt
 %RF perhaps add Fourier transform and define horizon exit, freeze out at this point
 Because the equations of motion are invariant under translations, and the perturbations are linear or nearly so, it is convenient to work with the Fourier transforms
 \begin{equation}
-\zeta(t,\vec{x})=\int \frac{d^3 k}{(2\pi)^3}\zeta(t,\vec{k})e^{i \vec{k}\cdot\vec{x}}+{\rm h.c.}\qquad{\rm and}\qquad\gamma_{ij}(t,\vec{x})=\sum\limits_\sigma\int\frac{d^3k}{(2\pi)^3}\gamma_\sigma(t,\vec{k})e_{ij}(\vec{k},\sigma)e^{i \vec{k}\cdot\vec{x}}+{\rm h.c.}\,,
+\zeta(t,\mathbf{x})=\int \frac{d^3 k}{(2\pi)^3}\zeta(t,\mathbf{k})e^{i \mathbf{k}\cdot\mathbf{x}}+{\rm h.c.}\qquad{\rm and}\qquad\gamma_{ij}(t,\mathbf{x})=\sum\limits_\sigma\int\frac{d^3k}{(2\pi)^3}\gamma_\sigma(t,\mathbf{k})e_{ij}(\mathbf{k},\sigma)e^{i \mathbf{k}\cdot\mathbf{x}}+{\rm h.c.}\,,
 \end{equation}
-where $e_{ij}(\vec{k},\sigma)$ is the transverse-traceless polarization tensor for the graviton, $\sigma$ labels the polarization states of the gravitational waves,
+where $e_{ij}(\mathbf{k},\sigma)$ is the transverse-traceless polarization tensor for the graviton, $\sigma$ labels the polarization states of the gravitational waves,
 and `h.c.' stands for the Hermitian conjugate. The solutions oscillate when the modes are deep inside the horizon, $k\gg aH$. By definition, the modes exit the horizon when $k=aH$ and in single-field models approach a constant outside the horizon when $k\ll aH$.
 
 The statistical properties of the scalar and tensor fluctuations, $\zeta$ and $\gamma_\sigma$, at times sufficiently late so that they have frozen out, provide the link between the primordial era and the observed CMB today as well as other probes of the structure of the late Universe. For a universe that is statistically homogeneous and isotropic and in which the primordial fluctuations are Gaussian, the information about the statistical properties is contained in the 2-point correlation functions
 \begin{eqnarray}
-\langle\zeta(\vec{k})\zeta(\vec{k}^{\prime})\rangle&=&(2\pi)^3\delta^3(\vec{k}+\vec{k}^{\prime})\frac{2\pi^2}{k^3}\mathcal{P}_{\zeta}(k),\nonumber\\
-\langle\gamma_\sigma(\vec{k})\gamma_{\sigma^{\prime}}(\vec{k}^{\prime})\rangle&=&(2\pi)^3\delta_{\sigma\sigma^{\prime}}\delta^3(\vec{k}+\vec{k}^{\prime})\frac{2\pi^2}{k^3}\frac{1}{2}\mathcal{P}_{t}(k),\nonumber\\
+\langle\zeta(\mathbf{k})\zeta(\mathbf{k}^{\prime})\rangle&=&(2\pi)^3\delta^3(\mathbf{k}+\mathbf{k}^{\prime})\frac{2\pi^2}{k^3}\mathcal{P}_{\zeta}(k),\nonumber\\
+\langle\gamma_\sigma(\mathbf{k})\gamma_{\sigma^{\prime}}(\mathbf{k}^{\prime})\rangle&=&(2\pi)^3\delta_{\sigma\sigma^{\prime}}\delta^3(\mathbf{k}+\mathbf{k}^{\prime})\frac{2\pi^2}{k^3}\frac{1}{2}\mathcal{P}_{t}(k),\nonumber\\
 \end{eqnarray}
 where the factor of $1/2$ in the second to last line accounts for the fact that the measured power includes contributions from each of the two graviton polarizations. In single-field slow-roll inflation, the gauge-invariant combination of metric and scalar field fluctuations that is conserved outside the horizon has the power spectrum
 \begin{equation}
@@ -225,23 +225,22 @@ r=\frac{A_{\rm t}}{A_{\rm s}}\;.
 
 The power spectra of $\zeta$ and $\gamma_\sigma$ are time-independent as long as the modes are outside the horizon, and only begin to evolve once the modes of interest re-enter the horizon at late times. In particular, they set the initial conditions for the system of equations governing the time evolution of the Universe from a temperature of around $10^9$ K (when electrons and positrons have just annihilated) to the present. To exhibit the link between the primordial perturbations and late time observables explicitly, note that in a spatially flat universe, the contributions of primordial scalar perturbations to the angular power spectra of temperature or E-mode anisotropies are given by
 \begin{equation}
-C^{({\rm s})}_{XX,\ell}=\int \frac{dk}{k}\mathcal{P}_\zeta(k)\left|\int\limits_0^{\tau_0} d\tau S_X^{({\rm s})}(k,\tau)j_\ell(k(\tau_0-\tau))\right|^2\,,
+C^{({\rm s,t})}_{XX,\ell}=\int \frac{dk}{k}\mathcal{P}_\zeta(k)\left|\int\limits_0^{\tau_0} d\tau S_X^{({\rm s,t})}(k,\tau)j_\ell(k(\tau_0-\tau))\right|^2\,,
 \label{eq:clscalar}
 \end{equation}
-where $j_\ell$ is a spherical Bessel function that encodes the (spatially flat) geometry of the Universe and $S_X^{({\rm s})}(k,\tau)$ with $X=T,E$ are source functions that encode the evolution of the modes in the hot big bang Universe.
+where $j_\ell$ is a spherical Bessel function that encodes the (spatially flat) geometry of the Universe and $S_X^{({\rm s,t})}(k,\tau)$ with $X=T,E$ are source functions for scalar and tensor modes that encode the evolution of the modes in the hot big bang Universe.
 % (in particular, the physics of recombination is very important for B modes). - removed this because 2.12 is only about T/E
 % and $\mathcal{P}_\zeta(k)$ is the power spectrum of initial conditions of primordial scalar perturbations as a function of the (comoving) momentum of the modes. 
 At linear order, scalar perturbations only contribute to the angular power spectra of temperature and E-mode polarization and the cross-spectrum of temperature and E-mode polarization, while the tensor perturbations in addition generate B-mode polarization. The primordial contribution of the tensor perturbations to the angular power spectrum of B modes is 
 \begin{equation}
-C_{BB,\ell}=\int \frac{dk}{k}\mathcal{P}_{\rm t}(k)\left|\int\limits_0^{\tau_0} d\tau S_B^{({\rm t})}(k,\tau)j_\ell(k(\tau_0-\tau))\right|^2\,.
+C^{({\rm t})}_{BB,\ell}=\int \frac{dk}{k}\mathcal{P}_{\rm t}(k)\left|\int\limits_0^{\tau_0} d\tau S_B^{({\rm t})}(k,\tau)j_\ell(k(\tau_0-\tau))\right|^2\,.
 \label{eq:clbb}
 \end{equation}
 where $S_B^{({\rm t})}(k,\tau)$ is the appropriate source function. 
 
 The results of calculations using Eqs.~(\ref{eq:clscalar}) and (\ref{eq:clbb}), performed with the Code for Anisotropies in the Microwave Background (CAMB, \cite{Lewis:1999bs}), are shown in Fig.~\ref{fig:clall}. Results for the total (scalar + tensor) temperature and E-mode spectra are given by the black and red lines, respectively, while the result for the tensor B-mode spectrum is given by the blue lines for two possible values of $r$. Also shown are predictions for contaminations to the primordial B-mode spectrum by gravitational lensing of E modes (green line) and foregrounds (brown dashed lines). B-mode signal shape and detection prospects, as well as contamination mitigation, will be discussed further in the next section.  Finally, the black points in Fig.~\ref{fig:clall} show current constraints on the total (primordial + contamination) B modes from BICEP2/Keck \cite{Ade:2015fwj} and SPTpol \cite{Keisler:2015hfa}.
 
-At present, bounds on the tensor contribution to the temperature plus E-mode anisotropies are comparable to constraints on the tensor-to-scalar ratio from B-mode observations \cite{Ade:2013uln,Ade:2015lrj}. The temperature constraints are now cosmic variance-limited, and the E-mode constraints are approaching that level.  However, there is no such
-limit on the B-modes, so that improvements (and a potential detection) with CMB-S4 will rely on measurements of $C_\ell^{BB}$ -- most likely targeting the degree-scale ``recombination'' feature in the primordial B-mode spectrum, which is easier to access from the ground than the much larger-scale $\ell < 10$ ``reionization'' feature.
+At present, bounds on the tensor-to-scalar ratio from the temperature and E-mode anisotropies are comparable to those from B-mode observations \cite{Ade:2013uln,Ade:2015lrj}. The temperature constraints are now cosmic variance-limited, and the E-mode constraints are approaching that level.  However, there is no such limit on the B-modes, so that improvements (and a potential detection) with CMB-S4 will rely on measurements of $C_\ell^{BB}$ -- most likely targeting the degree-scale ``recombination'' feature in the primordial B-mode spectrum, which is easier to access from the ground than the ``reionization'' feature on larger angular scales ($\ell < 10$).
 
 Constraints on the amplitude of primordial tensor modes already strongly disfavor once popular inflationary models, such as minimally-coupled chaotic inflation with a quadratic potential. In the next section we will discuss in detail what a detection of primordial gravitational waves would imply for theories of the early Universe. 
 
@@ -353,7 +352,6 @@ assumed in the forecasting, at the foreground minimum of 95\,GHz. The levels of 
 and synchrotron are equal to the ones reported in \cite{Array:2015xqh}.}
 \label{fig_clBBr01}
 \end{figure}
-
 \begin{figure}[!h]
 \centering
 \includegraphics[width=0.49\textwidth]{Inflation/sigr_fsky_det1e6_r0.pdf}
@@ -376,7 +374,6 @@ $f_\mathrm{sky}$. For a detailed description of the forecasting framework and th
 assumptions made, see Section~\ref{sec_specforecast}}
 \label{fig_rforecast1}
 \end{figure}
-
 \begin{figure}[!h]
 \centering
 \includegraphics[width=0.49\textwidth]{Inflation/sigr_effort_r0.pdf}
@@ -400,7 +397,7 @@ assumptions made, see Section~\ref{sec_specforecast}.}
 \label{fig_rforecast2}
 \end{figure}
 
-
+\newpage
 \section{Implications of a detection of primordial gravitational waves}
 \label{sec:detection}
 
@@ -605,16 +602,16 @@ A measurement of $r$ from CMB-S4, along with these other probes of the stochasti
 %{\it Other signatures of a modified gravitational sector:} 
 %Coupling the inflaton to higher curvature terms can also introduce parity violation in the spectrum of primordial gravitational waves \cite{Lue:1998mq,Alexander:2004wk,Contaldi:2008yz,Takahashi:2009wc}. Reference \cite{Takahashi:2009wc} contains some example amplitudes of the coupling that would be detectable for a detection of $r=0.05$; reference \cite{Gluscevic:2010vv} discusses distinguishability of chiral gravity waves from other possible sources of parity violation, such as uniform cosmic birefringence. In addition, the momentum structure of the 3-point function of gravitational waves would also be a sensitive probe of possible extensions of Einstein gravity \cite{Maldacena:2011nz}. However, 
 
-Information about the spectrum of interacting particles relevant during inflation is contained in correlations beyond the power spectrum. Correlators including at least one $B$ mode will benefit significantly from the improved sensitivity of CMB S4 and will probe the particles that contribute to sourcing primordial gravitational waves. In particular, the three point correlation $\langle \zeta(\vec{k}_1)\zeta(\vec{k}_2)\gamma_\sigma(\vec{k}_3) \rangle$ can be constrained using $\langle BTT\rangle$, $\langle BTE\rangle $ and $\langle BEE\rangle$.
-%(Non-Gaussianity in just the scalar sector, $\langle \zeta(\vec{k}_1)\zeta(\vec{k}_2)\zeta(\vec{k}_3) \rangle$, is discussed in Section \ref{subsec:scalarNG}.) 
+Information about the spectrum of interacting particles relevant during inflation is contained in correlations beyond the power spectrum. Correlators including at least one $B$ mode will benefit significantly from the improved sensitivity of CMB S4 and will probe the particles that contribute to sourcing primordial gravitational waves. In particular, the three point correlation $\langle \zeta(\mathbf{k}_1)\zeta(\mathbf{k}_2)\gamma_\sigma(\mathbf{k}_3) \rangle$ can be constrained using $\langle BTT\rangle$, $\langle BTE\rangle $ and $\langle BEE\rangle$.
+%(Non-Gaussianity in just the scalar sector, $\langle \zeta(\mathbf{k}_1)\zeta(\mathbf{k}_2)\zeta(\mathbf{k}_3) \rangle$, is discussed in Section \ref{subsec:scalarNG}.) 
 
-The details of the tensor-scalar-scalar correlator are contained in the bispectrum $B_{\zeta\zeta\gamma_\sigma}(\vec{k}_1,\vec{k}_2,\vec{k}_3)$, defined by pulling out the appropriate polarization structure associated with the tensor mode:
+The details of the tensor-scalar-scalar correlator are contained in the bispectrum $B_{\zeta\zeta\gamma_\sigma}(\mathbf{k}_1,\mathbf{k}_2,\mathbf{k}_3)$, defined by pulling out the appropriate polarization structure associated with the tensor mode:
 \begin{equation}
 \label{eq:Bsst}
-\qquad \langle \zeta(\vec{k}_1)\zeta(\vec{k}_2)\gamma_\sigma(\vec{k}_3) \rangle = (2\pi)^3 \delta(\vec{k}_1+\vec{k}_2+\vec{k}_3) B_{\zeta\zeta\gamma_\sigma}(k_1,k_2,k_3) e_{ij}(\vec{k}_3,\sigma)\hat{k}_1^i \hat{k}_2^j,
+\qquad \langle \zeta(\mathbf{k}_1)\zeta(\mathbf{k}_2)\gamma_\sigma(\mathbf{k}_3) \rangle = (2\pi)^3 \delta(\mathbf{k}_1+\mathbf{k}_2+\mathbf{k}_3) B_{\zeta\zeta\gamma_\sigma}(k_1,k_2,k_3) e_{ij}(\mathbf{k}_3,\sigma)\hat{k}_1^i \hat{k}_2^j,
 \end{equation}
-where $e_{ij}(\vec{k},\sigma)$ is the transverse-traceless polarization tensor.  
-%As shown in Eq.~(\ref{eq:Bsst}), the bispectrum is a nearly arbitrary function of three momenta, subject only to the constraint $\vec{k}_1+\vec{k}_2+\vec{k}_3=0$ from translation invariance. 
+where $e_{ij}(\mathbf{k},\sigma)$ is the transverse-traceless polarization tensor.  
+%As shown in Eq.~(\ref{eq:Bsst}), the bispectrum is a nearly arbitrary function of three momenta, subject only to the constraint $\mathbf{k}_1+\mathbf{k}_2+\mathbf{k}_3=0$ from translation invariance. 
 The amplitude and momentum dependence of the bispectrum $B_{\zeta\zeta\gamma_\sigma}$ can be parametrized by \cite{Meerburg:2016ecv}
 \begin{equation}
 \label{eq:Bzzg}
@@ -810,9 +807,7 @@ We note that this improvement is calculated assuming measurements of the degree-
 %CMB-S4 will either detect primordial gravitational waves or improve current constraints on the amplitude of their power spectrum by almost two orders of magnitude. In addition, CMB-S4 will significantly improve our knowledge of the statistical properties of primordial density perturbations. 
 All current data are consistent with primordial density perturbations that are adiabatic, Gaussian, and nearly scale-invariant. With sufficient angular resolution, CMB-S4 will significantly improve current constraints on the scale dependence of the primordial power spectrum of scalar perturbations, on departures from Gaussianity, and on departures from adiabaticty. In fact, it will measure anisotropies in both the temperature and E-mode polarization of the CMB to cosmic variance over the entire range of multipoles that is not contaminated by foregrounds. As a consequence, it will place the strongest constraints achievable by any ground-based CMB experiment on all observables that benefit from the number of modes measured, such as the primordial power spectrum and higher-order correlations.
 
-\subsection{The power spectrum of primordial density perturbations and mean curvature}
-
-\subsubsection{The scalar power spectrum}
+\subsection{The scalar power spectrum}
 %{\it The scalar spectral index}\\
 The density perturbations are close to scale-invariant but not exactly so. In the context of $\Lambda$CDM, {\it Planck\/} has measured the scalar spectral index to be $n_{\rm s}=0.9677\pm0.0060$ and has established $n_{\rm s}-1<0$ at more than $5\,\sigma$. CMB-S4 will improve current constraints on the spectral index by more than a factor of 2 to $\sigma(n_{\rm s})=0.0028$, and this constraint will provide valuable constraints on the space of inflationary models. 
 
@@ -824,24 +819,6 @@ Models of inflation that achieve super-Planckian inflaton displacements from rep
 
 Other physical effects during inflation could lead to weak structure in the observed power spectrum, e.g. by changing the equation of state during inflation \cite{Achucarro:2014msa}. Because of the stringent constraints on the minimum number of e-folds, such modifications cannot last very long and associated features only affect a small range of scales. It is therefore unlikely that CMB-S4 will significantly improve constraints on these type of features unless they are on very small scales. 
 
-\subsubsection{Spatial Curvature}
-\label{sec:curvature}
-
-Despite the fact that inflation drives the spatial curvature to zero at the level of the background evolution, it predicts small, but non-zero curvature for a typical observer. The curvature measured in a Hubble patch receives contributions from long wavelength perturbations and is expected to be $|\Omega_k|\lesssim10^{-4}$. A measurements of $\Omega_k$ exceeding this expectation would contain important information about the process responsible for inflation. In particular, if $|\Omega_k|$ is found to be considerably larger than this value, it would tell us that the inflaton was not slowly rolling when scales slightly larger than our observable horizon exited the horizon. Furthermore, observations of large negative $\Omega_k$ would falsify eternal inflation, while observation of positive and large $\Omega_k$ would be consistent with false vacuum eternal inflation~\cite{Guth:2012ww,Kleban:2012ph}.
-
-Current constraints on this parameter from the CMB alone are $\Omega_k= 0.005^{+0.016}_{-0.017}$ \cite{Ade:2015xua}. Including baryon acoustic oscillation (BAO) data tightens the bound to $\Omega_k=0.000\pm0.005$.% CMB-S4 is expected to constrain spatial curvature at a level of $\sigma(\Omega_k)\simeq 10^{-3}$. A detection at this level would have profound implications for the inflationary paradigm. 
-
-Figure~\ref{fig:OmK_vs_FWHM_or_uK_arcmin} presents the $\Omega_k$ constraints achievable with CMB-S4 in isolation (solid orange) and in combination with {\it Planck\/} (dashed orange), future BAO measurements from DESI~\cite{Font-Ribera:2013rwa} (solid blue), and both (dashed blue). The constraining power of each configuration is explored as a function of CMB-S4's beam size (left panel) and polarization noise (right panel); the noise and beam are fixed to 1$\,\mu$K-arcmin and 3 arcmin in the left and right panels, respectively.
-
-The constraints on $\Omega_k$ are relatively weakly dependent on the resolution and sensitivity of CMB-S4, inflating by 30--50\% over the ranges considered. In isolation, CMB-S4 is able to place $1\,\sigma$ limits of $6.7\times10^{-3}$ on our fiducial value of zero curvature, assuming a white noise level of 1$\,\mu$K-arcmin and 3 arcmin resolution. These limits are halved when including {\it Planck\/} data, demonstrating the importance of large-scale CMB polarization information in breaking degeneracies involving $\Omega_k$ (primarily with $\tau$)~\cite{Leonard:2016evk}. CMB-only data sets are, however, fundamentally limited in their ability to constrain curvature by the geometrical degeneracy~\cite{Zaldarriaga:1997ch,Bond:1997wr}. Adding DESI measurements of the BAO standard ruler (at redshifts of 0 to 1.9) helps break this degeneracy, with a combined $1\,\sigma$ limit of around $7.1\times10^{-4}$. Though CMB-S4 is therefore unable to measure curvature levels typical of slow-roll eternal inflation, any detection of curvature by CMB-S4 would have profound implications for the inflationary paradigm.
-
-\begin{figure}[h!]
-\centering \includegraphics[width=0.70\textwidth]{Inflation/OmK_vs_FWHM_or_uK_arcmin.pdf}
-\caption{Constraints on mean curvature derived using the CMB4cast framework~\cite{Errard:2015cxa}, assuming CMB-S4 observations with a single 150\,GHz channel, at $1\,\mu$K-arcmin ($1.4\,\mu$K-arcmin) in temperature (polarization), with a FWHM of 3 arcmin. The instrument is assumed to observe $f_{\rm sky} = 40\%$, covering a multipole range of $30\leq\ell\leq 4000$.
-We consider no foregrounds, white noise, and a single-parameter extension of the standard model: $\Lambda$CDM+$\Omega_k$. 
-The constraints are derived using information from unlensed $TT$, $TE$ and $EE$ spectra along with CMB lensing information constructed with an iterative $EB$ quadratic estimator~\cite{Hirata:2002jy,Smith:2010gu}. Cases including {\it Planck\/} use additional $TT$, $TE$ and $EE$ information, assuming multipole coverage of $30\leq\ell\leq 2500$ over an additional $20\%$ of sky. A prior on $\tau$ is used: $0.06\pm0.01$. We follow Ref.~\cite{Wu:2014hta} for the combinations with DESI-BAO.}
-\label{fig:OmK_vs_FWHM_or_uK_arcmin}
-\end{figure}
 
 
 \subsection{Higher-order correlations of scalar modes}
@@ -849,9 +826,9 @@ The constraints are derived using information from unlensed $TT$, $TE$ and $EE$ 
 Higher-order correlations of the scalar modes contain detailed information about the interacting matter Lagrangian during inflation. Because there are many inflation models that produce non-Gaussianity in the scalar sector with amplitude large enough to be constrained with the {\it WMAP\/} and {\it Planck\/} satellites, the model space that will be tested is much larger than that for the tensor non-Gaussianity discussed in Section~\ref{subsec:sst}. The correlator of three scalar modes is
 \begin{equation}
 \label{eq:Bsss}
-\langle\zeta(\vec{k}_1)\zeta(\vec{k}_2)\zeta(\vec{k}_3)\rangle=(2\pi)^3\delta(\vec{k}_1+\vec{k}_2+\vec{k}_3)B_{\zeta}(\vec{k}_1,\vec{k}_2,\vec{k}_3)\,,
+\langle\zeta(\mathbf{k}_1)\zeta(\mathbf{k}_2)\zeta(\mathbf{k}_3)\rangle=(2\pi)^3\delta(\mathbf{k}_1+\mathbf{k}_2+\mathbf{k}_3)B_{\zeta}(\mathbf{k}_1,\mathbf{k}_2,\mathbf{k}_3)\,,
 \end{equation}
-The structure of particle interactions relevant for inflation provides both a general organizing principle for this functional space and several specific, well motivated forms of the bispectrum $B_{\zeta}(\vec{k}_1,\vec{k}_2,\vec{k}_3)$ that can be explicitly compared to data. Here we briefly review the classification of scalar non-Gaussianity from inflation and then present forecasts for improvements from CMB-S4 on a few of the standard bispectral templates. We also comment on non-Gaussian signatures that are especially relevant for large-field inflation.
+The structure of particle interactions relevant for inflation provides both a general organizing principle for this functional space and several specific, well motivated forms of the bispectrum $B_{\zeta}(\mathbf{k}_1,\mathbf{k}_2,\mathbf{k}_3)$ that can be explicitly compared to data. Here we briefly review the classification of scalar non-Gaussianity from inflation and then present forecasts for improvements from CMB-S4 on a few of the standard bispectral templates. We also comment on non-Gaussian signatures that are especially relevant for large-field inflation.
 
 The space of non-Gaussian signals from inflation can be grouped into two conceptual categories that also generate distinguishable features in the correlation functions. These are signals that: (1) indicate non-trivial self-interactions of the effective inflaton fluctuation; or (2) indicate fluctuations in degrees of freedom other than the inflaton. 
 
@@ -932,6 +909,24 @@ Perhaps of special interest for CMB-S4 are non-Gaussian signatures that would be
 
 %In the absence of a detection, however, it is important to ask what can be learned from improved constraints on $f_{\rm NL}$. Though not firm, nor entirely robustly defined, it can be argued that a natural theoretical threshold where qualitatively new general conclusions about the physics of the early Universe can be drawn would come from constraints on $f_{\rm NL}<\mathcal{O}(1)$, see for example [1412.4671] for a detailed discussion. In order to achieve this level of constraint, it seems necessary to move beyond the cosmic microwave background to study other data sets, such as large-scale structure. Despite the fact that CMB Stage-IV is not expected to reach this threshold, it is worth asking what can be gleaned from an improved constraint on $f_{\rm NL}$ from the CMB.
 
+\section{Spatial Curvature}
+\label{sec:curvature}
+
+Despite the fact that inflation drives the spatial curvature to zero at the level of the background evolution, it predicts small, but non-zero curvature for a typical observer. The curvature measured in a Hubble patch receives contributions from long wavelength perturbations and is expected to be $|\Omega_k|\lesssim10^{-4}$. A measurements of $\Omega_k$ exceeding this expectation would contain important information about the process responsible for inflation. In particular, if $|\Omega_k|$ is found to be considerably larger than this value, it would tell us that the inflaton was not slowly rolling when scales slightly larger than our observable horizon exited the horizon. Furthermore, observations of large negative $\Omega_k$ would falsify eternal inflation, while observation of positive and large $\Omega_k$ would be consistent with false vacuum eternal inflation~\cite{Guth:2012ww,Kleban:2012ph}.
+
+Current constraints on this parameter from the CMB alone are $\Omega_k= 0.005^{+0.016}_{-0.017}$ \cite{Ade:2015xua}. Including baryon acoustic oscillation (BAO) data tightens the bound to $\Omega_k=0.000\pm0.005$.% CMB-S4 is expected to constrain spatial curvature at a level of $\sigma(\Omega_k)\simeq 10^{-3}$. A detection at this level would have profound implications for the inflationary paradigm. 
+
+%Figure~\ref{fig:OmK_vs_FWHM_or_uK_arcmin} presents the $\Omega_k$ constraints achievable with CMB-S4 in isolation (solid orange) and in combination with {\it Planck\/} (dashed orange), future BAO measurements from DESI~\cite{Font-Ribera:2013rwa} (solid blue), and both (dashed blue). The constraining power of each configuration is explored as a function of CMB-S4's beam size (left panel) and polarization noise (right panel); the noise and beam are fixed to 1$\,\mu$K-arcmin and 3 arcmin in the left and right panels, respectively.
+
+The constraints on $\Omega_k$ only weakly dependend on the resolution and sensitivity of CMB-S4. A simple Fisher forecast suggests that CMB-S4 is able to place $1\,\sigma$ limits of $6.7\times10^{-3}$ on our fiducial value of zero curvature, assuming a white noise level of 1$\,\mu$K-arcmin and 3 arcmin resolution and a multipole range of $30\leq\ell\leq 4000$. These limits are halved when including {\it Planck\/} data, demonstrating the importance of large-scale CMB polarization information in breaking degeneracies involving $\Omega_k$ (primarily with $\tau$)~\cite{Leonard:2016evk}. CMB-only data sets are, however, fundamentally limited in their ability to constrain curvature by the geometrical degeneracy~\cite{Zaldarriaga:1997ch,Bond:1997wr}. Adding DESI measurements of the BAO standard ruler (at redshifts of 0 to 1.9) helps break this degeneracy, with a combined $1\,\sigma$ limit of around $7.1\times10^{-4}$. CMB-S4 is therefore unable to measure curvature levels typical of slow-roll eternal inflation and any detection of curvature by CMB-S4 would have profound implications for the inflationary paradigm.
+
+%\begin{figure}[h!]
+%\centering \includegraphics[width=0.70\textwidth]{Inflation/OmK_vs_FWHM_or_uK_arcmin.pdf}
+%\caption{Constraints on mean curvature derived using the CMB4cast framework~\cite{Errard:2015cxa}, assuming CMB-S4 observations with a single 150\,GHz channel, at $1\,\mu$K-arcmin ($1.4\,\mu$K-arcmin) in temperature (polarization), with a FWHM of 3 arcmin. The instrument is assumed to observe $f_{\rm sky} = 40\%$, covering a multipole range of $30\leq\ell\leq 4000$.
+%We consider no foregrounds, white noise, and a single-parameter extension of the standard model: $\Lambda$CDM+$\Omega_k$. 
+%The constraints are derived using information from unlensed $TT$, $TE$ and $EE$ spectra along with CMB lensing information constructed with an iterative $EB$ quadratic estimator~\cite{Hirata:2002jy,Smith:2010gu}. Cases including {\it Planck\/} use additional $TT$, $TE$ and $EE$ information, assuming multipole coverage of $30\leq\ell\leq 2500$ over an additional $20\%$ of sky. A prior on $\tau$ is used: $0.06\pm0.01$. We follow Ref.~\cite{Wu:2014hta} for the combinations with DESI-BAO.}
+%\label{fig:OmK_vs_FWHM_or_uK_arcmin}
+%\end{figure}
 \section{Isocurvature}
 Measurements of CMB temperature/polarization power spectra indicate that the primordial initial conditions are adiabatic, that is, spatial entropy fluctuations vanish:
 \begin{align}
