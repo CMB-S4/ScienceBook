@@ -69,9 +69,10 @@ not the same as in the \cmbexp\ case.
 \subsection{Component Separation Methods}
 
 The CMB extraction may be achieved essentially through two basic concepts: the fitting of foreground unknowns along with CMB, or the minimization of the variance of a linear combination of the data, constrained to have the frequency scaling of a blackbody.
-The first class of algorithms, known as ``parametric'', makes the maximum use of prior knowledge of foreground emission. By contrast, the second class, known as ``blind'', makes the minimum set of assumptions. 
+The first class of algorithms, known as ``parametric,'' makes the maximum use of prior knowledge of foreground emission. By contrast, the second class, known as ``blind,'' makes the minimum set of assumptions. 
 These two broad classes and other possibilities are discussed in turn below.
-%Historically this classification has been achieved through various works. Blind techniques made use of internal template subtraction (e.g. \cite{bennett92,hansen06,Katayama:2011eh}), or exploiting statistical independence of sky components (e.g. \cite{delabrouille03,maino07,bonaldi06,stolyarov05}). The most important papers on parametric fitting are \cite{Brandt:1994aa,Eriksen:2005dr, stompor09}.
+Both approaches are used widely in the field and have been tested with multiple implementations applied
+to multiple data sets. Blind techniques have included those using internal template subtraction (e.g. \cite{Bennett:1992aa,Hansen:2006rj,Katayama:2011eh}) and those exploiting statistical independence of sky components (e.g. \cite{Delabrouille:2002kz,Maino:2006pq,Bonaldi:2006qw,Stolyarov:2004xp}). Implementations of parametric fitting have included the studies in \cite{Brandt:1994aa,Eriksen:2005dr, Stompor:2008sf}.
 
 \begin{itemize}
 	\item \textbf{Parametric} -- The overall idea of these methods boils down to two steps: 1) the estimation of the mixing matrix, $\mathbf{A}$; and 2) the inversion of Eq.~\ref{eq:comp_sep_data_modeling} to recover an estimate of the sky signal, $s_p$.
@@ -110,6 +111,14 @@ For all of the approaches discussed above, Eq.~\ref{eq:sp_solution} can be imple
 This complementarity, and the internal comparison of results through these pipelines has been proven to be relevant in actual analysis of Planck data \cite{Adam:2015tpy}. That said, the difference between domain of application will lie in the computational needs: for high number of sky pixels, the implementation of Eq.~\ref{eq:sp_solution} might be significantly more efficient in harmonic space. 
 %Both can be cast in the default, spatial domain of sky pixels, as well as a variety of harmonic domains, extending from the pure angular one, to the selection of localization in the spatial and harmonic domains through a suitable needlet set. This complementarity, and the internal comparison of results through these pipelines has been proven to be relevant in actual analysis of Planck data \cite{Adam:2015tpy}. 
 
+One practical difference of particular interest between these approaches is how uncertainties in the 
+foreground model get propagated to uncertainties in data products derived from the foreground-cleaned
+maps, such as angular power spectra and cosmological parameters. In parametric models, any statistical 
+covariance between foreground parameters and the cleaned CMB is properly captured (at the 
+Gaussian-approximation level) in the resulting covariance matrix. For non-parametric methods, this 
+covariance can be approximated using Monte Carlo methods, which can be problematic for foregrounds
+on the largest scales, the distribution of which is quite clearly non-Gaussian. This issue is discussed further
+in Section~\ref{se:challenges}.
 
 %\textcolor{red}{JE: $\rightarrow$ Parametric fitting vs. ILC, spatial domain versus non-spatial, that makes a basis of 4 algorithms. Although it was never quantified, the independence of those and very different hypotheses represent an opportunity for cross-checking and robustness.}
 

@@ -53,7 +53,9 @@ Even with multiple steps, the computational burden involved
 in this step of the analysis is unlikely to be significantly greater for \cmbexp\ than for Planck.
 
 The final step in the analysis of a CMB data set is the estimation of cosmological parameters from
-the various post-map statistics discussed above (the second step in Figure \ref{fig_sp}). This involves estimating the likelihood of the data
+the various post-map statistics discussed above.
+% (the second step in Figure \ref{fig_sp}). 
+This involves estimating the likelihood of the data
 given a model parameterized by the standard six $\Lambda$CDM parameters, possible extensions
 of the cosmological model, and any nuisance parameters involving the instrument, foregrounds, and
 other sources of systematic uncertainty. The current industry standard for this part of the analysis are
@@ -121,14 +123,23 @@ in a cross-spectrum analysis or, as detailed in Section \ref{sec:compsep}, by ma
 combinations of maps in different bands to produce a ``pure-CMB'' map for power spectrum estimation.
 In either case, an underlying model of foreground behavior is assumed---even if that model is simply
 an assumption regarding the level to which the spectral behavior of foregrounds varies over the sky.
-Any model of foreground behavior is by definition imperfect, and the resulting component separation
-or frequency-cross-spectrum fit will have leakage between the foreground and CMB components.
+There are two challenges related to uncertainties in foreground modeling: one statistical and one
+systematic. The statistical issue is simply how to propagate the statistical uncertainty on the foreground 
+model to uncertainties on cosmological parameters. In explicitly parameterized foreground models, 
+this happens automatically through the covariance resulting from the fit. For non-parametric models,
+this covariance can be assessed through Monte Carlo methods, but making many independent 
+realizations of large-scale Galactic foregrounds is problematic because of the strongly non-Gaussian
+behavior of these foregreounds.
+
+Perhaps more importantly, 
+any model of foreground behavior is by definition imperfect, and the resulting component separation
+or frequency-cross-spectrum fit will have systematic leakage between the foreground and CMB components.
 At the sensitivity levels attainable by \cmbexp, these residuals have the potential to dominate the
 error budget on cosmological parameters and, more troublingly, to significantly bias the best-fit 
 parameter values if they are not properly taken into account.
 
 Section~\ref{sec:skymodel} discusses the baseline plan for, and challenges involved in, modeling
-Galactic and extragalactic foregrounds. It is likely that more information will be needed---from 
+Galactic and extragalactic foregrounds. It is possible that more information will be needed---from 
 Stage-3 experiments, or from a possible dedicated, balloon-borne CMB foreground mission---before
 we can confidently assess the level to which foregrounds will limit the final parameter constraints
 from \cmbexp\ and how flexible we will need to make the underlying foreground models that 
