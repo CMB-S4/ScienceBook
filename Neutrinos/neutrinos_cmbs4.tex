@@ -169,7 +169,17 @@ k_{\rm fs}(a) \equiv \sqrt{\frac{3}{2}}\frac{aH(a)}{v_\nu(a)} \approx 0.04\, a^2
 \eeq
 in comoving coordinates. 
 
-On scales larger than $k_{\rm nr}$ (adiabatic) perturbations in the density of neutrinos, baryons, and CDM are coherent and can be described by a single perturbation to the total matter density $\delta_m= \delta \rho_m/\rho_m$. On smaller scales where the neutrino perturbations have decayed, only the perturbations to the CDM and baryons remain so that $\delta_{m} = \delta_{cb}\, (\Omega_{c} + \Omega_b)/\Omega_m $. The remaining CDM and baryon perturbations also grow more slowly because the neutrino energy density contributes to the expansion rate, but not to the source potentials. These two effects cause a suppression in the amplitude and the growth rate of matter perturbations wavenumbers $k > k_{\rm fs}$ relative to a universe with massless neutrinos (and also relative to density perturbations with $k<k_{\rm nr}$). The net change in the amplitude of perturbations with $k > k_{\rm nr}$ primarily depends on the fractional energy density in massive neutrinos (keeping $\Omega_c+\Omega_b$ fixed) but retains a small sensitivity to the individual neutrino masses through a dependence on $a_{\rm nr}$. 
+On scales larger than $k_{\rm nr}$ (adiabatic) perturbations in the density of neutrinos, baryons, and CDM are coherent and can be described by a single perturbation to the total matter density $\delta_m= \delta \rho_m/\rho_m$. On smaller scales where the neutrino perturbations have decayed, only the perturbations to the CDM and baryons remain so that $\delta_{m} = \delta_{cb}\, (\Omega_{c} + \Omega_b)/\Omega_m $. The remaining CDM and baryon perturbations also grow more slowly because the neutrino energy density contributes to the expansion rate, but not to the source potentials. These two effects cause a suppression in the amplitude and the growth rate of matter perturbations wavenumbers $k > k_{\rm fs}$ relative to a universe with massless neutrinos (and also relative to density perturbations with $k<k_{\rm nr}$). The net change in the amplitude of perturbations with $k > k_{\rm nr}$ primarily depends on the fractional energy density in massive neutrinos (keeping $\Omega_c+\Omega_b$ fixed) but retains a small sensitivity to the individual neutrino masses through a dependence on $a_{\rm nr}$. A plot of the suppression in the matter power spectrum at small scales due to neutrino mass is shown in Figure \ref{fig:Psuppression}.
+
+
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width = 0.6\textwidth]{Neutrinos/Psuppression.png} 
+\caption{ The suppression in the matter power spectrum due to massive neutrinos. Plotted is the ratio of the matter power spectrum with $\sum m_\nu > 0$ to the matter power spectrum with $\sum m_\nu =0$ but the same value of $\Omega_m$. }
+\label{fig:Psuppression}
+\end{center}
+\end{figure} 
+
 
 An estimate of the effect of massive neutrinos on the growth of structure can be made by studying the evolution of matter perturbations in the two regimes $k\ll k_{\rm fs}$ and $k\gg k_{\rm fs}$.  In the synchronous gauge, linear perturbations to the matter density with wavenumbers $k \ll k_{\rm fs}$ evolve as
 \beq
@@ -201,7 +211,7 @@ On the other hand, the evolution of the large scale modes is identical,
 \beq
 \frac{P_{mm}(k \ll k_{\rm fs}, a  |f_\nu)}{P_{mm}(k \ll k_{\rm fs}, a |f_\nu =0)}=1\,.
 \eeq
-The above expression overestimates the effect of neutrino mass by assuming the transition from relativistic to non-relativistic is instantaneous. It also ignores the effects of the cosmological constant at late times. Using the true evolution of $\delta_{cb}$ through $a_{\rm nr}$ and allowing for the cosmological constant gives 
+where $P_{mm}$ is the power spectrum of the total matter fluctuations (CDM, neutrino, and baryon) and $P_{cc}$ is the power spectrum of just the CDM and baryons.  The above expression overestimates the effect of neutrino mass by assuming the transition from relativistic to non-relativistic is instantaneous. It also ignores the effects of the cosmological constant at late times. Using the true evolution of $\delta_{cb}$ through $a_{\rm nr}$ and allowing for the cosmological constant gives 
 \beq
 \frac{P_{mm}(k \gg k_{\rm fs} |f_\nu)}{P_{mm}(k \gg k_{\rm fs} |f_\nu =0)} \approx 1- 6 f_\nu
 \eeq
@@ -266,9 +276,9 @@ where $\sigma = \sigma(M,z)$ is the variance of linear perturbations in CDM and 
 \label{eq:sigmaM}
 \sigma^2(M, z) = \int \frac{dk}{k} \frac{4\pi}{(2\pi)^3} P_{cc}(k, z) |W(kR)|^2
 \eeq
-where $R = (3M/(4\pi \rho_{cb}))^{1/3}$, $P_{cc}(k)$ is the power spectrum of CDM and baryons, and $W(kR) = 3(\sin(kR)/(kR)^3 - \cos(kR)/(kR)^2)$ is a top-hat window function \cite{Costanzi:2013bha,LoVerde:2014rxa}. The cluster abundance is extremely sensitive to $\sigma(M, z)$, and therefore $M_\nu$ via the suppression in $P_{cc}$ discussed in \S\ref{ssec:numasstheoryreview}.
+where $R = (3M/(4\pi \rho_{cb}))^{1/3}$, $P_{cc}(k)$ is the power spectrum of CDM and baryons, and $W(kR) = 3(\sin(kR)/(kR)^3 - \cos(kR)/(kR)^2)$ is a top-hat window function \cite{Costanzi:2013bha,LoVerde:2014rxa}. The cluster abundance is extremely sensitive to $\sigma(M, z)$, and therefore $\sum m_\nu$ via the suppression in $P_{cc}$ discussed in \S\ref{ssec:numasstheoryreview}.
 
-Current constraints on neutrino mass from cluster abundance, in combination with the primary CMB and BAO, are $M_\nu \lsim 0.2$--$0.3$\,eV at $95\%$ confidence \cite{Hasselfield:2013wf,Mantz:2014paa,Ade:2015fva,deHaan:2016qvy}. To date, the contraints have been driven by the difference between (or consistency of) the matter power spectrum amplitude measured at late times, from clusters, and at early times, from the CMB. An additional signal is present internally to the cluster data, namely the time-dependent influence of massive neutrinos on cluster growth through Eqs.~\ref{eq:clmfcn} and \ref{eq:sigmaM}, which can potentially provide tighter constraints \cite{Wang:2005vr}.
+Current constraints on neutrino mass from cluster abundance, in combination with the primary CMB and BAO, are $\sum m_\nu \lsim 0.2$--$0.3$\,eV at $95\%$ confidence \cite{Hasselfield:2013wf,Mantz:2014paa,Ade:2015fva,deHaan:2016qvy}. To date, the contraints have been driven by the difference between (or consistency of) the matter power spectrum amplitude measured at late times, from clusters, and at early times, from the CMB. An additional signal is present internally to the cluster data, namely the time-dependent influence of massive neutrinos on cluster growth through Eqs.~\ref{eq:clmfcn} and \ref{eq:sigmaM}, which can potentially provide tighter constraints \cite{Wang:2005vr}.
 
 
 Making these measurements of cluster abundance and growth require cluster surveys with well understood selection functions extending to high redshift ($z\sim2$). Galaxy clusters can be identified from CMB data via the thermal Sunyaev-Zel'dovich (tSZ) effect, the frequency shift of CMB photons that have scattered off of electrons in the hot, intra-cluster gas.  CMB-S4 is projected to detect a nearly mass-limited sample of $\mathcal{O}(100,000)$ galaxy clusters.
