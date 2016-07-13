@@ -165,7 +165,35 @@ On the timescale of the CMB-S4 experiment, a number of large surveys are expecte
 
 There have been several recent detections of the cross-correlation between lensing of the CMB and galaxy shear (\cite{Hand:2013xua}, \cite{Liu:2015xfa}, \cite{Kirk:2015dpw}), demonstrating the emergence of a new cosmological tool. In addition, CMB and galaxy lensing can be combined with galaxy surveys for lensing tomography measurements, providing the ability to reconstruct the 3D mass distribution. CMB lensing offers similar signal-to-noise as galaxy shear surveys but provides the most distant source possible, allowing this 3D reconstruction to extend to the edge of the observable universe and providing a high-redshift anchor for dark energy studies.  The combination of CMB and galaxy lensing with galaxy surveys can also be used to measure cosmographic distance ratios (\cite{Miyatake:2016gdc},\cite{Singh:2016xey}), which provides a clean, complementary probe of the geometry of our Universe and dark energy. 
 
-CMB lensing can also be used as an external calibration for galaxy shear studies. It has been shown (\cite{Vallinotto:2011ge}, \cite{Vallinotto:2013eva}, \cite{Das:2013aia}) that CMB lensing, galaxy clustering, and galaxy shear data taken together can in principle cross-calibrate each other while still providing precise constraints on cosmological parameters. This has been successfully applied to existing surveys (\cite{Liu:2015xfa}, \cite{Baxter:2016ziy}, \cite{Miyatake:2016gdc}, \cite{Singh:2016xey}) as a proof of principle. CMB-S4 can be expected to provide an important systematics check on galaxy shear surveys such as WFIRST, Euclid, and LSST. 
+CMB lensing can also be used as an external calibration for galaxy shear studies. It has been shown (\cite{Vallinotto:2011ge}, \cite{Vallinotto:2013eva}, \cite{Das:2013aia}) that CMB lensing, galaxy clustering, and galaxy shear data taken together can in principle cross-calibrate each other while still providing precise constraints on cosmological parameters. This has been successfully applied to existing surveys (\cite{Liu:2015xfa}, \cite{Baxter:2016ziy}, \cite{Miyatake:2016gdc}, \cite{Singh:2016xey}) as a proof of principle. 
+
+In particular, CMB lensing from CMB-S4 can calibrate the shear multiplicative bias for LSST, down to the level of the LSST requirements of $\sim 0.5\%$, as shown in Fig.~\ref{fig:shear_calibration_cmbs4} \cite{Schaan:2016ois}. This calibration is possible while simultaneously varying cosmological parameters and nuisance parameters (photometric redshift uncertainties and galaxy bias). It is robust to a reasonable amount of intrinsic alignment, to uncertainties in the non-linearities and baryonic effects, and to changes in the photo-z accuracies. This shear calibration is slowly dependent on the sensitivity of CMB-S4, and rather independent of the beam and maximum multipole included in the CMB lensing reconstruction (see Fig.~\ref{fig:LSSTshearcalibration_vary_noise_beam_lmax}). A similar shear calibration occurs with CMB-S4 lensing combined with WFIRST or Euclid.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.49\columnwidth]{LSST_summary_m.pdf}
+\caption{
+$68\%$ confidence constraints on the shear biases $m_i$ for the 10 tomographic bins of LSST, when self-calibrating them from LSST cosmic shear alone (blue), LSST full (i.e. clustering, galaxy-galaxy lensing and cosmic shear; green), combination 1 (orange), combination 2 (yellow) and the full LSST \& CMB-S4 lensing (red). The self-calibration works down to the level of LSST requirements (dashed lines) for the highest redshift bins, where shear calibration is otherwise most difficult. We stress that all the solid lines correspond to self-calibration from the data alone, without relying on image simulations. Calibration from image simulations is expected to meet the LSST requirements, and CMB lensing will thus provide a valuable consistency check for building confidence in the results from LSST.\\
+}
+\label{fig:shear_calibration_cmbs4}
+\end{figure}
+
+
+\begin{figure}[htbp]
+\centering
+%
+\includegraphics[width=0.32\columnwidth]{LSST_varying_noise.pdf}
+\includegraphics[width=0.32\columnwidth]{LSST_varying_beam.pdf}
+\includegraphics[width=0.32\columnwidth]{LSST_varying_lmax.pdf}
+%
+\caption{
+Impact of varying CMB-S4 specifications on the shear calibration for LSST. The shear calibration level for the fiducial CMB-S4 (1 arcmin resolution, $1\mu$K-arcmin white noise, f$_{\rm{sky}}$ = 44\%; black solid line) is compared to the one obtained for each variation (solid colored lines). The LSST requirement is shown as the black dashed lines.
+The shear calibration is slowly dependent on the sensitivity of CMB-S4, and rather independent of the resolution and maximum multipole included in the CMB lensing reconstruction.
+}
+\label{fig:LSSTshearcalibration_vary_noise_beam_lmax}
+\end{figure}
+
+
 
 \subsection{CMB Halo Lensing}\label{haloLensing}
 
