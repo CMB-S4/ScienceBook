@@ -52,6 +52,16 @@ it is possible that further gains can be made with more iterations (see Section 
 Even with multiple steps, the computational burden involved
 in this step of the analysis is unlikely to be significantly greater for \cmbexp\ than for Planck.
 
+An additional post-map product of interest for \cmbexp\ is the location and properties of compact
+sources, in particular clusters of galaxies identified through the thermal SZ effect. The standard 
+practice for extracting SZ clusters from multifrequency millimeter-wave maps is through the application
+of a Fourier-domain spatial-spectral filter \cite{Melin:2006qq}.
+The computational effort involved in this step is small compared to the estimation of power spectra 
+and higher-order correlations, and the algorithms are well-developed and fully implemented for 
+multi-frequency data sets (e.g., \cite{Ade:2013skr,Bleem:2014iim})---however, the cluster density
+could be high enough in \cmbexp\ data that approaches more sophisticated than the simple matched
+filter (e.g., \cite{Pierpaoli:2004bp}) could be required to maximize cluster yield.
+
 The final step in the analysis of a CMB data set is the estimation of cosmological parameters from
 the various post-map statistics discussed above.
 % (the second step in Figure \ref{fig_sp}). 
@@ -59,7 +69,7 @@ This involves estimating the likelihood of the data
 given a model parameterized by the standard six $\Lambda$CDM parameters, possible extensions
 of the cosmological model, and any nuisance parameters involving the instrument, foregrounds, and
 other sources of systematic uncertainty. The current industry standard for this part of the analysis are
-Monte-Carlo Markov-Chain (MCMC) methods, in particular the implementation in CosmoMC
+Monte-Carlo Markoalv-Chain (MCMC) methods, in particular the implementation in CosmoMC
 \cite{Lewis:2002ah}, and it is expected that \cmbexp\ will use similar methods. 
 
 \subsection{Challenges}
@@ -157,7 +167,7 @@ However, the level of correlation depends on experiment specifications and the m
 The correlation should thus be included in analyses that combine two- and four-point measurements unless it is known to be negligible for a specific experiment.
 \\
 
-The forecasted noise level for CMB-S4 is much lower than the noise level for Planck, and the reconstruction of the lensing potential power spectrum will come from a mixture of temperature and polarisation data.
+The forecasted noise level for CMB-S4 is much lower than the noise level for Planck, and the reconstruction of the lensing potential power spectrum will come from a mixture of temperature and polarization data.
 In this context, modelling the correlations only in the case of temperature is not accurate enough.
 Instead, a minimum variance lensing estimator out of all the measured quadratic pairs needs to be considered, and contributions arising from all couplings of the CMB six-point function would need to be modelled.
 There are a number of further challenges involving the covariance of CMB N-point functions, which we do not treat in detail here but are addressed in \cite{Peloton:prep} for example. 
@@ -165,7 +175,7 @@ There are a number of further challenges involving the covariance of CMB N-point
 
 \cite{Schmittfull:2013uea} and \cite{Peloton:prep} identified three main contributions to the cross-covariance: The noise contribution arising because fluctuations of the unlensed CMB and instrumental noise change both the Gaussian reconstruction noise $N^{(0)}$ and the CMB power spectra;
 the signal contribution from the cosmic variance fluctuations of the true lensing potential (i.e.~fluctuations of matter along the line of sight); and contributions coming from the connected trispectrum part of the CMB six-point function.
-Those contributions have been modelled with a good accuracy, allowing to have very good agreement against simulations.
+Those contributions have been modelled with high precision and agree well with simulations.
 The noise contribution is not present if the Gaussian reconstruction bias $N^{(0)}$ is subtracted in a realization-dependent way using the measured CMB power spectrum in our universe (see e.g.~\cite{Hanson:2010rp,Schmittfull:2013uea}).
 However for an experiment such as CMB-S4, the last two contributions contribute the most to the correlation between lensing power spectra and lensed CMB power spectra, reaching few tens of percent in some cases.
 The signal covariance could in principle also be avoided by delensing CMB power spectra with the estimated lensing reconstruction by mimicking the realization-dependent technique as shown in \cite{Schmittfull:2013uea}, or by applying more advanced delensing methods as described in Section \ref{delens}.
@@ -173,7 +183,7 @@ In addition to the cross-covariance between two-point and four-point functions o
 However we want to emphasise that the discussion above applies to the standard quadratic lensing reconstruction estimators, and the situation may be different for iterative or maximum-likelihood lensing estimators \cite{Hirata:2002jy}.
 
 \subsubsection{Delensing}
-For noise levels below $\Delta_P \simeq 5 \mu$K-arcmin,  the dominant source of effective noise in the search for primordial $B$ modes is the fluctuation induced by the lensing of $E$ modes from recombination.  This signal has a well-understood amplitude, and unlike many other sources of astrophysical fluctuation in the map, it cannot be removed with multifrequency data.  Instead it must be removed either using map-level estimates of both the primordial $E$-mode maps and the CMB lensing potential $\phi$ or using a prediction for the lensing $B$-mode spectrum. The latter approach necessarily leaves some cosmic variance residual of the lensing signal after cleaning, while the former can in principle result in nearly perfect cleaning, so we will concentrate on that approach here.
+For noise levels below $\Delta_P \simeq 5 \mu$K-arcmin (after foreground cleaning),  the dominant source of effective noise in the search for primordial $B$ modes is the fluctuation induced by the lensing of $E$ modes from recombination.  This signal has a well-understood amplitude, and unlike many other sources of astrophysical fluctuation in the map, it cannot be removed with multifrequency data.  Instead it must be removed either using map-level estimates of both the primordial $E$-mode maps and the CMB lensing potential $\phi$ or using a prediction for the lensing $B$-mode spectrum. The latter approach necessarily leaves some cosmic variance residual of the lensing signal after cleaning, while the former can in principle result in nearly perfect cleaning, so we will concentrate on that approach here.
 
 %As discussed in the dedicated CMB lensing chapter, delensing will also be a crucial portion of the reconstruction of the CMB lensing field.  This is because at low noise levels a quadratic reconstruction of lensing using the $EB$ estimator \cite{Hu:2001kj} can be improved upon by cleaning the CMB maps of the lens-induced $B$-mode fluctuations, and then performing lens reconstruction again.  In effect, the quadratic estimate of \cite{Hu:2001kj} is effectively the first step in an iterative scheme to find the maximum-likelihood solution for the lensing and primordial fields \cite{Hirata:2002jy}.  CMB maps cleaned of the lensing signals will thus likely be produced as part of the CMB lensing analysis procedure.
 
