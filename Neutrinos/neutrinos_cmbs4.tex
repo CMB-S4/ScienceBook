@@ -277,7 +277,7 @@ Any probe of $P_{mm}$ late times is, in principle, sensitive to the sum of the n
 
 \subsection{CMB Lensing}\label{sec:neulens}
 
-Likely the cleanest probe of the neutrino mass in the CMB is through gravitational lensing~\cite{Kaplinghat:2003bh}, which directly measures the matter distribution along the line of sight.  To be concrete, in the Limber approximation, the lensing power spectrum is given by
+Likely the cleanest probe of the neutrino mass in the CMB is through gravitational lensing~\cite{Kaplinghat:2003bh}, which directly measures the matter distribution along the line of sight.  A measurement of the CMB lensing power spectrum provides a two-dimensional projection of the three-dimensional matter power spectrum, see Figure~\ref{fig:lensingsuppression}.  To be concrete, in the Limber approximation, the lensing power spectrum is given by
 \bea
 \label{eq:CellPhiPhi}
 C_\ell^{\phi \phi} &=& \frac{8\pi^2}{\ell^2} \int^{\chi_\star}_0 \chi d\chi P_\Psi(\ell /\chi ; \eta_0 - \chi)  \frac{(\chi_\star -\chi)^2}{\chi_\star \chi} \\
@@ -292,7 +292,7 @@ For the purposes of the neutrino mass measurement, the advantage of lensing over
 \begin{figure}[t]
 \begin{center}
 \includegraphics[width = 0.5\textwidth]{Neutrinos/Lensingmnu.pdf} 
-\caption{ The effect of massive neutrinos on the matter power spectrum and CMB lensing power spectrum.  We see that only the overall suppression is visible at moderate to high-$\ell$ in lensing.}
+\caption{ The effect of massive neutrinos on the matter power spectrum and CMB lensing power spectrum.  We see that only the overall suppression is visible at moderate to high $L$ in the lensing power spectrum.}
 \label{fig:lensingsuppression}
 \end{center}
 \end{figure} 
@@ -308,7 +308,7 @@ In addition to degeneracies in $\Lambda$CDM there can be degeneracies with possi
 \begin{itemize}
 \item $\Neff$: The density of neutrinos after they become non-relativistic is given by $\rho_\nu \simeq m_\nu n_\nu$ where $n_\nu$ is the number density.  Therefore, we only measure the mass if we know the number density to sufficient accuracy.  Fortunately, as we will discuss in the next chapter, measurements of the neutrino energy density from the primary CMB will be sufficiently accurate as to make this degeneracy insignificant under plausible assumptions.
 \end{itemize}
-In principle, measurement of the free streaming scale directly in the matter power spectrum would separate the neutrino mass from most other physical quantities.  Unfortunately, given current limits on the neutrino mass, the change to the shape of the lensing potential power spectrum is not expected to drive future constraints.  
+In principle, measurement of the free streaming scale directly in the matter power spectrum would separate the neutrino mass from most other physical quantities.  Unfortunately, given current limits on the neutrino mass, the change to the shape of the lensing potential power spectrum is not expected to drive future constraints.  This is due to the fact that the presence of neutrino mass mostly changes the overall amplitude of the lensing power spectrum at moderate and high $L$, and cosmic variance limits the constraining power of the lensing power spectrum at low $L$; see Figure~\ref{fig:lensingsuppression} and also Figure~\ref{mnuS4errors}.
 
 {\it Status of current observations} -- Planck has provided a strong constraint of $\sum m_\nu < 0.194$ eV when combining both temperature and polarization data with the CMB lensing power spectrum and external data.  A weaker constraint of $\sum m_\nu < 0.492$ eV can be derived using only the temperature and polarization data.  This constraint arises through the effect of massive neutrinos on the primordial TT and EE power spectra.  For sufficiently large masses, the neutrinos do not behave as radiation around the time of recombination which impacts the damping tail and locations of the acoustic peaks.  Improvements in the limits on the sum of the neutrino masses will be driven primarily by lensing given that current limits imply that the neutrinos are effectively massless from the point of view of the primary CMB anisotropies.  External data (BAO) will continue to be important in breaking the degeneracy with $\Omega_m$.  
 
@@ -388,7 +388,7 @@ As with dark energy studies, there are strong synergies between the SZ cluster c
 \includegraphics[scale=0.4]{Neutrinos/S4+DESI_BeamVsNoise.png}  
 \includegraphics[scale=0.4]{Neutrinos/S4+DESI_BeamVsNoise_tauprior.png}
 
-\caption{ Forecasts for $\sigma(\sum m_\nu)$ assuming $\Lambda$CDM + $\sum m_\nu$.  Both figures vary beam size in arcmin and effective detector noise in $\mu$K-arcmin. {\it Left:} CMB Stage IV alone with an external prior on $\tau = 0.06 \pm 0.01$. {\it Right: } CMB Stage IV with DESI BAO  with an external prior on $\tau = 0.06 \pm 0.01$.  {\it Bottom:} Forecasts assuming a prior $\tau = 0.06 \pm 0.006$, corresponding to the Planck Blue Book expected sensitivity.}
+\caption{ Forecasts for $\sigma(\sum m_\nu)$ assuming $\Lambda$CDM + $\sum m_\nu$.  All three figures vary beam size in arcmin and effective detector noise in $\mu$K-arcmin. {\it Top Left:} CMB Stage IV alone with an external prior on $\tau = 0.06 \pm 0.01$. {\it Top Right: } CMB Stage IV plus DESI BAO  with an external prior on $\tau = 0.06 \pm 0.01$.  {\it Bottom:} Forecasts assuming a prior $\tau = 0.06 \pm 0.006$, corresponding to the Planck Blue Book expected sensitivity.}
 \label{fig:mnuforecast}
 \end{center}
 \end{figure} 
@@ -404,7 +404,7 @@ Forecasts for CMB Stage IV with and without DESI BAO are shown in Figure~\ref{fi
 
 Including DESI BAO, the most significant limitation to measuring $\sum m_\nu$ is measurement of $\tau$.  We have assumed that $\ell \geq 30$ and therefore we do not constrain $\tau$ directly.  Under such circumstances, one is limited by the $\tau$-measurements by other experiments.  
 
-Current best constraint on $\tau$ comes from Planck~\cite{Adam:2016hgk}, roughly
+The current best constraint on $\tau$ comes from Planck~\cite{Adam:2016hgk}, roughly
 corresponding to an external prior of
  $\tau = 0.06 \pm 0.01$.  We see in Figure~\ref{fig:mnuforecast} that
  this prior is sufficient to reach $\sigma(\sum m_\nu) < 30$ meV for a wide range of experimental configurations.  On the other hand, we also note that there is little improvement with decreased noise or beamsize as we saturate at $\sigma(\sum m_\nu) \sim 26$ meV,  even if we increase $f_{\rm sky} >0.4$.  Of course, the reason is that we are limited by the $\tau$-degeneracy.
@@ -422,29 +422,28 @@ In order to reach the 3$\sigma$ target, $\sigma(\sum m_\nu) < 20$ meV,
 one needs a better measurement of $\tau$.
 As shown in bottom panel of Figure~\ref{fig:mnuforecast},
 we can reach $\sigma(\sum m_\nu) \approx 20$\,meV for a variety of plausible
-configurations of CMB S4 with Planck's designed reach in sensitivity, a
+configurations of CMB-S4 with Planck's designed reach in sensitivity, a
 measurement at the level of $\sigma(\tau) = 0.006$.
  However, as before, we see that there are only moderate improvements coming from lower noise or smaller beams.  We see a similar limitation that applies to other cosmological probes, as seen in Table~\ref{table:numassLSS}, which also saturate at a similar sensitivity.
 
 More generally, improved measurements of $\tau$ and $H_0$ may become
-available before or during CMB S4.  Possible impact of measurements in
-even further future should also be examined in evaluating the value of
-the legacy data from CMB S4.
+available before or during CMB-S4.  We therefore also examine impacts of measurements even further in the future in evaluating the value of
+the legacy data from CMB-S4.
 %
 There are ground-based CMB
 instruments~\cite{Essinger-Hileman:2014pja,2014JLTP..176..691O}
 designed to observe
 very large angular scales, with possible reach to constrain $\tau$;
-CLASS experiment is forecasted to reach
+the CLASS experiment is forecasted to reach
 $\sigma(\tau) \simeq 0.004$~\cite{CLASSSPIE2016}, for example.
 %
-Space missions~\cite{2016JLTP..184..824M,2011JCAP...07..025K} during 2020s are
+Space missions~\cite{2016JLTP..184..824M,2011JCAP...07..025K} are
 proposed to constrain the primordial gravitational
-waves through the so-called reionization bump; they are designed to
+waves through the so-called reionization bump during the 2020s; they are designed to
 reach sensitivity well beyond that required to achieve a cosmic-variance
 limited $\tau$ measurement, $\sigma(\tau) \sim 0.002$.
 %
-Measurement of the reionization through 21-cm hyperfine transition can,
+Measurement of reionization through 21-cm hyperfine transition can,
 in principle, determine $\tau$ beyond the accuracy of the
 cosmic-variance limited CMB measurement~\cite{Liu:2015txa}.
 %
@@ -629,17 +628,16 @@ histories, these sterile neutrinos are typically fully thermalized
 thermalized in two extra neutrino models \cite{Jacques:2013xr}.
 
 Interestingly, there are combinations of CMB plus LSS
-datasets that are in tension, particularly with a smaller amplitude of
-fluctuations at small scale than that inferred in zero neutrino mass
+datasets that are in tension, particularly favoring a smaller amplitude of
+fluctuations at small scales than that predicted in zero neutrino mass
 models. This would be alleviated with the
 presence of massive neutrinos, extra neutrinos, or both. In particular,
 cluster abundance analyses \cite{Wyman:2013lza,Ade:2015fva} and weak lensing analyses
 \cite{Battye:2013xqa} indicate a lower amplitude of
-fluctuations than zero neutrino mass \cite{Giusarma:2014zza}. Baryon Acoustic
+fluctuations than zero neutrino mass models \cite{Giusarma:2014zza}. Baryon Acoustic
 Oscillation measures of expansion history are affected by the presence
 of massive neutrinos, and nonzero neutrino mass may be indicated 
-\cite{Beutler:2014yhv}, though 2015 Planck results show a lack of such
-alleviation in cases with massive or extra neutrinos
+\cite{Beutler:2014yhv}, though 2015 Planck results do not show a preference for models with massive or extra neutrinos
 \cite{Ade:2015xua}. 
 
 There is a potential emergence of both laboratory and cosmological
@@ -647,8 +645,8 @@ indications of massive and, potentially, extra neutrinos. However, the
 combined requirements of the specific masses to produce the short
 baseline results, along with mixing angles that require thermalized
 sterile neutrino states, are inconsistent at this point with
-cosmological tension data sets
-\cite{Joudaki:2012uk,Archidiacono:2013xxa}. The tension data sets are
+cosmological data sets
+\cite{Joudaki:2012uk,Archidiacono:2013xxa}. The tensions present between data sets are
 not highly significant at this point ($\lesssim 3\sigma$), and there
 are a significant set of proposals for short baseline oscillation
 experiment follow up \cite{Abazajian:2012ys}. 
