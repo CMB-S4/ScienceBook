@@ -214,6 +214,7 @@ in comoving coordinates.
 On scales larger than $k_{\rm nr}$ (adiabatic) perturbations in the density of neutrinos, baryons, and CDM are coherent and can be described by a single perturbation to the total matter density $\delta_m= \delta \rho_m/\rho_m$. On smaller scales where the neutrino perturbations have decayed, only the perturbations to the CDM and baryons remain so that $\delta_{m} = \delta_{cb}\, (\Omega_{c} + \Omega_b)/\Omega_m $. The remaining CDM and baryon perturbations also grow more slowly because the neutrino energy density contributes to the expansion rate, but not to the source potentials. These two effects cause a suppression in the amplitude and the growth rate of matter perturbations wavenumbers $k > k_{\rm fs}$ relative to a universe with massless neutrinos (and also relative to density perturbations with $k<k_{\rm nr}$). The net change in the amplitude of perturbations with $k > k_{\rm nr}$ primarily depends on the fractional energy density in massive neutrinos (keeping $\Omega_c+\Omega_b$ fixed) but retains a small sensitivity to the individual neutrino masses through a dependence on $a_{\rm nr}$. A plot of the suppression in the matter power spectrum at small scales due to neutrino mass is shown in Figure \ref{fig:Psuppression}.
 
 
+
 \begin{figure}[t]
 \begin{center}
 \includegraphics[width = 0.6\textwidth]{Neutrinos/Psuppression.png} 
@@ -221,7 +222,6 @@ On scales larger than $k_{\rm nr}$ (adiabatic) perturbations in the density of n
 \label{fig:Psuppression}
 \end{center}
 \end{figure} 
-
 
 An estimate of the effect of massive neutrinos on the growth of structure can be made by studying the evolution of matter perturbations in the two regimes $k\ll k_{\rm fs}$ and $k\gg k_{\rm fs}$.  In the synchronous gauge, linear perturbations to the matter density with wavenumbers $k \ll k_{\rm fs}$ evolve as
 \beq
@@ -283,9 +283,19 @@ Likely the cleanest probe of the neutrino mass in the CMB is through gravitation
 C_\ell^{\phi \phi} &=& \frac{8\pi^2}{\ell^2} \int^{\chi_\star}_0 \chi d\chi P_\Psi(\ell /\chi ; \eta_0 - \chi)  \frac{(\chi_\star -\chi)^2}{\chi_\star \chi} \\
 P_\Psi (k;\eta)&=& \frac{9 \Omega_m^2 (\eta) H^4(\eta)}{8 \pi^2} \frac{P_{mm}(k;\eta)}{k}
 \eea
-where $\chi$ ($\chi_\star$) is the co-moving distance (to the last scattering surface) and $\eta$ ($\eta_0$) is conformal time (today).   More details regarding CMB lensing, including current and future measurements, will be discussed in Chapter **.
+where $\chi$ ($\chi_\star$) is the co-moving distance (to the last scattering surface) and $\eta$ ($\eta_0$) is conformal time (today).   More details regarding CMB lensing, including current and future measurements, will be discussed in Chapter 7.
 
 For the purposes of the neutrino mass measurement, the advantage of lensing over other probes is that it is largely free of astrophysical uncertainties.  As we see from the lensing power spectrum, we are directly sensitive to the matter power spectrum (rather than a biased tracer) and the relevant scales are in the linear regime where modeling should be reliable.
+
+
+
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width = 0.5\textwidth]{Neutrinos/Lensingmnu.pdf} 
+\caption{ The suppression in the matter power spectrum and CMB lensing power spect due to massive neutrinos.}
+\label{fig:lensingsuppression}
+\end{center}
+\end{figure} 
 
 The primary challenges for the lensing measurement are degeneracies with other cosmological parameters.  The two primary degeneracies in $\Lambda$CDM are
 \begin{itemize}
@@ -404,7 +414,7 @@ external prior of
 \begin{center}
 \includegraphics[scale=0.6]{Neutrinos/Mnu_tauprior.pdf}
 
-\caption{ Forecasts for $\sigma(\sum m_\nu)$ assuming $\Lambda$CDM + $\sum m_\nu$ using CMB Stage IV and DESI BAO.  We vary sensitivity in $\mu$K-arcmin and $\tau$-priors, $\tau = 0.06 \pm \sigma(\tau)$ with the contours showing 1$\sigma$ errors for $\sum m_\nu$.  The white and blue dashed lines correspond to the low-$\ell$ cosmic variance limit and Planck Blue Book values respectively. }
+\caption{ Forecasts for $\sigma(\sum m_\nu)$ assuming $\Lambda$CDM + $\sum m_\nu$ using CMB Stage IV and DESI BAO.  We vary sensitivity in $\mu$K-arcmin and $\tau$-priors, $\tau = 0.06 \pm \sigma(\tau)$ with the contours showing 1$\sigma$ errors for $\sum m_\nu$.  We fixed the resolution using 1' beams.  The white and blue dashed lines correspond to the low-$\ell$ cosmic variance limit and Planck Blue Book values respectively. }
 \label{fig:mnu_tau}
 \end{center}
 \end{figure} 
