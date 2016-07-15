@@ -28,8 +28,8 @@ In this chapter we start with an overview of the data analysis pipeline before d
 The central challenge of CMB data analysis is to reduce both the systematic and statistical uncertainties in the data to a sufficient level to enable well-constrained estimates of the parameters of cosmology and fundamental physics. Typically this is achieved through an iterative process, first mitigating the systematic effects exposed in the particular data domain, and then performing a data-compressing domain transformation in order to reduce the statistical uncertainty by increasing the signal-to-noise.
 
 \begin{figure}[htbp]
-\hspace{1.1in}\includegraphics[width=0.7\textwidth]{Analysis/da}\\
-\caption{The schematic CMB data analysis pipeline, showing the reduction from time-samples (red) to map-pixels (blue) to spectral-multipoles (green), including processes to reduce both systematic (horizontal) and statistical (vertical) uncertainties.}
+\hspace{0.75in}\includegraphics[width=0.875\textwidth]{Analysis/da}\\
+\caption{The schematic CMB data analysis pipeline, showing the reduction from time-samples (red) to map-pixels (blue) to spectral-multipoles (green), including processes to reduce both systematic (vertical) and statistical (horizontal) uncertainties.}
 \label{fig_da}
 \end{figure}
 
@@ -62,7 +62,7 @@ Simulations of a CMB mission's data play a number of critical roles; specificall
 As shown in Figure \ref{fig_sim}, given a mission model (both instrument and observation) and a sky model (both CMB and extra-galactic and galactic foregrounds) we can generate a simulation of the mission data in any of its domains. However, there is an inevitable trade-off between how representative the simulation is of real data and the complexity of the input models and computational cost of generating the simulation. The choice of the simulation data domain will then be determined by the balance between the realism requirements and the complexity/cost constraints for the particular task at hand.
 
 \begin{figure}[htbp]
-\includegraphics[width=0.6\textwidth]{Analysis/sim}\\
+\includegraphics[width=0.75\textwidth]{Analysis/sim}\\
 \caption{The CMB simulation pipeline, including both mission-independent sky modeling and mission-specific data simulation in the time (red), pixel (blue) and spectral (green) domains.}
 \label{fig_sim}
 \end{figure}
