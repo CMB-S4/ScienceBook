@@ -147,20 +147,6 @@ A.~Lewis, A.~Challinor, and A.~Lasenby, ``{Efficient computation of CMB
   [astro-ph.CO]}}.
 %%CITATION = ARXIV:1303.5082;%%.
 
-\bibitem{Ade:2013ydc}
-{Planck Collaboration}, ``{Planck 2013 Results. XXIV. Constraints on primordial
-  non-Gaussianity},''
-\href{http://arxiv.org/abs/1303.5084}{{\ttfamily arXiv:1303.5084
-  [astro-ph.CO]}}.
-%%CITATION = ARXIV:1303.5084;%%.
-
-\bibitem{Ade:2015ava}
-{Planck Collaboration}, ``{Planck 2015 results. XVII. Constraints on primordial
-  non-Gaussianity},''
-\href{http://arxiv.org/abs/1502.01592}{{\ttfamily arXiv:1502.01592
-  [astro-ph.CO]}}.
-%%CITATION = ARXIV:1502.01592;%%.
-
 \bibitem{Essinger-Hileman:2014pja}
 T.~Essinger-Hileman {\em et~al.}, ``{CLASS: The Cosmology Large Angular Scale
   Surveyor},'' \href{http://dx.doi.org/10.1117/12.2056701}{{\em Proc. SPIE Int.
@@ -571,6 +557,15 @@ D.~Baumann, H.~Lee, and G.~L. Pimentel, ``{High-Scale Inflation and the Tensor
 \href{http://arxiv.org/abs/1507.07250}{{\ttfamily arXiv:1507.07250 [hep-th]}}.
 %%CITATION = ARXIV:1507.07250;%%.
 
+\bibitem{Namba:2015gja}
+R.~Namba, M.~Peloso, M.~Shiraishi, L.~Sorbo, and C.~Unal, ``{Scale-dependent
+  gravitational waves from a rolling axion},''
+  \href{http://dx.doi.org/10.1088/1475-7516/2016/01/041}{{\em JCAP} {\bfseries
+  1601} no.~01, (2016) 041},
+\href{http://arxiv.org/abs/1509.07521}{{\ttfamily arXiv:1509.07521
+  [astro-ph.CO]}}.
+%%CITATION = ARXIV:1509.07521;%%.
+
 \bibitem{Lasky:2015lej}
 P.~D. Lasky {\em et~al.}, ``{Gravitational-wave cosmology across 29 decades in
   frequency},'' \href{http://dx.doi.org/10.1103/PhysRevX.6.011035}{{\em Phys.
@@ -666,6 +661,12 @@ P.~Adshead, D.~Blas, C.~P. Burgess, P.~Hayman, and S.~P. Patil, ``{Magnon
 \href{http://arxiv.org/abs/1604.06048}{{\ttfamily arXiv:1604.06048 [hep-th]}}.
 %%CITATION = ARXIV:1604.06048;%%.
 
+\bibitem{Hayden:2016xxa}
+H.~Lee, D.~Baumann, and G.~L. Pimentel, ``{High-Scale Inflation and the Tensor
+  Tilt},''
+\href{http://arxiv.org/abs/1607.03735}{{\ttfamily arXiv:1607.03735 [hep-th]}}.
+%%CITATION = ARXIV:1507.07250;%%.
+
 \bibitem{Contaldi:2008yz}
 C.~R. Contaldi, J.~Magueijo, and L.~Smolin, ``{Anomalous CMB polarization and
   gravitational chirality},''
@@ -747,15 +748,6 @@ M.~Peloso, L.~Sorbo, and C.~Unal, ``{Rolling axions during inflation:
 \href{http://arxiv.org/abs/1606.00459}{{\ttfamily arXiv:1606.00459
   [astro-ph.CO]}}.
 %%CITATION = ARXIV:1606.00459;%%.
-
-\bibitem{Namba:2015gja}
-R.~Namba, M.~Peloso, M.~Shiraishi, L.~Sorbo, and C.~Unal, ``{Scale-dependent
-  gravitational waves from a rolling axion},''
-  \href{http://dx.doi.org/10.1088/1475-7516/2016/01/041}{{\em JCAP} {\bfseries
-  1601} no.~01, (2016) 041},
-\href{http://arxiv.org/abs/1509.07521}{{\ttfamily arXiv:1509.07521
-  [astro-ph.CO]}}.
-%%CITATION = ARXIV:1509.07521;%%.
 
 \bibitem{Anber:2006xt}
 M.~M. Anber and L.~Sorbo, ``{N-flationary magnetic fields},''
@@ -1114,6 +1106,40 @@ P.~D. Meerburg, ``{Alleviating the tension at low $\ell$ through axion
   [astro-ph.CO]}}.
 %%CITATION = ARXIV:1406.3243;%%.
 
+\bibitem{Dvorkin:2007jp}
+C.~Dvorkin, H.~V. Peiris, and W.~Hu, ``{Testable polarization predictions for
+  models of CMB isotropy anomalies},''
+  \href{http://dx.doi.org/10.1103/PhysRevD.77.063008}{{\em Phys. Rev.}
+  {\bfseries D77} (2008) 063008},
+\href{http://arxiv.org/abs/0711.2321}{{\ttfamily arXiv:0711.2321 [astro-ph]}}.
+%%CITATION = ARXIV:0711.2321;%%.
+
+\bibitem{Mortonson:2009qv}
+M.~J. Mortonson, C.~Dvorkin, H.~V. Peiris, and W.~Hu, ``{CMB polarization
+  features from inflation versus reionization},''
+  \href{http://dx.doi.org/10.1103/PhysRevD.79.103519}{{\em Phys. Rev.}
+  {\bfseries D79} (2009) 103519},
+\href{http://arxiv.org/abs/0903.4920}{{\ttfamily arXiv:0903.4920
+  [astro-ph.CO]}}.
+%%CITATION = ARXIV:0903.4920;%%.
+
+\bibitem{Dvorkin:2011ui}
+C.~Dvorkin and W.~Hu, ``{Complete WMAP Constraints on Bandlimited Inflationary
+  Features},'' \href{http://dx.doi.org/10.1103/PhysRevD.84.063515}{{\em Phys.
+  Rev.} {\bfseries D84} (2011) 063515},
+\href{http://arxiv.org/abs/1106.4016}{{\ttfamily arXiv:1106.4016
+  [astro-ph.CO]}}.
+%%CITATION = ARXIV:1106.4016;%%.
+
+\bibitem{Miranda:2014fwa}
+V.~Miranda, W.~Hu, and C.~Dvorkin, ``{Polarization Predictions for Inflationary
+  CMB Power Spectrum Features},''
+  \href{http://dx.doi.org/10.1103/PhysRevD.91.063514}{{\em Phys. Rev.}
+  {\bfseries D91} no.~6, (2015) 063514},
+\href{http://arxiv.org/abs/1411.5956}{{\ttfamily arXiv:1411.5956
+  [astro-ph.CO]}}.
+%%CITATION = ARXIV:1411.5956;%%.
+
 \bibitem{Achucarro:2014msa}
 A.~Achucarro, V.~Atal, B.~Hu, P.~Ortiz, and J.~Torrado, ``{Inflation with
   moderately sharp features in the speed of sound: Generalized slow roll and
@@ -1123,97 +1149,6 @@ A.~Achucarro, V.~Atal, B.~Hu, P.~Ortiz, and J.~Torrado, ``{Inflation with
 \href{http://arxiv.org/abs/1404.7522}{{\ttfamily arXiv:1404.7522
   [astro-ph.CO]}}.
 %%CITATION = ARXIV:1404.7522;%%.
-
-\bibitem{Guth:2012ww}
-A.~H. Guth and Y.~Nomura, ``{What can the observation of nonzero curvature tell
-  us?},'' \href{http://dx.doi.org/10.1103/PhysRevD.86.023534}{{\em Phys.Rev.}
-  {\bfseries D86} (2012) 023534},
-\href{http://arxiv.org/abs/1203.6876}{{\ttfamily arXiv:1203.6876 [hep-th]}}.
-%%CITATION = ARXIV:1203.6876;%%.
-
-\bibitem{Kleban:2012ph}
-M.~Kleban and M.~Schillo, ``{Spatial Curvature Falsifies Eternal Inflation},''
-  \href{http://dx.doi.org/10.1088/1475-7516/2012/06/029}{{\em JCAP} {\bfseries
-  1206} (2012) 029},
-\href{http://arxiv.org/abs/1202.5037}{{\ttfamily arXiv:1202.5037
-  [astro-ph.CO]}}.
-%%CITATION = ARXIV:1202.5037;%%.
-
-\bibitem{Ade:2015xua}
-{Planck Collaboration}, ``{Planck 2015 results. XIII. Cosmological
-  parameters},''
-\href{http://arxiv.org/abs/1502.01589}{{\ttfamily arXiv:1502.01589
-  [astro-ph.CO]}}.
-%%CITATION = ARXIV:1502.01589;%%.
-
-\bibitem{Font-Ribera:2013rwa}
-A.~Font-Ribera, P.~McDonald, N.~Mostek, B.~A. Reid, H.-J. Seo, {\em et~al.},
-  ``{DESI and other dark energy experiments in the era of neutrino mass
-  measurements},''
-\href{http://arxiv.org/abs/1308.4164}{{\ttfamily arXiv:1308.4164
-  [astro-ph.CO]}}.
-%%CITATION = ARXIV:1308.4164;%%.
-
-\bibitem{Leonard:2016evk}
-C.~D. Leonard, P.~Bull, and R.~Allison, ``{The Spatial Curvature Endgame},''
-\href{http://arxiv.org/abs/1604.01410}{{\ttfamily arXiv:1604.01410
-  [astro-ph.CO]}}.
-%%CITATION = ARXIV:1604.01410;%%.
-
-\bibitem{Zaldarriaga:1997ch}
-M.~Zaldarriaga, D.~N. Spergel, and U.~Seljak, ``{Microwave background
-  constraints on cosmological parameters},''
-  \href{http://dx.doi.org/10.1086/304692}{{\em Astrophys. J.} {\bfseries 488}
-  (1997) 1--13},
-\href{http://arxiv.org/abs/astro-ph/9702157}{{\ttfamily arXiv:astro-ph/9702157
-  [astro-ph]}}.
-%%CITATION = ASTRO-PH/9702157;%%.
-
-\bibitem{Bond:1997wr}
-J.~R. Bond, G.~Efstathiou, and M.~Tegmark, ``{Forecasting cosmic parameter
-  errors from microwave background anisotropy experiments},''
-  \href{http://dx.doi.org/10.1093/mnras/291.1.L33}{{\em Mon. Not. Roy. Astron.
-  Soc.} {\bfseries 291} (1997) L33--L41},
-\href{http://arxiv.org/abs/astro-ph/9702100}{{\ttfamily arXiv:astro-ph/9702100
-  [astro-ph]}}.
-%%CITATION = ASTRO-PH/9702100;%%.
-
-\bibitem{Errard:2015cxa}
-J.~Errard, S.~M. Feeney, H.~V. Peiris, and A.~H. Jaffe, ``{Robust forecasts on
-  fundamental physics from the foreground-obscured, gravitationally-lensed CMB
-  polarization},'' \href{http://dx.doi.org/10.1088/1475-7516/2016/03/052}{{\em
-  JCAP} {\bfseries 1603} no.~03, (2016) 052},
-\href{http://arxiv.org/abs/1509.06770}{{\ttfamily arXiv:1509.06770
-  [astro-ph.CO]}}.
-%%CITATION = ARXIV:1509.06770;%%.
-
-\bibitem{Hirata:2002jy}
-C.~M. Hirata and U.~Seljak, ``{Analyzing weak lensing of the cosmic microwave
-  background using the likelihood function},''
-  \href{http://dx.doi.org/10.1103/PhysRevD.67.043001}{{\em Phys. Rev.}
-  {\bfseries D67} (2003) 043001},
-\href{http://arxiv.org/abs/astro-ph/0209489}{{\ttfamily arXiv:astro-ph/0209489
-  [astro-ph]}}.
-%%CITATION = ASTRO-PH/0209489;%%.
-
-\bibitem{Smith:2010gu}
-K.~M. Smith, D.~Hanson, M.~LoVerde, C.~M. Hirata, and O.~Zahn, ``{Delensing CMB
-  Polarization with External Datasets},''
-  \href{http://dx.doi.org/10.1088/1475-7516/2012/06/014}{{\em JCAP} {\bfseries
-  1206} (2012) 014},
-\href{http://arxiv.org/abs/1010.0048}{{\ttfamily arXiv:1010.0048
-  [astro-ph.CO]}}.
-%%CITATION = ARXIV:1010.0048;%%.
-
-\bibitem{Wu:2014hta}
-W.~L.~K. Wu, J.~Errard, C.~Dvorkin, C.~L. Kuo, A.~T. Lee, P.~McDonald,
-  A.~Slosar, and O.~Zahn, ``{A Guide to Designing Future Ground-based Cosmic
-  Microwave Background Experiments},''
-  \href{http://dx.doi.org/10.1088/0004-637X/788/2/138}{{\em Astrophys. J.}
-  {\bfseries 788} (2014) 138},
-\href{http://arxiv.org/abs/1402.4108}{{\ttfamily arXiv:1402.4108
-  [astro-ph.CO]}}.
-%%CITATION = ARXIV:1402.4108;%%.
 
 \bibitem{Babich:2004gb}
 D.~Babich, P.~Creminelli, and M.~Zaldarriaga, ``{The Shape of
@@ -1357,6 +1292,13 @@ D.~Baumann, D.~Green, H.~Lee, and R.~A. Porto, ``{Signs of Analyticity in
 \href{http://arxiv.org/abs/1502.07304}{{\ttfamily arXiv:1502.07304 [hep-th]}}.
 %%CITATION = ARXIV:1502.07304;%%.
 
+\bibitem{Ade:2015ava}
+{Planck Collaboration}, ``{Planck 2015 results. XVII. Constraints on primordial
+  non-Gaussianity},''
+\href{http://arxiv.org/abs/1502.01592}{{\ttfamily arXiv:1502.01592
+  [astro-ph.CO]}}.
+%%CITATION = ARXIV:1502.01592;%%.
+
 \bibitem{Baumann:2011su}
 D.~Baumann and D.~Green, ``{Equilateral Non-Gaussianity and New Physics on the
   Horizon},'' \href{http://dx.doi.org/10.1088/1475-7516/2011/09/014}{{\em JCAP}
@@ -1461,6 +1403,13 @@ O.~Dor{\'e} {\em et~al.}, ``{Cosmology with the SPHEREX All-Sky Spectral
   [astro-ph.CO]}}.
 %%CITATION = ARXIV:1412.4872;%%.
 
+\bibitem{Ade:2013ydc}
+{Planck Collaboration}, ``{Planck 2013 Results. XXIV. Constraints on primordial
+  non-Gaussianity},''
+\href{http://arxiv.org/abs/1303.5084}{{\ttfamily arXiv:1303.5084
+  [astro-ph.CO]}}.
+%%CITATION = ARXIV:1303.5084;%%.
+
 \bibitem{Flauger:2014ana}
 R.~Flauger, L.~McAllister, E.~Silverstein, and A.~Westphal, ``{Drifting
   Oscillations in Axion Monodromy},''
@@ -1549,6 +1498,61 @@ X.~Chen, M.~H. Namjoo, and Y.~Wang, ``{Quantum Primordial Standard Clocks},''
 \href{http://arxiv.org/abs/1509.03930}{{\ttfamily arXiv:1509.03930
   [astro-ph.CO]}}.
 %%CITATION = ARXIV:1509.03930;%%.
+
+\bibitem{Guth:2012ww}
+A.~H. Guth and Y.~Nomura, ``{What can the observation of nonzero curvature tell
+  us?},'' \href{http://dx.doi.org/10.1103/PhysRevD.86.023534}{{\em Phys.Rev.}
+  {\bfseries D86} (2012) 023534},
+\href{http://arxiv.org/abs/1203.6876}{{\ttfamily arXiv:1203.6876 [hep-th]}}.
+%%CITATION = ARXIV:1203.6876;%%.
+
+\bibitem{Kleban:2012ph}
+M.~Kleban and M.~Schillo, ``{Spatial Curvature Falsifies Eternal Inflation},''
+  \href{http://dx.doi.org/10.1088/1475-7516/2012/06/029}{{\em JCAP} {\bfseries
+  1206} (2012) 029},
+\href{http://arxiv.org/abs/1202.5037}{{\ttfamily arXiv:1202.5037
+  [astro-ph.CO]}}.
+%%CITATION = ARXIV:1202.5037;%%.
+
+\bibitem{Ade:2015xua}
+{Planck Collaboration}, ``{Planck 2015 results. XIII. Cosmological
+  parameters},''
+\href{http://arxiv.org/abs/1502.01589}{{\ttfamily arXiv:1502.01589
+  [astro-ph.CO]}}.
+%%CITATION = ARXIV:1502.01589;%%.
+
+\bibitem{Errard:2015cxa}
+J.~Errard, S.~M. Feeney, H.~V. Peiris, and A.~H. Jaffe, ``{Robust forecasts on
+  fundamental physics from the foreground-obscured, gravitationally-lensed CMB
+  polarization},'' \href{http://dx.doi.org/10.1088/1475-7516/2016/03/052}{{\em
+  JCAP} {\bfseries 1603} no.~03, (2016) 052},
+\href{http://arxiv.org/abs/1509.06770}{{\ttfamily arXiv:1509.06770
+  [astro-ph.CO]}}.
+%%CITATION = ARXIV:1509.06770;%%.
+
+\bibitem{Hirata:2002jy}
+C.~M. Hirata and U.~Seljak, ``{Analyzing weak lensing of the cosmic microwave
+  background using the likelihood function},''
+  \href{http://dx.doi.org/10.1103/PhysRevD.67.043001}{{\em Phys. Rev.}
+  {\bfseries D67} (2003) 043001},
+\href{http://arxiv.org/abs/astro-ph/0209489}{{\ttfamily arXiv:astro-ph/0209489
+  [astro-ph]}}.
+%%CITATION = ASTRO-PH/0209489;%%.
+
+\bibitem{Smith:2010gu}
+K.~M. Smith, D.~Hanson, M.~LoVerde, C.~M. Hirata, and O.~Zahn, ``{Delensing CMB
+  Polarization with External Datasets},''
+  \href{http://dx.doi.org/10.1088/1475-7516/2012/06/014}{{\em JCAP} {\bfseries
+  1206} (2012) 014},
+\href{http://arxiv.org/abs/1010.0048}{{\ttfamily arXiv:1010.0048
+  [astro-ph.CO]}}.
+%%CITATION = ARXIV:1010.0048;%%.
+
+\bibitem{Leonard:2016evk}
+C.~D. Leonard, P.~Bull, and R.~Allison, ``{The Spatial Curvature Endgame},''
+\href{http://arxiv.org/abs/1604.01410}{{\ttfamily arXiv:1604.01410
+  [astro-ph.CO]}}.
+%%CITATION = ARXIV:1604.01410;%%.
 
 \bibitem{Bond:1984fp}
 J.~R. Bond and G.~Efstathiou, ``{Cosmic background radiation anisotropies in
@@ -2316,6 +2320,109 @@ M.~Kaplinghat, L.~Knox, and Y.-S. Song, ``{Determining neutrino mass from the
   [astro-ph]}}.
 %%CITATION = ASTRO-PH/0303344;%%.
 
+\bibitem{Tereno:2008mm}
+I.~Tereno, C.~Schimd, J.-P. Uzan, M.~Kilbinger, F.~H. Vincent, and L.~Fu,
+  ``{CFHTLS weak-lensing constraints on the neutrino masses},''
+  \href{http://dx.doi.org/10.1051/0004-6361/200811077}{{\em Astron. Astrophys.}
+  {\bfseries 500} (2009) 657--665},
+\href{http://arxiv.org/abs/0810.0555}{{\ttfamily arXiv:0810.0555 [astro-ph]}}.
+%%CITATION = ARXIV:0810.0555;%%.
+
+\bibitem{Xia:2012na}
+J.-Q. Xia, B.~R. Granett, M.~Viel, S.~Bird, L.~Guzzo, M.~G. Haehnelt,
+  J.~Coupon, H.~J. McCracken, and Y.~Mellier, ``{Constraints on Massive
+  Neutrinos from the CFHTLS Angular Power Spectrum},''
+  \href{http://dx.doi.org/10.1088/1475-7516/2012/06/010}{{\em JCAP} {\bfseries
+  1206} (2012) 010},
+\href{http://arxiv.org/abs/1203.5105}{{\ttfamily arXiv:1203.5105
+  [astro-ph.CO]}}.
+%%CITATION = ARXIV:1203.5105;%%.
+
+\bibitem{Cuesta:2015iho}
+A.~J. Cuesta, V.~Niro, and L.~Verde, ``{Neutrino mass limits: robust
+  information from the power spectrum of galaxy surveys},''
+  \href{http://dx.doi.org/10.1016/j.dark.2016.04.005}{{\em Phys. Dark Univ.}
+  {\bfseries 13} (2016) 77--86},
+\href{http://arxiv.org/abs/1511.05983}{{\ttfamily arXiv:1511.05983
+  [astro-ph.CO]}}.
+%%CITATION = ARXIV:1511.05983;%%.
+
+\bibitem{Palanque-Delabrouille:2014jca}
+N.~Palanque-Delabrouille {\em et~al.}, ``{Constraint on neutrino masses from
+  SDSS-III/BOSS Ly$\alpha$ forest and other cosmological probes},''
+  \href{http://dx.doi.org/10.1088/1475-7516/2015/02/045}{{\em JCAP} {\bfseries
+  1502} no.~02, (2015) 045},
+\href{http://arxiv.org/abs/1410.7244}{{\ttfamily arXiv:1410.7244
+  [astro-ph.CO]}}.
+%%CITATION = ARXIV:1410.7244;%%.
+
+\bibitem{Beutler:2014yhv}
+{\bfseries BOSS} Collaboration, F.~Beutler {\em et~al.}, ``{The clustering of
+  galaxies in the SDSS-III Baryon Oscillation Spectroscopic Survey: Signs of
+  neutrino mass in current cosmological datasets},''
+  \href{http://dx.doi.org/10.1093/mnras/stu1702}{{\em Mon. Not. Roy. Astron.
+  Soc.} {\bfseries 444} (2014) 3501},
+\href{http://arxiv.org/abs/1403.4599}{{\ttfamily arXiv:1403.4599
+  [astro-ph.CO]}}.
+%%CITATION = ARXIV:1403.4599;%%.
+
+\bibitem{LoVerde:2014pxa}
+M.~LoVerde, ``{Halo bias in mixed dark matter cosmologies},''
+  \href{http://dx.doi.org/10.1103/PhysRevD.90.083530}{{\em Phys. Rev.}
+  {\bfseries D90} no.~8, (2014) 083530},
+\href{http://arxiv.org/abs/1405.4855}{{\ttfamily arXiv:1405.4855
+  [astro-ph.CO]}}.
+%%CITATION = ARXIV:1405.4855;%%.
+
+\bibitem{Font-Ribera:2013rwa}
+A.~Font-Ribera, P.~McDonald, N.~Mostek, B.~A. Reid, H.-J. Seo, {\em et~al.},
+  ``{DESI and other dark energy experiments in the era of neutrino mass
+  measurements},''
+\href{http://arxiv.org/abs/1308.4164}{{\ttfamily arXiv:1308.4164
+  [astro-ph.CO]}}.
+%%CITATION = ARXIV:1308.4164;%%.
+
+\bibitem{Takeuchi:2013gpa}
+Y.~Takeuchi and K.~Kadota, ``{Probing Neutrinos from Planck and Forthcoming
+  Galaxy Redshift Surveys},''
+  \href{http://dx.doi.org/10.1088/1475-7516/2014/01/046}{{\em JCAP} {\bfseries
+  1401} (2014) 046},
+\href{http://arxiv.org/abs/1310.0037}{{\ttfamily arXiv:1310.0037
+  [astro-ph.CO]}}.
+%%CITATION = ARXIV:1310.0037;%%.
+
+\bibitem{Pearson:2013iha}
+R.~Pearson and O.~Zahn, ``{Cosmology from cross correlation of CMB lensing and
+  galaxy surveys},'' \href{http://dx.doi.org/10.1103/PhysRevD.89.043516}{{\em
+  Phys. Rev.} {\bfseries D89} no.~4, (2014) 043516},
+\href{http://arxiv.org/abs/1311.0905}{{\ttfamily arXiv:1311.0905
+  [astro-ph.CO]}}.
+%%CITATION = ARXIV:1311.0905;%%.
+
+\bibitem{Mueller:2014dba}
+E.-M. Mueller, F.~de~Bernardis, R.~Bean, and M.~D. Niemack, ``{Constraints on
+  massive neutrinos from the pairwise kinematic Sunyaev-Zel?dovich effect},''
+  \href{http://dx.doi.org/10.1103/PhysRevD.92.063501}{{\em Phys. Rev.}
+  {\bfseries D92} no.~6, (2015) 063501},
+\href{http://arxiv.org/abs/1412.0592}{{\ttfamily arXiv:1412.0592
+  [astro-ph.CO]}}.
+%%CITATION = ARXIV:1412.0592;%%.
+
+\bibitem{Das:2013aia}
+S.~Das, J.~Errard, and D.~Spergel, ``{Can CMB Lensing Help Cosmic Shear
+  Surveys?},''
+\href{http://arxiv.org/abs/1311.2338}{{\ttfamily arXiv:1311.2338
+  [astro-ph.CO]}}.
+%%CITATION = ARXIV:1311.2338;%%.
+
+\bibitem{LoVerde:2013lta}
+M.~LoVerde and M.~Zaldarriaga, ``{Neutrino clustering around spherical dark
+  matter halos},'' \href{http://dx.doi.org/10.1103/PhysRevD.89.063502}{{\em
+  Phys. Rev.} {\bfseries D89} no.~6, (2014) 063502},
+\href{http://arxiv.org/abs/1310.6459}{{\ttfamily arXiv:1310.6459
+  [astro-ph.CO]}}.
+%%CITATION = ARXIV:1310.6459;%%.
+
 \bibitem{Tinker:2008ff}
 J.~L. Tinker, A.~V. Kravtsov, A.~Klypin, K.~Abazajian, M.~S. Warren, G.~Yepes,
   S.~Gottlober, and D.~E. Holz, ``{Toward a halo mass function for precision
@@ -2457,6 +2564,15 @@ E.~J. Baxter {\em et~al.}, ``{A Measurement of Gravitational Lensing of the
   [astro-ph.CO]}}.
 %%CITATION = ARXIV:1412.7521;%%.
 
+\bibitem{Melin:2014uaa}
+J.-B. Melin and J.~G. Bartlett, ``{Measuring cluster masses with CMB lensing: a
+  statistical approach},''
+  \href{http://dx.doi.org/10.1051/0004-6361/201424720}{{\em Astron. Astrophys.}
+  {\bfseries 578} (2015) A21},
+\href{http://arxiv.org/abs/1408.5633}{{\ttfamily arXiv:1408.5633
+  [astro-ph.CO]}}.
+%%CITATION = ARXIV:1408.5633;%%.
+
 \bibitem{Hu:2007bt}
 W.~Hu, S.~DeDeo, and C.~Vale, ``{Cluster Mass Estimators from CMB Temperature
   and Polarization Lensing},''
@@ -2465,93 +2581,6 @@ W.~Hu, S.~DeDeo, and C.~Vale, ``{Cluster Mass Estimators from CMB Temperature
 \href{http://arxiv.org/abs/astro-ph/0701276}{{\ttfamily arXiv:astro-ph/0701276
   [astro-ph]}}.
 %%CITATION = ASTRO-PH/0701276;%%.
-
-\bibitem{Tereno:2008mm}
-I.~Tereno, C.~Schimd, J.-P. Uzan, M.~Kilbinger, F.~H. Vincent, and L.~Fu,
-  ``{CFHTLS weak-lensing constraints on the neutrino masses},''
-  \href{http://dx.doi.org/10.1051/0004-6361/200811077}{{\em Astron. Astrophys.}
-  {\bfseries 500} (2009) 657--665},
-\href{http://arxiv.org/abs/0810.0555}{{\ttfamily arXiv:0810.0555 [astro-ph]}}.
-%%CITATION = ARXIV:0810.0555;%%.
-
-\bibitem{Xia:2012na}
-J.-Q. Xia, B.~R. Granett, M.~Viel, S.~Bird, L.~Guzzo, M.~G. Haehnelt,
-  J.~Coupon, H.~J. McCracken, and Y.~Mellier, ``{Constraints on Massive
-  Neutrinos from the CFHTLS Angular Power Spectrum},''
-  \href{http://dx.doi.org/10.1088/1475-7516/2012/06/010}{{\em JCAP} {\bfseries
-  1206} (2012) 010},
-\href{http://arxiv.org/abs/1203.5105}{{\ttfamily arXiv:1203.5105
-  [astro-ph.CO]}}.
-%%CITATION = ARXIV:1203.5105;%%.
-
-\bibitem{Cuesta:2015iho}
-A.~J. Cuesta, V.~Niro, and L.~Verde, ``{Neutrino mass limits: robust
-  information from the power spectrum of galaxy surveys},''
-  \href{http://dx.doi.org/10.1016/j.dark.2016.04.005}{{\em Phys. Dark Univ.}
-  {\bfseries 13} (2016) 77--86},
-\href{http://arxiv.org/abs/1511.05983}{{\ttfamily arXiv:1511.05983
-  [astro-ph.CO]}}.
-%%CITATION = ARXIV:1511.05983;%%.
-
-\bibitem{Palanque-Delabrouille:2014jca}
-N.~Palanque-Delabrouille {\em et~al.}, ``{Constraint on neutrino masses from
-  SDSS-III/BOSS Ly$\alpha$ forest and other cosmological probes},''
-  \href{http://dx.doi.org/10.1088/1475-7516/2015/02/045}{{\em JCAP} {\bfseries
-  1502} no.~02, (2015) 045},
-\href{http://arxiv.org/abs/1410.7244}{{\ttfamily arXiv:1410.7244
-  [astro-ph.CO]}}.
-%%CITATION = ARXIV:1410.7244;%%.
-
-\bibitem{Beutler:2014yhv}
-{\bfseries BOSS} Collaboration, F.~Beutler {\em et~al.}, ``{The clustering of
-  galaxies in the SDSS-III Baryon Oscillation Spectroscopic Survey: Signs of
-  neutrino mass in current cosmological datasets},''
-  \href{http://dx.doi.org/10.1093/mnras/stu1702}{{\em Mon. Not. Roy. Astron.
-  Soc.} {\bfseries 444} (2014) 3501},
-\href{http://arxiv.org/abs/1403.4599}{{\ttfamily arXiv:1403.4599
-  [astro-ph.CO]}}.
-%%CITATION = ARXIV:1403.4599;%%.
-
-\bibitem{LoVerde:2014pxa}
-M.~LoVerde, ``{Halo bias in mixed dark matter cosmologies},''
-  \href{http://dx.doi.org/10.1103/PhysRevD.90.083530}{{\em Phys. Rev.}
-  {\bfseries D90} no.~8, (2014) 083530},
-\href{http://arxiv.org/abs/1405.4855}{{\ttfamily arXiv:1405.4855
-  [astro-ph.CO]}}.
-%%CITATION = ARXIV:1405.4855;%%.
-
-\bibitem{Takeuchi:2013gpa}
-Y.~Takeuchi and K.~Kadota, ``{Probing Neutrinos from Planck and Forthcoming
-  Galaxy Redshift Surveys},''
-  \href{http://dx.doi.org/10.1088/1475-7516/2014/01/046}{{\em JCAP} {\bfseries
-  1401} (2014) 046},
-\href{http://arxiv.org/abs/1310.0037}{{\ttfamily arXiv:1310.0037
-  [astro-ph.CO]}}.
-%%CITATION = ARXIV:1310.0037;%%.
-
-\bibitem{Pearson:2013iha}
-R.~Pearson and O.~Zahn, ``{Cosmology from cross correlation of CMB lensing and
-  galaxy surveys},'' \href{http://dx.doi.org/10.1103/PhysRevD.89.043516}{{\em
-  Phys. Rev.} {\bfseries D89} no.~4, (2014) 043516},
-\href{http://arxiv.org/abs/1311.0905}{{\ttfamily arXiv:1311.0905
-  [astro-ph.CO]}}.
-%%CITATION = ARXIV:1311.0905;%%.
-
-\bibitem{Mueller:2014dba}
-E.-M. Mueller, F.~de~Bernardis, R.~Bean, and M.~D. Niemack, ``{Constraints on
-  massive neutrinos from the pairwise kinematic Sunyaev-Zel?dovich effect},''
-  \href{http://dx.doi.org/10.1103/PhysRevD.92.063501}{{\em Phys. Rev.}
-  {\bfseries D92} no.~6, (2015) 063501},
-\href{http://arxiv.org/abs/1412.0592}{{\ttfamily arXiv:1412.0592
-  [astro-ph.CO]}}.
-%%CITATION = ARXIV:1412.0592;%%.
-
-\bibitem{Das:2013aia}
-S.~Das, J.~Errard, and D.~Spergel, ``{Can CMB Lensing Help Cosmic Shear
-  Surveys?},''
-\href{http://arxiv.org/abs/1311.2338}{{\ttfamily arXiv:1311.2338
-  [astro-ph.CO]}}.
-%%CITATION = ARXIV:1311.2338;%%.
 
 \bibitem{Allison:2015qca}
 R.~Allison, P.~Caucal, E.~Calabrese, J.~Dunkley, and T.~Louis, ``{Towards a
@@ -3273,6 +3302,16 @@ M.~S. Madhavacheril, N.~Sehgal, and T.~R. Slatyer, ``{Current Dark Matter
 \href{http://arxiv.org/abs/1310.3815}{{\ttfamily arXiv:1310.3815
   [astro-ph.CO]}}.
 %%CITATION = ARXIV:1310.3815;%%.
+
+\bibitem{Wu:2014hta}
+W.~L.~K. Wu, J.~Errard, C.~Dvorkin, C.~L. Kuo, A.~T. Lee, P.~McDonald,
+  A.~Slosar, and O.~Zahn, ``{A Guide to Designing Future Ground-based Cosmic
+  Microwave Background Experiments},''
+  \href{http://dx.doi.org/10.1088/0004-637X/788/2/138}{{\em Astrophys. J.}
+  {\bfseries 788} (2014) 138},
+\href{http://arxiv.org/abs/1402.4108}{{\ttfamily arXiv:1402.4108
+  [astro-ph.CO]}}.
+%%CITATION = ARXIV:1402.4108;%%.
 
 \bibitem{Dvorkin:2013cga}
 C.~Dvorkin, K.~Blum, and M.~Zaldarriaga, ``{Perturbed Recombination from Dark
@@ -4066,15 +4105,6 @@ A.~B. Mantz, S.~W. Allen, R.~G. Morris, D.~A. Rapetti, D.~E. Applegate, P.~L.
   [astro-ph.CO]}}.
 %%CITATION = ARXIV:1402.6212;%%.
 
-\bibitem{Weinberg:2012es}
-D.~H. Weinberg, M.~J. Mortonson, D.~J. Eisenstein, C.~Hirata, A.~G. Riess, and
-  E.~Rozo, ``{Observational Probes of Cosmic Acceleration},''
-  \href{http://dx.doi.org/10.1016/j.physrep.2013.05.001}{{\em Phys. Rept.}
-  {\bfseries 530} (2013) 87--255},
-\href{http://arxiv.org/abs/1201.2434}{{\ttfamily arXiv:1201.2434
-  [astro-ph.CO]}}.
-%%CITATION = ARXIV:1201.2434;%%.
-
 \bibitem{Sunyaev:1972eq}
 R.~A. Sunyaev and {\relax Ya}.~B. Zeldovich, ``{The Observations of relic
   radiation as a test of the nature of X-Ray radiation from the clusters of
@@ -4179,15 +4209,6 @@ A.~Pillepich, C.~Porciani, and T.~H. Reiprich, ``{The X-ray cluster survey with
 \href{http://arxiv.org/abs/1407.2973}{{\ttfamily arXiv:1407.2973
   [astro-ph.IM]}}.
 %%CITATION = ARXIV:1407.2973;%%.
-
-\bibitem{Melin:2014uaa}
-J.-B. Melin and J.~G. Bartlett, ``{Measuring cluster masses with CMB lensing: a
-  statistical approach},''
-  \href{http://dx.doi.org/10.1051/0004-6361/201424720}{{\em Astron. Astrophys.}
-  {\bfseries 578} (2015) A21},
-\href{http://arxiv.org/abs/1408.5633}{{\ttfamily arXiv:1408.5633
-  [astro-ph.CO]}}.
-%%CITATION = ARXIV:1408.5633;%%.
 
 \bibitem{Calabrese:2014gwa}
 E.~Calabrese {\em et~al.}, ``{Precision Epoch of Reionization studies with
@@ -4683,6 +4704,13 @@ A.~Vallinotto, ``{The synergy between the Dark Energy Survey and the South Pole
   [astro-ph.CO]}}.
 %%CITATION = ARXIV:1304.3474;%%.
 
+\bibitem{Schaan:2016ois}
+E.~Schaan {\em et~al.}, ``{Looking through the same lens: shear calibration for
+  LSST, Euclid \& WFIRST with stage 4 CMB lensing},''
+\href{http://arxiv.org/abs/1607.01761}{{\ttfamily arXiv:1607.01761
+  [astro-ph.CO]}}.
+%%CITATION = ARXIV:1607.01761;%%.
+
 \bibitem{Hirata:2003ka}
 C.~M. Hirata and U.~Seljak, ``{Reconstruction of lensing from the cosmic
   microwave background polarization},''
@@ -4967,6 +4995,73 @@ Y.~Fantaye, F.~Stivoli, J.~Grain, S.~M. Leach, M.~Tristram, C.~Baccigalupi, and
   [astro-ph.CO]}}.
 %%CITATION = ARXIV:1104.1367;%%.
 
+\bibitem{Bennett:1992aa}
+C.~L. {Bennett}, G.~F. {Smoot}, G.~{Hinshaw}, E.~L. {Wright}, A.~{Kogut},
+  G.~{de Amici}, S.~S. {Meyer}, R.~{Weiss}, D.~T. {Wilkinson}, S.~{Gulkis},
+  M.~{Janssen}, N.~W. {Boggess}, E.~S. {Cheng}, M.~G. {Hauser}, T.~{Kelsall},
+  J.~C. {Mather}, S.~H. {Moseley}, Jr., T.~L. {Murdock}, and R.~F.
+  {Silverberg}, ``{Preliminary separation of galactic and cosmic microwave
+  emission for the COBE Differential Microwave Radiometer},''
+  \href{http://dx.doi.org/10.1086/186505}{{\em ApJ} {\bfseries 396} (Sept.,
+  1992) L7--L12}.
+
+\bibitem{Hansen:2006rj}
+F.~K. Hansen, A.~J. Banday, H.~K. Eriksen, K.~M. Gorski, and P.~B. Lilje,
+  ``{Foreground subtraction of cosmic microwave background maps using wi-fit
+  (wavelet based high resolution fitting of internal templates)},''
+  \href{http://dx.doi.org/10.1086/506015}{{\em Astrophys. J.} {\bfseries 648}
+  (2006) 784--796},
+\href{http://arxiv.org/abs/astro-ph/0603308}{{\ttfamily arXiv:astro-ph/0603308
+  [astro-ph]}}.
+%%CITATION = ASTRO-PH/0603308;%%.
+
+\bibitem{Katayama:2011eh}
+N.~Katayama and E.~Komatsu, ``{Simple foreground cleaning algorithm for
+  detecting primordial B-mode polarization of the cosmic microwave
+  background},'' \href{http://dx.doi.org/10.1088/0004-637X/737/2/78}{{\em
+  Astrophys. J.} {\bfseries 737} (2011) 78},
+\href{http://arxiv.org/abs/1101.5210}{{\ttfamily arXiv:1101.5210
+  [astro-ph.CO]}}.
+%%CITATION = ARXIV:1101.5210;%%.
+
+\bibitem{Delabrouille:2002kz}
+J.~Delabrouille, J.~F. Cardoso, and G.~Patanchon, ``{Multi-detector
+  multi-component spectral matching and applications for CMB data analysis},''
+  \href{http://dx.doi.org/10.1111/j.1365-2966.2003.07069.x}{{\em Mon. Not. Roy.
+  Astron. Soc.} {\bfseries 346} (2003) 1089},
+\href{http://arxiv.org/abs/astro-ph/0211504}{{\ttfamily arXiv:astro-ph/0211504
+  [astro-ph]}}.
+%%CITATION = ASTRO-PH/0211504;%%.
+
+\bibitem{Maino:2006pq}
+D.~Maino, S.~Donzelli, A.~J. Banday, F.~Stivoli, and C.~Baccigalupi, ``{CMB
+  signal in WMAP 3yr data with FastICA},''
+  \href{http://dx.doi.org/10.1111/j.1365-2966.2006.11255.x}{{\em Mon. Not. Roy.
+  Astron. Soc.} {\bfseries 374} (2007) 1207},
+\href{http://arxiv.org/abs/astro-ph/0609228}{{\ttfamily arXiv:astro-ph/0609228
+  [astro-ph]}}.
+%%CITATION = ASTRO-PH/0609228;%%.
+
+\bibitem{Bonaldi:2006qw}
+A.~Bonaldi, L.~Bedini, E.~Salerno, C.~Baccigalupi, and G.~De~Zotti,
+  ``{Estimating the spectral indices of correlated astrophysical foregrounds by
+  a second-order statistical approach},''
+  \href{http://dx.doi.org/10.1111/j.1365-2966.2006.11025.x}{{\em Mon. Not. Roy.
+  Astron. Soc.} {\bfseries 373} (2006) 271--279},
+\href{http://arxiv.org/abs/astro-ph/0609701}{{\ttfamily arXiv:astro-ph/0609701
+  [astro-ph]}}.
+%%CITATION = ASTRO-PH/0609701;%%.
+
+\bibitem{Stolyarov:2004xp}
+V.~Stolyarov, M.~P. Hobson, A.~N. Lasenby, and R.~B. Barreiro, ``{All-sky
+  component separation in the presence of anisotropic noise and dust
+  temperature variations},''
+  \href{http://dx.doi.org/10.1111/j.1365-2966.2005.08610.x}{{\em Mon. Not. Roy.
+  Astron. Soc.} {\bfseries 357} (2005) 145--155},
+\href{http://arxiv.org/abs/astro-ph/0405494}{{\ttfamily arXiv:astro-ph/0405494
+  [astro-ph]}}.
+%%CITATION = ASTRO-PH/0405494;%%.
+
 \bibitem{Brandt:1994aa}
 W.~N. {Brandt}, C.~R. {Lawrence}, A.~C.~S. {Readhead}, J.~N. {Pakianathan}, and
   T.~M. {Fiola}, ``{Separation of foreground radiation from cosmic microwave
@@ -4981,6 +5076,14 @@ H.~K. Eriksen {\em et~al.}, ``{CMB component separation by parameter
 \href{http://arxiv.org/abs/astro-ph/0508268}{{\ttfamily arXiv:astro-ph/0508268
   [astro-ph]}}.
 %%CITATION = ASTRO-PH/0508268;%%.
+
+\bibitem{Stompor:2008sf}
+R.~Stompor, S.~M. Leach, F.~Stivoli, and C.~Baccigalupi, ``{Maximum Likelihood
+  algorithm for parametric component separation in CMB experiments},''
+  \href{http://dx.doi.org/10.1111/j.1365-2966.2008.14023.x}{{\em Mon. Not. Roy.
+  Astron. Soc.} {\bfseries 392} (2009) 216},
+\href{http://arxiv.org/abs/0804.2645}{{\ttfamily arXiv:0804.2645 [astro-ph]}}.
+%%CITATION = ARXIV:0804.2645;%%.
 
 \bibitem{Tegmark:2003ud}
 {\bfseries SDSS} Collaboration, M.~Tegmark {\em et~al.}, ``{Cosmological
@@ -5016,15 +5119,6 @@ J.-F. {Cardoso}, M.~{Le Jeune}, J.~{Delabrouille}, M.~{Betoule}, and
   Multichannel Astrophysical Observations},''
   \href{http://dx.doi.org/10.1109/JSTSP.2008.2005346}{{\em IEEE Journal of
   Selected Topics in Signal Processing} {\bfseries 2} (Nov., 2008) 735--746}.
-
-\bibitem{Katayama:2011eh}
-N.~Katayama and E.~Komatsu, ``{Simple foreground cleaning algorithm for
-  detecting primordial B-mode polarization of the cosmic microwave
-  background},'' \href{http://dx.doi.org/10.1088/0004-637X/737/2/78}{{\em
-  Astrophys. J.} {\bfseries 737} (2011) 78},
-\href{http://arxiv.org/abs/1101.5210}{{\ttfamily arXiv:1101.5210
-  [astro-ph.CO]}}.
-%%CITATION = ARXIV:1101.5210;%%.
 
 \bibitem{Gold:2010fm}
 B.~Gold {\em et~al.}, ``{Seven-Year Wilkinson Microwave Anisotropy Probe (WMAP)
@@ -5134,6 +5228,24 @@ T.~Okamoto and W.~Hu, ``{CMB lensing reconstruction on the full sky},''
   [astro-ph.CO]}}.
 %%CITATION = ARXIV:1303.5076;%%.
 
+\bibitem{Melin:2006qq}
+J.-B. Melin, J.~G. Bartlett, and J.~Delabrouille, ``{Catalog extraction in sz
+  cluster surveys: a matched filter approach},''
+  \href{http://dx.doi.org/10.1051/0004-6361:20065034}{{\em Astron. Astrophys.}
+  (2006) }, \href{http://arxiv.org/abs/astro-ph/0602424}{{\ttfamily
+  arXiv:astro-ph/0602424 [astro-ph]}}.
+[Astron. Astrophys.459,341(2006)].
+%%CITATION = ASTRO-PH/0602424;%%.
+
+\bibitem{Pierpaoli:2004bp}
+E.~Pierpaoli, S.~Anthoine, K.~M. Huffenberger, and I.~Daubechies,
+  ``{Reconstructing Sunyaev-Zeldovich clusters in future CMB experiments},''
+  \href{http://dx.doi.org/10.1111/j.1365-2966.2005.08896.x}{{\em Mon. Not. Roy.
+  Astron. Soc.} {\bfseries 359} (2005) 261--271},
+\href{http://arxiv.org/abs/astro-ph/0412197}{{\ttfamily arXiv:astro-ph/0412197
+  [astro-ph]}}.
+%%CITATION = ASTRO-PH/0412197;%%.
+
 \bibitem{Lewis:2002ah}
 A.~Lewis and S.~Bridle, ``{Cosmological parameters from CMB and other data: a
   Monte- Carlo approach},'' {\em Phys. Rev.} {\bfseries D66} (2002) 103511,
@@ -5150,8 +5262,9 @@ M.~M. Schmittfull, A.~Challinor, D.~Hanson, and A.~Lewis, ``{Joint analysis of
 %%CITATION = ARXIV:1308.0286;%%.
 
 \bibitem{Peloton:prep}
-J.~Peloton, M.~Schmittfull, A.~Lewis, J.~Carron, and B.~Sherwin, ``{CMB-lensing
-  joint covariances},'' {\em in preparation} (2016) .
+J.~Peloton, M.~Schmittfull, A.~Lewis, J.~Carron, and B.~Sherwin, ``{Full joint
+  covariances for CMB and lensing-reconstruction power spectra},'' {\em in
+  preparation} (2016) .
 
 \bibitem{Hanson:2010rp}
 D.~Hanson, A.~Challinor, G.~Efstathiou, and P.~Bielewicz, ``{CMB temperature
@@ -5245,6 +5358,16 @@ M.~A. Miville-Deschenes, N.~Ysard, A.~Lavabre, N.~Ponthieu, J.~F. Macias-Perez,
 \href{http://arxiv.org/abs/1502.01588}{{\ttfamily arXiv:1502.01588
   [astro-ph.CO]}}.
 %%CITATION = ARXIV:1502.01588;%%.
+
+\bibitem{Gorski:2004by}
+K.~M. Gorski, E.~Hivon, A.~J. Banday, B.~D. Wandelt, F.~K. Hansen, M.~Reinecke,
+  and M.~Bartelman, ``{HEALPix - A Framework for high resolution
+  discretization, and fast analysis of data distributed on the sphere},''
+  \href{http://dx.doi.org/10.1086/427976}{{\em Astrophys. J.} {\bfseries 622}
+  (2005) 759--771},
+\href{http://arxiv.org/abs/astro-ph/0409513}{{\ttfamily arXiv:astro-ph/0409513
+  [astro-ph]}}.
+%%CITATION = ASTRO-PH/0409513;%%.
 
 \bibitem{Wandelt:2001fz}
 B.~D. Wandelt and F.~K. Hansen, ``{Fast, exact CMB power spectrum estimation
