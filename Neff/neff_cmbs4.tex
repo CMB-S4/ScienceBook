@@ -128,26 +128,37 @@ E-mode polarization will play an increasingly important role for several reasons
 
 As we described in Section~\ref{sec:Neffsignatures}, the most concrete signatures of $\Neff$ from CMB-S4 are derived from the damping tail at high-$\ell$ in both $T$ and $E$.  In addition, there is the effect of the shift in the phase of the acoustic peaks that is present at $\ell > 500$.  Within $\Lambda$CDM these parameters are robust to degeneracies, having already accounted for the degeneracy of the location of the first acoustic peak with $H_0$.  The damping tail is degenerate with other extensions, like $Y_p$, as we will explore in Section~\ref{sec:NeffBBNfore}.
 
-Forecasts for $\sigma(\Neff)$ under various experimental configurations are given in Table~\ref{tab:Neffbeam}.  Since the damping tail extends to very high-$\ell$, constraints on $\Neff$ are sensitive to $\ell_{\rm max}$ and the beamsize of the experiment.  We assume $\ell_{\rm max} = 5000$ except for $C^{TT}_{\ell}$ where we assume $\ell_{\rm max} = 3000$ due to foregrounds.  One can see the impact of the highest-$\ell$ modes  by looking at the effect of the beamsize.
+Forecasts for $\sigma(\Neff)$ under various experimental configurations are given in Figure~\ref{fig:Neffbeam}.  Since the damping tail extends to very high-$\ell$, constraints on $\Neff$ are sensitive to $\ell_{\rm max}$ and the beamsize of the experiment.  We assume $\ell_{\rm max} = 5000$ except for $C^{TT}_{\ell}$ where we assume $\ell_{\rm max} = 3000$ due to foregrounds.  One can see the impact of the highest-$\ell$ modes by looking at the effect of the beamsize.  One noticeable feature is that to be in the vicinity of our threshold targets, one needs both high angular resolution (better than 2') and low noise (less than 2 $\mu$K-arcmin).
 
 The other important parameter for $\Neff$ is the sky fraction of the survey, $f_{\rm sky}$.  Since the signature of neutrinos depends on the detailed measurement of the shape of the power spectra, constraints depend on the number of observed modes.  At fixed noise levels this implies that $\sigma(\Neff) \propto f^{-1/2}_{\rm sky}$.  Of course, with a fixed number of detectors the sensitivity, $S$, is proportional to $S \propto f_{\rm sky}^{1/2}$.  Since $\sigma(\Neff)$ grows more slowly than $S$, we see that there is a net improvement in $\sigma(\Neff)$ by increasing $f_{\rm sky}$ at a fixed number of detectors.  This trend is shown in Figure~\ref{fig:Neff_fsky}.
 
 
-\begin{table}[t!]
+
+\begin{figure}[t!]
 \begin{center}
-\begin{tabular}{l ccc} 
- \toprule
-    		sensitivity / beamsize	    			& $1'$  		& $2'$  		& $3'$  		 \\ [0.5ex]
- \midrule
-   1 $\mu$K-arcmin & 0.030 		& 0.032		& 0.35	 		  \\
-  2  $\mu$K-arcmin & 0.035 		& 0.038		& 0.041	 		  \\
-   3  $\mu$K-arcmin & 0.040 		& 0.042 		& 0.045	 		  \\
-    \bottomrule
-\end{tabular}
-\caption{Forecasts for $\sigma(\Neff)$ with varying beamize in arcmin (') and detector sensitivity.  These forecasts assume $f_{\rm sky} = 0.4$.  }
-\label{tab:Neffbeam}
+\includegraphics[height=6.5cm]{Neff/Neff_heatmap.pdf} \hskip 0.25cm 
+\includegraphics[height=6.5cm]{Neff/Neff_grid.pdf}
+\caption{Forecasts for $\sigma(\Neff)$ with varying beamize in arcmin (') and detector sensitivity.  These forecasts assume $f_{\rm sky} = 0.4$.  {\it Left:} A wide range of beam sizes and sensitivities are used to show the need for the high resolution and sensitivity of CMB-S4 to be close to our thresholds.  {\it Right:} Specific forecasts, including delensing, for various CMB-S4 configurations.}
+\label{fig:Neffbeam}
 \end{center}
-\end{table}
+\end{figure} 
+
+
+%\begin{table}[t!]
+%\begin{center}
+%\begin{tabular}{l ccc} 
+ %\toprule
+ %   		sensitivity / beamsize	    			& $1'$  		& $2'$  		& $3'$  		 \\ [0.5ex]
+ %\midrule
+   %1 $\mu$K-arcmin & 0.030 		& 0.032		& 0.35	 		  \\
+%  2  $\mu$K-arcmin & 0.035 		& 0.038		& 0.041	 		  \\
+  % 3  $\mu$K-arcmin & 0.040 		& 0.042 		& 0.045	 %		  \\
+%    \bottomrule
+%\end{tabular}
+%\caption{Forecasts for $\sigma(\Neff)$ with varying beamize in arcmin (') and detector sensitivity.  These forecasts assume $f_{\rm sky} = 0.4$.  }
+%\label{tab:Neffbeam}
+%\end{center}
+%\end{table}
 
 
 \begin{figure}[t!]
