@@ -281,8 +281,8 @@ To suppress this sample variance, it will be necessary to ``delens'' the B-mode 
 Forecasts in this section assign part of the total detector count to a dedicated delensing effort, assumed to be a large-aperture ($\ge 6$-meter) telescope at a single frequency
 (see below for a discussion of assumptions about aperture size).
 Finally, from the relative amplitudes of the temperature, E-mode, and B-mode power spectra, it is clear that instrumental systematics that mix temperature or E-mode power into B modes must also be controlled to an extremely low level. 
-To account for the potential hit in raw sensitivity taken by guarding against systematics, and to generally tie the Fisher-matrix, power-spectrum-based forecasts here with real-world results, the forecasts in this section use scaled versions of achieved power-spectrum covariance matrices from the BICEP2/Keck experiments.
-This conservative assumption regarding mitigation of systematics and overall efficiency necessarily results in worse constraints on $r$ than a naive, raw-sensitivity calculation would imply.
+To account for real-world inefficiencies, including non-ideal detector performance and yield, observing efficiency, bad weather, data filtering, and cuts, the forecasts in this section use scaled versions of achieved power-spectrum covariance matrices from the BICEP2/Keck experiments.
+This conservative assumption accounts for many difficult to quantify factors that result in worse constraints on r than a naive, raw-sensitivity calculation would imply.
 Further details of the forecasting methodology, including assumptions regarding foreground properties and delensing efficiency, can be found in Section~\ref{sec_specforecast}.
 Fig.~\ref{fig_clBBr01} shows some of the inputs to and assumptions of the forecasting code, including foregrounds, B-mode spectrum error bars (including sample variance on the $r=0.01$ spectrum for 3\% of the sky and noise variance using the scaled noise covariance for the default detector count), and delensing efficiency (the value shown is appropriate for 3\% of the sky, $r=0.01$, and the default detector count -- see below for details).
 
