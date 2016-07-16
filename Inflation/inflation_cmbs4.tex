@@ -326,21 +326,29 @@ The agreement between the map-based approach and the power-spectrum-based approa
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.6\textwidth]{Inflation/clBB_r01.pdf}
+\includegraphics[width=0.6\textwidth]{Inflation/clBB_r01_decorr_v2.pdf}
 \caption{
 Bin-by-bin forecasted tensor constraints for r=0.01, $f_\mathrm{sky} = 0.03$, 
 and the default detector effort ($10^{6}$ detector years).
-Vertical error bars denote 68\% credible intervals, with the point marking 
-the model expectation value. If the 68\% interval includes zero, we indicate the 
-95\% upper limit with a downward triangle. Horizontal error bars denote bin widths. 
-%calculated from bandpower window functions. 
-Primordial B-mode spectra are shown for two representative values of the tensor-to-scalar ratio: r=0.001 and r=0.01.
-The solid green line shows the
+The boxes denote the forecasted S4 erorr bars.  
+Primordial B-mode spectra are shown for two representative values of 
+the tensor-to-scalar ratio: r=0.001 and r=0.01. The dashed green line shows the
 $\Lambda$CDM expectation for the B modes induced by gravitational lensing of E modes, 
-with the dashed line showing $1/10$ of the lensing power. The
-solid blue and red lines show the dust and synchrotron (current upper limit) model 
+with the solid line showing $1/10$ of the lensing power. The
+dashed blue and red lines show the dust and synchrotron (current upper limit) model 
 assumed in the forecasting, at the foreground minimum of 95\,GHz. The levels of dust
-and synchrotron are equal to the ones reported in \cite{Array:2015xqh}.}
+and synchrotron are equal to the ones reported in \cite{Array:2015xqh}. The 
+contribution of dust and synchrotron towards the vertical error bars are shown in 
+solid blue and red lines. Since these are calculated from a multi-frequency 
+optimization, the "effective frequency" at which these foreground residuals are 
+defined varies with each bin, allowing the residual lines to go above the input 
+foreground model lines which are defined at a fixed frequency of 95\,GHz. 
+Furthermore, due to the low frequency channels having larger 
+beam sizes than the higher frequency ones, in the higher bins, the primordial CMB 
+component will be constrained at a higher "effective frequency;" defining the 
+foreground residuals at these "effective frequencies" will yield a higher amplitude
+for the dust residual, and a lower amplitude for the synchrotron residual, resulting
+in the respective shapes of the solid blue and red lines.}
 \label{fig_clBBr01}
 \end{figure}
 \begin{figure}[!h]
