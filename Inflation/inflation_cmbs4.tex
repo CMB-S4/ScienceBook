@@ -153,7 +153,7 @@ The overall evolution of the Universe is well modeled by a Friedmann-Lema\^{\i}t
 \begin{equation}
 ds^2=-dt^2+a^2(t)\left[\frac{dr^2}{1-kr^2}+r^2d\Omega^2\right]\,,
 \end{equation}
-where $k=0$ for flat geometry, $k=\pm1$ allows for spatial curvature, and the time evolution is specified by the scale factor, $a(t)$. The Hubble parameter, $H=\dot{a}/a$, gives the rate of expansion of the Universe. A period of inflation will drive the spatial curvature close to zero, in good agreement with current observations. We will assume spatial flatness and set $k=0$ for most considerations, but see Section~\ref{sec:curvature} for a discussion of CMB-S4 constraints on curvature. 
+where $k=0$ for a flat spatial geometry, $k=\pm1$ allows for spatial curvature, and the time evolution is specified by the scale factor, $a(t)$. The Hubble parameter, $H=\dot{a}/a$, gives the rate of expansion of the Universe. A period of inflation will drive the spatial curvature close to zero, in good agreement with current observations. We will assume spatial flatness and set $k=0$ for most considerations, but see Section~\ref{sec:curvature} for a discussion of CMB-S4 constraints on curvature. 
 
 Since the period of cosmic inflation has to end, there must exist a clock, or scalar degree of freedom. According to the uncertainty principle this clock must fluctuate, generating density perturbations that are adiabatic. In the most economic scenarios, these density perturbations are the seeds that grow into the anisotropies observed in the cosmic microwave background radiation and the stars and galaxies around us. Other degrees of freedom could, of course, also be present during this phase and might even be responsible for the generation of the density perturbations we observe. In this section, for simplicity, we restrict the analysis to the case of fluctuations of the clock field only, propagating with sound speed $c_s=1$.
 
@@ -166,17 +166,18 @@ Since the period of cosmic inflation has to end, there must exist a clock, or sc
 
 %The remarkable feature of inflation is that once an evolving scalar field is invoked to source the background accelerated expansion, quantum fluctuations during inflation inevitably generate post-inflationary metric perturbations. 
 For these early times, the ADM formalism \cite{Arnowitt:1962hi}
-provides a convenient parametrization of the line element
+provides a convenient parametrization of the line element in the presence of perturbations
 \begin{eqnarray}
 \label{eq:metric}
 ds^2&=&-N^2dt^2 +h_{ij}(dx^i+N^idt)(dx^j+N^jdt)\,\nonumber\\
 h_{ij}&=&a^2(t)[e^{2\zeta}\delta_{ij}+\gamma_{ij}]\,.
 \end{eqnarray}
 
-The equations of motion for $N$ (the lapse) and $N^i$ (the shift) are the Hamiltonian and momentum constraints, while $\zeta$ (equivalent to $-\mathcal{R}$ in the Planck Collaboration papers) and $\gamma_{ij}$ contain the dynamical scalar and tensor degrees of freedom. In scenarios with matter sources other than a scalar field there may also be vector perturbations. These rapidly decay and can be neglected unless they are actively sourced in the post-inflationary Universe, e.g. by cosmic strings.
+The equations of motion for $N$ (the lapse) and $N^i$ (the shift) are the Hamiltonian and momentum constraints, while $\zeta$ 
+%(equivalent to $-\mathcal{R}$ in the Planck Collaboration papers) 
+and $\gamma_{ij}$ contain the dynamical scalar and tensor degrees of freedom. In scenarios with matter sources other than a scalar field there may also be vector perturbations. These rapidly decay and can be neglected unless they are actively sourced in the post-inflationary Universe, e.g. by cosmic strings.
 
-%RF perhaps add Fourier transform and define horizon exit, freeze out at this point
-Because the equations of motion are invariant under translations, and the perturbations are linear or nearly so, it is convenient to work with the Fourier transforms
+Because the equations of motion are invariant under translations, and the perturbations small enough to work in perturbation theory, it is convenient to work with the Fourier transforms
 \begin{equation}
 \zeta(t,\mathbf{x})=\int \frac{d^3 k}{(2\pi)^3}\zeta(t,\mathbf{k})e^{i \mathbf{k}\cdot\mathbf{x}}+{\rm h.c.}\qquad{\rm and}\qquad\gamma_{ij}(t,\mathbf{x})=\sum\limits_\sigma\int\frac{d^3k}{(2\pi)^3}\gamma_\sigma(t,\mathbf{k})e_{ij}(\mathbf{k},\sigma)e^{i \mathbf{k}\cdot\mathbf{x}}+{\rm h.c.}\,,
 \end{equation}
@@ -203,7 +204,7 @@ It is convenient to introduce the logarithmic derivatives of these power spectra
 \begin{equation}\label{eq:specind}
 n_{\rm s}(k)-1\equiv\frac{d\ln \mathcal{P}_{\zeta}}{d\ln k}\qquad{\rm and}\qquad n_{\rm t}(k)\equiv \frac{d\ln \mathcal{P}_{\rm t}}{d\ln k}\,.
 \end{equation}
-If the Hubble rate and slow-roll parameter only weakly depend on time as in slow-roll inflation, these will be $n_{\rm s}(k)\simeq 1$ and $n_{\rm t}(k)\simeq 0$ and can be expanded around a pivot scale $k_\ast$ accessible by the CMB
+If the Hubble rate and slow-roll parameter only weakly depend on time as in slow-roll inflation, these will be $n_{\rm s}(k)\simeq 1$ and $n_{\rm t}(k)\simeq 0$, nearly independent of scale, and can be expanded around a pivot scale $k_\ast$ accessible by the CMB
 \begin{equation}
 n_{\rm s}(k)-1=n_{\rm s}-1+\left.\frac{dn_{\rm s}(k)}{d\ln k}\right|_{k_\ast}\ln(k/k_\ast)+\dots \qquad{\rm and}\qquad n_{\rm t}(k)=n_{\rm t}+\left.\frac{dn_{\rm t}(k)}{d\ln k}\right|_{k_\ast}\ln(k/k_\ast)+\dots \,.
 \end{equation}
@@ -237,9 +238,10 @@ C^{({\rm t})}_{BB,\ell}=\int \frac{dk}{k}\mathcal{P}_{\rm t}(k)\left|\int\limits
 \end{equation}
 where $S_B^{({\rm t})}(k,\tau)$ is the appropriate source function. 
 
-The results of calculations using Eqs.~(\ref{eq:clscalar}) and (\ref{eq:clbb}), performed with the Code for Anisotropies in the Microwave Background (CAMB, \cite{Lewis:1999bs}), are shown in Fig.~\ref{fig:clall}. Results for the temperature and E-mode spectra are given by the black and red lines, respectively, while the result for the tensor B-mode spectrum is given by the blue lines for two possible values of $r$. Also shown are predictions for the B-mode spectrum generated by gravitational lensing of E modes (green line). B-mode signal shape and detection prospects, as well as contamination mitigation, will be discussed further in the next section.  Finally, the data points in Fig.~\ref{fig:clall} show current constraints on the total (primordial + lensing + residual foreground) B-modes from { BICEP}2/{\it Keck Array} \cite{Ade:2015fwj}, POLARBEAR~\cite{Ade:2014afa}, and SPTpol \cite{Keisler:2015hfa}.
+The results of calculations using Eqs.~(\ref{eq:clscalar}) and (\ref{eq:clbb}), performed with the Code for Anisotropies in the Microwave Background (CAMB, \cite{Lewis:1999bs}), are shown in Fig.~\ref{fig:clall}. Results for the temperature and E-mode spectra are given by the black and red lines, respectively, while the result for the tensor B-mode spectrum is given by the blue lines for two possible values of $r$. Also shown are predictions for the B-mode spectrum generated by gravitational lensing of E modes (green line). B-mode signal shape and detection prospects, as well as contamination mitigation, will be discussed further in the next section.  Finally, the data points in Fig.~\ref{fig:clall} show current constraints on the B-mode power from lensing, residual foreground, and potentially primordial gravitational waves from { BICEP}2/{\it Keck Array} \cite{Ade:2015fwj}, POLARBEAR~\cite{Ade:2014afa}, and SPTpol \cite{Keisler:2015hfa}.
 
-At present, bounds on the tensor-to-scalar ratio from the temperature and E-mode anisotropies are comparable to those from B-mode observations \cite{Ade:2013uln,Ade:2015lrj}. The temperature constraints are now cosmic variance-limited, and the E-mode constraints are approaching that level.  However, there is no such limit on the B-modes, so that improvements (and a potential detection) with CMB-S4 will rely on measurements of $C_\ell^{BB}$ -- most likely targeting the degree-scale ``recombination'' feature in the primordial B-mode spectrum, which is easier to access from the ground than the ``reionization'' feature on larger angular scales ($\ell < 10$).
+At present, bounds on the tensor-to-scalar ratio from the temperature and E-mode anisotropies are comparable to those from B-mode observations \cite{Ade:2013uln,Ade:2015lrj}. The temperature constraints are now cosmic variance-limited, and the E-mode constraints are approaching that level.  However, there is no such limit on the B-modes, so that improvements (and a potential detection) with CMB-S4 will rely on measurements of $C_\ell^{BB}$ -- most likely targeting the degree-scale ``recombination'' feature in the primordial B-mode spectrum. 
+%which is easier to access from the ground than the ``reionization'' feature on larger angular scales ($\ell < 10$).
 
 %Constraints on the amplitude of primordial tensor modes already strongly disfavor once popular inflationary models, such as minimally-coupled chaotic inflation with a quadratic potential. In the next section we will discuss in detail what a detection of primordial gravitational waves would imply for theories of the early Universe. 
 
@@ -256,7 +258,7 @@ ratio: $r=0.001$ and $r=0.05.$
 The contribution to tensor B-modes from scattering at recombination peaks at $\ell \sim 80$
 and from reionization at $\ell < 10$.
 Also shown are expected values for the contribution to B-modes from gravitationally lensed E-modes (green).
-Current measurements of the B-mode spectrum are shown for {BICEP}2/{\em Keck Array} (dark gray), POLARBEAR (orange), and SPTPol (purple). 
+Current measurements of the B-mode spectrum are shown for {BICEP}2/{\em Keck Array} (light orange), POLARBEAR (orange), and SPTPol (dark orange). 
 The lensing contribution to the B-mode spectrum can be partially removed by measuring the 
 E and $\phi$ (lensing potential) modes, as well as exploiting the non-Gaussian statistics of the lensing, while the foreground contamination
 can be mitigated by a multi-frequency experimental strategy (for details see Section~\ref{sec:needs}).
@@ -608,7 +610,7 @@ A measurement of $r$ from CMB-S4, along with these other probes of the stochasti
 \subsection{Probing matter and gravitational interactions at the inflationary scale}\label{subsubsec:Interactions}
 \label{subsec:sst}
 
-Information about the spectrum of interacting particles relevant during inflation is contained in correlations beyond the power spectrum. Correlators including at least one $B$ mode will benefit significantly from the improved sensitivity of CMB-S4 and will probe the particles that contribute to sourcing primordial gravitational waves. In particular, the three point correlation $\langle \zeta(\mathbf{k}_1)\zeta(\mathbf{k}_2)\gamma_\sigma(\mathbf{k}_3) \rangle$ can be constrained using $\langle BTT\rangle$, $\langle BTE\rangle $ and $\langle BEE\rangle$.
+Information about the spectrum of interacting particles relevant during inflation is contained in correlations beyond the power spectrum. Correlators including at least one B-mode will benefit significantly from the improved sensitivity of CMB-S4 and will probe the particles that contribute to sourcing primordial gravitational waves. In particular, the three point correlation $\langle \zeta(\mathbf{k}_1)\zeta(\mathbf{k}_2)\gamma_\sigma(\mathbf{k}_3) \rangle$ can be constrained using $\langle BTT\rangle$, $\langle BTE\rangle $ and $\langle BEE\rangle$.
 
 The details of the tensor-scalar-scalar correlator are contained in the bispectrum $B_{\zeta\zeta\gamma_\sigma}(\mathbf{k}_1,\mathbf{k}_2,\mathbf{k}_3)$, defined by pulling out the appropriate polarization structure associated with the tensor mode:
 \begin{equation}
@@ -645,7 +647,7 @@ In Table~\ref{tab:fnl_forecast2} we show the results of forecasts for $\sqrt{r}f
 %\centering
 %\includegraphics[width=0.48\textwidth]{Inflation/FixedEffortBTTlocal}
 %\includegraphics[width=0.48\textwidth]{Inflation/FixedEffortBTTlocalr}
-%\caption{Left: Fixed effort density plot for local type $BTT$. Left, the effect of beam and $f_{\rm sky}$ variation in noise dominated $B$ mode. $f_{\rm sky}$ has very little effect, as it is canceled by the $f_{\rm sky}$ associated with the masking of the total map. Right: adding a signal changes this picture, since the cancellation no longer happens for $r > 0.001$ (i.e. when CMB-S4 becomes cosmic variance limited). A larger sky fraction benefits cosmic variance limited $\langle BTT\rangle$. }
+%\caption{Left: Fixed effort density plot for local type $BTT$. Left, the effect of beam and $f_{\rm sky}$ variation in noise dominated B-mode. $f_{\rm sky}$ has very little effect, as it is canceled by the $f_{\rm sky}$ associated with the masking of the total map. Right: adding a signal changes this picture, since the cancellation no longer happens for $r > 0.001$ (i.e. when CMB-S4 becomes cosmic variance limited). A larger sky fraction benefits cosmic variance limited $\langle BTT\rangle$. }
 %\label{fig_BTTlocalfixedeffort}
 %\end{figure}
 %
@@ -865,7 +867,7 @@ values, deviate slightly from the actual bounds on non-Gaussianities obtained in
 Perhaps of special interest for CMB-S4 are non-Gaussian signatures that would be expected in models of large-field inflation. For example, in models in which the inflaton is an axion, there is only an approximate discrete shift symmetry. In that case instanton contributions to the potential and periodic bursts of particle or string production naturally lead to periodic features in the bispectrum. If moduli in the underlying string constructions do not evolve appreciably, instanton contributions lead to oscillations with a constant amplitude in the logarithm of $k$. In general, moduli evolve during inflation and cause a drift in the frequency and a scale-dependent amplitude~\cite{Flauger:2014ana}. At present, these shapes have not yet been constrained systematically. Often these contributions will lead to counterparts in the power spectrum and are expected to be detected there first~\cite{Behbahani:2011it}, but this need not be the case~\cite{Behbahani:2012be}. A first attempt has been made~\cite{Ade:2015ava} to look for resonant and local features in the bispectrum, and a more dedicated analysis is underway. Since features in the power spectrum and the bispectrum generally contain correlated parameters \cite{Meerburg:2009ys,Achucarro:2010da, Flauger:2010ja,Meerburg:2015yka,Achucarro:2012fd,Palma:2014hra}, statistical methods have been developed to use constraints from both the power spectrum and the bispectrum to further limit the model space \cite{Fergusson:2014hya,Meerburg:2015owa}. Signatures of higher-order massive spin fields \cite{Arkani-Hamed:2015bza,Chen:2015lza} would also lead to a bispectrum with decaying features, which will not be present in the power spectrum.
 %So a search for these more general shapes is well motivated. 
 
-%Using both $T$ and $E$-mode polarization, CMB-S4 will improve constraints by about of two compared to {\it Planck\/} as we will show in the next section. Bispectra containing at least one $B$ mode, will generally be much better constrained (currently there is no bound on such correlation functions) and will benefit from CMB-S4. 
+%Using both $T$ and $E$-mode polarization, CMB-S4 will improve constraints by about of two compared to {\it Planck\/} as we will show in the next section. Bispectra containing at least one B-mode, will generally be much better constrained (currently there is no bound on such correlation functions) and will benefit from CMB-S4. 
 
 %\begin{figure}[htbp!]
 %\centering
