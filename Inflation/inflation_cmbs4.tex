@@ -220,7 +220,7 @@ where $A_{\rm s}$, $A_{\rm t}$ are the scalar and tensor amplitudes, and $n_{\rm
 The tensor-to-scalar ratio, $r$, is the relative power in the two types of fluctuations at a chosen pivot scale $k_\ast$ (e.g. values of 0.002 and
 0.05\,Mpc$^{-1}$ have been used in previous studies)
 \begin{equation}
-r=\frac{A_{\rm t}}{A_{\rm s}}\;.
+r=\frac{A_{\rm t}}{A_{\rm s}}\,.
 \end{equation}
 
 The power spectra of $\zeta$ and $\gamma_\sigma$ are time-independent as long as the modes are outside the horizon, and only begin to evolve once the modes of interest re-enter the horizon at late times. In particular, they set the initial conditions for the system of equations governing the time evolution of the Universe from a temperature of around $10^9$ K (when electrons and positrons have just annihilated) to the present. To exhibit the link between the primordial perturbations and late time observables explicitly, note that in a spatially flat universe, the contributions of primordial scalar perturbations to the angular power spectra of temperature or E-mode anisotropies are given by
@@ -345,14 +345,14 @@ assumptions made, see Section~\ref{sec_specforecast}}
 The trade-off between raw sensitivity, ability to remove foregrounds, and ability to delens results in a complicated optimization problem with respect to sky coverage.
 Fig.~\ref{fig_rforecast1} shows the $r$ sensitivity forecast for CMB-S4 as a function of the observed sky fraction for the case that we only have an upper limit (i.e.\ assuming $r=0$, left) or for the case of a detection (here assuming $r=0.01$, right).
 Focusing on the $r=0$ case, we see that an effort devoted to an initial detection of $r$ will benefit from a deep survey that targets a small sky area.
-In fact, there is no minimum in Fig.~\ref{fig_rforecast1}; taken at face value, this optimization drives us to as small a sky fraction as possible. 
+In fact, there is no minimum in Fig.~\ref{fig_rforecast1}. Taken at face value, this optimization drives us to as small a sky fraction as possible. 
 Several real-world constraints caution against this extreme interpretation, the most important of which is the level to which we will rely on delensing at the smallest sky fractions.
 For example, as shown in the bottom-left panel of Fig.~\ref{fig_rforecast1}, achieving the forecasted sensitivity to $r$ for a survey targeting 1\% of the sky will require an 80\% reduction in the map r.m.s. level of the CMB lensing B-modes. 
 While this is achievable from a sensitivity standpoint (see Section~\ref{delens}), systematics and foregrounds will need to be carefully considered.
 There are other real-world concerns not completely captured in the forecasting code that would work in the other direction, steepening the optimization curve at high sky fractions.
 For now we assume identical foreground behavior in all parts of the sky (equivalent to the measured behavior in the { BICEP}2/{\em Keck Array} region), while in fact the average amplitude -- and possibly the complexity -- of foregrounds will increase as larger sky fractions are targeted \cite{Adam:2014bub,Aghanim:2016cps}.
 %Concerns about foreground complexity beyond what has been simulated 
-This effect might appear to increase our preference for a small area survey that focuses on the cleanest regions; however, we need to be cautious until we know more about foregrounds at these sensitivity levels.
+This effect might appear to increase our preference for a small area survey that focuses on the cleanest regions. However, we need to be cautious until we know more about foregrounds at these sensitivity levels.
 Likewise, our ability to identify and address instrumental systematics is often limited by the noise level of the maps, so deeper maps can serve as a guard against instrumental problems.
 % (\comment{Would be helpful to refine this argument with a simple model.}).
 Balancing the forecasting results with these real-world concerns, for subsequent plots we have chosen 3\% as the default sky fraction for CMB-S4 $r$ constraints (assuming a true value of $r=0$).
@@ -401,7 +401,7 @@ Neither of these assumptions is clearly supported by current data, however.
 
 Finally, we note that we have validated the results of the primary Fisher forecasting code used in this section with two other codes, one Fisher-based and one map-based. 
 For several individual points in sky-fraction and detector-effort parameter space (and using a common set of assumptions about observing bands and noise per detector), the three independent codes return consistent values of $\sigma(r)$.
-Worth noting in particular is that the map-based forecasting code does not assume purely Gaussian-distributed foreground emission or translationally invariant foreground properties; rather, foregrounds are simulated in map space based on currently available data.
+Worth noting in particular is that the map-based forecasting code does not assume purely Gaussian-distributed foreground emission or translationally invariant foreground properties. Rather, foregrounds are simulated in map space based on currently available data.
 The agreement between the map-based approach and the power-spectrum-based approaches provides reassurance that the foreground-mitigation approach in the design of CMB-S4 (in particular the number of observing bands and their placement in frequency) is adequate.
 
 
@@ -463,7 +463,7 @@ As the best developed theory of quantum gravity, string theory is a useful frame
 %As the best developed theory of quantum gravity, string theory is a useful framework for exploring mechanisms that allow large-field inflation to be realized even in the presence of heavy degrees of freedom. Axions provide natural candidates for the inflaton~\cite{Freese:1990rb,Adams:1992bn}. They are ubiquitous in string theory and enjoy a shift symmetry that is weakly broken by instanton effects as well as the presence of branes or fluxes~\cite{Wen:1985jz}. Instanton effects generate periodic contributions to the potential. While the periodicities in string theory are expected to be sub-Planckian~\cite{Banks:2003sx,ArkaniHamed:2006dz}, constraints on the scalar spectral index require super-Planckian axion decay constants so that a UV completion of these models does not currently exist. The claimed detection of primordial B-modes by BICEP2 has led to renewed interest in models in which the inflaton is an axion with a potential that is entirely due to instanton effects, and has intensified the discussion to what extent some means to achieve large-field inflation via multiple axions may be incompatible with basic principles of quantum gravity \cite{Kim:2004rp,Rudelius:2014wla,delaFuente:2014aca,Rudelius:2015xta,Brown:2015iha,Bachlechner:2015qja,Brown:2015lia,Heidenreich:2015wga,Heidenreich:2015nta,Kooner:2015rza}.
 
 
-In addition to the familiar non-perturbative contributions that break the continuous shift symmetry to a discrete one, the presence of fluxes and branes lead to contributions to the axion potentials that break the discrete shift symmetry as well. As the axion is displaced by one period, one unit of charge is induced, so that the axion field space becomes non-compact. As a consequence, super-Planckian decay constants are not required for super-Planckian excursions in these so-called ``monodromy'' models~\cite{Silverstein:2008sg, McAllister:2008hb, Kaloper:2008fb, Berg:2009tg, Palti:2014kza,McAllister:2014mpa, Marchesano:2014mla, Blumenhagen:2015xpa,Hebecker:2015tzo}. Generically both contributions to the potential are present and these models predict periodic effects at some level, either directly from the periodic features in the potential or from periodic bursts of string or particle production. Unfortunately, the strength of the signal is very model-dependent; even if one of these models is a good approximation to nature, the periodic features could be undetectably small even for CMB-S4.
+In addition to the familiar non-perturbative contributions that break the continuous shift symmetry to a discrete one, the presence of fluxes and branes lead to contributions to the axion potentials that break the discrete shift symmetry as well. As the axion is displaced by one period, one unit of charge is induced, so that the axion field space becomes non-compact. As a consequence, super-Planckian decay constants are not required for super-Planckian excursions in these so-called ``monodromy'' models~\cite{Silverstein:2008sg, McAllister:2008hb, Kaloper:2008fb, Berg:2009tg, Palti:2014kza,McAllister:2014mpa, Marchesano:2014mla, Blumenhagen:2015xpa,Hebecker:2015tzo}. Generically both contributions to the potential are present and these models predict periodic effects at some level, either directly from the periodic features in the potential or from periodic bursts of string or particle production. Unfortunately, the strength of the signal is very model-dependent. Even if one of these models is a good approximation to nature, the periodic features could be undetectably small even for CMB-S4.
 
 In writing Eq.~(\ref{eq:lbound}), we have assumed that $r$ is monotonic, or at least of the same order of magnitude throughout the inflationary period. However, one can easily construct models in which $r$ is non-monotonic to weaken the bound~\cite{BenDayan:2009kv,Hotchkiss:2011gz, Chatterjee:2014hna}. In the case of a detection with CMB-S4 of a spectrum that is at least approximately scale-invariant, we can write the weaker bound
 \begin{equation}
@@ -480,7 +480,7 @@ This implies that we cannot avoid the question of the embedding of the inflation
 \caption{Forecast of CMB-S4 constraints in the $n_{\rm s}$--$r$ plane for a fiducial model with $r=0.01$. Constraints 
 on $r$ are derived from the expected CMB-S4 sensitivity to the B-mode power spectrum as described in 
 Section~\ref{sec:needs}. Constraints on $n_{\rm s}$ are derived from expected CMB-S4 sensitivity to temperature and 
-E-mode power spectra as described in Section~\ref{sec:ttee}. Also shown are the current best constraints from a combination of the { BICEP}2/{\em Keck Array} experiments and Planck \cite{Array:2015xqh}. Chaotic inflation with $V(\phi)=\mu^{4-p}\phi^p$ for \mbox{$p=2/3,1,2$} are shown as blue lines for $47<N_\star<57$. The Starobinsky model and Higgs inflation are shown as small and large filled orange circles, respectively. The lines show the classes of models discussed in Section~\ref{sec:upperLimits}. The green band shows the predictions for quartic hilltop models, and the gray band shows the prediction of a sub-class of $\alpha$-attractor models~\cite{Kallosh:2013hoa}.
+E-mode power spectra as described in Section~\ref{sec:ttee}. Also shown are the current best constraints from a combination of the { BICEP}2/{\em Keck Array} experiments and Planck \cite{Array:2015xqh}. Chaotic inflation with $V(\phi)=\mu^{4-p}\phi^p$ for \mbox{$p=2/3,1,2$} are shown as blue lines for $47<N_\star<57$ (with smaller $N_\star$ predicting smaller values of $n_{\rm s}$). The Starobinsky model and Higgs inflation are shown as small and large filled orange circles, respectively. The lines show the classes of models discussed in Section~\ref{sec:upperLimits}. The green band shows the predictions for quartic hilltop models, and the gray band shows the prediction of a sub-class of $\alpha$-attractor models~\cite{Kallosh:2013hoa}.
 }
 \label{fig:nsrp01}
 \end{figure}
@@ -498,28 +498,15 @@ E-mode power spectra as described in Section~\ref{sec:ttee}. Also shown are the 
 
 In deriving the primordial power spectra and Eq.~(\ref{eq:Lyth}), we have assumed the Bunch-Davies vacuum state \cite{Bunch:1978yq}. The relation between $r$ and the scale of inflation is modified if we assume that the tensor  modes (and the scalar modes) either do not start in the Bunch-Davies state~\cite{Ashoorioon:2014nta,Collins:2014yua}, or that the evolution during inflation will lead to departures from it. The first option generically introduces a stronger scale-dependence into the tensor spectrum \cite{Aravind:2014axa,Flauger:2013hra} (and additional non-Gaussianity). In addition, this way of achieving observable primordial B-modes from a low-scale model has a similar feature to large-field models: one should show that the initial state is not only acceptable from the point of view of low-energy considerations, but can be generated by pre-inflationary physics. The second option (discussed in section~\ref{sec:scale-of-inflation}) leads to non-trivial higher $n$-point functions that are in principle measurable.
 
-{\it A conclusive detection of primordial B-modes with CMB-S4 would provide evidence that the theory of quantum gravity must accommodate a Planckian field range for the inflaton. Conversely, the absence of a detection of B-modes with CMB-S4 will mean that a large field range is not required. The relation between inflaton field range and the amplitude of primordial gravitational waves means that a detection of $r$ would provide an observational window into non-linear quantum gravity.}
+{\it A detection of primordial B-modes with CMB-S4 would provide evidence that the theory of quantum gravity must accommodate a Planckian field range for the inflaton. Conversely, the absence of a detection of B-modes with CMB-S4 will mean that a large field range is not required. The relation between inflaton field range and the amplitude of primordial gravitational waves means that a detection of $r$ would provide an observational window into quantum gravity.}
 
 
 \section{Implications of an improved upper limit on $r$} 
 \label{sec:upperLimits}
-As detailed in previous sections, a detection of primordial gravitational waves would have profound implications; however, even excluding the presence of gravitational waves at a level observable by CMB-S4 would have important consequences for the theory of inflation. Current constraints already strongly disfavor models that were plausible candidates, such as chaotic inflation with a quadratic potential~\cite{Ade:2015lrj,Ade:2015tva,Array:2015xqh}. Upper limits from CMB-S4 would rule out entire classes of inflationary models. This is shown in figure~\ref{fig:nsr0}. 
+As detailed in previous sections, a detection of primordial gravitational waves would have profound implications. However, even excluding the presence of gravitational waves at a level observable by CMB-S4 would have important consequences for the theory of inflation. Current constraints already strongly disfavor models that were plausible candidates, such as chaotic inflation with a quadratic potential~\cite{Ade:2015lrj,Ade:2015tva,Array:2015xqh}. Upper limits from CMB-S4 would rule out large classes of inflationary models. In particular, all models that explain the observed value of $n_{\rm s}$ naturally (in the sense detailed below), with a scale of the characteristic variation of the potential exceeding the Planck scale would be excluded.  
 
-\begin{figure}[ht]
-\begin{center}
-\includegraphics[width=6in]{Inflation/nsrlabeledr0v8s}
-\end{center}
-\caption{Forecast of CMB-S4 constraints in the $n_{\rm s}$--$r$ plane for a fiducial model with $r=0$. Constraints 
-on $r$ are derived from the expected CMB-S4 sensitivity to the B-mode power spectrum as described in 
-Section~\ref{sec:needs}. Constraints on $n_{\rm s}$ are derived from expected CMB-S4 sensitivity to temperature and 
-E-mode power spectra as described in Section~\ref{sec:ttee}. Also shown are the current best constraints from a combination of the { BICEP}2/{\em Keck Array} experiments and Planck \cite{Array:2015xqh}.  
-%Chaotic inflation with $V(\phi)=\mu^{4-p}\phi^p$ for \mbox{$p=2/3,1,2$} are shown as blue lines for $47<N_\star<57$. 
-The Starobinsky model and Higgs inflation are shown as smaller and larger orange points. The lines show the classes of models discussed in Section~\ref{sec:upperLimits} that naturally explain the observed value of the scalar spectral index for different characteristic scales in the potential (see eq.~\eqref{eq:potscale}), $M=M_{\rm P}/2$, $M=M_{\rm P}$, $M=2\,M_{\rm P}$, and $M=5\,M_{\rm P}$. Longer dashes correspond to larger values of the scale $M$. 
-}
-\label{fig:nsr0}
-\end{figure}
 
-We first present a version of an argument for the implications of an $r$ detection, developed in Refs.~\cite{Mukhanov:2013tua,Roest:2013fha,Creminelli:2014nqa}, which does not rely on the microscopic details of inflationary models. In the limit where the slow-roll parameter $\epsilon\ll1$, Eqs.~(\ref{eq:inf_Pzeta}) and~(\ref{eq:specind}) lead to a differential equation
+We present a version of an argument for the implications of an $r$ detection, developed in Refs.~\cite{Mukhanov:2013tua,Roest:2013fha,Creminelli:2014nqa}, which does not rely on the microscopic details of inflationary models. In the limit where the slow-roll parameter $\epsilon\ll1$, Eqs.~(\ref{eq:inf_Pzeta}) and~(\ref{eq:specind}) lead to a differential equation
 \begin{equation}\label{eq:epsdiffeq}
 \frac{d\ln\epsilon}{d\mathcal{N}}-(n_{\rm s}(\mathcal{N})-1)-2\epsilon=0\,,
 \end{equation} 
@@ -535,7 +522,7 @@ up to subleading corrections in an expansion in large $\mathcal{N}$ for some rea
 \end{equation}
 where we have chosen to parameterize the integration constant by $\mathcal{N}_{\rm eq}$ so that the magnitudes of the first and second terms in the denominator become equal when $\mathcal{N}=\mathcal{N}_{\rm eq}$. We take $\mathcal{N}_{\rm eq}>0$ and indicate the choice of sign for the integration constant by ``$\pm$.''
 
-Assuming that the epoch when the modes we observe in the CMB exit the horizon is not special, so that $\mathcal{N}_\ast\gg\mathcal{N}_{\rm eq}$ or $\mathcal{N}_\ast\ll\mathcal{N}_{\rm eq}$, Eq.~(\ref{eq:epsdiffeq}) leads to four classes of solution:
+Assuming that the epoch when the modes we observe in the CMB exit the horizon is not special, so that $\mathcal{N}_\ast\gg\mathcal{N}_{\rm eq}$ or $\mathcal{N}_\ast\ll\mathcal{N}_{\rm eq}$, Eq.~(\ref{eq:epsdiffeq}) leads to four classes of solutions:
 \begin{eqnarray}
 {\rm I.}&&\epsilon(\mathcal{N})=\frac{p}{2\mathcal{N}}\,;\label{eq:classI}\\
 {\rm II.}&&\epsilon(\mathcal{N})=\frac{p}{2\mathcal{N}}\left(\frac{\mathcal{N}_{\rm eq}}{\mathcal{N}}\right)^p\hspace{1.92cm}\qquad{\rm with}\qquad \hspace{7.3mm}p>0 \hspace{1.0cm}\qquad{\rm and}\qquad\mathcal{N}_{\rm eq}\ll\mathcal{N}_\ast\,;\label{eq:classII}\\
@@ -543,13 +530,13 @@ Assuming that the epoch when the modes we observe in the CMB exit the horizon is
 {\rm IV.}&&\epsilon(\mathcal{N})=\frac{1}{2\mathcal{N}\ln\mathcal{N}_{\rm eq}/\mathcal{N}}+\frac{p}{4\mathcal{N}}+\dots\qquad{\rm with}\qquad |p|\ll\frac{1}{\ln\mathcal{N}_{\rm eq}/\mathcal{N}_\ast}\qquad{\rm and}\qquad \mathcal{N}_{\rm eq}\gg\mathcal{N}_\ast\,.\label{eq:classIV}
 \end{eqnarray}
 
-We will see that $\mathcal{N}_{\rm eq}$ sets the characteristic scale in the potential. As we explain in what follows, if CMB-S4 does {\it not\/} detect primordial B-modes, only class II with $\mathcal{N}_{\rm eq}\lesssim 1$ will remain viable, while the other cases will be disfavored or excluded. This would amount to excluding all models that naturally explain the spectral index with a characteristic scale that exceeds the Planck scale. 
+As we explain in what follows, if CMB-S4 does {\it not\/} detect primordial B-modes, only class II with $\mathcal{N}_{\rm eq}\lesssim 1$ will remain viable, while the other cases will be disfavored or excluded. We will see that $\mathcal{N}_{\rm eq}$ sets the characteristic scale (in Planck units) over which the potential varies, so that this would amount to excluding all models that naturally explain the spectral index with a characteristic scale that exceeds the Planck scale. 
 
 The value of $\mathcal{N}_\ast$ depends on the post-inflationary history of the Universe. Equation~(\ref{eq:nsassump}) implies that a measurement of the spectral index and its running would determine $p$ and hence $\mathcal{N}_\ast$, but unfortunately a measurement of the running at the level of $(n_{\rm s}-1)^2$ is out of reach for CMB-S4. A given reheating scenario predicts $\mathcal{N}_\ast$, but the space of reheating scenarios is large. Instantaneous reheating leads to $\mathcal{N}_\ast\simeq 57$ for $k_\ast=0.05\,  {\rm Mpc}^{-1}$, while smaller values correspond to less efficient reheating. We will assume $47<\mathcal{N}_\ast<57$ for the following discussion. 
 
 Current constraints on $n_{\rm s}$ and $r$ from Ref.~\cite{Ade:2015tva} disfavor class III at just over $2\,\sigma$ relative to class II. Furthermore, the best-fit point of class III occurs for $p\simeq 0$, where classes I, II, and III are degenerate, so that class III need not be discussed separately. Additionally class IV is disfavored at 2--$3\,\sigma$ relative to class II. As a consequence we focus on classes I and II in what follows.
 
-For class I, constraints from the {\it Planck\/} satellite and the { BICEP}2/{\em Keck Array} experiments~\cite{Ade:2015tva} translate into $p=0.32\pm0.16$ at $1\,\sigma$, and favor models with inefficient reheating. At the best-fit point in this class, $r=0.044$ and $n_{\rm s}=0.973$, which is currently disfavored relative to class II at 1--$2\,\sigma$. Upper limits on $r$ directly translate into constraints on $p$. A $1\,\sigma$ upper limit on the amount of primordial gravitational waves from CMB-S4 at a level of $r<0.001$ would imply $p<0.013$ and effectively rule out this class as it degenerates into class II in this limit. 
+For class I, constraints from the {\it Planck\/} satellite and the { BICEP}2/{\em Keck Array} experiments~\cite{Ade:2015tva} translate into $p=0.32\pm0.16$ at $1\,\sigma$, and favor models with inefficient reheating. The best-fit point in this class is $r=0.044$ and $n_{\rm s}=0.973$, which is currently disfavored relative to class II at 1--$2\,\sigma$. Upper limits on $r$ directly translate into constraints on $p$. A $1\,\sigma$ upper limit on the amount of primordial gravitational waves from CMB-S4 at a level of $r<0.001$ would imply $p<0.013$ and effectively rule out this class as it degenerates into class II in this limit. 
 
 For class II the tensor-to-scalar ratio is naturally smaller than in class I, as long as $p$ is of order unity because $\mathcal{N}_\ast\gg\mathcal{N}_{\rm eq}$. Under the additional assumption that the scaling of Eq.~(\ref{eq:classII}) should be valid until the end of inflation we have $\mathcal{N}_{\rm eq}\simeq 1$. In this case, current data from Ref.~\cite{Ade:2015tva} imply $p=0.67\pm0.24$ after marginalization over $\mathcal{N}_\ast$. The best-fit point occurs at $p=0.83$ and instantaneous reheating, so that in this class the data favors models with efficient reheating. At the best-fit point, $r=0.004$ and $n_{\rm s}=0.968$. An upper limit of $r<0.001$ would disfavor this scenario relative to scenarios with $\mathcal{N}_{\rm eq}\ll 1$ at approximately $2\,\sigma$. The precise significance depends slightly on the true value of the spectral index. Similarly, for an upper limit of $r<0.001$, the regime with $p\ll1$ (and equivalently class I) would be disfavored relative to class II with $\mathcal{N}_{\rm eq}\ll 1$ at $3\,\sigma$. To disfavor the scenario with $\mathcal{N}_{\rm eq}\simeq 1$ at approximately $3\,\sigma$ relative to $\mathcal{N}_{\rm eq}\ll 1$ would require an upper limit of $r\lesssim 5\times 10^{-4}$.  
 
@@ -568,11 +555,11 @@ Provided $p\neq 1$, class II corresponds to potentials of the form
 \begin{equation}\label{eq:classIIpot}
 V(\phi)=V_0\exp\left[-\left(\frac{\phi}{\Lambda}\right)^{\frac{2p}{p-1}}\right]\,,
 \end{equation}
-with $\Lambda=\sqrt{\alpha(p)\mathcal{N}_{\rm eq}}M_{\rm P}$, where $\alpha(p)=4p/(1-p)^2$. The parameter $\Lambda$ is closely related to the characteristic scale of the potential $M$. For the range of $p$ that corresponds to the observed value of $n_{\rm s}$, it is well approximated by
+with $\Lambda=\sqrt{\alpha(p)\mathcal{N}_{\rm eq}}M_{\rm P}$, where $\alpha(p)=4p/(1-p)^2$. The parameter $\Lambda$ is closely related to the characteristic scale $M$ over which the potential varies appreciably. For the range of $p$ that corresponds to the observed value of $n_{\rm s}$, it is well approximated by
 \begin{equation}\label{eq:potscale}
 M=\Lambda\frac{|1-p|}{p}\,.
 \end{equation}
-For $p>1$ inflation occurs when $\phi\ll \Lambda$. In this regime, the potential behaves like a hilltop model, $V(\phi)\simeq V_0(1-\left(\phi/\Lambda\right)^n)$, with $n=2p/(p-1)$. For $0<p<1$ inflation occurs for $\phi\gg \Lambda$ and $V(\phi)\simeq V_0(1-\left(\Lambda/\phi\right)^n)$ with $n=2p/(1-p)$. In the limit $p\to0$, in which classes I, II, and III become degenerate, the $\phi$-dependence is logarithmic. 
+For $p>1$ inflation typically occurs when $\phi\ll \Lambda$. In this regime, the potential behaves like a hilltop model, $V(\phi)\simeq V_0(1-\left(\phi/\Lambda\right)^n)$, with $n=2p/(p-1)$. For $0<p<1$ inflation typically occurs for $\phi\gg \Lambda$ and $V(\phi)\simeq V_0(1-\left(\Lambda/\phi\right)^n)$ with $n=2p/(1-p)$. In the limit $p\to0$, in which classes I, II, and III become degenerate, the $\phi$-dependence is logarithmic. 
 
 For the special case $p=1$ the dependence on the inflaton in Eq.~(\ref{eq:classIIpot}) becomes exponential, and in the inflationary regime the potential is well approximated by $V(\phi)\simeq V_0\left(1-\exp\left(-\phi/M\right)\right)$ with $M=\sqrt{\mathcal{N}_{\rm eq}}M_{\rm P}$. There are many examples of models with a potential with this asymptotic behavior for $\phi\gg M$. These include the Starobinsky model~\cite{Starobinsky:1980te}, Higgs inflation~\cite{Salopek:1988qh,Bezrukov:2007ep}, an early example of chaotic inflation~\cite{Goncharov:1983mw}, and the T-model~\cite{Kallosh:2013hoa}.
 
@@ -584,7 +571,21 @@ This allows us to rephrase the lesson we can draw from an upper limit on $r$ fro
 
 {\em In the absence of a detection, CMB-S4 would rule out or disfavor all models that naturally explain the observed value of the scalar spectral index and in which the characteristic scale in field space exceeds the Planck scale.}
 
-Unfortunately, because of the scaling $M\propto \sqrt{\mathcal{N}_{\rm eq}}$ it will only be possible to place constraints $M\lesssim M_{\rm P}$, but not $M\ll M_{\rm P}$. It should also be kept in mind that a natural explanation of the value of the scalar spectral index is not guaranteed and its value could be an accident. That a natural explanation is possible is, however, encouraging.
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width=6in]{Inflation/nsrlabeledr0v8s}
+\end{center}
+\caption{Forecast of CMB-S4 constraints in the $n_{\rm s}$--$r$ plane for a fiducial model with $r=0$. Constraints 
+on $r$ are derived from the expected CMB-S4 sensitivity to the B-mode power spectrum as described in 
+Section~\ref{sec:needs}. Constraints on $n_{\rm s}$ are derived from expected CMB-S4 sensitivity to temperature and 
+E-mode power spectra as described in Section~\ref{sec:ttee}. Also shown are the current best constraints from a combination of the { BICEP}2/{\em Keck Array} experiments and Planck \cite{Array:2015xqh}.  
+%Chaotic inflation with $V(\phi)=\mu^{4-p}\phi^p$ for \mbox{$p=2/3,1,2$} are shown as blue lines for $47<N_\star<57$. 
+The Starobinsky model and Higgs inflation are shown as small and large filled orange circles. The lines show the classes of models discussed in Section~\ref{sec:upperLimits} that naturally explain the observed value of the scalar spectral index for different characteristic scales in the potential (see eq.~\eqref{eq:potscale}), $M=M_{\rm P}/2$, $M=M_{\rm P}$, $M=2\,M_{\rm P}$, and $M=5\,M_{\rm P}$. Longer dashes correspond to larger values of the scale $M$. 
+}
+\label{fig:nsr0}
+\end{figure}
+
+This is shown in figure~\ref{fig:nsr0}. Unfortunately, because of the scaling $M\propto \sqrt{\mathcal{N}_{\rm eq}}$ it will only be possible to place constraints $M\lesssim M_{\rm P}$, but not $M\ll M_{\rm P}$. It should also be kept in mind that a natural explanation of the value of the scalar spectral index is not guaranteed and its value could be an accident. That a natural explanation is possible is, however, encouraging.
 
 \section{Tensor-mode science beyond $r$}
 \label{sec:beyond_r}
