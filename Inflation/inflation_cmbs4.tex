@@ -272,6 +272,35 @@ can be mitigated by a multi-frequency experimental strategy (for details see Sec
 Achieving the CMB-S4 target sensitivity of $\sigma(r) \sim 10^{-3}$ will require exquisite measurements of the B-mode power spectrum. 
 It is expected that CMB-S4 will target the degree-scale recombination feature rather than the tens-of-degree-scale reionization feature (see Fig.~\ref{fig:clall}), because these largest scales are difficult to access from the ground due to atmosphere and sidelobe pickup (though some Stage-3 ground-based experiments are attempting this measurement, notably CLASS \cite{Essinger-Hileman:2014pja}).
 
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=0.6\textwidth]{Inflation/clBB_r01_decorr_v3.pdf}
+\end{center}
+\caption{
+Bin-by-bin forecasted tensor constraints for r=0.01, $f_\mathrm{sky} = 0.03$, 
+and the default detector effort ($10^{6}$ detector years).
+The boxes denote the forecasted CMB-S4 erorr bars.  
+Primordial B-mode spectra are shown for two representative values of 
+the tensor-to-scalar ratio: r=0.001 and r=0.01. The dashed green line shows the
+$\Lambda$CDM expectation for the B-modes induced by gravitational lensing of E modes, 
+with the solid line showing $1/10$ of the lensing power. The
+dashed blue and red lines show the dust and synchrotron (current upper limit) model 
+assumed in the forecasting, at the foreground minimum of 95\,GHz. The levels of dust
+and synchrotron are equal to the ones reported in \cite{Array:2015xqh}. The 
+contribution of dust and synchrotron to the vertical error bars are shown in 
+solid blue and red lines. Since these are calculated from a multi-frequency 
+optimization, the ``effective frequency'' at which these foreground residuals are 
+defined varies with each bin, allowing the residual lines to go above the input 
+foreground model lines which are defined at a fixed frequency of 95\,GHz. 
+Furthermore, due to the low frequency channels having larger 
+beam sizes than the higher frequency ones, in the higher bins, the primordial CMB 
+component will be constrained at a higher effective frequency. Defining the 
+foreground residuals at these effective frequencies will yield a higher amplitude
+for the dust residual, and a lower amplitude for the synchrotron residual, resulting
+in the respective shapes of the solid blue and red lines.}
+\label{fig_clBBr01}
+\end{figure}
+
 As can be seen from Fig.~\ref{fig:clall}, the first requirement for this level of sensitivity to $r$ is a substantial leap forward in raw instrument sensitivity. 
 %As detailed in Section~\ref{sec:detectors}, f
 For ground-based bolometric detectors, which are individually limited in sensitivity by the random arrival of background photons, this means a large increase in detector count. 
@@ -289,73 +318,7 @@ This conservative assumption accounts for many difficult to quantify factors tha
 Further details of the forecasting methodology, including assumptions regarding foreground properties and delensing efficiency, can be found in Section~\ref{sec_specforecast}.
 Fig.~\ref{fig_clBBr01} shows some of the inputs to and assumptions of the forecasting code, including foregrounds, B-mode spectrum error bars (including sample variance on the $r=0.01$ spectrum for 3\% of the sky and noise variance using the scaled noise covariance for the default detector count), and delensing efficiency (the value shown is appropriate for 3\% of the sky, $r=0.01$, and the default detector count -- see below for details).
 
-The trade-off between raw sensitivity, ability to remove foregrounds, and ability to delens results in a complicated optimization problem with respect to sky coverage.
-Fig.~\ref{fig_rforecast1} shows the $r$ sensitivity forecast for CMB-S4 as a function of the observed sky fraction for the case that we only have an upper limit (i.e.\ assuming $r=0$, left) or for the case of a detection (here assuming $r=0.01$, right).
-Focusing on the $r=0$ case, we see that an effort devoted to an initial detection of $r$ will benefit from a deep survey that targets a small sky area.
-In fact, there is no minimum in Fig.~\ref{fig_rforecast1}; taken at face value, this optimization drives us to as small a sky fraction as possible. 
-Several real-world constraints caution against this extreme interpretation, the most important of which is the level to which we will rely on delensing at the smallest sky fractions.
-For example, as shown in the bottom-left panel of Fig.~\ref{fig_rforecast1}, achieving the forecasted sensitivity to $r$ for a survey targeting 1\% of the sky will require an 80\% reduction in the map r.m.s. level of the CMB lensing B-modes. 
-While this is achievable from a sensitivity standpoint (see Section~\ref{delens}), systematics and foregrounds will need to be carefully considered.
-There are other real-world concerns not completely captured in the forecasting code that would work in the other direction, steepening the optimization curve at high sky fractions.
-For now we assume identical foreground behavior in all parts of the sky (equivalent to the measured behavior in the { BICEP}2/{\em Keck Array} region), while in fact the average amplitude -- and possibly the complexity -- of foregrounds will increase as larger sky fractions are targeted \cite{Adam:2014bub,Aghanim:2016cps}.
-%Concerns about foreground complexity beyond what has been simulated 
-This effect might appear to increase our preference for a small area survey that focuses on the cleanest regions; however, we need to be cautious until we know more about foregrounds at these sensitivity levels.
-Likewise, our ability to identify and address instrumental systematics is often limited by the noise level of the maps, so deeper maps can serve as a guard against instrumental problems.
-% (\comment{Would be helpful to refine this argument with a simple model.}).
-Balancing the forecasting results with these real-world concerns, for subsequent plots we have chosen 3\% as the default sky fraction for CMB-S4 $r$ constraints (assuming a true value of $r=0$).
-
-The preference for small sky area is in tension with other CMB-S4 science goals that prefer large sky areas but have much lower requirements for foreground cleaning.
-To balance these goals, we assume that roughly one half of the total CMB-S4 experiment is devoted to a deep survey targeting degree-scale B-modes, while the other half is spent on a broad survey.
-However, if an important science goal was slightly out of the reach of the default survey, one could consider increasing the effort spent on constraining $r$.
-Fig.~\ref{fig_rforecast2} shows the forecasted sensitivity to $r$ as a function of the total effort spent on the deep survey.
-With 250,000 detectors operating for four years, CMB-S4 will exceed the $\sigma(r)=0.001$ benchmark, again assuming a true value of $r=0$.
-
-If the true value of $r$ is not zero, the optimum survey strategy and detector effort will change.
-As shown in the right panel of Fig.~\ref{fig_rforecast1}, if $r$ is as large as 0.01, then a larger sky area will be needed to improve precision; thus, the CMB-S4 deep survey must be designed with the flexibility to increase sky area in the event of a detection.
-
-%For all scenarios, the inflation survey will require many observing frequencies.
-%These forecasts include eight frequency bands distributed between the four atmospheric windows.
-%While it may be desirable to measure 
-In these forecasts, it is assumed that the degree-scale CMB and foregrounds are measured using small-aperture telescopes, while the delensing is achieved with a separate, large-aperture telescope. 
-In all combinations of sky fraction and total detector effort, these forecasts indicate that at least 10--35\% of the total effort must be spent on high-resolution maps that can be used for delensing.
-If the large-aperture, high-resolution data can also be used for degree-scale science, the allocation of resources between bands and telescopes would change slightly, and the overall constraints on $r$ would improve. 
-If, furthermore, cost per detector were independent of telescope aperture size, an argument could be made to carry out all the science with large-aperture telescopes. 
-Neither of these assumptions is clearly supported by current data, however.
-
-Finally, we note that we have validated the results of the primary Fisher forecasting code used in this section with two other codes, one Fisher-based and one map-based. 
-For several individual points in sky-fraction and detector-effort parameter space (and using a common set of assumptions about observing bands and noise per detector), the three independent codes return consistent values of $\sigma(r)$.
-Worth noting in particular is that the map-based forecasting code does not assume purely Gaussian-distributed foreground emission or translationally invariant foreground properties; rather, foregrounds are simulated in map space based on currently available data.
-The agreement between the map-based approach and the power-spectrum-based approaches provides reassurance that the foreground-mitigation approach in the design of CMB-S4 (in particular the number of observing bands and their placement in frequency) is adequate.
-
-\begin{figure}[h]
-\begin{center}
-\includegraphics[width=0.6\textwidth]{Inflation/clBB_r01_decorr_v3.pdf}
-\end{center}
-\caption{
-Bin-by-bin forecasted tensor constraints for r=0.01, $f_\mathrm{sky} = 0.03$, 
-and the default detector effort ($10^{6}$ detector years).
-The boxes denote the forecasted CMB-S4 erorr bars.  
-Primordial B-mode spectra are shown for two representative values of 
-the tensor-to-scalar ratio: r=0.001 and r=0.01. The dashed green line shows the
-$\Lambda$CDM expectation for the B-modes induced by gravitational lensing of E modes, 
-with the solid line showing $1/10$ of the lensing power. The
-dashed blue and red lines show the dust and synchrotron (current upper limit) model 
-assumed in the forecasting, at the foreground minimum of 95\,GHz. The levels of dust
-and synchrotron are equal to the ones reported in \cite{Array:2015xqh}. The 
-contribution of dust and synchrotron towards the vertical error bars are shown in 
-solid blue and red lines. Since these are calculated from a multi-frequency 
-optimization, the "effective frequency" at which these foreground residuals are 
-defined varies with each bin, allowing the residual lines to go above the input 
-foreground model lines which are defined at a fixed frequency of 95\,GHz. 
-Furthermore, due to the low frequency channels having larger 
-beam sizes than the higher frequency ones, in the higher bins, the primordial CMB 
-component will be constrained at a higher "effective frequency;" defining the 
-foreground residuals at these "effective frequencies" will yield a higher amplitude
-for the dust residual, and a lower amplitude for the synchrotron residual, resulting
-in the respective shapes of the solid blue and red lines.}
-\label{fig_clBBr01}
-\end{figure}
-\begin{figure}[!h]
+\begin{figure}[th]
 \begin{center}
 \includegraphics[width=0.49\textwidth]{Inflation/sigr_fsky_det1e6_r0_v3.pdf}
 \includegraphics[width=0.49\textwidth]{Inflation/sigr_fsky_det1e6_r01_v3.pdf}
@@ -378,7 +341,23 @@ $f_\mathrm{sky}$. For a detailed description of the forecasting framework and th
 assumptions made, see Section~\ref{sec_specforecast}}
 \label{fig_rforecast1}
 \end{figure}
-\begin{figure}[!h]
+
+The trade-off between raw sensitivity, ability to remove foregrounds, and ability to delens results in a complicated optimization problem with respect to sky coverage.
+Fig.~\ref{fig_rforecast1} shows the $r$ sensitivity forecast for CMB-S4 as a function of the observed sky fraction for the case that we only have an upper limit (i.e.\ assuming $r=0$, left) or for the case of a detection (here assuming $r=0.01$, right).
+Focusing on the $r=0$ case, we see that an effort devoted to an initial detection of $r$ will benefit from a deep survey that targets a small sky area.
+In fact, there is no minimum in Fig.~\ref{fig_rforecast1}; taken at face value, this optimization drives us to as small a sky fraction as possible. 
+Several real-world constraints caution against this extreme interpretation, the most important of which is the level to which we will rely on delensing at the smallest sky fractions.
+For example, as shown in the bottom-left panel of Fig.~\ref{fig_rforecast1}, achieving the forecasted sensitivity to $r$ for a survey targeting 1\% of the sky will require an 80\% reduction in the map r.m.s. level of the CMB lensing B-modes. 
+While this is achievable from a sensitivity standpoint (see Section~\ref{delens}), systematics and foregrounds will need to be carefully considered.
+There are other real-world concerns not completely captured in the forecasting code that would work in the other direction, steepening the optimization curve at high sky fractions.
+For now we assume identical foreground behavior in all parts of the sky (equivalent to the measured behavior in the { BICEP}2/{\em Keck Array} region), while in fact the average amplitude -- and possibly the complexity -- of foregrounds will increase as larger sky fractions are targeted \cite{Adam:2014bub,Aghanim:2016cps}.
+%Concerns about foreground complexity beyond what has been simulated 
+This effect might appear to increase our preference for a small area survey that focuses on the cleanest regions; however, we need to be cautious until we know more about foregrounds at these sensitivity levels.
+Likewise, our ability to identify and address instrumental systematics is often limited by the noise level of the maps, so deeper maps can serve as a guard against instrumental problems.
+% (\comment{Would be helpful to refine this argument with a simple model.}).
+Balancing the forecasting results with these real-world concerns, for subsequent plots we have chosen 3\% as the default sky fraction for CMB-S4 $r$ constraints (assuming a true value of $r=0$).
+
+\begin{figure}[!ht]
 \begin{center}
 \includegraphics[width=0.49\textwidth]{Inflation/sigr_effort_r0_v3.pdf}
 \includegraphics[width=0.49\textwidth]{Inflation/sigr_effort_r01_v3.pdf}
@@ -402,14 +381,37 @@ assumptions made, see Section~\ref{sec_specforecast}.}
 \label{fig_rforecast2}
 \end{figure}
 
-\newpage
+The preference for small sky area is in tension with other CMB-S4 science goals that prefer large sky areas but have much lower requirements for foreground cleaning.
+To balance these goals, we assume that roughly one half of the total CMB-S4 experiment is devoted to a deep survey targeting degree-scale B-modes, while the other half is spent on a broad survey.
+However, if an important science goal was slightly out of the reach of the default survey, one could consider increasing the effort spent on constraining $r$.
+Fig.~\ref{fig_rforecast2} shows the forecasted sensitivity to $r$ as a function of the total effort spent on the deep survey.
+With 250,000 detectors operating for four years, CMB-S4 will exceed the $\sigma(r)=0.001$ benchmark, again assuming a true value of $r=0$.
+
+If the true value of $r$ is not zero, the optimum survey strategy and detector effort will change.
+As shown in the right panel of Fig.~\ref{fig_rforecast1}, if $r$ is as large as 0.01, then a larger sky area will be needed to improve precision. Thus, the CMB-S4 deep survey must be designed with the flexibility to increase sky area in the event of a detection.
+
+%For all scenarios, the inflation survey will require many observing frequencies.
+%These forecasts include eight frequency bands distributed between the four atmospheric windows.
+%While it may be desirable to measure 
+In these forecasts, it is assumed that the degree-scale CMB and foregrounds are measured using small-aperture telescopes, while the delensing is achieved with a separate, large-aperture telescope. 
+In all combinations of sky fraction and total detector effort, these forecasts indicate that at least 10--35\% of the total effort must be spent on high-resolution maps that can be used for delensing.
+If the large-aperture, high-resolution data can also be used for degree-scale science, the allocation of resources between bands and telescopes would change slightly, and the overall constraints on $r$ would improve. 
+If, furthermore, cost per detector were independent of telescope aperture size, an argument could be made to carry out all the science with large-aperture telescopes. 
+Neither of these assumptions is clearly supported by current data, however.
+
+Finally, we note that we have validated the results of the primary Fisher forecasting code used in this section with two other codes, one Fisher-based and one map-based. 
+For several individual points in sky-fraction and detector-effort parameter space (and using a common set of assumptions about observing bands and noise per detector), the three independent codes return consistent values of $\sigma(r)$.
+Worth noting in particular is that the map-based forecasting code does not assume purely Gaussian-distributed foreground emission or translationally invariant foreground properties; rather, foregrounds are simulated in map space based on currently available data.
+The agreement between the map-based approach and the power-spectrum-based approaches provides reassurance that the foreground-mitigation approach in the design of CMB-S4 (in particular the number of observing bands and their placement in frequency) is adequate.
+
+
 
 \section{Implications of a detection of primordial gravitational waves}
 \label{sec:detection}
 
-The inflationary amplification of vacuum fluctuations of the metric leads to a nearly scale-invariant, very nearly Gaussian tensor power spectrum. This signal is very well characterized by a single parameter defining the (relative) amplitude of tensor fluctuations, $r$. In this section, we consider the consequences of a detection of primordial gravitational waves consistent with this simplest inflationary expectation. Together with implications of an improved upper limit on $r$ presented in the next section, these expectations motivate the threshold level of sensitivity CMB-S4 will aspire to and guide the baseline proposals for the instrument in Section~\ref{sec:needs}. 
+The inflationary amplification of vacuum fluctuations of the metric leads to a nearly scale-invariant, very nearly Gaussian tensor power spectrum. This signal is very well characterized by a single parameter defining the (relative) amplitude of tensor fluctuations, $r$. In this section, we consider the consequences of a detection of primordial gravitational waves consistent with this simplest inflationary expectation. Together with implications of an improved upper limit on $r$ presented in the next section, these expectations motivate the threshold level of sensitivity for CMB-S4 and guide the baseline proposals for the instrument in Section~\ref{sec:needs}. 
 
-Of course, if a detection is achieved it will be essential to characterize the accuracy with which we can test the standard inflationary prediction. In Section~\ref{sec:beyond_r} we will use the baseline instrument design from Section~\ref{sec:needs} with hypothetical detection levels to forecast constraints on $n_{\rm t}$ and tensor-mode non-Gaussianity. We also use Section~\ref{sec:beyond_r} to discuss alternatives to the inflationary vacuum prediction, including non-vacuum sources during inflation. We will see that non-vacuum scenarios would be distinguishable, as long as $r$ is detected at high significance.
+Of course, in the event of a detection it will be essential to characterize the accuracy with which we can test the standard inflationary prediction. In Section~\ref{sec:beyond_r} we will use the baseline instrument design from Section~\ref{sec:needs} with hypothetical detection levels to forecast constraints on $n_{\rm t}$ and tensor-mode non-Gaussianity. We also use Section~\ref{sec:beyond_r} to discuss alternatives to the inflationary vacuum prediction, including non-vacuum sources during inflation. We will see that non-vacuum scenarios would be distinguishable, as long as $r$ is detected at high significance.
 
 The remainder of this section derives the remarkable implications of a detection of primordial gravitational waves with amplitude accessible by CMB-S4, and with a nearly scale-invariant, nearly Gaussian spectrum.  This would reveal the energy scale of inflation, provide compelling evidence for linearized quantum gravity, and yield strong support for structure in non-linear quantum gravity that accommodates a large field range for the inflaton. 
 
