@@ -39,7 +39,7 @@ The bandpower covariance matrix describes the raw sensitivity of all auto and cr
 This covariance matrix includes contributions from the sample variance of signal fields (CMB and foreground) and instrumental noise, including signal$\times$noise terms.
 The signal variance depends on the assumed sky model, which can be modified to explore optimistic or pessimistic scenarios.
 As discussed above, estimates of the noise variance should be obtained by rescaling of noise levels that have actually been obtained by Stage 2 experiments (or Stage 3, when available).
-Only these scaled noise levels will include all the small ``reality factors'' that are incurred in operating a CMB experiment.
+Only these scaled noise levels will include all the ``reality factors'' that are incurred in operating a CMB experiment.
 
 Once we have a projection for the bandpower covariance matrix of \cmbexp\, we can derive constraints on a parametrized model of cosmological and foreground signals via the Fisher information matrix.
 While we are most interested in parameter $r$, it is necessary to also consider the amplitude, spectrum, and spatial distribution of the dust and synchrotron foregrounds (see \cite{Ade:2015tva} for an example).
@@ -50,14 +50,18 @@ The parametrized signal model is also quite flexible and can include complicatio
 The limitation is that by considering the power spectrum only we are treating all signals as Gaussian, an approximation which must break down at some point for foregrounds.
 For this reason, it is important to have the ability to spot check the spectrum-based forecasts against map-based forecasts at specific choices of signal model.
 
-As described in Section~\ref{sec:needs}, the specific implementation of Fisher forecasting for CMB-S4 constraints
-on $r$ in this document assume the following baseline instrument configuration parameters:
+As described in Section~\ref{sec:needs}, the specific implementation of Fisher forecasting for CMB-S4 constraints on $r$ in this document assume the following baseline configuration parameters:
 %
 \begin{itemize}
-\item{250,000 detectors operating for four years, dedicated solely to the combination of measuring degree-scale B modes and measuring lensing B modes on the same patch of sky. The split in effort between degree-scale observations and lensing observations depends on the fraction of sky observed, which sets the level of delensing needed.}
-\item{Eight frequency bands, two each in the four atmospheric windows between 30 and 300 GHz.}
+\item{250,000 detectors operating for four years, dedicated solely to the combination of measuring degree-scale B modes and measuring lensing B modes on the same patch of sky (for delensing). 
+The split in effort between degree-scale observations and lensing observations is
+optimized for, and depends on the fraction of sky observed. The optimziation sets the level of delensing necessary.}
+\item{Eight frequency bands (30, 40, 85, 95, 145, 155, 215, 270), two each in the four atmospheric windows. The framework optimally distributes effort among each of the 
+eight frequencies, assuming comparable focal plane area. To mitigate against 
+potential unknown foreground complexities, we also force an equal effort 
+split among each pair of frequencies in each atmospheric window.}
 \item{For the degree-scale effort, bandpower covariance matrices scaled directly from achieved BICEP2/Keck performance.}
-\item{Foregrounds as measured in the BICEP2/Keck patch of sky, including decorrelation of the dust signal between high frequencies and the frequencies of interest for CMB.}
+\item{Foregrounds as measured in the BICEP2/Keck patch of sky, including decorrelation of the dust signal between high frequencies and the frequencies of interest for CMB. The decorrelation parameter is a function of both frequency and multipole number.}
 \item{Delensing efficiency based solely on noise level in the high-resolution map used for delensing---i.e., no degradation to delensing from foregrounds or systematics.}
 \end{itemize}
 %
@@ -65,7 +69,20 @@ In Section~\ref{sec:needs}, these assumptions are used to search sky fraction an
 $\sigma(r)$ as the figure of merit. We verify these results using a second Fisher code (described below) and a map-based
 forecasting method (see next section).
 
-The second Fisher code---detailed in \cite{Errard:2015cxa}---parameterizes the CMB-S4 instrument by its sky and multipole coverage, along with the central frequency, bandwidth, resolution and white-noise level of each channel. The ability of the instrument to remove diffuse foregrounds is estimated using a parametric maximum-likelihood forecast \cite{Errard:2011vi,Errard:2012qx} based on Planck foreground measurements \cite{Adam:2015tpy,Adam:2015wua}. The impacts of foreground subtraction---residual foregrounds and increased noise relative to the raw combination of all channels---are propagated to a delensing forecast (based on \cite{Smith:2010gu}), which also estimates the sensitivity to the lensing convergence power spectrum. Constraints on $r$ are produced with a standard Fisher forecast (see Section~\ref{sec:ttee} for a complete description) using temperature, $E$-mode, delensed-$B$-mode and lensing convergence information, marginalizing over the amplitude and multipole-dependence of the foreground residuals. As the mitigation of systematic effects is not currently modelled within this code, constraints on $r$ are typically a factor of 2.5 more optimistic than when these effects are included.
+The second Fisher code---detailed in \cite{Errard:2015cxa}---parameterizes the CMB-S4 instrument by its sky and multipole coverage, along with the central frequency, bandwidth, resolution and white-noise level of each channel. The ability of the instrument to remove diffuse foregrounds is estimated using a parametric maximum-likelihood forecast \cite{Errard:2011vi,Errard:2012qx} based on Planck foreground measurements \cite{Adam:2015tpy,Adam:2015wua}. The impacts of foreground subtraction---residual foregrounds and increased noise relative to the raw combination of all channels---are propagated to a delensing forecast (based on \cite{Smith:2010gu}), which also estimates the sensitivity to the lensing convergence power spectrum. Constraints on $r$ are produced with a standard Fisher forecast (see Section~\ref{sec:ttee} for a complete description) using temperature, $E$-mode, delensed-$B$-mode and lensing convergence information, marginalizing over the amplitude and multipole-dependence of the foreground residuals. 
+
+The first code folds in a number of realism factors that results in more conservative
+constraints, typically by a factor of 2.5: including dust decorrelation, using a 
+fully descriptive BPCM including correlation between adjacent bins, 
+using realistic $N_l$'s that are grounded in achieved performance and include
+an appropriate level of low ell excess noise, mode filtering which affect sky coverage
+and S/N per mode, and noise contributions to the BPCM that take into account the 
+non-uniformity of the survey which effectively yields wider/shallower maps than the 
+Knox derived equivalent products used in the second code. When these realism factors
+are stripped away, the two codes agree. It is worth noting that perhaps with an 
+innovative survey design, it is possible that in the future we might do better on 
+some of the points above, in which case the factor of 2.5 brackets the list of 
+possible outcomes.  
 
 \subsubsection{Map-based domain forecasting}
 
@@ -77,7 +94,7 @@ This method provides an assessment of the expected bias on $r$ if the model does
 
 We compare this map-based forecasting to the results of the spectrum-based Fisher-matrix 
 forecasting described above. For discrete points in sky fraction and detector effort parameter space, 
-we recover the Fisher results with the map-based code, both finding for example $\sigma(r)=0.001$ for $f_{\rm sky}=0.1$ and $r=0$. In this map-based approach we approximate the scaled achieved noise properties by modeling the noise as white noise plus a power-law noise component that starts dominating at a scale below $\ell_{\rm knee}$. The power law was determined by fitting to the achieved BICEP2/Keck noise surves.  This consistency of the different approaches indicates that foreground residuals due to assumptions of Gaussianity and isotropy are not significantly biasing the spctrum-based Fisher forecasts, but this will be the subject of further study as the S4 design evolves.
+we recover the Fisher results with the map-based code, both finding for example $\sigma(r)=0.001$ for $f_{\rm sky}=0.1$ and $r=0$. In this map-based approach we approximate the scaled achieved noise properties by modeling the noise as white noise plus a power-law noise component that starts dominating at a scale below $\ell_{\rm knee}$. The power law was determined by fitting to the achieved BICEP2/Keck noise curves.  This consistency of the different approaches indicates that foreground residuals due to assumptions of Gaussianity and isotropy are not significantly biasing the spectrum-based Fisher forecasts, but this will be the subject of further study as the S4 design evolves.
 
 \subsection{Forecasting \cmbexp\ constraints on parameters from TT/TE/EE/$\kappa\kappa$}
 \label{sec:ttee}
