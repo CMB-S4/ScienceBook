@@ -59,6 +59,8 @@ Current CMB data already provides a robust detection of the cosmic neutrino back
 
 Section~\ref{sec:neureview} will review neutrino cosmology and the motivation for studying neutrino masses with cosmological probes.  Section~\ref{sec:mnuobs} will discuss the various cosmological signatures of neutrino mass, emphasizing the CMB specifically.  We will forecast CMB-S4 sensitivity to $\sum m_\nu$.  Section~\ref{sec:lab} will discuss the relationship between cosmological and lab based neutrino measurements, including a discussion of sterile neutrinos.  Section~\ref{sec:neuscenarios} will explore some possible scenarios for neutrino physics with CMB-S4 and neutrino experiments.
 
+Unless otherwise stated, we will work in units where $c=\hbar = 1$.  We will also set $k_B=1$ such that temperature, $T$, carries units of energy ($T = 1 \, {\rm K} \to T= 8.62 \times 10^{-5} \, {\rm eV}$).  The scale factor, $a$, is normalized such that $a(z=0) =1$.  
+
 \section{ Review of Neutrino Cosmology}\label{sec:neureview}
 
 Cosmological measurements of neutrinos depend on our detailed understanding of the cosmic history, starting with their decoupling at high temperatures ($T \lesssim 10$ MeV) through to their contribution to the growth of structure at late times.  In this Section we will give an overview of these epochs with an eye towards to the measurements of $\sum m_\nu$, $\Neff$ and $Y_p$ to be discussed in this chapter and the next.  
@@ -110,8 +112,8 @@ For massless particles described by the Fermi-Dirac or Bose-Einstein distributio
 \beq
 	\rho(T) =
 	\Bigg\{\begin{array}{l c l}
-        g\frac{\pi^2k_B^4}{30\hbar^3 c^3}T^4 &  &{\rm Boson}\\
-       \frac{7}{8}g\frac{\pi^2k_B^4}{30\hbar^3 c^3} T^4 &  &{\rm Fermion}
+        g\frac{\pi^2}{30}T^4 &  &{\rm Boson}\\
+       \frac{7}{8}g\frac{\pi^2}{30} T^4 &  &{\rm Fermion}
         \end{array}
 \eeq
 where $g$ counts the number of distinct spin states.  The entropy density for massless particles is given by
@@ -120,8 +122,8 @@ where $g$ counts the number of distinct spin states.  The entropy density for ma
 \end{equation}
 It is convenient to define a quantity $\gs$ which counts the spin states for all particles and antiparticles, with an additional factor $\frac{7}{8}$ for fermions.  With this definition, the total energy density and entropy density of the universe during radiation domination are given by
 \bea
-	\rho(T) &=& \gs\frac{\pi^2k_B^4}{30\hbar^3 c^3}T^4 \, , \nonumber \\
-	s(T) &=& \frac{4}{3}\gs\frac{\pi^2k_B^4}{30\hbar^3 c^3}T^3 \, .
+	\rho(T) &=& \gs\frac{\pi^2}{30}T^4 \, , \nonumber \\
+	s(T) &=& \frac{4}{3}\gs\frac{\pi^2}{30}T^3 \, .
 \eea
 In an expanding universe, the first law of thermodynamics implies that for particles in equilibrium, the comoving entropy density is conserved
 \begin{equation}
@@ -133,7 +135,7 @@ One straightforward consequence of this conservation is that for radiation in fr
 \end{equation}
 Let us now apply this to the physics of the early universe.
 
-At a temperature of $10^{11}$~K ($k_BT\sim10$~MeV), the universe was filled with photons, electrons and positrons, and neutrinos and antineutrinos of three species, all in thermal equilibrium with negligible chemical potential, along with a much smaller density of baryons and dark matter both of which are unimportant for the present discussion.  As the temperature of the plasma dropped below about $10^{10}$~K (about 1 second after the end of inflation), the rate of collisions between neutrinos and electrons and positrons could no longer keep up with the expansion rate of the universe, neutrinos fell out of equilibrium and began a free expansion.  Electrons and positrons remained in equilibrium with photons and their number densities fell with decreasing temperature, so that they were effectively gone by the time the temperature reached $k_B T \sim 10\,{\rm keV}$.  We will simplify the discussion by assuming that neutrinos decoupled instantaneously before electron-positron annihilation and comment below how a more detailed calculation modifies the results.  Non-zero neutrino masses can safely be neglected here as long as $m_\nu c^2\lesssim1$~keV which is guaranteed by current observational bounds.
+At a temperature of $10^{11}$~K ($T\sim10$~MeV), the universe was filled with photons, electrons and positrons, and neutrinos and antineutrinos of three species, all in thermal equilibrium with negligible chemical potential, along with a much smaller density of baryons and dark matter both of which are unimportant for the present discussion.  As the temperature of the plasma dropped below about $10^{10}$~K (about 1 second after the end of inflation), the rate of collisions between neutrinos and electrons and positrons could no longer keep up with the expansion rate of the universe, neutrinos fell out of equilibrium and began a free expansion.  Electrons and positrons remained in equilibrium with photons and their number densities fell with decreasing temperature, so that they were effectively gone by the time the temperature reached $ T \sim 10\,{\rm keV}$.  We will simplify the discussion by assuming that neutrinos decoupled instantaneously before electron-positron annihilation and comment below how a more detailed calculation modifies the results.  Non-zero neutrino masses can safely be neglected here as long as $m_\nu \lesssim1$~keV which is guaranteed by current observational bounds.
 
 From this point on, we will distinguish the temperature of neutrinos $T_\nu$ from that of the photons $T_\gamma$.  Before neutrino decoupling, frequent interactions kept neutrinos and photons in equilibrium, ensuring they had a common temperature.  After the universe became transparent to neutrinos, the neutrinos kept their relativistic Fermi-Dirac distribution with a temperature which decreased as the inverse of the scale factor.  The photons, on the other hand, were heated by the annihilation of the electrons and positrons.  Comoving entropy conservation allows us to compute the relative temperatures at later times.
 
@@ -157,15 +159,15 @@ We find that in the instantaneous neutrino decoupling limit, the annihilation of
 
 After electron positron annihilation, assuming three species of light neutrinos and antineutrinos, each with one spin state, the radiation density of the universe is
 \begin{equation}
-	\rho_r = \frac{\pi^2k_B^4}{30\hbar^3 c^3}\left[2T_\gamma^4 + 6\frac{7}{8}T_\nu^4\right] = \frac{\pi^2k_B^4}{15\hbar^3 c^3}\left[1+3\,\frac{7}{8}\left(\frac{4}{11}\right)^{4/3}\right] T_\gamma^4 \, .
+	\rho_r = \frac{\pi^2}{30}\left[2T_\gamma^4 + 6\frac{7}{8}T_\nu^4\right] = \frac{\pi^2}{15}\left[1+3\,\frac{7}{8}\left(\frac{4}{11}\right)^{4/3}\right] T_\gamma^4 \, .
 \end{equation}
 It is conventional to define a quantity $\Nf$ which gives the radiation energy density in terms of the effective number of neutrino species as
 \begin{equation}\label{eq:rho_r_Neff}
-	\rho_r = \frac{\pi^2k_B^4}{15\hbar^3 c^3}\left[1+\frac{7}{8}\left(\frac{4}{11}\right)^{4/3}\Nf\right] T_\gamma^4 \, .
+	\rho_r = \frac{\pi^2k_B^4}{15\hbar^3 c^3}\left[1+\frac{7}{8}\left(\frac{4}{11}\right)^{4/3}\Nf\right] T_\gamma^4 \, ,
 \end{equation}
-In the instantaneous neutrino decoupling approximation described above, we found $\Nf = 3$.  In the real universe, however, decoupling of neutrinos is not instantaneous, and the residual coupling of neutrinos at the time of electron positron annihilation increases $\Nf$ by a small amount in the Standard Model.
+where we have restored $k_B$, $c$ and $\hbar$ for completeness.  In the instantaneous neutrino decoupling approximation described above, we found $\Nf = 3$.  In the real universe, however, decoupling of neutrinos is not instantaneous, and the residual coupling of neutrinos at the time of electron positron annihilation increases $\Nf$ by a small amount in the Standard Model.
 
-Unlike photon decoupling at temperature $k_B T \sim 0.2$ eV, active neutrino decoupling at $k_B T \sim 10 \, {\rm MeV} - 0.1 \, {\rm MeV}$ takes place over many tens of Hubble times, with the result that we expect distortions in the relic neutrino energy spectra relative to the thermal relativistic Fermi-Dirac distribution. Standard Model Boltzmann neutrino transport calculations show that these distortions change $\Neff$ at the percent level, with the current best estimate predicting $\Nf = 3.046$ \cite{Mangano:2005cc}.   This result is largely due to (1) the incomplete decoupling of neutrinos during electron-positron annihilation and (2) QED plasma effects.  While both effects have been calculated independently quite accurately, there is some theoretical uncertainty in this quantity at the level of about $10^{-3}$ due to the various numerical approximations that are made in the calculations when both effects are included simultaneously (see e.g.~\cite{Grohs:2015tfy} for discussion).  
+Unlike photon decoupling at temperature $k_B T \sim 0.2$ eV, active neutrino decoupling at $T \sim 10 \, {\rm MeV} - 0.1 \, {\rm MeV}$ takes place over many tens of Hubble times, with the result that we expect distortions in the relic neutrino energy spectra relative to the thermal relativistic Fermi-Dirac distribution. Standard Model Boltzmann neutrino transport calculations show that these distortions change $\Neff$ at the percent level, with the current best estimate predicting $\Nf = 3.046$ \cite{Mangano:2005cc}.   This result is largely due to (1) the incomplete decoupling of neutrinos during electron-positron annihilation and (2) QED plasma effects.  While both effects have been calculated independently quite accurately, there is some theoretical uncertainty in this quantity at the level of about $10^{-3}$ due to the various numerical approximations that are made in the calculations when both effects are included simultaneously (see e.g.~\cite{Grohs:2015tfy} for discussion).  
 
 
 
@@ -176,17 +178,17 @@ The relic neutrinos were relativistic at the time of their decoupling through to
  
 As discussed more detail in the Chapter 4, cosmic background neutrinos have been detected indirectly through their contribution to the energy density in radiation in the early universe. The current CMB constraints from $\Neff$ are in excellent agreement with the Standard Model expectation of three species of neutrinos and antineutrinos each described very nearly by a relativistic thermal Fermi-Dirac distribution \cite{Ade:2015xua}. The distribution function for each species of neutrinos and antineutrinos (neglecting here the small non-thermal distortions discussed above) is given by
 \beq
-f_\nu(p) = \frac{1}{e^{a p/(k_BT_{\nu 0})} +1} \ ,
+f_\nu(p) = \frac{1}{e^{a p/T_{\nu 0}} +1} \ ,
 \eeq
-where $T_{\nu 0} \approx 1.95K$ or $k_B T_{\nu 0} \approx 1.68 \times 10^{-4}\,{\rm eV}$ is the temperature today. Note that with Standard Model physics the spectral shape of the neutrino phase space distribution is preserved with the expansion so relic neutrinos have retained the relativistic Fermi-Dirac momentum distribution inherited from decoupling even as the individual neutrinos became non-relativistic. 
+where $T_{\nu 0} \approx 1.68 \times 10^{-4}\,{\rm eV}$ ($1.95K$) is the temperature today. Note that with Standard Model physics the spectral shape of the neutrino phase space distribution is preserved with the expansion so relic neutrinos have retained the relativistic Fermi-Dirac momentum distribution inherited from decoupling even as the individual neutrinos became non-relativistic. 
 
 The neutrino energy density is given by
 \beq
-\rho_\nu = \sum_i \int\frac{d^3 {\bf p}}{(2\pi \hbar)^3} \frac{\sqrt{p^2 + m_{\nu i}^2}}{e^{ap/(k_BT_{\nu 0})} +1}
+\rho_\nu = \sum_i \int\frac{d^3 {\bf p}}{(2\pi )^3} \frac{\sqrt{p^2 + m_{\nu i}^2}}{e^{ap/T_{\nu 0}} +1}
 \eeq
 where $m_{\nu i}$ are the three neutrino mass eigenstates.  For $T_{\nu}/a \gg m_{\nu i}$ the neutrino energies are dominated by their momenta and the total energy density behaves like radiation
 \bea
-\rho_{\nu}\Bigg|_{{\rm {\tiny early}}}  &\approx& \frac{7 \pi^2}{40}\frac{(k_B T_{\nu 0})^4}{\hbar^3 c^3}\frac{1}{a^4} \\
+\rho_{\nu}\Bigg|_{{\rm {\tiny early}}}  &\approx& \frac{7 \pi^2}{40}( T_{\nu 0})^4 \frac{1}{a^4} \\
 & \propto& a^{-4} \nonumber
 \eea
 While for $T_{\nu 0}/a \ll m_{\nu i}$ the energy density behaves like matter
@@ -197,7 +199,7 @@ While for $T_{\nu 0}/a \ll m_{\nu i}$ the energy density behaves like matter
 \eea
 where $\bar{n}_\nu$ is the number of neutrinos and antineutrinos in each mass eigenstate
 \beq
-\bar{n}_\nu =\int\frac{d^3 {\bf p}}{(2\pi \hbar)^3} \frac{2}{e^{ap/(k_BT_{\nu 0})} +1} \approx \frac{113}{a^3}\,{\rm cm}^{-3}\,.
+\bar{n}_\nu =\int\frac{d^3 {\bf p}}{(2\pi )^3} \frac{2}{e^{ap/T_{\nu 0}} +1} \approx \frac{113}{a^3}\,{\rm cm}^{-3}\,.
 %&=&  \frac{6 \zeta(3)}{4\pi^2} \left(\frac{k_B T_\nu}{\hbar c}\right)^3\frac{1}{a^3}\\
 \eeq
 
@@ -213,7 +215,7 @@ At $z \ll z_{\rm nr}$ the matter density of the universe, which enters into the 
 
 Neutrinos do not participate in gravitational collapse until late times when they have become nonrelativistic. Prior to this transition, the neutrinos {\em free-stream} out of gravitational wells, leaving the CDM and baryons behind  \cite{Bond:1983hb, Ma:1996za, Hu:1997vi, Hu:1997mj}. Primordial fluctuations in the neutrino density are therefore damped away on scales smaller than the horizon at $z_{\rm nr}$. In comoving units, this scale corresponds to a wave number
 \beq
-k_{\rm nr} \equiv a_{\rm nr} H(a_{\rm nr})/c \approx 0.003 \left(\frac{\Omega_m}{0.3}\frac{m_{\nu}}{0.05\, {\rm eV}}\right)^{1/2} h/{\rm Mpc}\,.
+k_{\rm nr} \equiv a_{\rm nr} H(a_{\rm nr}) \approx 0.003 \left(\frac{\Omega_m}{0.3}\frac{m_{\nu}}{0.05\, {\rm eV}}\right)^{1/2} h/{\rm Mpc}\,.
 \eeq
 Once the neutrinos are non-relativistic, their finite velocity dispersion still prevents them from clustering on scales smaller than the typical distance a neutrino travels in a Hubble time, $v_\nu /H(a)$ where $v_\nu \approx 3.15 T_{\nu 0}/(a m_\nu)$ the mean neutrino velocity. In analogy with the Jeans criterion for gravitational collapse, the neutrino free-streaming scale is defined by \cite{Bond:1983hb, Lesgourgues:2006nd}
 \beq
@@ -300,7 +302,7 @@ Any probe of $P_{mm}$ at late times is, in principle, sensitive to the sum of th
 
 \subsection{CMB Lensing}\label{sec:neulens}
 
-Likely the cleanest probe of the neutrino mass in the CMB is through gravitational lensing~\cite{Kaplinghat:2003bh}, which directly measures the matter distribution along the line of sight.  A measurement of the CMB lensing power spectrum provides a two-dimensional projection of the three-dimensional matter power spectrum, see Figure~\ref{fig:lensingsuppression}.  To be concrete, in the Limber approximation, the lensing power spectrum is given by
+Likely the cleanest probe of the neutrino mass in the CMB is through gravitational lensing~\cite{Kaplinghat:2003bh}, which directly measures the matter distribution along the line of sight.  A measurement of the CMB lensing power spectrum provides a two-dimensional projection of the three-dimensional matter power spectrum, see Figure~\ref{fig:lensingsuppression}.  To be concrete, in the Limber approximation (see e.g.~\cite{Lewis:2006fu, LoVerde:2008re}), the lensing power spectrum is given by
 \bea
 \label{eq:CellPhiPhi}
 C_\ell^{\phi \phi} &=& \frac{8\pi^2}{\ell^2} \int^{\chi_\star}_0 \chi d\chi P_\Psi(\ell /\chi ; \eta_0 - \chi)  \frac{(\chi_\star -\chi)^2}{\chi_\star \chi} \\
@@ -362,7 +364,7 @@ There are a number of synergistic opportunities between CMB-S4 and external cosm
 
 \subsubsection{Galaxy Cluster Abundance}
 \label{sssec:mnucluster}
-Galaxy clusters form from rare high peaks in the matter density field. A galaxy cluster of mass $M$ forms from a region of size $R\sim \left(M/(4/3\pi \bar\rho_m)\right)^{1/3}$, which is smaller than the neutrino free streaming scale for even the most massive galaxy clusters so long as $m_{\nu i} \lsim 0.1$eV (e.g. \cite{LoVerde:2013lta}). The neutrino free-streaming therefore slows the growth of structure on cluster scales, suppressing the abundance of galaxy clusters. 
+Galaxy clusters form from rare high peaks in the matter density field. A galaxy cluster of mass $M$ forms from a region of size $R\sim \left(M/(4/3\pi \bar\rho_m)\right)^{1/3}$, which is smaller than the neutrino free streaming scale for even the most massive galaxy clusters so long as $m_{\nu i} \, \lsim \, 0.1$ eV (e.g. \cite{LoVerde:2013lta}). The neutrino free-streaming therefore slows the growth of structure on cluster scales, suppressing the abundance of galaxy clusters. 
 
 
 The number density of clusters with mass $M$ can be expressed by (e.g. \cite{Tinker:2008ff,Bhattacharya:2010wy}), 
@@ -380,7 +382,7 @@ where $R = (3M/(4\pi \rho_{cb}))^{1/3}$, $P_{cc}(k)$ is the power spectrum of CD
 Current constraints on neutrino mass from cluster abundance, in combination with the primary CMB and BAO, are $\sum m_\nu \lsim 0.2$--$0.3$\,eV at $95\%$ confidence \cite{Hasselfield:2013wf,Mantz:2014paa,Ade:2015fva,deHaan:2016qvy}. To date, the contraints have been driven by the difference between (or consistency of) the matter power spectrum amplitude measured at late times, from clusters, and at early times, from the CMB. An additional signal is present internally to the cluster data, namely the time-dependent influence of massive neutrinos on cluster growth through Eqs.~\ref{eq:clmfcn} and \ref{eq:sigmaM}, which can potentially provide tighter constraints \cite{Wang:2005vr}.
 
 
-Making these measurements of cluster abundance and growth require cluster surveys with well understood selection functions extending to high redshift ($z\sim2$). Galaxy clusters can be identified from CMB data via the thermal Sunyaev-Zel'dovich (tSZ) effect, the frequency shift of CMB photons that have scattered off of electrons in the hot, intra-cluster gas.  CMB-S4 is projected to detect a nearly mass-limited sample of $\mathcal{O}(100,000)$ galaxy clusters.
+Making these measurements of cluster abundance and growth require cluster surveys with well understood selection functions extending to high redshift ($z\sim2$). Galaxy clusters can be identified from CMB data via the thermal Sunyaev-Zel'dovich (tSZ) effect, the frequency shift of CMB photons that have scattered off of electrons in the hot, intra-cluster gas.  CMB-S4 is projected to detect a nearly mass-limited sample of 40,000, 70,000 and 140,000 clusters 3, 2 and 1 arc-minute configurations, motivating the need for higher angular resolution.
 
 Given such a survey, the primary systematic limitation on cluster measurements of the neutrino mass, through either of the approaches above, is cluster mass estimation. This can be usefully broken into two problems: that of absolute mass calibration, i.e.\ our ability to measure cluster masses without bias on average, and relative mass calibration. The former is required for accurate inference of the power spectrum amplitude, while the latter significantly boosts cosmological constraints by providing more precise measurements of the shape and evolution of the mass function. Precise relative mass information can be provided by X-ray observations of the intracluster medium using existing ({\it Chandra}, XMM-{\it Newton}) and future (eROSITA, ATHENA) facilities; for the most massive SZ-selected clusters found in existing CMB surveys, this work is already well advanced \cite{deHaan:2016qvy, Andersson:2010vy}. 
 
