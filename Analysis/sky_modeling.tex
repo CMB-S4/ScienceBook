@@ -4,7 +4,7 @@
 %
 %Key challenges: 
 %\begin{itemize} 
-%\item reliability of models based on noisy, bandpassed, beam-convolved observations, including Planck
+%\item reliability of models based on noisy, bandpassed, beam-convolved observations, including \planck\
 %\item self-consistency of CMB secondaries and extra-Galactic foregrounds
 %\item usability/software engineering
 %\end{itemize} 
@@ -38,7 +38,7 @@ The key characteristics of sky emission for foreground cleaning are:
 \item Whether or not emissions for which the level of polarization is unknown or unclear 
 %(including possible surprises) are above the sensitivity objectives of \cmbexp\, 
 must be modeled and treated for \cmbexp\ or can be safely neglected;
-%\item The self-consistency of extragalactic emission (in particular CIB and SZ clusters) and CMB lensing. In particular, CIB as observed by Planck and by future instruments can be used to generate a proxy for the lensing potential, which can be used to partially de-lens the CMB B modes.
+%\item The self-consistency of extragalactic emission (in particular CIB and SZ clusters) and CMB lensing. In particular, CIB as observed by \planck\ and by future instruments can be used to generate a proxy for the lensing potential, which can be used to partially de-lens the CMB B modes.
 \item The level at which foregrounds can be treated as Gaussian random fields, which is an assumption of certain foreground cleaning approaches.
 \end{itemize} 
 
@@ -70,26 +70,26 @@ Strong evidence exists for variability of the physical properties of the interst
 
 The baseline Galactic synchrotron model we use here has a power-law scaling with a modestly spatially varying spectral index.  The emission templates are the Haslam 408 MHz data reprocessed by \cite{Remazeilles:2015hpa}, 
 %MNRAS 451, 4311,
-and the WMAP 7-year 23 GHz Q/U maps \cite{Jarosik:2010iu}
+and the \wmap\ 7-year 23 GHz Q/U maps \cite{Jarosik:2010iu}
 % ApJS, 192, 14J) 
 smoothed to 3 degree FWHM and with smaller scales added using the PSM code \cite{Delabrouille:2012ye}.
 % et al. A&A 553, A96, 2013). 
 The spectral index map is derived using a combination of the Haslam 
-408 MHz data \cite{Haslam:1981aa} and WMAP 23 GHz 7-year data \cite{MivilleDeschenes:2008hn}.
+408 MHz data \cite{Haslam:1981aa} and \wmap\ 23 GHz 7-year data \cite{MivilleDeschenes:2008hn}.
 % M.-A. et al., 2008, A&A, 490, 1093). 
-The same scaling is used for intensity and polarization.  This is the same prescription as used in the Planck Sky Model's v1.7.8 `power law' option, but with the Haslam map updated to the version in \cite{Remazeilles:2015hpa}.
+The same scaling is used for intensity and polarization.  This is the same prescription as used in the \planck\ Sky Model's v1.7.8 `power law' option, but with the Haslam map updated to the version in \cite{Remazeilles:2015hpa}.
 
 Extensions to this model that we are exploring include a curved power 
-law model with a single isotropic curvature index, and a polarization spectral index that steepens with Galactic latitude by $\delta \beta \sim 0.2$ from low to high latitude, as this is currently consistent with WMAP and Planck data. 
+law model with a single isotropic curvature index, and a polarization spectral index that steepens with Galactic latitude by $\delta \beta \sim 0.2$ from low to high latitude, as this is currently consistent with \wmap\ and \planck\ data. 
 
 \subsubsection{Thermal dust}
 The baseline model we consider has thermal dust modelled as a single-component modified  blackbody. We use dust templates for emission at 545 GHz in intensity and 
- 353 GHz in polarization from the Planck-2015 analysis, and scale these to different  frequencies with a modified black-body spectrum using the spatially varying dust temperature and emissivity obtained from the Planck data using the Commander code \cite{Adam:2015wua}. This therefore assumes the same spectral index for  polarization as for intensity.  These templates are smoothed to degree-scale resolution.
+ 353 GHz in polarization from the \planck-2015 analysis, and scale these to different  frequencies with a modified black-body spectrum using the spatially varying dust temperature and emissivity obtained from the \planck\ data using the Commander code \cite{Adam:2015wua}. This therefore assumes the same spectral index for  polarization as for intensity.  These templates are smoothed to degree-scale resolution.
 
 Variations on this model that appear consistent with current data include a model with more strongly varying emissivity, e.g. up to $\sigma \sim 0.2$ dispersion on degree scales, and a model with different prescriptions for small-scale behavior, accounting for turbulence in the magnetic field. A two (or more) component model for the dust, composed of the spatially varying sum of silicon and carbonaceous dust, each with a different emissivity, is also physically motivated.
 
 \subsubsection{Spinning dust}
-Spinning dust, or anomalous microwave emission, is nominally unpolarized. However, a fractional polarization of a few percent is physically possible and not excluded by current data. We construct a possible model for this polarization using the intensity templates for spinning dust from the Planck-2015 Commander fits
+Spinning dust, or anomalous microwave emission, is nominally unpolarized. However, a fractional polarization of a few percent is physically possible and not excluded by current data. We construct a possible model for this polarization using the intensity templates for spinning dust from the \planck-2015 Commander fits
 \cite{Adam:2015wua}, combined with the thermal dust polarization angles and an overall polarization fraction.
 
 %\subsubsection{Free-free}
