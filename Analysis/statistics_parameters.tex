@@ -170,16 +170,15 @@ The correlation should thus be included in analyses that combine two- and four-p
 The forecasted noise level for CMB-S4 is much lower than the noise level for \planck, and the reconstruction of the lensing potential power spectrum will come from a mixture of temperature and polarization data.
 In this context, modelling the correlations only in the case of temperature is not accurate enough.
 Instead, a minimum variance lensing estimator out of all the measured quadratic pairs needs to be considered, and contributions arising from all couplings of the CMB six-point function would need to be modelled.
-There are a number of further challenges involving the covariance of CMB N-point functions, which we do not treat in detail here but are addressed in \cite{Peloton:prep} for example. 
 \\
 
-\cite{Schmittfull:2013uea} and \cite{Peloton:prep} identified three main contributions to the cross-covariance: The noise contribution arising because fluctuations of the unlensed CMB and instrumental noise change both the Gaussian reconstruction noise $N^{(0)}$ and the CMB power spectra;
+In \cite{Schmittfull:2013uea} three main contributions to the cross-covariance are identified: The noise contribution arising because fluctuations of the unlensed CMB and instrumental noise change both the Gaussian reconstruction noise $N^{(0)}$ and the CMB power spectra;
 the signal contribution from the cosmic variance fluctuations of the true lensing potential (i.e.~fluctuations of matter along the line of sight); and contributions coming from the connected trispectrum part of the CMB six-point function.
 Those contributions have been modelled with high precision and agree well with simulations.
 The noise contribution is not present if the Gaussian reconstruction bias $N^{(0)}$ is subtracted in a realization-dependent way using the measured CMB power spectrum in our Universe (see e.g.~\cite{Hanson:2010rp,Schmittfull:2013uea}).
 However for an experiment such as CMB-S4, the last two contributions contribute the most to the correlation between lensing power spectra and lensed CMB power spectra, reaching few tens of percent in some cases.
 The signal covariance could in principle also be avoided by delensing CMB power spectra with the estimated lensing reconstruction by mimicking the realization-dependent technique as shown in \cite{Schmittfull:2013uea}, or by applying more advanced delensing methods as described in Section \ref{delens}.
-In addition to the cross-covariance between two-point and four-point functions of the CMB, these quantities can each have non-trivial auto-covariances which can again be modeled as shown in e.g.~\cite{Smith:2005ue,Smith:2006nk,Li:2006pu,BenoitLevy:2012va,Schmittfull:2013uea,Peloton:prep}. 
+In addition to the cross-covariance between two-point and four-point functions of the CMB, these quantities can each have non-trivial auto-covariances which can again be modeled as shown in e.g.~\cite{Smith:2005ue,Smith:2006nk,Li:2006pu,BenoitLevy:2012va,Schmittfull:2013uea}. 
 However we want to emphasize that the discussion above applies to the standard quadratic lensing reconstruction estimators, and the situation may be different for iterative or maximum-likelihood lensing estimators \cite{Hirata:2002jy}.
 
 \subsubsection{Delensing}
