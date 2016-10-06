@@ -1,0 +1,638 @@
+\newcounter{affilcount}
+
+\newcommand{\affil}[1]{\refstepcounter{affilcount}\label{#1}}
+
+\def\Irvinetext{University of California, Irvine}
+\affil{Irvine}
+\def\Illtext{University of Illinois, Urbana-Champaign}
+\affil{Ill}
+\def\Penntext{University of Pennsylvania}
+\affil{Penn}
+\def\Slactext{SLAC National Accelerator Laboratory}
+\affil{Slac}
+\def\Princetontext{Princeton University}
+\affil{Princeton}
+\def\Hopkinstext{Johns Hopkins University}
+\affil{Hopkins}
+\def\Stanfordtext{Stanford University}
+\affil{Stanford}
+\def\Oxfordtext{University of Oxford, United Kingdom}
+\affil{Oxford}
+\def\Fermitext{Fermilab National Accelerator Laboratory}
+\affil{Fermi}
+\def\Chicagotext{University of Chicago}
+\affil{Chicago}
+\def\Sandiegotext{University of California, San Diego}
+\affil{Sandiego}
+\def\Nisttext{National Institute of Standards and Technology}
+\affil{Nist}
+\def\Sissatext{Scuola Internazionale Superiore di Studi Avanzati, Trieste, Italy}
+\affil{Sissa}
+\def\Berkeleytext{University of California, Berkeley}
+\affil{Berkeley}
+\def\Apctext{Laboratoire AstroParticule et Cosmologie - Universit{\'e} Paris Diderot, France}
+\affil{Apc}
+\def\Cambridgetext{University of Cambridge, United Kingdom}
+\affil{Cambridge}
+\def\Iaptext{Institut d'Astrophysique de Paris - Universit{\'e} Pierre et Marie Curie /  Centre National de la Recherche Scientifique, France}
+\affil{Iap}
+\def\Anltext{Argonne National Laboratory}
+\affil{Anl}
+\def\Cincytext{University of Cincinnati}
+\affil{Cincy}
+\def\Citatext{Canadian Institute For Theoretical Astrophysics, Canada}
+\affil{Cita}
+\def\Lbnltext{Lawrence Berkeley National Laboratory}
+\affil{Lbnl}
+\def\Manchestertext{University of Manchester, United Kingdom}
+\affil{Manchester}
+\def\Perimetertext{Perimeter Institute, Canada}
+\affil{Perimeter}
+\def\Harvardtext{Harvard University}
+\affil{Harvard}
+\def\Sapienzatext{Sapienza - Universit{\`a} di Roma, Italy}
+\affil{Sapienza}
+\def\Dartmouthtext{Dartmouth College}
+\affil{Dartmouth}
+\def\Kwazulutext{University of KwaZulu-Natal, South Africa}
+\affil{Kwazulu}
+\def\Novatext{Villanova University}
+\affil{Nova}
+\def\Cornelltext{Cornell University}
+\affil{Cornell}
+\def\Jpltext{Jet Propulsion Laboratory}
+\affil{Jpl}
+\def\Caltechtext{California Institute of Technology}
+\affil{Caltech}
+\def\Cnrstext{Centre National de la Recherche Scientifique, France}
+\affil{Cnrs}
+\def\Arcetritext{Istituto Nazionale di Astrofisica - Osservatorio Astrofisico di Arcetri, Italy}
+\affil{Arcetri}
+\def\Mcgilltext{McGill University, Canada}
+\affil{Mcgill}
+\def\Ilptext{Institut Lagrange Paris - Universit{\'e} Pierre et Marie Curie /  Centre National de la Recherche Scientifique, France}
+\affil{Ilp}
+\def\Ccatext{Center for Computational Astrophysics}
+\affil{Cca}
+\def\Muddtext{Harvey Mudd College}
+\affil{Mudd}
+\def\Icetext{Institut de Ci{\'e}ncies de l'Espai, Spain}
+\affil{Ice}
+\def\Stockholmtext{Stockholm University, Sweden}
+\affil{Stockholm}
+\def\Iastext{Institute for Advanced Study}
+\affil{Ias}
+\def\Haverfordtext{Haverford College}
+\affil{Haverford}
+\def\Michigantext{University of Michigan}
+\affil{Michigan}
+\def\Ubctext{University of British Columbia, Canada}
+\affil{Ubc}
+\def\Bouldertext{University of Colorado Boulder}
+\affil{Boulder}
+\def\Minnesotatext{University of Minnesota}
+\affil{Minnesota}
+\def\Laltext{Laboratoire de l'Acc{\'e}l{\'e}rateur Lin{\'e}aire, France}
+\affil{Lal}
+\def\Columbiatext{Columbia University}
+\affil{Columbia}
+\def\Osutext{The Ohio State University}
+\affil{Osu}
+\def\Torontotext{University of Toronto, Canada}
+\affil{Toronto}
+\def\Fsutext{Florida State University}
+\affil{Fsu}
+\def\Davistext{University of California, Davis}
+\affil{Davis}
+\def\Pitttext{University of Pittsburgh}
+\affil{Pitt}
+\def\Ferraratext{Universit{\`a} di Ferrara, Italy}
+\affil{Ferrara}
+\def\Sussextext{University of Sussex, United Kingdom}
+\affil{Sussex}
+\def\Stonytext{Stony Brook University}
+\affil{Stony}
+\def\Madisontext{University of Wisconsin - Madison}
+\affil{Madison}
+\def\Santabarbaratext{University of California, Santa Barbara}
+\affil{Santabarbara}
+\def\Lpsctext{Laboratoire de Physique Subatomique \& Cosmologie - Institut National de Physique Nucl{\'e}aire et de Physique des Particules (Centre National de la Recherche Scientifique) / Universit{\'e} Grenoble Alpes}
+\affil{Lpsc}
+\def\Kingstext{King's College London, United Kingdom}
+\affil{Kings}
+\def\Asutext{Arizona State University}
+\affil{Asu}
+\def\Ceatext{Commissariat {\`a} l'Energie Atomique - Saclay, France}
+\affil{Cea}
+\def\Usctext{University of Southern California}
+\affil{Usc}
+\def\Bohrtext{Niels Bohr Institute, Denmark}
+\affil{Bohr}
+\def\Orsaytext{Institut d'Astrophysique Spatiale - Orsay, France}
+\affil{Orsay}
+\def\Sfutext{Simon Fraser University, Canada}
+\affil{Sfu}
+\def\Oslotext{University of Oslo, Norway}
+\affil{Oslo}
+\def\Melbournetext{University of Melbourne, Australia}
+\affil{Melbourne}
+\def\Casetext{Case Western Reserve University}
+\affil{Case}
+\def\Pennstatetext{The Pennsylvania State University}
+\affil{Pennstate}
+\def\Brookhaventext{Brookhaven National Laboratory}
+\affil{Brookhaven}
+\def\Swarthmoretext{Swarthmore College}
+\affil{Swarthmore}
+\def\Hpdtext{High Precision Devices, Boulder, Colorado}
+\affil{Hpd}
+\def\Umasstext{University of Massachusetts, Amherst}
+\affil{Umass}
+\def\Iucaatext{Inter-University Centre for Astronomy and Astrophysics, India}
+\affil{Iucaa}
+\def\Saotext{Smithsonian Astrophysical Observatory}
+\affil{Sao}
+\def\Mittext{Massachusetts Institute of Technology}
+\affil{Mit}
+\def\Browntext{Brown University}
+\affil{Brown}
+\def\Syracusetext{Syracuse University}
+\affil{Syracuse}
+\def\Gsfctext{National Aeronautics and Space Administration Goddard Space Flight Center}
+\affil{Gsfc}
+
+\begin{center}
+\textbf{List of Endorsers}
+\end{center}
+
+The following people have endorsed the science case for CMB-S4 as presented here and many of them have contributed directly to the writing of this document:
+
+Kevork N.~Abazajian\textsuperscript{\ref{Irvine}},
+Peter Adshead\textsuperscript{\ref{Ill}},
+James Aguirre\textsuperscript{\ref{Penn}},
+Zeeshan Ahmed\textsuperscript{\ref{Slac}},
+Simone Aiola\textsuperscript{\ref{Princeton}},
+Yacine Ali-Haimoud\textsuperscript{\ref{Hopkins}},
+Steven W.~Allen\textsuperscript{\ref{Stanford}},
+David Alonso\textsuperscript{\ref{Oxford}},
+Adam Anderson\textsuperscript{\ref{Fermi}},
+James Annis\textsuperscript{\ref{Fermi}},
+John W.~Appel\textsuperscript{\ref{Hopkins}}, 
+Douglas E.~Applegate\textsuperscript{\ref{Chicago}}, 
+Kam S.~Arnold\textsuperscript{\ref{Sandiego}}, 
+Jason E.~Austermann\textsuperscript{\ref{Nist}},
+Carlo Baccigalupi\textsuperscript{\ref{Sissa}}, 
+Darcy Barron\textsuperscript{\ref{Berkeley}}, 
+James G.~Bartlett\textsuperscript{\ref{Apc}}, 
+Ritoban Basu Thakur\textsuperscript{\ref{Chicago}},
+Nicholas Battaglia\textsuperscript{\ref{Princeton}},
+Daniel Baumann\textsuperscript{\ref{Cambridge}},
+Karim Benabed\textsuperscript{\ref{Iap}}, 
+Amy N.~Bender\textsuperscript{\ref{Anl}}, 
+Charles L.~Bennett\textsuperscript{\ref{Hopkins}},
+Bradford A.~Benson\textsuperscript{\ref{Fermi}},
+Colin A.~Bischoff\textsuperscript{\ref{Cincy}},
+Lindsey Bleem\textsuperscript{\ref{Anl}}, 
+J.~Richard Bond\textsuperscript{\ref{Cita}}, 
+Julian Borrill\textsuperscript{\ref{Lbnl}}, 
+François R.~Bouchet\textsuperscript{\ref{Iap}}, 
+Michael L.~Brown\textsuperscript{\ref{Manchester}},
+Christopher Brust\textsuperscript{\ref{Perimeter}}, 
+Victor Buza\textsuperscript{\ref{Harvard}}, 
+Karen Byrum\textsuperscript{\ref{Anl}}, 
+Giovanni Cabass\textsuperscript{\ref{Sapienza}}, 
+Erminia Calabrese\textsuperscript{\ref{Oxford}}, 
+Robert Caldwell\textsuperscript{\ref{Dartmouth}}, 
+John E.~Carlstrom\textsuperscript{\ref{Chicago},\ref{Anl}}, 
+Anthony Challinor\textsuperscript{\ref{Cambridge}}, 
+Clarence L.~Chang\textsuperscript{\ref{Anl}}, 
+Hsin C.~Chiang\textsuperscript{\ref{Kwazulu}},
+David T.~Chuss\textsuperscript{\ref{Nova}},
+Asantha Cooray\textsuperscript{\ref{Irvine}}, 
+Nicholas F.~Cothard\textsuperscript{\ref{Cornell}}, 
+Thomas M.~Crawford\textsuperscript{\ref{Chicago}}, 
+Brendan Crill\textsuperscript{\ref{Jpl}},
+Abigail Crites\textsuperscript{\ref{Caltech}},
+Francis-Yan Cyr-Racine\textsuperscript{\ref{Harvard}},
+Francesco de Bernardis\textsuperscript{\ref{Cornell}}, 
+Paolo M.~de Bernardis\textsuperscript{\ref{Sapienza}},
+Tijmen de Haan\textsuperscript{\ref{Berkeley}},
+Jacques Delabrouille\textsuperscript{\ref{Cnrs}}, 
+Marcel Demarteau\textsuperscript{\ref{Anl}},
+Mark Devlin\textsuperscript{\ref{Penn}}, 
+Sperello di Serego Alighieri\textsuperscript{\ref{Arcetri}}, 
+Eleonora di Valentino\textsuperscript{\ref{Iap}},
+Clive Dickinson\textsuperscript{\ref{Manchester}},
+Matt Dobbs\textsuperscript{\ref{Mcgill}},
+Scott Dodelson\textsuperscript{\ref{Fermi}}, 
+Olivier Dore\textsuperscript{\ref{Jpl}},
+Joanna Dunkley\textsuperscript{\ref{Princeton}},
+Cora Dvorkin\textsuperscript{\ref{Harvard}},
+Josquin Errard\textsuperscript{\ref{Ilp}},
+Thomas Essinger-Hileman\textsuperscript{\ref{Hopkins}},
+Giulio Fabbian\textsuperscript{\ref{Sissa}},
+Stephen Feeney\textsuperscript{\ref{Cca}},
+Simone Ferraro\textsuperscript{\ref{Berkeley}}, 
+Jeffrey P.~Filippini\textsuperscript{\ref{Ill}},
+Raphael Flauger\textsuperscript{\ref{Sandiego}}, 
+Aurelien A.~Fraisse\textsuperscript{\ref{Princeton}},
+George M.~Fuller\textsuperscript{\ref{Sandiego}},
+Patricio A.~Gallardo\textsuperscript{\ref{Cornell}},
+Silvia Galli\textsuperscript{\ref{Iap}},
+Jason Gallicchio\textsuperscript{\ref{Mudd}},
+Ken Ganga\textsuperscript{\ref{Apc}},
+Enrique Gaztanaga\textsuperscript{\ref{Ice}},
+Martina Gerbino\textsuperscript{\ref{Stockholm}},
+Mandeep S.~S.~Gill\textsuperscript{\ref{Stanford}},
+Yannick Giraud-Héraud\textsuperscript{\ref{Apc}},
+Vera Gluscevic\textsuperscript{\ref{Ias}},
+Sunil Golwala\textsuperscript{\ref{Caltech}},
+Krzysztof M.~Gorski\textsuperscript{\ref{Jpl}},
+Daniel Green\textsuperscript{\ref{Berkeley}},
+Daniel Grin\textsuperscript{\ref{Haverford}},
+Evan Grohs\textsuperscript{\ref{Michigan}},
+Riccardo Gualtieri\textsuperscript{\ref{Ill}}, 
+Jon E.~Gudmundsson\textsuperscript{\ref{Stockholm}},
+Grantland Hall\textsuperscript{\ref{Harvard}},
+Mark Halpern\textsuperscript{\ref{Ubc}},
+Nils W.~Halverson\textsuperscript{\ref{Boulder}},
+Shaul Hanany\textsuperscript{\ref{Minnesota}},
+Shawn Henderson\textsuperscript{\ref{Cornell}},
+Jason W.~Henning\textsuperscript{\ref{Chicago}},
+Sophie Henrot-Versille\textsuperscript{\ref{Lal}},
+Sergi R.~Hildebrandt\textsuperscript{\ref{Caltech}},
+J. Colin Hill\textsuperscript{\ref{Columbia}},
+Christopher M.~Hirata\textsuperscript{\ref{Osu}},
+Eric Hivon\textsuperscript{\ref{Iap}},
+Ren\'{e}e Hlo\v{z}ek\textsuperscript{\ref{Toronto}},
+Gilbert Holder\textsuperscript{\ref{Ill}},
+William Holzapfel\textsuperscript{\ref{Berkeley}},
+Wayne Hu\textsuperscript{\ref{Chicago}},
+Johannes Hubmayr\textsuperscript{\ref{Nist}},
+Kevin M.~Huffenberger\textsuperscript{\ref{Fsu}},
+Kent Irwin\textsuperscript{\ref{Stanford},\ref{Slac}},
+Bradley R.~Johnson\textsuperscript{\ref{Columbia}}, 
+William C.~Jones\textsuperscript{\ref{Princeton}},
+Marc Kamionkowski\textsuperscript{\ref{Hopkins}},
+Brian Keating\textsuperscript{\ref{Sandiego}},
+Sarah Kernasovskiy\textsuperscript{\ref{Stanford}},
+Reijo Keskitalo\textsuperscript{\ref{Lbnl}},
+Theodore Kisner\textsuperscript{\ref{Lbnl}},
+Lloyd Knox\textsuperscript{\ref{Davis}},
+Brian J.~Koopman\textsuperscript{\ref{Cornell}},
+Arthur Kosowsky\textsuperscript{\ref{Pitt}},
+John Kovac\textsuperscript{\ref{Harvard}},
+Ely D.~Kovetz\textsuperscript{\ref{Hopkins}},
+Nicoletta Krachmalnicoff\textsuperscript{\ref{Sissa}},
+Chao-Lin Kuo\textsuperscript{\ref{Stanford},\ref{Slac}},
+Akito Kusaka\textsuperscript{\ref{Berkeley}},
+Nicole A.~Larsen\textsuperscript{\ref{Chicago}},
+Massimiliano Lattanzi\textsuperscript{\ref{Ferrara}},
+Charles R.~Lawrence\textsuperscript{\ref{Jpl}},
+Maude Le Jeune\textsuperscript{\ref{Apc}},
+Adrian T.~Lee\textsuperscript{\ref{Berkeley},\ref{Lbnl}},
+Antony Lewis\textsuperscript{\ref{Sussex}},
+Marc Lilley\textsuperscript{\ref{Iap}},
+Thibaut Louis\textsuperscript{\ref{Iap}},
+Marilena Loverde\textsuperscript{\ref{Stony}},
+Amy Lowitz\textsuperscript{\ref{Madison}},
+Philip M.~Lubin\textsuperscript{\ref{Santabarbara}},
+Juan J.~F.~Macias-Perez\textsuperscript{\ref{Lpsc}},
+Mathew S.~Madhavacheril\textsuperscript{\ref{Princeton}},
+Adam Mantz\textsuperscript{\ref{Stanford}},
+David J.~E.~Marsh\textsuperscript{\ref{Kings}},
+Silvia R.~M.~Masi\textsuperscript{\ref{Sapienza}},
+Philip Mauskopf\textsuperscript{\ref{Asu}},
+Jeffrey McMahon\textsuperscript{\ref{Michigan}},
+Pieter Daniel Meerburg\textsuperscript{\ref{Cita}},
+Alessandro Melchiorri\textsuperscript{\ref{Sapienza}},
+Jean-Baptiste Melin\textsuperscript{\ref{Cea}},
+Stephan Meyer\textsuperscript{\ref{Chicago}},
+Joel Meyers\textsuperscript{\ref{Cita}},
+Amber D.~Miller\textsuperscript{\ref{Usc}},
+Laura M.~Mocanu\textsuperscript{\ref{Chicago}},
+Lorenzo Moncelsi\textsuperscript{\ref{Caltech}},
+Julian B.~Munoz\textsuperscript{\ref{Hopkins}},
+Andrew Nadolski\textsuperscript{\ref{Ill}},
+Pavel Naselsky\textsuperscript{\ref{Bohr}},
+Paolo Natoli\textsuperscript{\ref{Ferrara}},
+Ho Nam Nguyen\textsuperscript{\ref{Stony}},
+Michael D.~Niemack\textsuperscript{\ref{Cornell}},
+Stephen Padin\textsuperscript{\ref{Chicago},\ref{Anl}},
+Luca Pagano\textsuperscript{\ref{Orsay}},
+Lyman Page\textsuperscript{\ref{Princeton}},
+Robert Bruce Partridge\textsuperscript{\ref{Haverford}},
+Guillaume Patanchon\textsuperscript{\ref{Apc}},
+Timothy J.~Pearson\textsuperscript{\ref{Caltech}},
+Marco Peloso\textsuperscript{\ref{Minnesota}},
+Julien Peloton\textsuperscript{\ref{Sussex}},
+Olivier Perdereau\textsuperscript{\ref{Lal}},
+Laurence Perotto\textsuperscript{\ref{Lpsc}},
+Francesco Piacentini\textsuperscript{\ref{Sapienza}},
+Michel Piat\textsuperscript{\ref{Apc}},
+Levon Pogosian\textsuperscript{\ref{Sfu}},
+Clement Pryke\textsuperscript{\ref{Minnesota}},
+Benjamin Racine\textsuperscript{\ref{Oslo}},
+Srinivasan Raghunathan\textsuperscript{\ref{Melbourne}},
+Alexandra Rahlin\textsuperscript{\ref{Fermi}},
+Marco Raveri\textsuperscript{\ref{Chicago}},
+Christian L.~Reichardt\textsuperscript{\ref{Melbourne}},
+Mathieu Remazeilles\textsuperscript{\ref{Manchester}},
+Graca Rocha\textsuperscript{\ref{Jpl}},
+Natalie A.~Roe\textsuperscript{\ref{Lbnl}},
+Aditya Rotti\textsuperscript{\ref{Fsu}},
+John Ruhl\textsuperscript{\ref{Case}},
+Laura Salvati\textsuperscript{\ref{Sapienza}},
+Emmanuel Schaan\textsuperscript{\ref{Princeton}},
+Marcel M.~Schmittfull\textsuperscript{\ref{Berkeley}},
+Douglas Scott\textsuperscript{\ref{Ubc}},
+Neelima Sehgal\textsuperscript{\ref{Stony}},
+Sarah Shandera\textsuperscript{\ref{Pennstate}},
+Christopher Sheehy\textsuperscript{\ref{Brookhaven}},
+Blake D. Sherwin\textsuperscript{\ref{Berkeley}},
+Erik Shirokoff\textsuperscript{\ref{Chicago}},
+Eva Silverstein\textsuperscript{\ref{Stanford}},
+Sara M.~Simon\textsuperscript{\ref{Michigan}},
+Tristan L.~Smith\textsuperscript{\ref{Swarthmore}},
+Michael Snow\textsuperscript{\ref{Hpd}},
+Lorenzo Sorbo\textsuperscript{\ref{Umass}},
+Tarun Souradeep\textsuperscript{\ref{Iucaa}},
+Suzanne T.~Staggs\textsuperscript{\ref{Princeton}},
+Antony A.~Stark\textsuperscript{\ref{Sao}},
+Glenn D.~Starkman\textsuperscript{\ref{Case}},
+George F.~Stein\textsuperscript{\ref{Cita}},
+Jason R.~Stevens\textsuperscript{\ref{Cornell}},
+Radek Stompor\textsuperscript{\ref{Apc}},
+Kyle T.~Story\textsuperscript{\ref{Stanford}},
+Chris Stoughton\textsuperscript{\ref{Fermi}},
+Meng Su\textsuperscript{\ref{Mit}},
+Aritoki Suzuki\textsuperscript{\ref{Berkeley}},
+Grant P.~Teply\textsuperscript{\ref{Sandiego}},
+Peter Timbie\textsuperscript{\ref{Madison}},
+Jesse I.~Treu\textsuperscript{\ref{Princeton}},
+Matthieu Tristram\textsuperscript{\ref{Lal}},
+Gregory Tucker\textsuperscript{\ref{Brown}},
+Sunny Vagnozzi\textsuperscript{\ref{Stockholm}},
+Alexander van Engelen\textsuperscript{\ref{Cita}},
+Eve M.~Vavagiakis\textsuperscript{\ref{Cornell}},
+Joaquin D.~Vieira\textsuperscript{\ref{Ill}},
+Abigail G.~Vieregg\textsuperscript{\ref{Chicago}}, 
+Sebastian von Hausegger\textsuperscript{\ref{Bohr}},
+Benjamin D.~Wandelt\textsuperscript{\ref{Iap}},
+Scott Watson\textsuperscript{\ref{Syracuse}},
+Nathan Whitehorn\textsuperscript{\ref{Berkeley}},
+Edward J.~Wollack\textsuperscript{\ref{Gsfc}},
+W.~L.~Kimmy Wu\textsuperscript{\ref{Berkeley}},
+Zhilei Xu\textsuperscript{\ref{Hopkins}},
+Ki Won Yoon\textsuperscript{\ref{Slac}},
+Matias Zaldarriaga\textsuperscript{\ref{Ias}}.
+
+\clearpage
+
+\begin{multicols}{2}
+
+\scriptsize
+
+\parskip=4pt
+%\setlength{\parskip}{\baselineskip}
+
+\noindent
+\textsuperscript{\ref{Irvine}}\Irvinetext
+
+\noindent
+\textsuperscript{\ref{Ill}}\Illtext
+
+\noindent
+\textsuperscript{\ref{Penn}}\Penntext
+
+\noindent
+\textsuperscript{\ref{Slac}}\Slactext
+
+\noindent
+\textsuperscript{\ref{Princeton}}\Princetontext
+
+\noindent
+\textsuperscript{\ref{Hopkins}}\Hopkinstext
+
+\noindent
+\textsuperscript{\ref{Stanford}}\Stanfordtext
+
+\noindent
+\textsuperscript{\ref{Oxford}}\Oxfordtext
+
+\noindent
+\textsuperscript{\ref{Fermi}}\Fermitext
+
+\noindent
+\textsuperscript{\ref{Chicago}}\Chicagotext
+
+\noindent
+\textsuperscript{\ref{Sandiego}}\Sandiegotext
+
+\noindent
+\textsuperscript{\ref{Nist}}\Nisttext
+
+\noindent
+\textsuperscript{\ref{Sissa}}\Sissatext
+
+\noindent
+\textsuperscript{\ref{Berkeley}}\Berkeleytext
+
+\noindent
+\textsuperscript{\ref{Apc}}\Apctext
+
+\noindent
+\textsuperscript{\ref{Iap}}\Iaptext
+
+\noindent
+\textsuperscript{\ref{Anl}}\Anltext
+
+\noindent
+\textsuperscript{\ref{Cincy}}\Cincytext
+
+\noindent
+\textsuperscript{\ref{Cita}}\Citatext
+
+\noindent
+\textsuperscript{\ref{Lbnl}}\Lbnltext
+
+\noindent
+\textsuperscript{\ref{Manchester}}\Manchestertext
+
+\noindent
+\textsuperscript{\ref{Perimeter}}\Perimetertext
+
+\noindent
+\textsuperscript{\ref{Harvard}}\Harvardtext
+
+\noindent
+\textsuperscript{\ref{Sapienza}}\Sapienzatext
+
+\noindent
+\textsuperscript{\ref{Dartmouth}}\Dartmouthtext
+
+\noindent
+\textsuperscript{\ref{Kwazulu}}\Kwazulutext
+
+\noindent
+\textsuperscript{\ref{Nova}}\Novatext
+
+\noindent
+\textsuperscript{\ref{Cornell}}\Cornelltext
+
+\noindent
+\textsuperscript{\ref{Jpl}}\Jpltext
+
+\noindent
+\textsuperscript{\ref{Caltech}}\Caltechtext
+
+\noindent
+\textsuperscript{\ref{Cnrs}}\Cnrstext
+
+\noindent
+\textsuperscript{\ref{Arcetri}}\Arcetritext
+
+\noindent
+\textsuperscript{\ref{Mcgill}}\Mcgilltext
+
+\noindent
+\textsuperscript{\ref{Ilp}}\Ilptext
+
+\noindent
+\textsuperscript{\ref{Cca}}\Ccatext
+
+\noindent
+\textsuperscript{\ref{Mudd}}\Muddtext
+
+\noindent
+\textsuperscript{\ref{Ice}}\Icetext
+
+\noindent
+\textsuperscript{\ref{Stockholm}}\Stockholmtext
+
+\noindent
+\textsuperscript{\ref{Ias}}\Iastext
+
+\noindent
+\textsuperscript{\ref{Haverford}}\Haverfordtext
+
+\noindent
+\textsuperscript{\ref{Michigan}}\Michigantext
+
+\noindent
+\textsuperscript{\ref{Ubc}}\Ubctext
+
+\noindent
+\textsuperscript{\ref{Boulder}}\Bouldertext
+
+\noindent
+\textsuperscript{\ref{Minnesota}}\Minnesotatext
+
+\noindent
+\textsuperscript{\ref{Lal}}\Laltext
+
+\noindent
+\textsuperscript{\ref{Columbia}}\Columbiatext
+
+\noindent
+\textsuperscript{\ref{Osu}}\Osutext
+
+\noindent
+\textsuperscript{\ref{Toronto}}\Torontotext
+
+\noindent
+\textsuperscript{\ref{Fsu}}\Fsutext
+
+\noindent
+\textsuperscript{\ref{Davis}}\Davistext
+
+\noindent
+\textsuperscript{\ref{Pitt}}\Pitttext
+
+\noindent
+\textsuperscript{\ref{Ferrara}}\Ferraratext
+
+\noindent
+\textsuperscript{\ref{Sussex}}\Sussextext
+
+\noindent
+\textsuperscript{\ref{Stony}}\Stonytext
+
+\noindent
+\textsuperscript{\ref{Madison}}\Madisontext
+
+\noindent
+\textsuperscript{\ref{Santabarbara}}\Santabarbaratext
+
+\noindent
+\textsuperscript{\ref{Lpsc}}\Lpsctext
+
+\noindent
+\textsuperscript{\ref{Kings}}\Kingstext
+
+\noindent
+\textsuperscript{\ref{Asu}}\Asutext
+
+\noindent
+\textsuperscript{\ref{Cea}}\Ceatext
+
+\noindent
+\textsuperscript{\ref{Usc}}\Usctext
+
+\noindent
+\textsuperscript{\ref{Bohr}}\Bohrtext
+
+\noindent
+\textsuperscript{\ref{Orsay}}\Orsaytext
+
+\noindent
+\textsuperscript{\ref{Sfu}}\Sfutext
+
+\noindent
+\textsuperscript{\ref{Oslo}}\Oslotext
+
+\noindent
+\textsuperscript{\ref{Melbourne}}\Melbournetext
+
+\noindent
+\textsuperscript{\ref{Case}}\Casetext
+
+\noindent
+\textsuperscript{\ref{Pennstate}}\Pennstatetext
+
+\noindent
+\textsuperscript{\ref{Brookhaven}}\Brookhaventext
+
+\noindent
+\textsuperscript{\ref{Swarthmore}}\Swarthmoretext
+
+\noindent
+\textsuperscript{\ref{Hpd}}\Hpdtext
+
+\noindent
+\textsuperscript{\ref{Umass}}\Umasstext
+
+\noindent
+\textsuperscript{\ref{Iucaa}}\Iucaatext
+
+\noindent
+\textsuperscript{\ref{Sao}}\Saotext
+
+\noindent
+\textsuperscript{\ref{Mit}}\Mittext
+
+\noindent
+\textsuperscript{\ref{Brown}}\Browntext
+
+\noindent
+\textsuperscript{\ref{Syracuse}}\Syracusetext
+
+\noindent
+\textsuperscript{\ref{Gsfc}}\Gsfctext
+
+\normalsize
+
+\end{multicols}
+
+\parskip=8pt
+%\setlength{\parskip}{\baselineskip}
