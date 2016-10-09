@@ -7,11 +7,6 @@
 
 
 
-%%%
-
-%\begin{center}
-%{\small \it (send feedback on this chapter to \href{mailto:jc@kicp.uchicago.edu}{jc@kicp.chicago.edu})}
-%\end{center}
 \bigskip
 
 Fourteen billion years ago, in the first fraction of a second of our Universe's existence, the most extreme high-energy physics experiment took place. The ability to use the cosmic microwave background (CMB) to investigate this fantastic event, at energy scales as much as a trillion times higher than can be obtained at CERN, is at the very core of our quest to understand the fundamental nature of space and time and the physics that drive the evolution of the Universe. 
@@ -21,10 +16,6 @@ The CMB allows direct tests of models of the quantum mechanical origin of all we
 The purpose of this book is to set the scientific goals to be addressed by the next generation ground-based cosmic microwave background experiment, CMB-S4, consisting of dedicated telescopes at the South Pole, the high Chilean Atacama plateau and possibly a northern hemisphere site, all equipped with new superconducting cameras. CMB-S4 
 is envisioned to be the definitive CMB experiment. It will enable a dramatic leap forward in cosmological studies by crossing critical thresholds in testing inflation, in the number and masses of the neutrinos, in finding possible new light relics, in  constraining the nature of dark energy, and in testing general relativity on large scales. 
 
-%Through the efforts of the CMB experimental groups over the last decade, the technologies needed for CMB-S4 are now in place. There are, however, considerable technical challenges presented by the required scaling up of the instrumentation and by the scope and complexity of the data analysis and interpretation.  CMB-S4 will require: scaled up superconducting detector arrays with well understood and robust material properties and processing techniques; high throughput mm-wave telescopes and optics with unprecedented precision and rejection of systematic contamination; full characterization of astronomical foreground emission; large cosmological simulations and theoretical modeling with accuracies yet to be achieved; and computational methods for extracting minute correlations in massive, multi-frequency data sets contaminated by noise and a host of known and unknown signals. 
-
-%The purpose of this book is to set the scientific goals for CMB-S4 and the measurements required to achieve them, which will in turn determine the instrument definition.   This is of course an iterative process, involving detailed simulations and cost considerations. So, at this time the Science Book is a working document with this first edition focused primarily on defining the possible science reach in several areas, along with the simulations needed to refine the science case and set the specifications of the needed measurements. This will set the stage for defining the instrument. % and in the next iteration of the Science Book. 
-%
 
 We begin this chapter with a brief history and the current status of CMB measurements and cosmological results.  This is followed by a general overview of how the CMB-S4 science goals, as outlined in the executive summary, lead to general aspects of the instrument design. Based on these considerations, we present a strawman configuration that serves as an initial jumping-off point for exploring instrument configuration parameter space in the following science chapters.  Lastly, this chapter provides a brief overview of the path from the ongoing Stage-3 experiments to realizing CMB-S4. 
 
@@ -43,8 +34,7 @@ Two CMB satellites have mapped the entire sky since \cobe, first \wmap\ with mod
 
 
 The $\Lambda$CDM model continues to hold up stunningly well, even as the precision of the CMB determined parameters has increased substantially. Inflationary constraints include limits on curvature constrained to be less than 3\% of the energy density,
-departures from Gaussianity are bounded at the level of 1 part in $10^4$,
-% non-Gaussian fluctuations limited to $f_{NL} < 10$, 
+departures from Gaussianity are bounded at the level of 1 part in $10^4$, 
 and 
 the predicted small departure from pure scale invariance of the primordial fluctuations is detected at 5-sigma confidence. Also of interest to particle physics, the effective number of light relativistic species (i.e., neutrinos and any yet identified ``dark radiation") is shown to be within 10\% of $\neff = 3.046$, the number predicted by BBN.  The sum of the masses of the neutrinos is found to be less than 0.6 eV. Dark matter is shown to be non-baryonic at $> 40$ sigma. Early dark energy models are highly constrained as are models of decaying dark matter. 
 
@@ -59,66 +49,10 @@ There remains much science to extract from the CMB, including: 1) using CMB B-mo
 The best cosmological constraints come from analyzing the combination of primary and secondary CMB anisotropy measurements with other cosmological probes, such as baryon acoustic oscillations (BAO) and redshift space distortions, weak lensing, galaxy and galaxy cluster surveys, Lyman-alpha forest measurements, local determinations of the Hubble constant, observations of type Ia SNe, and others. The CMB primary anisotropy measurements provide highly complementary data for the combined analysis;  by providing a precision measurement of the Universe at $z = 1100$, the CMB data leads to tight predictions for measurements of the late time Universe for any adopted cosmological model---measurements of the Hubble constant, the BAO scale, and the normalization of the present day matter fluctuation spectrum being excellent examples. Secondary CMB measurements provide late-time probes directly from the CMB measurement, e.g., CMB lensing, the SZ effects and SZ cluster catalogs, which will provide critical constraints on the standard cosmological models and extensions to it. The cosmological reach of future cosmological surveys at all wavelengths will be greatly extended by their joint analyses with secondary CMB anisotropy measurements. 
 
 
-%\section{Science reach of CMB-S4}
-%\label{sec:science}
-%
-%CMB-S4 should be the definitive ground-based CMB project. The key science topics it should cover, and cover well, are
-%
-%\begin{enumerate}
-%
-%\item{Inflation: 
-%
-%The CMB-S4 data set should be the definitive data set with which any model for the origin of the primordial fluctuations, be it inflationary or an alternative theory, must be consistent with to be viable.
-%
-%a) CMB-S4 should make the definitive B-mode measurement at degree angular scales, where the signal from inflationary gravitational waves is predicted to have a peak in the angular power spectrum corresponding to the angular scale of the horizon at recombination. This measurement will require multiple bands to untangle the foregrounds and sensitivity at degree through arcminute angular scales to obtain the required CMB lensing and E-mode measurements for ``de-lensing.'' If it can be demonstrated that  foregrounds and atmospheric noise can be mitigated at very large scales, CMB-S4 should also target the predicted recombination peak at angular scales of tens of degrees. At these largest scales, CMB-S4, balloon and satellite mission would be highly complementary.
-%
-%With these B-mode measurements, CMB-S4 should constrain the tensor-to-scalar ratio $r$ well enough to answer whether or not large-field, slow-roll, single-field inflation models are viable ($r \gtrsim 0.01$) with high significance. In the absence of a detection, CMB-S4 should be able to rule out at high significance all models that naturally explain the observed value of the scalar spectral index, setting a rough sensitivity target of $\sigma(r) \lesssim 0.001$.
-%
-%If $r$ is detected before or by CMB-S4, then CMB-S4 should provide a robust, cosmic-variance-limited measure of its value (requiring a large-area survey) and set the best possible constraints on $n_t$ (requiring an ultra deep survey). 
-%
-%b) CMB-S4 will also extend the lever arm for measuring the scalar spectral index $n_s$, particularly in the EE spectrum. While foregrounds in the TT spectrum limit even futuristic measurements to $\ell \sim 4000$, the very low level of polarized foregrounds at high $\ell$ indicate that measurements of the primary E-mode spectrum could be extended to higher $\ell.$
-%
-%c) CMB-S4 should provide the polarization data to test predictions of models that attempt to explain the low-$\ell$ temperature power spectrum ``anomalies'' that may offer clues to inflation. It will be particularly important to achieve accurate low-$\ell$ E-mode measurements over a large area survey.
-%
-%% The CMB-S4 data set should be the definitive data set with which any model for the origin of the primordial fluctuations, be it inflationary or an alternative theory, must be consistent with to be viable.
-%}
-%
-%\item{Neutrinos and light relativistic species:
-%
-%There are two primary areas in which CMB-S4 will provide interesting constraints on neutrino physics and the presence of new light particles.
-%
-%a) The first is the constraint on the sum of the masses of the neutrinos, $\Sigma m_\nu$. Here CMB-S4 will achieve %$\sigma(\Sigma m_\nu) = 16$~meV (with DESI BAO prior), with the CMB sensitivity coming primarily through CMB lensing. This will lead to 
-%a definite detection of neutrino mass, even at the minimum mass and the normal hierarchy. The sensitivity of cosmic probes to the sum of the masses is unique and complementary to terrestrial neutrino experiments.
-%
-%b) The second is the effective number of light relativistic species, \neff. This is uniquely probed by the CMB and provides a critical constraint on any model for the neutrinos and their interactions or of other light dark-sector relics. It is a highly complementary probe to BBN and to sterile neutrino models.  Finding consistency with $\neff = 3.046$ at a precision of 0.020 or better would be an exciting and fundamental achievement linking particle physics and our understanding of the evolution of the first seconds of the Universe. Finding a departure from 3.046 would be even more exciting. %Recent work indicates that CMB-S4 with arc minute sensitivity may allow even tighter \neff\ constraints. 
-%
-%
-% }
-%
-%\item{Dark Energy, Dark Matter and Gravity:
-%
-% The CMB can be used to investigate dark energy through growth-of-structure tests using CMB lensing and SZ clusters, and through testing Gravity on large scales by exploiting the kinematic SZ effect to measure the momentum field and large-scale flows. The power of these probes is amplified by combining CMB-S4 data with galaxy surveys and Lyman alpha surveys, such as DESI, LSST, Euclid and WFIRST.
-%
-% a) CMB lensing measurements from CMB-S4 will provide high-fidelity projected mass maps that will be cross-correlated with optical survey maps. This will increase the reach and precision of the dark energy constraints, as well as provide independent checks. %Papers in the literature have quantified the dark energy figure of merit (FOM) improvement of various projects with the addition of CMB lensing. Simulations need to be done to quantify the projected improvements with CMB-S4.
-%
-% b) As noted by the dark energy task force (DETF), measurements of the evolution of galaxy cluster abundance have the highest raw sensitivity of any dark energy probe. The key to exploiting this sensitivity is controlling systematic uncertainties, primarily in the estimation of cluster masses. CMB-S4 will be revolutionary in that it is expected to be able to calibrate the mass scaling to better than 1\% through CMB lensing. This coupled with a low mass threshold will enable CMB-S4 to identify of order 100,000 clusters, probe the growth of structure to redshifts beyond $z \sim 2.5$, and realize the full potential of galaxy clusters as a probe of dark energy.  In combination with other Stage-IV baryon acoustic oscillation, supernova, and weak lensing surveys, a Stage-IV cluster survey similar to CMB-S4 should improve the overall dark energy figure of merit to approximately 1250, nearly a factor of two above what can be achieved without clusters. 
-%
-% c) Testing GR on large scales is important for our understanding of dark energy and the underlying workings of space and matter in general.  The kinematic SZ effect allows measurement of the peculiar velocity (departure from Hubble flow) of structures. By measuring the differences in kSZ between pairs of clusters with known redshifts (a synergy of CMB-S4 and optical surveys), gravity can be tested on scales of 100~Mpc and larger. In this way, CMB-S4 paired with a Stage-IV spectroscopic survey would improve constraints on the growth rate predicted by general relativity by a factor of two.
-% 
-% d) CMB-S4 will allow us to probe the dark sector with unprecedented accuracy.  Through their signatures of annihilation, CMB-S4 will be able to place constraints on Standard Model WIMPs around a few hundred GeV, and place tight limits on other types of DM interactions. In addition, CMB-S4 will place exquisite, sub-percent-level bounds on potential ultra light scalar field DM candidates, such as ultralight axions. Not only will CMB-S4 provide constraints on the energy density of the Universe in axions, but will bound the energy scale of inflation independently of a detection of inflationary tensor modes through the characteristic isocurvature fluctuations of the axion. This further illustrates the power of leveraging the complementarity of the CMB to other direct and indirect probes of dark matter.
-% }
-%
-%\end{enumerate}
-%
-%Lastly it would be an oversight not to point out the obvious: there is only one CMB sky. It holds a wealth of information on fundamental physics and the origin and evolution of the Universe. While we have learned a great deal from CMB measurements, including discoveries that have pointed the way to new physics, we have only begun to tap the information contained in CMB polarization, CMB lensing and secondary effects. CMB-S4 should be designed to maximize discovery space by producing high-fidelity maps. 
 
 \section{CMB-S4 Design Considerations}
 
 The CMB-S4 science goals, as outlined in the executive summary, and detailed in the following chapters, lead to several general aspects of the instrument design. We briefly summarize the general design considerations below.
-
-%\subsection{Conceptual design of CMB-S4}
-
-%The science goals discussed above lead to a rough conceptual design of CMB-S4, which we describe below.
 
 \subsection{Raw sensitivity considerations and detector count}
 
@@ -141,7 +75,6 @@ To maintain the Moore's Law-like scaling requires a major leap forward, a phase 
 CMB-S4 thus requires multiple telescopes, each with a maximally outfitted focal plane of pixels utilizing superconducting, background limited, CMB detectors. To achieve the large sky coverage and to take advantage of the best atmospheric conditions, the South Pole and the Chilean Atacama sites are baselined, with the possibility of adding a new northern site to increase sky coverage to the entire sky not contaminated by prohibitively strong Galactic emission.
 
 \subsection{Degree angular scale (low $\ell$) sensitivity}
-%Inflationary B modes: low $\ell$ sensitivity, foregrounds and atmospheric noise mitigation}
 
 At the largest angular scales (low $\ell$)---the angular scales that must be measured well to pursue inflationary 
 B modes---the CMB polarization anisotropy is highly contaminated by foregrounds. Galactic synchrotron dominates at low frequencies and galactic dust at high frequencies, as recently shown by the \planck\ and \planck/BICEP/KECK polarization results. Multi-band polarization measurements are required to distinguish the primordial polarized signals from the foregrounds. 
@@ -152,7 +85,6 @@ $\ell$ polarization. While the spatial and temporal fluctuations of the atmosphe
 It is therefore an attractive option for CMB-S4 to include dedicated small aperture telescopes for pursuing low-$\ell$ polarization. The default plan for CMB-S4 is to target the recombination bump, with E-mode and B-mode polarization down to $\ell \sim 20$. If Stage 3 experiments demonstrate that it is feasible to target the reionization bump at $\ell < 20$ from the ground, those techniques may be incorporated to extend the reach of CMB-S4. More likely, however, this is the $\ell$ range for which CMB-S4 will be designed to be complementary to balloon-based and satellite based measurements. 
 
 \subsection{Subdegree angular scale (high $\ell$) sensitivity}
-%\subsection*{Neutrinos, light relics, and dark energy: high $\ell$ sensitivity}
 
 At the highest angular resolution (high $\ell$)---the angular scales needed for de-lensing the inflationary B modes, constraining \neff\ and $\Sigma m_\nu$,  investigating dark energy and performing gravity tests with secondary CMB  anisotropy---the CMB polarization anisotropy is much less affected by both foregrounds and atmospheric noise. In fact, it should be possible to measure the primary CMB anisotropy in E-mode polarization to multipoles significantly higher than is possible in TT, thereby extending the lever arm to measure the spectral index and running of the primordial scalar (density) fluctuations. CMB lensing benefits from $\ell_{max}$ of order 5000 and secondary CMB measurements are greatly improved with $\ell_{max}$ of order 10,000 and higher, requiring large-aperture telescopes with diameters of several meters. Owing to the steep scaling of telescope cost with aperture diameter, it is likely not cost-effective to consider separate large aperture telescopes each optimized for a single frequency band. 
 
@@ -166,8 +98,6 @@ The rough conceptual design outlined above clearly needs to be refined.  The fir
 Determining these specifications requires simulations, informed by the best available data and phenomenological models.  Only when we have these specifications in hand can we design the instrument and answer such basic questions as the number and sizes of the telescopes.  This will be, of course, an iterative process, involving detailed simulations and cost considerations. At this time the Science Book is a working document with this first edition focused primarily on defining the possible reach in the  key science areas, along with the simulations needed to refine the science case and set the specifications of the needed measurements. This will set the stage for defining the instrument.
 
 
-%\subsection{A strawman instrument configuration}
-
 On the other hand, we need a jumping-off point for exploring instrument configuration parameter space.  
 Simple, back-of-the-envelope calculations make it clear that achieving the science goals outlined above requires a raw sensitivity equivalent to roughly 500,000 detectors operating for four years, though we may find that certain science goals push us to yet greater detector count. This order-of-magnitude level of sensitivity is appropriate for both measuring the tensor-to-scalar ratio $r$ and to the ``non-$r$'' science goals, but the other specifications for the instrument and survey (resolution, sky coverage, band placement) potentially pull in different directions for these two sets of goals. For this reason, we choose as a baseline for parameter forecasts two separate instrument configurations, one which we will optimize for $r$ constraints and one for non-$r$ science, with the detector effort split evenly between the two configurations. If the optimization exercise tells us that the two configurations are similar enough, then the two surveys can be re-merged. 
 
@@ -180,10 +110,8 @@ For the ``non-$r$'' survey, the strawman configuration consists of an array of m
 
 
 The Stage-2 and Stage-3 experiments are logical technical and scientific stepping stones to CMB-S4. Ongoing R\&D directed toward achieving the scaling up required to CMB-S4 is being pursued at several universities and national labs. 
-%The Simons Observatory will help develop the Chilean site for CMB-S4 and also contribute to CMB-S4 R\&D. 
 Figure~\ref{fig:science_timeline-intro} shows the timeline of the expected increase in sensitivity and the corresponding improvement for a few of the key cosmological parameters for Stage-3, along with the threshold-crossing aspirational goals  targeted for CMB-S4. 
 
-%The enormous jump in sensitivity with the corresponding improvement in science reach is clear.
 
 \begin{figure}[t]
 \centering \includegraphics[width=0.8\textwidth]{Intro/Fig-FlowChart1_v1.pdf}
@@ -201,12 +129,5 @@ Finally, in Fig.~\ref{fig:flowchart} we show how the scientific findings (yellow
 
 
 
-%\bibliography{cmbs4}
-
-%%
-%% Populate the .bib file with entries from SPIRES Bibtex (preferred)
-%% or ADS Bibtex (if no SPIRES entry).
-%%  SPIRES will also supply the CITATION line information; please include it.
-%%
 
 
