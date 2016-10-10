@@ -1,33 +1,16 @@
 %%%%%% CMB-S4 Lensing Chapter  %%%%%%%%%%%%%%%%
  
 \chapter{CMB Lensing}
-%\renewcommand*\thesection{\arabic{section}}
 
-%\begin{center}
-%{\small \it (send feedback on this chapter to \href{mailto:s4_lensing@cosmo.uchicago.edu}{s4\_lensing@cosmo.uchicago.edu})}
-%\end{center}
 \bigskip
 
 
 \def\nnu{N_{\mathrm eff}}
 \def\gtrsim{\raise-.75ex\hbox{$\buildrel>\over\sim$}}
-%\definecolor{orange}{rgb}{1,0.3,0}
-%\newcommand\comments[1]{\textcolor{orange}{[#1]} }
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{quotation}
 
 \input{CMBLensing/cmblensing_summary.tex}
-
-
-%The distribution of matter in the Universe contains a wealth of information about the primordial density perturbations and the forces that have shaped our cosmological evolution. Mapping this distribution is one of the central goals of modern cosmology. Gravitational lensing provides a unique method to map the matter between us and distant light sources, and lensing of the CMB, the most distant light source available, allows us to map the matter between us and the surface of last scattering.
-
-%Gravitational lensing of the CMB can be measured because the statistical properties of the primordial CMB are exquisitely well-known. As CMB photons travel to Earth from the last scattering surface, they are deflected by intervening matter which distorts the observed pattern of CMB anisotropies and modifies their statistical properties. This can be used to create a map of the gravitational potential that altered the photons’ paths. The gravitational potential encodes information about the formation of structure in the Universe and, indirectly, cosmological parameters like the sum of the neutrino masses. Lensing maps can also be used to calibrate and enhance results of upcoming galaxy redshift surveys. Furthermore, high fidelity lensing maps are an integral part of the search for primordial gravitational waves and the measurement of the neutrino mass scale with CMB-S4. Lensing obscures our view of the CMB and measuring and removing the effects of lensing from the CMB maps sharpens our view on primordial gravitational waves and our understanding of the very early Universe more generally.
-
-%CMB lensing with CMB-S4 is expected to reach fundamentally new territory.  It will be the first experiment where the measurement of lensing is dominated by the imprint in the polarization of the CMB, rather than in the temperature, over very large fractions of the sky.  This will allow lensing maps that are much less sensitive to foreground contamination.  CMB-S4 lensing maps will also reach unprecedented sensitivity, both over wide areas and in smaller deep patches.  For example, the wide area survey will obtain a signal-to-noise ratio of the lensing power spectrum of over 500 compared to 40 achieved by \planck.  These lensing maps are crucial for achieving the targets for both inflationary gravitational waves and neutrino mass expected from CMB-S4.  They also will be critical for cross-correlation with maps of large-scale-structure from next generation surveys, including DESI, WFIRST, Euclid, and LSST.  With CMB-S4, cross-correlations will transition from detections to powerful cosmological probes, for example, tightening constraints on curvature and dark energy. 
 
 \end{quotation}
 
@@ -106,7 +89,6 @@ However, the primary reason for the increased power of CMB-S4 lensing measuremen
 \subsection{Lensing Power Spectrum}\label{kappaPower}
 
 The power spectrum of reconstructed CMB lensing maps is a measure of the matter power spectrum integrated over redshift.  The lensing power spectrum has a broad redshift response kernel, with most of the contribution coming from $z\sim 1-5$, with a peak at $z\sim 2$ (see Figure \ref{cmb-gal-kernels}).  
-%(Figure \ref{fig:cmblens_kernel}).  
 Most of the scales probed by the lensing power spectrum are on sufficiently
 large scales that they are mainly in the linear regime.  As such, the lensing power spectrum is sensitive to physics which affects the growth of structure on large scales and at high redshift, such as the mass of the neutrinos. 
 
@@ -297,20 +279,6 @@ Measurements of CMB lensing are essential to all the key science goals of CMB-S4
 \label{neutrinos}
 \end{figure}
 
-%\begin{figure}[htbp]
-%\centering
-%\includegraphics[width=0.7\textwidth]{CMBLensing/inflation.png}
-%\caption{Delensing is critical to achieving the tightest constraints on $r$.  The impact of delensing on $r$ is also more significant as the sensitivity of the experiment is increased. For representive CMB-S4 map sensitivites, iterative delensing can improve the constraint on $r$ by roughly a factor of 2.5.}
-%\label{inflation}
-%\end{figure}
-
-%\begin{figure}[htbp]
-%\centering
-%\includegraphics[width=0.7\textwidth]{CMBLensing/darkEnergy.png}
-%\caption{The improvement in dark matter and dark energy parameters adding CMB-S4 lensing measurements to LSST cosmic shear.  The addition of CMB lensing results in a factor of 2 improvement in the constraint on the dark energy equation of state $w$ (see Section \ref{lensxlens} for details).}
-%\label{darkEnergy}
-%\end{figure}
-
 Figures \ref{neutrinos}, \ref{fig_rforecast1},   \ref{fig_rforecast2},  and \ref{LSSTdarkEnergy} show the importance of CMB lensing for measuring key cosmological parameters.  Figure \ref{neutrinos} shows constraints on $\sum {m_\nu}$ and $N_{\rm{eff}}$ including the lensing signals from the 2-point and 4-point functions.  In particular for $\sum {m_\nu}$, there is almost no constraining power on $\sum {m_\nu}$ from the primordial CMB power spectrum, so the constraint on $\sum {m_\nu}$ is driven by the lensing-induced mode coupling in the 2-point function and from the 4-point lensing signal.  
 
 For Figure \ref{neutrinos}, we use the CMB-S4 survey and instrument specifications for the wide survey given in Chapter 8.  In particular, no foregrounds are assumed and only white instrumental noise.  Since most of the lensing signal-to-noise is coming from the EB lensing estimator (see Figure \ref{crossoverPlot}), minimal foregrounds and white noise may be reasonable assumptions as foregounds and atmospheric noise are greatly reduced in polarization maps.  This figure also assumes that CMB-S4 will observe $40\%$ of the sky, and \planck\ primordial CMB data is included in the non-overlapping region of the sky ($65\% - 40\% = 25\%$ of sky).  For both CMB-S4 and \planck, temperature modes between $l=50-3000$ and polarization modes between $l=50-5000$ are used.  \planck\ low-ell data between modes $l=2-50$, and lensing modes between $L=40-3000$ are also included.  Here the 2-point CMB power spectrum is iterativley delensed to get tighter parameter constraints, and the covariance between the residual lensing in the 2-point function and the lensing in the 4-point signal is taken into account (see Chapter 8 for details).     
@@ -319,13 +287,3 @@ In Figures  \ref{fig_rforecast1} and  \ref{fig_rforecast2} in the Inflation Chap
  
 Figure \ref{LSSTdarkEnergy} in the Dark Energy Chapter shows the constraints on dark matter and dark energy from CMB-S4 obtained from LSST cosmic shear alone and with CMB lensing from CMB-S4 included.  The inclusion of CMB-S4 lensing improves the constraint on $w$ by roughly a factor of 2.  Here it is assumed that LSST will have 30 galaixes per arcminute and cover 40\% of the sky overlapping CMB-S4.  Also just one wide redshift bin for LSST shear analysis is assumed, and we note that the constraints indicated by both blue and green curves can improve with a tomographic analysis.  This is just one example of a number of cross-correlations with CMB-S4 lensing that can constrain the geometry of the Universe, matter abundance, and dark energy properties.
 
-
-%\bibliography{cmbs4}
-
-%\end{document}
-
-%%
-%% Populate the .bib file with entries from SPIRES Bibtex (preferred)
-%% or ADS Bibtex (if no SPIRES entry).
-%%  SPIRES will also supply the CITATION line information; please include it.
-%%

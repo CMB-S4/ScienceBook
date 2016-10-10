@@ -64,7 +64,6 @@ filter (e.g., \cite{Pierpaoli:2004bp}) could be required to maximize cluster yie
 
 The final step in the analysis of a CMB data set is the estimation of cosmological parameters from
 the various post-map statistics discussed above.
-% (the second step in Figure \ref{fig_sp}). 
 This involves estimating the likelihood of the data
 given a model parameterized by the standard six $\Lambda$CDM parameters, possible extensions
 of the cosmological model, and any nuisance parameters involving the instrument, foregrounds, and
@@ -123,10 +122,6 @@ These factors must also be balanced in the decision of when to combine data.
 \subsubsection{Foreground-related uncertainty on cosmological parameters}
 \label{se:paramforeg}
 
-% do frequency-map cross-spectra and fit for foregrounds or do component separation and 
-% parameterize foreground residuals. either way, what parameterization? refer to comp sep
-% and sky modeling sections.
-
 To separate the CMB signal from the contaminating signals of Galactic and extragalactic foregrounds, 
 data from multiple bands will be combined, either 
 in a cross-spectrum analysis or, as detailed in Section \ref{sec:compsep}, by making linear 
@@ -184,8 +179,6 @@ However we want to emphasize that the discussion above applies to the standard q
 \subsubsection{Delensing}
 For noise levels below $\Delta_P \simeq 5 \mu$K-arcmin (after foreground cleaning),  the dominant source of effective noise in the search for primordial B modes is the fluctuation induced by the lensing of E modes from recombination.  This signal has a well-understood amplitude, and unlike many other sources of astrophysical fluctuation in the map, it cannot be removed with multifrequency data.  Instead it must be removed either using map-level estimates of both the primordial E-mode maps and the CMB lensing potential $\phi$ or using a prediction for the lensing B-mode spectrum. The latter approach necessarily leaves some cosmic variance residual of the lensing signal after cleaning, while the former can in principle result in nearly perfect cleaning, so we will concentrate on that approach here.
 
-%As discussed in the dedicated CMB lensing chapter, delensing will also be a crucial portion of the reconstruction of the CMB lensing field.  This is because at low noise levels a quadratic reconstruction of lensing using the EB estimator \cite{Hu:2001kj} can be improved upon by cleaning the CMB maps of the lens-induced B-mode fluctuations, and then performing lens reconstruction again.  In effect, the quadratic estimate of \cite{Hu:2001kj} is effectively the first step in an iterative scheme to find the maximum-likelihood solution for the lensing and primordial fields \cite{Hirata:2002jy}.  CMB maps cleaned of the lensing signals will thus likely be produced as part of the CMB lensing analysis procedure.
-
 Even in the map-level approach, the finite noise in the \cmbexp\ survey will lead to residual lensing B modes which cannot be removed and will act as a noise floor for studying B modes from tensors.  The amplitude of these residual lensed B modes are discussed in Section \ref{delens} as a function of the angular resolution and the noise level of the S4 survey; in particular, it is crucial to have high-angular-resolution maps in order to measure the small-scale E- and B-mode fluctuations needed for the EB quadratic lensing estimator.
 
 The concerns with the delensing procedure are similar to those for measuring the lensing power spectrum. The impact of polarized dust and synchrotron emission from the Galaxy, and the impact of polarized point sources on small scales on the lensing reconstruction are addressed in Section~\ref{systAst}. Left untreated the effects may be large; however the use of  multi-frequency data together with the application of dedicated point-source estimators can mitigate these effects.
@@ -194,5 +187,4 @@ Another question to be answered for delensing in \cmbexp\ is what to use as the 
 Rather than using an estimate of the CMB lensing field obtained from the CMB itself, it is also possible to use other tracers of large-scale structure which are correlated with  CMB lensing \cite{Smith:2010gu}.  In particular the dusty, star-forming galaxies that comprise the cosmic infrared background (CIB) are strongly correlated with CMB lensing, due to their redshift distribution which peaks near $z \sim 2$ \cite{Sherwin:2015baa,Simard:2014aqa}.  The level of correlation is approximately $80\%$ \cite{Ade:2013zuv} and can in principle be improved using multifrequency maps of the CIB which select different emission redshifts \cite{Sherwin:2015baa}.  
 
 Lensing of the CMB can also impact the measurement of features of the CMB power spectrum on small scales, in particular the CMB damping scale and the precise location of the acoustic peaks in harmonic space.  Delensing can therefore improve not just our measurement of primordial B modes but also constraints on parameters that affect the damping tail and peak location.
-%Effects that can change these observables include changes in 
 This includes parameters such as the effective number of neutrino species,  the primordial helium fraction, and running of the spectral index of fluctuations.  Using completely unlensed CMB spectra, rather than lensed spectra, can improve constraints on these parameters. (For example,~\cite{Green:2016} find a 20\% improvement on $\sigma(\neff)$ and $\sigma(Y_p)$ relative to lensed spectra.)  While the delensing procedure will not completely recover the unlensed CMB fluctuations for the S4 experiment, the low noise levels will enable the primordial CMB fluctuations to be measured with good enough fidelity that delensing should have a non-negligible impact on these parameter constraints~\cite{Green:2016}.

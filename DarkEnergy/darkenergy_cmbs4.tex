@@ -1,14 +1,9 @@
-%!TEX root =../cmbs4_scibook.tex
 %%%%%% CMB-S4 DE/DM Chapter  %%%%%%%%%%%%%%%%
 
 \def\gtrsim{\raise-.75ex\hbox{$\buildrel>\over\sim$}}
 \def\lsim{\raise-.75ex\hbox{$\buildrel<\over\sim$}}
 
 \chapter{Dark Energy}
-
-%\begin{center}
-%{\small \it (send feedback on this chapter to \href{mailto:s4_de@cosmo.uchicago.edu}{s4\_de@cosmo.uchicago.edu})}
-%\end{center}
 \bigskip
 
 \begin{quotation}
@@ -58,7 +53,6 @@ For example the rms amplitude of linear matter fluctuations at the $8 h^{-1}$Mpc
 scale, $\sigma_8(z)$, is a trigger parameter that can be closely associated with the 
 cluster abundance.   The linear growth rate index, $\gamma_L$, is another that is closely related
 to peculiar velocities and the kSZ observables.   
-% add in $E_G$ if we forecast it or if it is discussed in the cross correlation section.
 
 The second way of parametrizing deviations from $\Lambda$CDM is by modifying the equations of motion for dark energy in a manner consistent with conservation laws.   These have the benefit of attempting to tie distance and growth
 tests together in a physical, yet still phenomenological manner.    The next step up in
@@ -133,30 +127,6 @@ For absolute mass calibration, the most robust technique currently is galaxy-clu
 CMB-S4 can thus provide an exceptionally powerful cluster data set for dark energy and modified gravity science, by producing a large catalog of massive, cleanly selected clusters extending to high redshifts, and simultaneously constraining their masses. This data set would strongly complement contemporaneous dark energy programs, especially LSST and DESI. The impact of clusters as part of the CMB-S4 dark energy portfolio is strongly dependent on the angular resolution and depth of the survey, which affects the number of clusters discovered and the quality of the CMB-cluster lensing mass constraints; to achieve its full potential, a resolution of $\sim1$ arcminute and few-$\mu$K-arcmin depth will be required.
 
 
-
-
-
-% Use of the CMB-S4 cluster abundance as a trigger parameter or as a constraint on dark energy parameters requires an accurate
-% calibration of cluster masses. 
-% CMB-S4 will also enable a new means of  cluster mass calibration through CMB lensing.
-% With sufficient angular resolution, CMB-S4 opens tremendous possibilities for measuring cluster, more generally halo masses.    
-%   Figure \ref{fig:limits} shows an estimate of the mass sensitivity, expressed as the one-sigma mass uncertainty as a function of redshift, for two possible CMB-S4 configurations and compares them to planned CMB experiments. 
-
-
-% 	The estimation is made assuming foreground subtraction to reach the quoted CMB map noise level at the given angular resolution.  The method 
-% 	\cite{Melin:2014uaa}  employs an optimal filter matched to the NFW profile and applied to reconstructions of the lensing potential with a quadratic estimator
-% 	\cite{Hu:2001kj} (see also \cite{Madhavacheril:2014slf,Baxter:2014frs}).  The method has already been successfully applied to the \planck\ cluster cosmology sample of more than 400 objects 
-% 	\cite{Ade:2013ydc}.  This figure shows the sensitivity obtained with just CMB temperature lensing reconstruction.  Including polarization will significantly improve it.  
-% 	We see that the mass sensitivity remains flat with redshift, a remarkable property that enables mass estimation out to redshifts unreachable with galaxy shear measurements.  This is a powerful and unique capability of CMB lensing.  The figure also demonstrates the important gains attained with high angular resolution.  At one arcmin resolution, S4 achieves a mass sensitivity of $2 \times 10^{13}M_\odot$ with temperature alone.  This unprecedented sensitivity not only ensures robust mass estimation for cluster cosmology over the large redshift interval where S4 will detect clusters through the SZ effect, but also paves the way to numerous cluster and large-scale structure studies.  The rapidly increasing science reach enabled by high angular resolution, approaching one arcmin, is an important consideration in CMB-S4 objectives.  
-
-% \begin{figure}[t!]
-% \begin{center}
-% \includegraphics[width=0.65\textwidth]{DarkEnergy/m500lim_vs_z_1sigma_cmbs4_v1.pdf}
-% \caption{Cluster mass sensitivity of CMB lensing.}
-% \label{fig:limits}
-% \end{center}
-% \end{figure} 
-
 \subsection{Lensing}
 
 As described in the Lensing Chapter, the CMB lensing deflection map measures the projected mass density all the way back to the decoupling epoch at $z \sim 1100$, with the majority of the contributions coming from $z > 1$.  CMB lensing is also dominated by structure on large scales in the linear regime.  Thus,  CMB lensing provides a clean probe of a particular integral over the linear growth of structure,
@@ -180,7 +150,6 @@ For example, Figure \ref{LSSTdarkEnergy} shows the improvement on constraints of
 
 \subsection{Kinematic SZ}
 
-% Edited by F. de Bernardis
 CMB-S4 will map with unprecedented precision the momentum field of the large scale structure via measurements of the kinematic Sunyaev Zel'dovich (kSZ) effect. Multi-frequency data can be used to remove other foregrounds and isolate the kSZ signal. CMB-S4 measurements with sufficient angular resolution can be used to reconstruct the diffuse kSZ anisotropy signal enabling sub-percent precision measurements of the amplitude of the matter density fluctuations $\sigma_8$ (see for example \cite{Calabrese:2014gwa}) which then acts as a trigger
 parameter for testing $\Lambda$CDM. 
 Measurements of the patchy kSZ can place strong constraints on the time and duration of reionization.
@@ -189,7 +158,6 @@ The combination of CMB-S4 with data from galaxy surveys will be able to measure 
 
 Pairwise kSZ measurements can also constrain the sum of neutrino masses $M_{\nu}= \sum m_{\nu}$ with a $1\sigma$ uncertainty of $0.030$eV for a $1$ arcmin CMB-S4 overlapping 10000 deg$^2$ with a galaxy survey able to identify $M>10^{13}M_{\odot}$ clusters. With 5-arcmin resolution, separating the CMB background from the kSZ signal would be more difficult, providing  $\sigma_{M_{\nu}} = 0.076$eV. These forecasts include only priors on the 6 standard cosmological parameters from \planck\ temperature data and show the potential of the kSZ pairwise signal to provide constraints on the neutrino mass. 
 
-% the following text from S. Ferraro, C. Hill, E. Schaan
 Here we explore how the kSZ detection significance depends on the noise and aperture of the CMB experiment. 
 To interpret the forecasts below, we note that the size of the temperature shift for a cluster with radial velocity $v_r$ and optical depth $\tau_{\rm cluster}$ is $(\Delta T/T)_{\rm kSZ} = - \tau_{\rm cluster} v_r \propto n_e v_r$, where $n_e$ is the free electron number density.  Therefore, the $S/N$ values quoted are on the product of optical depth and radial velocity, the latter being a sensitive probe of cosmology as discussed previously in this section.  If the optical depth is known externally (for example through the use of thermal Sunyaev-Zel'dovich or X-ray observations), then the quoted $S/N$ applies to the radial velocity, or equivalently to the growth factor of density perturbations.  If instead general relativity and a fiducial cosmology are assumed,
 the measurement probes the total electron abundance associated with the halo, as well as the gas profile. Precision measurement of the gas profile through the kSZ effect will constrain galaxy cluster physics, feedback effects, and provide clues on galaxy formation. 
@@ -226,10 +194,6 @@ Fig.~\ref{fig:CB-forecast} shows the current upper limit on the rotation-angle p
 
 For a fixed integration time (and a varied noise level and sky coverage), large sky coverage optimizes sensitivity to low multipoles of the rotation angle and gives the best signal-to-noise ratio for rotation models that have power on large scales (such as, for example, a model with a scale-invariant power spectrum, which could result from fluctuations in a spectator scalar field present during inflation). Conversely, for models that have power on scales corresponding to multipoles above $\ell\sim 1000$, the best signal-to-noise is achieved with deeper integration on small sky patches.  For a measurement of the magnitude of the quadrupole of the rotation angle, reducing the resolution from 1' to 9' produces a factor of a few increase in the projected errorbar (for all other parameters fixed). Increasing the noise from $1.41$ to $12.7$ $\mu$K-arcmin produces a factor of about $20$ increase in the errorbar. Access to polarization modes down to $\ell=2$ does not significantly affect the forecasts. 
 
-
-%
-% Forecasts for the final book here or if more appropriate e.g. trigger type then embedded
-% in the sections themselves
 
 %
 \section{Dark Energy Forecasts}
@@ -443,14 +407,4 @@ that are independently measured by CMB-S4 as well as observables of and cross-co
 Violations of these predictions would trigger a fundamental change in the paradigm that underlies
 the parameters and models.  Verification of these predictions bringing us closer to the goal of 
 robustly determining the physics of dark energy.
-
-%understanding and ruling out competing models of this mysterious component in our cosmological model.
-%\bibliography{cmbs4}
-
-%%
-%% Populate the .bib file with entries from SPIRES Bibtex (preferred)
-%% or ADS Bibtex (if no SPIRES entry).
-%%  SPIRES will also supply the CITATION line information; please include it.
-%%
-
 
